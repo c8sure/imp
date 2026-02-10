@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classcustom__filter_1_1MyFilterTable" kind="class" language="Python" prot="public">
+    <compoundname>custom_filter::MyFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <innerclass refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter" prot="public">custom_filter::MyFilterTable::MyFilter</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcustom__filter_1_1MyFilterTable_1a6a5d83e0bc56faa63ed1734c5b492f04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.MyFilterTable::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>custom_filter.MyFilterTable.p</qualifiedname>
+        <initializer>=  p</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="94" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcustom__filter_1_1MyFilterTable_1aa202675f25983b7f4de13db1c3056f12" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.MyFilterTable::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>custom_filter.MyFilterTable.s</qualifiedname>
+        <initializer>=  s</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="95" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1a43211bb0044b9d82cf2fa88d3b0e16ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.__init__</definition>
+        <argsstring>(self, p, s)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>custom_filter.MyFilterTable.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="90" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1ab29caab6baedc846decbe3be667ffbc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.get_strength</definition>
+        <argsstring>(self, s, excluded)</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>custom_filter.MyFilterTable.get_strength</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>excluded</type>
+          <defname>excluded</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="86" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1a5d0cd22938504e72bb892201cd138ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.get_subset_filter</definition>
+        <argsstring>(self, subset, excluded)</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>custom_filter.MyFilterTable.get_subset_filter</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <param>
+          <type>excluded</type>
+          <defname>excluded</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="97" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="97" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+      <node id="1">
+        <label>custom_filter.MyFilterTable</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+      <node id="1">
+        <label>custom_filter.MyFilterTable</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="examples/domino/custom_filter.py" line="60" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="60" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classcustom__filter_1_1MyFilterTable_1a43211bb0044b9d82cf2fa88d3b0e16ed" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>__init__</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1ab29caab6baedc846decbe3be667ffbc2" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>get_strength</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1a5d0cd22938504e72bb892201cd138ed2" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1a6a5d83e0bc56faa63ed1734c5b492f04" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>p</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1aa202675f25983b7f4de13db1c3056f12" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>s</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>custom_filter::MyFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

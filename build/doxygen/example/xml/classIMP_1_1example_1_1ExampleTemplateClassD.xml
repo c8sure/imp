@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleTemplateClassD" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleTemplateClassD</compoundname>
+    <includes local="no">IMP/example/ExampleTemplateClass.h</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>D</declname>
+        <defname>D</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleTemplateClassD_1a092d090c5e825754be149a866ab1fda6" prot="private" static="no" mutable="no">
+        <type>IMP::algebra::VectorD&lt; D &gt;</type>
+        <definition>IMP::algebra::VectorD&lt;D&gt; IMP::example::ExampleTemplateClassD&lt; D &gt;::eps_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>eps_</name>
+        <qualifiedname>IMP::example::ExampleTemplateClassD::eps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="33" column="25" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleTemplateClassD_1aab687e0af3df3f67d1c9be0cf1cf2240" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleTemplateClassD&lt; D &gt;::ExampleTemplateClassD</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleTemplateClassD</name>
+        <qualifiedname>IMP::example::ExampleTemplateClassD::ExampleTemplateClassD</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="36" column="3" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleTemplateClassD_1aa93938fc836a0c96102da8f1530e1e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleTemplateClassD&lt; D &gt;::ExampleTemplateClassD</definition>
+        <argsstring>(const IMP::algebra::VectorD&lt; D &gt; &amp;a, const IMP::algebra::VectorD&lt; D &gt; &amp;b)</argsstring>
+        <name>ExampleTemplateClassD</name>
+        <qualifiedname>IMP::example::ExampleTemplateClassD::ExampleTemplateClassD</qualifiedname>
+        <param>
+          <type>const IMP::algebra::VectorD&lt; D &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const IMP::algebra::VectorD&lt; D &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Since it is a simple object, there is no reason to provide methods to change the data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="40" column="3" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleTemplateClassD_1a5ebc6c0bd429d77f8cb7e9c6d3d29351" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const IMP::algebra::VectorD&lt; D &gt; &amp;</type>
+        <definition>const IMP::algebra::VectorD&lt; D &gt; &amp; IMP::example::ExampleTemplateClassD&lt; D &gt;::get_point</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_point</name>
+        <qualifiedname>IMP::example::ExampleTemplateClassD::get_point</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get one of the endpoints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="46" column="31" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleTemplateClassD_1a38b1852823236a1f6cb1d21a101493c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::example::ExampleTemplateClassD&lt; D &gt;::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::example::ExampleTemplateClassD::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="51" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A line segment templated on the dimension. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Like the underlying algebra::VectorD data, is not initialized when the default constructor is used. Since it is a small class, it is designed to be allocated on the stack and to be passed by value (or const &amp;).</para>
+<para>The class should be named SegmentD, but it is a demonstration.</para>
+<para>The source code is as follows: <programlisting filename="ExampleTemplateClass.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleTemplateClass.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>Show<sp/>how<sp/>to<sp/>manage<sp/>a<sp/>template<sp/>class<sp/>with<sp/>Python.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_TEMPLATE_CLASS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_TEMPLATE_CLASS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/utility.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/algebra/VectorD.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>A<sp/>line<sp/>segment<sp/>templated<sp/>on<sp/>the<sp/>dimension.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>Like<sp/>the<sp/>underlying</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>algebra::VectorD<sp/>data,<sp/>is<sp/>not<sp/>initialized<sp/>when<sp/>the<sp/>default</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>constructor<sp/>is<sp/>used.<sp/>Since<sp/>it<sp/>is<sp/>a<sp/>small<sp/>class,<sp/>it<sp/>is<sp/>designed<sp/>to</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>be<sp/>allocated<sp/>on<sp/>the<sp/>stack<sp/>and<sp/>to<sp/>be<sp/>passed<sp/>by<sp/>value<sp/>(or</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>const<sp/>&amp;).</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>class<sp/>should<sp/>be<sp/>named<sp/>SegmentD,<sp/>but<sp/>it<sp/>is<sp/>a<sp/>demonstration.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleTemplateClass.h</highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>D&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExampleTemplateClassD<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP::algebra::VectorD&lt;D&gt;<sp/>eps_[2];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleTemplateClassD()<sp/>{}</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>/**<sp/>Since<sp/>it<sp/>is<sp/>a<sp/>simple<sp/>object,<sp/>there<sp/>is<sp/>no<sp/>reason<sp/>to<sp/>provide</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>methods<sp/>to<sp/>change<sp/>the<sp/>data.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleTemplateClassD(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::algebra::VectorD&lt;D&gt;<sp/>&amp;a,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::algebra::VectorD&lt;D&gt;<sp/>&amp;b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>eps_[0]<sp/>=<sp/>a;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>eps_[1]<sp/>=<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Get<sp/>one<sp/>of<sp/>the<sp/>endpoints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::algebra::VectorD&lt;D&gt;<sp/>&amp;get_point(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_USAGE_CHECK(i<sp/>&lt;<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>endpoint<sp/>index<sp/>can<sp/>only<sp/>be<sp/>0<sp/>or<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>eps_[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_SHOWABLE_INLINE(ExampleTemplateClassD,<sp/>out<sp/>&lt;&lt;<sp/>eps_[0]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>eps_[1];);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ExampleTemplateClassD&lt;3&gt;<sp/>ExampleTemplateClass3D;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Vector&lt;ExampleTemplateClassD&lt;3&gt;<sp/>&gt;<sp/>ExampleTemplateClass3Ds;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_TEMPLATE_CLASS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleTemplateClass.h" line="32" column="1" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="32" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleTemplateClassD_1a092d090c5e825754be149a866ab1fda6" prot="private" virt="non-virtual"><scope>IMP::example::ExampleTemplateClassD</scope><name>eps_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleTemplateClassD_1aab687e0af3df3f67d1c9be0cf1cf2240" prot="public" virt="non-virtual"><scope>IMP::example::ExampleTemplateClassD</scope><name>ExampleTemplateClassD</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleTemplateClassD_1aa93938fc836a0c96102da8f1530e1e6c" prot="public" virt="non-virtual"><scope>IMP::example::ExampleTemplateClassD</scope><name>ExampleTemplateClassD</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleTemplateClassD_1a5ebc6c0bd429d77f8cb7e9c6d3d29351" prot="public" virt="non-virtual"><scope>IMP::example::ExampleTemplateClassD</scope><name>get_point</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleTemplateClassD_1a38b1852823236a1f6cb1d21a101493c9" prot="public" virt="non-virtual"><scope>IMP::example::ExampleTemplateClassD</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

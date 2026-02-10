@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1ParticlesAdaptor" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::ParticlesAdaptor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ParticlesTemp</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">InputAdaptor</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticlesAdaptor_1a1c4a738167a9f04d5debafee805c5228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ParticlesAdaptor::ParticlesAdaptor</definition>
+        <argsstring>(const ParticlesTemp &amp;ps)</argsstring>
+        <name>ParticlesAdaptor</name>
+        <qualifiedname>IMP::domino::ParticlesAdaptor::ParticlesAdaptor</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="300" column="3" bodyfile="include/IMP/domino/particle_states.h" bodystart="300" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticlesAdaptor_1a7de81f47fe87067fd633f6d442055117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ParticlesAdaptor::ParticlesAdaptor</definition>
+        <argsstring>(ParticleStatesTable *pst)</argsstring>
+        <name>ParticlesAdaptor</name>
+        <qualifiedname>IMP::domino::ParticlesAdaptor::ParticlesAdaptor</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="298" column="3" bodyfile="include/IMP/domino/particle_states.h" bodystart="298" bodyend="299"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Accept either particles, decorators or <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> as an input to define a list of particle. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/particle_states.h" line="289" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="296" bodyend="302"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticlesAdaptor_1a7de81f47fe87067fd633f6d442055117" prot="public" virt="non-virtual"><scope>IMP::domino::ParticlesAdaptor</scope><name>ParticlesAdaptor</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticlesAdaptor_1a1c4a738167a9f04d5debafee805c5228" prot="public" virt="non-virtual"><scope>IMP::domino::ParticlesAdaptor</scope><name>ParticlesAdaptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

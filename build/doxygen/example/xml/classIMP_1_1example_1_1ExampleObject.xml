@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleObject" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes local="no">IMP/example/ExampleObject.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleObject_1ab72bda64120765dfe528109a4e5f26f7" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::example::ExampleObject::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::example::ExampleObject::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="32" column="10" bodyfile="include/IMP/example/ExampleObject.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExampleObject_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExampleObject::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="54" column="16" bodyfile="include/IMP/example/ExampleObject.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1a33bc0faf53607dae1a5ae12fbe21dd53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleObject::ExampleObject</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleObject</name>
+        <qualifiedname>IMP::example::ExampleObject::ExampleObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="38" column="3" bodyfile="include/IMP/example/ExampleObject.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1ab6c04c103f16700e687e84c1ccc3c076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleObject::ExampleObject</definition>
+        <argsstring>(const Floats &amp;data)</argsstring>
+        <name>ExampleObject</name>
+        <qualifiedname>IMP::example::ExampleObject::ExampleObject</qualifiedname>
+        <param>
+          <type>const Floats &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1aa7bbc0894533576de6352810fde62977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleObject::~ExampleObject</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleObject</name>
+        <qualifiedname>IMP::example::ExampleObject::~ExampleObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="50" column="231" bodyfile="include/IMP/example/ExampleObject.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1a86a1bced10790e321e0bfb045a7622f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExampleObject::get_data</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_data</name>
+        <qualifiedname>IMP::example::ExampleObject::get_data</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="40" column="10" bodyfile="include/IMP/example/ExampleObject.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1aac2290b65f1b6726a6055e80d4bcd1c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleObject::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleObject::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="50" column="34" bodyfile="include/IMP/example/ExampleObject.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1a6ed7736943d4286750eb03a31bb34bdd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleObject::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleObject::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="50" column="103" bodyfile="include/IMP/example/ExampleObject.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleObject_1aebf870cf6f396b95bc352fd6e0356322" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExampleObject::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExampleObject::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="55" column="19" bodyfile="include/IMP/example/ExampleObject.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An example simple object which is reference counted. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Only IMP::Pointer objects should be used to store pointers to instances of these objects.</para>
+<para>The source code is as follows: <programlisting filename="ExampleObject.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleObject.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>An<sp/>example<sp/>showing<sp/>how<sp/>to<sp/>make<sp/>a<sp/>simple<sp/>ref<sp/>counted<sp/>object</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Object.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/object_macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Pointer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/access.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/types/vector.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>An<sp/>example<sp/>simple<sp/>object<sp/>which<sp/>is<sp/>reference<sp/>counted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>Only<sp/>IMP::Pointer<sp/>objects<sp/>should<sp/>be<sp/>used<sp/>to<sp/>store<sp/>pointers<sp/>to</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>instances<sp/>of<sp/>these<sp/>objects.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleObject.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleObject.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleObject<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Floats<sp/>data_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleObject(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Floats<sp/>&amp;data);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>constructor,<sp/>needed<sp/>for<sp/>serialization<sp/>or<sp/>Python<sp/>pickle<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleObject()<sp/>:<sp/>Object(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_data(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_USAGE_CHECK(i<sp/>&lt;<sp/>data_.size(),<sp/></highlight><highlight class="stringliteral">&quot;Index<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>out<sp/>of<sp/>range.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Make<sp/>sure<sp/>that<sp/>it<sp/>can&apos;t<sp/>be<sp/>allocated<sp/>on<sp/>the<sp/>stack</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>The<sp/>macro<sp/>defines<sp/>an<sp/>empty<sp/>destructor.<sp/>In<sp/>general,</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>you<sp/>want<sp/>destructors<sp/>to<sp/>be<sp/>empty<sp/>since<sp/>they<sp/>are<sp/>hard</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>to<sp/>maintain.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleObject);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>must<sp/>save/load<sp/>everything<sp/>in<sp/>the<sp/>Object<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(e.g.<sp/>name)<sp/>plus<sp/>our<sp/>own<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar(cereal::base_class&lt;Object&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>data_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Vector&lt;Pointer&lt;ExampleObject&gt;<sp/>&gt;<sp/>ExampleObjects;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Vector&lt;WeakPointer&lt;ExampleObject&gt;<sp/>&gt;<sp/>ExampleObjectsTemp;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_OBJECT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleObject.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>ExampleObject.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>An<sp/>example<sp/>reference<sp/>counted<sp/>object.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IMP/example/ExampleObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IMP/Pointer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExampleObject::ExampleObject(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Floats<sp/>&amp;data)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Object(</highlight><highlight class="stringliteral">&quot;ExampleObject%1%&quot;</highlight><highlight class="normal">),<sp/>data_(data)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__clang__</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_CLANG_PRAGMA(diagnostic<sp/>ignored<sp/></highlight><highlight class="stringliteral">&quot;-Wunused-function&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">/**<sp/>An<sp/>example<sp/>of<sp/>how<sp/>to<sp/>return<sp/>a<sp/>new<sp/>object.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExampleObject<sp/>*create_example_object(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Floats<sp/>&amp;data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_NEW(ExampleObject,<sp/>ret,<sp/>(data));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>one<sp/>could<sp/>do<sp/>some<sp/>work<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>sure<sp/>it<sp/>is<sp/>not<sp/>freed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret.release();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usage_example()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Floats<sp/>data(1000,<sp/>-1);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>would<sp/>not<sp/>compile</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>ExampleObject<sp/>rcstack;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>new<sp/>object<sp/>and<sp/>store<sp/>it<sp/>in<sp/>a<sp/>ref<sp/>counted<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_NEW(ExampleObject,<sp/>rc,<sp/>(data));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>reference<sp/>count<sp/>is<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>another<sp/>object<sp/>with<sp/>another<sp/>copy<sp/>of<sp/>the<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;ExampleObject&gt;<sp/>rc_other<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ExampleObject(data);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>have<sp/>two<sp/>pointers<sp/>point<sp/>to<sp/>the<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;ExampleObject&gt;<sp/>rc2<sp/>=<sp/>rc;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>reference<sp/>count<sp/>is<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>object<sp/>is<sp/>still<sp/>around<sp/>since<sp/>rc2<sp/>points<sp/>to<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>rc<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">ExampleObject<sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>reference<sp/>count<sp/>is<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>rc2-&gt;get_data(100);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>object<sp/>will<sp/>be<sp/>deleted<sp/>on<sp/>exit</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleObject.h" line="31" column="1" bodyfile="include/IMP/example/ExampleObject.h" bodystart="31" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1ab72bda64120765dfe528109a4e5f26f7" prot="private" virt="non-virtual"><scope>IMP::example::ExampleObject</scope><name>data_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1ab6c04c103f16700e687e84c1ccc3c076" prot="public" virt="non-virtual"><scope>IMP::example::ExampleObject</scope><name>ExampleObject</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1a33bc0faf53607dae1a5ae12fbe21dd53" prot="public" virt="non-virtual"><scope>IMP::example::ExampleObject</scope><name>ExampleObject</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1a86a1bced10790e321e0bfb045a7622f4" prot="public" virt="non-virtual"><scope>IMP::example::ExampleObject</scope><name>get_data</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1aac2290b65f1b6726a6055e80d4bcd1c8" prot="public" virt="virtual"><scope>IMP::example::ExampleObject</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1a6ed7736943d4286750eb03a31bb34bdd" prot="public" virt="virtual"><scope>IMP::example::ExampleObject</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1aebf870cf6f396b95bc352fd6e0356322" prot="private" virt="non-virtual"><scope>IMP::example::ExampleObject</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleObject_1aa7bbc0894533576de6352810fde62977" prot="public" virt="virtual"><scope>IMP::example::ExampleObject</scope><name>~ExampleObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

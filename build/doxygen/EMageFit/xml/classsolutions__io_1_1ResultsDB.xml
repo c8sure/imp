@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classsolutions__io_1_1ResultsDB" kind="class" language="Python" prot="public">
+    <compoundname>solutions_io::ResultsDB</compoundname>
+    <basecompoundref refid="classdatabase_1_1Database2" prot="public" virt="non-virtual">database.Database2</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a5288e17e4382e7424f6bea279db5a02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_ccc_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>add_ccc_table</name>
+        <qualifiedname>solutions_io.ResultsDB.add_ccc_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Add a table to the database for store the values of the cross correlation coefficient between a model and the native configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="434" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="434" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a7c8d1410a81dd149fb178973f8917f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_cluster_record</definition>
+        <argsstring>(self, cluster_id, n_elements, representative, elements, solutions_ids)</argsstring>
+        <name>add_cluster_record</name>
+        <qualifiedname>solutions_io.ResultsDB.add_cluster_record</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cluster_id</type>
+          <defname>cluster_id</defname>
+        </param>
+        <param>
+          <type>n_elements</type>
+          <defname>n_elements</defname>
+        </param>
+        <param>
+          <type>representative</type>
+          <defname>representative</defname>
+        </param>
+        <param>
+          <type>elements</type>
+          <defname>elements</defname>
+        </param>
+        <param>
+          <type>solutions_ids</type>
+          <defname>solutions_ids</defname>
+        </param>
+        <briefdescription>
+<para>Add a record to the cluster database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Actually, only stores it in a list (that will be added later) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cluster_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number with the id of the cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_elements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements in the cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>representative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number with the id of the representative element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List with the number of the elements of the cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solutions_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numbers above are provided by the clustering algorithm. The solutions_ids are the ids of the models in &quot;elements&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="528" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="528" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a223665c9ef729148d3755cc4fa27e577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_clusters_table</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>add_clusters_table</name>
+        <qualifiedname>solutions_io.ResultsDB.add_clusters_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Add a table to store information about the clusters of structures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="515" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="515" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a13cc1cee9d77600dab8000af38350061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_native_record</definition>
+        <argsstring>(self, assignment, RFs, total_score, restraints_scores)</argsstring>
+        <name>add_native_record</name>
+        <qualifiedname>solutions_io.ResultsDB.add_native_record</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>RFs</type>
+          <defname>RFs</defname>
+        </param>
+        <param>
+          <type>total_score</type>
+          <defname>total_score</defname>
+        </param>
+        <param>
+          <type>restraints_scores</type>
+          <defname>restraints_scores</defname>
+        </param>
+        <briefdescription>
+<para>Add a record for the native structure to the database see <ref refid="classsolutions__io_1_1ResultsDB_1a88057beb994685ef1da39eb2f6c57296" kindref="member">add_record()</ref> for the meaning of the parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="379" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="379" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a97a2aa6e2636a0c5fb7f842b1f9f23a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_placement_scores_table</definition>
+        <argsstring>(self, names)</argsstring>
+        <name>add_placement_scores_table</name>
+        <qualifiedname>solutions_io.ResultsDB.add_placement_scores_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <briefdescription>
+<para>Creates a table to store the values of the placement scores for the models. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Names of the components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="402" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="402" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a88057beb994685ef1da39eb2f6c57296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_record</definition>
+        <argsstring>(self, solution_id, assignment, RFs, total_score, restraints_scores, measures)</argsstring>
+        <name>add_record</name>
+        <qualifiedname>solutions_io.ResultsDB.add_record</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solution_id</type>
+          <defname>solution_id</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>RFs</type>
+          <defname>RFs</defname>
+        </param>
+        <param>
+          <type>total_score</type>
+          <defname>total_score</defname>
+        </param>
+        <param>
+          <type>restraints_scores</type>
+          <defname>restraints_scores</defname>
+        </param>
+        <param>
+          <type>measures</type>
+          <defname>measures</defname>
+        </param>
+        <briefdescription>
+<para>Add a record to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for the solution </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The assignment for the solution provided by domino </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RFs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference frames of the rigid bodies of the components of the assembly in the solution </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>total_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total value of the scoring function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>restraints_scores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with all the values for the restraints </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>measures</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the values of all the measures for benchmark </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="358" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="358" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a67161f58d4618a13582a7b87bbc14bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.add_results_table</definition>
+        <argsstring>(self, restraints_names, add_measures=False)</argsstring>
+        <name>add_results_table</name>
+        <qualifiedname>solutions_io.ResultsDB.add_results_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>restraints_names</type>
+          <defname>restraints_names</defname>
+        </param>
+        <param>
+          <type>add_measures</type>
+          <defname>add_measures</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Build the table of results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restraints_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The names given to the columns of the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>add_measures</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If True, add fields for comparing models and native conformation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="254" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="254" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a192fc2d7a3bb8af92816464ccebbca3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.format_ccc_record</definition>
+        <argsstring>(self, solution_id, ccc)</argsstring>
+        <name>format_ccc_record</name>
+        <qualifiedname>solutions_io.ResultsDB.format_ccc_record</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solution_id</type>
+          <defname>solution_id</defname>
+        </param>
+        <param>
+          <type>ccc</type>
+          <defname>ccc</defname>
+        </param>
+        <briefdescription>
+<para>Format for the record to store in the ccc table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="453" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="453" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1aeebdbcffcfd07a9a2e1792a7eeddc923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.format_placement_record</definition>
+        <argsstring>(self, solution_id, distances, angles)</argsstring>
+        <name>format_placement_record</name>
+        <qualifiedname>solutions_io.ResultsDB.format_placement_record</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solution_id</type>
+          <defname>solution_id</defname>
+        </param>
+        <param>
+          <type>distances</type>
+          <defname>distances</defname>
+        </param>
+        <param>
+          <type>angles</type>
+          <defname>angles</defname>
+        </param>
+        <briefdescription>
+<para>both distances and angles are expected to be a list of floats </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="397" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="397" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1ad6c96de3a8560293afac83c6057d8c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_ccc</definition>
+        <argsstring>(self, solution_id)</argsstring>
+        <name>get_ccc</name>
+        <qualifiedname>solutions_io.ResultsDB.get_ccc</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solution_id</type>
+          <defname>solution_id</defname>
+        </param>
+        <briefdescription>
+<para>Recover the cross-correlation coefficient for a solution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="457" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="457" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a9821c116ab0a4b37d7ededb879d24d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_individual_placement_statistics</definition>
+        <argsstring>(self, solutions_ids)</argsstring>
+        <name>get_individual_placement_statistics</name>
+        <qualifiedname>solutions_io.ResultsDB.get_individual_placement_statistics</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solutions_ids</type>
+          <defname>solutions_ids</defname>
+        </param>
+        <briefdescription>
+<para>Recovers from the database the placement scores for a set of solutions, and returns the mean and standard deviation of the placement score for each of the components of the complex being scored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will be typically used to compute the variation of the placement of each component within a cluster of solutions <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solutions_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ids of the solutions used to compute the statistics </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The output are 4 numpy vectors: placement_distances_mean - The mean placement distance for each component placement_distances_stddev - The standard deviation of the placement distance for each component placement_angles_mean - The mean placement angle for each component placement_angles_stddev - The standard deviation of the placement angle for each component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="606" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="606" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a154a73e97abcc5ea89ccabd6a58a8b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_left_join_command</definition>
+        <argsstring>(self, pairs_table_field, tables_names)</argsstring>
+        <name>get_left_join_command</name>
+        <qualifiedname>solutions_io.ResultsDB.get_left_join_command</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pairs_table_field</type>
+          <defname>pairs_table_field</defname>
+        </param>
+        <param>
+          <type>tables_names</type>
+          <defname>tables_names</defname>
+        </param>
+        <briefdescription>
+<para>Format a left join SQL command that recovers all fields from the tables given. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pairs_table_field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pairs of (table,field) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tables_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Names of the tables</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+E.g. If pairs_table_filed = ((table1,a), (table2,b), (table3,c), (table2,d)) and tables_names = (table1, table2, table3)</para>
+<para>The SQL command is: SELECT table1.a, table2.b, table3.c, table2.d FROM table1 LEFT JOIN table2 ON table1.solution_id = table2.solution_id LEFT JOIN table3 ON table1.solution_id = table3.solution_id WHERE table1.solution_id IS NOT NULL AND table2.solution_id IS NOT NULL AND table3.solution_id IS NOT NULL </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="475" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="475" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a210a2004ac6292492cba8881056c6176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_native_rank</definition>
+        <argsstring>(self, orderby)</argsstring>
+        <name>get_native_rank</name>
+        <qualifiedname>solutions_io.ResultsDB.get_native_rank</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+        </param>
+        <briefdescription>
+<para>Get the position of the native configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orderby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Criterion used to sort the solutions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="571" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="571" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a178377e3c16f42ce091be9694fa9ef29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_native_solution</definition>
+        <argsstring>(self, fields=False)</argsstring>
+        <name>get_native_solution</name>
+        <qualifiedname>solutions_io.ResultsDB.get_native_solution</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Recover data for the native solution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fields to recover </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="345" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="345" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a58c42e33026a28490f8974271b8e4a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_nth_largest_cluster</definition>
+        <argsstring>(self, position, table_name=&apos;clusters&apos;)</argsstring>
+        <name>get_nth_largest_cluster</name>
+        <qualifiedname>solutions_io.ResultsDB.get_nth_largest_cluster</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>position</type>
+          <defname>position</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+          <defval>&apos;clusters&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Recover the information about the n-th largest cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cluster position (by size) requested (1 is the largest cluster) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table where the information about the clusters is stored </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="586" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="586" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a9e9a5c22fa6094531359f7fadb8cfe26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_placement_fields</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_placement_fields</name>
+        <qualifiedname>solutions_io.ResultsDB.get_placement_fields</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Return the names of the placement score fields in the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="425" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="425" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a1621e8d0cfe094daa385af1c3b34f4f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_placement_statistics</definition>
+        <argsstring>(self, solutions_ids)</argsstring>
+        <name>get_placement_statistics</name>
+        <qualifiedname>solutions_io.ResultsDB.get_placement_statistics</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>solutions_ids</type>
+          <defname>solutions_ids</defname>
+        </param>
+        <briefdescription>
+<para>Calculate the placement score and its standard deviation for the complexes in a set of solutions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The values returned are averages, as the placement score for a complex is the average of the placement scores of the components. This function is used to obtain global placement for a cluster of solutions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solutions_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ids of the solutions used to compute the statistics </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The output are 4 values: plcd_mean - Average of the placement distance for the entire complex over all the solutions. plcd_std - Standard deviation of the placement distance for the entire complex over all the solutions. plca_mean - Average of the placement angle for the entire complex over all the solutions. plca_std - Standard deviation of the placement angle for the entire complex over all the solutions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="643" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="643" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1afa81dc11e156b4b54eb2c689785601ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_solutions</definition>
+        <argsstring>(self, fields=False, max_number=None, orderby=False)</argsstring>
+        <name>get_solutions</name>
+        <qualifiedname>solutions_io.ResultsDB.get_solutions</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>max_number</type>
+          <defname>max_number</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Get solutions from the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fields requested. If the fields are in different tables, a left join is done. Otherwise <ref refid="classsolutions__io_1_1ResultsDB_1aef6c2d528dc5af57497b6d6b96541bcb" kindref="member">get_solutions_results_table()</ref> is called. See <ref refid="classsolutions__io_1_1ResultsDB_1aef6c2d528dc5af57497b6d6b96541bcb" kindref="member">get_solutions_results_table()</ref> for the meaning of the parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orderby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="298" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="298" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1ae4bcc768a878b4b1f152706e6ddbeabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_solutions_from_list</definition>
+        <argsstring>(self, fields=False, solutions_ids=[])</argsstring>
+        <name>get_solutions_from_list</name>
+        <qualifiedname>solutions_io.ResultsDB.get_solutions_from_list</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>solutions_ids</type>
+          <defname>solutions_ids</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+<para>Recover solutions for a specific list of results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fields to recover from the database </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solutions_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the desired solutions. E.g. [0,3,6] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="556" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="556" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1aef6c2d528dc5af57497b6d6b96541bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.get_solutions_results_table</definition>
+        <argsstring>(self, fields=False, max_number=None, orderby=False)</argsstring>
+        <name>get_solutions_results_table</name>
+        <qualifiedname>solutions_io.ResultsDB.get_solutions_results_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>max_number</type>
+          <defname>max_number</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Recovers solutions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fields to recover from the table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of solutions to recover </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orderby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the restraint used for sorting the states </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="278" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="278" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1ResultsDB_1a9e2e5e10a2123091b5710e6f62cc074e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.ResultsDB.store_cluster_data</definition>
+        <argsstring>(self)</argsstring>
+        <name>store_cluster_data</name>
+        <qualifiedname>solutions_io.ResultsDB.store_cluster_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Store the data for the clusters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="548" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="548" bodyend="551"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for managing the results of the experiments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>database.Database2</label>
+        <link refid="classdatabase_1_1Database2"/>
+      </node>
+      <node id="1">
+        <label>solutions_io.ResultsDB</label>
+        <link refid="classsolutions__io_1_1ResultsDB"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>database.Database2</label>
+        <link refid="classdatabase_1_1Database2"/>
+      </node>
+      <node id="1">
+        <label>solutions_io.ResultsDB</label>
+        <link refid="classsolutions__io_1_1ResultsDB"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/IMP/EMageFit/solutions_io.py" line="232" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="232" bodyend="645"/>
+    <listofallmembers>
+      <member refid="classsolutions__io_1_1ResultsDB_1a5288e17e4382e7424f6bea279db5a02e" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_ccc_table</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a7c8d1410a81dd149fb178973f8917f65" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_cluster_record</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a223665c9ef729148d3755cc4fa27e577" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_clusters_table</name></member>
+      <member refid="classdatabase_1_1Database2_1aa6a001c7dc3affc96501d75445136109" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_column</name></member>
+      <member refid="classdatabase_1_1Database2_1aea98465b1764ff367733b2104f96369e" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_columns</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a13cc1cee9d77600dab8000af38350061" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_native_record</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a97a2aa6e2636a0c5fb7f842b1f9f23a7" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_placement_scores_table</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a88057beb994685ef1da39eb2f6c57296" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_record</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a67161f58d4618a13582a7b87bbc14bad" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>add_results_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a8230c7e781e2a88212e33ab1e51f913d" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>check_if_is_connected</name></member>
+      <member refid="classdatabase_1_1Database2_1a8774a37878c5d01db0cc74877f23c475" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>close</name></member>
+      <member refid="classdatabase_1_1Database2_1a103d67b9465154178ca7757c5437bfbe" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>connect</name></member>
+      <member refid="classdatabase_1_1Database2_1a17c823da2c69929a135bab3c3a922cea" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>create</name></member>
+      <member refid="classdatabase_1_1Database2_1aaea851dba1c2bfe467975eaa657e5bee" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>create_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a398eb8bd52f2f3ae94fa1f5dfe767638" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>create_view</name></member>
+      <member refid="classdatabase_1_1Database2_1a7067103e2feab5b71ad247f30119dd23" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>drop_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a22d93fce6f36d3b98f994790e46577bb" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>drop_view</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a192fc2d7a3bb8af92816464ccebbca3d" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>format_ccc_record</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1aeebdbcffcfd07a9a2e1792a7eeddc923" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>format_placement_record</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1ad6c96de3a8560293afac83c6057d8c7e" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_ccc</name></member>
+      <member refid="classdatabase_1_1Database2_1af066724cbff90d1a2baa0803a71d875b" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_condition_string</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a9821c116ab0a4b37d7ededb879d24d50" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_individual_placement_statistics</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a154a73e97abcc5ea89ccabd6a58a8b73" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_left_join_command</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a210a2004ac6292492cba8881056c6176" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_native_rank</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a178377e3c16f42ce091be9694fa9ef29" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_native_solution</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a58c42e33026a28490f8974271b8e4a0f" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_nth_largest_cluster</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a9e9a5c22fa6094531359f7fadb8cfe26" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_placement_fields</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a1621e8d0cfe094daa385af1c3b34f4f4" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_placement_statistics</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1afa81dc11e156b4b54eb2c689785601ba" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_solutions</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1ae4bcc768a878b4b1f152706e6ddbeabe" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_solutions_from_list</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1aef6c2d528dc5af57497b6d6b96541bcb" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_solutions_results_table</name></member>
+      <member refid="classdatabase_1_1Database2_1ad9dbb99672f38f1284bb40acb14810e9" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_table</name></member>
+      <member refid="classdatabase_1_1Database2_1aab56bdc976ceedb6e9557aac97ffed95" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_table_column_names</name></member>
+      <member refid="classdatabase_1_1Database2_1a2fa40eea056016db9bc344c630e0e3ec" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>get_table_types</name></member>
+      <member refid="classdatabase_1_1Database2_1ab2bd9ca3acab93621573876401b26e70" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>retrieve_data</name></member>
+      <member refid="classdatabase_1_1Database2_1a4837e84cf1ce1e8878ccfc6b5585c6c9" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>select_table</name></member>
+      <member refid="classsolutions__io_1_1ResultsDB_1a9e2e5e10a2123091b5710e6f62cc074e" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>store_cluster_data</name></member>
+      <member refid="classdatabase_1_1Database2_1a7a308d771a2b75d6401e16851daaf47c" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>store_data</name></member>
+      <member refid="classdatabase_1_1Database2_1a14a23bea65d779efd4c9ffdec73a486a" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>store_dataV1</name></member>
+      <member refid="classdatabase_1_1Database2_1ad04f392b2827ea181fd578e4c1b58cdd" prot="public" virt="non-virtual"><scope>solutions_io::ResultsDB</scope><name>update_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

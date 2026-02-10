@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="DataPointsAssignment_8h" kind="file" language="C++">
+    <compoundname>DataPointsAssignment.h</compoundname>
+    <includes local="no">IMP/atom/pdb.h</includes>
+    <includes local="no">IMP/atom/Hierarchy.h</includes>
+    <includes local="no">IMP/atom/Atom.h</includes>
+    <includes local="no">IMP/atom/Chain.h</includes>
+    <includes local="no">IMP/core/XYZ.h</includes>
+    <includes local="no">IMP/core/rigid_bodies.h</includes>
+    <includes local="no">IMP/statistics/internal/ClusteringEngine.h</includes>
+    <includes local="no">IMP/statistics/internal/DataPoints.h</includes>
+    <includes refid="DensityDataPoints_8h" local="no">IMP/multifit/DensityDataPoints.h</includes>
+    <includes refid="multifit__config_8h" local="no">IMP/multifit/multifit_config.h</includes>
+    <includedby refid="anchor__utilities_8h" local="yes">anchor_utilities.h</includedby>
+    <includedby refid="anchors__reader_8h" local="yes">anchors_reader.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>DataPointsAssignment.h</label>
+        <link refid="DataPointsAssignment_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/atom/Atom.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/atom/Chain.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/atom/Hierarchy.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/atom/pdb.h</label>
+      </node>
+      <node id="6">
+        <label>IMP/core/XYZ.h</label>
+      </node>
+      <node id="7">
+        <label>IMP/core/rigid_bodies.h</label>
+      </node>
+      <node id="8">
+        <label>IMP/statistics/internal/ClusteringEngine.h</label>
+      </node>
+      <node id="9">
+        <label>IMP/statistics/internal/DataPoints.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1multifit_1_1DataPointsAssignment" prot="public">IMP::multifit::DataPointsAssignment</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit">IMP::multifit</innernamespace>
+    <briefdescription>
+<para>Tools for data points assignment, after anchor point segmentation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/DataPointsAssignment.h"/>
+  </compounddef>
+</doxygen>

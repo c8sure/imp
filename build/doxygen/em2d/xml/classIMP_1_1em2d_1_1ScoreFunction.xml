@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ScoreFunction" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::em2d::ScoreFunction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1ChiSquaredScore" prot="public" virt="non-virtual">IMP::em2d::ChiSquaredScore</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1EM2DScore" prot="public" virt="non-virtual">IMP::em2d::EM2DScore</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference" prot="public" virt="non-virtual">IMP::em2d::MeanAbsoluteDifference</derivedcompoundref>
+    <includes local="no">IMP/em2d/scores2D.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ScoreFunction_1a39a24a1c413c4e1d3b071d1baa553505" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::ScoreFunction::n_members_</definition>
+        <argsstring></argsstring>
+        <name>n_members_</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::n_members_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="71" column="16" bodyfile="include/IMP/em2d/scores2D.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1acc5f9b38b14cbfcc0929fa72d4bf05e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ScoreFunction::ScoreFunction</definition>
+        <argsstring>()</argsstring>
+        <name>ScoreFunction</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::ScoreFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="57" column="3" bodyfile="include/IMP/em2d/scores2D.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1ab7dfd6b37668cc737cbe12e2d101065f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::ScoreFunction::~ScoreFunction</definition>
+        <argsstring>()</argsstring>
+        <name>~ScoreFunction</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::~ScoreFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="67" column="231" bodyfile="include/IMP/em2d/scores2D.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1ad147911a73dec50fd79a5f31191820fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ScoreFunction::get_score</definition>
+        <argsstring>(Image *image, Image *projection) const</argsstring>
+        <name>get_score</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::get_score</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+<para>Given an image and a projection, returns the appropriate score. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="60" column="10" bodyfile="include/IMP/em2d/scores2D.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1a7181fa238aec5756809e92ced93e5264" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::ScoreFunction::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="67" column="34" bodyfile="include/IMP/em2d/scores2D.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1aed5d5636adbe8597873ed8e782c5941d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::ScoreFunction::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="67" column="103" bodyfile="include/IMP/em2d/scores2D.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1afb6049939c1645c590a5b4e0911578ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ScoreFunction::set_variance_image</definition>
+        <argsstring>(Image *var)</argsstring>
+        <name>set_variance_image</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::set_variance_image</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="65" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1a936827b9594e03838640cf7f0fc04155" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double IMP::em2d::ScoreFunction::get_private_score</definition>
+        <argsstring>(Image *image, Image *projection) const =0</argsstring>
+        <name>get_private_score</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::get_private_score</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1ChiSquaredScore_1a663fd20f4ffdbb62281ce54bb2d37463">get_private_score</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1EM2DScore_1a389bd2a3ba2f77361052a84e09abd922">get_private_score</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference_1ad0eb8d7f3bfca9981ace76494d2c087b">get_private_score</reimplementedby>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ScoreFunction_1a75e086aa82705e1efa5501d2b264f200" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ScoreFunction::set_variance_image_private</definition>
+        <argsstring>(Image *image)</argsstring>
+        <name>set_variance_image_private</name>
+        <qualifiedname>IMP::em2d::ScoreFunction::set_variance_image_private</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="75" column="16" bodyfile="include/IMP/em2d/scores2D.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for all scoring functions related to <ref refid="namespaceIMP_1_1em2d" kindref="compound">em2d</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::em2d::ChiSquaredScore</label>
+        <link refid="classIMP_1_1em2d_1_1ChiSquaredScore"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::em2d::EM2DScore</label>
+        <link refid="classIMP_1_1em2d_1_1EM2DScore"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::em2d::MeanAbsoluteDifference</label>
+        <link refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::ScoreFunction</label>
+        <link refid="classIMP_1_1em2d_1_1ScoreFunction"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/em2d/scores2D.h" line="55" column="1" bodyfile="include/IMP/em2d/scores2D.h" bodystart="55" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a936827b9594e03838640cf7f0fc04155" prot="private" virt="pure-virtual"><scope>IMP::em2d::ScoreFunction</scope><name>get_private_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ad147911a73dec50fd79a5f31191820fb" prot="public" virt="non-virtual"><scope>IMP::em2d::ScoreFunction</scope><name>get_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a7181fa238aec5756809e92ced93e5264" prot="public" virt="virtual"><scope>IMP::em2d::ScoreFunction</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1aed5d5636adbe8597873ed8e782c5941d" prot="public" virt="virtual"><scope>IMP::em2d::ScoreFunction</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a39a24a1c413c4e1d3b071d1baa553505" prot="protected" virt="non-virtual"><scope>IMP::em2d::ScoreFunction</scope><name>n_members_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1acc5f9b38b14cbfcc0929fa72d4bf05e1" prot="public" virt="non-virtual"><scope>IMP::em2d::ScoreFunction</scope><name>ScoreFunction</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1afb6049939c1645c590a5b4e0911578ac" prot="public" virt="non-virtual"><scope>IMP::em2d::ScoreFunction</scope><name>set_variance_image</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a75e086aa82705e1efa5501d2b264f200" prot="private" virt="virtual"><scope>IMP::em2d::ScoreFunction</scope><name>set_variance_image_private</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ab7dfd6b37668cc737cbe12e2d101065f" prot="public" virt="virtual"><scope>IMP::em2d::ScoreFunction</scope><name>~ScoreFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

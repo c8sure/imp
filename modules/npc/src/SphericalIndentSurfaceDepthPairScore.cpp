@@ -8,6 +8,7 @@
 #include <IMP/npc/SphericalIndentSurfaceDepthPairScore.h>
 #include <IMP/core/XYZ.h>
 #include <IMP/UnaryFunction.h>
+#include <cmath>
 //#include <boost/lambda/lambda.hpp>
 
 IMPNPC_BEGIN_NAMESPACE
@@ -42,7 +43,6 @@ double SphericalIndentSurfaceDepthPairScore::evaluate_index(Model *m,
     //double score=get_surface_distance()
     double score;
     double dv;
-    double r_norm;
 
     // get the surface distance.
     double R = d1.get_sphere_radius();
@@ -51,28 +51,33 @@ double SphericalIndentSurfaceDepthPairScore::evaluate_index(Model *m,
     // compute the base circle radius
     double a_sqrd = h*(2.0*R-h);
 
-    // compute score for being above the indent
+    // Indent (dome) region: dome opens at z=0, bulges up; sphere center at z = -(R-h)
     if ((x*x+y*y) < a_sqrd) {
-        // if z is above plane, ignore
         if (z < 0.0) {
-            score = 0.0;
-        }
-        else {
-            r_norm = sqrt(x*x + y*y + square(z - R + h));
-            if (r_norm > R) {
-                score = 0.5 * k_ * square(r_norm - R);
-                // do derivatives
+            score = 0.0;  // below plane, no penalty
+        } else {
+            // Dome surface z at (x,y): (h-R) + sqrt(R^2 - x^2 - y^2)
+            double d = std::sqrt(R * R - x * x - y * y);
+            double z_surface = (h - R) + d;
+            double penetration = z - z_surface;
+            if (penetration > 0.0) {
+                score = 0.5 * k_ * square(penetration);
                 if (da) {
-                    dv = -k_ * (r_norm - R);
-                    algebra::Vector3D udelta = algebra::Vector3D(x, y, z-R+h); // vec to sphere center
-                    d2.add_to_derivatives(udelta * dv / r_norm, *da);
+                    dv = k_ * penetration;
+                    algebra::Vector3D grad(0.0, 0.0, dv);
+                    if (d > 1e-10) {
+                        grad[0] = dv * x / d;
+                        grad[1] = dv * y / d;
+                    }
+                    d2.add_to_derivatives(grad, *da);
                 }
-            }
-            else {
+            } else {
                 score = 0.0;
             }
-
         }
+        // Old convention (bowl: sphere center at z = R-h, penalize when r_norm > R):
+        // r_norm = sqrt(x*x + y*y + square(z - R + h));
+        // if (r_norm > R) { score = 0.5 * k_ * square(r_norm - R); ... } else { score = 0.0; }
     }
     // compute score for being outside the indent
     else {

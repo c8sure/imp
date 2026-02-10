@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1RestraintCache" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::RestraintCache</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/domino/subset_scores.h</includes>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1ApproximatelyEqual" prot="private">IMP::domino::RestraintCache::ApproximatelyEqual</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1Key" prot="private">IMP::domino::RestraintCache::Key</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData" prot="private">IMP::domino::RestraintCache::RestraintData</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData" prot="private">IMP::domino::RestraintCache::RestraintSetData</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData" prot="private">IMP::domino::RestraintCache::SetData</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1a204972361d83c22465d8465bf0b18276" prot="private" static="no">
+        <type>boost::unordered_map&lt; Particle *, ParticlesTemp &gt;</type>
+        <definition>typedef boost::unordered_map&lt;Particle *, ParticlesTemp&gt; IMP::domino::RestraintCache::DepMap</definition>
+        <argsstring></argsstring>
+        <name>DepMap</name>
+        <qualifiedname>IMP::domino::RestraintCache::DepMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="139" column="7" bodyfile="include/IMP/domino/subset_scores.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1acac06c433943dbcee46fa251777abf2a" prot="private" static="no">
+        <type>IMP::Vector&lt; Key &gt;</type>
+        <definition>typedef IMP::Vector&lt;Key&gt; IMP::domino::RestraintCache::Keys</definition>
+        <argsstring></argsstring>
+        <name>Keys</name>
+        <qualifiedname>IMP::domino::RestraintCache::Keys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of Key. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="43" column="52" bodyfile="include/IMP/domino/subset_scores.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1acbb602b712de0e4786228344c13f2b30" prot="private" static="no">
+        <type>boost::unordered_map&lt; Pointer&lt; Restraint &gt;, <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &gt;</type>
+        <definition>typedef boost::unordered_map&lt;Pointer&lt;Restraint&gt;, Subset&gt; IMP::domino::RestraintCache::KnownRestraints</definition>
+        <argsstring></argsstring>
+        <name>KnownRestraints</name>
+        <qualifiedname>IMP::domino::RestraintCache::KnownRestraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="158" column="7" bodyfile="include/IMP/domino/subset_scores.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1ac09ee7cc604b97a3451c49ebd0ab1d0c" prot="private" static="no">
+        <type>IMP::Vector&lt; RestraintData &gt;</type>
+        <definition>typedef IMP::Vector&lt;RestraintData&gt; IMP::domino::RestraintCache::RestraintDatas</definition>
+        <argsstring></argsstring>
+        <name>RestraintDatas</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintDatas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of RestraintData. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="46" column="62" bodyfile="include/IMP/domino/subset_scores.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1a1363e60a85ab18208977483b66f8f88b" prot="private" static="no">
+        <type>boost::unordered_map&lt; Pointer&lt; Restraint &gt;, int &gt;</type>
+        <definition>typedef boost::unordered_map&lt;Pointer&lt;Restraint&gt;, int&gt; IMP::domino::RestraintCache::RestraintIndex</definition>
+        <argsstring></argsstring>
+        <name>RestraintIndex</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="162" column="7" bodyfile="include/IMP/domino/subset_scores.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1a7478c0f0bb383b16f74750b32e9cf193" prot="private" static="no">
+        <type>IMP::Vector&lt; RestraintSetData &gt;</type>
+        <definition>typedef IMP::Vector&lt;RestraintSetData&gt; IMP::domino::RestraintCache::RestraintSetDatas</definition>
+        <argsstring></argsstring>
+        <name>RestraintSetDatas</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetDatas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of RestraintSetData. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="65" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1RestraintCache_1a0541b36991c61f031c7c3907b43c5a7d" prot="private" static="no">
+        <type>IMP::Vector&lt; SetData &gt;</type>
+        <definition>typedef IMP::Vector&lt;SetData&gt; IMP::domino::RestraintCache::SetDatas</definition>
+        <argsstring></argsstring>
+        <name>SetDatas</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetDatas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of SetData. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="56" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RestraintCache_1ad756d6a4f0666d25ed6f1e6c4e0c818a" prot="private" static="no" mutable="no">
+        <type>KnownRestraints</type>
+        <definition>KnownRestraints IMP::domino::RestraintCache::known_restraints_</definition>
+        <argsstring></argsstring>
+        <name>known_restraints_</name>
+        <qualifiedname>IMP::domino::RestraintCache::known_restraints_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="159" column="19" bodyfile="include/IMP/domino/subset_scores.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RestraintCache_1aeba72c202488bfa2d802a7d366e2efe1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::RestraintCache::next_index_</definition>
+        <argsstring></argsstring>
+        <name>next_index_</name>
+        <qualifiedname>IMP::domino::RestraintCache::next_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="164" column="16" bodyfile="include/IMP/domino/subset_scores.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RestraintCache_1a454bc04ee8dd931d70310a102eb2b639" prot="private" static="no" mutable="no">
+        <type>RestraintIndex</type>
+        <definition>RestraintIndex IMP::domino::RestraintCache::restraint_index_</definition>
+        <argsstring></argsstring>
+        <name>restraint_index_</name>
+        <qualifiedname>IMP::domino::RestraintCache::restraint_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="163" column="18" bodyfile="include/IMP/domino/subset_scores.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1ab63563966e52189ed4944e938c148660" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::add_restraint_internal</definition>
+        <argsstring>(Restraint *r, unsigned int index, RestraintSet *parent, double max, Subset parent_subset, const DepMap &amp;dependencies)</argsstring>
+        <name>add_restraint_internal</name>
+        <qualifiedname>IMP::domino::RestraintCache::add_restraint_internal</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>parent_subset</declname>
+        </param>
+        <param>
+          <type>const DepMap &amp;</type>
+          <declname>dependencies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="140" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1afec39699a2c73dfbe5176b6564c02124" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::add_restraint_set_child_internal</definition>
+        <argsstring>(Restraint *r, const Subset &amp;cur_subset, RestraintSet *parent, double parent_max, Subset parent_subset)</argsstring>
+        <name>add_restraint_set_child_internal</name>
+        <qualifiedname>IMP::domino::RestraintCache::add_restraint_set_child_internal</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>cur_subset</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>parent_max</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>parent_subset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="143" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1ae7e20f6f1ca49677a51ed9bd7b1884e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::add_restraint_set_internal</definition>
+        <argsstring>(RestraintSet *rs, unsigned int index, const Subset &amp;cur_subset, double cur_max, const DepMap &amp;dependencies)</argsstring>
+        <name>add_restraint_set_internal</name>
+        <qualifiedname>IMP::domino::RestraintCache::add_restraint_set_internal</qualifiedname>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>cur_subset</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cur_max</declname>
+        </param>
+        <param>
+          <type>const DepMap &amp;</type>
+          <declname>dependencies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="148" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1aa7075e21657e40ebf721ff55b52a9cad" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::RestraintCache::get_subset</definition>
+        <argsstring>(Restraint *r, const DepMap &amp;dependencies) const</argsstring>
+        <name>get_subset</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_subset</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const DepMap &amp;</type>
+          <declname>dependencies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="151" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1aa442ea37df1d8b970993d4ce57c6e68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RestraintCache::RestraintCache</definition>
+        <argsstring>(ParticleStatesTable *pst, unsigned int size=std::numeric_limits&lt; unsigned int &gt;::max())</argsstring>
+        <name>RestraintCache</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintCache</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+          <defval>std::numeric_limits&lt; unsigned int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="167" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a5511a57a42e8808f60b73271047ac4df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::RestraintCache::~RestraintCache</definition>
+        <argsstring>()</argsstring>
+        <name>~RestraintCache</name>
+        <qualifiedname>IMP::domino::RestraintCache::~RestraintCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="231" column="231" bodyfile="include/IMP/domino/subset_scores.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a7f717d32d3a03455618395539b261846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::add_restraints</definition>
+        <argsstring>(const RestraintsAdaptor &amp;rs)</argsstring>
+        <name>add_restraints</name>
+        <qualifiedname>IMP::domino::RestraintCache::add_restraints</qualifiedname>
+        <param>
+          <type>const RestraintsAdaptor &amp;</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recursively process the passed restraints (and sets) so all contained restraints and sets that have maximum are known. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="171" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1acef2031bdaa6aedeb1f833ce55e8f553" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::domino::RestraintCache::get_hit_rate</definition>
+        <argsstring>() const</argsstring>
+        <name>get_hit_rate</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_hit_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="230" column="10" bodyfile="include/IMP/domino/subset_scores.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1ac8fe0413b14847abcb7c6825d9c2c57a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::RestraintCache::get_number_of_entries</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_entries</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_number_of_entries</qualifiedname>
+        <briefdescription>
+<para>Return the number of entries currently in the cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="223" column="16" bodyfile="include/IMP/domino/subset_scores.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a139298f71aabcbe3a1efc84e51340b37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::domino::RestraintCache::get_restraints</definition>
+        <argsstring>() const</argsstring>
+        <name>get_restraints</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="202" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a631f20394a65b289da020b509c3838a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::domino::RestraintCache::get_restraints</definition>
+        <argsstring>(const Subset &amp;s, const Subsets &amp;exclusions) const</argsstring>
+        <name>get_restraints</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_restraints</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>exclusions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the restraints that should be evaluated for the subset, given the exclusions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="199" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a172773374b37d174e7fb4e910ad5fca0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::domino::RestraintCache::get_score</definition>
+        <argsstring>(Restraint *r, const Assignment &amp;a) const</argsstring>
+        <name>get_score</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_score</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Get the score of a set or restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned score will be std::numeric_limits&lt;double&gt;::max() if any of the limits are violated.</para>
+<para>The assignment passed is the assignment for the particles used by the restraint, not that for some whole subset. See the other <ref refid="classIMP_1_1domino_1_1RestraintCache_1a172773374b37d174e7fb4e910ad5fca0" kindref="member">get_score()</ref> function for a perhaps more useful one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="180" column="10" bodyfile="include/IMP/domino/subset_scores.h" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a7a8e78d7f668f8a60b6fc0a02df58b16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::domino::RestraintCache::get_score</definition>
+        <argsstring>(Restraint *r, const Subset &amp;s, const Assignment &amp;a) const</argsstring>
+        <name>get_score</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_score</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the score for a restraint given a subset and assignment on that subset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a11d41b0adf1bdc67e790eb9acb7787c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref></type>
+        <definition>Slice IMP::domino::RestraintCache::get_slice</definition>
+        <argsstring>(Restraint *r, const Subset &amp;s) const</argsstring>
+        <name>get_slice</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_slice</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Return the slice for that restraint given the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="220" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a72ab6a47df48508011820529688722dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::RestraintCache::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="231" column="34" bodyfile="include/IMP/domino/subset_scores.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a886eba211145ea7b38913a48b918b4a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::RestraintCache::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::RestraintCache::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="231" column="103" bodyfile="include/IMP/domino/subset_scores.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a88b21c74bccae54aa694be8260aed83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::load_cache</definition>
+        <argsstring>(const ParticlesTemp &amp;ps, RMF::HDF5::ConstGroup group)</argsstring>
+        <name>load_cache</name>
+        <qualifiedname>IMP::domino::RestraintCache::load_cache</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>RMF::HDF5::ConstGroup</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="216" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a7cb8d67a4032980ccdbbb2393c4a8aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::load_last_score</definition>
+        <argsstring>(Restraint *r, const Subset &amp;s, const Assignment &amp;a)</argsstring>
+        <name>load_last_score</name>
+        <qualifiedname>IMP::domino::RestraintCache::load_last_score</qualifiedname>
+        <param>
+          <type>Restraint *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Make it so Restraint::get_last_score() returns the score. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is useful when writing the restraints to disk, as that code often goes off the last score to avoid recomputing the restraints. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="195" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a2997d5f930386359987e678d52e63a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::save_cache</definition>
+        <argsstring>(const ParticlesTemp &amp;particle_ordering, const RestraintsTemp &amp;restraints, RMF::HDF5::Group group, unsigned int max_entries)</argsstring>
+        <name>save_cache</name>
+        <qualifiedname>IMP::domino::RestraintCache::save_cache</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>particle_ordering</declname>
+        </param>
+        <param>
+          <type>const RestraintsTemp &amp;</type>
+          <declname>restraints</declname>
+        </param>
+        <param>
+          <type>RMF::HDF5::Group</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_entries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This assumes that restraints are always added to the cache in the same order. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">particle_ordering</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An ordering for the particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">restraints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which restraints to write out entries for. You probably want to use <ref refid="classIMP_1_1domino_1_1RestraintCache_1a631f20394a65b289da020b509c3838a6" kindref="member">get_restraints()</ref> to generate this. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many entries to write out at most. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to put the entries. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="213" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a1236fa8ddc3d73b7b326e19ed7e16c7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::show_restraint_information</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show_restraint_information</name>
+        <qualifiedname>IMP::domino::RestraintCache::show_restraint_information</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+<para>Print out information about the known restraints and restraint sets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="229" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintCache_1a39917ea290416c3c6e4af76aba5d5b89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::validate</definition>
+        <argsstring>() const</argsstring>
+        <name>validate</name>
+        <qualifiedname>IMP::domino::RestraintCache::validate</qualifiedname>
+        <briefdescription>
+<para>Check the entries in the cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="226" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implement a cache for restraint scores as well as management of restraints for domino.</para>
+<para>The cache size passed to the constructor is the maximum number of scores that will be saved. A least-recently-used eviction policy is used when that number is exceeded. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_scores.h" line="41" column="1" bodyfile="include/IMP/domino/subset_scores.h" bodystart="41" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1ab63563966e52189ed4944e938c148660" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>add_restraint_internal</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1afec39699a2c73dfbe5176b6564c02124" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>add_restraint_set_child_internal</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1ae7e20f6f1ca49677a51ed9bd7b1884e0" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>add_restraint_set_internal</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a7f717d32d3a03455618395539b261846" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>add_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a204972361d83c22465d8465bf0b18276" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>DepMap</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1acef2031bdaa6aedeb1f833ce55e8f553" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_hit_rate</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1ac8fe0413b14847abcb7c6825d9c2c57a" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_number_of_entries</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a631f20394a65b289da020b509c3838a6" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a139298f71aabcbe3a1efc84e51340b37" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a172773374b37d174e7fb4e910ad5fca0" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_score</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a7a8e78d7f668f8a60b6fc0a02df58b16" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_score</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a11d41b0adf1bdc67e790eb9acb7787c4" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_slice</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1aa7075e21657e40ebf721ff55b52a9cad" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>get_subset</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a72ab6a47df48508011820529688722dd" prot="public" virt="virtual"><scope>IMP::domino::RestraintCache</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a886eba211145ea7b38913a48b918b4a8" prot="public" virt="virtual"><scope>IMP::domino::RestraintCache</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1acac06c433943dbcee46fa251777abf2a" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>Keys</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1ad756d6a4f0666d25ed6f1e6c4e0c818a" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>known_restraints_</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1acbb602b712de0e4786228344c13f2b30" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>KnownRestraints</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a88b21c74bccae54aa694be8260aed83e" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>load_cache</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a7cb8d67a4032980ccdbbb2393c4a8aad" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>load_last_score</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1aeba72c202488bfa2d802a7d366e2efe1" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>next_index_</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a454bc04ee8dd931d70310a102eb2b639" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>restraint_index_</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1aa442ea37df1d8b970993d4ce57c6e68a" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>RestraintCache</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1ac09ee7cc604b97a3451c49ebd0ab1d0c" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>RestraintDatas</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a1363e60a85ab18208977483b66f8f88b" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>RestraintIndex</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a7478c0f0bb383b16f74750b32e9cf193" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>RestraintSetDatas</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a2997d5f930386359987e678d52e63a4b" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>save_cache</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a0541b36991c61f031c7c3907b43c5a7d" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>SetDatas</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a1236fa8ddc3d73b7b326e19ed7e16c7e" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>show_restraint_information</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a39917ea290416c3c6e4af76aba5d5b89" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache</scope><name>validate</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintCache_1a5511a57a42e8808f60b73271047ac4df" prot="public" virt="virtual"><scope>IMP::domino::RestraintCache</scope><name>~RestraintCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

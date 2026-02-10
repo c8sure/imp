@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1RogParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::RogParams</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1RogParams_1a44ecbe91c96cc420a8286ea2f5f193a8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::RogParams::max_score_</definition>
+        <argsstring></argsstring>
+        <name>max_score_</name>
+        <qualifiedname>IMP::multifit::RogParams::max_score_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="170" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1RogParams_1a849432f8d5443ff43efbcf775baa840e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::RogParams::scale_</definition>
+        <argsstring></argsstring>
+        <name>scale_</name>
+        <qualifiedname>IMP::multifit::RogParams::scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="170" column="20" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1RogParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::RogParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="171" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1a80ef67b15a4074aea10b1d5f3461845a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::RogParams::RogParams</definition>
+        <argsstring>()</argsstring>
+        <name>RogParams</name>
+        <qualifiedname>IMP::multifit::RogParams::RogParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="156" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1aa3abbd92fa675a41067707050eace167" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RogParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::RogParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="157" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1ad6d8896a07b98164ac1bee4d9ed96e50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::RogParams::get_max_score</definition>
+        <argsstring>() const</argsstring>
+        <name>get_max_score</name>
+        <qualifiedname>IMP::multifit::RogParams::get_max_score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="161" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1a4a34b79e0f80f9e82e5962269dc2fbdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::RogParams::get_scale</definition>
+        <argsstring>() const</argsstring>
+        <name>get_scale</name>
+        <qualifiedname>IMP::multifit::RogParams::get_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="162" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1aa934943b5a0446ebc52b215102224841" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RogParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::RogParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="163" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1RogParams_1abd5821760bb4b2f0a7a3d10ab44d893d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::RogParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::RogParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="173" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="173" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="154" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="154" bodyend="176"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1aa3abbd92fa675a41067707050eace167" prot="public" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1ad6d8896a07b98164ac1bee4d9ed96e50" prot="public" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>get_max_score</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1a4a34b79e0f80f9e82e5962269dc2fbdb" prot="public" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>get_scale</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1a44ecbe91c96cc420a8286ea2f5f193a8" prot="private" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>max_score_</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1a80ef67b15a4074aea10b1d5f3461845a" prot="public" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>RogParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1a849432f8d5443ff43efbcf775baa840e" prot="private" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>scale_</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1abd5821760bb4b2f0a7a3d10ab44d893d" prot="private" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1RogParams_1aa934943b5a0446ebc52b215102224841" prot="public" virt="non-virtual"><scope>IMP::multifit::RogParams</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

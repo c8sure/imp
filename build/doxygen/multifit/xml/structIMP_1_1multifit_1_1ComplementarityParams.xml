@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1ComplementarityParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::ComplementarityParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1a75dc3306eecbb3f12de3ad40b30667f6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::boundary_coef_</definition>
+        <argsstring></argsstring>
+        <name>boundary_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::boundary_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="323" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1af468aaca4a16158438dc6371d2b187af" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::comp_coef_</definition>
+        <argsstring></argsstring>
+        <name>comp_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::comp_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="323" column="24" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1a5aca939ea4450aff111139ab274d200c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::interior_layer_thickness_</definition>
+        <argsstring></argsstring>
+        <name>interior_layer_thickness_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::interior_layer_thickness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="322" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1a0592d5ac981326b4abdc2183c752a2fc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::max_penetration_</definition>
+        <argsstring></argsstring>
+        <name>max_penetration_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::max_penetration_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="321" column="20" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1adb83c5b548544373102c021a214629d3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::max_score_</definition>
+        <argsstring></argsstring>
+        <name>max_score_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::max_score_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="321" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ComplementarityParams_1a7dd160a639f69b1f32c1ec0bf37fb7a4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityParams::penetration_coef_</definition>
+        <argsstring></argsstring>
+        <name>penetration_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::penetration_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="323" column="35" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1ComplementarityParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="325" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ComplementarityParams_1a046e59b6c5d19f3149b973037c2e7d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ComplementarityParams::ComplementarityParams</definition>
+        <argsstring>()</argsstring>
+        <name>ComplementarityParams</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::ComplementarityParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="295" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="295" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ComplementarityParams_1aa48ac2c4cd4cf572506a4969a91b64a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="302" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="302" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ComplementarityParams_1aefcd7cf32954a480b8be31694d5a1f88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="311" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="311" bodyend="318"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ComplementarityParams_1a1bc0f36ed3b029440f525bf3b646fa1e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::ComplementarityParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="327" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="327" bodyend="330"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="293" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="293" bodyend="331"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1aa48ac2c4cd4cf572506a4969a91b64a7" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a75dc3306eecbb3f12de3ad40b30667f6" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>boundary_coef_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1af468aaca4a16158438dc6371d2b187af" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>comp_coef_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a046e59b6c5d19f3149b973037c2e7d66" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>ComplementarityParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a5aca939ea4450aff111139ab274d200c" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>interior_layer_thickness_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a0592d5ac981326b4abdc2183c752a2fc" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>max_penetration_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1adb83c5b548544373102c021a214629d3" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>max_score_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a7dd160a639f69b1f32c1ec0bf37fb7a4" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>penetration_coef_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a1bc0f36ed3b029440f525bf3b646fa1e" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1aefcd7cf32954a480b8be31694d5a1f88" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityParams</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

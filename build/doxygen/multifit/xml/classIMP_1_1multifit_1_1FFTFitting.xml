@@ -1,0 +1,1502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1FFTFitting" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::FFTFitting</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/fft_based_rigid_fitting.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a219ce1447901c5e07e307272a5d21345" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::asmb_norm_</definition>
+        <argsstring></argsstring>
+        <name>asmb_norm_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::asmb_norm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="74" column="24" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aabb824cdadbf5fee5163103f099922ab" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">multifit::FittingSolutionRecords</ref></type>
+        <definition>multifit::FittingSolutionRecords IMP::multifit::FFTFitting::best_fits_</definition>
+        <argsstring></argsstring>
+        <name>best_fits_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::best_fits_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="101" column="36" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a9f8802530728193f986c00ad670138e0" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::FFTFitting::best_trans_per_rot_log_</definition>
+        <argsstring></argsstring>
+        <name>best_trans_per_rot_log_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::best_trans_per_rot_log_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="48" column="26" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1af7aeda5f915a48828c99a07107d32d90" prot="protected" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::multifit::FFTFitting::cen_trans_</definition>
+        <argsstring></argsstring>
+        <name>cen_trans_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::cen_trans_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="50" column="29" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a41710d7bc9f67f1980ab7d783f4b175a" prot="protected" static="no" mutable="no">
+        <type>atom::Hierarchy</type>
+        <definition>atom::Hierarchy IMP::multifit::FFTFitting::copy_mol_</definition>
+        <argsstring></argsstring>
+        <name>copy_mol_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::copy_mol_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="87" column="19" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a17b6c9d245a116e858f5904fe9102e00" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FFTFitting::corr_mode_</definition>
+        <argsstring></argsstring>
+        <name>corr_mode_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::corr_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="93" column="7" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a8239ef1504cc0ffac7ec62642b4b451e" prot="protected" static="no" mutable="no">
+        <type>internal::FFTScores</type>
+        <definition>internal::FFTScores IMP::multifit::FFTFitting::fft_scores_</definition>
+        <argsstring></argsstring>
+        <name>fft_scores_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fft_scores_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="102" column="23" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a6abf892d48116e915c4eb6156a4fa6c2" prot="protected" static="no" mutable="no">
+        <type>internal::FFTScores</type>
+        <definition>internal::FFTScores IMP::multifit::FFTFitting::fft_scores_flipped_</definition>
+        <argsstring></argsstring>
+        <name>fft_scores_flipped_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fft_scores_flipped_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="105" column="23" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab9d601a0c3ddb079fe4dcdb00a9c3b59" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; fftw_complex &gt;</type>
+        <definition>internal::FFTWGrid&lt;fftw_complex&gt; IMP::multifit::FFTFitting::fftw_grid_hi_</definition>
+        <argsstring></argsstring>
+        <name>fftw_grid_hi_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_grid_hi_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="79" column="36" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a7ba2bfce2c6f188b253b19ef82f302c3" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; fftw_complex &gt;</type>
+        <definition>internal::FFTWGrid&lt;fftw_complex&gt; IMP::multifit::FFTFitting::fftw_grid_lo_</definition>
+        <argsstring></argsstring>
+        <name>fftw_grid_lo_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_grid_lo_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="79" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a166e229d546006928306bcd2b1ae7a32" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long IMP::multifit::FFTFitting::fftw_nvox_c2r_</definition>
+        <argsstring></argsstring>
+        <name>fftw_nvox_c2r_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_nvox_c2r_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="78" column="17" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aa6ef2b4b9fe870142e7b73aa5fd1d2b2" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long IMP::multifit::FFTFitting::fftw_nvox_r2c_</definition>
+        <argsstring></argsstring>
+        <name>fftw_nvox_r2c_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_nvox_r2c_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="77" column="17" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab11023944b9dbcb4aee93fff81eb2684" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::fftw_pad_factor_</definition>
+        <argsstring></argsstring>
+        <name>fftw_pad_factor_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_pad_factor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="96" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a0fa43489d700ec30e1f736088197832a" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWPlan</type>
+        <definition>internal::FFTWPlan IMP::multifit::FFTFitting::fftw_plan_forward_hi_</definition>
+        <argsstring></argsstring>
+        <name>fftw_plan_forward_hi_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_plan_forward_hi_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="80" column="44" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a8922119959c93daf3e06bcd531bd5795" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWPlan</type>
+        <definition>internal::FFTWPlan IMP::multifit::FFTFitting::fftw_plan_forward_lo_</definition>
+        <argsstring></argsstring>
+        <name>fftw_plan_forward_lo_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_plan_forward_lo_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="80" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a069871df07929693f93ff68f9731c5a4" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWPlan</type>
+        <definition>internal::FFTWPlan IMP::multifit::FFTFitting::fftw_plan_reverse_hi_</definition>
+        <argsstring></argsstring>
+        <name>fftw_plan_reverse_hi_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_plan_reverse_hi_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="81" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab339c7ccd74dd6a8f20aa10be474e7b9" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; double &gt;</type>
+        <definition>internal::FFTWGrid&lt;double&gt; IMP::multifit::FFTFitting::fftw_r_grid_mol_</definition>
+        <argsstring></argsstring>
+        <name>fftw_r_grid_mol_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_r_grid_mol_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="61" column="40" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a22e306c2baad37558f667b7e302676bd" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::fftw_scale_</definition>
+        <argsstring></argsstring>
+        <name>fftw_scale_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="82" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab506f90bac035a98822fc42e4b0ee1a8" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::fftw_zero_padding_extent_[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>fftw_zero_padding_extent_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_zero_padding_extent_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="97" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1af5022d12c2e89b394e40e3a0e2b614eb" prot="protected" static="no" mutable="no">
+        <type>boost::scoped_array&lt; double &gt;</type>
+        <definition>boost::scoped_array&lt;double&gt; IMP::multifit::FFTFitting::filtered_kernel_</definition>
+        <argsstring></argsstring>
+        <name>filtered_kernel_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::filtered_kernel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="69" column="23" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a385181ef1002f97535f0fefafc5623b0" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IMP::multifit::FFTFitting::filtered_kernel_ext_</definition>
+        <argsstring></argsstring>
+        <name>filtered_kernel_ext_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::filtered_kernel_ext_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="72" column="12" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a987dd1b7e0f08867d4faecded65bce03" prot="protected" static="no" mutable="no">
+        <type>internal::RotScoresVec</type>
+        <definition>internal::RotScoresVec IMP::multifit::FFTFitting::fits_hash_</definition>
+        <argsstring></argsstring>
+        <name>fits_hash_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fits_hash_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="100" column="26" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1afba09c0797e2b8bed7c8b3365d13dc3d" prot="protected" static="no" mutable="no">
+        <type>boost::scoped_array&lt; double &gt;</type>
+        <definition>boost::scoped_array&lt;double&gt; IMP::multifit::FFTFitting::gauss_kernel_</definition>
+        <argsstring></argsstring>
+        <name>gauss_kernel_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::gauss_kernel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="66" column="23" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aad8ddbcee92364d1663a4229bfdca531" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::gauss_kernel_ext_</definition>
+        <argsstring></argsstring>
+        <name>gauss_kernel_ext_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::gauss_kernel_ext_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="67" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a00f417d8a257f01addd7cade3c420a19" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long IMP::multifit::FFTFitting::gauss_kernel_nvox_</definition>
+        <argsstring></argsstring>
+        <name>gauss_kernel_nvox_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::gauss_kernel_nvox_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="68" column="17" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1acee1232b598a0ab5e31cb1c42492363b" prot="protected" static="no" mutable="no">
+        <type>atom::Hierarchy</type>
+        <definition>atom::Hierarchy IMP::multifit::FFTFitting::high_mol_</definition>
+        <argsstring></argsstring>
+        <name>high_mol_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::high_mol_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="51" column="19" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a333d9254ef62671be7beebeb070635bb" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::inside_num_</definition>
+        <argsstring></argsstring>
+        <name>inside_num_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::inside_num_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="103" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a830c0bc1eb478ffe4f68c5deff65f1d8" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::inside_num_flipped_</definition>
+        <argsstring></argsstring>
+        <name>inside_num_flipped_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::inside_num_flipped_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="104" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aecde012630cb3fffd29215429fbc1dd4" prot="protected" static="no" mutable="no">
+        <type>boost::scoped_array&lt; double &gt;</type>
+        <definition>boost::scoped_array&lt;double&gt; IMP::multifit::FFTFitting::kernel_filter_</definition>
+        <argsstring></argsstring>
+        <name>kernel_filter_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::kernel_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="64" column="23" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ace7e8b3fcb7151d0a5b6c4e69fbbfffd" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::kernel_filter_ext_</definition>
+        <argsstring></argsstring>
+        <name>kernel_filter_ext_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::kernel_filter_ext_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="65" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a19264232c25e84787f21fa006b34cd76" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::low_cutoff_</definition>
+        <argsstring></argsstring>
+        <name>low_cutoff_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::low_cutoff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="92" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a478bec41c8be74e2874b09343cced48e" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; em::DensityMap &gt;</type>
+        <definition>Pointer&lt;em::DensityMap&gt; IMP::multifit::FFTFitting::low_map_</definition>
+        <argsstring></argsstring>
+        <name>low_map_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::low_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="59" column="11" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a0d437790d7ac0020cb009cc12f5bf2ab" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; double &gt;</type>
+        <definition>internal::FFTWGrid&lt;double&gt; IMP::multifit::FFTFitting::low_map_data_</definition>
+        <argsstring></argsstring>
+        <name>low_map_data_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::low_map_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="58" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a8cc7ba45852f986b7b98d10922b41e04" prot="protected" static="no" mutable="no">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::multifit::FFTFitting::map_cen_</definition>
+        <argsstring></argsstring>
+        <name>map_cen_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::map_cen_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="75" column="21" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a3718c02ea2ac701a4ed96c04c0958065" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IMP::multifit::FFTFitting::margin_ignored_in_conv_[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>margin_ignored_in_conv_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::margin_ignored_in_conv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="98" column="12" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a8da106c43c7efe6571fdcc9b73c9af40" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FFTFitting::num_angle_per_voxel_</definition>
+        <argsstring></argsstring>
+        <name>num_angle_per_voxel_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::num_angle_per_voxel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="90" column="7" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aab24cc53fdbaf2b2556f9dcd9fb4bfda" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FFTFitting::num_fits_reported_</definition>
+        <argsstring></argsstring>
+        <name>num_fits_reported_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::num_fits_reported_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="91" column="7" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a83f8e241de824709768e4ed55a01f6df" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long IMP::multifit::FFTFitting::nvox_</definition>
+        <argsstring></argsstring>
+        <name>nvox_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::nvox_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="54" column="17" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a87be4d8efb2400366138d7e68690009b" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::nx_</definition>
+        <argsstring></argsstring>
+        <name>nx_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::nx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="53" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab5728a4a570639534c8606fdca732fed" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::nx_half_</definition>
+        <argsstring></argsstring>
+        <name>nx_half_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::nx_half_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="55" column="16" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aadbb0a1ebc92176e7f8d8ec016d88d36" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::ny_</definition>
+        <argsstring></argsstring>
+        <name>ny_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::ny_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="53" column="20" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a9c0722a26008e3979d3c4499ac29ba05" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::ny_half_</definition>
+        <argsstring></argsstring>
+        <name>ny_half_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::ny_half_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="55" column="25" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a33d59dd0e189df1a92a252e85193595d" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::nz_</definition>
+        <argsstring></argsstring>
+        <name>nz_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::nz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="53" column="24" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a05eb0f015d46dae96d68b203ab510eea" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FFTFitting::nz_half_</definition>
+        <argsstring></argsstring>
+        <name>nz_half_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::nz_half_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="55" column="34" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a56f7872c0f48d435a024ca593795dbc2" prot="protected" static="no" mutable="no">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::multifit::FFTFitting::orig_cen_</definition>
+        <argsstring></argsstring>
+        <name>orig_cen_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::orig_cen_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="94" column="21" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1adcb52b69e1fdff865dbcdde00128b4f7" prot="protected" static="no" mutable="no">
+        <type>atom::Hierarchy</type>
+        <definition>atom::Hierarchy IMP::multifit::FFTFitting::orig_mol_</definition>
+        <argsstring></argsstring>
+        <name>orig_mol_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::orig_mol_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="85" column="19" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a4774a648899152fb8e4834ea8e5292fc" prot="protected" static="no" mutable="no">
+        <type>atom::Hierarchy</type>
+        <definition>atom::Hierarchy IMP::multifit::FFTFitting::orig_mol_copy_</definition>
+        <argsstring></argsstring>
+        <name>orig_mol_copy_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::orig_mol_copy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="86" column="19" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ac6bbd98241ca6e137e3df90e73fa58f6" prot="protected" static="no" mutable="no">
+        <type>core::RigidBody</type>
+        <definition>core::RigidBody IMP::multifit::FFTFitting::orig_rb_</definition>
+        <argsstring></argsstring>
+        <name>orig_rb_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::orig_rb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="89" column="19" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a36e9db509a0022bb434d20c861884711" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::origx_</definition>
+        <argsstring></argsstring>
+        <name>origx_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::origx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="57" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a26cfb88d914fa83d16baf0bda051087e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::origy_</definition>
+        <argsstring></argsstring>
+        <name>origy_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::origy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="57" column="17" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1aa5f6c9d5ac1e20f652b691a8a12d4e9a" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::origz_</definition>
+        <argsstring></argsstring>
+        <name>origz_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::origz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="57" column="24" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a8dbb2dc0cb2469634e0f8c09efff5f8e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::resolution_</definition>
+        <argsstring></argsstring>
+        <name>resolution_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::resolution_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="52" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ab9a8eae5c25d9595b194b2154e76bcdc" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; double &gt;</type>
+        <definition>internal::FFTWGrid&lt;double&gt; IMP::multifit::FFTFitting::reversed_fftw_data_</definition>
+        <argsstring></argsstring>
+        <name>reversed_fftw_data_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::reversed_fftw_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="63" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1acabd9f85e7e0c6b7e9b972a26f9af43f" prot="protected" static="no" mutable="no">
+        <type>multifit::internal::EulerAnglesList</type>
+        <definition>multifit::internal::EulerAnglesList IMP::multifit::FFTFitting::rots_</definition>
+        <argsstring></argsstring>
+        <name>rots_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::rots_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="107" column="39" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a38bfd55923a31501975a010379c3c1a4" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; em::SampledDensityMap &gt;</type>
+        <definition>Pointer&lt;em::SampledDensityMap&gt; IMP::multifit::FFTFitting::sampled_map_</definition>
+        <argsstring></argsstring>
+        <name>sampled_map_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::sampled_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="60" column="11" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a744588dbb419eacfca85574e25b413d1" prot="protected" static="no" mutable="no">
+        <type>internal::FFTWGrid&lt; double &gt;</type>
+        <definition>internal::FFTWGrid&lt;double&gt; IMP::multifit::FFTFitting::sampled_map_data_</definition>
+        <argsstring></argsstring>
+        <name>sampled_map_data_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::sampled_map_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="61" column="22" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1a866f7f895d256bec57caa965b7a729a5" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::sampled_norm_</definition>
+        <argsstring></argsstring>
+        <name>sampled_norm_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::sampled_norm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="74" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFitting_1ad7a14b88ee4f95b8661ecfa7f1198551" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::FFTFitting::spacing_</definition>
+        <argsstring></argsstring>
+        <name>spacing_</name>
+        <qualifiedname>IMP::multifit::FFTFitting::spacing_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="56" column="10" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a62ebb622f0d78309397c0400981fb658" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FFTFitting::FFTFitting</definition>
+        <argsstring>()</argsstring>
+        <name>FFTFitting</name>
+        <qualifiedname>IMP::multifit::FFTFitting::FFTFitting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="128" column="3" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a2b09f51e39aa706b36b2337cef4d917d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::FFTFitting::~FFTFitting</definition>
+        <argsstring>()</argsstring>
+        <name>~FFTFitting</name>
+        <qualifiedname>IMP::multifit::FFTFitting::~FFTFitting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="44" column="231" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1af852eac69c96a429dfd981874da98caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1FFTFittingOutput" kindref="compound">FFTFittingOutput</ref> *</type>
+        <definition>FFTFittingOutput * IMP::multifit::FFTFitting::do_global_fitting</definition>
+        <argsstring>(em::DensityMap *dmap, double density_threshold, atom::Hierarchy mol2fit, double angle_sampling_interval_rad, int num_fits_to_report, double max_clustering_translation, double max_clustering_angle, bool cluster_fits=true, int num_angle_per_voxel=1, const std::string &amp;angles_filename=&quot;&quot;)</argsstring>
+        <name>do_global_fitting</name>
+        <qualifiedname>IMP::multifit::FFTFitting::do_global_fitting</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>density_threshold</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mol2fit</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle_sampling_interval_rad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_fits_to_report</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_translation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_angle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cluster_fits</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_angle_per_voxel</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>angles_filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Fit a molecule inside its density. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to fit into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">density_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>voxels below this value will be treated as 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mol2fit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the molecule to fit. The molecule has to be a rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angle_sampling_interval_rad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sample every internal angles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_fits_to_report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of top fits to report </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cluster_fits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true the fits are clustered. Not recommended for refinement mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_angle_per_voxel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rotations to save per voxel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_clustering_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster transformations whose translational distance is lower than the parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_clustering_angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster transformations whose rotational distance is lower than the parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angles_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a file containing angles to sample. if not specified, all angles are sampled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="146" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1ae968f045c0616e5599a853f4734aa477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1FFTFittingOutput" kindref="compound">FFTFittingOutput</ref> *</type>
+        <definition>FFTFittingOutput * IMP::multifit::FFTFitting::do_local_fitting</definition>
+        <argsstring>(em::DensityMap *dmap, double density_threshold, atom::Hierarchy mol2fit, double angle_sampling_interval_rad, double max_angle_sampling_rad, double max_translation, int num_fits_to_report, bool cluster_fits, int num_angle_per_voxel, double max_clustering_translation, double max_clustering_rotation, const std::string &amp;angles_filename=&quot;&quot;)</argsstring>
+        <name>do_local_fitting</name>
+        <qualifiedname>IMP::multifit::FFTFitting::do_local_fitting</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>density_threshold</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mol2fit</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle_sampling_interval_rad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_angle_sampling_rad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_translation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_fits_to_report</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cluster_fits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_angle_per_voxel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_translation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_rotation</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>angles_filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Locally fit a molecule inside its density. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to fit into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">density_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>voxels below this value will be treated as 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mol2fit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the molecule to fit. The molecule has to be a rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angle_sampling_interval_rad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample the mol within the range of +- this angle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_angle_sampling_rad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample the mol within +- this translation is all directions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_fits_to_report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cluster_fits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true the fits are clustered. Not recommended for refinement mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_angle_per_voxel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rotations to save per voxel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_clustering_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster transformations whose translational distance is lower than the parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_clustering_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster transformations whose rotational distance is lower than the parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angles_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a file containing angles to sample. if not specified, all angles are sampled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="173" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a34528d1f31f813f5ad08c85bde661b01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::FFTFitting::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::FFTFitting::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="44" column="34" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a62c07961bde4c2ae78346345ce27f9ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::FFTFitting::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::FFTFitting::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="44" column="103" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1aaeb4a52a506bcee42b2cacb393fbaa43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::copy_density_data</definition>
+        <argsstring>(em::DensityMap *dmap, double *data_array)</argsstring>
+        <name>copy_density_data</name>
+        <qualifiedname>IMP::multifit::FFTFitting::copy_density_data</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>data_array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="112" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a8c3501ba6abe128fda347f62406d87e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::DensityMap *</type>
+        <definition>em::DensityMap * IMP::multifit::FFTFitting::crop_margin</definition>
+        <argsstring>(em::DensityMap *in_map)</argsstring>
+        <name>crop_margin</name>
+        <qualifiedname>IMP::multifit::FFTFitting::crop_margin</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>in_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="117" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1ac4e0b3ee481b867448bdb5e5fed83115" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::FFTFitting::detect_top_fits</definition>
+        <argsstring>(const internal::RotScoresVec &amp;rot_scores, bool cluster_fits, double max_translation, double max_clustering_trans, double max_clustering_rotation)</argsstring>
+        <name>detect_top_fits</name>
+        <qualifiedname>IMP::multifit::FFTFitting::detect_top_fits</qualifiedname>
+        <param>
+          <type>const internal::RotScoresVec &amp;</type>
+          <declname>rot_scores</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cluster_fits</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_translation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_trans</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_clustering_rotation</declname>
+        </param>
+        <briefdescription>
+<para>Detect the top fits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="122" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a74dba3ac8f5c530c2a3dd6bdd1a1cff7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::fftw_translational_search</definition>
+        <argsstring>(const multifit::internal::EulerAngles &amp;rot, int i)</argsstring>
+        <name>fftw_translational_search</name>
+        <qualifiedname>IMP::multifit::FFTFitting::fftw_translational_search</qualifiedname>
+        <param>
+          <type>const multifit::internal::EulerAngles &amp;</type>
+          <declname>rot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="119" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1acd7df257d05cf51d782a013210e4572d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::get_unwrapped_index</definition>
+        <argsstring>(int wx, int wy, int wz, int &amp;ix, int &amp;iy, int &amp;iz)</argsstring>
+        <name>get_unwrapped_index</name>
+        <qualifiedname>IMP::multifit::FFTFitting::get_unwrapped_index</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>wx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wz</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>iz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="113" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1accd7f75da3e55504aca2b9abda45ee1e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::pad_resolution_map</definition>
+        <argsstring>()</argsstring>
+        <name>pad_resolution_map</name>
+        <qualifiedname>IMP::multifit::FFTFitting::pad_resolution_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="116" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1af94977d86c307960a89b1a15d4cbda63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::prepare_kernels</definition>
+        <argsstring>()</argsstring>
+        <name>prepare_kernels</name>
+        <qualifiedname>IMP::multifit::FFTFitting::prepare_kernels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="111" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1ab063459cb69df88446f638fded7d95da" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::prepare_lowres_map</definition>
+        <argsstring>(em::DensityMap *dmap)</argsstring>
+        <name>prepare_lowres_map</name>
+        <qualifiedname>IMP::multifit::FFTFitting::prepare_lowres_map</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1aced49e5f2dae277cdcc74732c76c4aca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::prepare_poslist</definition>
+        <argsstring>(em::DensityMap *dmap)</argsstring>
+        <name>prepare_poslist</name>
+        <qualifiedname>IMP::multifit::FFTFitting::prepare_poslist</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="115" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1a91969e61ffab79ed9b4f9cd5d222ef37" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::prepare_poslist_flipped</definition>
+        <argsstring>(em::DensityMap *dmap)</argsstring>
+        <name>prepare_poslist_flipped</name>
+        <qualifiedname>IMP::multifit::FFTFitting::prepare_poslist_flipped</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="114" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFitting_1ab18f1bb918cf5b1f45d22d800a80fad4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FFTFitting::prepare_probe</definition>
+        <argsstring>(atom::Hierarchy mol2fit)</argsstring>
+        <name>prepare_probe</name>
+        <qualifiedname>IMP::multifit::FFTFitting::prepare_probe</qualifiedname>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mol2fit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="109" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fit a molecule inside its density by local or global FFT. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="43" column="1" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="43" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a219ce1447901c5e07e307272a5d21345" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>asmb_norm_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aabb824cdadbf5fee5163103f099922ab" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>best_fits_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a9f8802530728193f986c00ad670138e0" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>best_trans_per_rot_log_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1af7aeda5f915a48828c99a07107d32d90" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>cen_trans_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aaeb4a52a506bcee42b2cacb393fbaa43" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>copy_density_data</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a41710d7bc9f67f1980ab7d783f4b175a" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>copy_mol_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a17b6c9d245a116e858f5904fe9102e00" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>corr_mode_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8c3501ba6abe128fda347f62406d87e0" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>crop_margin</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ac4e0b3ee481b867448bdb5e5fed83115" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>detect_top_fits</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1af852eac69c96a429dfd981874da98caf" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>do_global_fitting</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ae968f045c0616e5599a853f4734aa477" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>do_local_fitting</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8239ef1504cc0ffac7ec62642b4b451e" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fft_scores_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a6abf892d48116e915c4eb6156a4fa6c2" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fft_scores_flipped_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a62ebb622f0d78309397c0400981fb658" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>FFTFitting</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab9d601a0c3ddb079fe4dcdb00a9c3b59" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_grid_hi_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a7ba2bfce2c6f188b253b19ef82f302c3" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_grid_lo_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a166e229d546006928306bcd2b1ae7a32" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_nvox_c2r_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aa6ef2b4b9fe870142e7b73aa5fd1d2b2" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_nvox_r2c_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab11023944b9dbcb4aee93fff81eb2684" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_pad_factor_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a0fa43489d700ec30e1f736088197832a" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_plan_forward_hi_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8922119959c93daf3e06bcd531bd5795" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_plan_forward_lo_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a069871df07929693f93ff68f9731c5a4" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_plan_reverse_hi_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab339c7ccd74dd6a8f20aa10be474e7b9" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_r_grid_mol_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a22e306c2baad37558f667b7e302676bd" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_scale_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a74dba3ac8f5c530c2a3dd6bdd1a1cff7" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_translational_search</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab506f90bac035a98822fc42e4b0ee1a8" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fftw_zero_padding_extent_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1af5022d12c2e89b394e40e3a0e2b614eb" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>filtered_kernel_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a385181ef1002f97535f0fefafc5623b0" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>filtered_kernel_ext_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a987dd1b7e0f08867d4faecded65bce03" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>fits_hash_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1afba09c0797e2b8bed7c8b3365d13dc3d" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>gauss_kernel_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aad8ddbcee92364d1663a4229bfdca531" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>gauss_kernel_ext_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a00f417d8a257f01addd7cade3c420a19" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>gauss_kernel_nvox_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a34528d1f31f813f5ad08c85bde661b01" prot="public" virt="virtual"><scope>IMP::multifit::FFTFitting</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1acd7df257d05cf51d782a013210e4572d" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>get_unwrapped_index</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a62c07961bde4c2ae78346345ce27f9ab" prot="public" virt="virtual"><scope>IMP::multifit::FFTFitting</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1acee1232b598a0ab5e31cb1c42492363b" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>high_mol_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a333d9254ef62671be7beebeb070635bb" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>inside_num_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a830c0bc1eb478ffe4f68c5deff65f1d8" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>inside_num_flipped_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aecde012630cb3fffd29215429fbc1dd4" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>kernel_filter_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ace7e8b3fcb7151d0a5b6c4e69fbbfffd" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>kernel_filter_ext_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a19264232c25e84787f21fa006b34cd76" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>low_cutoff_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a478bec41c8be74e2874b09343cced48e" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>low_map_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a0d437790d7ac0020cb009cc12f5bf2ab" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>low_map_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8cc7ba45852f986b7b98d10922b41e04" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>map_cen_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a3718c02ea2ac701a4ed96c04c0958065" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>margin_ignored_in_conv_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8da106c43c7efe6571fdcc9b73c9af40" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>num_angle_per_voxel_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aab24cc53fdbaf2b2556f9dcd9fb4bfda" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>num_fits_reported_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a83f8e241de824709768e4ed55a01f6df" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>nvox_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a87be4d8efb2400366138d7e68690009b" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>nx_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab5728a4a570639534c8606fdca732fed" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>nx_half_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aadbb0a1ebc92176e7f8d8ec016d88d36" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>ny_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a9c0722a26008e3979d3c4499ac29ba05" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>ny_half_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a33d59dd0e189df1a92a252e85193595d" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>nz_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a05eb0f015d46dae96d68b203ab510eea" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>nz_half_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a56f7872c0f48d435a024ca593795dbc2" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>orig_cen_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1adcb52b69e1fdff865dbcdde00128b4f7" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>orig_mol_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a4774a648899152fb8e4834ea8e5292fc" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>orig_mol_copy_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ac6bbd98241ca6e137e3df90e73fa58f6" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>orig_rb_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a36e9db509a0022bb434d20c861884711" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>origx_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a26cfb88d914fa83d16baf0bda051087e" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>origy_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aa5f6c9d5ac1e20f652b691a8a12d4e9a" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>origz_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1accd7f75da3e55504aca2b9abda45ee1e" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>pad_resolution_map</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1af94977d86c307960a89b1a15d4cbda63" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>prepare_kernels</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab063459cb69df88446f638fded7d95da" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>prepare_lowres_map</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1aced49e5f2dae277cdcc74732c76c4aca" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>prepare_poslist</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a91969e61ffab79ed9b4f9cd5d222ef37" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>prepare_poslist_flipped</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab18f1bb918cf5b1f45d22d800a80fad4" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>prepare_probe</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8dbb2dc0cb2469634e0f8c09efff5f8e" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>resolution_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab9a8eae5c25d9595b194b2154e76bcdc" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>reversed_fftw_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1acabd9f85e7e0c6b7e9b972a26f9af43f" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>rots_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a38bfd55923a31501975a010379c3c1a4" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>sampled_map_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a744588dbb419eacfca85574e25b413d1" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>sampled_map_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a866f7f895d256bec57caa965b7a729a5" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>sampled_norm_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1ad7a14b88ee4f95b8661ecfa7f1198551" prot="protected" virt="non-virtual"><scope>IMP::multifit::FFTFitting</scope><name>spacing_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFitting_1a2b09f51e39aa706b36b2337cef4d917d" prot="public" virt="virtual"><scope>IMP::multifit::FFTFitting</scope><name>~FFTFitting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="Image_8h" kind="file" language="C++">
+    <compoundname>Image.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes refid="PolarResamplingParameters_8h" local="yes">IMP/em2d/PolarResamplingParameters.h</includes>
+    <includes refid="ImageReaderWriter_8h" local="yes">IMP/em2d/ImageReaderWriter.h</includes>
+    <includes refid="opencv__interface_8h" local="yes">IMP/em2d/opencv_interface.h</includes>
+    <includes refid="image__processing_8h" local="yes">IMP/em2d/image_processing.h</includes>
+    <includes refid="FFToperations_8h" local="yes">IMP/em2d/FFToperations.h</includes>
+    <includes local="yes">IMP/em/ImageHeader.h</includes>
+    <includes local="no">IMP/Pointer.h</includes>
+    <includes local="no">IMP/Object.h</includes>
+    <includes local="yes">IMP/base_types.h</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">typeinfo</includes>
+    <includedby refid="Em2DRestraint_8h" local="yes">Em2DRestraint.h</includedby>
+    <includedby refid="ProjectionFinder_8h" local="yes">ProjectionFinder.h</includedby>
+    <includedby refid="RigidBodiesImageFitRestraint_8h" local="yes">RigidBodiesImageFitRestraint.h</includedby>
+    <includedby refid="domino__particle__states_8h" local="yes">domino_particle_states.h</includedby>
+    <includedby refid="project_8h" local="yes">project.h</includedby>
+    <includedby refid="scores2D_8h" local="yes">scores2D.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Image.h</label>
+        <link refid="Image_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/Object.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/base_types.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/em/ImageHeader.h</label>
+      </node>
+      <node id="6">
+        <label>limits</label>
+      </node>
+      <node id="7">
+        <label>typeinfo</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1em2d_1_1Image" prot="public">IMP::em2d::Image</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para><ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> images for Electron Microscopy using openCV matrices Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/Image.h"/>
+  </compounddef>
+</doxygen>

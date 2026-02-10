@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceinteractive__with__containers" kind="namespace" language="Python">
+    <compoundname>interactive_with_containers</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a5fbc599fffba4211a60a91032e88cc5f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.all</definition>
+        <argsstring></argsstring>
+        <name>all</name>
+        <qualifiedname>interactive_with_containers.all</qualifiedname>
+        <initializer>=  get_assignments(mt.get_vertices()[-1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="85" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a8ac0c12b35f2ede54730bed70f5c2e03" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list interactive_with_containers.filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <qualifiedname>interactive_with_containers.filters</qualifiedname>
+        <initializer>=  [<ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc),
+           <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="47" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1ac9fb0e72dd97aff83abc92b6730cf567" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.leaf_table</definition>
+        <argsstring></argsstring>
+        <name>leaf_table</name>
+        <qualifiedname>interactive_with_containers.leaf_table</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" kindref="compound">IMP.domino.BranchAndBoundAssignmentsTable</ref>(pst, filters)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="49" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a475fc1a9e594183f8cb51630bf1694cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.lpc</definition>
+        <argsstring></argsstring>
+        <name>lpc</name>
+        <qualifiedname>interactive_with_containers.lpc</qualifiedname>
+        <initializer>=  IMP.container.ListPairContainer(
+    m, [(ps[i[0]], ps[i[1]]) for i in [(0, 1), (1, 2)]])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="23" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a7169cf088fd85a82c9ed19ed5cb257f5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>interactive_with_containers.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="16" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1ab32d18c2bc789002c0db11057a3079a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.mt</definition>
+        <argsstring></argsstring>
+        <name>mt</name>
+        <qualifiedname>interactive_with_containers.mt</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>([r], pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="40" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a5589de9ffd0490e1aed3303837c0c644" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>interactive_with_containers.name</qualifiedname>
+        <initializer>=  IMP.create_temporary_file_name(&quot;assignments&quot;, &quot;.hdf5&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="52" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a68485a6086283bada65c5f1601c03fb6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>interactive_with_containers.ps</qualifiedname>
+        <initializer>=  IMP.get_indexes([IMP.core.XYZ.setup_particle(IMP.Particle(m))
+                      for x in range(0, 3)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="19" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a49eced25398a1ff3fcb8cd0b3bc041d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>interactive_with_containers.pst</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="33" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a97fbb91a22260ad9ff4e0a828be5bb48" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>interactive_with_containers.r</qualifiedname>
+        <initializer>=  IMP.container.PairsRestraint(s, lpc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="27" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a84fee2dd710ea22e8238d482f9bc4890" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.rc</definition>
+        <argsstring></argsstring>
+        <name>rc</name>
+        <qualifiedname>interactive_with_containers.rc</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="45" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1a153c768bd9dac1abeb0e65989dd61ff7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <qualifiedname>interactive_with_containers.root</qualifiedname>
+        <initializer>=  RMF.HDF5.create_file(name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="53" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1ab815846384895e3455accb92f56a034a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>interactive_with_containers.s</qualifiedname>
+        <initializer>=  IMP.core.HarmonicDistancePairScore(1, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="22" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive__with__containers_8py_1af43d65c4db5a25e22df482f0881ea1cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive_with_containers.space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <qualifiedname>interactive_with_containers.space</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(
+    [IMP.algebra.Vector3D(i, 0, 0) for i in range(0, 6)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="30" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="interactive__with__containers_8py_1a183dd281ee425ead8fd528a2d9443604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>interactive_with_containers.get_assignments</definition>
+        <argsstring>(vertex)</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>interactive_with_containers.get_assignments</qualifiedname>
+        <param>
+          <type>vertex</type>
+          <defname>vertex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive_with_containers.py" line="58" column="1" bodyfile="examples/domino/interactive_with_containers.py" bodystart="58" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/interactive_with_containers.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

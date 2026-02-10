@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="filenames__manipulation_8h" kind="file" language="C++">
+    <compoundname>filenames_manipulation.h</compoundname>
+    <includes local="yes">IMP/exception.h</includes>
+    <includes local="yes">IMP/base_types.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">boost/filesystem/path.hpp</includes>
+    <includes local="no">boost/filesystem/exception.hpp</includes>
+    <includes local="no">boost/version.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>filenames_manipulation.h</label>
+        <link refid="filenames__manipulation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/base_types.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/exception.h</label>
+      </node>
+      <node id="7">
+        <label>boost/filesystem/exception.hpp</label>
+      </node>
+      <node id="6">
+        <label>boost/filesystem/path.hpp</label>
+      </node>
+      <node id="8">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="filenames__manipulation_8h_1af8990d1a066085d309dc3bfbd6d24a0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Strings</type>
+        <definition>Strings create_filenames</definition>
+        <argsstring>(unsigned long number, String basic_name, String extension)</argsstring>
+        <name>create_filenames</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>basic_name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>generates consecutive filenames: basic_name-i.extension Adds zeros at the front of the number when necessary </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/filenames_manipulation.h" line="48" column="16" bodyfile="include/IMP/em2d/filenames_manipulation.h" bodystart="48" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="filenames__manipulation_8h_1aaa5a6a2c521a7f183922b558334e9a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IMPEM2D_BEGIN_NAMESPACE Strings</type>
+        <definition>IMPEM2D_BEGIN_NAMESPACE Strings read_selection_file</definition>
+        <argsstring>(String fn)</argsstring>
+        <name>read_selection_file</name>
+        <param>
+          <type>String</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Reads a selection file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the selection file. First column is are file names and second are 1 (file is selected) or 0 (file ignored) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of the selected names. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/filenames_manipulation.h" line="27" column="16" bodyfile="include/IMP/em2d/filenames_manipulation.h" bodystart="27" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Generation of projections using the central section theorem Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/filenames_manipulation.h"/>
+  </compounddef>
+</doxygen>

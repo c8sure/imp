@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleUnaryFunction" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleUnaryFunction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UnaryFunction</basecompoundref>
+    <includes local="no">IMP/example/ExampleUnaryFunction.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleUnaryFunction_1afd53a36c5f27edb5d8b7fbb709227bf7" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::example::ExampleUnaryFunction::center_</definition>
+        <argsstring></argsstring>
+        <name>center_</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::center_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="28" column="9" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleUnaryFunction_1ab1153514d9bc0391bcdda9dc69c9bfa7" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::example::ExampleUnaryFunction::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="29" column="9" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExampleUnaryFunction_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="54" column="16" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a4460b250be73bfa56b9f0b979f16ef3e" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::example::ExampleUnaryFunction::dummy_serialize_init_</definition>
+        <argsstring></argsstring>
+        <name>dummy_serialize_init_</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::dummy_serialize_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="58" column="27" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a84a4bb82c67b90c75eafed887d37a6bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleUnaryFunction::ExampleUnaryFunction</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleUnaryFunction</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::ExampleUnaryFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="39" column="3" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a7b22acd4b9b67058ed9afd3e8f79c59e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleUnaryFunction::ExampleUnaryFunction</definition>
+        <argsstring>(Float center, Float k)</argsstring>
+        <name>ExampleUnaryFunction</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::ExampleUnaryFunction</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create with the given center and spring constant. While it is generally bad form to have two Float arguments, it is hard to avoid here, and there is a bit of a sanity check. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="35" column="3" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1ae3804bff6b8544f099b15b6536dfb328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleUnaryFunction::~ExampleUnaryFunction</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleUnaryFunction</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::~ExampleUnaryFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="51" column="231" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a733d00d1f8bc23561cd70fe9f16dc775" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::example::ExampleUnaryFunction::evaluate</definition>
+        <argsstring>(double feature) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::evaluate</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="48" column="18" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a5bd676af004849f4796fe0bf1d71f58c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>DerivativePair</type>
+        <definition>virtual DerivativePair IMP::example::ExampleUnaryFunction::evaluate_with_derivative</definition>
+        <argsstring>(double feature) const override</argsstring>
+        <name>evaluate_with_derivative</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::evaluate_with_derivative</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="44" column="26" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a6815810c9df3386f023ebcbb6e528273" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::example::ExampleUnaryFunction::get_center</definition>
+        <argsstring>() const</argsstring>
+        <name>get_center</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::get_center</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="41" column="9" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1acbf48eb24ddee871beabda58b9cd8ade" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::example::ExampleUnaryFunction::get_force_constant</definition>
+        <argsstring>() const</argsstring>
+        <name>get_force_constant</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::get_force_constant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="42" column="9" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a16ca3fe67de20d58d6741aec2b761a48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleUnaryFunction::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="51" column="34" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1aae72f0974717a8a2062b53b953f29345" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleUnaryFunction::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="51" column="103" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1ac28f3079c246520d7c697af6ca063c64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExampleUnaryFunction::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="55" column="19" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1aa1350288b5bc0077a5cc8ef2daaa8680" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object *</type>
+        <definition>static Object * IMP::example::ExampleUnaryFunction::load_cereal</definition>
+        <argsstring>(cereal::BinaryInputArchive &amp;ar)</argsstring>
+        <name>load_cereal</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::load_cereal</qualifiedname>
+        <param>
+          <type>cereal::BinaryInputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="58" column="221" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleUnaryFunction_1a74efc8a541bad1970c6116647d57f882" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExampleUnaryFunction::save_cereal</definition>
+        <argsstring>(Object *o, cereal::BinaryOutputArchive &amp;ar)</argsstring>
+        <name>save_cereal</name>
+        <qualifiedname>IMP::example::ExampleUnaryFunction::save_cereal</qualifiedname>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>cereal::BinaryOutputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleUnaryFunction.h" line="58" column="63" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple unary function. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This one happens to be a harmonic. The source code is as follows: <programlisting filename="ExampleUnaryFunction.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleUnaryFunction.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>simple<sp/>unary<sp/>function.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2026<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_UNARY_FUNCTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_UNARY_FUNCTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/UnaryFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/utility.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/algebra/utility.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/access.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/types/base_class.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/types/polymorphic.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>A<sp/>simple<sp/>unary<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>This<sp/>one<sp/>happens<sp/>to<sp/>be<sp/>a<sp/>harmonic.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleUnaryFunction.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleUnaryFunction<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>UnaryFunction<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Float<sp/>center_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Float<sp/>k_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>/**<sp/>Create<sp/>with<sp/>the<sp/>given<sp/>center<sp/>and<sp/>spring<sp/>constant.<sp/>While<sp/>it</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>generally<sp/>bad<sp/>form<sp/>to<sp/>have<sp/>two<sp/>Float<sp/>arguments,<sp/>it<sp/>is</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>hard<sp/>to<sp/>avoid<sp/>here,<sp/>and<sp/>there<sp/>is<sp/>a<sp/>bit<sp/>of<sp/>a<sp/>sanity<sp/>check.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleUnaryFunction(Float<sp/>center,<sp/>Float<sp/>k)<sp/>:<sp/>center_(center),<sp/>k_(k)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_USAGE_CHECK(k<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>spring<sp/>constant<sp/>must<sp/>be<sp/>positive.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleUnaryFunction()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Float<sp/>get_center()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>center_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Float<sp/>get_force_constant()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>k_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>DerivativePair<sp/>evaluate_with_derivative(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>feature)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DerivativePair(evaluate(feature),<sp/>k_<sp/>*<sp/>(feature<sp/>-<sp/>center_));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>evaluate(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>feature)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>.5<sp/>*<sp/>k_<sp/>*<sp/>algebra::get_squared(feature<sp/>-<sp/>center_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleUnaryFunction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar(cereal::base_class&lt;UnaryFunction&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>center_,<sp/>k_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_SERIALIZE_DECL(ExampleUnaryFunction);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_UNARY_FUNCTION_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleUnaryFunction.h" line="27" column="1" bodyfile="include/IMP/example/ExampleUnaryFunction.h" bodystart="27" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1afd53a36c5f27edb5d8b7fbb709227bf7" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>center_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a4460b250be73bfa56b9f0b979f16ef3e" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>dummy_serialize_init_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a733d00d1f8bc23561cd70fe9f16dc775" prot="public" virt="virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>evaluate</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a5bd676af004849f4796fe0bf1d71f58c" prot="public" virt="virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>evaluate_with_derivative</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a7b22acd4b9b67058ed9afd3e8f79c59e" prot="public" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>ExampleUnaryFunction</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a84a4bb82c67b90c75eafed887d37a6bf" prot="public" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>ExampleUnaryFunction</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a6815810c9df3386f023ebcbb6e528273" prot="public" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>get_center</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1acbf48eb24ddee871beabda58b9cd8ade" prot="public" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>get_force_constant</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a16ca3fe67de20d58d6741aec2b761a48" prot="public" virt="virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1aae72f0974717a8a2062b53b953f29345" prot="public" virt="virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1ab1153514d9bc0391bcdda9dc69c9bfa7" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>k_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1aa1350288b5bc0077a5cc8ef2daaa8680" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>load_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1a74efc8a541bad1970c6116647d57f882" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>save_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1ac28f3079c246520d7c697af6ca063c64" prot="private" virt="non-virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleUnaryFunction_1ae3804bff6b8544f099b15b6536dfb328" prot="public" virt="virtual"><scope>IMP::example::ExampleUnaryFunction</scope><name>~ExampleUnaryFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

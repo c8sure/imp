@@ -1,0 +1,4 @@
+ok=True
+modules = 'core:score_functor:display:algebra:cgal:kernel'
+dependencies = 'HDF5:Boost.Random:NumPy:Boost.ProgramOptions:CGAL:Boost.FileSystem:Boost.System:python-ihm'
+unfound_dependencies = 'robin_map:google_dense_hash_map'

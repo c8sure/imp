@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classmarina__party_1_1Price" kind="class" language="Python" prot="public">
+    <compoundname>marina_party::Price</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP.Decorator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmarina__party_1_1Price_1a6a4e102e86584717d2bffa5e6ba53d68" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>marina_party.Price::price_key</definition>
+        <argsstring></argsstring>
+        <name>price_key</name>
+        <qualifiedname>marina_party.Price.price_key</qualifiedname>
+        <initializer>=  IMP.IntKey(&quot;price&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="54" column="1" bodyfile="examples/domino/marina_party.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmarina__party_1_1Price_1af42808ec2687b056bbaa895dd9c310b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.Price::particle</definition>
+        <argsstring></argsstring>
+        <name>particle</name>
+        <qualifiedname>marina_party.Price.particle</qualifiedname>
+        <initializer>=  p</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="59" column="1" bodyfile="examples/domino/marina_party.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmarina__party_1_1Price_1a19a2c3446797ca15e43ec316e9f8ec5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.Price.__init__</definition>
+        <argsstring>(self, p)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>marina_party.Price.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="56" column="1" bodyfile="examples/domino/marina_party.py" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1Price_1a13f08f576a58b357f4a7150ff7ffb3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.Price.get_is_setup</definition>
+        <argsstring>(self, p)</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>marina_party.Price.get_is_setup</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="71" column="1" bodyfile="examples/domino/marina_party.py" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1Price_1a1671ed1650a3f0d9ad37fe282e2a1a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.Price.get_price</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_price</name>
+        <qualifiedname>marina_party.Price.get_price</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="65" column="1" bodyfile="examples/domino/marina_party.py" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1Price_1a766c465c8ca5170ed6974c6e4f41bf21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.Price.set_price</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>set_price</name>
+        <qualifiedname>marina_party.Price.set_price</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="68" column="1" bodyfile="examples/domino/marina_party.py" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1Price_1aa7deb095eb0e6b8772627467ef28a253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.Price.setup_particle</definition>
+        <argsstring>(self, p)</argsstring>
+        <name>setup_particle</name>
+        <qualifiedname>marina_party.Price.setup_particle</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="61" column="1" bodyfile="examples/domino/marina_party.py" bodystart="61" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/marina_party.py" line="53" column="1" bodyfile="examples/domino/marina_party.py" bodystart="53" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classmarina__party_1_1Price_1a19a2c3446797ca15e43ec316e9f8ec5a" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>__init__</name></member>
+      <member refid="classmarina__party_1_1Price_1a13f08f576a58b357f4a7150ff7ffb3f6" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>get_is_setup</name></member>
+      <member refid="classmarina__party_1_1Price_1a1671ed1650a3f0d9ad37fe282e2a1a7b" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>get_price</name></member>
+      <member refid="classmarina__party_1_1Price_1af42808ec2687b056bbaa895dd9c310b2" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>particle</name></member>
+      <member refid="classmarina__party_1_1Price_1a6a4e102e86584717d2bffa5e6ba53d68" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>price_key</name></member>
+      <member refid="classmarina__party_1_1Price_1a766c465c8ca5170ed6974c6e4f41bf21" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>set_price</name></member>
+      <member refid="classmarina__party_1_1Price_1aa7deb095eb0e6b8772627467ef28a253" prot="public" virt="non-virtual"><scope>marina_party::Price</scope><name>setup_particle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

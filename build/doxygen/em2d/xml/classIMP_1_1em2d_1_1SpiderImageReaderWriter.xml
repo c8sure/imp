@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1SpiderImageReaderWriter" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::SpiderImageReaderWriter</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ImageReaderWriter" prot="public" virt="non-virtual">IMP::em2d::ImageReaderWriter</basecompoundref>
+    <includes local="no">IMP/em2d/SpiderImageReaderWriter.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a3b199bc32486692ef92eb25e2d637486" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String IMP::em2d::SpiderImageReaderWriter::filename_</definition>
+        <argsstring></argsstring>
+        <name>filename_</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="34" column="10" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1acb9de45e4d97fa1c67022fdcc611aead" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::SpiderImageReaderWriter::force_reversed_</definition>
+        <argsstring></argsstring>
+        <name>force_reversed_</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::force_reversed_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="36" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a6422152351855d910edeadca9a69fa2b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::SpiderImageReaderWriter::skip_extra_checkings_</definition>
+        <argsstring></argsstring>
+        <name>skip_extra_checkings_</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::skip_extra_checkings_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="37" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4732784e89ae95901bef27a5dbd547b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::SpiderImageReaderWriter::skip_type_check_</definition>
+        <argsstring></argsstring>
+        <name>skip_type_check_</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::skip_type_check_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="35" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a204c350117aab20cc185777b410e566f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::SpiderImageReaderWriter::SpiderImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>SpiderImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::SpiderImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. It does not force reversed header and does not skip any of the tests</para>
+<para><simplesect kind="note"><para>reversed is only used in case that the type_check is skipped </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="44" column="3" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4488a0648c4a1bee51e5b7ddef6e22da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::SpiderImageReaderWriter::SpiderImageReaderWriter</definition>
+        <argsstring>(const String &amp;filename, bool skip_type_check, bool force_reversed, bool skip_extra_checkings)</argsstring>
+        <name>SpiderImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::SpiderImageReaderWriter</qualifiedname>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skip_type_check</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_reversed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skip_extra_checkings</declname>
+        </param>
+        <briefdescription>
+<para>Full constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skip_type_check</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, the check for type of image is skipped </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">force_reversed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, the reverse mode is enforced for reading and writing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skip_extra_checkings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, the most stringent tests for consistency of images are skipped when reading </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="59" column="3" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a0f09f57686007c90701d7e1aadf108fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::SpiderImageReaderWriter::~SpiderImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~SpiderImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::~SpiderImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="153" column="231" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a032ef8ffac91b03a04da8af974132454" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::SpiderImageReaderWriter::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::get_type_name</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a68d4ec44e98f1d72ec870593bbcbc4af">get_type_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="153" column="34" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a6d0b9f574ab7e186682c3ffe1c66c672" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::SpiderImageReaderWriter::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::get_version_info</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a05c699b3c44b2ef9f8eed2801e6bc196">get_version_info</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="153" column="103" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4c6a27beb107b4626f834f071a3d73c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::read</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</argsstring>
+        <name>read</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::read</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a5e44ebd2e762bc482741d31eb2f61ae5">read</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="67" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a9c08b22839e3ad4f256541b5737b8443" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::read_from_floats</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</argsstring>
+        <name>read_from_floats</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::read_from_floats</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1adbd764fa1dacf7cf79ec44670f49b6a4">read_from_floats</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads an image file in Spider format and stores the content int the header and data parameters</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header to store the info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a matrix to store the grid of data of the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>The header format is already in Spider format, just read it</para>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="90" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="90" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a2daaa715c42d7c2716adf3004aefd039" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::read_from_ints</definition>
+        <argsstring>(const String &amp;, em::ImageHeader &amp;, cv::Mat &amp;) const override</argsstring>
+        <name>read_from_ints</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::read_from_ints</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ad5d892bb53865c0995d9226d3d7dadfe">read_from_ints</reimplements>
+        <param>
+          <type>const String &amp;</type>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="77" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="77" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a28f648aaffbbe3f266e4ff3faf7ef674" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::write</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</argsstring>
+        <name>write</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::write</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1aae799f91ac40249ea85441d1154ad0f1">write</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="72" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1acdda9e14c4ebaf55bccaac401e86ae2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::write_to_floats</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</argsstring>
+        <name>write_to_floats</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::write_to_floats</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a59263b05b2204f8a045cadb975604e72">write_to_floats</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writes an EM image in Spider format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header with the image info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a matrix with the grid of data of the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>The image header is already in Spider format, just write it</para>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="132" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="132" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4daf99dcf941f0e04e3abb7828e3f90f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SpiderImageReaderWriter::write_to_ints</definition>
+        <argsstring>(const String &amp;, em::ImageHeader &amp;, const cv::Mat &amp;) const override</argsstring>
+        <name>write_to_ints</name>
+        <qualifiedname>IMP::em2d::SpiderImageReaderWriter::write_to_ints</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1acdc118dbb9ccf187f29072010f4e71d6">write_to_ints</reimplements>
+        <param>
+          <type>const String &amp;</type>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="80" column="8" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="80" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to read and write EM images in Spider format. They are stored in the header and data passed as arguments </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::em2d::ImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1ImageReaderWriter"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::SpiderImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::em2d::ImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1ImageReaderWriter"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::SpiderImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/SpiderImageReaderWriter.h" line="32" column="1" bodyfile="include/IMP/em2d/SpiderImageReaderWriter.h" bodystart="32" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a3b199bc32486692ef92eb25e2d637486" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>filename_</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1acb9de45e4d97fa1c67022fdcc611aead" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>force_reversed_</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a032ef8ffac91b03a04da8af974132454" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a6d0b9f574ab7e186682c3ffe1c66c672" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a197519249a9bf215c5e3b1c93454dd6e" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>ImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4c6a27beb107b4626f834f071a3d73c2" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>read</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a9c08b22839e3ad4f256541b5737b8443" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>read_from_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a2daaa715c42d7c2716adf3004aefd039" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>read_from_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a6422152351855d910edeadca9a69fa2b" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>skip_extra_checkings_</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4732784e89ae95901bef27a5dbd547b1" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>skip_type_check_</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a204c350117aab20cc185777b410e566f" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>SpiderImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4488a0648c4a1bee51e5b7ddef6e22da" prot="public" virt="non-virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>SpiderImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a28f648aaffbbe3f266e4ff3faf7ef674" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>write</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1acdda9e14c4ebaf55bccaac401e86ae2a" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>write_to_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4daf99dcf941f0e04e3abb7828e3f90f" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>write_to_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ae3a2db063f891b1ac487cad40101f874" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>~ImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a0f09f57686007c90701d7e1aadf108fe" prot="public" virt="virtual"><scope>IMP::em2d::SpiderImageReaderWriter</scope><name>~SpiderImageReaderWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

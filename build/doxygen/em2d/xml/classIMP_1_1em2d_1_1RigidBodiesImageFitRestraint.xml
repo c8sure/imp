@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::RigidBodiesImageFitRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Restraint</basecompoundref>
+    <includes local="no">IMP/em2d/RigidBodiesImageFitRestraint.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ae9d16fcce75206b348716d72d388f1ec" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>Pointer&lt;Image&gt; IMP::em2d::RigidBodiesImageFitRestraint::image_</definition>
+        <argsstring></argsstring>
+        <name>image_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::image_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="55" column="11" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a729f8235cede90cbe32f7415cd88317b" prot="protected" static="no" mutable="no">
+        <type>KeyIndexMaps</type>
+        <definition>KeyIndexMaps IMP::em2d::RigidBodiesImageFitRestraint::maps_</definition>
+        <argsstring></argsstring>
+        <name>maps_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::maps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="52" column="16" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a3588bd5fc21ea587a65a3211c26e7105" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1em2d_1_1ProjectingParameters" kindref="compound">ProjectingParameters</ref></type>
+        <definition>ProjectingParameters IMP::em2d::RigidBodiesImageFitRestraint::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="57" column="24" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aea9c5ea034a7005447427cdc569d588d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::RigidBodiesImageFitRestraint::params_set_</definition>
+        <argsstring></argsstring>
+        <name>params_set_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::params_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="58" column="8" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ace2ac04a844da9365096b516aa7550c5" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>Pointer&lt;Image&gt; IMP::em2d::RigidBodiesImageFitRestraint::projection_</definition>
+        <argsstring></argsstring>
+        <name>projection_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::projection_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="56" column="11" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aad70e72e1ccb35e3c86b2316cc5118ee" prot="protected" static="no" mutable="no">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::em2d::RigidBodiesImageFitRestraint::rigid_bodies_</definition>
+        <argsstring></argsstring>
+        <name>rigid_bodies_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::rigid_bodies_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="54" column="21" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aa019b515bd78490be98380de09844893" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref> &gt;</type>
+        <definition>std::vector&lt;em2d::Images&gt; IMP::em2d::RigidBodiesImageFitRestraint::rigid_bodies_masks_</definition>
+        <argsstring></argsstring>
+        <name>rigid_bodies_masks_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::rigid_bodies_masks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="51" column="15" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a4b8c8cd09493ab0e5de3ac349568f19a" prot="protected" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1em2d_1_1ScoreFunction" kindref="compound">ScoreFunction</ref> &gt;</type>
+        <definition>PointerMember&lt;ScoreFunction&gt; IMP::em2d::RigidBodiesImageFitRestraint::score_function_</definition>
+        <argsstring></argsstring>
+        <name>score_function_</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::score_function_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="53" column="17" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a40f7d246272dd2c776ec63d9842df01e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::em2d::RigidBodiesImageFitRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="46" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1acc8b6bca990e7a76a748dd0af2a49351" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::em2d::RigidBodiesImageFitRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="44" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1af061f3bf53dde9fec3da4b4432220b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::RigidBodiesImageFitRestraint::RigidBodiesImageFitRestraint</definition>
+        <argsstring>(ScoreFunction *scf, const core::RigidBodies &amp;rbs, Image *img)</argsstring>
+        <name>RigidBodiesImageFitRestraint</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::RigidBodiesImageFitRestraint</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1ScoreFunction" kindref="compound">ScoreFunction</ref> *</type>
+          <declname>scf</declname>
+        </param>
+        <param>
+          <type>const core::RigidBodies &amp;</type>
+          <declname>rbs</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">scf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Score function used to compute the value of the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rigid bodies that are restrained </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> used to compute the restraint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="70" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1afb1d24c3022485a18a4e4c013106c922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::RigidBodiesImageFitRestraint::~RigidBodiesImageFitRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~RigidBodiesImageFitRestraint</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::~RigidBodiesImageFitRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="47" column="231" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ac78c1c55361f2f4f698445e934f19945" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::RigidBodiesImageFitRestraint::get_number_of_masks</definition>
+        <argsstring>(const core::RigidBody &amp;rb) const</argsstring>
+        <name>get_number_of_masks</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::get_number_of_masks</qualifiedname>
+        <param>
+          <type>const core::RigidBody &amp;</type>
+          <declname>rb</declname>
+        </param>
+        <briefdescription>
+<para>Return the number of precomputed masks associated with the rigid body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ValueException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the rigid body is not in the set used to construct the restraint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="85" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1acc39b0a2773977ad71f5893f9f4daada" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::RigidBodiesImageFitRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="47" column="34" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a8635d3ec42f718d3120131fff7f5d1b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::RigidBodiesImageFitRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="47" column="103" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a9ecd59712114458c5d440bb7e01870f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::RigidBodiesImageFitRestraint::set_orientations</definition>
+        <argsstring>(const core::RigidBody &amp;rb, const algebra::Rotation3Ds &amp;rots)</argsstring>
+        <name>set_orientations</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::set_orientations</qualifiedname>
+        <param>
+          <type>const core::RigidBody &amp;</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>const algebra::Rotation3Ds &amp;</type>
+          <declname>rots</declname>
+        </param>
+        <briefdescription>
+<para>Set the possible rotations that a rigid body can have. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A projection of the rigid body in all possible orientations is stored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a477b51eb69d95e8a70cc7d42d392327c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::RigidBodiesImageFitRestraint::set_projecting_parameters</definition>
+        <argsstring>(const ProjectingParameters &amp;p)</argsstring>
+        <name>set_projecting_parameters</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::set_projecting_parameters</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1ProjectingParameters" kindref="compound">ProjectingParameters</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="73" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a3074d573c8c08ec7cfaaed796c83a413" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::RigidBodiesImageFitRestraint::get_rigid_body_index</definition>
+        <argsstring>(const core::RigidBody &amp;rb) const</argsstring>
+        <name>get_rigid_body_index</name>
+        <qualifiedname>IMP::em2d::RigidBodiesImageFitRestraint::get_rigid_body_index</qualifiedname>
+        <param>
+          <type>const core::RigidBody &amp;</type>
+          <declname>rb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="61" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fit rigid bodies to an image. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::RigidBodiesImageFitRestraint</label>
+        <link refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>params_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="43" column="1" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="43" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a40f7d246272dd2c776ec63d9842df01e" prot="private" virt="virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ac78c1c55361f2f4f698445e934f19945" prot="public" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>get_number_of_masks</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a3074d573c8c08ec7cfaaed796c83a413" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>get_rigid_body_index</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1acc39b0a2773977ad71f5893f9f4daada" prot="public" virt="virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a8635d3ec42f718d3120131fff7f5d1b8" prot="public" virt="virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ae9d16fcce75206b348716d72d388f1ec" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>image_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a729f8235cede90cbe32f7415cd88317b" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>maps_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a3588bd5fc21ea587a65a3211c26e7105" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>params_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aea9c5ea034a7005447427cdc569d588d" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>params_set_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1ace2ac04a844da9365096b516aa7550c5" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>projection_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aad70e72e1ccb35e3c86b2316cc5118ee" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>rigid_bodies_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1aa019b515bd78490be98380de09844893" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>rigid_bodies_masks_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1af061f3bf53dde9fec3da4b4432220b84" prot="public" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>RigidBodiesImageFitRestraint</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a4b8c8cd09493ab0e5de3ac349568f19a" prot="protected" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>score_function_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a9ecd59712114458c5d440bb7e01870f1" prot="public" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>set_orientations</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1a477b51eb69d95e8a70cc7d42d392327c" prot="public" virt="non-virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>set_projecting_parameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1acc8b6bca990e7a76a748dd0af2a49351" prot="private" virt="virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint_1afb1d24c3022485a18a4e4c013106c922" prot="public" virt="virtual"><scope>IMP::em2d::RigidBodiesImageFitRestraint</scope><name>~RigidBodiesImageFitRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

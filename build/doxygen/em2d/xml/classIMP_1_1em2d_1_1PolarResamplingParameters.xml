@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1PolarResamplingParameters" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::PolarResamplingParameters</compoundname>
+    <includes local="no">IMP/em2d/PolarResamplingParameters.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5af913513ef5a596e4a05f8f901e41f9" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::angle_step_</definition>
+        <argsstring></argsstring>
+        <name>angle_step_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::angle_step_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="185" column="23" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1afec8a7ce79177d4ca853bf1466a55cce" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::ending_radius_</definition>
+        <argsstring></argsstring>
+        <name>ending_radius_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::ending_radius_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="181" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac51a971693ea5f06e42344f75f3d0b14" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::PolarResamplingParameters::map_16SC2_</definition>
+        <argsstring></argsstring>
+        <name>map_16SC2_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::map_16SC2_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="176" column="11" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1abcefe74c438d78cfb94e3576c7da1e9a" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::PolarResamplingParameters::map_16UC1_</definition>
+        <argsstring></argsstring>
+        <name>map_16UC1_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::map_16UC1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="178" column="11" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ada55957a2ecbd2ddf03c823b743f1820" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::matrix_cols_</definition>
+        <argsstring></argsstring>
+        <name>matrix_cols_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::matrix_cols_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="183" column="48" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4368fc7493519a06a8b2cfdc627282ed" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::matrix_rows_</definition>
+        <argsstring></argsstring>
+        <name>matrix_rows_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::matrix_rows_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="183" column="35" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5bfb055c65be6cda6aec6c5ffc5bff32" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::n_angles_</definition>
+        <argsstring></argsstring>
+        <name>n_angles_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::n_angles_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="183" column="25" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1af7620a3b773581956e76639f47088cd7" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::n_rings_</definition>
+        <argsstring></argsstring>
+        <name>n_rings_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::n_rings_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="183" column="16" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ace5a9943cbbe8b75395ff7c4eff4842b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::PolarResamplingParameters::parameters_set_</definition>
+        <argsstring></argsstring>
+        <name>parameters_set_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::parameters_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="184" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a7790143d3c9cf5c1876ee3f59bfbbb66" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::PolarResamplingParameters::polar_map_</definition>
+        <argsstring></argsstring>
+        <name>polar_map_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::polar_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="175" column="11" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a0d310c5c6d8e0b315e4bc94f3988f6c3" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::radius_step_</definition>
+        <argsstring></argsstring>
+        <name>radius_step_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::radius_step_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="185" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a1937243cc426173788ee5dc4bfce4145" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::starting_radius_</definition>
+        <argsstring></argsstring>
+        <name>starting_radius_</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::starting_radius_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="180" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="188" column="16" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5ad411d026519922d9e9ddcffa63167f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</definition>
+        <argsstring>()</argsstring>
+        <name>PolarResamplingParameters</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="26" column="3" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5ba428776838e983a1d3a2aeebf4fdbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</definition>
+        <argsstring>(const cv::Mat &amp;m)</argsstring>
+        <name>PolarResamplingParameters</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the parameters for a polar resampling getting the dimensions from the matrix</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix that is going to be resampled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="41" column="3" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a79f33971fc03f6b36ba6117f1f1edadd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</definition>
+        <argsstring>(unsigned int rows, unsigned int cols)</argsstring>
+        <name>PolarResamplingParameters</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::PolarResamplingParameters</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the parameters for a polar resampling from the dimensions of a matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="32" column="3" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a0e541758be11322e26a7dee3c0064aba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::PolarResamplingParameters::~PolarResamplingParameters</definition>
+        <argsstring>()</argsstring>
+        <name>~PolarResamplingParameters</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::~PolarResamplingParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="43" column="3" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a7a9ce4c344d847058f0f6cca45631f7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::create_maps_for_resampling</definition>
+        <argsstring>()</argsstring>
+        <name>create_maps_for_resampling</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::create_maps_for_resampling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>After the number of radius and angles values are set, this function Builds a map of resampling coordinates. This map is very useful for </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="120" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="120" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ae6533dd8952f00efddc6cdfa988e12d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::get_angle_step</definition>
+        <argsstring>() const</argsstring>
+        <name>get_angle_step</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_angle_step</qualifiedname>
+        <briefdescription>
+<para>get the angular step used </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="107" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4f1881d371a2d2ab7efb0a41c45d028a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::get_ending_radius</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ending_radius</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_ending_radius</qualifiedname>
+        <briefdescription>
+<para>Gets the largest radius. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="73" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a6d4580bd9cffae058b2455a4284fbe84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::em2d::PolarResamplingParameters::get_is_setup</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_is_setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="169" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a8e662577d96acbfb1c5ad189c3f78311" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::get_number_of_angles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_angles</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_number_of_angles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the number of points that are sampled for the angles remember that this number is usually different to the approximated value that you provide to the function <ref refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1aa72600f51e6966b12e72d7a511f2219b" kindref="member">set_estimated_number_of_angles()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="104" column="16" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a8a802b816a9b1ef3d7b4e59788d87cb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PolarResamplingParameters::get_number_of_rings</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_rings</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_number_of_rings</qualifiedname>
+        <briefdescription>
+<para>Get the number of rings (that is, the number of radius values considered) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="88" column="16" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a821c3c0cab402abc7675f8f73c6484d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::get_radius</definition>
+        <argsstring>(unsigned int n_ring) const</argsstring>
+        <name>get_radius</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_radius</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n_ring</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current radius employed for the ring in consideration) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="79" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1af04c52b065b3fc9d537ad3aa11d0bb0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::get_radius_step</definition>
+        <argsstring>() const</argsstring>
+        <name>get_radius_step</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_radius_step</qualifiedname>
+        <briefdescription>
+<para>Get the step for the radius coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="110" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a01f1e9a844f5fe48bd5b2af34c94caa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::get_resampling_map</definition>
+        <argsstring>(cv::Mat &amp;m1) const</argsstring>
+        <name>get_resampling_map</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_resampling_map</qualifiedname>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtain the resampling map of type CV_32FC2 (floats, slower that those obtained with <ref refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac37505bf5e3578e8bc07149d2a3ac31b" kindref="member">get_resampling_maps()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="155" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac37505bf5e3578e8bc07149d2a3ac31b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::get_resampling_maps</definition>
+        <argsstring>(cv::Mat &amp;m1, cv::Mat &amp;m2) const</argsstring>
+        <name>get_resampling_maps</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_resampling_maps</qualifiedname>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>m2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the samplings maps of type CV_16SC2 and CV_16UC1 (this map combination is faster for remapping. See OpenCV help for remap() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="148" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a9ac75d6c713ac741e53f5b704bfb6add" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PolarResamplingParameters::get_starting_radius</definition>
+        <argsstring>() const</argsstring>
+        <name>get_starting_radius</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::get_starting_radius</qualifiedname>
+        <briefdescription>
+<para>Gets the initial radius of the resampling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="67" column="10" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1aa72600f51e6966b12e72d7a511f2219b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::set_estimated_number_of_angles</definition>
+        <argsstring>(unsigned int aprox_value)</argsstring>
+        <name>set_estimated_number_of_angles</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::set_estimated_number_of_angles</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>aprox_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>You give an approximated number of values that you want to use for the resampling, and the function computes the optimal number for an FFT based on this approximated number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="96" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4ca4fd05916b3bb1a3660ce9a87d53a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::setup</definition>
+        <argsstring>(unsigned int rows, unsigned int cols)</argsstring>
+        <name>setup</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::setup</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the internal parameters to generate all the values The class uses a number of radius values for resampling that is optimal to perform FFT during the rotational alignment. The first guess is half the rows and columns </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="49" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac746bc11417b012ddafa02de11ba0963" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::show</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="163" column="8" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="163" bodyend="167"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PolarResamplingParameters_1abd3860ad78878a0a65cecfe544c9ecfc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::em2d::PolarResamplingParameters::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::em2d::PolarResamplingParameters::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PolarResamplingParameters.h" line="190" column="19" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="190" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to manage the parameters required for the polar resampling in the rotational_alignment function </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/PolarResamplingParameters.h" line="23" column="1" bodyfile="include/IMP/em2d/PolarResamplingParameters.h" bodystart="23" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5af913513ef5a596e4a05f8f901e41f9" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>angle_step_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a7a9ce4c344d847058f0f6cca45631f7b" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>create_maps_for_resampling</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1afec8a7ce79177d4ca853bf1466a55cce" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>ending_radius_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ae6533dd8952f00efddc6cdfa988e12d5" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_angle_step</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4f1881d371a2d2ab7efb0a41c45d028a" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_ending_radius</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a6d4580bd9cffae058b2455a4284fbe84" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_is_setup</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a8e662577d96acbfb1c5ad189c3f78311" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_number_of_angles</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a8a802b816a9b1ef3d7b4e59788d87cb0" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_number_of_rings</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a821c3c0cab402abc7675f8f73c6484d4" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_radius</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1af04c52b065b3fc9d537ad3aa11d0bb0d" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_radius_step</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a01f1e9a844f5fe48bd5b2af34c94caa2" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_resampling_map</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac37505bf5e3578e8bc07149d2a3ac31b" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_resampling_maps</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a9ac75d6c713ac741e53f5b704bfb6add" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>get_starting_radius</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac51a971693ea5f06e42344f75f3d0b14" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>map_16SC2_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1abcefe74c438d78cfb94e3576c7da1e9a" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>map_16UC1_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ada55957a2ecbd2ddf03c823b743f1820" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>matrix_cols_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4368fc7493519a06a8b2cfdc627282ed" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>matrix_rows_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5bfb055c65be6cda6aec6c5ffc5bff32" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>n_angles_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1af7620a3b773581956e76639f47088cd7" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>n_rings_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ace5a9943cbbe8b75395ff7c4eff4842b" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>parameters_set_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a7790143d3c9cf5c1876ee3f59bfbbb66" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>polar_map_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5ad411d026519922d9e9ddcffa63167f" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>PolarResamplingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a79f33971fc03f6b36ba6117f1f1edadd" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>PolarResamplingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a5ba428776838e983a1d3a2aeebf4fdbc" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>PolarResamplingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a0d310c5c6d8e0b315e4bc94f3988f6c3" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>radius_step_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1abd3860ad78878a0a65cecfe544c9ecfc" prot="private" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1aa72600f51e6966b12e72d7a511f2219b" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>set_estimated_number_of_angles</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a4ca4fd05916b3bb1a3660ce9a87d53a0" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>setup</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1ac746bc11417b012ddafa02de11ba0963" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a1937243cc426173788ee5dc4bfce4145" prot="protected" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>starting_radius_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PolarResamplingParameters_1a0e541758be11322e26a7dee3c0064aba" prot="public" virt="non-virtual"><scope>IMP::em2d::PolarResamplingParameters</scope><name>~PolarResamplingParameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

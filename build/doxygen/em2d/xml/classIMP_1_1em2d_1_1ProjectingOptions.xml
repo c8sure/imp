@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ProjectingOptions" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::ProjectingOptions</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ProjectingParameters" prot="public" virt="non-virtual">IMP::em2d::ProjectingParameters</basecompoundref>
+    <includes local="no">IMP/em2d/project.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectingOptions_1af0ee044385838174d4ad577cc68ad891" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectingOptions::clear_matrix_before_projecting</definition>
+        <argsstring></argsstring>
+        <name>clear_matrix_before_projecting</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::clear_matrix_before_projecting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="85" column="8" bodyfile="include/IMP/em2d/project.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectingOptions_1a391fc0a6e37dd6fe223a3bb5f93273f2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectingOptions::normalize</definition>
+        <argsstring></argsstring>
+        <name>normalize</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::normalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="84" column="8" bodyfile="include/IMP/em2d/project.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectingOptions_1ac8aa87a2c590e80359173d6c0c4f5606" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectingOptions::save_images</definition>
+        <argsstring></argsstring>
+        <name>save_images</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::save_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="83" column="8" bodyfile="include/IMP/em2d/project.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectingOptions_1aa49a3bd887c69c9852f0e1a701a04340" prot="public" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1ImageReaderWriter" kindref="compound">ImageReaderWriter</ref> &gt;</type>
+        <definition>Pointer&lt;ImageReaderWriter&gt; IMP::em2d::ProjectingOptions::srw</definition>
+        <argsstring></argsstring>
+        <name>srw</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::srw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="81" column="11" bodyfile="include/IMP/em2d/project.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectingOptions_1a191d09f6e8b49c2a2c593e930a2a3a6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectingOptions::init_defaults</definition>
+        <argsstring>()</argsstring>
+        <name>init_defaults</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::init_defaults</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the default values for the options: Don&apos;t save matching images, normalize the projections, and clear the data matrix after projecting </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="73" column="8" bodyfile="include/IMP/em2d/project.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectingOptions_1a74af981738e1f53dfba16095e61cf7bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectingOptions::ProjectingOptions</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectingOptions</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::ProjectingOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. Calls init_defaults() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="90" column="3" bodyfile="include/IMP/em2d/project.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectingOptions_1a4808fe04a0864ec1cba36db81edd76cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectingOptions::ProjectingOptions</definition>
+        <argsstring>(double ps, double res)</argsstring>
+        <name>ProjectingOptions</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::ProjectingOptions</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The arguments passed to the constructor are the same as the arguments to to the constructor of <ref refid="classIMP_1_1em2d_1_1ProjectingParameters" kindref="compound">ProjectingParameters</ref> class. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="98" column="3" bodyfile="include/IMP/em2d/project.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectingOptions_1a02c2425aa3903fa5ec263dd65320101b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectingOptions::ProjectingOptions</definition>
+        <argsstring>(double ps, double res, ImageReaderWriter *irw)</argsstring>
+        <name>ProjectingOptions</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::ProjectingOptions</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1ImageReaderWriter" kindref="compound">ImageReaderWriter</ref> *</type>
+          <declname>irw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="102" column="3" bodyfile="include/IMP/em2d/project.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectingOptions_1af835d9d188ebee9d11b5464f01ad7660" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectingOptions::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::ProjectingOptions::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shows information about the class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream used to show the information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/project.h" line="111" column="8" bodyfile="include/IMP/em2d/project.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters given as options to the <ref refid="namespaceIMP_1_1em2d_1a65e066ed72e099282a5714fbd2333989" kindref="member">get_projections()</ref> functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class augments <ref refid="classIMP_1_1em2d_1_1ProjectingParameters" kindref="compound">ProjectingParameters</ref> adding values that are options for the projecting functions, not core parameters. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::em2d::ProjectingOptions</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingOptions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::em2d::ProjectingOptions</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingOptions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/project.h" line="67" column="1" bodyfile="include/IMP/em2d/project.h" bodystart="67" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1af0ee044385838174d4ad577cc68ad891" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>clear_matrix_before_projecting</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1a191d09f6e8b49c2a2c593e930a2a3a6c" prot="private" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>init_defaults</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1a391fc0a6e37dd6fe223a3bb5f93273f2" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>normalize</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a40f5e5273f6b628ff92421ee29c8ed27" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>pixel_size</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1a74af981738e1f53dfba16095e61cf7bf" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>ProjectingOptions</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1a4808fe04a0864ec1cba36db81edd76cb" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>ProjectingOptions</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1a02c2425aa3903fa5ec263dd65320101b" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>ProjectingOptions</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a9f7ac9dacf7141af57e524bfcfb9686e" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>ProjectingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a37a813346425ec8d8bf5936995670a65" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>ProjectingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1ae2d01e018ce4cd73ff8ac183b86af015" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>resolution</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1ac8aa87a2c590e80359173d6c0c4f5606" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>save_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1af835d9d188ebee9d11b5464f01ad7660" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingOptions_1aa49a3bd887c69c9852f0e1a701a04340" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectingOptions</scope><name>srw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

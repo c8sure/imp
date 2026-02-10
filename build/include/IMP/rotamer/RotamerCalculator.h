@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/rotamer/include/RotamerCalculator.h

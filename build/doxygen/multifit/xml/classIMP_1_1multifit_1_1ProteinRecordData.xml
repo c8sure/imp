@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ProteinRecordData" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ProteinRecordData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1ae0ff511fda1b27da24ff653a7d394dca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteinRecordData::end_res_</definition>
+        <argsstring></argsstring>
+        <name>end_res_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::end_res_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="64" column="18" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1abd8fcf1b9e5975114027c2b641a7869c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinRecordData::filename_</definition>
+        <argsstring></argsstring>
+        <name>filename_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="65" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1a0ec43beaff9bb1682ace2f56b8907adf" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinRecordData::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="63" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1a78b30c4527da314acbe749c2b128d392" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinRecordData::ref_filename_</definition>
+        <argsstring></argsstring>
+        <name>ref_filename_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ref_filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="67" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1a9c3a28ae230a16e2403fe09f7505f9ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteinRecordData::start_res_</definition>
+        <argsstring></argsstring>
+        <name>start_res_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::start_res_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="64" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinRecordData_1a7bcbefd43fb29703751764eb9e69136f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinRecordData::surface_filename_</definition>
+        <argsstring></argsstring>
+        <name>surface_filename_</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::surface_filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="66" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1multifit_1_1ProteinRecordData_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="70" column="16" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1ac50c3c0fe8acb49095d3842f2a961743" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinRecordData::ProteinRecordData</definition>
+        <argsstring>()</argsstring>
+        <name>ProteinRecordData</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ProteinRecordData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="31" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1a320ab22779515843495b78949c5d83d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinRecordData::ProteinRecordData</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>ProteinRecordData</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ProteinRecordData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="32" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1a147920b94dcdc8bb55833cce80dd1ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinRecordData::ProteinRecordData</definition>
+        <argsstring>(const std::string &amp;name, const std::string fn)</argsstring>
+        <name>ProteinRecordData</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ProteinRecordData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="36" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1a74b7d18a19d89919874db0f8e91467db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinRecordData::ProteinRecordData</definition>
+        <argsstring>(const std::string &amp;name, int start_res, int end_res, const std::string &amp;fn, const std::string &amp;surface_fn, const std::string &amp;ref_fn)</argsstring>
+        <name>ProteinRecordData</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ProteinRecordData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_res</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>surface_fn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ref_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="49" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="49" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1a3cda97644fbf5ac3d45b78b072dcec0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinRecordData::ProteinRecordData</definition>
+        <argsstring>(const std::string &amp;name, int start_res, int end_res, const std::string fn)</argsstring>
+        <name>ProteinRecordData</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::ProteinRecordData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_res</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="41" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1a9d146d8803cdac40158f121f66d38360" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinRecordData::reset_all</definition>
+        <argsstring>()</argsstring>
+        <name>reset_all</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::reset_all</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="23" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1ac4fde2408f3c3a9f1739c2d70f94702b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinRecordData::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="61" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinRecordData_1abaa068be5745fcf9bccba7b8a00d7005" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinRecordData::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::ProteinRecordData::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="72" column="19" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/proteomics_reader.h" line="21" column="1" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="21" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ae0ff511fda1b27da24ff653a7d394dca" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>end_res_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1abd8fcf1b9e5975114027c2b641a7869c" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>filename_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a0ec43beaff9bb1682ace2f56b8907adf" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>name_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ac50c3c0fe8acb49095d3842f2a961743" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ProteinRecordData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a320ab22779515843495b78949c5d83d5" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ProteinRecordData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a147920b94dcdc8bb55833cce80dd1ccf" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ProteinRecordData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a3cda97644fbf5ac3d45b78b072dcec0a" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ProteinRecordData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a74b7d18a19d89919874db0f8e91467db" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ProteinRecordData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a78b30c4527da314acbe749c2b128d392" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>ref_filename_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a9d146d8803cdac40158f121f66d38360" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>reset_all</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1abaa068be5745fcf9bccba7b8a00d7005" prot="private" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ac4fde2408f3c3a9f1739c2d70f94702b" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>show</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a9c3a28ae230a16e2403fe09f7505f9ee" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>start_res_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a7bcbefd43fb29703751764eb9e69136f" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinRecordData</scope><name>surface_filename_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

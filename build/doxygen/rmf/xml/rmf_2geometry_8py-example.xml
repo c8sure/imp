@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="rmf_2geometry_8py-example" kind="example">
+    <compoundname>rmf/geometry.py</compoundname>
+    <briefdescription>
+<para>This example shows writing one piece of geometry to an RMF file and then reading it back. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example shows writing one piece of geometry to an RMF file and then reading it back. <programlisting filename="rmf/geometry.py"><codeline><highlight class="comment">##<sp/>\example<sp/>rmf/geometry.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>shows<sp/>writing<sp/>one<sp/>piece<sp/>of<sp/>geometry<sp/>to<sp/>an<sp/>RMF<sp/>file<sp/>and<sp/>then</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>reading<sp/>it<sp/>back.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.display</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1rmf" kindref="compound">IMP.rmf</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;geometry&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">tfn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rmf_geometry.rmf&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>open<sp/>the<sp/>RMF,<sp/>clearing<sp/>any<sp/>existing<sp/>contents</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">f<sp/>=<sp/>RMF.create_rmf_file(tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>creating<sp/>a<sp/>box<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal">g<sp/>=<sp/>IMP.display.BoundingBoxGeometry(bb)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>add<sp/>the<sp/>geometry<sp/>to<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1ac527cf5f24b42ec60119b3ff253781ba" kindref="member">IMP.rmf.add_geometry</ref>(f,<sp/>g)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">IMP.rmf.save_frame</ref>(f,<sp/></highlight><highlight class="stringliteral">&quot;zero&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(1,<sp/>1,<sp/>1),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal">g.set_geometry(bb)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>save<sp/>a<sp/>second<sp/>frame<sp/>with<sp/>the<sp/>bounding<sp/>box</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">IMP.rmf.save_frame</ref>(f,<sp/></highlight><highlight class="stringliteral">&quot;one&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">del<sp/>f</highlight></codeline>
+<codeline><highlight class="normal">f<sp/>=<sp/>RMF.open_rmf_file_read_only(tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>recreate<sp/>the<sp/>geometries<sp/>from<sp/>the<sp/>file.<sp/>The<sp/>geometry<sp/>will<sp/>be<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>but<sp/>it<sp/>will<sp/>not<sp/>be<sp/>a<sp/>IMP.display.BoundingBoxGeometry;<sp/>it<sp/>will<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>a<sp/>set<sp/>of<sp/>cylinders<sp/>instead.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">gs<sp/>=<sp/><ref refid="namespaceIMP_1_1rmf_1ae6466f86dceab595e9eb6c5a522a7508" kindref="member">IMP.rmf.create_geometries</ref>(f)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP.rmf.load_frame</ref>(f,<sp/>RMF.FrameID(0))</highlight></codeline>
+<codeline><highlight class="normal">print(gs[0].get_name())</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Try<sp/>running<sp/>rmf_display<sp/><sp/>on&quot;</highlight><highlight class="normal">,<sp/>tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>load<sp/>another<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP.rmf.load_frame</ref>(f,<sp/>RMF.FrameID(1))</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>cast<sp/>it<sp/>to<sp/>a<sp/>BoundingBoxGeometry<sp/>and<sp/>print<sp/>out<sp/>the<sp/>geometry</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(IMP.display.BoundingBoxGeometry.get_from(gs[0]).get_geometry())</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/rmf/geometry.py"/>
+  </compounddef>
+</doxygen>

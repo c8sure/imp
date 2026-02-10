@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering" kind="class" language="Python" prot="public">
+    <compoundname>IMP::multifit::cluster::AlignmentClustering</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a5408d179e1227c139c6a09be0321f675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.cluster.AlignmentClustering.do_clustering</definition>
+        <argsstring>(self, max_comb_ind, max_rmsd)</argsstring>
+        <name>do_clustering</name>
+        <qualifiedname>IMP::multifit.cluster.AlignmentClustering.do_clustering</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>max_comb_ind</type>
+          <defname>max_comb_ind</defname>
+        </param>
+        <param>
+          <type>max_rmsd</type>
+          <defname>max_rmsd</defname>
+        </param>
+        <briefdescription>
+<para>Cluster configurations for a model based on RMSD. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An IMP.ConfigurationSet is built using the reference frames for all of the components of the assembly for each solution <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_comb_ind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of components to consider </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_rmsd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum RMSD tolerated when clustering </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/cluster.py" line="113" column="1" bodyfile="lib/IMP/multifit/cluster.py" bodystart="113" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a54ef15cc650fa190ca079370bb71296d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.cluster.AlignmentClustering.get_cc</definition>
+        <argsstring>(self, ps)</argsstring>
+        <name>get_cc</name>
+        <qualifiedname>IMP::multifit.cluster.AlignmentClustering.get_cc</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+<para>bb_native = self.dmap.get_bounding_box() bb_solution = IMP.core.get_bounding_box(IMP.core.XYZs(ps)) </para>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1autotoc_md0">
+<title>bounding box enclosing both the particles of the native assembly</title></sect1>
+<sect1 id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1autotoc_md1">
+<title>and the particles of the model</title><para>bb_union = IMP.algebra.get_union(bb_native, bb_solution) </para>
+</sect1>
+<sect1 id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1autotoc_md2">
+<title>add border of 4 voxels</title><para>border = 4*voxel_size bottom = bb_union.get_corner(0) bottom += IMP.algebra.Vector3D(-border, -border, -border) top = bb_union.get_corner(1) top += IMP.algebra.Vector3D(border, border, border) bb_union = IMP.algebra.BoundingBox3D(bottom, top) </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/cluster.py" line="189" column="1" bodyfile="lib/IMP/multifit/cluster.py" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1acabc2215397c67036b868af293376489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.cluster.AlignmentClustering.get_placement_score_from_coordinates</definition>
+        <argsstring>(self, model_coords, native_coords)</argsstring>
+        <name>get_placement_score_from_coordinates</name>
+        <qualifiedname>IMP::multifit.cluster.AlignmentClustering.get_placement_score_from_coordinates</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model_coords</type>
+          <defname>model_coords</defname>
+        </param>
+        <param>
+          <type>native_coords</type>
+          <defname>native_coords</defname>
+        </param>
+        <briefdescription>
+<para>Computes the position error (placement distance) and the orientation error (placement angle) of the coordinates in model_coords with respect to the coordinates in native_coords. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>placement distance - translation between the centroids of the coordinates. placement angle - Angle in the axis-angle formulation of the rotation aligning the two rigid bodies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/cluster.py" line="162" column="1" bodyfile="lib/IMP/multifit/cluster.py" bodystart="162" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clusters assembly models. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>The solutions are chosen by sorting the database according to the parameter orderby</para>
+</listitem><listitem><para>The models are aligned and clustered by RMSD</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/multifit/cluster.py" line="64" column="1" bodyfile="lib/IMP/multifit/cluster.py" bodystart="64" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a5408d179e1227c139c6a09be0321f675" prot="public" virt="non-virtual"><scope>IMP::multifit::cluster::AlignmentClustering</scope><name>do_clustering</name></member>
+      <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a54ef15cc650fa190ca079370bb71296d" prot="public" virt="non-virtual"><scope>IMP::multifit::cluster::AlignmentClustering</scope><name>get_cc</name></member>
+      <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1acabc2215397c67036b868af293376489" prot="public" virt="non-virtual"><scope>IMP::multifit::cluster::AlignmentClustering</scope><name>get_placement_score_from_coordinates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1CellMover" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::CellMover</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">core::MonteCarloMover</basecompoundref>
+    <includes local="no">IMP/spb/CellMover.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1a04dd8285fdfb4bbf77688dddcafba117" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::CellMover::max_translation_</definition>
+        <argsstring></argsstring>
+        <name>max_translation_</name>
+        <qualifiedname>IMP::spb::CellMover::max_translation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="44" column="9" bodyfile="include/IMP/spb/CellMover.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1a2cf72e307b90e63dc6dd992475402c61" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::CellMover::old_scale_</definition>
+        <argsstring></argsstring>
+        <name>old_scale_</name>
+        <qualifiedname>IMP::spb::CellMover::old_scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="39" column="9" bodyfile="include/IMP/spb/CellMover.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1a8d6acc02299b2191e13e6f34d45cc18e" prot="private" static="no" mutable="no">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::spb::CellMover::oldcoords_</definition>
+        <argsstring></argsstring>
+        <name>oldcoords_</name>
+        <qualifiedname>IMP::spb::CellMover::oldcoords_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="40" column="22" bodyfile="include/IMP/spb/CellMover.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1a20293562a69b06bb602c0df74ca4519a" prot="private" static="no" mutable="no">
+        <type>algebra::Transformation3Ds</type>
+        <definition>algebra::Transformation3Ds IMP::spb::CellMover::oldtrs_</definition>
+        <argsstring></argsstring>
+        <name>oldtrs_</name>
+        <qualifiedname>IMP::spb::CellMover::oldtrs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="41" column="30" bodyfile="include/IMP/spb/CellMover.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1aa14d5e59b565dda4d3a9275c8e5c7d11" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; IMP::Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;IMP::Particle&gt; IMP::spb::CellMover::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::spb::CellMover::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="42" column="22" bodyfile="include/IMP/spb/CellMover.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1a03d885cea802743a0a5ae72981c95387" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::CellMover::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::CellMover::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="43" column="13" bodyfile="include/IMP/spb/CellMover.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1af3dc83ec7f9de11885fe8470f12f1bd6" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::CellMover::ps_norb_</definition>
+        <argsstring></argsstring>
+        <name>ps_norb_</name>
+        <qualifiedname>IMP::spb::CellMover::ps_norb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="45" column="13" bodyfile="include/IMP/spb/CellMover.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1CellMover_1af1abf91307968543dc29224248f1b5f0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; core::RigidBody &gt;</type>
+        <definition>std::vector&lt;core::RigidBody&gt; IMP::spb::CellMover::rbs_</definition>
+        <argsstring></argsstring>
+        <name>rbs_</name>
+        <qualifiedname>IMP::spb::CellMover::rbs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="46" column="15" bodyfile="include/IMP/spb/CellMover.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a7e5c753f4b31ab8721a007b181600648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::CellMover::CellMover</definition>
+        <argsstring>(Particle *p, Particles ps, Float max_translation)</argsstring>
+        <name>CellMover</name>
+        <qualifiedname>IMP::spb::CellMover::CellMover</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_translation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="27" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a7206829770775e9055cd1b812a28c0ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::CellMover::~CellMover</definition>
+        <argsstring>()</argsstring>
+        <name>~CellMover</name>
+        <qualifiedname>IMP::spb::CellMover::~CellMover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="35" column="231" bodyfile="include/IMP/spb/CellMover.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1ab300e75c5cb79b372673f169df9dd94e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::CellMover::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::CellMover::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="35" column="34" bodyfile="include/IMP/spb/CellMover.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a96366c6aaba9d5fae391cd927995e502" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::CellMover::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::CellMover::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="35" column="103" bodyfile="include/IMP/spb/CellMover.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a809f0e77dfb983c8f45d1f772ef9190e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::CellMover::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::CellMover::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="36" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1ab6aa71806ac4a4ce35e5ecdae7cda635" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::CellMover::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::CellMover::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="33" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a3fd38af233c4193e9a04a4b5a4e41976" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>core::MonteCarloMoverResult</type>
+        <definition>virtual core::MonteCarloMoverResult IMP::spb::CellMover::do_propose</definition>
+        <argsstring>() override</argsstring>
+        <name>do_propose</name>
+        <qualifiedname>IMP::spb::CellMover::do_propose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="31" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a5d80d062df1d9be097b59e88357b99e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::CellMover::do_reject</definition>
+        <argsstring>() override</argsstring>
+        <name>do_reject</name>
+        <qualifiedname>IMP::spb::CellMover::do_reject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="32" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1a705875dfcd4c101bc54274bcaa94a8c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::CellMover::get_particles</definition>
+        <argsstring>(Particles ps)</argsstring>
+        <name>get_particles</name>
+        <qualifiedname>IMP::spb::CellMover::get_particles</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="48" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1aea424d12587b43adb43dcce919364f88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; core::RigidBody &gt;</type>
+        <definition>std::vector&lt; core::RigidBody &gt; IMP::spb::CellMover::get_rigid_bodies</definition>
+        <argsstring>(Particles ps)</argsstring>
+        <name>get_rigid_bodies</name>
+        <qualifiedname>IMP::spb::CellMover::get_rigid_bodies</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="49" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1CellMover_1ad7b9e45e506ee6c32cb9f8f9e49d1746" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::spb::CellMover::get_transformed</definition>
+        <argsstring>(Float cf, algebra::Vector3D oc)</argsstring>
+        <name>get_transformed</name>
+        <qualifiedname>IMP::spb::CellMover::get_transformed</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>cf</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>oc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/CellMover.h" line="50" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Apply a mover that moves particles inside the unit cell. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The mover takes into account the fact that the unit cell size changes from one step to the next. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/CellMover.h" line="25" column="1" bodyfile="include/IMP/spb/CellMover.h" bodystart="25" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a7e5c753f4b31ab8721a007b181600648" prot="public" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>CellMover</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1ab6aa71806ac4a4ce35e5ecdae7cda635" prot="protected" virt="virtual"><scope>IMP::spb::CellMover</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a3fd38af233c4193e9a04a4b5a4e41976" prot="protected" virt="virtual"><scope>IMP::spb::CellMover</scope><name>do_propose</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a5d80d062df1d9be097b59e88357b99e5" prot="protected" virt="virtual"><scope>IMP::spb::CellMover</scope><name>do_reject</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a705875dfcd4c101bc54274bcaa94a8c8" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>get_particles</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1aea424d12587b43adb43dcce919364f88" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>get_rigid_bodies</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1ad7b9e45e506ee6c32cb9f8f9e49d1746" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>get_transformed</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1ab300e75c5cb79b372673f169df9dd94e" prot="public" virt="virtual"><scope>IMP::spb::CellMover</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a96366c6aaba9d5fae391cd927995e502" prot="public" virt="virtual"><scope>IMP::spb::CellMover</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a04dd8285fdfb4bbf77688dddcafba117" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>max_translation_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a2cf72e307b90e63dc6dd992475402c61" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>old_scale_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a8d6acc02299b2191e13e6f34d45cc18e" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>oldcoords_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a20293562a69b06bb602c0df74ca4519a" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>oldtrs_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1aa14d5e59b565dda4d3a9275c8e5c7d11" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>p_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a03d885cea802743a0a5ae72981c95387" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1af3dc83ec7f9de11885fe8470f12f1bd6" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>ps_norb_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1af1abf91307968543dc29224248f1b5f0" prot="private" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>rbs_</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a809f0e77dfb983c8f45d1f772ef9190e" prot="public" virt="non-virtual"><scope>IMP::spb::CellMover</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1CellMover_1a7206829770775e9055cd1b812a28c0ee" prot="public" virt="virtual"><scope>IMP::spb::CellMover</scope><name>~CellMover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

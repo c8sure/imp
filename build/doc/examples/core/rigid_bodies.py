@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/core/examples/rigid_bodies.py

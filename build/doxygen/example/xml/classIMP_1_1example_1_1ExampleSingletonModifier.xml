@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleSingletonModifier" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleSingletonModifier</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SingletonModifier</basecompoundref>
+    <includes local="no">IMP/example/ExampleSingletonModifier.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a64a2dcbf1a089d87c631378f6888f853" prot="private" static="no" mutable="no">
+        <type>algebra::BoundingBoxD&lt; 3 &gt;</type>
+        <definition>algebra::BoundingBoxD&lt;3&gt; IMP::example::ExampleSingletonModifier::bb_</definition>
+        <argsstring></argsstring>
+        <name>bb_</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::bb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="36" column="25" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="38" column="16" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a8a7caa0ecb7774de38b79d3015130f1a" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::example::ExampleSingletonModifier::dummy_serialize_init_</definition>
+        <argsstring></argsstring>
+        <name>dummy_serialize_init_</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::dummy_serialize_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="42" column="27" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a4b21441585ca358ef231a7001a37506b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExampleSingletonModifier::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="39" column="19" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a16aa15f15916babd8f0bf2a956c1a5d5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object *</type>
+        <definition>static Object * IMP::example::ExampleSingletonModifier::load_cereal</definition>
+        <argsstring>(cereal::BinaryInputArchive &amp;ar)</argsstring>
+        <name>load_cereal</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::load_cereal</qualifiedname>
+        <param>
+          <type>cereal::BinaryInputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="42" column="229" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1acb4744ca2b929e39685f12613f57856f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExampleSingletonModifier::save_cereal</definition>
+        <argsstring>(Object *o, cereal::BinaryOutputArchive &amp;ar)</argsstring>
+        <name>save_cereal</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::save_cereal</qualifiedname>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>cereal::BinaryOutputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="42" column="63" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a28ed3e37d11d4b3b0a9629689379629f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleSingletonModifier::ExampleSingletonModifier</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleSingletonModifier</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::ExampleSingletonModifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="46" column="3" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ae16321e35f3831e87c4dbbaaa26badc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleSingletonModifier::ExampleSingletonModifier</definition>
+        <argsstring>(const algebra::BoundingBoxD&lt; 3 &gt; &amp;bb)</argsstring>
+        <name>ExampleSingletonModifier</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::ExampleSingletonModifier</qualifiedname>
+        <param>
+          <type>const algebra::BoundingBoxD&lt; 3 &gt; &amp;</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="45" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a266d207b51b5086510858b12a231725e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleSingletonModifier::~ExampleSingletonModifier</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleSingletonModifier</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::~ExampleSingletonModifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="58" column="231" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ac6dc71a7f159ff84727454c767fd208f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::example::ExampleSingletonModifier::apply_index</definition>
+        <argsstring>(Model *m, ParticleIndex p) const override</argsstring>
+        <name>apply_index</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::apply_index</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="51" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a50263ec37cc3188a56cc6cc05c861cc4" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::example::ExampleSingletonModifier::apply_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;o, unsigned int lower_bound, unsigned int upper_bound) const override final</argsstring>
+        <name>apply_indexes</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::apply_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="57" column="17" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a971598f275a90b41804ce8725206ffc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::example::ExampleSingletonModifier::do_get_inputs</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::do_get_inputs</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="53" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ad3d1511ba756e4f1617b9596498d16ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::example::ExampleSingletonModifier::do_get_outputs</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_outputs</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::do_get_outputs</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="55" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ab8c8e94cce8a488e2611836e112319c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::BoundingBoxD&lt; 3 &gt;</type>
+        <definition>algebra::BoundingBoxD&lt; 3 &gt; IMP::example::ExampleSingletonModifier::get_bounding_box</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bounding_box</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::get_bounding_box</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="48" column="25" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1ad446ab569ea4ca5aec0cbbed6f51b4fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleSingletonModifier::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="58" column="34" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSingletonModifier_1a340cd0ff38bfa6ee34eb9fe54dec878f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleSingletonModifier::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleSingletonModifier::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSingletonModifier.h" line="58" column="103" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An example singleton modifier. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A simple singleton modifier which ensures the x,y,z coordinates stay in a box by wrapping them.</para>
+<para>Such a class could be coupled with an IMP::core::SingletonConstraint or IMP::container::SingletonsConstraint to keep a set of particles in a box.</para>
+<para><programlisting filename="range_restriction.py"><codeline><highlight class="comment">##<sp/>\example<sp/>example/range_restriction.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>shows<sp/>how<sp/>to<sp/>use<sp/>the<sp/>example<sp/>singleton<sp/>modifier<sp/>to<sp/>constrain<sp/>the</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>coordinates<sp/>of<sp/>a<sp/>set<sp/>of<sp/>particles<sp/>to<sp/>remain<sp/>within<sp/>a<sp/>box.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1example" kindref="compound">IMP.example</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>can<sp/>use<sp/>this<sp/>argument<sp/>to<sp/>shorten<sp/>the<sp/>test,<sp/>if<sp/>necessary</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.add_bool_flag(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Run<sp/>a<sp/>minimal<sp/>test<sp/>on<sp/>the<sp/>script&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>parse<sp/>standard<sp/>IMP<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>trivial<sp/>example<sp/>of<sp/>an<sp/>example.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>IMP.core.create_xyzr_particles(m,<sp/>20,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal">sc<sp/>=<sp/>IMP.container.ListSingletonContainer(m,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>apply<sp/>the<sp/>range<sp/>restriction<sp/>modifier<sp/>to<sp/>each<sp/>each<sp/>particle<sp/>in<sp/>sc</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ss<sp/>=<sp/>IMP.container.SingletonsConstraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIMP_1_1example_1_1ExampleSingletonModifier" kindref="compound">IMP.example.ExampleSingletonModifier</ref>(bb),<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>sc)</highlight></codeline>
+<codeline><highlight class="normal">m.add_score_state(ss)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>now<sp/>optimize<sp/>and<sp/>things</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para>
+<para>The source code is as follows: <programlisting filename="ExampleSingletonModifier.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleSingletonModifier.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>singleton<sp/>modifier<sp/>which<sp/>wraps<sp/>an<sp/>attribute<sp/>into<sp/>a</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>given<sp/>range.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2026<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_SINGLETON_MODIFIER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_SINGLETON_MODIFIER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/SingletonModifier.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/algebra/BoundingBoxD.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/singleton_macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/access.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/types/base_class.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>An<sp/>example<sp/>singleton<sp/>modifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>A<sp/>simple<sp/>singleton<sp/>modifier<sp/>which<sp/>ensures<sp/>the<sp/>x,y,z<sp/>coordinates</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>stay<sp/>in<sp/>a<sp/>box<sp/>by<sp/>wrapping<sp/>them.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>Such<sp/>a<sp/>class<sp/>could<sp/>be<sp/>coupled<sp/>with<sp/>an<sp/>IMP::core::SingletonConstraint</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>IMP::container::SingletonsConstraint<sp/>to<sp/>keep<sp/>a<sp/>set<sp/>of<sp/>particles</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>in<sp/>a<sp/>box.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>range_restriction.py</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleSingletonModifier.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleSingletonModifier.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleSingletonModifier<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SingletonModifier<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>algebra::BoundingBoxD&lt;3&gt;<sp/>bb_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar(cereal::base_class&lt;SingletonModifier&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>bb_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_SERIALIZE_DECL(ExampleSingletonModifier);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleSingletonModifier(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>algebra::BoundingBoxD&lt;3&gt;<sp/>&amp;bb);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleSingletonModifier()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>algebra::BoundingBoxD&lt;3&gt;<sp/>get_bounding_box()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bb_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>note,<sp/>Doxygen<sp/>wants<sp/>a<sp/>semicolon<sp/>at<sp/>the<sp/>end<sp/>of<sp/>macro<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_index(Model<sp/>*m,<sp/>ParticleIndex<sp/>p)<sp/></highlight><highlight class="keyword">const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ModelObjectsTemp<sp/>do_get_inputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ModelObjectsTemp<sp/>do_get_outputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_SINGLETON_MODIFIER_METHODS(ExampleSingletonModifier);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleSingletonModifier);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_SINGLETON_MODIFIER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleSingletonModifier.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>example/ExampleSingletonModifier.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>singleton<sp/>modifier<sp/>which<sp/>wraps<sp/>an<sp/>attribute<sp/>into<sp/>a</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>given<sp/>range.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IMP/example/ExampleSingletonModifier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IMP/core/XYZ.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal">ExampleSingletonModifier::ExampleSingletonModifier(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>algebra::BoundingBox3D<sp/>&amp;bb)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>bb_(bb)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ExampleSingletonModifier::apply_index(Model<sp/>*m,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParticleIndex<sp/>pi)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZ<sp/>d(m,<sp/>pi);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>shift<sp/>the<sp/>coordinate<sp/>until<sp/>it<sp/>is<sp/>in<sp/>the<sp/>box</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(d.get_coordinate(i)<sp/>&lt;<sp/>bb_.get_corner(0)[i])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d.set_coordinate(i,<sp/>d.get_coordinate(i)<sp/>+</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(bb_.get_corner(1)[i]<sp/>-<sp/>bb_.get_corner(0)[i]));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(d.get_coordinate(i)<sp/>&gt;<sp/>bb_.get_corner(1)[i])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d.set_coordinate(i,<sp/>d.get_coordinate(i)<sp/>-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(bb_.get_corner(1)[i]<sp/>-<sp/>bb_.get_corner(0)[i]));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Only<sp/>the<sp/>passed<sp/>particle<sp/>is<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ModelObjectsTemp<sp/>ExampleSingletonModifier::do_get_inputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>IMP::get_particles(m,<sp/>pis);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ModelObjectsTemp<sp/>ExampleSingletonModifier::do_get_outputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>do_get_inputs(m,<sp/>pis);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_OBJECT_SERIALIZE_IMPL(<ref refid="classIMP_1_1example_1_1ExampleSingletonModifier" kindref="compound">IMP::example::ExampleSingletonModifier</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleSingletonModifier.h" line="35" column="1" bodyfile="include/IMP/example/ExampleSingletonModifier.h" bodystart="35" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1ac6dc71a7f159ff84727454c767fd208f" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>apply_index</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a50263ec37cc3188a56cc6cc05c861cc4" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>apply_indexes</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a64a2dcbf1a089d87c631378f6888f853" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>bb_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a971598f275a90b41804ce8725206ffc6" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1ad3d1511ba756e4f1617b9596498d16ed" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>do_get_outputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a8a7caa0ecb7774de38b79d3015130f1a" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>dummy_serialize_init_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1ae16321e35f3831e87c4dbbaaa26badc9" prot="public" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>ExampleSingletonModifier</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a28ed3e37d11d4b3b0a9629689379629f" prot="public" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>ExampleSingletonModifier</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1ab8c8e94cce8a488e2611836e112319c0" prot="public" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>get_bounding_box</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1ad446ab569ea4ca5aec0cbbed6f51b4fe" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a340cd0ff38bfa6ee34eb9fe54dec878f" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a16aa15f15916babd8f0bf2a956c1a5d5" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>load_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1acb4744ca2b929e39685f12613f57856f" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>save_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a4b21441585ca358ef231a7001a37506b" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSingletonModifier_1a266d207b51b5086510858b12a231725e" prot="public" virt="virtual"><scope>IMP::example::ExampleSingletonModifier</scope><name>~ExampleSingletonModifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

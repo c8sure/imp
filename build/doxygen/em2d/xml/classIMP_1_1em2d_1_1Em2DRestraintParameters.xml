@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1Em2DRestraintParameters" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::Em2DRestraintParameters</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ProjectingParameters" prot="public" virt="non-virtual">IMP::em2d::ProjectingParameters</basecompoundref>
+    <includes local="no">IMP/em2d/ProjectionFinder.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="40" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad92be976f29d3d2d8a1add7618c6b296" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::Em2DRestraintParameters::coarse_registration_method</definition>
+        <argsstring></argsstring>
+        <name>coarse_registration_method</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::coarse_registration_method</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="59" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1aa00628e896494cb4ddaab3c4b57eb2bd" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::Em2DRestraintParameters::n_projections</definition>
+        <argsstring></argsstring>
+        <name>n_projections</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::n_projections</qualifiedname>
+        <briefdescription>
+<para>Number of model projections to generate when scoring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="58" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad6d9666663330f74d847ff91713ab035" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::Em2DRestraintParameters::optimization_steps</definition>
+        <argsstring></argsstring>
+        <name>optimization_steps</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::optimization_steps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="61" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a92e95c7c8c3c50fa447c64cefd271dbb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::Em2DRestraintParameters::save_match_images</definition>
+        <argsstring></argsstring>
+        <name>save_match_images</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::save_match_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="60" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ae6d4aace438b28c49a64e6b3c078e99c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::Em2DRestraintParameters::simplex_initial_length</definition>
+        <argsstring></argsstring>
+        <name>simplex_initial_length</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::simplex_initial_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="62" column="10" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad77b1efc2b7a27e1a4c184ff44046950" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::Em2DRestraintParameters::simplex_minimum_size</definition>
+        <argsstring></argsstring>
+        <name>simplex_minimum_size</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::simplex_minimum_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="63" column="10" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a17fc464a00f727a9b10f8caa64dfc223" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraintParameters::init_defaults</definition>
+        <argsstring>()</argsstring>
+        <name>init_defaults</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::init_defaults</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="48" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a1b7af00dfc5793d3dafcc9ddbdd7311f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraintParameters::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="42" column="19" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a4a5f1660cb86f794365c8c4a946b72e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Em2DRestraintParameters::Em2DRestraintParameters</definition>
+        <argsstring>()</argsstring>
+        <name>Em2DRestraintParameters</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::Em2DRestraintParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="65" column="3" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a0e0ff27c04356c3f48ab023a5633cc06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Em2DRestraintParameters::Em2DRestraintParameters</definition>
+        <argsstring>(double ps, double res, unsigned int n_proj=20)</argsstring>
+        <name>Em2DRestraintParameters</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::Em2DRestraintParameters</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n_proj</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="69" column="3" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a719d1cdf71e911186dc46f515a09978b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraintParameters::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::Em2DRestraintParameters::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="74" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="74" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters used by <ref refid="classIMP_1_1em2d_1_1Em2DRestraint" kindref="compound">Em2DRestraint</ref> and <ref refid="classIMP_1_1em2d_1_1ProjectionFinder" kindref="compound">ProjectionFinder</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::em2d::Em2DRestraintParameters</label>
+        <link refid="classIMP_1_1em2d_1_1Em2DRestraintParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::em2d::Em2DRestraintParameters</label>
+        <link refid="classIMP_1_1em2d_1_1Em2DRestraintParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/ProjectionFinder.h" line="38" column="1" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="38" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad92be976f29d3d2d8a1add7618c6b296" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>coarse_registration_method</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a4a5f1660cb86f794365c8c4a946b72e1" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>Em2DRestraintParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a0e0ff27c04356c3f48ab023a5633cc06" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>Em2DRestraintParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a17fc464a00f727a9b10f8caa64dfc223" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>init_defaults</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1aa00628e896494cb4ddaab3c4b57eb2bd" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>n_projections</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad6d9666663330f74d847ff91713ab035" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>optimization_steps</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a40f5e5273f6b628ff92421ee29c8ed27" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>pixel_size</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a9f7ac9dacf7141af57e524bfcfb9686e" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>ProjectingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1a37a813346425ec8d8bf5936995670a65" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>ProjectingParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectingParameters_1ae2d01e018ce4cd73ff8ac183b86af015" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>resolution</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a92e95c7c8c3c50fa447c64cefd271dbb" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>save_match_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a1b7af00dfc5793d3dafcc9ddbdd7311f" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1a719d1cdf71e911186dc46f515a09978b" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ae6d4aace438b28c49a64e6b3c078e99c" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>simplex_initial_length</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraintParameters_1ad77b1efc2b7a27e1a4c184ff44046950" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraintParameters</scope><name>simplex_minimum_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

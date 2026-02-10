@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargminmax" kind="namespace" language="Python">
+    <compoundname>argminmax</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="argminmax_8py_1a2e69988f0a3dc1949fe31ad6196b7935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argminmax.argmax</definition>
+        <argsstring>(sequence)</argsstring>
+        <name>argmax</name>
+        <qualifiedname>argminmax.argmax</qualifiedname>
+        <param>
+          <type>sequence</type>
+          <defname>sequence</defname>
+        </param>
+        <briefdescription>
+<para>Argmax function: Returns the pair (max_value,max_index), where max_index is the index of the maximum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/argminmax.py" line="31" column="1" bodyfile="lib/IMP/EMageFit/argminmax.py" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="argminmax_8py_1a2c91c436cf1ce76c7779719f31e69697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argminmax.argmin</definition>
+        <argsstring>(sequence)</argsstring>
+        <name>argmin</name>
+        <qualifiedname>argminmax.argmin</qualifiedname>
+        <param>
+          <type>sequence</type>
+          <defname>sequence</defname>
+        </param>
+        <briefdescription>
+<para>Argmin function: Returns the pair (min_value,min_index), where min_index is the index of the minimum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/argminmax.py" line="8" column="1" bodyfile="lib/IMP/EMageFit/argminmax.py" bodystart="8" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="argminmax_8py_1abf8ad318489b4c86847e8cada41638cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argminmax.keymax</definition>
+        <argsstring>(dictionary)</argsstring>
+        <name>keymax</name>
+        <qualifiedname>argminmax.keymax</qualifiedname>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+<para>return the key of the dictionary that has the maximum value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/argminmax.py" line="44" column="1" bodyfile="lib/IMP/EMageFit/argminmax.py" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="argminmax_8py_1a2ca8c79b0e87864bb2cee7d96b76682b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argminmax.keymin</definition>
+        <argsstring>(dictionary)</argsstring>
+        <name>keymin</name>
+        <qualifiedname>argminmax.keymin</qualifiedname>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+<para>return the key of the dictionary that has the minimum value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/argminmax.py" line="19" column="1" bodyfile="lib/IMP/EMageFit/argminmax.py" bodystart="19" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/argminmax.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

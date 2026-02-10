@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2rigid_body_excluded_volume_8py-example" kind="example">
+    <compoundname>domino/rigid_body_excluded_volume.py</compoundname>
+    <briefdescription>
+<para>This example shows using two rigid bodies and doing excluded volume with them. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example shows using two rigid bodies and doing excluded volume with them. <programlisting filename="domino/rigid_body_excluded_volume.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/rigid_body_excluded_volume.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>shows<sp/>using<sp/>two<sp/>rigid<sp/>bodies<sp/>and<sp/>doing<sp/>excluded<sp/>volume<sp/>with</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>math</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;rigid<sp/>body<sp/>excluded<sp/>volume&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>rigid<sp/>body<sp/>per<sp/>helix</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_representation():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h0<sp/>=<sp/>IMP.atom.read_pdb(<ref refid="namespaceIMP_1_1domino_1a2095dc8230d6c30f29361536f7b93d31" kindref="member">IMP.domino.get_example_path</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;helix_0.pdb&apos;</highlight><highlight class="normal">),<sp/>m,<sp/>IMP.atom.CAlphaPDBSelector())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h1<sp/>=<sp/>IMP.atom.read_pdb(<ref refid="namespaceIMP_1_1domino_1a2095dc8230d6c30f29361536f7b93d31" kindref="member">IMP.domino.get_example_path</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;helix_1.pdb&apos;</highlight><highlight class="normal">),<sp/>m,<sp/>IMP.atom.CAlphaPDBSelector())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>h<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[h0,<sp/>h1]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.atom.create_rigid_body(h)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m,<sp/>[h0,<sp/>h1])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_excluded_volume(m,<sp/>helices):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>this<sp/>is<sp/>the<sp/>interesting<sp/>function:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>it<sp/>uses<sp/>a<sp/>KClosePairsPair<sp/>score<sp/>to<sp/>generate<sp/>the<sp/>list<sp/>of<sp/>close<sp/>atoms<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>fly</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>all<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>h<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>helices:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>all.extend(IMP.atom.get_by_type(h,<sp/>IMP.atom.ATOM_TYPE))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lsc<sp/>=<sp/>IMP.container.ListSingletonContainer(m,<sp/>all)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>evr<sp/>=<sp/>IMP.core.ExcludedVolumeRestraint(lsc,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>evr.set_maximum_score(.01)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[evr]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>creating<sp/>the<sp/>discrete<sp/>states<sp/>for<sp/>domino</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_discrete_states(m,<sp/>helices):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rot00<sp/>=<sp/>IMP.algebra.get_rotation_about_axis(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(0,<sp/>1,<sp/>0),<sp/>math.pi<sp/>/<sp/>2.0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>trs<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>zv<sp/>=<sp/>IMP.algebra.Vector3D(0,<sp/>0,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>trs.append(IMP.algebra.ReferenceFrame3D(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Transformation3D(rot00,<sp/>zv)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>dx<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>15):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tr<sp/>=<sp/>IMP.algebra.Vector3D(1.0<sp/>*<sp/>dx,<sp/>0,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trs.append(IMP.algebra.ReferenceFrame3D(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Transformation3D(rot00,<sp/>tr)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pstate<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RigidBodyStates" kindref="compound">IMP.domino.RigidBodyStates</ref>(trs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>h<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>helices:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pst.set_particle_states(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.core.RigidMember(h).get_rigid_body(),<sp/>pstate)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pst</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>setting<sp/>up<sp/>domino<sp/>(and<sp/>filters)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_sampler(m,<sp/>rs,<sp/>pst):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>do<sp/>not<sp/>allow<sp/>particles<sp/>with<sp/>the<sp/>same<sp/>ParticleStates<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>to<sp/>have<sp/>the<sp/>same<sp/>state<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters.append(<ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc.add_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>filter<sp/>states<sp/>that<sp/>score<sp/>worse<sp/>than<sp/>the<sp/>cutoffs<sp/>in<sp/>the<sp/>Model</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters.append(<ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" kindref="compound">IMP.domino.BranchAndBoundAssignmentsTable</ref>(pst,<sp/>filters)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_assignments_table(states)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_subset_filter_tables(filters)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">display(m,<sp/>helices,<sp/>name):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m.update()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>w<sp/>=<sp/>IMP.display.PymolWriter(name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>h<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(helices):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.atom.HierarchyGeometry(h)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_color(IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w.add_geometry(g)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>representation&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">(m,<sp/>helices)<sp/>=<sp/>create_representation()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>score<sp/>function&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>create_excluded_volume(m,<sp/>helices)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>discrete<sp/>states&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/>create_discrete_states(m,<sp/>helices)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>sampler&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>create_sampler(m,<sp/>rs,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.VERBOSE)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;sampling&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">cs<sp/>=<sp/>s.create_sample()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;found<sp/>&quot;</highlight><highlight class="normal">,<sp/>cs.get_number_of_configurations(),<sp/></highlight><highlight class="stringliteral">&quot;solutions&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">score<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal">sf<sp/>=<sp/>IMP.core.RestraintsScoringFunction(rs)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(cs.get_number_of_configurations()):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cs.load_configuration(i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>=<sp/>sf.evaluate(</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>score.append(ss)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;**<sp/>solution<sp/>number:&quot;</highlight><highlight class="normal">,<sp/>i,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is:&quot;</highlight><highlight class="normal">,<sp/>ss)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>display(m,<sp/>helices,<sp/></highlight><highlight class="stringliteral">&quot;sol_&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.pym&quot;</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/rigid_body_excluded_volume.py"/>
+  </compounddef>
+</doxygen>

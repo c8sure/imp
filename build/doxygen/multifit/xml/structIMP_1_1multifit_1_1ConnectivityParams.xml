@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1ConnectivityParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::ConnectivityParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ConnectivityParams_1ad5666ce1ff7a68612d1ed0eb79415080" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ConnectivityParams::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="107" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ConnectivityParams_1a2472c2a0fe91413055fd7755d4d98c3b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ConnectivityParams::max_conn_rest_val_</definition>
+        <argsstring></argsstring>
+        <name>max_conn_rest_val_</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::max_conn_rest_val_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="109" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1ConnectivityParams_1a6272b7026c11cec11332979f87b506b2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ConnectivityParams::upper_bound_</definition>
+        <argsstring></argsstring>
+        <name>upper_bound_</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::upper_bound_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="105" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1ConnectivityParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="112" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ConnectivityParams_1a2ba0a501e6eb4d3c57f4674bb990e39f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ConnectivityParams::ConnectivityParams</definition>
+        <argsstring>()</argsstring>
+        <name>ConnectivityParams</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::ConnectivityParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="91" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ConnectivityParams_1afaa555980cb8349e11f6fb2ba34ea52c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ConnectivityParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="95" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ConnectivityParams_1a454cf677d708199d187fe177c4f933e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ConnectivityParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="100" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1ConnectivityParams_1aee0eb43eef665ed5d7c164d973733d92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::ConnectivityParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::ConnectivityParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="114" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="90" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="90" bodyend="117"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1afaa555980cb8349e11f6fb2ba34ea52c" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a2ba0a501e6eb4d3c57f4674bb990e39f" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>ConnectivityParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1ad5666ce1ff7a68612d1ed0eb79415080" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>k_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a2472c2a0fe91413055fd7755d4d98c3b" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>max_conn_rest_val_</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1aee0eb43eef665ed5d7c164d973733d92" prot="private" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a454cf677d708199d187fe177c4f933e1" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>show</name></member>
+      <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a6272b7026c11cec11332979f87b506b2" prot="public" virt="non-virtual"><scope>IMP::multifit::ConnectivityParams</scope><name>upper_bound_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

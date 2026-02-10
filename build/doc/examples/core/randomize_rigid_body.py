@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/core/examples/randomize_rigid_body.py

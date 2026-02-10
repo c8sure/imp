@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1EVParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::EVParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1a50b21216bd3fa8947e56978d1f0ccdb5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::allowed_percentage_of_bad_pairs_</definition>
+        <argsstring></argsstring>
+        <name>allowed_percentage_of_bad_pairs_</name>
+        <qualifiedname>IMP::multifit::EVParams::allowed_percentage_of_bad_pairs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="215" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1a762779e02a37f2bb782d5e9cea6f0699" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::hlb_k_</definition>
+        <argsstring></argsstring>
+        <name>hlb_k_</name>
+        <qualifiedname>IMP::multifit::EVParams::hlb_k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="213" column="46" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1ae21928febe06591256d42b7754a885ae" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::hlb_mean_</definition>
+        <argsstring></argsstring>
+        <name>hlb_mean_</name>
+        <qualifiedname>IMP::multifit::EVParams::hlb_mean_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="213" column="36" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1a644c2a922358f559bf4e2cb7a982d632" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::maximum_ev_score_for_pair_</definition>
+        <argsstring></argsstring>
+        <name>maximum_ev_score_for_pair_</name>
+        <qualifiedname>IMP::multifit::EVParams::maximum_ev_score_for_pair_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="214" column="7" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1abc46de794fc03e5bc884ade1fd386724" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::pair_distance_</definition>
+        <argsstring></argsstring>
+        <name>pair_distance_</name>
+        <qualifiedname>IMP::multifit::EVParams::pair_distance_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="213" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1ac2f48f8c22783ec16498bf06a550fbfa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::EVParams::pair_slack_</definition>
+        <argsstring></argsstring>
+        <name>pair_slack_</name>
+        <qualifiedname>IMP::multifit::EVParams::pair_slack_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="213" column="24" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1EVParams_1a2f7982f1c075f9cb4357c4bc28dc1d08" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::EVParams::scoring_mode_</definition>
+        <argsstring></argsstring>
+        <name>scoring_mode_</name>
+        <qualifiedname>IMP::multifit::EVParams::scoring_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="216" column="7" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1EVParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::EVParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="220" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1EVParams_1a744096f49ac206f05a017972104da958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::EVParams::EVParams</definition>
+        <argsstring>()</argsstring>
+        <name>EVParams</name>
+        <qualifiedname>IMP::multifit::EVParams::EVParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="181" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="181" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1EVParams_1a0f3dd9bbe2d536b217a000cf1fc83dbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::EVParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::EVParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="189" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="189" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1EVParams_1a42bdb83b8f444e4bb42daf9a8665e0e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::EVParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::EVParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="205" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="205" bodyend="212"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1EVParams_1ad0cc42af6995ee9914b845197957f6a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::EVParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::EVParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="222" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="222" bodyend="226"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="179" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="179" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a0f3dd9bbe2d536b217a000cf1fc83dbf" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a50b21216bd3fa8947e56978d1f0ccdb5" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>allowed_percentage_of_bad_pairs_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a744096f49ac206f05a017972104da958" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>EVParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a762779e02a37f2bb782d5e9cea6f0699" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>hlb_k_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1ae21928febe06591256d42b7754a885ae" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>hlb_mean_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a644c2a922358f559bf4e2cb7a982d632" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>maximum_ev_score_for_pair_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1abc46de794fc03e5bc884ade1fd386724" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>pair_distance_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1ac2f48f8c22783ec16498bf06a550fbfa" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>pair_slack_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a2f7982f1c075f9cb4357c4bc28dc1d08" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>scoring_mode_</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1ad0cc42af6995ee9914b845197957f6a5" prot="private" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1EVParams_1a42bdb83b8f444e4bb42daf9a8665e0e0" prot="public" virt="non-virtual"><scope>IMP::multifit::EVParams</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

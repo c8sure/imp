@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__step__2_1_1MonteCarloParams" kind="class" language="Python" prot="public">
+    <compoundname>config_step_2::MonteCarloParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1a57d974a13d9bdac5fefdf7705e6c7504" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_step_2.MonteCarloParams::cycles</definition>
+        <argsstring></argsstring>
+        <name>cycles</name>
+        <qualifiedname>config_step_2.MonteCarloParams.cycles</qualifiedname>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="10" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1ae66dc9eec3a5baa25637100ff8d09877" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_2.MonteCarloParams::iterations</definition>
+        <argsstring></argsstring>
+        <name>iterations</name>
+        <qualifiedname>config_step_2.MonteCarloParams.iterations</qualifiedname>
+        <initializer>=  [2, 2, 2, 2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="9" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1a8489b0d2f8fc4b10a7499356815cb55b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_2.MonteCarloParams::max_rotations</definition>
+        <argsstring></argsstring>
+        <name>max_rotations</name>
+        <qualifiedname>config_step_2.MonteCarloParams.max_rotations</qualifiedname>
+        <initializer>=  [1, 0.5, 0.25, 0.1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="12" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1ac65fb2753c02c94ec84ab008498fa242" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_2.MonteCarloParams::max_translations</definition>
+        <argsstring></argsstring>
+        <name>max_translations</name>
+        <qualifiedname>config_step_2.MonteCarloParams.max_translations</qualifiedname>
+        <initializer>=  [20, 15, 10, 5]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="11" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1a9c763ef4f46c9c1de59d60f22f234d1a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float config_step_2.MonteCarloParams::non_relative_move_prob</definition>
+        <argsstring></argsstring>
+        <name>non_relative_move_prob</name>
+        <qualifiedname>config_step_2.MonteCarloParams.non_relative_move_prob</qualifiedname>
+        <initializer>=  0.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="14" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1MonteCarloParams_1a6e871c070101ae104cb45f979211838b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_2.MonteCarloParams::temperatures</definition>
+        <argsstring></argsstring>
+        <name>temperatures</name>
+        <qualifiedname>config_step_2.MonteCarloParams.temperatures</qualifiedname>
+        <initializer>=  [30000, 15000, 10000, 5000, 1000]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="8" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__step__2_1_1MonteCarloParams_1ab656da4e827bc0c318062a31069305c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_step_2.MonteCarloParams.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_step_2.MonteCarloParams.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="7" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="7" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="5" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="5" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1ab656da4e827bc0c318062a31069305c2" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>__init__</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1a57d974a13d9bdac5fefdf7705e6c7504" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>cycles</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1ae66dc9eec3a5baa25637100ff8d09877" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>iterations</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1a8489b0d2f8fc4b10a7499356815cb55b" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>max_rotations</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1ac65fb2753c02c94ec84ab008498fa242" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>max_translations</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1a9c763ef4f46c9c1de59d60f22f234d1a" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>non_relative_move_prob</name></member>
+      <member refid="classconfig__step__2_1_1MonteCarloParams_1a6e871c070101ae104cb45f979211838b" prot="public" virt="non-virtual"><scope>config_step_2::MonteCarloParams</scope><name>temperatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

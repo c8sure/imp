@@ -1,0 +1,4 @@
+ok=True
+modules = 'algebra:cgal:kernel'
+dependencies = 'Boost.Random:Boost.FileSystem:NumPy:Boost.System:CGAL:Boost.ProgramOptions'
+swig_includes = 'IMP/display/display_macros.h:IMP/display/geometry_macros.h:IMP/display/writer_macros.h'

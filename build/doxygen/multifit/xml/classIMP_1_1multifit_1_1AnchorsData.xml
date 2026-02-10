@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1AnchorsData" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::AnchorsData</compoundname>
+    <includes local="no">IMP/multifit/anchors_reader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1AnchorsData_1aa4a4269c1ba6f0dc38a6dc920787a289" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; IMP::multifit::AnchorsData::consider_point_</definition>
+        <argsstring></argsstring>
+        <name>consider_point_</name>
+        <qualifiedname>IMP::multifit::AnchorsData::consider_point_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="83" column="15" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1AnchorsData_1ace703653a5d3fac4f250600c42c2e661" prot="public" static="no" mutable="no">
+        <type>IntPairs</type>
+        <definition>IntPairs IMP::multifit::AnchorsData::edges_</definition>
+        <argsstring></argsstring>
+        <name>edges_</name>
+        <qualifiedname>IMP::multifit::AnchorsData::edges_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="84" column="12" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1AnchorsData_1ae659a684de59a6bfc8d437b77325a7f2" prot="public" static="no" mutable="no">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::AnchorsData::points_</definition>
+        <argsstring></argsstring>
+        <name>points_</name>
+        <qualifiedname>IMP::multifit::AnchorsData::points_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="82" column="22" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1AnchorsData_1ae286ebd132d10f29db030b0ada03dcd1" prot="protected" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::multifit::AnchorsData::secondary_structure_ps_</definition>
+        <argsstring></argsstring>
+        <name>secondary_structure_ps_</name>
+        <qualifiedname>IMP::multifit::AnchorsData::secondary_structure_ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="87" column="13" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1ad4a8c68c96d969f7b90231f7d175b1b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::AnchorsData::AnchorsData</definition>
+        <argsstring>()</argsstring>
+        <name>AnchorsData</name>
+        <qualifiedname>IMP::multifit::AnchorsData::AnchorsData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="23" column="3" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a35d9e6563e86d85d093d6bd4f945a5a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::AnchorsData::AnchorsData</definition>
+        <argsstring>(algebra::Vector3Ds points, IntPairs edges)</argsstring>
+        <name>AnchorsData</name>
+        <qualifiedname>IMP::multifit::AnchorsData::AnchorsData</qualifiedname>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>IntPairs</type>
+          <declname>edges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="24" column="3" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a8de5331ba44eac00da2ab723976c6416" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::AnchorsData::get_is_point_considered</definition>
+        <argsstring>(int node_ind) const</argsstring>
+        <name>get_is_point_considered</name>
+        <qualifiedname>IMP::multifit::AnchorsData::get_is_point_considered</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>node_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="47" column="8" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a33a1040d80714ef4232087cbb7eda894" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::AnchorsData::get_number_of_edges</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_edges</name>
+        <qualifiedname>IMP::multifit::AnchorsData::get_number_of_edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="46" column="7" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a5d660fa05f3d78ae5735f3d0250a9280" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::AnchorsData::get_number_of_points</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_points</name>
+        <qualifiedname>IMP::multifit::AnchorsData::get_number_of_points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="45" column="7" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1ad0ab430d781b9d0cd4663dec6090a7d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::AnchorsData::get_secondary_structure_is_set</definition>
+        <argsstring>()</argsstring>
+        <name>get_secondary_structure_is_set</name>
+        <qualifiedname>IMP::multifit::AnchorsData::get_secondary_structure_is_set</qualifiedname>
+        <briefdescription>
+<para>Check if secondary structure is setup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="63" column="8" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a2e8267968dc824ee66725e1939e1d516" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Particles</type>
+        <definition>Particles IMP::multifit::AnchorsData::get_secondary_structure_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_secondary_structure_particles</name>
+        <qualifiedname>IMP::multifit::AnchorsData::get_secondary_structure_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="79" column="20" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1a1e5788b64c43c265b0a7d320332cedab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::AnchorsData::remove_edges_for_node</definition>
+        <argsstring>(int node_ind)</argsstring>
+        <name>remove_edges_for_node</name>
+        <qualifiedname>IMP::multifit::AnchorsData::remove_edges_for_node</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>node_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="34" column="8" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1aa26fd429b4e9224d656c5d8936306967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::AnchorsData::set_secondary_structure_probabilities</definition>
+        <argsstring>(const Particles &amp;ssres_ps, const Ints &amp;indices=Ints())</argsstring>
+        <name>set_secondary_structure_probabilities</name>
+        <qualifiedname>IMP::multifit::AnchorsData::set_secondary_structure_probabilities</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>ssres_ps</declname>
+        </param>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>indices</declname>
+          <defval>Ints()</defval>
+        </param>
+        <briefdescription>
+<para>Assign secondary structure particles. Provide indices if out of order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ssres_ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particles which you will be assigning to anchors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) List of which anchor point numbers the provided ssres_ps belong to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1ad199d93f2865c7448b8d28d1663c9efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::AnchorsData::setup_secondary_structure</definition>
+        <argsstring>(Model *mdl)</argsstring>
+        <name>setup_secondary_structure</name>
+        <qualifiedname>IMP::multifit::AnchorsData::setup_secondary_structure</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>mdl</declname>
+        </param>
+        <briefdescription>
+<para>Sets up default secondary structure particles for every anchor (run first) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1AnchorsData_1aecc2424f2f2f869bedfbe01240f4ebb9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::AnchorsData::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::AnchorsData::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="50" column="8" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="50" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Storage of anchors (points and edges) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/anchors_reader.h" line="21" column="1" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="21" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad4a8c68c96d969f7b90231f7d175b1b1" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>AnchorsData</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a35d9e6563e86d85d093d6bd4f945a5a5" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>AnchorsData</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1aa4a4269c1ba6f0dc38a6dc920787a289" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>consider_point_</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ace703653a5d3fac4f250600c42c2e661" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>edges_</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a8de5331ba44eac00da2ab723976c6416" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>get_is_point_considered</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a33a1040d80714ef4232087cbb7eda894" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>get_number_of_edges</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a5d660fa05f3d78ae5735f3d0250a9280" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>get_number_of_points</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad0ab430d781b9d0cd4663dec6090a7d4" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>get_secondary_structure_is_set</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a2e8267968dc824ee66725e1939e1d516" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>get_secondary_structure_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ae659a684de59a6bfc8d437b77325a7f2" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>points_</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1a1e5788b64c43c265b0a7d320332cedab" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>remove_edges_for_node</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ae286ebd132d10f29db030b0ada03dcd1" prot="protected" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>secondary_structure_ps_</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1aa26fd429b4e9224d656c5d8936306967" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>set_secondary_structure_probabilities</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad199d93f2865c7448b8d28d1663c9efd" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>setup_secondary_structure</name></member>
+      <member refid="classIMP_1_1multifit_1_1AnchorsData_1aecc2424f2f2f869bedfbe01240f4ebb9" prot="public" virt="non-virtual"><scope>IMP::multifit::AnchorsData</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

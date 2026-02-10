@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1FittingParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::FittingParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FittingParams_1a78793c06b6954be695d63d48c637be36" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::FittingParams::max_asmb_fit_score_</definition>
+        <argsstring></argsstring>
+        <name>max_asmb_fit_score_</name>
+        <qualifiedname>IMP::multifit::FittingParams::max_asmb_fit_score_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="282" column="33" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FittingParams_1affdc81cf96da19b0f61cf9eeb8e9ce04" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::FittingParams::pca_max_angle_diff_</definition>
+        <argsstring></argsstring>
+        <name>pca_max_angle_diff_</name>
+        <qualifiedname>IMP::multifit::FittingParams::pca_max_angle_diff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="281" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FittingParams_1afe49100b93c5ab489f7c4552248eab81" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::FittingParams::pca_max_cent_dist_diff_</definition>
+        <argsstring></argsstring>
+        <name>pca_max_cent_dist_diff_</name>
+        <qualifiedname>IMP::multifit::FittingParams::pca_max_cent_dist_diff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="282" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FittingParams_1af6827eb67c3f51f531aa015b9211ed6f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::FittingParams::pca_max_size_diff_</definition>
+        <argsstring></argsstring>
+        <name>pca_max_size_diff_</name>
+        <qualifiedname>IMP::multifit::FittingParams::pca_max_size_diff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="281" column="29" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1FittingParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::FittingParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="284" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FittingParams_1ae1af023e5be95977794f8fd3fd61e1de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FittingParams::FittingParams</definition>
+        <argsstring>()</argsstring>
+        <name>FittingParams</name>
+        <qualifiedname>IMP::multifit::FittingParams::FittingParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="262" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="262" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FittingParams_1a2f0d23c91bb4e2ac37d8e2df8911cf2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::FittingParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="267" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="267" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FittingParams_1a9237c7da1dd7401627ff577a0f56871c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::FittingParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="273" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="273" bodyend="278"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FittingParams_1a94334c2a45c17370dcacf325ac78504c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::FittingParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::FittingParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="286" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="286" bodyend="289"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="260" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="260" bodyend="290"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1a2f0d23c91bb4e2ac37d8e2df8911cf2f" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1ae1af023e5be95977794f8fd3fd61e1de" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>FittingParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1a78793c06b6954be695d63d48c637be36" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>max_asmb_fit_score_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1affdc81cf96da19b0f61cf9eeb8e9ce04" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>pca_max_angle_diff_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1afe49100b93c5ab489f7c4552248eab81" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>pca_max_cent_dist_diff_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1af6827eb67c3f51f531aa015b9211ed6f" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>pca_max_size_diff_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1a94334c2a45c17370dcacf325ac78504c" prot="private" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1FittingParams_1a9237c7da1dd7401627ff577a0f56871c" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingParams</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

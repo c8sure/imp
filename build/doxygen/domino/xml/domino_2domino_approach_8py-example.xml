@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2domino_approach_8py-example" kind="example">
+    <compoundname>domino/domino_approach.py</compoundname>
+    <briefdescription>
+<para>Optimize six particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Optimize six particles <programlisting filename="domino/domino_approach.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/domino_approach.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Optimize<sp/>six<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>NOT<sp/>FULLY<sp/>IMPLEMENTED<sp/>YET!</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;domino<sp/>approach&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">optimize_subsets(subsets):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>subset<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>subsets:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>TODO<sp/>-<sp/>do<sp/>the<sp/>actual<sp/>sampling</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>combine<sp/>back<sp/>to<sp/>ParticleStatesTable</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>there<sp/>is<sp/>now<sp/>a<sp/>write_particles_binary<sp/>(multiple<sp/>states<sp/>into<sp/>one<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pst</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_subsets(ps):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mdl<sp/>=<sp/>ps[0].get_model()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>inter_graph<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1a7745ea629841a6a4475211ba0a134b44" kindref="member">IMP.domino.get_interaction_graph</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mdl.get_root_restraint_set(),<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>jt<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1af4ecbb31cd9704335911eef3d583a754" kindref="member">IMP.domino.get_junction_tree</ref>(inter_graph)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino_1a451bc898770bf9a620fa517ff74d4ef6" kindref="member">IMP.domino.get_subsets</ref>(jt)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">setup_scoring_function(ps):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>ps[0].get_model()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pairs<sp/>=<sp/>[[0,<sp/>1],<sp/>[0,<sp/>2],<sp/>[1,<sp/>2],<sp/>[2,<sp/>3],<sp/>[3,<sp/>4],<sp/>[4,<sp/>5],<sp/>[3,<sp/>5]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sf<sp/>=<sp/>IMP.core.Harmonic(1.0,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>IMP.RestraintSet(m)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>pair<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>pairs:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>IMP.core.DistanceRestraint(m,<sp/>sf,<sp/>ps[pair[0]],<sp/>ps[pair[1]])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs.add_restraint(r)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rs</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Initiate<sp/>a<sp/>set<sp/>of<sp/>states<sp/>for<sp/>each<sp/>particle<sp/>in<sp/>ps</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">initiate_configuration(domino_smp,<sp/>ps):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Generate<sp/>a<sp/>discrete<sp/>set<sp/>of<sp/>states</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vector_states<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>4):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector_states.append(IMP.algebra.Vector3D(i,<sp/>0,<sp/>0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector_states.append(IMP.algebra.Vector3D(i,<sp/>1,<sp/>0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Generate<sp/>a<sp/>discrete<sp/>set<sp/>of<sp/>states<sp/>for<sp/>each<sp/>of<sp/>the<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(vector_states)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Map<sp/>states<sp/>of<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>domino_smp.set_particle_states(p,<sp/>states)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">sys.exit()</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>REPRESENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>1.<sp/>setting<sp/>up<sp/>the<sp/>representation<sp/>(6<sp/>particles)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mdl<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">mdl.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>6):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>IMP.Particle(mdl)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.core.XYZ.setup_particle(p,<sp/>IMP.algebra.Vector3D(0.,<sp/>0.,<sp/>0.))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ps.append(p)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>SCORING</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>1.<sp/>setting<sp/>up<sp/>the<sp/>scoring<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>setup_scoring_function(ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>1.<sp/>get<sp/>the<sp/>subsets</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">subsets<sp/>=<sp/>get_subsets(ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>optimize<sp/>each<sp/>one<sp/>(returning<sp/>ParticleStatesTable)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/>optimize_subsets(subsets)</highlight></codeline>
+<codeline><highlight class="normal">sys.exit()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>subsets=[]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>jt.show()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>2.<sp/>sample<sp/>each<sp/>subset</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>3.<sp/>gathering</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>OPTIMIZATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>1.<sp/>load<sp/>domino<sp/>sampler<sp/>and<sp/>set<sp/>required<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">domino_smp<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m)</highlight></codeline>
+<codeline><highlight class="normal">domino_smp.set_restraints([rs])</highlight></codeline>
+<codeline><highlight class="normal">domino_smp.set_maximum_score(.2)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>2.<sp/>initiate<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">initiate_configuration(domino_smp,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>3.<sp/>construct<sp/>subset<sp/>of<sp/>variables<sp/>AND</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>optimize<sp/>subsets<sp/>of<sp/>variables<sp/>subject<sp/>to<sp/>the<sp/>discrete<sp/>sampling<sp/>space<sp/>AND</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>gather<sp/>subset<sp/>of<sp/>variables<sp/>into<sp/>global<sp/>solutions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">cs<sp/>=<sp/>domino_smp.create_sample()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>ANALYSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>4.<sp/>report<sp/>solutions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Found<sp/>&quot;</highlight><highlight class="normal">,<sp/>cs.get_number_of_configurations(),<sp/></highlight><highlight class="stringliteral">&quot;solutions&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(cs.get_number_of_configurations()):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cs.load_configuration(i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>print<sp/>the<sp/>configuration:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;solution<sp/>number:&quot;</highlight><highlight class="normal">,<sp/>i,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>scored:&quot;</highlight><highlight class="normal">,<sp/>rs.evaluate(</highlight><highlight class="keyword">False</highlight><highlight class="normal">))</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/domino_approach.py"/>
+  </compounddef>
+</doxygen>

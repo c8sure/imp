@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2interactive_8py-example" kind="example">
+    <compoundname>domino/interactive.py</compoundname>
+    <briefdescription>
+<para><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref> supports an interactive mode whereby each step of the sampling process is called explicitly and all intermediate results are exposed. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref> supports an interactive mode whereby each step of the sampling process is called explicitly and all intermediate results are exposed. This usage mode can be used to help understand how domino behaves as well as to distribute a domino computation to multiple cores or multiple machines. For the latter, it is useful to use the IMP::domino::get_assignments() and IMP::domino::set_assignments() functions to save the states to a file. <programlisting filename="domino/interactive.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/interactive.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>IMP::domino::DominoSampler<sp/>supports<sp/>an<sp/>interactive<sp/>mode<sp/>whereby<sp/>each<sp/>step</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>of<sp/>the<sp/>sampling<sp/>process<sp/>is<sp/>called<sp/>explicitly<sp/>and<sp/>all<sp/>intermediate<sp/>results</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>are<sp/>exposed.<sp/>This<sp/>usage<sp/>mode<sp/>can<sp/>be<sp/>used<sp/>to<sp/>help<sp/>understand<sp/>how<sp/>domino</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>behaves<sp/>as<sp/>well<sp/>as<sp/>to<sp/>distribute<sp/>a<sp/>domino<sp/>computation<sp/>to<sp/>multiple<sp/>cores</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>or<sp/>multiple<sp/>machines.<sp/>For<sp/>the<sp/>latter,<sp/>it<sp/>is<sp/>useful<sp/>to<sp/>use<sp/>the</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>IMP::domino::get_assignments()<sp/>and<sp/>IMP::domino::set_assignments()</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>functions<sp/>to<sp/>save<sp/>the<sp/>states<sp/>to<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;interactive&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>some<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>IMP.get_indexes([IMP.core.XYZ.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>3)])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>IMP.core.HarmonicDistancePairScore(1,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal">lpc<sp/>=<sp/>IMP.container.ListPairContainer(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>[(ps[i[0]],<sp/>ps[i[1]])<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[(0,<sp/>1),<sp/>(1,<sp/>2)]])</highlight></codeline>
+<codeline><highlight class="normal">print([(m.get_particle_name(p[0]),<sp/>m.get_particle_name(p[1]))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lpc.get_contents()])</highlight></codeline>
+<codeline><highlight class="normal">r<sp/>=<sp/>IMP.container.PairsRestraint(s,<sp/>lpc)</highlight></codeline>
+<codeline><highlight class="normal">r.set_maximum_score(.1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">space<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[IMP.algebra.Vector3D(i,<sp/>0,<sp/>0)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>6)])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst.set_particle_states(m.get_particle(p),<sp/>space)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>make<sp/>sure<sp/>to<sp/>break<sp/>up<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mt<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>([r],<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.show_graphviz(mt)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>display<sp/>graph<sp/>using<sp/>&apos;dot&apos;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ds<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>use<sp/>the<sp/>default<sp/>setup<sp/>for<sp/>filters</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ds.set_restraints([r])</highlight></codeline>
+<codeline><highlight class="normal">ds.set_scoring_function([r])</highlight></codeline>
+<codeline><highlight class="normal">ds.set_merge_tree(mt)</highlight></codeline>
+<codeline><highlight class="normal">ds.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>recurse<sp/>down<sp/>the<sp/>tree<sp/>getting<sp/>the<sp/>assignments<sp/>and<sp/>printing<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_assignments(vertex):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>on<sp/>=<sp/>mt.get_out_neighbors(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(on)<sp/>==<sp/>0:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>we<sp/>have<sp/>a<sp/>leaf</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>ds.get_vertex_assignments(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>recurse<sp/>on<sp/>the<sp/>two<sp/>children</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>on[0]<sp/>&gt;<sp/>on[1]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>get_vertex_assignment<sp/>methods<sp/>expects<sp/>the<sp/>children<sp/>in<sp/>sorted</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on<sp/>=<sp/>[on[1],<sp/>on[0]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a0<sp/>=<sp/>get_assignments(on[0])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a1<sp/>=<sp/>get_assignments(on[1])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>ds.get_vertex_assignments(vertex,<sp/>a0,<sp/>a1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(mt.get_vertex_name(vertex),<sp/>[str(r)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ret])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>the<sp/>root<sp/>is<sp/>the<sp/>last<sp/>vertex</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">get_assignments(mt.get_vertices()[-1])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">schedule<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>we<sp/>could<sp/>instead<sp/>decompose<sp/>the<sp/>tree<sp/>into<sp/>independent<sp/>sets<sp/>of<sp/>jobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">schedule_job(vertex):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>first<sp/>figure<sp/>out<sp/>the<sp/>maximum<sp/>phase<sp/>for<sp/>my<sp/>children,<sp/>then<sp/>add<sp/>me<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>next<sp/>higher<sp/>phase</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>on<sp/>=<sp/>mt.get_out_neighbors(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>max_child_time<sp/>=<sp/>-1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>n<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>on:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_child_time<sp/>=<sp/>max(schedule_job(n),<sp/>max_child_time)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>my_time<sp/>=<sp/>max_child_time<sp/>+<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>len(schedule)<sp/>&lt;<sp/>my_time<sp/>+<sp/>1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>schedule.append([])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>myself<sp/>to<sp/>the<sp/>next<sp/>free<sp/>phase</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>schedule[my_time].append(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_time</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">schedule_job(mt.get_vertices()[-1])</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;The<sp/>merging<sp/>can<sp/>be<sp/>scheduled<sp/>as&quot;</highlight><highlight class="normal">,<sp/>schedule)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/interactive.py"/>
+  </compounddef>
+</doxygen>

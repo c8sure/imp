@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1SimpleLoadLink" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::rmf::SimpleLoadLink</compoundname>
+    <basecompoundref refid="classIMP_1_1rmf_1_1LoadLink" prot="public" virt="non-virtual">IMP::rmf::LoadLink</basecompoundref>
+    <includes local="no">IMP/rmf/simple_links.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class O</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SimpleLoadLink_1af06d7148b5ffa48aea3200bf4cad3ef7" prot="private" static="no" mutable="no">
+        <type>RMF::NodeIDs</type>
+        <definition>RMF::NodeIDs IMP::rmf::SimpleLoadLink&lt; O &gt;::nhs_</definition>
+        <argsstring></argsstring>
+        <name>nhs_</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::nhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="34" column="16" bodyfile="include/IMP/rmf/simple_links.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SimpleLoadLink_1abd284b875a17cea5b9e74a66dba9c468" prot="private" static="no" mutable="no">
+        <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+        <definition>Vector&lt;Pointer&lt;O&gt; &gt; IMP::rmf::SimpleLoadLink&lt; O &gt;::os_</definition>
+        <argsstring></argsstring>
+        <name>os_</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::os_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="33" column="10" bodyfile="include/IMP/rmf/simple_links.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a46b6c6dafc78962a5ef2499ce8769ccf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::SimpleLoadLink&lt; O &gt;::SimpleLoadLink</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>SimpleLoadLink</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::SimpleLoadLink</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="56" column="3" bodyfile="include/IMP/rmf/simple_links.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a0d56c63582a4e8fa51a24955069fa9a3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleLoadLink&lt; O &gt;::add_link</definition>
+        <argsstring>(O *o, RMF::NodeConstHandle nh)</argsstring>
+        <name>add_link</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::add_link</qualifiedname>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="46" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1aa151862b38aae3628b37400bd11286c2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::SimpleLoadLink&lt; O &gt;::do_add_link</definition>
+        <argsstring>(O *, RMF::NodeConstHandle)</argsstring>
+        <name>do_add_link</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::do_add_link</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7353515816d2e316316e472fb6b32dd">do_add_link</reimplementedby>
+        <param>
+          <type>O *</type>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="45" column="16" bodyfile="include/IMP/rmf/simple_links.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a5e9217c073c3ff2bf177410c93622568" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>O *</type>
+        <definition>virtual O * IMP::rmf::SimpleLoadLink&lt; O &gt;::do_create</definition>
+        <argsstring>(RMF::NodeConstHandle)</argsstring>
+        <name>do_create</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::do_create</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1acd3b1ad9deee46dfa04acd28c4657419">do_create</reimplementedby>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="52" column="13" bodyfile="include/IMP/rmf/simple_links.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1ad40232b276159ffff9fa6a34ee105034" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>O *</type>
+        <definition>virtual O * IMP::rmf::SimpleLoadLink&lt; O &gt;::do_create</definition>
+        <argsstring>(RMF::NodeConstHandle, Model *)</argsstring>
+        <name>do_create</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::do_create</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a282f6e653575008239e149dbbdef1a2b">do_create</reimplementedby>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+        </param>
+        <param>
+          <type>Model *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="53" column="13" bodyfile="include/IMP/rmf/simple_links.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleLoadLink&lt; O &gt;::do_load</definition>
+        <argsstring>(RMF::FileConstHandle fh) override</argsstring>
+        <name>do_load</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::do_load</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1LoadLink_1a5449011cd422f5813017372626ae90f4">do_load</reimplements>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="38" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a7668ecfcaf2cca8f20a64084ba2a5251" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::SimpleLoadLink&lt; O &gt;::do_load_one</definition>
+        <argsstring>(RMF::NodeConstHandle nh, O *o)=0</argsstring>
+        <name>do_load_one</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::do_load_one</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a633bea4602d23122e98db9350cfbbd22">do_load_one</reimplementedby>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="37" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a697b6c69d8217dee28221eb8c54ae42a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IMP::rmf::SimpleLoadLink&lt; O &gt;::get_is</definition>
+        <argsstring>(RMF::NodeConstHandle nh) const =0</argsstring>
+        <name>get_is</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::get_is</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a658afa8a6822b452fa63b543cd267b73">get_is</reimplementedby>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="51" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1afb8ae08602bdec544d7874cc589fd8de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+        <definition>Vector&lt; Pointer&lt; O &gt; &gt; IMP::rmf::SimpleLoadLink&lt; O &gt;::create</definition>
+        <argsstring>(RMF::NodeConstHandle rt)</argsstring>
+        <name>create</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::create</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create all the entities under the passed root. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="60" column="10" bodyfile="include/IMP/rmf/simple_links.h" bodystart="60" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a8c2fc3ae53ebbbbe1245bd9f0573a13b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+        <definition>Vector&lt; Pointer&lt; O &gt; &gt; IMP::rmf::SimpleLoadLink&lt; O &gt;::create</definition>
+        <argsstring>(RMF::NodeConstHandle rt, Model *m)</argsstring>
+        <name>create</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::create</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>rt</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create all the entities under the passed root. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="80" column="10" bodyfile="include/IMP/rmf/simple_links.h" bodystart="80" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleLoadLink_1a1abc7e5b88ed526783b7163b54bcd2fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleLoadLink&lt; O &gt;::link</definition>
+        <argsstring>(RMF::NodeConstHandle rt, const Vector&lt; Pointer&lt; O &gt; &gt; &amp;ps)</argsstring>
+        <name>link</name>
+        <qualifiedname>IMP::rmf::SimpleLoadLink::link</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>rt</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; Pointer&lt; O &gt; &gt; &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="100" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="100" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manage a link between an IMP object and an RMF node.</para>
+<para><simplesect kind="par"><title>Warning: SimpleLoadLink has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::rmf::LoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1LoadLink"/>
+      </node>
+      <node id="1">
+        <label>IMP::rmf::SimpleLoadLink&lt; O &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::rmf::LoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1LoadLink"/>
+      </node>
+      <node id="1">
+        <label>IMP::rmf::SimpleLoadLink&lt; O &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/rmf/simple_links.h" line="32" column="1" bodyfile="include/IMP/rmf/simple_links.h" bodystart="32" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a0d56c63582a4e8fa51a24955069fa9a3" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1afb8ae08602bdec544d7874cc589fd8de" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>create</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a8c2fc3ae53ebbbbe1245bd9f0573a13b" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>create</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1aa151862b38aae3628b37400bd11286c2" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>do_add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a5e9217c073c3ff2bf177410c93622568" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>do_create</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ad40232b276159ffff9fa6a34ee105034" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>do_create</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>do_load</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a7668ecfcaf2cca8f20a64084ba2a5251" prot="protected" virt="pure-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>do_load_one</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a697b6c69d8217dee28221eb8c54ae42a" prot="protected" virt="pure-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>get_is</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a1abc7e5b88ed526783b7163b54bcd2fb" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>link</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a25147ebd8f5982ba6c44b3d9a20f0a0a" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>load</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a6396a96afbc73eb79623843c93ef625b" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>LoadLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1af06d7148b5ffa48aea3200bf4cad3ef7" prot="private" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>nhs_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1abd284b875a17cea5b9e74a66dba9c468" prot="private" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>os_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a46b6c6dafc78962a5ef2499ce8769ccf" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleLoadLink</scope><name>SimpleLoadLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2save_assignments_8py-example" kind="example">
+    <compoundname>domino/save_assignments.py</compoundname>
+    <briefdescription>
+<para>It can often be useful to save the assignments to a file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It can often be useful to save the assignments to a file. <computeroutput>IMP</computeroutput> provides support to do this to a data set in an HDF5 file.</para>
+<para>You can use <computeroutput>h5dump</computeroutput> to view the contents of the created file. <programlisting filename="domino/save_assignments.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/save_assignments.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>It<sp/>can<sp/>often<sp/>be<sp/>useful<sp/>to<sp/>save<sp/>the<sp/>assignments<sp/>to<sp/>a<sp/>file.<sp/>\imp<sp/>provides</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>support<sp/>to<sp/>do<sp/>this<sp/>to<sp/>a<sp/>data<sp/>set<sp/>in<sp/>an<sp/>HDF5<sp/>file.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>You<sp/>can<sp/>use<sp/>\c<sp/>h5dump<sp/>to<sp/>view<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>created<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;save<sp/>assignments&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>model<sp/>and<sp/>some<sp/>particles;<sp/>they<sp/>are<sp/>just<sp/>used<sp/>as<sp/>markers<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>[IMP.Particle(m)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>10)]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>subset<sp/>with<sp/>a<sp/>few<sp/>of<sp/>the<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ss<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>([ps[3],<sp/>ps[5],<sp/>ps[7]])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">file_name<sp/>=<sp/>IMP.create_temporary_file_name(</highlight><highlight class="stringliteral">&quot;assignments&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;.asn&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;File<sp/>name<sp/>is&quot;</highlight><highlight class="normal">,<sp/>file_name)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>list<sp/>of<sp/>assignments</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.MEMORY)</highlight></codeline>
+<codeline><highlight class="normal">asl<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1WriteAssignmentContainer" kindref="compound">IMP.domino.WriteAssignmentContainer</ref>(file_name,<sp/>ss,<sp/>ps,<sp/></highlight><highlight class="stringliteral">&quot;writer&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">written<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>5):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>j<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>5):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>5):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">IMP.domino.Assignment</ref>([i,<sp/>j,<sp/>k])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>written.append(a)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>asl.add_assignment(a)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">del<sp/>asl</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>to<sp/>check,<sp/>we<sp/>can<sp/>read<sp/>it<sp/>back<sp/>immediately</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">back_asl<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kindref="compound">IMP.domino.ReadAssignmentContainer</ref>(file_name,<sp/>ss,<sp/>ps,<sp/></highlight><highlight class="stringliteral">&quot;reader&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>back_asl.get_assignments()<sp/>==<sp/>written:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;They<sp/>match!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(back_asl.get_assignments())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(written)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>RuntimeError(</highlight><highlight class="stringliteral">&quot;They<sp/>don&apos;t<sp/>match<sp/>:-(&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>More<sp/>interestingly,<sp/>we<sp/>can<sp/>create<sp/>a<sp/>new<sp/>model<sp/>and<sp/>read<sp/>back<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>assignments<sp/>for<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mp<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">psp<sp/>=<sp/>[IMP.Particle(mp)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>10)]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>subset<sp/>with<sp/>a<sp/>few<sp/>of<sp/>the<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ssp<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>([psp[3],<sp/>psp[5],<sp/>psp[7]])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Note<sp/>the<sp/>subsets<sp/>are<sp/>differently<sp/>ordered<sp/>(most<sp/>of<sp/>the<sp/>time):<sp/>&quot;</highlight><highlight class="normal">,<sp/>ss,<sp/>ssp)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">back_aslp<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kindref="compound">IMP.domino.ReadAssignmentContainer</ref>(file_name,<sp/>ssp,<sp/>psp,<sp/></highlight><highlight class="stringliteral">&quot;reader2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>however,<sp/>the<sp/>states<sp/>are<sp/>demuxed<sp/>so<sp/>they<sp/>match<sp/>the<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print([str(a)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>a<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>back_aslp.get_assignments()])</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/save_assignments.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="rmf_2simulation_8py-example" kind="example">
+    <compoundname>rmf/simulation.py</compoundname>
+    <briefdescription>
+<para>This example shows writing a brownian dynamics simulation to a rmf file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example shows writing a brownian dynamics simulation to a rmf file.It includes a bounding box, restraints and a hierarchy of particles. <programlisting filename="rmf/simulation.py"><codeline><highlight class="comment">##<sp/>\example<sp/>rmf/simulation.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>shows<sp/>writing<sp/>a<sp/>brownian<sp/>dynamics<sp/>simulation<sp/>to<sp/>a<sp/>rmf<sp/>file.</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>It<sp/>includes<sp/>a<sp/>bounding<sp/>box,<sp/>restraints<sp/>and<sp/>a<sp/>hierarchy<sp/>of<sp/>particles.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1rmf" kindref="compound">IMP.rmf</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.display</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;simulation&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">k<sp/>=<sp/>10.0</highlight></codeline>
+<codeline><highlight class="normal">np<sp/>=<sp/>10</highlight></codeline>
+<codeline><highlight class="normal">frames<sp/>=<sp/>10</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>[IMP.core.XYZR.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>np)]</highlight></codeline>
+<codeline><highlight class="normal">h<sp/>=<sp/>IMP.atom.Hierarchy.setup_particle(IMP.Particle(m,<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p.set_radius(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p.set_coordinates_are_optimized(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.atom.Mass.setup_particle(p,<sp/>30)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.atom.Diffusion.setup_particle(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p.set_coordinates(IMP.algebra.get_random_vector_in(bb))</highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal">link<sp/>=<sp/>IMP.core.HarmonicUpperBoundSphereDistancePairScore(0,<sp/>k)</highlight></codeline>
+<codeline><highlight class="normal">pl<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>len(ps)<sp/>//<sp/>2):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pp<sp/>=<sp/>(ps[2<sp/>*<sp/>i],<sp/>ps[2<sp/>*<sp/>i<sp/>+<sp/>1])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pl.append(pp)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>OK<sp/>staring<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pp[1].set_coordinates(IMP.algebra.get_random_vector_on(pp[0].get_sphere()))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.display.Colored.setup_particle(pp[0],<sp/>IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.display.Colored.setup_particle(pp[1],<sp/>IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hr<sp/>=<sp/>IMP.atom.Hierarchy.setup_particle(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.Particle(m,<sp/></highlight><highlight class="stringliteral">&quot;molecule<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(i)))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hr.add_child(IMP.atom.Hierarchy.setup_particle(pp[0]))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hr.add_child(IMP.atom.Hierarchy.setup_particle(pp[1]))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h.add_child(hr)</highlight></codeline>
+<codeline><highlight class="normal">r<sp/>=<sp/>IMP.container.PairsRestraint(link,<sp/>pl,<sp/></highlight><highlight class="stringliteral">&quot;Bonds&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rs.append(r)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ev<sp/>=<sp/>IMP.core.ExcludedVolumeRestraint(ps,<sp/>k,<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;EV&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rs.append(ev)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bbss<sp/>=<sp/>IMP.core.BoundingBox3DSingletonScore(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.core.HarmonicUpperBound(0,<sp/>k),<sp/>bb)</highlight></codeline>
+<codeline><highlight class="normal">bbr<sp/>=<sp/>IMP.container.SingletonsRestraint(bbss,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal">rs.append(bbr)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">sf<sp/>=<sp/>IMP.core.RestraintsScoringFunction(rs,<sp/></highlight><highlight class="stringliteral">&quot;SF&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bd<sp/>=<sp/>IMP.atom.BrownianDynamics(m)</highlight></codeline>
+<codeline><highlight class="normal">bd.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">bd.set_scoring_function(sf)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bd.set_maximum_time_step(10)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rmf<sp/>=<sp/>RMF.create_rmf_file(</highlight><highlight class="stringliteral">&quot;brownian.rmf&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rmf.set_description(</highlight><highlight class="stringliteral">&quot;Brownian<sp/>dynamics<sp/>trajectory<sp/>with<sp/>10fs<sp/>timestep.\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1afb3c4144b9161813668b971b21295c8e" kindref="member">IMP.rmf.add_hierarchy</ref>(rmf,<sp/>h)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1a967b0af7b1880fb5a3bddb0c777e62f7" kindref="member">IMP.rmf.add_restraints</ref>(rmf,<sp/>rs)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1ac527cf5f24b42ec60119b3ff253781ba" kindref="member">IMP.rmf.add_geometry</ref>(rmf,<sp/>IMP.display.BoundingBoxGeometry(bb))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">os<sp/>=<sp/><ref refid="classIMP_1_1rmf_1_1SaveOptimizerState" kindref="compound">IMP.rmf.SaveOptimizerState</ref>(m,<sp/>rmf)</highlight></codeline>
+<codeline><highlight class="normal">os.update_always(</highlight><highlight class="stringliteral">&quot;initial<sp/>conformation&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">os.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">os.set_simulator(bd)</highlight></codeline>
+<codeline><highlight class="normal">bd.add_optimizer_state(os)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bd.optimize(frames)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;file<sp/>is&quot;</highlight><highlight class="normal">,<sp/>rmf.get_name())</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/rmf/simulation.py"/>
+  </compounddef>
+</doxygen>

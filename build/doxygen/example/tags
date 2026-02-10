@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::example::ExampleComplexRestraint</name>
+    <filename>classIMP_1_1example_1_1ExampleComplexRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ExampleComplexRestraint</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleComplexRestraint.html</anchorfile>
+      <anchor>a2fdc2b737dd01072a9d87e90e3dee5b3</anchor>
+      <arglist>(UnaryFunction *f, SingletonContainer *sc, Float diameter, std::string name=&quot;ExampleComplexRestraint%1%&quot;)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleConstraint</name>
+    <filename>classIMP_1_1example_1_1ExampleConstraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleDecorator</name>
+    <filename>classIMP_1_1example_1_1ExampleDecorator.html</filename>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_decorator_name</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleDecorator.html</anchorfile>
+      <anchor>a815356f91c2d34e0c86d3656628dc5f6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_decorator_name</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleDecorator.html</anchorfile>
+      <anchor>a112e84cddc4b161028d835386d92d7a9</anchor>
+      <arglist>(std::string nm)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>get_is_setup</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleDecorator.html</anchorfile>
+      <anchor>a42e9462d9fccab327fdadac0a4ab45d7</anchor>
+      <arglist>(Model *m, ParticleIndex pi)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ExampleDecorator</type>
+      <name>setup_particle</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleDecorator.html</anchorfile>
+      <anchor>a173127079675cb7866584f44d127edeb</anchor>
+      <arglist>(IMP::ParticleAdaptor pa, std::string name)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ExampleDecorator</type>
+      <name>setup_particle</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleDecorator.html</anchorfile>
+      <anchor>af8dcc04f322c06a8873d069a62c886c0</anchor>
+      <arglist>(Model *m, ParticleIndex pi, std::string name)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleObject</name>
+    <filename>classIMP_1_1example_1_1ExampleObject.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExamplePairScore</name>
+    <filename>classIMP_1_1example_1_1ExamplePairScore.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleRestraint</name>
+    <filename>classIMP_1_1example_1_1ExampleRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ExampleRestraint</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleRestraint.html</anchorfile>
+      <anchor>a63477f355b12a71baeac254e88b2face</anchor>
+      <arglist>(Model *m, ParticleIndex p, double k)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleSingletonModifier</name>
+    <filename>classIMP_1_1example_1_1ExampleSingletonModifier.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleSubsetFilterTable</name>
+    <filename>classIMP_1_1example_1_1ExampleSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleTemplateClassD</name>
+    <filename>classIMP_1_1example_1_1ExampleTemplateClassD.html</filename>
+    <templarg>unsigned int D</templarg>
+    <member kind="function">
+      <type></type>
+      <name>ExampleTemplateClassD</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleTemplateClassD.html</anchorfile>
+      <anchor>aa93938fc836a0c96102da8f1530e1e6c</anchor>
+      <arglist>(const IMP::algebra::VectorD&lt; D &gt; &amp;a, const IMP::algebra::VectorD&lt; D &gt; &amp;b)</arglist>
+    </member>
+    <member kind="function">
+      <type>const IMP::algebra::VectorD&lt; D &gt; &amp;</type>
+      <name>get_point</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleTemplateClassD.html</anchorfile>
+      <anchor>a5ebc6c0bd429d77f8cb7e9c6d3d29351</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::ExampleUnaryFunction</name>
+    <filename>classIMP_1_1example_1_1ExampleUnaryFunction.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ExampleUnaryFunction</name>
+      <anchorfile>classIMP_1_1example_1_1ExampleUnaryFunction.html</anchorfile>
+      <anchor>a7b22acd4b9b67058ed9afd3e8f79c59e</anchor>
+      <arglist>(Float center, Float k)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::PythonExampleConstraint</name>
+    <filename>classIMP_1_1example_1_1PythonExampleConstraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::PythonExamplePairScore</name>
+    <filename>classIMP_1_1example_1_1PythonExamplePairScore.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>evaluate_index</name>
+      <anchorfile>classIMP_1_1example_1_1PythonExamplePairScore.html</anchorfile>
+      <anchor>a57f0f80e64113251c08efc2f63aab93e</anchor>
+      <arglist>(self, m, pip, da)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::PythonExampleRestraint</name>
+    <filename>classIMP_1_1example_1_1PythonExampleRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>do_add_score_and_derivatives</name>
+      <anchorfile>classIMP_1_1example_1_1PythonExampleRestraint.html</anchorfile>
+      <anchor>a5e6e6ed4e93a82bdeeb6bbf4c08c3438</anchor>
+      <arglist>(self, sa)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::PythonExampleSingletonModifier</name>
+    <filename>classIMP_1_1example_1_1PythonExampleSingletonModifier.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::example::PythonExampleUnaryFunction</name>
+    <filename>classIMP_1_1example_1_1PythonExampleUnaryFunction.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::example</name>
+    <filename>namespaceIMP_1_1example.html</filename>
+    <class kind="class">IMP::example::ExampleComplexRestraint</class>
+    <class kind="class">IMP::example::ExampleConstraint</class>
+    <class kind="class">IMP::example::ExampleDecorator</class>
+    <class kind="class">IMP::example::ExampleObject</class>
+    <class kind="class">IMP::example::ExamplePairScore</class>
+    <class kind="class">IMP::example::ExampleRestraint</class>
+    <class kind="class">IMP::example::ExampleSingletonModifier</class>
+    <class kind="class">IMP::example::ExampleSubsetFilterTable</class>
+    <class kind="class">IMP::example::ExampleTemplateClassD</class>
+    <class kind="class">IMP::example::ExampleUnaryFunction</class>
+    <class kind="class">IMP::example::PythonExampleConstraint</class>
+    <class kind="class">IMP::example::PythonExamplePairScore</class>
+    <class kind="class">IMP::example::PythonExampleRestraint</class>
+    <class kind="class">IMP::example::PythonExampleSingletonModifier</class>
+    <class kind="class">IMP::example::PythonExampleUnaryFunction</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ExamplePairScore &gt; &gt;</type>
+      <name>ExamplePairScores</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>a2de43119a613d3ed80784fb77d344cdd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ExamplePairScore &gt; &gt;</type>
+      <name>ExamplePairScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>af731fa53a4a72f92f241d18f7a6f5885</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>Restraint *</type>
+      <name>create_chain_restraint</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>aaf164c2d184d4d1d53ca84cc3221b552</anchor>
+      <arglist>(Model *m, const ParticleIndexes &amp;ps, double length_factor, double k, std::string name)</arglist>
+    </member>
+    <member kind="function">
+      <type>Restraint *</type>
+      <name>create_excluded_volume</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>a085f6d75d557252bcfe3d8a336be90d9</anchor>
+      <arglist>(Model *m, const ParticleIndexes &amp;ps, double k, std::string name)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_incidences</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>af8c9f5150402309a3284c9fb93e55efa</anchor>
+      <arglist>(const ParticlesTemp &amp;psa, const ParticlesTemp &amp;psb, double point_distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>randomize_particles</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>a9565cd11fa56ad6312caef58c5510a30</anchor>
+      <arglist>(const ParticlesList &amp;ps, const BoundingVolume &amp;bv)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>add1c14e5ed75529f9d1823e34a763392</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1example.html</anchorfile>
+      <anchor>a4d0115df05cd0f34ef4b8db91e8d4284</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <docanchor file="namespaceIMP_1_1example.html" title="imp_example_app">imp_example_app_bin</docanchor>
+  </compound>
+</tagfile>

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::RestraintScoreSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a99cef5b43381cc26c1a71655e93b7a3f" prot="private" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">RestraintCache</ref> &gt;</type>
+        <definition>PointerMember&lt;RestraintCache&gt; IMP::domino::RestraintScoreSubsetFilterTable::cache_</definition>
+        <argsstring></argsstring>
+        <name>cache_</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::cache_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="106" column="17" bodyfile="include/IMP/domino/subset_filters.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a45ccee01273dd9697e150ef906d6f028" prot="private" static="no" mutable="yes">
+        <type>Restraints</type>
+        <definition>Restraints IMP::domino::RestraintScoreSubsetFilterTable::rs_</definition>
+        <argsstring></argsstring>
+        <name>rs_</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="107" column="22" bodyfile="include/IMP/domino/subset_filters.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1afea31f7827234768b9e719e4db0545d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RestraintScoreSubsetFilterTable::RestraintScoreSubsetFilterTable</definition>
+        <argsstring>(RestraintCache *rc)</argsstring>
+        <name>RestraintScoreSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::RestraintScoreSubsetFilterTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">RestraintCache</ref> *</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="110" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a27a72d5b2d3000fa72df9c45755db866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RestraintScoreSubsetFilterTable::RestraintScoreSubsetFilterTable</definition>
+        <argsstring>(RestraintsAdaptor rs, ParticleStatesTable *pst)</argsstring>
+        <name>RestraintScoreSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::RestraintScoreSubsetFilterTable</qualifiedname>
+        <param>
+          <type>RestraintsAdaptor</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">RestraintCache</ref> internally with unbounded size. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="112" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1aed921b9262009b9620293580149e4ea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::RestraintScoreSubsetFilterTable::~RestraintScoreSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~RestraintScoreSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::~RestraintScoreSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="120" column="231" bodyfile="include/IMP/domino/subset_filters.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a94ab65eebb88dd4d75e6d16aeff11007" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::RestraintScoreSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="117" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ac5c3a1ff7b96e313cda93283e4c50602" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::RestraintScoreSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="114" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ab382557848a96cb575d741a8eace0f5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::RestraintScoreSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="120" column="34" bodyfile="include/IMP/domino/subset_filters.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ad50b6c1d68356cafa1c51752102f039a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::RestraintScoreSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="120" column="103" bodyfile="include/IMP/domino/subset_filters.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Filter a configuration of the subset using the Model thresholds. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This filter table creates filters using the maximum scores set in the Model for various restraints. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::RestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::domino::RestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="104" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="105" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a99cef5b43381cc26c1a71655e93b7a3f" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>cache_</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a94ab65eebb88dd4d75e6d16aeff11007" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ac5c3a1ff7b96e313cda93283e4c50602" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ab382557848a96cb575d741a8eace0f5a" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ad50b6c1d68356cafa1c51752102f039a" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1afea31f7827234768b9e719e4db0545d2" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>RestraintScoreSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a27a72d5b2d3000fa72df9c45755db866" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>RestraintScoreSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a45ccee01273dd9697e150ef906d6f028" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>rs_</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1aed921b9262009b9620293580149e4ea2" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>~RestraintScoreSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::RestraintScoreSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacegeometry" kind="namespace" language="Python">
+    <compoundname>geometry</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="geometry_8py_1a1bdadaedf224e538fbde98574111de35" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>geometry.bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <qualifiedname>geometry.bb</qualifiedname>
+        <initializer>=  IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0, 0, 0),
+                               IMP.algebra.Vector3D(10, 10, 10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/geometry.py" line="18" column="1" bodyfile="examples/rmf/geometry.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="geometry_8py_1a56969014a82e60143eefa395c83cb2d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>geometry.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>geometry.f</qualifiedname>
+        <initializer>=  RMF.create_rmf_file(tfn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/geometry.py" line="15" column="1" bodyfile="examples/rmf/geometry.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="geometry_8py_1a627c42b9885cf663774c87d9747fb550" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>geometry.g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>geometry.g</qualifiedname>
+        <initializer>=  IMP.display.BoundingBoxGeometry(bb)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/geometry.py" line="20" column="1" bodyfile="examples/rmf/geometry.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="geometry_8py_1a7b31516f28aee594f02753a24a048b67" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>geometry.gs</definition>
+        <argsstring></argsstring>
+        <name>gs</name>
+        <qualifiedname>geometry.gs</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1rmf_1ae6466f86dceab595e9eb6c5a522a7508" kindref="member">IMP.rmf.create_geometries</ref>(f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/geometry.py" line="38" column="1" bodyfile="examples/rmf/geometry.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="geometry_8py_1a9be803c7162bb9f2032d8ea4ef21703b" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str geometry.tfn</definition>
+        <argsstring></argsstring>
+        <name>tfn</name>
+        <qualifiedname>geometry.tfn</qualifiedname>
+        <initializer>=  &quot;rmf_geometry.rmf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/geometry.py" line="12" column="1" bodyfile="examples/rmf/geometry.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/rmf/geometry.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

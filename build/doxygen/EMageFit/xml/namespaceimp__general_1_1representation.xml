@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceimp__general_1_1representation" kind="namespace" language="Python">
+    <compoundname>imp_general::representation</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="representation_8py_1aecede250c4fab9bfbe097e951ae80572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.apply_rotation_around_centroid</definition>
+        <argsstring>(rb, rot)</argsstring>
+        <name>apply_rotation_around_centroid</name>
+        <qualifiedname>imp_general.representation.apply_rotation_around_centroid</qualifiedname>
+        <param>
+          <type>rb</type>
+          <defname>rb</defname>
+        </param>
+        <param>
+          <type>rot</type>
+          <defname>rot</defname>
+        </param>
+        <briefdescription>
+<para>Rotates the reference frame of a rigid body around the centroid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="297" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="297" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a97a8f92d418d85854b7e3c1cbfec198f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.apply_transformation_around_centroid</definition>
+        <argsstring>(rb, T)</argsstring>
+        <name>apply_transformation_around_centroid</name>
+        <qualifiedname>imp_general.representation.apply_transformation_around_centroid</qualifiedname>
+        <param>
+          <type>rb</type>
+          <defname>rb</defname>
+        </param>
+        <param>
+          <type>T</type>
+          <defname>T</defname>
+        </param>
+        <briefdescription>
+<para>Applies a transformation around the centroid of a rigid body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>First does the rotation around the centroid and then applies the transformation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A IMP.core.RigidBody object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a IMP.algebra.Transformation3D object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="310" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="310" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a483d5a192e0cff8e3f0778b732c997ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.create_assembly</definition>
+        <argsstring>(model, fn_pdbs, names=False)</argsstring>
+        <name>create_assembly</name>
+        <qualifiedname>imp_general.representation.create_assembly</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>fn_pdbs</type>
+          <defname>fn_pdbs</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Read all the PDBs given in the list of names fn_pdbs and adds the hierarchies to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="41" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="41" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1ac9bb64e6684254dcdc77e1bafafaa59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.create_assembly_from_pdb</definition>
+        <argsstring>(model, fn_pdb, names=False)</argsstring>
+        <name>create_assembly_from_pdb</name>
+        <qualifiedname>imp_general.representation.create_assembly_from_pdb</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Builds the assembly setting the chains in the PDB file as components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="24" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a70705a2761b08e288b7aac88a1d92510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.create_rigid_bodies</definition>
+        <argsstring>(assembly)</argsstring>
+        <name>create_rigid_bodies</name>
+        <qualifiedname>imp_general.representation.create_rigid_bodies</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <briefdescription>
+<para>set the children of a molecule type hierarchy as rigid bodies In this case, all the children are the components of the complex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>I use the function create_rigid_body(), that creates a lot of sub-rigid bodies.</para>
+<para>I have changed the function and now build the rigid body directly from the leaves of each of the components. With this I guarantee that the number of rigid members is going to be the same if the components have the same number of atoms.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="71" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="71" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a137b19ae0ca5c3d839460bb0493d72c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.create_simplified_assembly</definition>
+        <argsstring>(assembly, components_rbs, n_res)</argsstring>
+        <name>create_simplified_assembly</name>
+        <qualifiedname>imp_general.representation.create_simplified_assembly</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>components_rbs</type>
+          <defname>components_rbs</defname>
+        </param>
+        <param>
+          <type>n_res</type>
+          <defname>n_res</defname>
+        </param>
+        <briefdescription>
+<para>Simplifies an assembly, by creating a hierarchy with one ball per n_res residues. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each of the chains in the new hierarchy are added to the rigid bodies for each of the components. There must be correspondence between the children of the assembly (components) and the rigid bodies. I check for the ids.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="172" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="172" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a29cf1400bbb0d164e95807010ab67c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.create_simplified_dna</definition>
+        <argsstring>(dna_hierarchy, n_res)</argsstring>
+        <name>create_simplified_dna</name>
+        <qualifiedname>imp_general.representation.create_simplified_dna</qualifiedname>
+        <param>
+          <type>dna_hierarchy</type>
+          <defname>dna_hierarchy</defname>
+        </param>
+        <param>
+          <type>n_res</type>
+          <defname>n_res</defname>
+        </param>
+        <briefdescription>
+<para>Gets a hierarchy containing a molecule of DNA and simplifies it, generating a coarse representation of spheres. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function returns a hierarchy with the spheres. n_res - Number of residues to use per sphere.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="116" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="116" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a64dc00be19fc801e7e7f84e983b72b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_all_chains</definition>
+        <argsstring>(hierarchies)</argsstring>
+        <name>get_all_chains</name>
+        <qualifiedname>imp_general.representation.get_all_chains</qualifiedname>
+        <param>
+          <type>hierarchies</type>
+          <defname>hierarchies</defname>
+        </param>
+        <briefdescription>
+<para>Gets all the chains in a set of hierarchies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hierarchies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A set of IMP.atom.Hierarchy objects</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="366" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="366" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a2269cfdb27914c1a8d41e67912a38bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_all_members</definition>
+        <argsstring>(rigid_bodies)</argsstring>
+        <name>get_all_members</name>
+        <qualifiedname>imp_general.representation.get_all_members</qualifiedname>
+        <param>
+          <type>rigid_bodies</type>
+          <defname>rigid_bodies</defname>
+        </param>
+        <briefdescription>
+<para>Gets all the members of a set of rigid bodies, removing the subrigid bodies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns all the plain atom or bead members</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="440" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a0328e39693bb8fa89acc9c4b9f928271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_backbone</definition>
+        <argsstring>(hierarchy)</argsstring>
+        <name>get_backbone</name>
+        <qualifiedname>imp_general.representation.get_backbone</qualifiedname>
+        <param>
+          <type>hierarchy</type>
+          <defname>hierarchy</defname>
+        </param>
+        <briefdescription>
+<para>Get the backbone atoms for a hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It can be a protein or a nucleic acid</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="423" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="423" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a0151d90490b07f0d870350c572c4bbed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_coarse_selection</definition>
+        <argsstring>(coarse_h, residues_numbers)</argsstring>
+        <name>get_coarse_selection</name>
+        <qualifiedname>imp_general.representation.get_coarse_selection</qualifiedname>
+        <param>
+          <type>coarse_h</type>
+          <defname>coarse_h</defname>
+        </param>
+        <param>
+          <type>residues_numbers</type>
+          <defname>residues_numbers</defname>
+        </param>
+        <briefdescription>
+<para>The function returns the particles (fragments) in the coarse hierarchy that were created by summarizing the residues_numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Coarse hierarchy - Hierarchy formed by a bunch of fragments. Each fragment must have the residue numbers that it contains residue_numbers - list with the number of the residues that need to be recovered. The function returns the set of particles that are IMP.atom.Fragments</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="275" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="275" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a5ae3eebae04e3906362a5a7c1f19ec0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_component</definition>
+        <argsstring>(assembly, name)</argsstring>
+        <name>get_component</name>
+        <qualifiedname>imp_general.representation.get_component</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Select a component of the assembly using the name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="222" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="222" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a472802b9d4cfee1da1e6c5337191b4a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_nucleic_acid_backbone</definition>
+        <argsstring>(hierarchy, backbone=&apos;minimal&apos;)</argsstring>
+        <name>get_nucleic_acid_backbone</name>
+        <qualifiedname>imp_general.representation.get_nucleic_acid_backbone</qualifiedname>
+        <param>
+          <type>hierarchy</type>
+          <defname>hierarchy</defname>
+        </param>
+        <param>
+          <type>backbone</type>
+          <defname>backbone</defname>
+          <defval>&apos;minimal&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Returns the atoms in the backbone of the nucleic acid contained in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>backbone &apos;minimal&apos; returns the atoms: [&quot;P&quot;, &quot;O5&apos;&quot;, &quot;C5&apos;&quot;, &quot;C4&apos;&quot;, &quot;C3&apos;&quot;, &quot;O3&apos;&quot;] backbone &apos;trace&apos; returns the atoms C4&apos;</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="383" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="383" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1aa4fe10047e2fca12fc93086f668aced8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_rb_name</definition>
+        <argsstring>(name)</argsstring>
+        <name>get_rb_name</name>
+        <qualifiedname>imp_general.representation.get_rb_name</qualifiedname>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Name to use for the rigid body of a hierarch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="240" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="240" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a5008666cdd8fece813a80689585b5a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_residue_coordinates</definition>
+        <argsstring>(h, chain_id=False, res=1)</argsstring>
+        <name>get_residue_coordinates</name>
+        <qualifiedname>imp_general.representation.get_residue_coordinates</qualifiedname>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>chain_id</type>
+          <defname>chain_id</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Get the coordinates of a residue (the coordinates of the first particle) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See help for get_residue_particle() </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See help for get_residue_particle()</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="337" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="337" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a7b0366197827f16badc8a5ba1ff9753c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_residue_particle</definition>
+        <argsstring>(h, chain_id=False, res=1)</argsstring>
+        <name>get_residue_particle</name>
+        <qualifiedname>imp_general.representation.get_residue_particle</qualifiedname>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>chain_id</type>
+          <defname>chain_id</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Get the particle for a residue in a hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If chain_id == False, just search for the residue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of residue in the chain</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="322" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="322" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a1e486e2200694347fdbe47d35e1ec21e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_residues_distance</definition>
+        <argsstring>(hierarchy1, chain_id1, residue1, hierarchy2, chain_id2, residue2)</argsstring>
+        <name>get_residues_distance</name>
+        <qualifiedname>imp_general.representation.get_residues_distance</qualifiedname>
+        <param>
+          <type>hierarchy1</type>
+          <defname>hierarchy1</defname>
+        </param>
+        <param>
+          <type>chain_id1</type>
+          <defname>chain_id1</defname>
+        </param>
+        <param>
+          <type>residue1</type>
+          <defname>residue1</defname>
+        </param>
+        <param>
+          <type>hierarchy2</type>
+          <defname>hierarchy2</defname>
+        </param>
+        <param>
+          <type>chain_id2</type>
+          <defname>chain_id2</defname>
+        </param>
+        <param>
+          <type>residue2</type>
+          <defname>residue2</defname>
+        </param>
+        <briefdescription>
+<para>Distance between two residues. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See the help for get_residue_particle() <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hierarchy1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_id1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hierarchy2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain_id2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue2</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="349" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="349" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a106be192a6890bee422b3a7d65502049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_rigid_body</definition>
+        <argsstring>(rigid_bodies, name)</argsstring>
+        <name>get_rigid_body</name>
+        <qualifiedname>imp_general.representation.get_rigid_body</qualifiedname>
+        <param>
+          <type>rigid_bodies</type>
+          <defname>rigid_bodies</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Select a rigid body from the rigid_bodies using the name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="232" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a6d4b50ab14f56894a2ca53d0af02dfa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_selection_as_atom_hierarchy</definition>
+        <argsstring>(model, S)</argsstring>
+        <name>get_selection_as_atom_hierarchy</name>
+        <qualifiedname>imp_general.representation.get_selection_as_atom_hierarchy</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>S</type>
+          <defname>S</defname>
+        </param>
+        <briefdescription>
+<para>Gets a selection of particles and decorates them as Atoms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Then all of them are put into a big residue. I have this to use with the multifit.create_coarse_molecule_from_molecule() function</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="263" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="263" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a0c6302246c2abbd049724b16ddccbe17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.get_selection_rigid_body</definition>
+        <argsstring>(model, S)</argsstring>
+        <name>get_selection_rigid_body</name>
+        <qualifiedname>imp_general.representation.get_selection_rigid_body</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>S</type>
+          <defname>S</defname>
+        </param>
+        <briefdescription>
+<para>Build the rigid body for all the particles in the selection S. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="245" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="245" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1ac05a2ba061cf864a7fb8a9fd2f3f5ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.read_component</definition>
+        <argsstring>(model, fn_pdb, name=False)</argsstring>
+        <name>read_component</name>
+        <qualifiedname>imp_general.representation.read_component</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Read a PDB molecule, add atoms, and set a name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="55" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="representation_8py_1a82261ca70d6c16ad8703a755e2ff33f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.representation.rename_chains</definition>
+        <argsstring>(assembly)</argsstring>
+        <name>rename_chains</name>
+        <qualifiedname>imp_general.representation.rename_chains</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <briefdescription>
+<para>Rename all the chains of an assembly so there are no conflicts with the ids. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The names are added sequentially.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/representation.py" line="97" column="1" bodyfile="lib/IMP/EMageFit/imp_general/representation.py" bodystart="97" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/imp_general/representation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

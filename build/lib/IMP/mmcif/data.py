@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/mmcif/pyext/src/data.py

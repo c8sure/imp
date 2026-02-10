@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1HasHigherCCC" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::HasHigherCCC</compoundname>
+    <includes local="no">IMP/em2d/scores2D.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1HasHigherCCC_1abc7e97363d98430ec195902df75ea533" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::em2d::HasHigherCCC&lt; T &gt;::operator()</definition>
+        <argsstring>(const T &amp;a, const T &amp;b) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::em2d::HasHigherCCC::operator()</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="121" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1HasHigherCCC_1aae44965b60c127b20cd1c16b0bfaf66b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::HasHigherCCC&lt; T &gt;::show</definition>
+        <argsstring>(std::ostream &amp;) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::HasHigherCCC::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="124" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Comparison by value of the ccc. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/scores2D.h" line="119" column="1" bodyfile="include/IMP/em2d/scores2D.h" bodystart="119" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1HasHigherCCC_1abc7e97363d98430ec195902df75ea533" prot="public" virt="non-virtual"><scope>IMP::em2d::HasHigherCCC</scope><name>operator()</name></member>
+      <member refid="classIMP_1_1em2d_1_1HasHigherCCC_1aae44965b60c127b20cd1c16b0bfaf66b" prot="public" virt="non-virtual"><scope>IMP::em2d::HasHigherCCC</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

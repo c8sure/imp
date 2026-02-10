@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacerigid__body__excluded__volume" kind="namespace" language="Python">
+    <compoundname>rigid_body_excluded_volume</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a63076816f4c860eb7b79d2bbc6568ba0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.cs</definition>
+        <argsstring></argsstring>
+        <name>cs</name>
+        <qualifiedname>rigid_body_excluded_volume.cs</qualifiedname>
+        <initializer>=  s.create_sample()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="105" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a2a415e2c96f4149c04fdd44ce60f9bdb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.helices</definition>
+        <argsstring></argsstring>
+        <name>helices</name>
+        <qualifiedname>rigid_body_excluded_volume.helices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="92" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a901c19f3019133e929ec277d348a70e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>rigid_body_excluded_volume.m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="92" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1afbba66455bbd9d7216f850379a2e85b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>rigid_body_excluded_volume.pst</qualifiedname>
+        <initializer>=  create_discrete_states(m, helices)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="98" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a0cab3aeaf3d3b7cd870041355be47c48" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>rigid_body_excluded_volume.rs</qualifiedname>
+        <initializer>=  create_excluded_volume(m, helices)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="95" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a516c7e34c0c84cbbfef64f012c96edee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>rigid_body_excluded_volume.s</qualifiedname>
+        <initializer>=  create_sampler(m, rs, pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="101" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a81e4a9fb7daed5501f5f272ee8078c17" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list rigid_body_excluded_volume.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>rigid_body_excluded_volume.score</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="108" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1ac55d579bc5a64fa6fe7ba71129adba39" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <qualifiedname>rigid_body_excluded_volume.sf</qualifiedname>
+        <initializer>=  IMP.core.RestraintsScoringFunction(rs)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="109" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rigid__body__excluded__volume_8py_1a665ef42da46012f2757f729cd25b9866" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rigid_body_excluded_volume.ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <qualifiedname>rigid_body_excluded_volume.ss</qualifiedname>
+        <initializer>=  sf.evaluate(False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="112" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="rigid__body__excluded__volume_8py_1a3cd8a12ddeaa4730755a269e89a9403c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rigid_body_excluded_volume.create_discrete_states</definition>
+        <argsstring>(m, helices)</argsstring>
+        <name>create_discrete_states</name>
+        <qualifiedname>rigid_body_excluded_volume.create_discrete_states</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>helices</type>
+          <defname>helices</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="43" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="43" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="rigid__body__excluded__volume_8py_1af7669766e04117d05047e5b11ad67e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rigid_body_excluded_volume.create_excluded_volume</definition>
+        <argsstring>(m, helices)</argsstring>
+        <name>create_excluded_volume</name>
+        <qualifiedname>rigid_body_excluded_volume.create_excluded_volume</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>helices</type>
+          <defname>helices</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="29" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="29" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="rigid__body__excluded__volume_8py_1a7959b2b3be2d2b8bd1bc7c6b047d16f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rigid_body_excluded_volume.create_representation</definition>
+        <argsstring>()</argsstring>
+        <name>create_representation</name>
+        <qualifiedname>rigid_body_excluded_volume.create_representation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="18" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="rigid__body__excluded__volume_8py_1a82244bdde346dcbd7a92923fb289ad51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rigid_body_excluded_volume.create_sampler</definition>
+        <argsstring>(m, rs, pst)</argsstring>
+        <name>create_sampler</name>
+        <qualifiedname>rigid_body_excluded_volume.create_sampler</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>rs</type>
+          <defname>rs</defname>
+        </param>
+        <param>
+          <type>pst</type>
+          <defname>pst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="64" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="64" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="rigid__body__excluded__volume_8py_1a6122f6b25c6b7a96c182c8d0faab975c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rigid_body_excluded_volume.display</definition>
+        <argsstring>(m, helices, name)</argsstring>
+        <name>display</name>
+        <qualifiedname>rigid_body_excluded_volume.display</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>helices</type>
+          <defname>helices</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/rigid_body_excluded_volume.py" line="81" column="1" bodyfile="examples/domino/rigid_body_excluded_volume.py" bodystart="81" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/rigid_body_excluded_volume.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacerestraints" kind="namespace" language="Python">
+    <compoundname>restraints</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="restraints_8py_1a88f398082f797a0d4bec58983655a37b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restraints.get_connectivity_restraint</definition>
+        <argsstring>(particles, distance=10.0, n_pairs=1, spring_constant=1)</argsstring>
+        <name>get_connectivity_restraint</name>
+        <qualifiedname>restraints.get_connectivity_restraint</qualifiedname>
+        <param>
+          <type>particles</type>
+          <defname>particles</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+          <defval>10.0</defval>
+        </param>
+        <param>
+          <type>n_pairs</type>
+          <defname>n_pairs</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>spring_constant</type>
+          <defname>spring_constant</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Set a connectivity restraint for the leaves of a set of particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The intended use is that the each particle is a hierarchy. Each hierarchy contains leaves that are atoms, or particles that are a coarse representation of a molecule</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/restraints.py" line="16" column="1" bodyfile="lib/IMP/EMageFit/restraints.py" bodystart="16" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="restraints_8py_1a8e37adc164069b25ddb9783f804ea7b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>restraints.get_em2d_restraint</definition>
+        <argsstring>(assembly, images_selection_file, restraint_params, mode=&apos;fast&apos;, n_optimized=1)</argsstring>
+        <name>get_em2d_restraint</name>
+        <qualifiedname>restraints.get_em2d_restraint</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>images_selection_file</type>
+          <defname>images_selection_file</defname>
+        </param>
+        <param>
+          <type>restraint_params</type>
+          <defname>restraint_params</defname>
+        </param>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+          <defval>&apos;fast&apos;</defval>
+        </param>
+        <param>
+          <type>n_optimized</type>
+          <defname>n_optimized</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Sets a restraint for comparing the model to a set of EM images. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/restraints.py" line="35" column="1" bodyfile="lib/IMP/EMageFit/restraints.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/restraints.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

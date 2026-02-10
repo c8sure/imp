@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1RelativePositionMover" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::RelativePositionMover</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">core::RigidBodyMover</basecompoundref>
+    <includes local="no">IMP/em2d/RelativePositionMover.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1ab0ed4c122bf997f30fc0e8ab3064310f" prot="protected" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::em2d::RelativePositionMover::last_transformation_</definition>
+        <argsstring></argsstring>
+        <name>last_transformation_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::last_transformation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="36" column="29" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1a31215bb678e1b47907d95882ab7183d0" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::em2d::RelativePositionMover::max_angle_</definition>
+        <argsstring></argsstring>
+        <name>max_angle_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::max_angle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="38" column="9" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1a3ca8e3a56238e55cc25c94deb52a6210" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::em2d::RelativePositionMover::max_translation_</definition>
+        <argsstring></argsstring>
+        <name>max_translation_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::max_translation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="37" column="9" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1a02f4a20d83aa60b3f08639c40b3ca2cc" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::em2d::RelativePositionMover::probability_of_random_move_</definition>
+        <argsstring></argsstring>
+        <name>probability_of_random_move_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::probability_of_random_move_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="39" column="9" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1a1ef6464f15cb1cb5cbb54dcc3f49ac13" prot="protected" static="no" mutable="no">
+        <type>core::RigidBody</type>
+        <definition>core::RigidBody IMP::em2d::RelativePositionMover::rbA_</definition>
+        <argsstring></argsstring>
+        <name>rbA_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::rbA_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="33" column="19" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1ad9b4b30bb83cecfbf41be3e708dc2ec9" prot="protected" static="no" mutable="no">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::em2d::RelativePositionMover::reference_rbs_</definition>
+        <argsstring></argsstring>
+        <name>reference_rbs_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::reference_rbs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="34" column="21" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1RelativePositionMover_1a8217e09ee824040fab4c423b7310533a" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1a21f82bc3a3443cae7bedc305742bd61d" kindref="member">Transformation3DsList</ref></type>
+        <definition>Transformation3DsList IMP::em2d::RelativePositionMover::transformations_map_</definition>
+        <argsstring></argsstring>
+        <name>transformations_map_</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::transformations_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="35" column="25" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1af7912452d781bfdc25f904b717101676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::RelativePositionMover::RelativePositionMover</definition>
+        <argsstring>(core::RigidBody d, Float max_translation, Float max_rotation)</argsstring>
+        <name>RelativePositionMover</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::RelativePositionMover</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_translation</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1ae90c7e9fd9b2929b2851a50dd0923155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::RelativePositionMover::~RelativePositionMover</definition>
+        <argsstring>()</argsstring>
+        <name>~RelativePositionMover</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::~RelativePositionMover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="63" column="231" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1a2045622f5bc5c6c61b42f5f27748c4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::RelativePositionMover::add_internal_transformations</definition>
+        <argsstring>(core::RigidBody d, algebra::Transformation3Ds transforms)</argsstring>
+        <name>add_internal_transformations</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::add_internal_transformations</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>algebra::Transformation3Ds</type>
+          <declname>transforms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a reference RigidBody and the set of internal transformations. The internal transformations are used for positioning the rigid body that this Mover is moving <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transforms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The internal transformations </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1ae09db6c2c0ba059db178a263eb35b822" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::RelativePositionMover::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="63" column="34" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1ab055515237e5f58dab5a711ad3889cd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::RelativePositionMover::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="63" column="103" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1acb7103be36dc03a2551650aad0ce879d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::RelativePositionMover::set_random_move_probability</definition>
+        <argsstring>(Float p)</argsstring>
+        <name>set_random_move_probability</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::set_random_move_probability</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Probability of a random move instead of a relative one. default is 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="58" column="8" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1ae07320916fa8b3816c96ce1155f84fec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>core::MonteCarloMoverResult</type>
+        <definition>virtual core::MonteCarloMoverResult IMP::em2d::RelativePositionMover::do_propose</definition>
+        <argsstring>() override</argsstring>
+        <name>do_propose</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::do_propose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="61" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1RelativePositionMover_1a5f6ebb80ab4e83da250e6bd835a7bec5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::RelativePositionMover::do_reject</definition>
+        <argsstring>() override</argsstring>
+        <name>do_reject</name>
+        <qualifiedname>IMP::em2d::RelativePositionMover::do_reject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RelativePositionMover.h" line="62" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Move a nested rigid body. </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/RelativePositionMover.h" line="30" column="1" bodyfile="include/IMP/em2d/RelativePositionMover.h" bodystart="30" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a2045622f5bc5c6c61b42f5f27748c4f9" prot="public" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>add_internal_transformations</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ae07320916fa8b3816c96ce1155f84fec" prot="protected" virt="virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>do_propose</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a5f6ebb80ab4e83da250e6bd835a7bec5" prot="protected" virt="virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>do_reject</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ae09db6c2c0ba059db178a263eb35b822" prot="public" virt="virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ab055515237e5f58dab5a711ad3889cd4" prot="public" virt="virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ab0ed4c122bf997f30fc0e8ab3064310f" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>last_transformation_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a31215bb678e1b47907d95882ab7183d0" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>max_angle_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a3ca8e3a56238e55cc25c94deb52a6210" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>max_translation_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a02f4a20d83aa60b3f08639c40b3ca2cc" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>probability_of_random_move_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a1ef6464f15cb1cb5cbb54dcc3f49ac13" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>rbA_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ad9b4b30bb83cecfbf41be3e708dc2ec9" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>reference_rbs_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1af7912452d781bfdc25f904b717101676" prot="public" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>RelativePositionMover</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1acb7103be36dc03a2551650aad0ce879d" prot="public" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>set_random_move_probability</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1a8217e09ee824040fab4c423b7310533a" prot="protected" virt="non-virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>transformations_map_</name></member>
+      <member refid="classIMP_1_1em2d_1_1RelativePositionMover_1ae90c7e9fd9b2929b2851a50dd0923155" prot="public" virt="virtual"><scope>IMP::em2d::RelativePositionMover</scope><name>~RelativePositionMover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

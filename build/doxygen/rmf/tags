@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::rmf::HierarchyLoadLink</name>
+    <filename>classIMP_1_1rmf_1_1HierarchyLoadLink.html</filename>
+    <base>IMP::rmf::SimpleLoadLink&lt; Particle &gt;</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>do_link_particle</name>
+      <anchorfile>classIMP_1_1rmf_1_1HierarchyLoadLink.html</anchorfile>
+      <anchor>a9ad11ee81d4673d7716254bd0c00bd61</anchor>
+      <arglist>(Model *m, ParticleIndex root, ParticleIndex cur, RMF::NodeConstHandle node)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>do_load_hierarchy</name>
+      <anchorfile>classIMP_1_1rmf_1_1HierarchyLoadLink.html</anchorfile>
+      <anchor>aecf46029c51bfaf16f02092f617f6f37</anchor>
+      <arglist>(RMF::NodeConstHandle root_node, Model *m, ParticleIndex root)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>do_setup_particle</name>
+      <anchorfile>classIMP_1_1rmf_1_1HierarchyLoadLink.html</anchorfile>
+      <anchor>aa017db1cdf052be7f5a8e9e0351c2be1</anchor>
+      <arglist>(Model *m, ParticleIndex root, ParticleIndex cur, RMF::NodeConstHandle node)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::HierarchySaveLink</name>
+    <filename>classIMP_1_1rmf_1_1HierarchySaveLink.html</filename>
+    <base>IMP::rmf::SimpleSaveLink&lt; Particle &gt;</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>do_save_hierarchy</name>
+      <anchorfile>classIMP_1_1rmf_1_1HierarchySaveLink.html</anchorfile>
+      <anchor>acad2966f5813309997bdb1b89a4106f4</anchor>
+      <arglist>(Model *m, ParticleIndex root, RMF::NodeHandle root_node)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>do_setup_node</name>
+      <anchorfile>classIMP_1_1rmf_1_1HierarchySaveLink.html</anchorfile>
+      <anchor>acb5c102fbadac34930f053c2ed03bd42</anchor>
+      <arglist>(Model *m, ParticleIndex root, ParticleIndex p, RMF::NodeHandle n)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::LoadLink</name>
+    <filename>classIMP_1_1rmf_1_1LoadLink.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::SaveLink</name>
+    <filename>classIMP_1_1rmf_1_1SaveLink.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::SaveOptimizerState</name>
+    <filename>classIMP_1_1rmf_1_1SaveOptimizerState.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>set_simulator</name>
+      <anchorfile>classIMP_1_1rmf_1_1SaveOptimizerState.html</anchorfile>
+      <anchor>aaf387b770701f90b639953345671c103</anchor>
+      <arglist>(atom::Simulator *sim)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>update_always</name>
+      <anchorfile>classIMP_1_1rmf_1_1SaveOptimizerState.html</anchorfile>
+      <anchor>ad171be75fae16dc0c8e7d2278b4ec8fb</anchor>
+      <arglist>(std::string name)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::SimpleLoadLink</name>
+    <filename>classIMP_1_1rmf_1_1SimpleLoadLink.html</filename>
+    <templarg>class O</templarg>
+    <base>IMP::rmf::LoadLink</base>
+    <member kind="function">
+      <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+      <name>create</name>
+      <anchorfile>classIMP_1_1rmf_1_1SimpleLoadLink.html</anchorfile>
+      <anchor>afb8ae08602bdec544d7874cc589fd8de</anchor>
+      <arglist>(RMF::NodeConstHandle rt)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+      <name>create</name>
+      <anchorfile>classIMP_1_1rmf_1_1SimpleLoadLink.html</anchorfile>
+      <anchor>a8c2fc3ae53ebbbbe1245bd9f0573a13b</anchor>
+      <arglist>(RMF::NodeConstHandle rt, Model *m)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::rmf::SimpleSaveLink</name>
+    <filename>classIMP_1_1rmf_1_1SimpleSaveLink.html</filename>
+    <templarg>class O</templarg>
+    <base>IMP::rmf::SaveLink</base>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::rmf</name>
+    <filename>namespaceIMP_1_1rmf.html</filename>
+    <class kind="class">IMP::rmf::HierarchyLoadLink</class>
+    <class kind="class">IMP::rmf::HierarchySaveLink</class>
+    <class kind="class">IMP::rmf::LoadLink</class>
+    <class kind="class">IMP::rmf::SaveLink</class>
+    <class kind="class">IMP::rmf::SaveOptimizerState</class>
+    <class kind="class">IMP::rmf::SimpleLoadLink</class>
+    <class kind="class">IMP::rmf::SimpleSaveLink</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; LoadLink &gt; &gt;</type>
+      <name>LoadLinks</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>acb6ac1b816d176053c2a78d3154cf315</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; LoadLink &gt; &gt;</type>
+      <name>LoadLinksTemp</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>acfe2ddfcc50b422d81f21339b841cfd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; SaveLink &gt; &gt;</type>
+      <name>SaveLinks</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>aa8acef5aeb23091606a8cc774387c8f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; SaveLink &gt; &gt;</type>
+      <name>SaveLinksTemp</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>aa6d5a036b45fdd1082ce9ecb8eaa2afc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_frame</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>abc15209a0aef0e859c99ce00659ebdfb</anchor>
+      <arglist>(RMF::FileConstHandle file, RMF::FrameID frame)</arglist>
+    </member>
+    <member kind="function">
+      <type>RMF::FrameID</type>
+      <name>save_frame</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>ad6d2441fb928c5ed04c1231864cae1c8</anchor>
+      <arglist>(RMF::FileHandle file, std::string name=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_hierarchies</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>adbc5eb9278e61f0a4449eb181cbd2a74</anchor>
+      <arglist>(RMF::FileHandle fh, const atom::Hierarchies &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_hierarchies</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a9f63044bfe82f715e14e819e1ae3a2f4</anchor>
+      <arglist>(RMF::NodeHandle fh, const atom::Hierarchies &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_hierarchy</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>afb3c4144b9161813668b971b21295c8e</anchor>
+      <arglist>(RMF::FileHandle fh, atom::Hierarchy hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>atom::Hierarchies</type>
+      <name>create_hierarchies</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a34bff2a310116bc205e199ae6442be5d</anchor>
+      <arglist>(RMF::FileConstHandle fh, Model *m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>link_hierarchies</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a5bc1f4e588466260be12aba4bac30255</anchor>
+      <arglist>(RMF::FileConstHandle fh, const atom::Hierarchies &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_geometries</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a1e82ba0d49253886a57e4a40ab94921b</anchor>
+      <arglist>(RMF::FileHandle file, const display::GeometriesTemp &amp;r)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_geometries</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a668d6ac6858b6abf9b1f559bd6dec3a9</anchor>
+      <arglist>(RMF::NodeHandle parent, const display::GeometriesTemp &amp;r)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_static_geometries</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a0ac7c6f0adcb9b11b23b43c55a970998</anchor>
+      <arglist>(RMF::FileHandle parent, const display::GeometriesTemp &amp;r)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_geometry</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>ac527cf5f24b42ec60119b3ff253781ba</anchor>
+      <arglist>(RMF::FileHandle file, display::Geometry *r)</arglist>
+    </member>
+    <member kind="function">
+      <type>display::Geometries</type>
+      <name>create_geometries</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>ae6466f86dceab595e9eb6c5a522a7508</anchor>
+      <arglist>(RMF::FileConstHandle parent)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>link_geometries</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a6d17be350f7a9ee7f5ca0859ca9718e5</anchor>
+      <arglist>(RMF::FileConstHandle parent, const display::GeometriesTemp &amp;r)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_particles</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a3ec708eaea5f9a236c558f0759ff0e3e</anchor>
+      <arglist>(RMF::FileHandle fh, const ParticlesTemp &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_particles</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a3d3bf9a9a6ceb4aaaae7d699f2243573</anchor>
+      <arglist>(RMF::NodeHandle fh, const ParticlesTemp &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_particle</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>abf6e3fa733ef668bb985ed3e52f88187</anchor>
+      <arglist>(RMF::FileHandle fh, Particle *hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>ParticlesTemp</type>
+      <name>create_particles</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>af3c5165b1f2cb083d98c36bd202ef275</anchor>
+      <arglist>(RMF::FileConstHandle fh, Model *m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>link_particles</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a5736b0372c4c5f8344d093882d883702</anchor>
+      <arglist>(RMF::FileConstHandle fh, const ParticlesTemp &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_restraints</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a967b0af7b1880fb5a3bddb0c777e62f7</anchor>
+      <arglist>(RMF::FileHandle fh, const Restraints &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_restraints</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>aaf27d994f713670f6c74cabef6fe518b</anchor>
+      <arglist>(RMF::NodeHandle fh, const Restraints &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_restraint</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a2308cb4a180c1c885f7dda0c13592b8f</anchor>
+      <arglist>(RMF::FileHandle fh, Restraint *hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>Restraints</type>
+      <name>create_restraints</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>ae393fe01981d8d3b03b431d3d4b26722</anchor>
+      <arglist>(RMF::FileConstHandle fh, Model *m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>link_restraints</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a69153635f445884aa2650e5846a160ae</anchor>
+      <arglist>(RMF::FileConstHandle fh, const Restraints &amp;hs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_restraints_as_bonds</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a0f18215b4ec2d33724d0ac6aa88601d6</anchor>
+      <arglist>(RMF::FileHandle fh, const Restraints &amp;rs)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_maximum_number_of_terms</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a1beaf6f632cd1f9d0f623b916bbd3fa3</anchor>
+      <arglist>(RMF::FileHandle fh, unsigned int num)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>a19dca802fd497aab5f17e09852358728</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1rmf.html</anchorfile>
+      <anchor>ab7e7eabb8372041e0738c3e88b5ccbd1</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <docanchor file="namespaceIMP_1_1rmf.html" title="rmf_display">rmf_display_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1rmf.html" title="pdb_rmf">pdb_rmf_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1rmf.html" title="rmf_simplify">rmf_simplify_bin</docanchor>
+  </compound>
+</tagfile>

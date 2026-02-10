@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1Gaussian" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::Gaussian</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UnaryFunction</basecompoundref>
+    <includes local="no">IMP/spb/Gaussian.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1Gaussian_1af719b69e0a52e4e6164667836728f6dc" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::Gaussian::Emin_</definition>
+        <argsstring></argsstring>
+        <name>Emin_</name>
+        <qualifiedname>IMP::spb::Gaussian::Emin_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="52" column="9" bodyfile="include/IMP/spb/Gaussian.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1Gaussian_1a1efb696fb9fad2adb4d1ffbac6077790" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::Gaussian::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>IMP::spb::Gaussian::sigma_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="54" column="9" bodyfile="include/IMP/spb/Gaussian.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1Gaussian_1a62a6bd7b6891292348fa516a8651bad9" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::Gaussian::Zmin_</definition>
+        <argsstring></argsstring>
+        <name>Zmin_</name>
+        <qualifiedname>IMP::spb::Gaussian::Zmin_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="53" column="9" bodyfile="include/IMP/spb/Gaussian.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1ae2252aa908524d4ab6d81a96df1ea810" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::Gaussian::Gaussian</definition>
+        <argsstring>(Float Emin, Float Zmin, Float sigma)</argsstring>
+        <name>Gaussian</name>
+        <qualifiedname>IMP::spb::Gaussian::Gaussian</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>Emin</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>Zmin</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create with the given mean and the spring constant k </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="23" column="3" bodyfile="include/IMP/spb/Gaussian.h" bodystart="23" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1a9d7e8e783f651b4c2eb3fb5cbe2f43ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::Gaussian::~Gaussian</definition>
+        <argsstring>()</argsstring>
+        <name>~Gaussian</name>
+        <qualifiedname>IMP::spb::Gaussian::~Gaussian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="49" column="231" bodyfile="include/IMP/spb/Gaussian.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1ab13a0ea743949b51cc7d3f419ca33fa9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::Gaussian::evaluate</definition>
+        <argsstring>(double feature) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>IMP::spb::Gaussian::evaluate</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="44" column="18" bodyfile="include/IMP/spb/Gaussian.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1a33a4e1b273b006a49b02f6d0a0192c55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>DerivativePair</type>
+        <definition>virtual DerivativePair IMP::spb::Gaussian::evaluate_with_derivative</definition>
+        <argsstring>(double feature) const override</argsstring>
+        <name>evaluate_with_derivative</name>
+        <qualifiedname>IMP::spb::Gaussian::evaluate_with_derivative</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="36" column="26" bodyfile="include/IMP/spb/Gaussian.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1a4f15fc055de0bb31085f0eddded9d217" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::Gaussian::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::Gaussian::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="49" column="34" bodyfile="include/IMP/spb/Gaussian.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1Gaussian_1aafd1d2d706f6136bcb13f184fe03cd04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::Gaussian::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::Gaussian::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/Gaussian.h" line="49" column="103" bodyfile="include/IMP/spb/Gaussian.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Gaussian function (symmetric about the mean) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Senes at al., JMB 366, 436 (2007) </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/Gaussian.h" line="20" column="1" bodyfile="include/IMP/spb/Gaussian.h" bodystart="20" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1af719b69e0a52e4e6164667836728f6dc" prot="private" virt="non-virtual"><scope>IMP::spb::Gaussian</scope><name>Emin_</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1ab13a0ea743949b51cc7d3f419ca33fa9" prot="public" virt="virtual"><scope>IMP::spb::Gaussian</scope><name>evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1a33a4e1b273b006a49b02f6d0a0192c55" prot="public" virt="virtual"><scope>IMP::spb::Gaussian</scope><name>evaluate_with_derivative</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1ae2252aa908524d4ab6d81a96df1ea810" prot="public" virt="non-virtual"><scope>IMP::spb::Gaussian</scope><name>Gaussian</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1a4f15fc055de0bb31085f0eddded9d217" prot="public" virt="virtual"><scope>IMP::spb::Gaussian</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1aafd1d2d706f6136bcb13f184fe03cd04" prot="public" virt="virtual"><scope>IMP::spb::Gaussian</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1a1efb696fb9fad2adb4d1ffbac6077790" prot="private" virt="non-virtual"><scope>IMP::spb::Gaussian</scope><name>sigma_</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1a62a6bd7b6891292348fa516a8651bad9" prot="private" virt="non-virtual"><scope>IMP::spb::Gaussian</scope><name>Zmin_</name></member>
+      <member refid="classIMP_1_1spb_1_1Gaussian_1a9d7e8e783f651b4c2eb3fb5cbe2f43ae" prot="public" virt="virtual"><scope>IMP::spb::Gaussian</scope><name>~Gaussian</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/symmetry/pyext/swig.i-in

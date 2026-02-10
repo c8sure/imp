@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="rmf__config_8h" kind="file" language="C++">
+    <compoundname>rmf_config.h</compoundname>
+    <includes local="no">IMP/kernel_config.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">IMP/compiler_macros.h</includes>
+    <includedby refid="HierarchyLoadLink_8h" local="no">HierarchyLoadLink.h</includedby>
+    <includedby refid="HierarchySaveLink_8h" local="no">HierarchySaveLink.h</includedby>
+    <includedby refid="RMFWriter_8h" local="no">RMFWriter.h</includedby>
+    <includedby refid="SaveOptimizerState_8h" local="no">SaveOptimizerState.h</includedby>
+    <includedby refid="associations_8h" local="no">associations.h</includedby>
+    <includedby refid="atom__io_8h" local="no">atom_io.h</includedby>
+    <includedby refid="frames_8h" local="no">frames.h</includedby>
+    <includedby refid="geometry__io_8h" local="no">geometry_io.h</includedby>
+    <includedby refid="links_8h" local="no">links.h</includedby>
+    <includedby refid="particle__io_8h" local="no">particle_io.h</includedby>
+    <includedby refid="restraint__io_8h" local="no">restraint_io.h</includedby>
+    <includedby refid="simple__links_8h" local="no">simple_links.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>rmf_config.h</label>
+        <link refid="rmf__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/compiler_macros.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/kernel_config.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="rmf__config_8h_1ae1d34b65903ae0354fe5885d94d2e44e" prot="public" static="no">
+        <name>IMP_RMF_HAS_BOOST_FILESYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="109" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a3c4082f06359c80b8d06d747b5badb30" prot="public" static="no">
+        <name>IMP_RMF_HAS_BOOST_PROGRAMOPTIONS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="111" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a24de81204211238643787506658ba1e8" prot="public" static="no">
+        <name>IMP_RMF_HAS_BOOST_RANDOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="113" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ae0a0cc19972ebb10059edf83836b3d0c" prot="public" static="no">
+        <name>IMP_RMF_HAS_BOOST_REGEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="115" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1aade899ddc9e9d06ed6f4986756ad88ef" prot="public" static="no">
+        <name>IMP_RMF_HAS_BOOST_SYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="117" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a2aa23b95e34ce1e776f3005f9c8b1094" prot="public" static="no">
+        <name>IMP_RMF_HAS_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="119" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ad52cdadd9e0b8b9a7fc9c8453fc850e1" prot="public" static="no">
+        <name>IMP_RMF_HAS_HDF5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="121" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a6ec4cc008d3112981bbd1bad457a0dfc" prot="public" static="no">
+        <name>IMP_RMF_HAS_IMP_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="99" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ae2bbb582d8ae3bf0056e2bd33c80bc1b" prot="public" static="no">
+        <name>IMP_RMF_HAS_IMP_EM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="101" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a6356b20545f2f0cce53023f96551acb9" prot="public" static="no">
+        <name>IMP_RMF_HAS_IMP_SAXS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="103" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a03b1a4c135b36723fa426d242d4e3d72" prot="public" static="no">
+        <name>IMP_RMF_HAS_IMP_SCORE_FUNCTOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="105" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a68723621962cdb5d3ec4230c9fed6cb3" prot="public" static="no">
+        <name>IMP_RMF_HAS_IMP_STATISTICS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="107" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1aeddac8eb9cadb5f36fb6458cfc4d83ed" prot="public" static="no">
+        <name>IMP_RMF_HAS_NUMPY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="123" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a7244e131744eac2cf998fce25efbc7e4" prot="public" static="no">
+        <name>IMP_RMF_HAS_PYTHON_IHM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="125" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a6a8e4ce395430935117bab86b2a6dbf4" prot="public" static="no">
+        <name>IMP_RMF_USE_BOOST_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="108" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a883d1cc491f4c75afdfecf8357bffd85" prot="public" static="no">
+        <name>IMP_RMF_USE_BOOST_PROGRAMOPTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="110" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a9af7e89defdd37c662ff2c2809c92cd4" prot="public" static="no">
+        <name>IMP_RMF_USE_BOOST_RANDOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="112" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a57e40e42e35cb8c1a745d5555eaf4ef2" prot="public" static="no">
+        <name>IMP_RMF_USE_BOOST_REGEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="114" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a1f9609bcc46dd7b57f498b615e6d55d4" prot="public" static="no">
+        <name>IMP_RMF_USE_BOOST_SYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="116" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a2563be88a2bbf0000bcb473a566396a4" prot="public" static="no">
+        <name>IMP_RMF_USE_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="118" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a6421bb027efcd73bb606898355cbf162" prot="public" static="no">
+        <name>IMP_RMF_USE_HDF5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="120" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a2e623f87d94f13b8b60fdeb7261051cc" prot="public" static="no">
+        <name>IMP_RMF_USE_IMP_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="98" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a3c9e0501cbb40a70b192810d3f3b6b76" prot="public" static="no">
+        <name>IMP_RMF_USE_IMP_EM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="100" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a504c3d07f02751c9398c7d4fc6124691" prot="public" static="no">
+        <name>IMP_RMF_USE_IMP_SAXS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="102" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ad28249da3a57468e1d3feb605adc56bd" prot="public" static="no">
+        <name>IMP_RMF_USE_IMP_SCORE_FUNCTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="104" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a609cae7a5366706e742151aee1703093" prot="public" static="no">
+        <name>IMP_RMF_USE_IMP_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="106" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a7a59d4e72d5ec911a92689ac479f29b5" prot="public" static="no">
+        <name>IMP_RMF_USE_NUMPY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="122" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1aaff9f1ca4d71a93e0629899226fb794c" prot="public" static="no">
+        <name>IMP_RMF_USE_PYTHON_IHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="124" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ada3ed1e0f02f111878a2d81c7d768a1e" prot="public" static="no">
+        <name>IMPRMF_BEGIN_INTERNAL_NAMESPACE</name>
+        <initializer>  IMPRMF_BEGIN_NAMESPACE\
+  namespace internal {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="91" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ab7fe388ecee16944b657b278dc16fcf4" prot="public" static="no">
+        <name>IMPRMF_BEGIN_NAMESPACE</name>
+        <initializer>namespace IMP{ namespace rmf {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="87" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a57c0bb2084c555bca89926f34964d3db" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_FUNCTION_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="254" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a2d7751361fee2fa32f87a4f4ab96e464" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_FUNCTION_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_FUNCTION_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="284" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="284" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a3f0e64c768a14ac529577dab31244d8f" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_HEADER</name>
+        <param><defname>version</defname></param>
+        <param><defname>help_message</defname></param>
+        <initializer>/** See [deprecation support](@ref deprecation). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="248" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="248" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a5817ab4a5766cc588219e494d6e9a428" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_MACRO</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="268" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a4af1379e4cb5b41eec53fc92ea0388f9" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_METHOD_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="256" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a38d49048c9f5279a3811ba744fd42354" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_METHOD_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_METHOD_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="288" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="288" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1af18a4a1822f371ed2b395851dee808da" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_OBJECT_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="252" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a8c935effe8b7c908d8703fdfb90bb495" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_OBJECT_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_OBJECT_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="280" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="280" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ab7a7024b33cfc22923020c24ed358c0f" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_VALUE_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="250" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1ae6c1c45c49a09fb65b93320d253e414e" prot="public" static="no">
+        <name>IMPRMF_DEPRECATED_VALUE_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_VALUE_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="276" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="276" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a427854e21d2448990b4077b4de07aa2d" prot="public" static="no">
+        <name>IMPRMF_END_INTERNAL_NAMESPACE</name>
+        <initializer>} IMPRMF_END_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="94" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a52f5779cada73305e3efb47520fef692" prot="public" static="no">
+        <name>IMPRMF_END_NAMESPACE</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="89" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a04ead459fda656026926976e278c2c89" prot="public" static="no">
+        <name>IMPRMF_EXPORT_TEMPLATE</name>
+        <param><defname>name</defname></param>
+        <initializer>IMP_REQUIRE_SEMICOLON_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="69" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1aabfda00e1a040af16ac17f57908c8a2e" prot="public" static="no">
+        <name>IMPRMF_SHOW_WARNINGS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="228" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rmf__config_8h_1a966a6824efefec20425b3279ce6ec66e" prot="public" static="no">
+        <name>IMPRMFEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="50" column="9" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/rmf/rmf_config.h"/>
+  </compounddef>
+</doxygen>

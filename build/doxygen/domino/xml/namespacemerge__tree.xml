@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacemerge__tree" kind="namespace" language="Python">
+    <compoundname>merge_tree</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="merge__tree_8py_1a60cd1fc9ab81d103480f02393e8862b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.acp</definition>
+        <argsstring></argsstring>
+        <name>acp</name>
+        <qualifiedname>merge_tree.acp</qualifiedname>
+        <initializer>=  IMP.container.ListPairContainer(m, cps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="37" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a5663964f9fc84271a5a77de071675eb8" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list merge_tree.allc</definition>
+        <argsstring></argsstring>
+        <name>allc</name>
+        <qualifiedname>merge_tree.allc</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="19" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a0f1489a08e28e33e2ae8b17873de1ce1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <qualifiedname>merge_tree.bb</qualifiedname>
+        <initializer>=  IMP.algebra.BoundingBox3D((0, 0, 0), (10, 10, 10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="18" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1ac545afb321ce3995169d63af06054c87" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.cp</definition>
+        <argsstring></argsstring>
+        <name>cp</name>
+        <qualifiedname>merge_tree.cp</qualifiedname>
+        <initializer>=  IMP.core.GridClosePairsFinder()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="31" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a069f1d072f9a8c93ec0290c6d40fbd47" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.cps</definition>
+        <argsstring></argsstring>
+        <name>cps</name>
+        <qualifiedname>merge_tree.cps</qualifiedname>
+        <initializer>=  cp.get_close_pairs(m, m.get_particle_indexes())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="33" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1abfe5ab5e43f7ca8f8c2490183116646f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>merge_tree.d</qualifiedname>
+        <initializer>=  IMP.core.XYZR.setup_particle(
+        p, IMP.algebra.Sphere3D(IMP.algebra.get_random_vector_in(bb), 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="22" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1ab99b180a322d4e8d5eb0741aaec87c0e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.ig</definition>
+        <argsstring></argsstring>
+        <name>ig</name>
+        <qualifiedname>merge_tree.ig</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1domino_1a7745ea629841a6a4475211ba0a134b44" kindref="member">IMP.domino.get_interaction_graph</ref>([r],
+                                      pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="44" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a8bb29f6131de5408428954a83c1e3d7a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.jt</definition>
+        <argsstring></argsstring>
+        <name>jt</name>
+        <qualifiedname>merge_tree.jt</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1domino_1af4ecbb31cd9704335911eef3d583a754" kindref="member">IMP.domino.get_junction_tree</ref>(ig)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="47" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a9a3efea7bf9116d55dfbede2df2476be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>merge_tree.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="14" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1aeb4c7b021336ef90e3142e87fbad8510" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.mt</definition>
+        <argsstring></argsstring>
+        <name>mt</name>
+        <qualifiedname>merge_tree.mt</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>(jt)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="52" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a21273c9d9b8c53a7640cb4422b24ef47" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>merge_tree.p</qualifiedname>
+        <initializer>=  IMP.Particle(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="21" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a653bff22b54658a3225b8aa3b075340a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>merge_tree.ps</qualifiedname>
+        <initializer>=  IMP.core.SoftSpherePairScore(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="40" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a3ada7053dc126b31815096f9cafc989a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>merge_tree.pst</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="25" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1afec05cc945932ff63756b50c337f4453" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>merge_tree.r</qualifiedname>
+        <initializer>=  IMP.container.PairsRestraint(ps, acp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="41" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1a2fe964e93382424f478dd1202be410a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>merge_tree.s</qualifiedname>
+        <initializer>=  pst.get_subset()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="53" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="merge__tree_8py_1ae2a2f0c3ebdddf3329b6903a1fa86604" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>merge_tree.ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <qualifiedname>merge_tree.ss</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(allc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/merge_tree.py" line="26" column="1" bodyfile="examples/domino/merge_tree.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/merge_tree.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::rmf::HierarchySaveLink::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1abf2da484f1cab925a866fe8060c694a6" prot="public" static="no" mutable="no">
+        <type>internal::HierarchySaveBonds</type>
+        <definition>internal::HierarchySaveBonds IMP::rmf::HierarchySaveLink::Data::save_bonds</definition>
+        <argsstring></argsstring>
+        <name>save_bonds</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::save_bonds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="43" column="34" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a29e9d6ef7a2a353a043349357bf52c11" prot="public" static="no" mutable="no">
+        <type>internal::HierarchySaveGaussians</type>
+        <definition>internal::HierarchySaveGaussians IMP::rmf::HierarchySaveLink::Data::save_gaussians</definition>
+        <argsstring></argsstring>
+        <name>save_gaussians</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::save_gaussians</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="45" column="38" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a6bcf177ba16edf6d7572d32fa090ffed" prot="public" static="no" mutable="no">
+        <type>internal::HierarchySaveRigidBodies</type>
+        <definition>internal::HierarchySaveRigidBodies IMP::rmf::HierarchySaveLink::Data::save_rigid_bodies</definition>
+        <argsstring></argsstring>
+        <name>save_rigid_bodies</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::save_rigid_bodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="46" column="40" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1acf96c99ca45f94bdaf70d8516b3d1d23" prot="public" static="no" mutable="no">
+        <type>internal::HierarchySaveStatic</type>
+        <definition>internal::HierarchySaveStatic IMP::rmf::HierarchySaveLink::Data::save_static</definition>
+        <argsstring></argsstring>
+        <name>save_static</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::save_static</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="42" column="35" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a816e0a31770d69789df633cf83a28ea6" prot="public" static="no" mutable="no">
+        <type>internal::HierarchySaveXYZs</type>
+        <definition>internal::HierarchySaveXYZs IMP::rmf::HierarchySaveLink::Data::save_xyzs</definition>
+        <argsstring></argsstring>
+        <name>save_xyzs</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::save_xyzs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="44" column="33" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a014f2f69706ea90b4a541ba7c10975f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::HierarchySaveLink::Data::Data</definition>
+        <argsstring>(RMF::FileHandle h)</argsstring>
+        <name>Data</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::Data::Data</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="47" column="5" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/rmf/HierarchySaveLink.h" line="41" column="3" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="41" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a014f2f69706ea90b4a541ba7c10975f5" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>Data</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1abf2da484f1cab925a866fe8060c694a6" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>save_bonds</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a29e9d6ef7a2a353a043349357bf52c11" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>save_gaussians</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a6bcf177ba16edf6d7572d32fa090ffed" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>save_rigid_bodies</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1acf96c99ca45f94bdaf70d8516b3d1d23" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>save_static</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a816e0a31770d69789df633cf83a28ea6" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink::Data</scope><name>save_xyzs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

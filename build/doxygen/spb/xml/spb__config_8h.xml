@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="spb__config_8h" kind="file" language="C++">
+    <compoundname>spb_config.h</compoundname>
+    <includes local="no">IMP/kernel_config.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">IMP/compiler_macros.h</includes>
+    <includedby refid="AttributeDistancePairScore_8h" local="no">AttributeDistancePairScore.h</includedby>
+    <includedby refid="BoxedMover_8h" local="no">BoxedMover.h</includedby>
+    <includedby refid="CellMover_8h" local="no">CellMover.h</includedby>
+    <includedby refid="ChiSquareMetric_8h" local="no">ChiSquareMetric.h</includedby>
+    <includedby refid="ContactMapMetric_8h" local="no">ContactMapMetric.h</includedby>
+    <includedby refid="DiameterRgyrRestraint_8h" local="no">DiameterRgyrRestraint.h</includedby>
+    <includedby refid="DistanceRMSDMetric_8h" local="no">DistanceRMSDMetric.h</includedby>
+    <includedby refid="DistanceTerminiRestraint_8h" local="no">DistanceTerminiRestraint.h</includedby>
+    <includedby refid="EM2DRestraint_8h" local="no">EM2DRestraint.h</includedby>
+    <includedby refid="Gaussian_8h" local="no">Gaussian.h</includedby>
+    <includedby refid="HelixDecorator_8h" local="no">HelixDecorator.h</includedby>
+    <includedby refid="ISDRestraint_8h" local="no">ISDRestraint.h</includedby>
+    <includedby refid="KinkPairScore_8h" local="no">KinkPairScore.h</includedby>
+    <includedby refid="MolecularDynamicsWithWte_8h" local="no">MolecularDynamicsWithWte.h</includedby>
+    <includedby refid="MonteCarloWithWte_8h" local="no">MonteCarloWithWte.h</includedby>
+    <includedby refid="NuisanceRangeModifier_8h" local="no">NuisanceRangeModifier.h</includedby>
+    <includedby refid="PbcBoxedMover_8h" local="no">PbcBoxedMover.h</includedby>
+    <includedby refid="PbcBoxedRigidBodyMover_8h" local="no">PbcBoxedRigidBodyMover.h</includedby>
+    <includedby refid="RMSDMetric_8h" local="no">RMSDMetric.h</includedby>
+    <includedby refid="RigidBodyNewMover_8h" local="no">RigidBodyNewMover.h</includedby>
+    <includedby refid="RigidBodyPackingScore_8h" local="no">RigidBodyPackingScore.h</includedby>
+    <includedby refid="SameParticlePairFilter_8h" local="no">SameParticlePairFilter.h</includedby>
+    <includedby refid="SameRigidBodyPairFilter_8h" local="no">SameRigidBodyPairFilter.h</includedby>
+    <includedby refid="TiltSingletonScore_8h" local="no">TiltSingletonScore.h</includedby>
+    <includedby refid="TransformationSymmetry_8h" local="no">TransformationSymmetry.h</includedby>
+    <includedby refid="TwoStateGoModelRestraint_8h" local="no">TwoStateGoModelRestraint.h</includedby>
+    <includedby refid="UniformBoundedRestraint_8h" local="no">UniformBoundedRestraint.h</includedby>
+    <includedby refid="pt__stuff_8h" local="no">pt_stuff.h</includedby>
+    <includedby refid="spb__ISD__particles_8h" local="no">spb_ISD_particles.h</includedby>
+    <includedby refid="spb__assemble__restraints_8h" local="no">spb_assemble_restraints.h</includedby>
+    <includedby refid="spb__main_8h" local="no">spb_main.h</includedby>
+    <includedby refid="spb__parser_8h" local="no">spb_parser.h</includedby>
+    <includedby refid="spb__representation_8h" local="no">spb_representation.h</includedby>
+    <includedby refid="spb__restraint_8h" local="no">spb_restraint.h</includedby>
+    <includedby refid="spb__sampler_8h" local="no">spb_sampler.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>spb_config.h</label>
+        <link refid="spb__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/compiler_macros.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/kernel_config.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1spb">IMP::spb</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="spb__config_8h_1a65f2e0b4cf17de4f5e980485d0a5245f" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_FILESYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="115" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a28a2e23892924d8925d0cb069f3f190e" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_GRAPH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="117" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aa1b2145c455e8688ab9fb45f3a20eb2d" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_PROGRAMOPTIONS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="119" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a5216847853e0b5e95c55bc143732aabe" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_RANDOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="121" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a8ac39336db8131d6b9c219706ff1755c" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_REGEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="123" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a4d9339e36c99540c7d02cafbba3efb11" prot="public" static="no">
+        <name>IMP_SPB_HAS_BOOST_SYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="125" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a92ed4ccdf88b339904e74bc6c9c56102" prot="public" static="no">
+        <name>IMP_SPB_HAS_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="127" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a62a13211b598012a06c7ac6f1a1cf9b8" prot="public" static="no">
+        <name>IMP_SPB_HAS_FFTW3</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="129" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a0112e7ee97bce423cde2b571c9363c1f" prot="public" static="no">
+        <name>IMP_SPB_HAS_GSL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="131" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aa5d40257e56009374717e57275cf1dd3" prot="public" static="no">
+        <name>IMP_SPB_HAS_HDF5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="133" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a8bb5e3a96981c9b6856d952945d39531" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_ALGEBRA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="99" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a4b782d9ec2e89cba1593d528c19079db" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="101" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aa65965e5e61402a521c25b2f1b19b636" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_DISPLAY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="103" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a855739081c6d6ee834701bb699ceca3c" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_DOMINO</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="105" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a4eee9ada3fe8b09124605f1199778e80" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_EM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="107" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1ac5dce51aa74914501ac618bb2d9be10f" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_GSL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="109" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aa2a465746731062cda6c712de743d378" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_KERNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="111" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a88484c794d6b80c6cdde0f7e3989d7a4" prot="public" static="no">
+        <name>IMP_SPB_HAS_IMP_SCORE_FUNCTOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="113" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a8f9643cce3c331650f2682fff8dcdd5d" prot="public" static="no">
+        <name>IMP_SPB_HAS_MPI</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="135" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a04c1c3f01cd3e005a831a665373bc543" prot="public" static="no">
+        <name>IMP_SPB_HAS_NUMPY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="137" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a15e14f198c4404c5183a84d1a0cad465" prot="public" static="no">
+        <name>IMP_SPB_HAS_OPENCV3</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="139" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a27965af99dceb1b2a438161ba7401eeb" prot="public" static="no">
+        <name>IMP_SPB_HAS_PYTHON_IHM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="143" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a245fac6ae343a4889e00c4913645d636" prot="public" static="no">
+        <name>IMP_SPB_HAS_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="141" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1ac8511e58e05ad7f31fafbb934e3584b7" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="114" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1af5fee2bb61294071f4bbdb7b0a1f85f8" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_GRAPH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="116" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a2c89979414b48f167221b3a9f1fbf001" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_PROGRAMOPTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="118" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a0e5daf87744e2dda09bf4d7399848a12" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_RANDOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="120" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a7f3462bb05a94a8e1948c95dbc516bc1" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_REGEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="122" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a11e2f0d6cf3432f6490504853dbfb772" prot="public" static="no">
+        <name>IMP_SPB_USE_BOOST_SYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="124" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a0ea8020b6e7a969e9e65ced515811b43" prot="public" static="no">
+        <name>IMP_SPB_USE_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="126" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1acd08c3476ef91793565d2d11a23e2716" prot="public" static="no">
+        <name>IMP_SPB_USE_FFTW3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="128" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1ac2168116e225420a43129c70436c561c" prot="public" static="no">
+        <name>IMP_SPB_USE_GSL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="130" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a3431b65345eee406e8ff6ffffd8f8d42" prot="public" static="no">
+        <name>IMP_SPB_USE_HDF5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="132" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a7699fbb6be323e5cabdd9406925abe5c" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_ALGEBRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="98" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aebbb4aca6fec9ee48ec6ac33a2459f0c" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="100" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a2395dcb16c8d7c39d73fdd56b91cbb57" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_DISPLAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="102" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a3cf0bf2a557a1ffab79ec713463377ed" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_DOMINO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="104" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1af8fa2948de384daa83f87aa54f5f7a50" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_EM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="106" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a974c31949786333c1e72afa520b45066" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_GSL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="108" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a0bf365830416280d54348407f00e1c23" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_KERNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="110" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a73288f3e97060c21dd6b14467ecbdbe4" prot="public" static="no">
+        <name>IMP_SPB_USE_IMP_SCORE_FUNCTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="112" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1aefc1ae449171fa5b805bf294c40c51d8" prot="public" static="no">
+        <name>IMP_SPB_USE_MPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="134" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a947d2ea6c6ee49b612f4cf6e3c37eb3d" prot="public" static="no">
+        <name>IMP_SPB_USE_NUMPY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="136" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a21475d84be65495f1f81631c9cc9c1e1" prot="public" static="no">
+        <name>IMP_SPB_USE_OPENCV3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="138" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a5e4b9627feb109a16863ac3bb91bc402" prot="public" static="no">
+        <name>IMP_SPB_USE_PYTHON_IHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="142" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a2440aabcbb0936d227ff277744b20d9d" prot="public" static="no">
+        <name>IMP_SPB_USE_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="140" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a82fb1f78b6ef653b66249700762c0f21" prot="public" static="no">
+        <name>IMPSPB_BEGIN_INTERNAL_NAMESPACE</name>
+        <initializer>  IMPSPB_BEGIN_NAMESPACE\
+  namespace internal {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="91" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a1f2b9c0320d72da3bbe63e9eb1bf3b8f" prot="public" static="no">
+        <name>IMPSPB_BEGIN_NAMESPACE</name>
+        <initializer>namespace IMP{ namespace spb {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="87" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a79abf4a0e8c4249c7d82521dd5107788" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_FUNCTION_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="272" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a436da2c69583ae0777faf066875890a2" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_FUNCTION_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_FUNCTION_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="302" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="302" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1ae35fa38a1c121f624464d327c256f25b" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_HEADER</name>
+        <param><defname>version</defname></param>
+        <param><defname>help_message</defname></param>
+        <initializer>/** See [deprecation support](@ref deprecation). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="266" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="266" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a57d8557a058442dc8a60f8c03aa49fc8" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_MACRO</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="286" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a443669114352af6b425a593e9dd56355" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_METHOD_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="274" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a931c5d2ba03a0182ec4c9f24cc448a30" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_METHOD_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_METHOD_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="306" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="306" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a82318e6575cecfb7da18188d3cca3c7a" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_OBJECT_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="270" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1acfc7be75139ac2235d51a57bc16a6be2" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_OBJECT_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_OBJECT_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="298" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="298" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a124339fad2d408e9f020a98d3203dd2a" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_VALUE_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="268" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a693315e4d1e4df7f409abb079ec41857" prot="public" static="no">
+        <name>IMPSPB_DEPRECATED_VALUE_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_VALUE_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="294" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="294" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a480bf1ef92f219c7cefd4e6d3b012e09" prot="public" static="no">
+        <name>IMPSPB_END_INTERNAL_NAMESPACE</name>
+        <initializer>} IMPSPB_END_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="94" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1af609da86d160a4d5a9224409c17ffc43" prot="public" static="no">
+        <name>IMPSPB_END_NAMESPACE</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="89" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1a0499ce3d983c95f0d0acd72e3c0fbb93" prot="public" static="no">
+        <name>IMPSPB_EXPORT_TEMPLATE</name>
+        <param><defname>name</defname></param>
+        <initializer>IMP_REQUIRE_SEMICOLON_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="69" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1af61d032405eb3be82dc5f84fdef8250e" prot="public" static="no">
+        <name>IMPSPB_SHOW_WARNINGS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="246" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="spb__config_8h_1ae677ad6cbfaa69409a6fb43fcfa3231a" prot="public" static="no">
+        <name>IMPSPBEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="50" column="9" bodyfile="include/IMP/spb/spb_config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/spb_config.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ProjectionParametersScoreState" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::ProjectionParametersScoreState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScoreState</basecompoundref>
+    <includes local="no">IMP/em2d/ProjectionParameters.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1afbb1e9a4540e0505e18d8b21925af0c7" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; Particle &gt;</type>
+        <definition>Pointer&lt;Particle&gt; IMP::em2d::ProjectionParametersScoreState::proj_params_</definition>
+        <argsstring></argsstring>
+        <name>proj_params_</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::proj_params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="121" column="11" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a06e8ac082f827d654b721daa63e16ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectionParametersScoreState::ProjectionParametersScoreState</definition>
+        <argsstring>(Particle *p)</argsstring>
+        <name>ProjectionParametersScoreState</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::ProjectionParametersScoreState</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="109" column="3" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1af336a199282ce83935de8f9b2ccb2e7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::ProjectionParametersScoreState::~ProjectionParametersScoreState</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectionParametersScoreState</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::~ProjectionParametersScoreState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="117" column="231" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1ac0b333d3c25eba38d160e77d2e7019dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ProjectionParametersScoreState::do_after_evaluate</definition>
+        <argsstring>(DerivativeAccumulator *da) override</argsstring>
+        <name>do_after_evaluate</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::do_after_evaluate</qualifiedname>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="114" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a13147d99cb5795679874c6cd95a18b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ProjectionParametersScoreState::do_before_evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>do_before_evaluate</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::do_before_evaluate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="113" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a831d8a5703f730ab4980e38f5676cc55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::em2d::ProjectionParametersScoreState::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="115" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aee0b088569ca4f8cfe40960357efbec4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::em2d::ProjectionParametersScoreState::do_get_outputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_outputs</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::do_get_outputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="116" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aa9cbf86d0897293b72925557db9fa31e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::ProjectionParametersScoreState::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="117" column="34" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aeed261658f026112a0a069bf1564cb76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::ProjectionParametersScoreState::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::ProjectionParametersScoreState::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionParameters.h" line="117" column="103" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Score state to give information about the values of a <ref refid="classIMP_1_1em2d_1_1ProjectionParameters" kindref="compound">ProjectionParameters</ref> Decorator </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/ProjectionParameters.h" line="107" column="1" bodyfile="include/IMP/em2d/ProjectionParameters.h" bodystart="107" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1ac0b333d3c25eba38d160e77d2e7019dc" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>do_after_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a13147d99cb5795679874c6cd95a18b93" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>do_before_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a831d8a5703f730ab4980e38f5676cc55" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aee0b088569ca4f8cfe40960357efbec4" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>do_get_outputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aa9cbf86d0897293b72925557db9fa31e" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1aeed261658f026112a0a069bf1564cb76" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1afbb1e9a4540e0505e18d8b21925af0c7" prot="private" virt="non-virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>proj_params_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1a06e8ac082f827d654b721daa63e16ade" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>ProjectionParametersScoreState</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionParametersScoreState_1af336a199282ce83935de8f9b2ccb2e7f" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionParametersScoreState</scope><name>~ProjectionParametersScoreState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

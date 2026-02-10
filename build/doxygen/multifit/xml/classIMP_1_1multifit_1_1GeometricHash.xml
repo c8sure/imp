@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1GeometricHash" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::GeometricHash</compoundname>
+    <includes local="no">IMP/multifit/GeometricHash.h</includes>
+    <innerclass refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube" prot="private">IMP::multifit::GeometricHash::inside_cube</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere" prot="private">IMP::multifit::GeometricHash::inside_sphere</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf" prot="private">IMP::multifit::GeometricHash::inside_sphere_inf</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>D</declname>
+        <defname>D</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1a4bc48ec3443f73ccf32bbe32598eae1f" prot="public" static="no">
+        <type>std::array&lt; int, D &gt;</type>
+        <definition>typedef std::array&lt;int, D&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::Bucket</definition>
+        <argsstring></argsstring>
+        <name>Bucket</name>
+        <qualifiedname>IMP::multifit::GeometricHash::Bucket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="33" column="22" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1a5b68d38c99130772be4e4a6b6b4bfc80" prot="public" static="no">
+        <type>std::vector&lt; Bucket &gt;</type>
+        <definition>typedef std::vector&lt;Bucket&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::BucketList</definition>
+        <argsstring></argsstring>
+        <name>BucketList</name>
+        <qualifiedname>IMP::multifit::GeometricHash::BucketList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="41" column="23" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1abf6750eb3d4d023b595e2660fefba81e" prot="public" static="no">
+        <type>GeomMap::const_iterator</type>
+        <definition>typedef GeomMap::const_iterator IMP::multifit::GeometricHash&lt; T, D &gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>IMP::multifit::GeometricHash::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="38" column="44" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Distance</name>
+        <qualifiedname>IMP::multifit::GeometricHash::Distance</qualifiedname>
+        <enumvalue id="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551ac8ab34acc6c47e955b3f390738e3cc96" prot="public">
+          <name>INF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551a6c0f6e00537ee2e3513f1158bc4cd9ad" prot="public">
+          <name>EUCLIDEAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="28" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1aa3e7a26287ef3589579df4e28663f859" prot="public" static="no">
+        <type>std::map&lt; const Bucket, PointList &gt;</type>
+        <definition>typedef std::map&lt;const Bucket, PointList&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::GeomMap</definition>
+        <argsstring></argsstring>
+        <name>GeomMap</name>
+        <qualifiedname>IMP::multifit::GeometricHash::GeomMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="36" column="20" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1ae31af98ef2aa3538693d4e1274b40448" prot="public" static="no">
+        <type>std::vector&lt; const ValueType * &gt;</type>
+        <definition>typedef std::vector&lt;const ValueType *&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::HashResult</definition>
+        <argsstring></argsstring>
+        <name>HashResult</name>
+        <qualifiedname>IMP::multifit::GeometricHash::HashResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="39" column="23" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1a693b8a5c02a61e97fda71f0048d04df0" prot="public" static="no">
+        <type>IMP::Vector&lt; T &gt;</type>
+        <definition>typedef IMP::Vector&lt;T&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::HashResultT</definition>
+        <argsstring></argsstring>
+        <name>HashResultT</name>
+        <qualifiedname>IMP::multifit::GeometricHash::HashResultT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="40" column="23" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1ac4598b335f6c809eb04442d852b29c83" prot="public" static="no">
+        <type>GeomMap::iterator</type>
+        <definition>typedef GeomMap::iterator IMP::multifit::GeometricHash&lt; T, D &gt;::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>IMP::multifit::GeometricHash::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="37" column="38" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1aa6109d77bea9c8865be3db6b046ff912" prot="public" static="no">
+        <type>algebra::VectorD&lt; D &gt;</type>
+        <definition>typedef algebra::VectorD&lt;D&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::Point</definition>
+        <argsstring></argsstring>
+        <name>Point</name>
+        <qualifiedname>IMP::multifit::GeometricHash::Point</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="32" column="28" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1a6175fb1aed1af39caab281a3809cddf4" prot="public" static="no">
+        <type>std::vector&lt; ValueType &gt;</type>
+        <definition>typedef std::vector&lt;ValueType&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::PointList</definition>
+        <argsstring></argsstring>
+        <name>PointList</name>
+        <qualifiedname>IMP::multifit::GeometricHash::PointList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="35" column="23" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1GeometricHash_1a16d50b69c869e1fe8267fd63c6628bc8" prot="public" static="no">
+        <type>std::pair&lt; Point, T &gt;</type>
+        <definition>typedef std::pair&lt;Point, T&gt; IMP::multifit::GeometricHash&lt; T, D &gt;::ValueType</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <qualifiedname>IMP::multifit::GeometricHash::ValueType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="34" column="21" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1GeometricHash_1acf05d5e43d9f652a26408422a7bb3450" prot="private" static="no" mutable="no">
+        <type>GeomMap</type>
+        <definition>GeomMap IMP::multifit::GeometricHash&lt; T, D &gt;::gmap_</definition>
+        <argsstring></argsstring>
+        <name>gmap_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::gmap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="300" column="11" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1GeometricHash_1a5447a2adba7752604d77c87792c52dd6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::radii_[D]</definition>
+        <argsstring>[D]</argsstring>
+        <name>radii_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::radii_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="301" column="10" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a8dbc8daec12deaf6fad60f92ed5837e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::GeometricHash&lt; T, D &gt;::GeometricHash</definition>
+        <argsstring>(const algebra::VectorD&lt; D &gt; &amp;radii)</argsstring>
+        <name>GeometricHash</name>
+        <qualifiedname>IMP::multifit::GeometricHash::GeometricHash</qualifiedname>
+        <param>
+          <type>const algebra::VectorD&lt; D &gt; &amp;</type>
+          <declname>radii</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="55" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a9bf53590a57851a7bd929f5466045819" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>IMP::multifit::GeometricHash&lt; T, D &gt;::GeometricHash</definition>
+        <argsstring>(const X &amp;radii)</argsstring>
+        <name>GeometricHash</name>
+        <qualifiedname>IMP::multifit::GeometricHash::GeometricHash</qualifiedname>
+        <param>
+          <type>const X &amp;</type>
+          <declname>radii</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="50" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a4acb476c9506a1b209d3491f0d61cfba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::GeometricHash&lt; T, D &gt;::GeometricHash</definition>
+        <argsstring>(double radius=1)</argsstring>
+        <name>GeometricHash</name>
+        <qualifiedname>IMP::multifit::GeometricHash::GeometricHash</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="44" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a55cdc6df5f5b89e3c5f8f42e4a1b749d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::GeometricHash&lt; T, D &gt;::add</definition>
+        <argsstring>(const Point &amp;pt, const T &amp;data)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::GeometricHash::add</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="60" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a05745d7e9d0f798ad5991b998412728a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::GeometricHash&lt; T, D &gt;::add</definition>
+        <argsstring>(const X &amp;coordinates, const T &amp;data)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::GeometricHash::add</qualifiedname>
+        <param>
+          <type>const X &amp;</type>
+          <declname>coordinates</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="67" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a0ff3b95782ccecdddb7988446b5b378b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator IMP::multifit::GeometricHash&lt; T, D &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>IMP::multifit::GeometricHash::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="138" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a3cb9c4f6a322eee368bff3ab14e9dff2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator IMP::multifit::GeometricHash&lt; T, D &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>IMP::multifit::GeometricHash::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="142" column="18" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a2660b80e89ba7272854bbe1b4e8af3f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PointList const *</type>
+        <definition>PointList const  * IMP::multifit::GeometricHash&lt; T, D &gt;::bucket</definition>
+        <argsstring>(const Point &amp;pt) const</argsstring>
+        <name>bucket</name>
+        <qualifiedname>IMP::multifit::GeometricHash::bucket</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="158" column="19" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a04e368aff3a3e7dc3f190bcceb7409d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::GeometricHash&lt; T, D &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>IMP::multifit::GeometricHash::clear</qualifiedname>
+        <briefdescription>
+<para>Remove all data from the hash map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="156" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1acb372a29b472a63cd4cba9d3acba9236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator IMP::multifit::GeometricHash&lt; T, D &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>IMP::multifit::GeometricHash::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="140" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a785714643292badd0b35a3316cac14b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator IMP::multifit::GeometricHash&lt; T, D &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>IMP::multifit::GeometricHash::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="144" column="18" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a9d0a02c371dc0d8cbaa03bb39ba086b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BucketList</type>
+        <definition>BucketList IMP::multifit::GeometricHash&lt; T, D &gt;::get_buckets</definition>
+        <argsstring>() const</argsstring>
+        <name>get_buckets</name>
+        <qualifiedname>IMP::multifit::GeometricHash::get_buckets</qualifiedname>
+        <briefdescription>
+<para>Return vector of buckets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="147" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="147" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a51da300a7bc68ccef180cb5f5d3b5509" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>GeomMap const &amp;</type>
+        <definition>GeomMap const  &amp; IMP::multifit::GeometricHash&lt; T, D &gt;::Map</definition>
+        <argsstring>() const</argsstring>
+        <name>Map</name>
+        <qualifiedname>IMP::multifit::GeometricHash::Map</qualifiedname>
+        <briefdescription>
+<para>Return the hash map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="136" column="17" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1adb8e5c95a478e0bbe3d809319c83b1b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(const Point &amp;center)</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="124" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1afa0a14f72fec14457954e8f06a8ed5c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(const Point &amp;center, const X &amp;radii) const</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const X &amp;</type>
+          <declname>radii</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="118" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a915215bf25a17767d24e51af54a1109e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(const X &amp;center_coordinates)</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>const X &amp;</type>
+          <declname>center_coordinates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="129" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1ad440c810e29befea7d1ef7318d57afd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(Distance dt, const Point &amp;center, double radius) const</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>Distance</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="79" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a6c2ba8256d11954e48844f26d8a09ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(Distance dt, const Point &amp;center, double radius, HashResultT &amp;values)</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>Distance</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>HashResultT &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="107" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1abb18f667799028a2afd4f9ff789cc2d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors</definition>
+        <argsstring>(Distance dt, const X &amp;center_coordinates, double radius) const</argsstring>
+        <name>neighbors</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors</qualifiedname>
+        <param>
+          <type>Distance</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>const X &amp;</type>
+          <declname>center_coordinates</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="97" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a3510d090771cfb51a21b40df6f87ded3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashResultT</type>
+        <definition>HashResultT IMP::multifit::GeometricHash&lt; T, D &gt;::neighbors_data</definition>
+        <argsstring>(Distance dt, const Point &amp;center, double radius) const</argsstring>
+        <name>neighbors_data</name>
+        <qualifiedname>IMP::multifit::GeometricHash::neighbors_data</qualifiedname>
+        <param>
+          <type>Distance</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="87" column="15" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a5bb504bf90d2241127ad3edf2062ecb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::resolution</definition>
+        <argsstring>(int axis=0) const</argsstring>
+        <name>resolution</name>
+        <qualifiedname>IMP::multifit::GeometricHash::resolution</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="164" column="10" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a95f3d7db3c0be0b5ed30b9cacdb53d8d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Dist</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool IMP::multifit::GeometricHash&lt; T, D &gt;::cube_inside_sphere</definition>
+        <argsstring>(const Dist &amp;ins, const Bucket &amp;l) const</argsstring>
+        <name>cube_inside_sphere</name>
+        <qualifiedname>IMP::multifit::GeometricHash::cube_inside_sphere</qualifiedname>
+        <param>
+          <type>const Dist &amp;</type>
+          <declname>ins</declname>
+        </param>
+        <param>
+          <type>const Bucket &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="229" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a7df64d828ca9dd00210851b16e45459b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Dist</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool IMP::multifit::GeometricHash&lt; T, D &gt;::cube_inside_sphere_rec</definition>
+        <argsstring>(const Dist &amp;ins, Point &amp;p, size_t idx) const</argsstring>
+        <name>cube_inside_sphere_rec</name>
+        <qualifiedname>IMP::multifit::GeometricHash::cube_inside_sphere_rec</qualifiedname>
+        <param>
+          <type>const Dist &amp;</type>
+          <declname>ins</declname>
+        </param>
+        <param>
+          <type>Point &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="235" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="235" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a1f764a77c19b9111495fccccb9ee4f49" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point IMP::multifit::GeometricHash&lt; T, D &gt;::from_bucket</definition>
+        <argsstring>(const Bucket &amp;b) const</argsstring>
+        <name>from_bucket</name>
+        <qualifiedname>IMP::multifit::GeometricHash::from_bucket</qualifiedname>
+        <param>
+          <type>const Bucket &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="284" column="9" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="284" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a329d8fba9a45d13734e0f785472c7c17" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Dist</type>
+          </param>
+        </templateparamlist>
+        <type>HashResult</type>
+        <definition>HashResult IMP::multifit::GeometricHash&lt; T, D &gt;::points_in_sphere</definition>
+        <argsstring>(Dist const &amp;dist) const</argsstring>
+        <name>points_in_sphere</name>
+        <qualifiedname>IMP::multifit::GeometricHash::points_in_sphere</qualifiedname>
+        <param>
+          <type>Dist const &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="216" column="14" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="216" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a62092e6e3da8471312a820c42d262d48" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Dist</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::GeometricHash&lt; T, D &gt;::points_in_sphere_rec</definition>
+        <argsstring>(size_t idx, const Bucket &amp;l, const Bucket &amp;u, const Dist &amp;ins, Bucket &amp;tmp, HashResult &amp;result) const</argsstring>
+        <name>points_in_sphere_rec</name>
+        <qualifiedname>IMP::multifit::GeometricHash::points_in_sphere_rec</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>const Bucket &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const Bucket &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Dist &amp;</type>
+          <declname>ins</declname>
+        </param>
+        <param>
+          <type>Bucket &amp;</type>
+          <declname>tmp</declname>
+        </param>
+        <param>
+          <type>HashResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="246" column="8" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="246" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1a4132cbbe9a2c3f0da267d1fb260ab487" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Bucket</type>
+        <definition>Bucket IMP::multifit::GeometricHash&lt; T, D &gt;::to_bucket</definition>
+        <argsstring>(const Point &amp;p) const</argsstring>
+        <name>to_bucket</name>
+        <qualifiedname>IMP::multifit::GeometricHash::to_bucket</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="272" column="10" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="272" bodyend="281"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1GeometricHash_1ab715cee46df8e90e95c9981a8b7d6a9e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double IMP::multifit::GeometricHash&lt; T, D &gt;::inf_distance</definition>
+        <argsstring>(const Point &amp;p1, const Point &amp;p2)</argsstring>
+        <name>inf_distance</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inf_distance</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="291" column="17" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="291" bodyend="298"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Geometric Hash table. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classIMP_1_1multifit_1_1GeometricHash" kindref="compound">GeometricHash&lt;T, D&gt;</ref> stores values of type T with D-dimensional points whose coordinates are of type double inside D-dimensional buckets (cubes) </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/GeometricHash.h" line="26" column="1" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="26" bodyend="302"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a55cdc6df5f5b89e3c5f8f42e4a1b749d" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>add</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a05745d7e9d0f798ad5991b998412728a" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>add</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a0ff3b95782ccecdddb7988446b5b378b" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>begin</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a3cb9c4f6a322eee368bff3ab14e9dff2" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>begin</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4bc48ec3443f73ccf32bbe32598eae1f" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>Bucket</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a2660b80e89ba7272854bbe1b4e8af3f2" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>bucket</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5b68d38c99130772be4e4a6b6b4bfc80" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>BucketList</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a04e368aff3a3e7dc3f190bcceb7409d6" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>clear</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1abf6750eb3d4d023b595e2660fefba81e" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>const_iterator</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a95f3d7db3c0be0b5ed30b9cacdb53d8d" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>cube_inside_sphere</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a7df64d828ca9dd00210851b16e45459b" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>cube_inside_sphere_rec</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>Distance</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1acb372a29b472a63cd4cba9d3acba9236" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>end</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a785714643292badd0b35a3316cac14b7" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>end</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551a6c0f6e00537ee2e3513f1158bc4cd9ad" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>EUCLIDEAN</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a1f764a77c19b9111495fccccb9ee4f49" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>from_bucket</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4acb476c9506a1b209d3491f0d61cfba" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>GeometricHash</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a9bf53590a57851a7bd929f5466045819" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>GeometricHash</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a8dbc8daec12deaf6fad60f92ed5837e2" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>GeometricHash</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1aa3e7a26287ef3589579df4e28663f859" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>GeomMap</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a9d0a02c371dc0d8cbaa03bb39ba086b6" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>get_buckets</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1acf05d5e43d9f652a26408422a7bb3450" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>gmap_</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1ae31af98ef2aa3538693d4e1274b40448" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>HashResult</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a693b8a5c02a61e97fda71f0048d04df0" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>HashResultT</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551ac8ab34acc6c47e955b3f390738e3cc96" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>INF</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1ab715cee46df8e90e95c9981a8b7d6a9e" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>inf_distance</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1ac4598b335f6c809eb04442d852b29c83" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>iterator</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a51da300a7bc68ccef180cb5f5d3b5509" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>Map</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1ad440c810e29befea7d1ef7318d57afd0" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1abb18f667799028a2afd4f9ff789cc2d0" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a6c2ba8256d11954e48844f26d8a09ff4" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1afa0a14f72fec14457954e8f06a8ed5c0" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1adb8e5c95a478e0bbe3d809319c83b1b9" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a915215bf25a17767d24e51af54a1109e" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a3510d090771cfb51a21b40df6f87ded3" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>neighbors_data</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1aa6109d77bea9c8865be3db6b046ff912" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>Point</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a6175fb1aed1af39caab281a3809cddf4" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>PointList</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a329d8fba9a45d13734e0f785472c7c17" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>points_in_sphere</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a62092e6e3da8471312a820c42d262d48" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>points_in_sphere_rec</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5447a2adba7752604d77c87792c52dd6" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>radii_</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5bb504bf90d2241127ad3edf2062ecb4" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>resolution</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4132cbbe9a2c3f0da267d1fb260ab487" prot="private" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>to_bucket</name></member>
+      <member refid="classIMP_1_1multifit_1_1GeometricHash_1a16d50b69c869e1fe8267fd63c6628bc8" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash</scope><name>ValueType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::domino::Assignment</name>
+    <filename>classIMP_1_1domino_1_1Assignment.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::AssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1AssignmentContainer.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1AssignmentContainer.html</anchorfile>
+      <anchor>aa0d8e3d96ae816d7a6462666ec8c0d04</anchor>
+      <arglist>(unsigned int i) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::AssignmentsTable</name>
+    <filename>classIMP_1_1domino_1_1AssignmentsTable.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::BranchAndBoundAssignmentsTable</name>
+    <filename>classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable.html</filename>
+    <base>IMP::domino::AssignmentsTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::BranchAndBoundSampler</name>
+    <filename>classIMP_1_1domino_1_1BranchAndBoundSampler.html</filename>
+    <base>IMP::domino::DiscreteSampler</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::CappedAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1CappedAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1CappedAssignmentContainer.html</anchorfile>
+      <anchor>a30fec5a310e2e2c1b55ede0309d0b009</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::CompoundStates</name>
+    <filename>classIMP_1_1domino_1_1CompoundStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::DependencyScoreState</name>
+    <filename>classIMP_1_1domino_1_1DependencyScoreState.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::DiscreteSampler</name>
+    <filename>classIMP_1_1domino_1_1DiscreteSampler.html</filename>
+    <member kind="function">
+      <type>Assignments</type>
+      <name>get_sample_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DiscreteSampler.html</anchorfile>
+      <anchor>a6f93b40d485b8617d38245bd6bf4ebae</anchor>
+      <arglist>(const Subset &amp;s) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_maximum_number_of_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DiscreteSampler.html</anchorfile>
+      <anchor>a78d158c2aba7c490635e949fc234294a</anchor>
+      <arglist>(unsigned int mx)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_particle_states</name>
+      <anchorfile>classIMP_1_1domino_1_1DiscreteSampler.html</anchorfile>
+      <anchor>af01fe0f3283adc61bdb94b716afca5cd</anchor>
+      <arglist>(Particle *p, ParticleStates *se)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_restraints</name>
+      <anchorfile>classIMP_1_1domino_1_1DiscreteSampler.html</anchorfile>
+      <anchor>aa88d60254ee2cf156c3405437af23ee1</anchor>
+      <arglist>(RestraintsAdaptor rs)</arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>subset_filter_tables</name>
+      <anchorfile>classIMP_1_1domino_1_1DiscreteSampler.html</anchorfile>
+      <anchor>aed5d2eda883429164d051dd4f5a25df4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::DisjointSetsSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::DominoSampler</name>
+    <filename>classIMP_1_1domino_1_1DominoSampler.html</filename>
+    <base>IMP::domino::DiscreteSampler</base>
+    <member kind="function">
+      <type>void</type>
+      <name>set_use_cross_subset_filtering</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a345858fb854b0a00e562a5cd84fa2375</anchor>
+      <arglist>(bool tf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_merge_tree</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a3fa84e77ae8b8319806e7eee75ffccbd</anchor>
+      <arglist>(const MergeTree &amp;mt)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_assignments_for_vertex</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a63edbfbb10c14328fdea085c28069143</anchor>
+      <arglist>(unsigned int tree_vertex) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Assignments</type>
+      <name>get_sample_assignments_for_vertex</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a488b7a234ab96de88b4d65e2a809453d</anchor>
+      <arglist>(unsigned int tree_vertex) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Assignments</type>
+      <name>get_vertex_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a7eded480b712ab248437df2c7b4fd445</anchor>
+      <arglist>(unsigned int node_index, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Assignments</type>
+      <name>get_vertex_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>adb962ba7080d3c004a9518c1d3c37147</anchor>
+      <arglist>(unsigned int node_index, const Assignments &amp;first, const Assignments &amp;second, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_vertex_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>a2c329800af8d9a96dbf63a85187f376d</anchor>
+      <arglist>(unsigned int node_index, AssignmentContainer *ac, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_vertex_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1DominoSampler.html</anchorfile>
+      <anchor>aaf4a53a95fbb2b8ce4a5cba2cbdd611d</anchor>
+      <arglist>(unsigned int node_index, AssignmentContainer *first, AssignmentContainer *second, AssignmentContainer *ac, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::EqualitySubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1EqualitySubsetFilterTable.html</filename>
+    <base>IMP::domino::DisjointSetsSubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1EqualitySubsetFilterTable.html</anchorfile>
+      <anchor>a999b8886dc88e95d7f0625866f44c086</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1EqualitySubsetFilterTable.html</anchorfile>
+      <anchor>add976b9af33451a1242c84f6dd1b5f5a</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable.html</filename>
+    <base>IMP::domino::DisjointSetsSubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable.html</anchorfile>
+      <anchor>ad8e11b7bd6f1bb6c5b155a9529ef1d82</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable.html</anchorfile>
+      <anchor>a85889920c87005d79278db21d4fbcafb</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::EquivalenceSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1EquivalenceSubsetFilterTable.html</filename>
+    <base>IMP::domino::DisjointSetsSubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1EquivalenceSubsetFilterTable.html</anchorfile>
+      <anchor>afaf4a9fb8664923b0eabcb3de862b630</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1EquivalenceSubsetFilterTable.html</anchorfile>
+      <anchor>abc8c55522e6deb309345f4b0631cfee5</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ExclusionSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1ExclusionSubsetFilterTable.html</filename>
+    <base>IMP::domino::DisjointSetsSubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1ExclusionSubsetFilterTable.html</anchorfile>
+      <anchor>afef056d22f6adf21391a906f87856c24</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1ExclusionSubsetFilterTable.html</anchorfile>
+      <anchor>aac3df5a9304a06e1e245bcf8b7ca041d</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::HeapAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1HeapAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1HeapAssignmentContainer.html</anchorfile>
+      <anchor>aaa0539bb9e61357438a79e67fd0deb4c</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::IndexStates</name>
+    <filename>classIMP_1_1domino_1_1IndexStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type></type>
+      <name>IndexStates</name>
+      <anchorfile>classIMP_1_1domino_1_1IndexStates.html</anchorfile>
+      <anchor>a6830eb687329980d50db931ac69b0794</anchor>
+      <arglist>(unsigned int n, IntKey k=IntKey(&quot;state&quot;))</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ListAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1ListAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1ListAssignmentContainer.html</anchorfile>
+      <anchor>a54d7844045d19f57502c5af3bb43d256</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ListAssignmentsTable</name>
+    <filename>classIMP_1_1domino_1_1ListAssignmentsTable.html</filename>
+    <base>IMP::domino::AssignmentsTable</base>
+    <member kind="function">
+      <type>void</type>
+      <name>set_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1ListAssignmentsTable.html</anchorfile>
+      <anchor>a15fa28a76023dd8fa328b452d2245908</anchor>
+      <arglist>(const Subset &amp;s, AssignmentContainer *lsc)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ListSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1ListSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1ListSubsetFilterTable.html</anchorfile>
+      <anchor>a6fa55d460daba6d493df8b6aefc5b26d</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1ListSubsetFilterTable.html</anchorfile>
+      <anchor>a28d884c45ae7db6ed2daa028fb3ddb42</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::MinimumRestraintScoreSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable.html</anchorfile>
+      <anchor>a1ca4fb1e30e643e007f48c372816d98a</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable.html</anchorfile>
+      <anchor>aeec52a6555047ee1d398659e532087c9</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::NestedRigidBodyStates</name>
+    <filename>classIMP_1_1domino_1_1NestedRigidBodyStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type></type>
+      <name>NestedRigidBodyStates</name>
+      <anchorfile>classIMP_1_1domino_1_1NestedRigidBodyStates.html</anchorfile>
+      <anchor>a68719c9f3f06e88c45f1decd8ab699e0</anchor>
+      <arglist>(const algebra::Transformation3Ds &amp;states, double scale=100)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::VectorKD</type>
+      <name>get_embedding</name>
+      <anchorfile>classIMP_1_1domino_1_1NestedRigidBodyStates.html</anchorfile>
+      <anchor>aed92f776156830ada8948042b91ee639</anchor>
+      <arglist>(unsigned int i) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_nearest_state</name>
+      <anchorfile>classIMP_1_1domino_1_1NestedRigidBodyStates.html</anchorfile>
+      <anchor>a5adb7aa357986502e98ad9936bba0efd</anchor>
+      <arglist>(const algebra::VectorKD &amp;v) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::Order</name>
+    <filename>classIMP_1_1domino_1_1Order.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::PackedAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1PackedAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1PackedAssignmentContainer.html</anchorfile>
+      <anchor>aa8fb2986c01f0a8e2e92c71d2147e4f5</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::PairListSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1PairListSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1PairListSubsetFilterTable.html</anchorfile>
+      <anchor>ad3ac8ec08c800f563ceb0552c9338e47</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1PairListSubsetFilterTable.html</anchorfile>
+      <anchor>a9b10e836020d595f3e3696308d394282</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ParticlesAdaptor</name>
+    <filename>classIMP_1_1domino_1_1ParticlesAdaptor.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ParticleStates</name>
+    <filename>classIMP_1_1domino_1_1ParticleStates.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual algebra::VectorKD</type>
+      <name>get_embedding</name>
+      <anchorfile>classIMP_1_1domino_1_1ParticleStates.html</anchorfile>
+      <anchor>a3c7f6971ca424358b8ed996388b74f37</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual unsigned int</type>
+      <name>get_nearest_state</name>
+      <anchorfile>classIMP_1_1domino_1_1ParticleStates.html</anchorfile>
+      <anchor>afe0f4df28c4d0749254f39bcd1c3a82e</anchor>
+      <arglist>(const algebra::VectorKD &amp;v) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ParticleStatesTable</name>
+    <filename>classIMP_1_1domino_1_1ParticleStatesTable.html</filename>
+    <member kind="function">
+      <type>Subset</type>
+      <name>get_subset</name>
+      <anchorfile>classIMP_1_1domino_1_1ParticleStatesTable.html</anchorfile>
+      <anchor>acbdfa0698fe458d5d5cb24860ee47651</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_particle_states</name>
+      <anchorfile>classIMP_1_1domino_1_1ParticleStatesTable.html</anchorfile>
+      <anchor>a9ad869bd5d88c52e03c4395d8ab36e9e</anchor>
+      <arglist>(Particle *p, ParticleStates *e)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::PermutationStates</name>
+    <filename>classIMP_1_1domino_1_1PermutationStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_inner_state</name>
+      <anchorfile>classIMP_1_1domino_1_1PermutationStates.html</anchorfile>
+      <anchor>acc0f74f3fee5477e11360ba64f017e50</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ProbabilisticSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+    <member kind="function">
+      <type></type>
+      <name>ProbabilisticSubsetFilterTable</name>
+      <anchorfile>classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable.html</anchorfile>
+      <anchor>ab6cbafd1e3e6c10598aaa9ee4d82b14d</anchor>
+      <arglist>(double p, bool leaves_only=false)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable.html</anchorfile>
+      <anchor>abba1df8888d2bd56e4da89bbb6d3f011</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable.html</anchorfile>
+      <anchor>a549261d347b1c2df7cf55533629f552e</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RangeViewAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1RangeViewAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1RangeViewAssignmentContainer.html</anchorfile>
+      <anchor>a49e5eadf897ba43302cc90f69bc3c4d7</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ReadAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1ReadAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1ReadAssignmentContainer.html</anchorfile>
+      <anchor>aaad0cc874a4bf3fc0c49babf62ff9ec8</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::ReadHDF5AssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1ReadHDF5AssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1ReadHDF5AssignmentContainer.html</anchorfile>
+      <anchor>a8419f54f06e7c63d16423618816eff20</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RecursiveAssignmentsTable</name>
+    <filename>classIMP_1_1domino_1_1RecursiveAssignmentsTable.html</filename>
+    <base>IMP::domino::AssignmentsTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RecursiveStates</name>
+    <filename>classIMP_1_1domino_1_1RecursiveStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RestraintCache</name>
+    <filename>classIMP_1_1domino_1_1RestraintCache.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>add_restraints</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a7f717d32d3a03455618395539b261846</anchor>
+      <arglist>(const RestraintsAdaptor &amp;rs)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_entries</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>ac8fe0413b14847abcb7c6825d9c2c57a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>RestraintsTemp</type>
+      <name>get_restraints</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a631f20394a65b289da020b509c3838a6</anchor>
+      <arglist>(const Subset &amp;s, const Subsets &amp;exclusions) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_score</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a172773374b37d174e7fb4e910ad5fca0</anchor>
+      <arglist>(Restraint *r, const Assignment &amp;a) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_score</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a7a8e78d7f668f8a60b6fc0a02df58b16</anchor>
+      <arglist>(Restraint *r, const Subset &amp;s, const Assignment &amp;a) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Slice</type>
+      <name>get_slice</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a11d41b0adf1bdc67e790eb9acb7787c4</anchor>
+      <arglist>(Restraint *r, const Subset &amp;s) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_last_score</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a7cb8d67a4032980ccdbbb2393c4a8aad</anchor>
+      <arglist>(Restraint *r, const Subset &amp;s, const Assignment &amp;a)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>save_cache</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a2997d5f930386359987e678d52e63a4b</anchor>
+      <arglist>(const ParticlesTemp &amp;particle_ordering, const RestraintsTemp &amp;restraints, RMF::HDF5::Group group, unsigned int max_entries)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show_restraint_information</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a1236fa8ddc3d73b7b326e19ed7e16c7e</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>validate</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintCache.html</anchorfile>
+      <anchor>a39917ea290416c3c6e4af76aba5d5b89</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RestraintScoreSubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+    <member kind="function">
+      <type></type>
+      <name>RestraintScoreSubsetFilterTable</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable.html</anchorfile>
+      <anchor>a27a72d5b2d3000fa72df9c45755db866</anchor>
+      <arglist>(RestraintsAdaptor rs, ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable.html</anchorfile>
+      <anchor>a94ab65eebb88dd4d75e6d16aeff11007</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual IMP::domino::SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable.html</anchorfile>
+      <anchor>ac5c3a1ff7b96e313cda93283e4c50602</anchor>
+      <arglist>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::RigidBodyStates</name>
+    <filename>classIMP_1_1domino_1_1RigidBodyStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type>algebra::VectorKD</type>
+      <name>get_embedding</name>
+      <anchorfile>classIMP_1_1domino_1_1RigidBodyStates.html</anchorfile>
+      <anchor>a01a06e715ffb49eb26d7bdd7da9352d8</anchor>
+      <arglist>(unsigned int i) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_nearest_state</name>
+      <anchorfile>classIMP_1_1domino_1_1RigidBodyStates.html</anchorfile>
+      <anchor>a40232b067f9af7b17c5375edd42fbdbf</anchor>
+      <arglist>(const algebra::VectorKD &amp;v) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::SampleAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1SampleAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1SampleAssignmentContainer.html</anchorfile>
+      <anchor>a8babffa63b3d9419698ab8493d911a93</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::SimpleAssignmentsTable</name>
+    <filename>classIMP_1_1domino_1_1SimpleAssignmentsTable.html</filename>
+    <base>IMP::domino::AssignmentsTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::Slice</name>
+    <filename>classIMP_1_1domino_1_1Slice.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::Subset</name>
+    <filename>classIMP_1_1domino_1_1Subset.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Subset</name>
+      <anchorfile>classIMP_1_1domino_1_1Subset.html</anchorfile>
+      <anchor>a2bb9c03148cb537ca42deb6ae50311c1</anchor>
+      <arglist>(ParticlesTemp ps)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::SubsetFilter</name>
+    <filename>classIMP_1_1domino_1_1SubsetFilter.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>get_is_ok</name>
+      <anchorfile>classIMP_1_1domino_1_1SubsetFilter.html</anchorfile>
+      <anchor>ae6ac39cf0c88e5f67f47ab75a255252d</anchor>
+      <arglist>(const Assignment &amp;state) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>get_next_state</name>
+      <anchorfile>classIMP_1_1domino_1_1SubsetFilter.html</anchorfile>
+      <anchor>a4e4324bb2545f10986cd6e147a2bddf6</anchor>
+      <arglist>(int pos, const Assignment &amp;state) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::SubsetFilterTable</name>
+    <filename>classIMP_1_1domino_1_1SubsetFilterTable.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual double</type>
+      <name>get_strength</name>
+      <anchorfile>classIMP_1_1domino_1_1SubsetFilterTable.html</anchorfile>
+      <anchor>abaa42cb0bed9f3c8fcfa4c3ac3e0162b</anchor>
+      <arglist>(const Subset &amp;s, const Subsets &amp;prior_subsets) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual SubsetFilter *</type>
+      <name>get_subset_filter</name>
+      <anchorfile>classIMP_1_1domino_1_1SubsetFilterTable.html</anchorfile>
+      <anchor>a5a8cfb68fc09ce5e77527c3cfa7973a1</anchor>
+      <arglist>(const Subset &amp;s, const Subsets &amp;prior_subsets) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::WriteAssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1WriteAssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1WriteAssignmentContainer.html</anchorfile>
+      <anchor>a86ed9aa97333fd510ca0ad3e064d86e2</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::WriteHDF5AssignmentContainer</name>
+    <filename>classIMP_1_1domino_1_1WriteHDF5AssignmentContainer.html</filename>
+    <base>IMP::domino::AssignmentContainer</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Ints</type>
+      <name>get_particle_assignments</name>
+      <anchorfile>classIMP_1_1domino_1_1WriteHDF5AssignmentContainer.html</anchorfile>
+      <anchor>a82d17d32b6b6fb6765659fd79b05c33e</anchor>
+      <arglist>(unsigned int index) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::domino::XYZStates</name>
+    <filename>classIMP_1_1domino_1_1XYZStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type>algebra::VectorKD</type>
+      <name>get_embedding</name>
+      <anchorfile>classIMP_1_1domino_1_1XYZStates.html</anchorfile>
+      <anchor>acf31006ae1ecc70594721c64fa496dc6</anchor>
+      <arglist>(unsigned int i) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_nearest_state</name>
+      <anchorfile>classIMP_1_1domino_1_1XYZStates.html</anchorfile>
+      <anchor>a11862e085003f210367923516af8f474</anchor>
+      <arglist>(const algebra::VectorKD &amp;v) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::domino</name>
+    <filename>namespaceIMP_1_1domino.html</filename>
+    <class kind="class">IMP::domino::Assignment</class>
+    <class kind="class">IMP::domino::AssignmentContainer</class>
+    <class kind="class">IMP::domino::AssignmentsTable</class>
+    <class kind="class">IMP::domino::BranchAndBoundAssignmentsTable</class>
+    <class kind="class">IMP::domino::BranchAndBoundSampler</class>
+    <class kind="class">IMP::domino::CappedAssignmentContainer</class>
+    <class kind="class">IMP::domino::CompoundStates</class>
+    <class kind="class">IMP::domino::DependencyScoreState</class>
+    <class kind="class">IMP::domino::DiscreteSampler</class>
+    <class kind="class">IMP::domino::DisjointSetsSubsetFilterTable</class>
+    <class kind="class">IMP::domino::DominoSampler</class>
+    <class kind="class">IMP::domino::EqualitySubsetFilterTable</class>
+    <class kind="class">IMP::domino::EquivalenceAndExclusionSubsetFilterTable</class>
+    <class kind="class">IMP::domino::EquivalenceSubsetFilterTable</class>
+    <class kind="class">IMP::domino::ExclusionSubsetFilterTable</class>
+    <class kind="class">IMP::domino::HeapAssignmentContainer</class>
+    <class kind="class">IMP::domino::IndexStates</class>
+    <class kind="class">IMP::domino::ListAssignmentContainer</class>
+    <class kind="class">IMP::domino::ListAssignmentsTable</class>
+    <class kind="class">IMP::domino::ListSubsetFilterTable</class>
+    <class kind="class">IMP::domino::MinimumRestraintScoreSubsetFilterTable</class>
+    <class kind="class">IMP::domino::NestedRigidBodyStates</class>
+    <class kind="class">IMP::domino::Order</class>
+    <class kind="class">IMP::domino::PackedAssignmentContainer</class>
+    <class kind="class">IMP::domino::PairListSubsetFilterTable</class>
+    <class kind="class">IMP::domino::ParticlesAdaptor</class>
+    <class kind="class">IMP::domino::ParticleStates</class>
+    <class kind="class">IMP::domino::ParticleStatesTable</class>
+    <class kind="class">IMP::domino::PermutationStates</class>
+    <class kind="class">IMP::domino::ProbabilisticSubsetFilterTable</class>
+    <class kind="class">IMP::domino::RangeViewAssignmentContainer</class>
+    <class kind="class">IMP::domino::ReadAssignmentContainer</class>
+    <class kind="class">IMP::domino::ReadHDF5AssignmentContainer</class>
+    <class kind="class">IMP::domino::RecursiveAssignmentsTable</class>
+    <class kind="class">IMP::domino::RecursiveStates</class>
+    <class kind="class">IMP::domino::RestraintCache</class>
+    <class kind="class">IMP::domino::RestraintScoreSubsetFilterTable</class>
+    <class kind="class">IMP::domino::RigidBodyStates</class>
+    <class kind="class">IMP::domino::SampleAssignmentContainer</class>
+    <class kind="class">IMP::domino::SimpleAssignmentsTable</class>
+    <class kind="class">IMP::domino::Slice</class>
+    <class kind="class">IMP::domino::Subset</class>
+    <class kind="class">IMP::domino::SubsetFilter</class>
+    <class kind="class">IMP::domino::SubsetFilterTable</class>
+    <class kind="class">IMP::domino::WriteAssignmentContainer</class>
+    <class kind="class">IMP::domino::WriteHDF5AssignmentContainer</class>
+    <class kind="class">IMP::domino::XYZStates</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; AssignmentContainer &gt; &gt;</type>
+      <name>AssignmentContainers</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aa52a96217327b16c26306725d07e4098</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; AssignmentContainer &gt; &gt;</type>
+      <name>AssignmentContainersTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a5dd5cb19d7794464191cec241ddbe8cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; Assignment &gt;</type>
+      <name>Assignments</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3419fc2c9def4e8cfe47550df045e24c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; AssignmentsTable &gt; &gt;</type>
+      <name>AssignmentsTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a66796ab73724d0ea5152f7627f70853b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; AssignmentsTable &gt; &gt;</type>
+      <name>AssignmentsTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a9a5cce24c45b6a03b4d0e5503e70cd67</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; BranchAndBoundSampler &gt; &gt;</type>
+      <name>BranchAndBoundSamplers</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a1419517ca7dc2875f3c403f8146f392a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; BranchAndBoundSampler &gt; &gt;</type>
+      <name>BranchAndBoundSamplersTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a2331d81c62fb3d69358f11a7240ca163</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DiscreteSampler &gt; &gt;</type>
+      <name>DiscreteSamplers</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ae036346cfb6ed4ac574bc87a4465f7fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DiscreteSampler &gt; &gt;</type>
+      <name>DiscreteSamplersTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a8a2f1a37eb3ae64df286d3d8694b8628</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DominoSampler &gt; &gt;</type>
+      <name>DominoSamplers</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>af843ca5b6488ba9b2bdce370f08862b6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DominoSampler &gt; &gt;</type>
+      <name>DominoSamplersTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a52a0f028f4f3b8c730f0da2f22c5ee56</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; EqualitySubsetFilterTable &gt; &gt;</type>
+      <name>EqualitySubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a1bfde8674823f5843e03333cc92ef439</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; EqualitySubsetFilterTable &gt; &gt;</type>
+      <name>EqualitySubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a19118f4a5321d5f781947c96e77e4549</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; EquivalenceAndExclusionSubsetFilterTable &gt; &gt;</type>
+      <name>EquivalenceAndExclusionSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aca4c2011c5ebdc5129d8f8e0b38e5549</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; EquivalenceAndExclusionSubsetFilterTable &gt; &gt;</type>
+      <name>EquivalenceAndExclusionSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a144a352deb0ea68ae8971f7a03da04de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; EquivalenceSubsetFilterTable &gt; &gt;</type>
+      <name>EquivalenceSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a89b670ec4dea8a71ba9e9b9aac757ddf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; EquivalenceSubsetFilterTable &gt; &gt;</type>
+      <name>EquivalenceSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a1aa09c83846c540ae261ebce946613f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ExclusionSubsetFilterTable &gt; &gt;</type>
+      <name>ExclusionSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab21d39960b2ed70431178fe967e353b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ExclusionSubsetFilterTable &gt; &gt;</type>
+      <name>ExclusionSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a521e430f05778eaf72510b4067cfbf71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>boost::graph</type>
+      <name>InteractionGraph</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a1b3e02fbad93dad74459f871a1bb0dae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ListSubsetFilterTable &gt; &gt;</type>
+      <name>ListSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aab2ded464a1644afab41986952e6fcfd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ListSubsetFilterTable &gt; &gt;</type>
+      <name>ListSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a6b2382f6fb28df47a1a21d0b3df393c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; MinimumRestraintScoreSubsetFilterTable &gt; &gt;</type>
+      <name>MinimumRestraintScoreSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a376f14f0f745b9aec67ec1597d509def</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; MinimumRestraintScoreSubsetFilterTable &gt; &gt;</type>
+      <name>MinimumRestraintScoreSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab548eae5cbeee6a51b590ebfb9673078</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; Order &gt;</type>
+      <name>Orders</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a2778218e2d07143e8222fe91b8eca6a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; PairListSubsetFilterTable &gt; &gt;</type>
+      <name>PairListSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a2d63fc95e80b0ea8f70bbab4c7dac2c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; PairListSubsetFilterTable &gt; &gt;</type>
+      <name>PairListSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a9f9995d31f81edc5ba27d9722c7461f9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ParticleStates &gt; &gt;</type>
+      <name>ParticleStatesList</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a8a04d287e64e366c3ac62937825b129e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ParticleStates &gt; &gt;</type>
+      <name>ParticleStatesListTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3be36832312f1eda06ba2349c1e94889</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ParticleStatesTable &gt; &gt;</type>
+      <name>ParticleStatesTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>abfd99ef2cd1453fc699a008e6c7c5e03</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ParticleStatesTable &gt; &gt;</type>
+      <name>ParticleStatesTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aad5baa65a9bfc90c3aaea5802fec64f9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; RestraintScoreSubsetFilterTable &gt; &gt;</type>
+      <name>RestraintScoreSubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a2756c0d34334024ea936b8b864bc505d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; RestraintScoreSubsetFilterTable &gt; &gt;</type>
+      <name>RestraintScoreSubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aff006820bdd23b5c0bc53a05d1cff1aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; Slice &gt;</type>
+      <name>Slices</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a7a2af715dc689429150765d274f5e9ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; SubsetFilter &gt; &gt;</type>
+      <name>SubsetFilters</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab69ae709f2bd9a4b9c6174bd1ceee747</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; SubsetFilter &gt; &gt;</type>
+      <name>SubsetFiltersTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a0958a7dd459bc9056cfa9612d7e36181</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; SubsetFilterTable &gt; &gt;</type>
+      <name>SubsetFilterTables</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a8ca84679f63e2bf7bfd8da482de896bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; SubsetFilterTable &gt; &gt;</type>
+      <name>SubsetFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a046c1e9885f4e981e10aefeba6f0e297</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>boost::graph</type>
+      <name>SubsetGraph</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a74be81f3536006c91216322e4af87a30</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; Subset &gt;</type>
+      <name>Subsets</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ae43f00a9e5543c2d3d3458e0cd77e963</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_distance_if_smaller_than</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3a112fd41a97e8e93dbff8be3dfb8bb6</anchor>
+      <arglist>(const Subset &amp;s, const Assignment &amp;a, const Assignment &amp;b, ParticleStatesTable *pst, const statistics::Metrics &amp;metrics, double max)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::VectorKD</type>
+      <name>get_embedding</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3247d32b900c4633e5c58cd7032d043b</anchor>
+      <arglist>(const Subset &amp;s, const Assignment &amp;a, ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_index</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab5fc791399c0d6c76e1bea5d4b3da6ca</anchor>
+      <arglist>(const ParticlesTemp &amp;particles, const Subset &amp;subset, const Subsets &amp;excluded)</arglist>
+    </member>
+    <member kind="function">
+      <type>SubsetGraph</type>
+      <name>get_junction_tree</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>af4ecbb31cd9704335911eef3d583a754</anchor>
+      <arglist>(const InteractionGraph &amp;ig)</arglist>
+    </member>
+    <member kind="function">
+      <type>Assignment</type>
+      <name>get_nearest_assignment</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>abd8a69ba2cc2b8fea2f49c99189d8711</anchor>
+      <arglist>(const Subset &amp;s, const algebra::VectorKD &amp;embedding, ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>ParticlesTemp</type>
+      <name>get_order</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a0f43ef4b4efed8a9481e65694ce3fadb</anchor>
+      <arglist>(const Subset &amp;s, const SubsetFilterTables &amp;sft)</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_partial_index</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a4c8c50c718ab2dcabacc4b2e41aba522</anchor>
+      <arglist>(const ParticlesTemp &amp;particles, const Subset &amp;subset, const Subsets &amp;excluded)</arglist>
+    </member>
+    <member kind="function">
+      <type>ParticlePairsTemp</type>
+      <name>get_possible_interactions</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>aa29c2ec35739c08db3a13ffe4ec38088</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, double max_distance, ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>SubsetGraph</type>
+      <name>get_restraint_graph</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab0eb2c05d5eb0c9e64fba8c85011ad01</anchor>
+      <arglist>(ScoringFunctionAdaptor rs, const ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>Slice</type>
+      <name>get_slice</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a619c0aea6816fda8b69b08cf5e57876d</anchor>
+      <arglist>(Subset outer, Subset inner, const Subsets &amp;excluded)</arglist>
+    </member>
+    <member kind="function">
+      <type>Assignments</type>
+      <name>get_state_clusters</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a7b094ee7dac304dfc212772818a9ba04</anchor>
+      <arglist>(const Subset &amp;subset, const Assignments &amp;states, ParticleStatesTable *pst, double resolution)</arglist>
+    </member>
+    <member kind="function">
+      <type>Subsets</type>
+      <name>get_subsets</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a451bc898770bf9a620fa517ff74d4ef6</anchor>
+      <arglist>(const SubsetGraph &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_leaf_assignments</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a4570cce69f194985e23b710c3b5e18b4</anchor>
+      <arglist>(const Subset &amp;subset, AssignmentsTable *at, AssignmentContainer *ac)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_merged_assignments</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a200c71a273844cc32fd32f6a5eafa0aa</anchor>
+      <arglist>(const Subset &amp;first_subset, AssignmentContainer *first, const Subset &amp;second_subset, AssignmentContainer *second, const SubsetFilterTablesTemp &amp;filters, AssignmentContainer *ret)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_merged_assignments_random_order</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3305fe8f61d81cba57e9f6896024b263</anchor>
+      <arglist>(const Subset &amp;first_subset, AssignmentContainer *first, const Subset &amp;second_subset, AssignmentContainer *second, const SubsetFilterTablesTemp &amp;filters, unsigned int maximum_tries, AssignmentContainer *ret)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>boost::graph</type>
+      <name>MergeTree</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a38647c3c174545c068db94b01a3a06c4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>InteractionGraph</type>
+      <name>get_interaction_graph</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a7745ea629841a6a4475211ba0a134b44</anchor>
+      <arglist>(ScoringFunctionAdaptor rs, const ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>display::Geometries</type>
+      <name>get_interaction_graph_geometry</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a6ffff7ad684ef09edb410ae5bc69ffea</anchor>
+      <arglist>(const InteractionGraph &amp;ig)</arglist>
+    </member>
+    <member kind="function">
+      <type>display::Geometries</type>
+      <name>get_subset_graph_geometry</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a65e48f223bd909759754f61224256b21</anchor>
+      <arglist>(const SubsetGraph &amp;ig)</arglist>
+    </member>
+    <member kind="function">
+      <type>MergeTree</type>
+      <name>get_merge_tree</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a52b8de54766ce0eeaece21adff2c9bd1</anchor>
+      <arglist>(ScoringFunctionAdaptor input, const ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>MergeTree</type>
+      <name>get_merge_tree</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a4253062f182189cdac543e96eaf8633f</anchor>
+      <arglist>(const SubsetGraph &amp;junction_tree)</arglist>
+    </member>
+    <member kind="function">
+      <type>MergeTree</type>
+      <name>get_balanced_merge_tree</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>acab55ab855b7cff0e33d25fd2056067a</anchor>
+      <arglist>(const SubsetGraph &amp;junction_tree)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a3624d5a38e6a71d1e41b17e57fe836b6</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a2095dc8230d6c30f29361536f7b93d31</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_particle_states</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>a0c08cfa3955a23464c5f59c15f95a4ae</anchor>
+      <arglist>(const Subset &amp;s, const Assignment &amp;ss, const ParticleStatesTable *pst)</arglist>
+    </member>
+    <member kind="function">
+      <type>RestraintsTemp</type>
+      <name>get_restraints</name>
+      <anchorfile>namespaceIMP_1_1domino.html</anchorfile>
+      <anchor>ab0efd3e3db335ea082bf9b7567011958</anchor>
+      <arglist>(const Subset &amp;s, const ParticleStatesTable *pst, const DependencyGraph &amp;dg, RestraintSet *rs)</arglist>
+    </member>
+  </compound>
+</tagfile>

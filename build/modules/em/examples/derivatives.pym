@@ -1,0 +1,50 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'score'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, -10, -10, -10, 1,
+]
+k= 'score'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'deriv'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+BEGIN, LINES,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, -10, -10, -10,
+VERTEX, -10, -10, -10,
+END,
+]
+k= 'deriv'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'converge'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, -10, -10, -10, 1,
+]
+k= 'converge'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}

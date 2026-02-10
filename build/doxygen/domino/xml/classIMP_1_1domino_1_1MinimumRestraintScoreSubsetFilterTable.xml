@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::MinimumRestraintScoreSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aea3a428ae7bfce07b28e7bc98d164a57" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::domino::MinimumRestraintScoreSubsetFilterTable::max_violated_</definition>
+        <argsstring></argsstring>
+        <name>max_violated_</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::max_violated_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="133" column="7" bodyfile="include/IMP/domino/subset_filters.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a7f5a1d38a1ed37059bc09031333223f2" prot="private" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">RestraintCache</ref> &gt;</type>
+        <definition>PointerMember&lt;RestraintCache&gt; IMP::domino::MinimumRestraintScoreSubsetFilterTable::rc_</definition>
+        <argsstring></argsstring>
+        <name>rc_</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::rc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="131" column="17" bodyfile="include/IMP/domino/subset_filters.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1af6199f1ad0b09579dce17d40daeb19d0" prot="private" static="no" mutable="no">
+        <type>Restraints</type>
+        <definition>Restraints IMP::domino::MinimumRestraintScoreSubsetFilterTable::rs_</definition>
+        <argsstring></argsstring>
+        <name>rs_</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="132" column="14" bodyfile="include/IMP/domino/subset_filters.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aefc4f66f0db5ec560bd2911b500c9206" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_restraints</definition>
+        <argsstring>(const Subset &amp;s, const Subsets &amp;excluded) const</argsstring>
+        <name>get_restraints</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_restraints</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="134" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a8af4401981928e337a9e624884c15937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::MinimumRestraintScoreSubsetFilterTable::MinimumRestraintScoreSubsetFilterTable</definition>
+        <argsstring>(const RestraintsTemp &amp;rs, RestraintCache *rc, int max_number_allowed_violations)</argsstring>
+        <name>MinimumRestraintScoreSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::MinimumRestraintScoreSubsetFilterTable</qualifiedname>
+        <param>
+          <type>const RestraintsTemp &amp;</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">RestraintCache</ref> *</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_number_allowed_violations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="138" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ac3b4079a7f495f4035300b6cfa246b58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::MinimumRestraintScoreSubsetFilterTable::~MinimumRestraintScoreSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~MinimumRestraintScoreSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::~MinimumRestraintScoreSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="150" column="231" bodyfile="include/IMP/domino/subset_filters.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a6c203fd6d867f44fcc5811f3ffdf2464" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_maximum_number_of_violated_restraints</definition>
+        <argsstring>() const</argsstring>
+        <name>get_maximum_number_of_violated_restraints</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_maximum_number_of_violated_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="141" column="7" bodyfile="include/IMP/domino/subset_filters.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a1ca4fb1e30e643e007f48c372816d98a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="147" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aeec52a6555047ee1d398659e532087c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="144" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae550cd534675a4ccc86f6dc9378e87fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="150" column="34" bodyfile="include/IMP/domino/subset_filters.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae82b67e82322f9ca1bfcba1527943fb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="150" column="103" bodyfile="include/IMP/domino/subset_filters.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Filter a configuration of the subset using the Model thresholds. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Filter based on an allowed number of failures for the restraints in a list passed. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::MinimumRestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::domino::MinimumRestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="129" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="130" bodyend="151"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a6c203fd6d867f44fcc5811f3ffdf2464" prot="public" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_maximum_number_of_violated_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aefc4f66f0db5ec560bd2911b500c9206" prot="private" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a1ca4fb1e30e643e007f48c372816d98a" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aeec52a6555047ee1d398659e532087c9" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae550cd534675a4ccc86f6dc9378e87fa" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae82b67e82322f9ca1bfcba1527943fb6" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aea3a428ae7bfce07b28e7bc98d164a57" prot="private" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>max_violated_</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a8af4401981928e337a9e624884c15937" prot="public" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>MinimumRestraintScoreSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a7f5a1d38a1ed37059bc09031333223f2" prot="private" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>rc_</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1af6199f1ad0b09579dce17d40daeb19d0" prot="private" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>rs_</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ac3b4079a7f495f4035300b6cfa246b58" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>~MinimumRestraintScoreSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::MinimumRestraintScoreSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

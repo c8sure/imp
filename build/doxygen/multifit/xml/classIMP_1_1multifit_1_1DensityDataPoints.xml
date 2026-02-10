@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1DensityDataPoints" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::DensityDataPoints</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::statistics::internal::XYZDataPoints</basecompoundref>
+    <includes local="no">IMP/multifit/DensityDataPoints.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DensityDataPoints_1a4c0ba4116c374db38fa557ea8141b5fd" prot="protected" static="no" mutable="no">
+        <type>boost::scoped_ptr&lt; DensGrid &gt;</type>
+        <definition>boost::scoped_ptr&lt;DensGrid&gt; IMP::multifit::DensityDataPoints::dens_</definition>
+        <argsstring></argsstring>
+        <name>dens_</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::dens_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="53" column="21" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DensityDataPoints_1a15af58a33484c2fa122c5612226f1b9d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::DensityDataPoints::max_value_</definition>
+        <argsstring></argsstring>
+        <name>max_value_</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::max_value_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="55" column="10" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DensityDataPoints_1aee4960612f7ff23cd2070baac16a588b" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::DensityDataPoints::min_value_</definition>
+        <argsstring></argsstring>
+        <name>min_value_</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::min_value_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="55" column="21" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DensityDataPoints_1aec19d9352a2bcdbe8865011b78450968" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::DensityDataPoints::threshold_</definition>
+        <argsstring></argsstring>
+        <name>threshold_</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::threshold_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="56" column="10" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1aef54339a0d8c06ededf80addc49d46e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::DensityDataPoints::DensityDataPoints</definition>
+        <argsstring>(const DensGrid &amp;dens, float density_threshold)</argsstring>
+        <name>DensityDataPoints</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::DensityDataPoints</qualifiedname>
+        <param>
+          <type>const DensGrid &amp;</type>
+          <declname>dens</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>density_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="39" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a51782d49c5e98b159037c274f4e0e99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::DensityDataPoints::DensityDataPoints</definition>
+        <argsstring>(em::DensityMap *dens, float density_threshold)</argsstring>
+        <name>DensityDataPoints</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::DensityDataPoints</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dens</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>density_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="38" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1ad53d230c42325cb231d18fc0e8ce76c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::DensityDataPoints::~DensityDataPoints</definition>
+        <argsstring>()</argsstring>
+        <name>~DensityDataPoints</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::~DensityDataPoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="44" column="231" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1ade03c94817cc76ac044d66fed31fed6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::DensityDataPoints::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="44" column="34" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a8e71fc485fa957575c42e6001a91548b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::DensityDataPoints::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="44" column="103" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a8c0fe5b7e465a05f80e381f856a8f77e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::statistics::internal::Array1DD</type>
+        <definition>IMP::statistics::internal::Array1DD IMP::multifit::DensityDataPoints::sample</definition>
+        <argsstring>() const override</argsstring>
+        <name>sample</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="40" column="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a15ca4a605fee7b34441f1699f701a845" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DensityDataPoints::populate_data</definition>
+        <argsstring>()</argsstring>
+        <name>populate_data</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::populate_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a7ee7bb1085f191fa2210ad31fb5ffa4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DensityDataPoints::set_density</definition>
+        <argsstring>(const DensGrid &amp;dens)</argsstring>
+        <name>set_density</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::set_density</qualifiedname>
+        <param>
+          <type>const DensGrid &amp;</type>
+          <declname>dens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1ab0e076ff29e061cafed9b70b181b089c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DensityDataPoints::set_density</definition>
+        <argsstring>(em::DensityMap *d)</argsstring>
+        <name>set_density</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::set_density</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DensityDataPoints_1a468ce94846850582636ae77d3c022176" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DensityDataPoints::set_max_min_density_values</definition>
+        <argsstring>()</argsstring>
+        <name>set_max_min_density_values</name>
+        <qualifiedname>IMP::multifit::DensityDataPoints::set_max_min_density_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="48" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Stores density voxels as a vector of Array1D. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This manipulation is needed for matrix operations. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/DensityDataPoints.h" line="35" column="1" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="36" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a4c0ba4116c374db38fa557ea8141b5fd" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>dens_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a51782d49c5e98b159037c274f4e0e99c" prot="public" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>DensityDataPoints</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aef54339a0d8c06ededf80addc49d46e2" prot="public" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>DensityDataPoints</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ade03c94817cc76ac044d66fed31fed6b" prot="public" virt="virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a8e71fc485fa957575c42e6001a91548b" prot="public" virt="virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a15af58a33484c2fa122c5612226f1b9d" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>max_value_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aee4960612f7ff23cd2070baac16a588b" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>min_value_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a15ca4a605fee7b34441f1699f701a845" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>populate_data</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a8c0fe5b7e465a05f80e381f856a8f77e" prot="public" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>sample</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ab0e076ff29e061cafed9b70b181b089c" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>set_density</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a7ee7bb1085f191fa2210ad31fb5ffa4c" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>set_density</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a468ce94846850582636ae77d3c022176" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>set_max_min_density_values</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aec19d9352a2bcdbe8865011b78450968" prot="protected" virt="non-virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>threshold_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ad53d230c42325cb231d18fc0e8ce76c0" prot="public" virt="virtual"><scope>IMP::multifit::DensityDataPoints</scope><name>~DensityDataPoints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

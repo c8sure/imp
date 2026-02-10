@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceimp__general_1_1io" kind="namespace" language="Python">
+    <compoundname>imp_general::io</compoundname>
+    <innerclass refid="classimp__general_1_1io_1_1ReferenceFrameToText" prot="public">imp_general::io::ReferenceFrameToText</innerclass>
+    <innerclass refid="classimp__general_1_1io_1_1Transformation3DToText" prot="public">imp_general::io::Transformation3DToText</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="io_8py_1a06cf63fcc8a7630f394f295859d8db21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.get_particles_from_points</definition>
+        <argsstring>(points, model)</argsstring>
+        <name>get_particles_from_points</name>
+        <qualifiedname>imp_general.io.get_particles_from_points</qualifiedname>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Simply creates <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> particles from a set of 2D points model - is the model to store the particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="26" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="26" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1a0f59a6c5fb0c21e165701d684c3f7100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.imp_info</definition>
+        <argsstring>(imp_modules=None)</argsstring>
+        <name>imp_info</name>
+        <qualifiedname>imp_general.io.imp_info</qualifiedname>
+        <param>
+          <type>imp_modules</type>
+          <defname>imp_modules</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Returns text with the time and information about the modules employed imp_modules is the set of modules whose infos are requested. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="191" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1adef8c18974158be9aaa48669e0e22b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.read_reference_frames</definition>
+        <argsstring>(fn, n=10)</argsstring>
+        <name>read_reference_frames</name>
+        <qualifiedname>imp_general.io.read_reference_frames</qualifiedname>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Read the reference frames contained in a solutions file from sampling n is the maximum number of ref frames to read. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Currently the function returns only the reference frames and discards the score, the first element of a row</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="161" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="161" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1a25c16e7c11a8ca08705d257d63c67034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.read_transforms</definition>
+        <argsstring>(fn, n=False)</argsstring>
+        <name>read_transforms</name>
+        <qualifiedname>imp_general.io.read_transforms</qualifiedname>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Read a file of IMP.algebra.Transformation3D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The it is assumed that the transformations are the only thing contained in a line</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="133" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="133" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1a5f9c05746a86943327afe8d0acaef44f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.write_particles_as_text</definition>
+        <argsstring>(leaves, fn_output)</argsstring>
+        <name>write_particles_as_text</name>
+        <qualifiedname>imp_general.io.write_particles_as_text</qualifiedname>
+        <param>
+          <type>leaves</type>
+          <defname>leaves</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <briefdescription>
+<para>Writes a set of particles with coordinates to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="51" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1af78d81e8ce3c3aa0e28b8099fc9ebf34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.write_pdb_for_reference_frames</definition>
+        <argsstring>(fn_pdbs, refs_texts, fn_output)</argsstring>
+        <name>write_pdb_for_reference_frames</name>
+        <qualifiedname>imp_general.io.write_pdb_for_reference_frames</qualifiedname>
+        <param>
+          <type>fn_pdbs</type>
+          <defname>fn_pdbs</defname>
+        </param>
+        <param>
+          <type>refs_texts</type>
+          <defname>refs_texts</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <briefdescription>
+<para>Read the PDB files, apply reference frames to them, and write a pdb. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="177" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="177" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1acbff387b8fee033238965809d443e5cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.write_transforms</definition>
+        <argsstring>(Ts, fn)</argsstring>
+        <name>write_transforms</name>
+        <qualifiedname>imp_general.io.write_transforms</qualifiedname>
+        <param>
+          <type>Ts</type>
+          <defname>Ts</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <briefdescription>
+<para>Write a file with the Transformation3Ds contained in Ts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="150" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="150" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8py_1a256f4e447eaaf2e6cd020fc04f53db96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.io.write_vectors_in_multifit2_format</definition>
+        <argsstring>(vs, fn_output)</argsstring>
+        <name>write_vectors_in_multifit2_format</name>
+        <qualifiedname>imp_general.io.write_vectors_in_multifit2_format</qualifiedname>
+        <param>
+          <type>vs</type>
+          <defname>vs</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <briefdescription>
+<para>writes a text files in the format required for point alignment in multifit2 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/io.py" line="64" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="64" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/imp_general/io.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

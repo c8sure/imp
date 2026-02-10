@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classimp__general_1_1io_1_1Transformation3DToText" kind="class" language="Python" prot="public">
+    <compoundname>imp_general::io::Transformation3DToText</compoundname>
+    <derivedcompoundref refid="classimp__general_1_1io_1_1ReferenceFrameToText" prot="public" virt="non-virtual">imp_general.io.ReferenceFrameToText</derivedcompoundref>
+    <briefdescription>
+<para>Parseable output for a <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> Transformation3D. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>imp_general.io.Transformation3DToText</label>
+        <link refid="classimp__general_1_1io_1_1Transformation3DToText"/>
+      </node>
+      <node id="2">
+        <label>imp_general.io.ReferenceFrameToText</label>
+        <link refid="classimp__general_1_1io_1_1ReferenceFrameToText"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/IMP/EMageFit/imp_general/io.py" line="81" column="1" bodyfile="lib/IMP/EMageFit/imp_general/io.py" bodystart="81" bodyend="108"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

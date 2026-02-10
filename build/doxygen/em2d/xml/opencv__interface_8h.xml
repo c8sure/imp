@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="opencv__interface_8h" kind="file" language="C++">
+    <compoundname>opencv_interface.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes local="yes">IMP/algebra/Transformation2D.h</includes>
+    <includes local="yes">opencv2/core/core.hpp</includes>
+    <includes local="yes">opencv2/core/version.hpp</includes>
+    <includes local="yes">opencv2/imgproc/imgproc.hpp</includes>
+    <includes local="yes">opencv2/highgui/highgui.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cereal/access.hpp</includes>
+    <includes local="no">cereal/cereal.hpp</includes>
+    <includedby refid="FFToperations_8h" local="yes">FFToperations.h</includedby>
+    <includedby refid="Image_8h" local="yes">Image.h</includedby>
+    <includedby refid="ImageReaderWriter_8h" local="yes">ImageReaderWriter.h</includedby>
+    <includedby refid="JPGImageReaderWriter_8h" local="yes">JPGImageReaderWriter.h</includedby>
+    <includedby refid="PolarResamplingParameters_8h" local="yes">PolarResamplingParameters.h</includedby>
+    <includedby refid="ProjectionFinder_8h" local="yes">ProjectionFinder.h</includedby>
+    <includedby refid="ProjectionMask_8h" local="yes">ProjectionMask.h</includedby>
+    <includedby refid="SpiderImageReaderWriter_8h" local="yes">SpiderImageReaderWriter.h</includedby>
+    <includedby refid="image__processing_8h" local="yes">image_processing.h</includedby>
+    <includedby refid="project_8h" local="yes">project.h</includedby>
+    <includedby refid="scores2D_8h" local="yes">scores2D.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>opencv_interface.h</label>
+        <link refid="opencv__interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/algebra/Transformation2D.h</label>
+      </node>
+      <node id="8">
+        <label>cereal/access.hpp</label>
+      </node>
+      <node id="9">
+        <label>cereal/cereal.hpp</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>opencv2/core/core.hpp</label>
+      </node>
+      <node id="4">
+        <label>opencv2/core/version.hpp</label>
+      </node>
+      <node id="6">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="5">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecereal">cereal</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>Interface with OpenCV Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/opencv_interface.h"/>
+  </compounddef>
+</doxygen>

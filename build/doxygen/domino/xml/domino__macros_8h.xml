@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino__macros_8h" kind="file" language="C++">
+    <compoundname>domino_macros.h</compoundname>
+    <includes refid="domino__config_8h" local="no">IMP/domino/domino_config.h</includes>
+    <includedby refid="Assignment_8h" local="yes">Assignment.h</includedby>
+    <includedby refid="Order_8h" local="yes">Order.h</includedby>
+    <includedby refid="Slice_8h" local="yes">Slice.h</includedby>
+    <includedby refid="assignment__tables_8h" local="yes">assignment_tables.h</includedby>
+    <includedby refid="particle__states_8h" local="yes">particle_states.h</includedby>
+    <includedby refid="subset__filters_8h" local="yes">subset_filters.h</includedby>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="domino__macros_8h_1add1dbc5dedf89823db714443cd55dfda" prot="public" static="no">
+        <name>IMP_ASSIGNMENT_CONTAINER_METHODS</name>
+        <param><defname>Name</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro defines:<itemizedlist>
+<listitem><para>AssignmentsContainer::get_assignments(IntRange)</para>
+</listitem><listitem><para>AssignmentsContainer::add_assignments()</para>
+</listitem><listitem><para>AssignmentsContainer::get_assignments(unsigned int) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_macros.h" line="82" column="9" bodyfile="include/IMP/domino/domino_macros.h" bodystart="82" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__macros_8h_1a3c8c066268a662855b9f27254ad39c9b" prot="public" static="no">
+        <name>IMP_DISJOINT_SUBSET_FILTER_TABLE_DECL</name>
+        <param><defname>Name</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro defines a class NameSubsetFilterTable from a method which is applied to disjoint sets. The code should assume there is a Assignment state and an Ints members which ordered indices into the Assignment for the current set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_macros.h" line="19" column="9" bodyfile="include/IMP/domino/domino_macros.h" bodystart="19" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__macros_8h_1a85c1b67d0e8044a416bd4642f95abd02" prot="public" static="no">
+        <name>IMP_DISJOINT_SUBSET_FILTER_TABLE_DEF</name>
+        <param><defname>Name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>strength</defname></param>
+        <param><defname>next</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_macros.h" line="38" column="9" bodyfile="include/IMP/domino/domino_macros.h" bodystart="38" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Various important macros for implementing decorators. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1rmf" kindref="compound" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/domino_macros.h"/>
+  </compounddef>
+</doxygen>

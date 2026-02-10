@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1WriteAssignmentContainer" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::WriteAssignmentContainer</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1AssignmentContainer" prot="public" virt="non-virtual">IMP::domino::AssignmentContainer</basecompoundref>
+    <includes local="no">IMP/domino/assignment_containers.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a753b19413ad8ae158471c898666df143" prot="private" static="no" mutable="no">
+        <type>Ints</type>
+        <definition>Ints IMP::domino::WriteAssignmentContainer::cache_</definition>
+        <argsstring></argsstring>
+        <name>cache_</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::cache_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="247" column="8" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1acf5a1fc7516fc87e39b18b73a5fca161" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::domino::WriteAssignmentContainer::f_</definition>
+        <argsstring></argsstring>
+        <name>f_</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::f_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="245" column="7" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ff9049b012489c3d5828ef065f21f0a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::WriteAssignmentContainer::max_cache_</definition>
+        <argsstring></argsstring>
+        <name>max_cache_</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::max_cache_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="248" column="16" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a0cdbd7b8bcd5cb4b1bc973d34bddd629" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::domino::WriteAssignmentContainer::number_</definition>
+        <argsstring></argsstring>
+        <name>number_</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="249" column="7" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1adcca8853df988065aae1226ed0b77f30" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1domino_1_1Order" kindref="compound">Order</ref></type>
+        <definition>Order IMP::domino::WriteAssignmentContainer::order_</definition>
+        <argsstring></argsstring>
+        <name>order_</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::order_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="246" column="9" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ce00801c0ab0a403692cb005a7ff408" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::WriteAssignmentContainer::do_destroy</definition>
+        <argsstring>() override</argsstring>
+        <name>do_destroy</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::do_destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="252" column="16" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a7142314f01f16327a7c0c01c7ada0d71" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::WriteAssignmentContainer::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="250" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa38651e93740676aadac20cc808c6314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::WriteAssignmentContainer::WriteAssignmentContainer</definition>
+        <argsstring>(std::string out_file, const Subset &amp;s, const ParticlesTemp &amp;all_particles, std::string name)</argsstring>
+        <name>WriteAssignmentContainer</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::WriteAssignmentContainer</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>out_file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>all_particles</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="262" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa2c9b4b93ae5f8d05fc7cebd1d1415b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::WriteAssignmentContainer::~WriteAssignmentContainer</definition>
+        <argsstring>()</argsstring>
+        <name>~WriteAssignmentContainer</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::~WriteAssignmentContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="270" column="231" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a56b9d660a36dc0296222707359068759" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::WriteAssignmentContainer::add_assignment</definition>
+        <argsstring>(const Assignment &amp;a) override</argsstring>
+        <name>add_assignment</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::add_assignment</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a205dd896cae1e38d153254a34cf57b5d">add_assignment</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="268" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1ad2d128a27909529d04ef24146644f4fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::WriteAssignmentContainer::add_assignments</definition>
+        <argsstring>(const Assignments &amp;asgn) override</argsstring>
+        <name>add_assignments</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::add_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a06ac84ac6f6261350b0e6f2f2b4a22e8">add_assignments</reimplements>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>asgn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="269" column="381" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a8536920e0d6d48f1b9724aff7d96abdd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>virtual Assignment IMP::domino::WriteAssignmentContainer::get_assignment</definition>
+        <argsstring>(unsigned int i) const override</argsstring>
+        <name>get_assignment</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_assignment</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1aa81ef13a668c41da618439be20b6f2aa">get_assignment</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="267" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a4f9ae3baeef5a92230bcf56600d6df94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>virtual Assignments IMP::domino::WriteAssignmentContainer::get_assignments</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d3dbe5e367345d51c494adcbb75852b">get_assignments</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="269" column="264" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa9e0276e59a7b0eb2aa16d71ede691f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>virtual Assignments IMP::domino::WriteAssignmentContainer::get_assignments</definition>
+        <argsstring>(IntRange r) const override</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1abc19e460ebf37595c3e135f8126103e8">get_assignments</reimplements>
+        <param>
+          <type>IntRange</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="269" column="34" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6af42d2e009d30ebb58b37ed6bc87446" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::WriteAssignmentContainer::get_number_of_assignments</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_assignments</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_number_of_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d1147ab073394ed0a1bf8e5913440ea">get_number_of_assignments</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="266" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a86ed9aa97333fd510ca0ad3e064d86e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>Ints</type>
+        <definition>virtual Ints IMP::domino::WriteAssignmentContainer::get_particle_assignments</definition>
+        <argsstring>(unsigned int index) const override</argsstring>
+        <name>get_particle_assignments</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_particle_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1aa0d8e3d96ae816d7a6462666ec8c0d04">get_particle_assignments</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get all the assignments for the ith particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="269" column="532" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a5e705a06f36b6ac7bd406da545581317" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::WriteAssignmentContainer::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="270" column="34" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa97ab46179815bf8f34fe60537d35e38" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::WriteAssignmentContainer::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="270" column="103" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6cadf22a4058d22fc7e121c20139fb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::WriteAssignmentContainer::set_cache_size</definition>
+        <argsstring>(unsigned int words)</argsstring>
+        <name>set_cache_size</name>
+        <qualifiedname>IMP::domino::WriteAssignmentContainer::set_cache_size</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>words</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="265" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Store the assignments on disk as binary data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use a <ref refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kindref="compound">ReadAssignmentContainer</ref> to read them back. The resulting file is not guaranteed to work on any platform other than the one it was created on and the format may change. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentContainer"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::WriteAssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1WriteAssignmentContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentContainer"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::WriteAssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1WriteAssignmentContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/assignment_containers.h" line="244" column="1" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="244" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a56b9d660a36dc0296222707359068759" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>add_assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1ad2d128a27909529d04ef24146644f4fc" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>add_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a35fdaba04bd3906f121ce3842cf41254" prot="public" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>AssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a753b19413ad8ae158471c898666df143" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>cache_</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ce00801c0ab0a403692cb005a7ff408" prot="private" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>do_destroy</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1acf5a1fc7516fc87e39b18b73a5fca161" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>f_</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a7142314f01f16327a7c0c01c7ada0d71" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>flush</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a8536920e0d6d48f1b9724aff7d96abdd" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa9e0276e59a7b0eb2aa16d71ede691f3" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a4f9ae3baeef5a92230bcf56600d6df94" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6af42d2e009d30ebb58b37ed6bc87446" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a86ed9aa97333fd510ca0ad3e064d86e2" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_particle_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a5e705a06f36b6ac7bd406da545581317" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa97ab46179815bf8f34fe60537d35e38" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ff9049b012489c3d5828ef065f21f0a" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>max_cache_</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a0cdbd7b8bcd5cb4b1bc973d34bddd629" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>number_</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1adcca8853df988065aae1226ed0b77f30" prot="private" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>order_</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6cadf22a4058d22fc7e121c20139fb2c" prot="public" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>set_cache_size</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa38651e93740676aadac20cc808c6314" prot="public" virt="non-virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>WriteAssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a8498b96e8ded4bc39527ae645fcbb4ce" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>~AssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa2c9b4b93ae5f8d05fc7cebd1d1415b8" prot="public" virt="virtual"><scope>IMP::domino::WriteAssignmentContainer</scope><name>~WriteAssignmentContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

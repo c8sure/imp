@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/rmf/include/associations.h

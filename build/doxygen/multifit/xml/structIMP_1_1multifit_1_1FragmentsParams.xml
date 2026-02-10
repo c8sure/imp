@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1FragmentsParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::FragmentsParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FragmentsParams_1a57145f7c641786625554385f9b4f7c25" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::FragmentsParams::bead_radius_scale_</definition>
+        <argsstring></argsstring>
+        <name>bead_radius_scale_</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::bead_radius_scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="140" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FragmentsParams_1a0ca679bf631b3756e152d201c59d60cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FragmentsParams::frag_len_</definition>
+        <argsstring></argsstring>
+        <name>frag_len_</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::frag_len_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="138" column="7" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FragmentsParams_1a7f168e420efd9e20d316fe9cf16e9188" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::FragmentsParams::load_atomic_</definition>
+        <argsstring></argsstring>
+        <name>load_atomic_</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::load_atomic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="142" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FragmentsParams_1a56bd4ff61b6bb545e0f12eb5e0635994" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::FragmentsParams::subunit_rigid_</definition>
+        <argsstring></argsstring>
+        <name>subunit_rigid_</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::subunit_rigid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="144" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1FragmentsParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="146" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FragmentsParams_1a99e20ed9477c0b47950a05e14f4c2640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FragmentsParams::FragmentsParams</definition>
+        <argsstring>()</argsstring>
+        <name>FragmentsParams</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::FragmentsParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="121" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FragmentsParams_1a75c6b0c6b4ab11ab68ae3b8d70ab60db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FragmentsParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="126" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FragmentsParams_1aa28b1db6cdd72c12ad429dd670305510" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FragmentsParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="132" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="132" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FragmentsParams_1a4490c6a58040d02ec52daee3f6a85de1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::FragmentsParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::FragmentsParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="148" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="120" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="120" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a75c6b0c6b4ab11ab68ae3b8d70ab60db" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a57145f7c641786625554385f9b4f7c25" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>bead_radius_scale_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a0ca679bf631b3756e152d201c59d60cc" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>frag_len_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a99e20ed9477c0b47950a05e14f4c2640" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>FragmentsParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a7f168e420efd9e20d316fe9cf16e9188" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>load_atomic_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a4490c6a58040d02ec52daee3f6a85de1" prot="private" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1aa28b1db6cdd72c12ad429dd670305510" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>show</name></member>
+      <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a56bd4ff61b6bb545e0f12eb5e0635994" prot="public" virt="non-virtual"><scope>IMP::multifit::FragmentsParams</scope><name>subunit_rigid_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

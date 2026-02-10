@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1UniformBoundedRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::UniformBoundedRestraint</compoundname>
+    <basecompoundref refid="classIMP_1_1spb_1_1ISDRestraint" prot="public" virt="non-virtual">IMP::spb::ISDRestraint</basecompoundref>
+    <includes local="no">IMP/spb/UniformBoundedRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1a527f6275dc57e94218012958d149c52b" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::UniformBoundedRestraint::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::a_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="29" column="22" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1a65f76b4ff2dbc315ed6b344e244a7012" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::UniformBoundedRestraint::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::b_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="30" column="22" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1adbd6a3930eb317b7442032d710484770" prot="private" static="no" mutable="no">
+        <type>FloatKey</type>
+        <definition>FloatKey IMP::spb::UniformBoundedRestraint::fk_</definition>
+        <argsstring></argsstring>
+        <name>fk_</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::fk_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="28" column="12" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1aba063ebf757697e4bb923d4c50db33b0" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::UniformBoundedRestraint::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="27" column="22" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1ad778f9dd80c267b5860c40d80a7d6da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::UniformBoundedRestraint::UniformBoundedRestraint</definition>
+        <argsstring>(Particle *p, FloatKey fk, Particle *a, Particle *b)</argsstring>
+        <name>UniformBoundedRestraint</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::UniformBoundedRestraint</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>fk</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Create the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1a8592faae6adea26a120a410164b8aef3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::UniformBoundedRestraint::~UniformBoundedRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~UniformBoundedRestraint</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::~UniformBoundedRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="47" column="231" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1ab729c18b1a70b66bc0841a9a5b1d4452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>IMP::ModelObjectsTemp IMP::spb::UniformBoundedRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="45" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1aea291a16e6ec8fe13d3a22529ddbd4d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double IMP::spb::UniformBoundedRestraint::get_probability</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_probability</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::get_probability</qualifiedname>
+        <reimplements refid="classIMP_1_1spb_1_1ISDRestraint_1a633dbe887307b93953c10b590232a751">get_probability</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1a33c9075547d95d511cba248744722d15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::UniformBoundedRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="47" column="34" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1a87b071effd27529147cbac5de93691ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::UniformBoundedRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="47" column="103" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1UniformBoundedRestraint_1aaf72b7cc4c37b6242af4c42d903e0328" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::UniformBoundedRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::spb::UniformBoundedRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro declares the basic needed methods: evaluate and show </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/UniformBoundedRestraint.h" line="43" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A uniform bounded restraint</para>
+<para>The source code is as follows: <programlisting filename="UniformBoundedRestraint.h"></programlisting> <programlisting filename="UniformBoundedRestraint.cpp"></programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::spb::ISDRestraint</label>
+        <link refid="classIMP_1_1spb_1_1ISDRestraint"/>
+      </node>
+      <node id="1">
+        <label>IMP::spb::UniformBoundedRestraint</label>
+        <link refid="classIMP_1_1spb_1_1UniformBoundedRestraint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::spb::ISDRestraint</label>
+        <link refid="classIMP_1_1spb_1_1ISDRestraint"/>
+      </node>
+      <node id="1">
+        <label>IMP::spb::UniformBoundedRestraint</label>
+        <link refid="classIMP_1_1spb_1_1UniformBoundedRestraint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/spb/UniformBoundedRestraint.h" line="25" column="1" bodyfile="include/IMP/spb/UniformBoundedRestraint.h" bodystart="26" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a527f6275dc57e94218012958d149c52b" prot="private" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>a_</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a65f76b4ff2dbc315ed6b344e244a7012" prot="private" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>b_</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1ab729c18b1a70b66bc0841a9a5b1d4452" prot="public" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1adbd6a3930eb317b7442032d710484770" prot="private" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>fk_</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aea291a16e6ec8fe13d3a22529ddbd4d6" prot="public" virt="virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>get_probability</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a33c9075547d95d511cba248744722d15" prot="public" virt="virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a87b071effd27529147cbac5de93691ce" prot="public" virt="virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1ISDRestraint_1ae876b1fe13a179659800c38a9521e45c" prot="public" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>ISDRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aba063ebf757697e4bb923d4c50db33b0" prot="private" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>p_</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1ad778f9dd80c267b5860c40d80a7d6da9" prot="public" virt="non-virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>UniformBoundedRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aaf72b7cc4c37b6242af4c42d903e0328" prot="public" virt="virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a8592faae6adea26a120a410164b8aef3" prot="public" virt="virtual"><scope>IMP::spb::UniformBoundedRestraint</scope><name>~UniformBoundedRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

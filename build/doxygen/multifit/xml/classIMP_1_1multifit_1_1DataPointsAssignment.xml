@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1DataPointsAssignment" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::DataPointsAssignment</compoundname>
+    <includes local="no">IMP/multifit/DataPointsAssignment.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a69ae682f294fc852bddd44084d6579a3" prot="protected" static="no" mutable="no">
+        <type>const IMP::statistics::internal::ClusteringEngine *</type>
+        <definition>const IMP::statistics::internal::ClusteringEngine* IMP::multifit::DataPointsAssignment::cluster_engine_</definition>
+        <argsstring></argsstring>
+        <name>cluster_engine_</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::cluster_engine_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="62" column="53" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a5d23ba26a8e8321303515b9570a8e2da" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; algebra::Vector3Ds &gt;</type>
+        <definition>std::vector&lt;algebra::Vector3Ds&gt; IMP::multifit::DataPointsAssignment::cluster_sets_</definition>
+        <argsstring></argsstring>
+        <name>cluster_sets_</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::cluster_sets_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="61" column="15" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a2b9c6fb29f1fc8745c5641869259c5d9" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; const IMP::statistics::internal::XYZDataPoints &gt;</type>
+        <definition>Pointer&lt;const IMP::statistics::internal::XYZDataPoints&gt; IMP::multifit::DataPointsAssignment::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="60" column="11" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DataPointsAssignment_1ae4878ffd212a7a2e341598afd64514ca" prot="protected" static="no" mutable="no">
+        <type>IntPairs</type>
+        <definition>IntPairs IMP::multifit::DataPointsAssignment::edges_</definition>
+        <argsstring></argsstring>
+        <name>edges_</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::edges_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="63" column="12" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a7c0a9d31379d14eecb1d17454e970b19" prot="protected" static="no" mutable="no">
+        <type>CEdges</type>
+        <definition>CEdges IMP::multifit::DataPointsAssignment::edges_map_</definition>
+        <argsstring></argsstring>
+        <name>edges_map_</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::edges_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="64" column="10" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1ae5b2f7f031789d26990b47eb426a9cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::DataPointsAssignment::DataPointsAssignment</definition>
+        <argsstring>(const IMP::statistics::internal::XYZDataPoints *data, const IMP::statistics::internal::ClusteringEngine *cluster_engine)</argsstring>
+        <name>DataPointsAssignment</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::DataPointsAssignment</qualifiedname>
+        <param>
+          <type>const IMP::statistics::internal::XYZDataPoints *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const IMP::statistics::internal::ClusteringEngine *</type>
+          <declname>cluster_engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a71a755f4acc98df8ed7b39462c769861" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::DataPointsAssignment::~DataPointsAssignment</definition>
+        <argsstring>()</argsstring>
+        <name>~DataPointsAssignment</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::~DataPointsAssignment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="34" column="3" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a740c4f873568770ab45bad6265c4d538" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::DataPointsAssignment::get_centers</definition>
+        <argsstring>() const</argsstring>
+        <name>get_centers</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_centers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="39" column="22" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a954cde97a4a32d198ba37c4ba2bc8fda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const IMP::statistics::internal::ClusteringEngine *</type>
+        <definition>const IMP::statistics::internal::ClusteringEngine * IMP::multifit::DataPointsAssignment::get_cluster_engine</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cluster_engine</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_cluster_engine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="47" column="53" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1ae8ea2f5508b52e1d6ad38a3b76934cf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::DataPointsAssignment::get_cluster_vectors</definition>
+        <argsstring>(int cluster_id) const</argsstring>
+        <name>get_cluster_vectors</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_cluster_vectors</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>cluster_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="36" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a8e266c06110b99483645273c47fee23c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::algebra::Vector3Ds</type>
+        <definition>IMP::algebra::Vector3Ds IMP::multifit::DataPointsAssignment::get_cluster_xyz</definition>
+        <argsstring>(int cluster_ind) const</argsstring>
+        <name>get_cluster_xyz</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_cluster_xyz</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>cluster_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="51" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a130f7823f7419fbae5350dc1a2542345" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const IntPairs *</type>
+        <definition>const IntPairs * IMP::multifit::DataPointsAssignment::get_edges</definition>
+        <argsstring>() const</argsstring>
+        <name>get_edges</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="38" column="18" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1adedcc679f4ec71472863dfb8fa7d6609" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::DataPointsAssignment::get_number_of_clusters</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_clusters</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::get_number_of_clusters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="35" column="7" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a3a2f77c83bf68e5ab000ff5afc4ed2d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DataPointsAssignment::connect_clusters</definition>
+        <argsstring>(int c1, int c2)</argsstring>
+        <name>connect_clusters</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::connect_clusters</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a5b457c30e71c2464f908a2521b52eaa5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::DataPointsAssignment::set_cluster</definition>
+        <argsstring>(int cluster_ind)</argsstring>
+        <name>set_cluster</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::set_cluster</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>cluster_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="54" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a2bdbb3864efa417fb9eab0cf93a235e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DataPointsAssignment::set_clusters</definition>
+        <argsstring>()</argsstring>
+        <name>set_clusters</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::set_clusters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DataPointsAssignment_1a95fa5f876eb9649ea34697718677b278" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::DataPointsAssignment::set_edges</definition>
+        <argsstring>(double voxel_size=3.)</argsstring>
+        <name>set_edges</name>
+        <qualifiedname>IMP::multifit::DataPointsAssignment::set_edges</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>voxel_size</declname>
+          <defval>3.</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="57" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sets the assignment of particles data points into clusters according to the clustering engine. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/DataPointsAssignment.h" line="28" column="1" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="28" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a69ae682f294fc852bddd44084d6579a3" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>cluster_engine_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a5d23ba26a8e8321303515b9570a8e2da" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>cluster_sets_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a3a2f77c83bf68e5ab000ff5afc4ed2d0" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>connect_clusters</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a2b9c6fb29f1fc8745c5641869259c5d9" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae5b2f7f031789d26990b47eb426a9cf4" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>DataPointsAssignment</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae4878ffd212a7a2e341598afd64514ca" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>edges_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a7c0a9d31379d14eecb1d17454e970b19" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>edges_map_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a740c4f873568770ab45bad6265c4d538" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_centers</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a954cde97a4a32d198ba37c4ba2bc8fda" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_cluster_engine</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae8ea2f5508b52e1d6ad38a3b76934cf4" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_cluster_vectors</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a8e266c06110b99483645273c47fee23c" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_cluster_xyz</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a130f7823f7419fbae5350dc1a2542345" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_edges</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1adedcc679f4ec71472863dfb8fa7d6609" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>get_number_of_clusters</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a5b457c30e71c2464f908a2521b52eaa5" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>set_cluster</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a2bdbb3864efa417fb9eab0cf93a235e9" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>set_clusters</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a95fa5f876eb9649ea34697718677b278" prot="protected" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>set_edges</name></member>
+      <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a71a755f4acc98df8ed7b39462c769861" prot="public" virt="non-virtual"><scope>IMP::multifit::DataPointsAssignment</scope><name>~DataPointsAssignment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

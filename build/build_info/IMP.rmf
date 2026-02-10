@@ -1,0 +1,4 @@
+ok=True
+modules = 'isd:saxs:em:atom:container:core:statistics:score_functor:display:algebra:cgal:kernel'
+dependencies = 'Boost.Random:RMF:python-ihm:Boost.FileSystem:NumPy:CGAL:Boost.Regex:HDF5:Boost.System:Boost.ProgramOptions'
+swig_includes = 'IMP/rmf/link_macros.h'

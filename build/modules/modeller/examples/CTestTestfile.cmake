@@ -1,0 +1,12 @@
+# CMake generated Testfile for 
+# Source directory: /home/catherine/imp/modules/modeller/examples
+# Build directory: /home/catherine/imp/build/modules/modeller/examples
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(IMP.modeller-imp_restraints_in_modeller.py "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/miniforge3/envs/imp/bin/python3.10" "/home/catherine/imp/modules/modeller/examples/imp_restraints_in_modeller.py" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.modeller-imp_restraints_in_modeller.py PROPERTIES  COST "3" LABELS "IMP.modeller-example-python-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;28;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;103;imp_add_python_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;36;imp_add_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;0;")
+add_test(IMP.modeller-load_modeller_model.py "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/miniforge3/envs/imp/bin/python3.10" "/home/catherine/imp/modules/modeller/examples/load_modeller_model.py" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.modeller-load_modeller_model.py PROPERTIES  COST "3" LABELS "IMP.modeller-example-python-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;28;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;103;imp_add_python_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;36;imp_add_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;0;")
+add_test(IMP.modeller-modeller_restraints_in_imp.py "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/miniforge3/envs/imp/bin/python3.10" "/home/catherine/imp/modules/modeller/examples/modeller_restraints_in_imp.py" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.modeller-modeller_restraints_in_imp.py PROPERTIES  COST "3" LABELS "IMP.modeller-example-python-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;28;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;103;imp_add_python_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;36;imp_add_tests;/home/catherine/imp/modules/modeller/examples/CMakeLists.txt;0;")

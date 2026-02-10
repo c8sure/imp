@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1Image" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::Image</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/em2d/Image.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Image_1a574a19cd14f2a6f680dfa6e026f5b0fd" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::Image::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::em2d::Image::data_</qualifiedname>
+        <briefdescription>
+<para>Matrix with the data for the image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="184" column="11" bodyfile="include/IMP/em2d/Image.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Image_1a75d35a842c3c9fc1e3a986b4029268d8" prot="protected" static="no" mutable="no">
+        <type>em::ImageHeader</type>
+        <definition>em::ImageHeader IMP::em2d::Image::header_</definition>
+        <argsstring></argsstring>
+        <name>header_</name>
+        <qualifiedname>IMP::em2d::Image::header_</qualifiedname>
+        <briefdescription>
+<para>Header for the image with all the pertinent information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="186" column="19" bodyfile="include/IMP/em2d/Image.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Image_1a8c235b1458af63746ebe34c61dd7a9de" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String IMP::em2d::Image::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>IMP::em2d::Image::name_</qualifiedname>
+        <briefdescription>
+<para>Name of the image. Frequently it will be the name of the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="181" column="10" bodyfile="include/IMP/em2d/Image.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1adeea8b942bca7cc8a45789d674560130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Image::Image</definition>
+        <argsstring>()</argsstring>
+        <name>Image</name>
+        <qualifiedname>IMP::em2d::Image::Image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a9a8af54edd7f1f9cf1fd0595f60c59cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Image::Image</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>Image</name>
+        <qualifiedname>IMP::em2d::Image::Image</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a051c8ca01c41487d6d638a3867854283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Image::Image</definition>
+        <argsstring>(String filename, const ImageReaderWriter *reader)</argsstring>
+        <name>Image</name>
+        <qualifiedname>IMP::em2d::Image::Image</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1ImageReaderWriter" kindref="compound">ImageReaderWriter</ref> *</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an image reading from a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file containing the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image reader to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="43" column="3" bodyfile="include/IMP/em2d/Image.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a2d3462adb971e638bd7d486dd89d235d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::Image::~Image</definition>
+        <argsstring>()</argsstring>
+        <name>~Image</name>
+        <qualifiedname>IMP::em2d::Image::~Image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="155" column="231" bodyfile="include/IMP/em2d/Image.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1abd084925264012dd1b40c9b1f969b441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cv::Mat &amp;</type>
+        <definition>cv::Mat &amp; IMP::em2d::Image::get_data</definition>
+        <argsstring>()</argsstring>
+        <name>get_data</name>
+        <qualifiedname>IMP::em2d::Image::get_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access to the matrix of data <simplesect kind="return"><para>A reference to the matrix of data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="51" column="11" bodyfile="include/IMP/em2d/Image.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1ab24afa887f6390e86e2bd2a67508a70f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>em::ImageHeader &amp;</type>
+        <definition>em::ImageHeader &amp; IMP::em2d::Image::get_header</definition>
+        <argsstring>()</argsstring>
+        <name>get_header</name>
+        <qualifiedname>IMP::em2d::Image::get_header</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access to the image header <simplesect kind="return"><para>A reference to the header with the EM parameters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="94" column="26" bodyfile="include/IMP/em2d/Image.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a9b5619d2b8c25ea4d96a4dde113ae128" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FloatRange</type>
+        <definition>FloatRange IMP::em2d::Image::get_min_and_max_values</definition>
+        <argsstring>() const</argsstring>
+        <name>get_min_and_max_values</name>
+        <qualifiedname>IMP::em2d::Image::get_min_and_max_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recover the minimum and maximum values in the image <simplesect kind="return"><para>A range. The first value is the minimum. The second one is the maximum. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="174" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a5d1e75c33316fe9ca9aa941903c6da05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String IMP::em2d::Image::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <qualifiedname>IMP::em2d::Image::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of the image <simplesect kind="return"><para>A string with the name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="167" column="10" bodyfile="include/IMP/em2d/Image.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a97b7e579a75617a4dff5a9700f9f8aaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::Image::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::Image::get_type_name</qualifiedname>
+        <briefdescription>
+<para>Define the basic things needed by any Object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="155" column="34" bodyfile="include/IMP/em2d/Image.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a51ff9ad6178713656310c9e8c4a03122" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::Image::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::Image::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="155" column="103" bodyfile="include/IMP/em2d/Image.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1aebefb32ef19750059f07ccf444fb4bea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::Image::operator()</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::em2d::Image::operator()</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recover the value of a pixel <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="88" column="10" bodyfile="include/IMP/em2d/Image.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a3711206f3d3632ed50f56194528574d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::read</definition>
+        <argsstring>(String filename, const ImageReaderWriter *reader)</argsstring>
+        <name>read</name>
+        <qualifiedname>IMP::em2d::Image::read</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1ImageReaderWriter" kindref="compound">ImageReaderWriter</ref> *</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read an image from file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file containing the image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image reader to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="125" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a5f9dfb860ed43f8abcb673add9c776df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_data</definition>
+        <argsstring>(const cv::Mat &amp;mat)</argsstring>
+        <name>set_data</name>
+        <qualifiedname>IMP::em2d::Image::set_data</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the entire data of the matrix <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CV matrix containing the data for an image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a092b6429b4c3623379a62df2aa476e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_name</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>set_name</name>
+        <qualifiedname>IMP::em2d::Image::set_name</qualifiedname>
+        <param>
+          <type>const String &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of the image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="161" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a8f60a2fc69d0e0ea1502ed2448b42376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_size</definition>
+        <argsstring>(Image *img)</argsstring>
+        <name>set_size</name>
+        <qualifiedname>IMP::em2d::Image::set_size</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize to the same size of the parameter image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image to get the size from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1ac88ea83976612b8472113ead946ab828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_size</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>set_size</name>
+        <qualifiedname>IMP::em2d::Image::set_size</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the size of the image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="104" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1ad61f0cdf83f92ec9684e6c56ed8d7132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_value</definition>
+        <argsstring>(double val)</argsstring>
+        <name>set_value</name>
+        <qualifiedname>IMP::em2d::Image::set_value</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set all the pixels of an image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to use xxx </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="69" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1af437339ef0e6ed9ae41518b5bd67e4fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_value</definition>
+        <argsstring>(int i, int j, double val)</argsstring>
+        <name>set_value</name>
+        <qualifiedname>IMP::em2d::Image::set_value</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the value for a pixel <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>row </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>column </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="80" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1ab80318be34a1dbce26d1d9baf8dac3fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_zeros</definition>
+        <argsstring>()</argsstring>
+        <name>set_zeros</name>
+        <qualifiedname>IMP::em2d::Image::set_zeros</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the image to zero </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="62" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a32b9b614e497a778f4b94cb67eb938de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::show</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::Image::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shows information about the class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream used to show the information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="148" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1ace28c70f02e3e8ed23398cce1c409d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::update_header</definition>
+        <argsstring>()</argsstring>
+        <name>update_header</name>
+        <qualifiedname>IMP::em2d::Image::update_header</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjusts the information of the image header taking into account the dimensions of the data and setting the time, date, type, etc ... Adjust the information of the image header taking into account the dimensions of the data and setting the time, date, type, etc ... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="118" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a0d4c7013411e8712825ea2bf38188bc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::write</definition>
+        <argsstring>(const String &amp;filename, const ImageReaderWriter *writer)</argsstring>
+        <name>write</name>
+        <qualifiedname>IMP::em2d::Image::write</qualifiedname>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1ImageReaderWriter" kindref="compound">ImageReaderWriter</ref> *</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes the image to a file (the image matrix of data is stored as floats when writing) Writes the image to a file (the image matrix of data is stored as floats when writing) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image writer to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="139" column="8" bodyfile="include/IMP/em2d/Image.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1aaa76d14f40092adebf110b9322d33f52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_defaults</definition>
+        <argsstring>()</argsstring>
+        <name>set_defaults</name>
+        <qualifiedname>IMP::em2d::Image::set_defaults</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="178" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Image_1a4b0e4da3bbbec60c8dbaec3098b2b33b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Image::set_size_data</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>set_size_data</name>
+        <qualifiedname>IMP::em2d::Image::set_size_data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Image.h" line="177" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>2D Electron Microscopy images in <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/Image.h" line="27" column="1" bodyfile="include/IMP/em2d/Image.h" bodystart="27" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1Image_1a574a19cd14f2a6f680dfa6e026f5b0fd" prot="protected" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>data_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1abd084925264012dd1b40c9b1f969b441" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>get_data</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1ab24afa887f6390e86e2bd2a67508a70f" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>get_header</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a9b5619d2b8c25ea4d96a4dde113ae128" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>get_min_and_max_values</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a5d1e75c33316fe9ca9aa941903c6da05" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>get_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a97b7e579a75617a4dff5a9700f9f8aaa" prot="public" virt="virtual"><scope>IMP::em2d::Image</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a51ff9ad6178713656310c9e8c4a03122" prot="public" virt="virtual"><scope>IMP::em2d::Image</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a75d35a842c3c9fc1e3a986b4029268d8" prot="protected" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>header_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1adeea8b942bca7cc8a45789d674560130" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>Image</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a9a8af54edd7f1f9cf1fd0595f60c59cf" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>Image</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a051c8ca01c41487d6d638a3867854283" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>Image</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a8c235b1458af63746ebe34c61dd7a9de" prot="protected" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>name_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1aebefb32ef19750059f07ccf444fb4bea" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>operator()</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a3711206f3d3632ed50f56194528574d5" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>read</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a5f9dfb860ed43f8abcb673add9c776df" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_data</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1aaa76d14f40092adebf110b9322d33f52" prot="protected" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_defaults</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a092b6429b4c3623379a62df2aa476e3a" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1ac88ea83976612b8472113ead946ab828" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_size</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a8f60a2fc69d0e0ea1502ed2448b42376" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_size</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a4b0e4da3bbbec60c8dbaec3098b2b33b" prot="protected" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_size_data</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1ad61f0cdf83f92ec9684e6c56ed8d7132" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_value</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1af437339ef0e6ed9ae41518b5bd67e4fa" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_value</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1ab80318be34a1dbce26d1d9baf8dac3fb" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>set_zeros</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a32b9b614e497a778f4b94cb67eb938de" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1ace28c70f02e3e8ed23398cce1c409d0f" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>update_header</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a0d4c7013411e8712825ea2bf38188bc5" prot="public" virt="non-virtual"><scope>IMP::em2d::Image</scope><name>write</name></member>
+      <member refid="classIMP_1_1em2d_1_1Image_1a2d3462adb971e638bd7d486dd89d235d" prot="public" virt="virtual"><scope>IMP::em2d::Image</scope><name>~Image</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

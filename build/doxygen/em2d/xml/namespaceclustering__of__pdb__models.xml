@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceclustering__of__pdb__models" kind="namespace" language="Python">
+    <compoundname>clustering_of_pdb_models</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a88e4c65aeda79232e8265d02c456ee5f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.cluster_set</definition>
+        <argsstring></argsstring>
+        <name>cluster_set</name>
+        <qualifiedname>clustering_of_pdb_models.cluster_set</qualifiedname>
+        <initializer>=  IMP.em2d.do_hierarchical_clustering_complete_linkage(rmsds)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="107" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a785e8fbade9ae1ba41a49f2236f7af4a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.clusters</definition>
+        <argsstring></argsstring>
+        <name>clusters</name>
+        <qualifiedname>clustering_of_pdb_models.clusters</qualifiedname>
+        <initializer>=  cluster_set.get_clusters_below_cutoff(rmsd_cutoff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="120" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1ac716f8d5495e016afde3a3a1ad81ee3b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list clustering_of_pdb_models.coords</definition>
+        <argsstring></argsstring>
+        <name>coords</name>
+        <qualifiedname>clustering_of_pdb_models.coords</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="76" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1ad6017d8a4ed1855e9ba135ef5967a36b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.elems</definition>
+        <argsstring></argsstring>
+        <name>elems</name>
+        <qualifiedname>clustering_of_pdb_models.elems</qualifiedname>
+        <initializer>=  cluster_set.get_cluster_elements(c)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="122" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a616ad280cb116cba500f9b7c417a0b3f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.em2d_scores</definition>
+        <argsstring></argsstring>
+        <name>em2d_scores</name>
+        <qualifiedname>clustering_of_pdb_models.em2d_scores</qualifiedname>
+        <initializer>=  get_columns(fn_em2d_scores, [1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="114" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1af46c65c820923c6f13922ac917764bd4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>clustering_of_pdb_models.end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="126" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1aafff098021a4227eb52c407d84c13812" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.fn_em2d_scores</definition>
+        <argsstring></argsstring>
+        <name>fn_em2d_scores</name>
+        <qualifiedname>clustering_of_pdb_models.fn_em2d_scores</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(&quot;em2d_scores_for_clustering.data&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="71" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1ab6284af75a881854932cc3dce8a2569a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.fn_model</definition>
+        <argsstring></argsstring>
+        <name>fn_model</name>
+        <qualifiedname>clustering_of_pdb_models.fn_model</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(fn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="81" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a3075efdb3e98f5b738d72d88f7cf0842" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.fn_models</definition>
+        <argsstring></argsstring>
+        <name>fn_models</name>
+        <qualifiedname>clustering_of_pdb_models.fn_models</qualifiedname>
+        <initializer>=  IMP.em2d.read_selection_file(fn_selection)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="77" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a069d44570ee4e3798b48bed555b1f0f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.fn_selection</definition>
+        <argsstring></argsstring>
+        <name>fn_selection</name>
+        <qualifiedname>clustering_of_pdb_models.fn_selection</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(&quot;all-models-1z5s.sel&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="70" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a50a72d43fdce76e7e46c62544a610168" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>clustering_of_pdb_models.h</qualifiedname>
+        <initializer>=  IMP.atom.read_pdb(fn_model, model, ssel, True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="82" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1ac4b0de32c1aa60b24206589feac1a8d9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list clustering_of_pdb_models.hierarchies</definition>
+        <argsstring></argsstring>
+        <name>hierarchies</name>
+        <qualifiedname>clustering_of_pdb_models.hierarchies</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="79" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1acc9b02a0e9ea44f720f5e8eeeae4c7f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.mat2</definition>
+        <argsstring></argsstring>
+        <name>mat2</name>
+        <qualifiedname>clustering_of_pdb_models.mat2</qualifiedname>
+        <initializer>=  cluster_set.get_linkage_matrix()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="108" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a86dc35bcc89c4e89a8c44752bcb54ba6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.min_elem_id</definition>
+        <argsstring></argsstring>
+        <name>min_elem_id</name>
+        <qualifiedname>clustering_of_pdb_models.min_elem_id</qualifiedname>
+        <initializer>=  elems[min_index]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="129" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a48972021443d3c447f6015be8d6812bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.min_index</definition>
+        <argsstring></argsstring>
+        <name>min_index</name>
+        <qualifiedname>clustering_of_pdb_models.min_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="128" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a97fe219f8690313ee0a1388443773711" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <qualifiedname>clustering_of_pdb_models.min_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="128" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a2253b77b8840f868b960a2a4e1e48fea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>clustering_of_pdb_models.model</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="74" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a0c42ca2d694e242b02276be42cfa75f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.n_models</definition>
+        <argsstring></argsstring>
+        <name>n_models</name>
+        <qualifiedname>clustering_of_pdb_models.n_models</qualifiedname>
+        <initializer>=  len(fn_models)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="78" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a2dda10c16bf430976a846ebb82300a54" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str clustering_of_pdb_models.pdb_name</definition>
+        <argsstring></argsstring>
+        <name>pdb_name</name>
+        <qualifiedname>clustering_of_pdb_models.pdb_name</qualifiedname>
+        <initializer>=  &quot;cluster-%03d-elem-%03d.pdb&quot; % (c, i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="133" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a0b3a1c3687b223adbd2a4829a09b5014" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>clustering_of_pdb_models.ps</qualifiedname>
+        <initializer>=  IMP.atom.get_leaves(hierarchies[i])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="139" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a7f3d72b557bda69332d31f6bbed14e3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.rmsd</definition>
+        <argsstring></argsstring>
+        <name>rmsd</name>
+        <qualifiedname>clustering_of_pdb_models.rmsd</qualifiedname>
+        <initializer>=  IMP.algebra.get_rmsd(temp, coords[j])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="101" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a37c3e6e99115504df601f539d09b9c20" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float clustering_of_pdb_models.rmsd_cutoff</definition>
+        <argsstring></argsstring>
+        <name>rmsd_cutoff</name>
+        <qualifiedname>clustering_of_pdb_models.rmsd_cutoff</qualifiedname>
+        <initializer>=  1.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="118" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a897c44eb5841c9b2c79261a4ea4bcfdd" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list clustering_of_pdb_models.rmsds</definition>
+        <argsstring></argsstring>
+        <name>rmsds</name>
+        <qualifiedname>clustering_of_pdb_models.rmsds</qualifiedname>
+        <initializer>=  [[0.0 for i in range(0, n_models)] for n in range(0, n_models)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="88" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1af3d51a758e88128ebe2be87ccf1a16bd" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>clustering_of_pdb_models.scores_elements</definition>
+        <argsstring></argsstring>
+        <name>scores_elements</name>
+        <qualifiedname>clustering_of_pdb_models.scores_elements</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="123" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a8e17dbd7a462c04798e20c5fd78d9fff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.ssel</definition>
+        <argsstring></argsstring>
+        <name>ssel</name>
+        <qualifiedname>clustering_of_pdb_models.ssel</qualifiedname>
+        <initializer>=  IMP.atom.ATOMPDBSelector()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="75" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1afe0e549cd11e6ee3ecc3108287e084d9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>clustering_of_pdb_models.T</qualifiedname>
+        <initializer>=  IMP.core.Transform(transformations[i][min_elem_id])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="138" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1af67645f51d55c2a04512dbb03895f7fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>clustering_of_pdb_models.t</qualifiedname>
+        <initializer>=  IMP.algebra.get_transformation_aligning_first_to_second(
+                coords[i],
+                coords[j])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="95" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a2b7020f18e844c97ab660d7c33092fe4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list clustering_of_pdb_models.temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <qualifiedname>clustering_of_pdb_models.temp</qualifiedname>
+        <initializer>=  [t.get_transformed(v) for v in coords[i]]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="100" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1ab4c27586a3c80da3a03caf6392178740" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list clustering_of_pdb_models.transformations</definition>
+        <argsstring></argsstring>
+        <name>transformations</name>
+        <qualifiedname>clustering_of_pdb_models.transformations</qualifiedname>
+        <initializer>=  [[[] for i in range(0, n_models)]
+                   for j in range(0, n_models)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="89" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="clustering__of__pdb__models_8py_1a741faa9d1e94ef0aacb39c56b1243c35" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clustering_of_pdb_models.xyz</definition>
+        <argsstring></argsstring>
+        <name>xyz</name>
+        <qualifiedname>clustering_of_pdb_models.xyz</qualifiedname>
+        <initializer>=  IMP.core.XYZs(IMP.atom.get_leaves(h))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="84" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="clustering__of__pdb__models_8py_1aa58ee6b74a41028a20c880781fea3488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clustering_of_pdb_models.argmin</definition>
+        <argsstring>(sequence)</argsstring>
+        <name>argmin</name>
+        <qualifiedname>clustering_of_pdb_models.argmin</qualifiedname>
+        <param>
+          <type>sequence</type>
+          <defname>sequence</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Argmin function: Returns the pair (min_value,min_index),
+    where min_index is the index of the minimum value
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="57" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="57" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="clustering__of__pdb__models_8py_1ae82abe98e5a386531e9ab5186f54fd5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>clustering_of_pdb_models.get_columns</definition>
+        <argsstring>(fn, cols=[], delimiter=&quot; &quot;, comment=&quot;#&quot;)</argsstring>
+        <name>get_columns</name>
+        <qualifiedname>clustering_of_pdb_models.get_columns</qualifiedname>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <param>
+          <type>cols</type>
+          <defname>cols</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>delimiter</type>
+          <defname>delimiter</defname>
+          <defval>&quot; &quot;</defval>
+        </param>
+        <param>
+          <type>comment</type>
+          <defname>comment</defname>
+          <defval>&quot;#&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>ge the columns of a file:
+   cols - a list of columns to extract. E.g [0,3,5]
+          If empty, all the columns are extracted
+   lines starting with the comment character are ignored </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/clustering_of_pdb_models.py" line="37" column="1" bodyfile="examples/em2d/clustering_of_pdb_models.py" bodystart="37" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/em2d/clustering_of_pdb_models.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

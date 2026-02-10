@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1domino_1_1RestraintCache_1_1SetData" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::domino::RestraintCache::SetData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Value</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a64c571a4aa18b7aceb6201bfc7f383f2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::domino::RestraintCache::SetData::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="318" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ad8d83069064856c02e84137bf5981749" prot="private" static="no" mutable="no">
+        <type>RestraintSetDatas</type>
+        <definition>RestraintSetDatas IMP::domino::RestraintCache::SetData::members_</definition>
+        <argsstring></argsstring>
+        <name>members_</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::members_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="116" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a25eda7b398a9a376f30730799a38c34b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RestraintCache::SetData::SetData</definition>
+        <argsstring>(RestraintSetDatas i0=RestraintSetDatas(), double i1=double())</argsstring>
+        <name>SetData</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::SetData</qualifiedname>
+        <param>
+          <type>RestraintSetDatas</type>
+          <declname>i0</declname>
+          <defval>RestraintSetDatas()</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>i1</declname>
+          <defval>double()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="32" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a7ddc796f8adf3d18526698be7efa40e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double &amp; IMP::domino::RestraintCache::SetData::access_max</definition>
+        <argsstring>()</argsstring>
+        <name>access_max</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::access_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="422" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab6f802b94654a255155f720703431252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RestraintSetDatas &amp;</type>
+        <definition>RestraintSetDatas &amp; IMP::domino::RestraintCache::SetData::access_members</definition>
+        <argsstring>()</argsstring>
+        <name>access_members</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::access_members</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="262" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a3848fb148348e60dc8ad2fd1b9c82251" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double &amp; IMP::domino::RestraintCache::SetData::get_max</definition>
+        <argsstring>() const</argsstring>
+        <name>get_max</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::get_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="351" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a27fade45b061a4e4deaa7635d6f4563d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const RestraintSetDatas &amp;</type>
+        <definition>const RestraintSetDatas &amp; IMP::domino::RestraintCache::SetData::get_members</definition>
+        <argsstring>() const</argsstring>
+        <name>get_members</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::get_members</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="164" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab54a2a6cec4d74c43bfca55b056a92a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::SetData::set_max</definition>
+        <argsstring>(const double &amp;v)</argsstring>
+        <name>set_max</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::set_max</qualifiedname>
+        <param>
+          <type>const double &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="391" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a919f844b9f8ac4c9055416d1215d79aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::SetData::set_members</definition>
+        <argsstring>(const RestraintSetDatas &amp;v)</argsstring>
+        <name>set_members</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::set_members</qualifiedname>
+        <param>
+          <type>const RestraintSetDatas &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="212" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a353c429c86c7caa4ad9d8c526b506a26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::SetData::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="66"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a5433a74607c74e0dca55e321f942ed66" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::domino::RestraintCache::SetData::compare</definition>
+        <argsstring>(const SetData &amp;o) const</argsstring>
+        <name>compare</name>
+        <qualifiedname>IMP::domino::RestraintCache::SetData::compare</qualifiedname>
+        <param>
+          <type>const SetData &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="50" column="469" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_scores.h" line="50" column="1" bodyfile="include/IMP/domino/subset_scores.h" bodystart="50" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a7ddc796f8adf3d18526698be7efa40e2" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>access_max</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab6f802b94654a255155f720703431252" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>access_members</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a5433a74607c74e0dca55e321f942ed66" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>compare</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a3848fb148348e60dc8ad2fd1b9c82251" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>get_max</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a27fade45b061a4e4deaa7635d6f4563d" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>get_members</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a64c571a4aa18b7aceb6201bfc7f383f2" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>max_</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ad8d83069064856c02e84137bf5981749" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>members_</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab54a2a6cec4d74c43bfca55b056a92a0" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>set_max</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a919f844b9f8ac4c9055416d1215d79aa" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>set_members</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a25eda7b398a9a376f30730799a38c34b" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>SetData</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a353c429c86c7caa4ad9d8c526b506a26" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::SetData</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2marina_party_8py-example" kind="example">
+    <compoundname>domino/marina_party.py</compoundname>
+    <briefdescription>
+<para>This is a not very serious example that shows how to use domino from scratch to solve a problem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a not very serious example that shows how to use domino from scratch to solve a problem. It is illustrative of creating your own type of particles, a pair score, particle states for DOMINO, a decorator, and using subset filter tables with DOMINO.</para>
+<para>Solution of the Marina Party Problem with DOMINO:</para>
+<para><itemizedlist>
+<listitem><para>Girls attend a party</para>
+</listitem><listitem><para>Each girl has dresses of different price</para>
+</listitem><listitem><para>There can not be repeated dresses in the party within a group of connected people</para>
+</listitem><listitem><para>Girls that are friends can call each other to agree</para>
+</listitem><listitem><para>The objective is to maximize the total price of all dresses in the party <programlisting filename="domino/marina_party.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/marina_party.py</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>is<sp/>a<sp/>not<sp/>very<sp/>serious<sp/>example<sp/>that<sp/>shows<sp/>how<sp/>to<sp/>use<sp/>domino<sp/>from<sp/>scratch</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>to<sp/>solve<sp/>a<sp/>problem.<sp/>It<sp/>is<sp/>illustrative<sp/>of<sp/>creating<sp/>your<sp/>own<sp/>type<sp/>of</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>particles,<sp/>a<sp/>pair<sp/>score,<sp/>particle<sp/>states<sp/>for<sp/>DOMINO,<sp/>a<sp/>decorator,<sp/>and<sp/>using</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>subset<sp/>filter<sp/>tables<sp/>with<sp/>DOMINO.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Solution<sp/>of<sp/>the<sp/>Marina<sp/>Party<sp/>Problem<sp/>with<sp/>DOMINO:</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>-<sp/>Girls<sp/>attend<sp/>a<sp/>party</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>-<sp/>Each<sp/>girl<sp/>has<sp/>dresses<sp/>of<sp/>different<sp/>price</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>-<sp/>There<sp/>can<sp/>not<sp/>be<sp/>repeated<sp/>dresses<sp/>in<sp/>the<sp/>party<sp/>within<sp/>a<sp/>group<sp/>of<sp/>connected</highlight></codeline>
+<codeline><highlight class="comment">#<sp/><sp/><sp/>people</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>-<sp/>Girls<sp/>that<sp/>are<sp/>friends<sp/>can<sp/>call<sp/>each<sp/>other<sp/>to<sp/>agree</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>-<sp/>The<sp/>objective<sp/>is<sp/>to<sp/>maximize<sp/>the<sp/>total<sp/>price<sp/>of<sp/>all<sp/>dresses<sp/>in<sp/>the<sp/>party</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>random</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;marina<sp/>party&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SumPricePairScore(IMP.PairScore):</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">evaluate_index(self,<sp/>m,<sp/>pair,<sp/>accum):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price0<sp/>=<sp/>Price(m.get_particle(pair[0])).get_price()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price1<sp/>=<sp/>Price(m.get_particle(pair[1])).get_price()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>price0<sp/>+<sp/>price1</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">do_get_inputs(self,<sp/>m,<sp/>pis):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>IMP.get_particles(m,<sp/>pis)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PriceStates(<ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">IMP.domino.ParticleStates</ref>):</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>prices):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.prices<sp/>=<sp/>prices</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().__init__()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">load_particle_state(self,<sp/>i,<sp/>particle):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pr<sp/>=<sp/>Price(particle)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pr.set_price(self.prices[i])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_number_of_particle_states(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len(self.prices)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Price(IMP.Decorator):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>price_key<sp/>=<sp/>IMP.IntKey(</highlight><highlight class="stringliteral">&quot;price&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>p):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>self.get_is_setup(p):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setup_particle(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.particle<sp/>=<sp/>p</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">setup_particle(self,<sp/>p):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.add_attribute(self.price_key,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.particle<sp/>=<sp/>p</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_price(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.particle.get_value(self.price_key)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">set_price(self,<sp/>x):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.particle.set_value(self.price_key,<sp/>int(x))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_is_setup(self,<sp/>p):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.has_attribute(self.price_key)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_total_price(states_table,<sp/>subset,<sp/>assignment):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>total_price<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(subset):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price_states<sp/>=<sp/>states_table.get_particle_states(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price_states.load_particle_state(assignment[i],<sp/>p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price<sp/>=<sp/>Price(p).get_price()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_price<sp/>+=<sp/>price</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>total_price</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">print_assignment(states_table,<sp/>subset,<sp/>assignment):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;##########<sp/>solution<sp/>assignment&quot;</highlight><highlight class="normal">,<sp/>assignment)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(subset):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price_states<sp/>=<sp/>states_table.get_particle_states(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price_states.load_particle_state(assignment[i],<sp/>p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price<sp/>=<sp/>Price(p).get_price()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(p.get_name(),<sp/></highlight><highlight class="stringliteral">&quot;price&quot;</highlight><highlight class="normal">,<sp/>price)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">n_girls<sp/>=<sp/>10</highlight></codeline>
+<codeline><highlight class="normal">n_edges<sp/>=<sp/>20</highlight></codeline>
+<codeline><highlight class="normal">girls<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal">prices<sp/>=<sp/>[100,<sp/>200,<sp/>400,<sp/>600,<sp/>800]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">model<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>prepare<sp/>filter<sp/>tables<sp/>for<sp/>DOMINO</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">states_table<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal">sampler<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(model,<sp/>states_table)</highlight></codeline>
+<codeline><highlight class="normal">all_possible_states<sp/>=<sp/>PriceStates(prices)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>set_states</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(n_girls):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>IMP.Particle(model,<sp/></highlight><highlight class="stringliteral">&quot;girl-%d&quot;</highlight><highlight class="normal"><sp/>%<sp/>i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pr<sp/>=<sp/>Price(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>girls.append(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>possible<sp/>dresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states_table.set_particle_states(p,<sp/>all_possible_states)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>dresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(prices)<sp/>==<sp/>1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_dresses<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_dresses<sp/>=<sp/>random.randrange(1,<sp/>len(prices)<sp/>+<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Each<sp/>girl<sp/>has<sp/>a<sp/>selection<sp/>of<sp/>dresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>selection<sp/>=<sp/>random.sample(prices,<sp/>n_dresses)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>allowed_states_indices<sp/>=<sp/>[prices.index(price)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>price<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>selection]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(p.get_name(),<sp/></highlight><highlight class="stringliteral">&quot;prices<sp/>selected&quot;</highlight><highlight class="normal">,<sp/>selection,<sp/></highlight><highlight class="stringliteral">&quot;indices&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allowed_states_indices)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list_states_table<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">IMP.domino.ListSubsetFilterTable</ref>(states_table)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list_states_table.set_allowed_states(p,<sp/>allowed_states_indices)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler.add_subset_filter_table(list_states_table)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>restraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>z<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(n_edges):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>pair<sp/>of<sp/>friends</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>i<sp/>=<sp/>random.randrange(0,<sp/>n_girls)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>j<sp/>=<sp/>random.randrange(0,<sp/>n_girls)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>friends<sp/>=<sp/>IMP.ParticlePair(girls[i],<sp/>girls[j])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>restraint</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>score<sp/>=<sp/>SumPricePairScore()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rs.append(IMP.core.PairRestraint(model,<sp/>score,<sp/>friends))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Exclusion<sp/>states.<sp/>Two<sp/>girls<sp/>can&apos;t<sp/>have<sp/>same<sp/>dress</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ft<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ft.add_pair(friends)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler.add_subset_filter_table(ft)</highlight></codeline>
+<codeline><highlight class="normal">sampler.set_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">subset<sp/>=<sp/>states_table.get_subset()</highlight></codeline>
+<codeline><highlight class="normal">solutions<sp/>=<sp/>sampler.get_sample_assignments(subset)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(solutions)<sp/>==<sp/>0:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;There<sp/>are<sp/>no<sp/>solutions<sp/>to<sp/>the<sp/>problem&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>most_expensive<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>best_solution<sp/>=<sp/>solutions[0]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>assignment<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>solutions:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_price<sp/>=<sp/>get_total_price(states_table,<sp/>subset,<sp/>assignment)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(total_price<sp/>&gt;<sp/>most_expensive):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>most_expensive<sp/>=<sp/>total_price</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>best_solution<sp/>=<sp/>assignment</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;<sp/>There<sp/>are&quot;</highlight><highlight class="normal">,<sp/>len(solutions),<sp/></highlight><highlight class="stringliteral">&quot;possible<sp/>solutions&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;=================&gt;<sp/>BEST<sp/>SOLUTION<sp/>&lt;==============&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print_assignment(states_table,<sp/>subset,<sp/>best_solution)</highlight></codeline>
+</programlisting> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="examples/domino/marina_party.py"/>
+  </compounddef>
+</doxygen>

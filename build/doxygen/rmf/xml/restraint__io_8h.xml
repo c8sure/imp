@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="restraint__io_8h" kind="file" language="C++">
+    <compoundname>restraint_io.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes refid="link__macros_8h" local="yes">link_macros.h</includes>
+    <includes local="no">IMP/object_macros.h</includes>
+    <includes local="no">IMP/Restraint.h</includes>
+    <includedby refid="SaveOptimizerState_8h" local="yes">SaveOptimizerState.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>restraint_io.h</label>
+        <link refid="restraint__io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/Restraint.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/object_macros.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Manage read/write of Restraints from/to RMF files. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/restraint_io.h"/>
+  </compounddef>
+</doxygen>

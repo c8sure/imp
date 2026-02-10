@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2custom_filter_8py-example" kind="example">
+    <compoundname>domino/custom_filter.py</compoundname>
+    <briefdescription>
+<para>This example looks like the six particle optimization example except a filter is used instead of a restraint to remove the flip degree of freedom. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example looks like the six particle optimization example except a filter is used instead of a restraint to remove the flip degree of freedom. The filter is written is Python, which makes for quick prototyping, but slower run times. <programlisting filename="domino/custom_filter.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/custom_filter.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>looks<sp/>like<sp/>the<sp/>six<sp/>particle<sp/>optimization<sp/>example<sp/>except<sp/>a</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>filter<sp/>is<sp/>used<sp/>instead<sp/>of<sp/>a<sp/>restraint<sp/>to<sp/>remove<sp/>the<sp/>flip<sp/>degree<sp/>of</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>freedom.<sp/>The<sp/>filter<sp/>is<sp/>written<sp/>is<sp/>Python,<sp/>which<sp/>makes<sp/>for<sp/>quick</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>prototyping,<sp/>but<sp/>slower<sp/>run<sp/>times.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;custom<sp/>filter&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>set<sp/>restraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_scoring(m,<sp/>ps):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pairs<sp/>=<sp/>[[0,<sp/>1],<sp/>[0,<sp/>2],<sp/>[1,<sp/>3],<sp/>[2,<sp/>3],<sp/>[3,<sp/>4],<sp/>[4,<sp/>5],<sp/>[1,<sp/>5]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>score<sp/>=<sp/>IMP.core.HarmonicDistancePairScore(1,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>restraint<sp/>will<sp/>be<sp/>broken<sp/>apart<sp/>during<sp/>optimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pc<sp/>=<sp/>IMP.container.ListPairContainer(m,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[(ps[p[0]],<sp/>ps[p[1]])<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>pairs],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Restrained<sp/>pairs&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pr<sp/>=<sp/>IMP.container.PairsRestraint(score,<sp/>pc)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pr.set_maximum_score(.01)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>d<sp/>=<sp/>IMP.core.DistanceToSingletonScore(IMP.core.HarmonicUpperBound(2,<sp/>1),</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(2,<sp/>0,<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[pr]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_representation(m):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>6):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>m.add_particle(</highlight><highlight class="stringliteral">&quot;P%d&quot;</highlight><highlight class="normal"><sp/>%<sp/>i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.core.XYZ.setup_particle(m,<sp/>p,<sp/>IMP.algebra.Vector3D(i,<sp/>0.,<sp/>0.))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps.append(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ps</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_discrete_states(m,<sp/>ps):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vs<sp/>=<sp/>[IMP.algebra.Vector3D(1,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(0,<sp/>1,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(1,<sp/>1,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(2,<sp/>1,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(2,<sp/>0,<sp/>0)]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vs<sp/>=<sp/>vs<sp/>+<sp/>[-v<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>v<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>vs]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(len(vs),<sp/></highlight><highlight class="stringliteral">&quot;states<sp/>for<sp/>each<sp/>particle&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(vs[1])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(vs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>special<sp/>case<sp/>ps[0]<sp/>to<sp/>remove<sp/>a<sp/>sliding<sp/>degree<sp/>of<sp/>freedom</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps[1:]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pst.set_particle_states(m.get_particle(p),<sp/>states)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pst</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>force<sp/>particle<sp/>p<sp/>to<sp/>be<sp/>in<sp/>state<sp/>s</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyFilterTable(<ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">IMP.domino.SubsetFilterTable</ref>):</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyFilter(<ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP.domino.SubsetFilter</ref>):</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>pos,<sp/>value):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>print<sp/>&quot;Filtering<sp/>with&quot;,<sp/>pos,<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.domino.SubsetFilter.__init__(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self,<sp/></highlight><highlight class="stringliteral">&quot;MF&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(pos)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(value))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.pos<sp/>=<sp/>pos</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.value<sp/>=<sp/>value</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_next_state(self,<sp/>pos,<sp/>s):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>suggest<sp/>that<sp/>the<sp/>sampler<sp/>try<sp/>the<sp/>correct<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>this<sp/>method<sp/>is<sp/>only<sp/>called<sp/>if<sp/>the<sp/>filter<sp/>failed,<sp/>so<sp/>pos<sp/>must<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>self.pos</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>s[self.pos]<sp/>&gt;<sp/>self.value:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>a<sp/>very<sp/>large<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2<sp/>**<sp/>29</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.value</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_is_ok(self,<sp/>state):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>it<sp/>is<sp/>only<sp/>OK<sp/>if<sp/>it<sp/>has<sp/>the<sp/>required<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>state[self.pos]<sp/>==<sp/>self.value</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_strength(self,<sp/>s,<sp/>excluded):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>return<sp/>the<sp/>maximum<sp/>value<sp/>since<sp/>it<sp/>dictates<sp/>the<sp/>state<sp/>for<sp/>the<sp/>particle</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>p,<sp/>s):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>set<sp/>the<sp/>name<sp/>of<sp/>the<sp/>object<sp/>to<sp/>something<sp/>vaguely<sp/>useful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.domino.SubsetFilterTable.__init__(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self,<sp/></highlight><highlight class="stringliteral">&quot;MFT&quot;</highlight><highlight class="normal"><sp/>+<sp/>p.get_name()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>at<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(s))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.p<sp/>=<sp/>p</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.s<sp/>=<sp/>s</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_subset_filter(self,<sp/>subset,<sp/>excluded):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>filter<sp/>if<sp/>self.p<sp/>is<sp/>in<sp/>subset<sp/>but<sp/>not<sp/>in<sp/>excluded</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(self.p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>subset</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.p<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>sum([list(x)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>excluded],<sp/>[])):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>pass<sp/>the<sp/>position<sp/>of<sp/>self.p<sp/>and<sp/>the<sp/>value<sp/>that<sp/>it<sp/>must<sp/>have</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.MyFilter(list(subset).index(self.p),<sp/>self.s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_sampler(m,<sp/>ps,<sp/>rs,<sp/>pst):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>s.set_log_level(IMP.VERBOSE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>following<sp/>lines<sp/>recreate<sp/>the<sp/>defaults<sp/>and<sp/>so<sp/>are<sp/>optional</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>do<sp/>not<sp/>allow<sp/>particles<sp/>with<sp/>the<sp/>same<sp/>ParticleStates<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>to<sp/>have<sp/>the<sp/>same<sp/>state<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters.append(<ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc.add_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>filter<sp/>states<sp/>that<sp/>score<sp/>worse<sp/>than<sp/>the<sp/>cutoffs<sp/>in<sp/>the<sp/>Model</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters.append(<ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters[-1].set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mf<sp/>=<sp/>MyFilterTable(m.get_particle(ps[1]),<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>try<sp/>with<sp/>and<sp/>without<sp/>this<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>filters.append(mf)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" kindref="compound">IMP.domino.BranchAndBoundAssignmentsTable</ref>(pst,<sp/>filters)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>states.set_log_level(IMP.SILENT);</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_assignments_table(states)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_subset_filter_tables(filters)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.TERSE)</highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>representation&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>create_representation(m)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>discrete<sp/>states&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/>create_discrete_states(m,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>score<sp/>function&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>create_scoring(m,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;creating<sp/>sampler&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>create_sampler(m,<sp/>ps,<sp/>rs,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>s.set_log_level(IMP.SILENT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;sampling&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">cs<sp/>=<sp/>s.create_sample()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;found<sp/>&quot;</highlight><highlight class="normal">,<sp/>cs.get_number_of_configurations(),<sp/></highlight><highlight class="stringliteral">&quot;solutions&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">sf<sp/>=<sp/>IMP.core.RestraintsScoringFunction(rs)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(cs.get_number_of_configurations()):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cs.load_configuration(i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;solution<sp/>number:&quot;</highlight><highlight class="normal">,<sp/>i,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is:&quot;</highlight><highlight class="normal">,<sp/>sf.evaluate(</highlight><highlight class="keyword">False</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(IMP.core.XYZ(m,<sp/>p).get_x(),<sp/>IMP.core.XYZ(m,<sp/>p).get_y())</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/custom_filter.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1BoxedMover" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::BoxedMover</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">core::MonteCarloMover</basecompoundref>
+    <includes local="no">IMP/spb/BoxedMover.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1BoxedMover_1a3a39eceb78ee8d2fd33be04fa3c045c2" prot="private" static="no" mutable="no">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::spb::BoxedMover::centers_</definition>
+        <argsstring></argsstring>
+        <name>centers_</name>
+        <qualifiedname>IMP::spb::BoxedMover::centers_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="43" column="22" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1BoxedMover_1aea538a251b8e5a1d5a4fe29dce4bf1d2" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::BoxedMover::max_tr_</definition>
+        <argsstring></argsstring>
+        <name>max_tr_</name>
+        <qualifiedname>IMP::spb::BoxedMover::max_tr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="42" column="9" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1BoxedMover_1a63d63f5dfec93cd91c7449040a8431a0" prot="private" static="no" mutable="no">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::spb::BoxedMover::oldcoord_</definition>
+        <argsstring></argsstring>
+        <name>oldcoord_</name>
+        <qualifiedname>IMP::spb::BoxedMover::oldcoord_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="44" column="21" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1BoxedMover_1ad311f5a9d7c0b7fbe5f486f22db51383" prot="private" static="no" mutable="no">
+        <type>Particle *</type>
+        <definition>Particle* IMP::spb::BoxedMover::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::spb::BoxedMover::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="45" column="12" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a42b03b596dab01a65b08165d60d1f588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::BoxedMover::BoxedMover</definition>
+        <argsstring>(Particle *p, Float max_tr, algebra::Vector3Ds centers)</argsstring>
+        <name>BoxedMover</name>
+        <qualifiedname>IMP::spb::BoxedMover::BoxedMover</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_tr</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>centers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The particle is moved within a (hexagonal or cubic) box <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the particle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the maximum translation during a step </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a7ffe7a097b587c6eb8334e5c3908b682" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::BoxedMover::~BoxedMover</definition>
+        <argsstring>()</argsstring>
+        <name>~BoxedMover</name>
+        <qualifiedname>IMP::spb::BoxedMover::~BoxedMover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="38" column="231" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a36793438576745218908e7db283634ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::BoxedMover::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::BoxedMover::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="38" column="34" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a13858fcd3581bc3d222839f5845db11b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::BoxedMover::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::BoxedMover::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="38" column="103" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a3a152fa8f959617a951de1a7838fe12a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::BoxedMover::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::BoxedMover::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="39" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a47133cee3edf105526159f48a6932f7f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::BoxedMover::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::BoxedMover::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="34" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1ad70033560950a5f8d77d44454217c09e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>core::MonteCarloMoverResult</type>
+        <definition>virtual core::MonteCarloMoverResult IMP::spb::BoxedMover::do_propose</definition>
+        <argsstring>() override</argsstring>
+        <name>do_propose</name>
+        <qualifiedname>IMP::spb::BoxedMover::do_propose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="32" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1BoxedMover_1a465004dd593ddb87632406a31b7df2eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::BoxedMover::do_reject</definition>
+        <argsstring>() override</argsstring>
+        <name>do_reject</name>
+        <qualifiedname>IMP::spb::BoxedMover::do_reject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/BoxedMover.h" line="33" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Move a particle and keep it in a box. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The transformation of a rigid body is moved in a ball of given size. The probability distribution is uniform over the ball. <simplesect kind="see"><para>MonteCarlo </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/spb/BoxedMover.h" line="23" column="1" bodyfile="include/IMP/spb/BoxedMover.h" bodystart="23" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a42b03b596dab01a65b08165d60d1f588" prot="public" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>BoxedMover</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a3a39eceb78ee8d2fd33be04fa3c045c2" prot="private" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>centers_</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a47133cee3edf105526159f48a6932f7f" prot="protected" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1ad70033560950a5f8d77d44454217c09e" prot="protected" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>do_propose</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a465004dd593ddb87632406a31b7df2eb" prot="protected" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>do_reject</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a36793438576745218908e7db283634ff" prot="public" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a13858fcd3581bc3d222839f5845db11b" prot="public" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1aea538a251b8e5a1d5a4fe29dce4bf1d2" prot="private" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>max_tr_</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a63d63f5dfec93cd91c7449040a8431a0" prot="private" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>oldcoord_</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1ad311f5a9d7c0b7fbe5f486f22db51383" prot="private" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>p_</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a3a152fa8f959617a951de1a7838fe12a" prot="public" virt="non-virtual"><scope>IMP::spb::BoxedMover</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1BoxedMover_1a7ffe7a097b587c6eb8334e5c3908b682" prot="public" virt="virtual"><scope>IMP::spb::BoxedMover</scope><name>~BoxedMover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

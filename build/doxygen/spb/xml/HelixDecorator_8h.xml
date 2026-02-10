@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="HelixDecorator_8h" kind="file" language="C++">
+    <compoundname>HelixDecorator.h</compoundname>
+    <includes refid="spb__config_8h" local="no">IMP/spb/spb_config.h</includes>
+    <includes local="no">IMP/Decorator.h</includes>
+    <includes local="no">IMP/Model.h</includes>
+    <includes local="no">IMP/Particle.h</includes>
+    <includes local="no">IMP/decorator_macros.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>HelixDecorator.h</label>
+        <link refid="HelixDecorator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/Decorator.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/Model.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/Particle.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/decorator_macros.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1spb_1_1HelixDecorator" prot="public">IMP::spb::HelixDecorator</innerclass>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1spb">IMP::spb</innernamespace>
+    <briefdescription>
+<para>Add helix parameters to a particle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/HelixDecorator.h"/>
+  </compounddef>
+</doxygen>

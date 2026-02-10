@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__step__1_1_1Experiment" kind="class" language="Python" prot="public">
+    <compoundname>config_step_1::Experiment</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a8e776a6b931db9a389e12a2806651025" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::anchor</definition>
+        <argsstring></argsstring>
+        <name>anchor</name>
+        <qualifiedname>config_step_1.Experiment.anchor</qualifiedname>
+        <initializer>=  [False, False, False, False]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="61" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1acf441a93901b2ac336b3297b2c9c9ec5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_step_1.Experiment::benchmark</definition>
+        <argsstring></argsstring>
+        <name>benchmark</name>
+        <qualifiedname>config_step_1.Experiment.benchmark</qualifiedname>
+        <initializer>=  Benchmark()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="143" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ac69a98e062085e7bf7fc9507302cf58d" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::dock_transforms</definition>
+        <argsstring></argsstring>
+        <name>dock_transforms</name>
+        <qualifiedname>config_step_1.Experiment.dock_transforms</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="134" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a992ec102e1a22388e4a7d33d8559402c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_step_1.Experiment::domino_params</definition>
+        <argsstring></argsstring>
+        <name>domino_params</name>
+        <qualifiedname>config_step_1.Experiment.domino_params</qualifiedname>
+        <initializer>=  DominoParams()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="139" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ace429c22b6636ee8abe818b17aa1fe87" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::em2d_restraints</definition>
+        <argsstring></argsstring>
+        <name>em2d_restraints</name>
+        <qualifiedname>config_step_1.Experiment.em2d_restraints</qualifiedname>
+        <initializer>=  [[&quot;em2d&quot;, &quot;em_images/images.sel&quot;, 1.5, 5, 20, 1000, 1000]
+                                ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="78" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a9d3d1598038209417832185b56005b1f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::fixed</definition>
+        <argsstring></argsstring>
+        <name>fixed</name>
+        <qualifiedname>config_step_1.Experiment.fixed</qualifiedname>
+        <initializer>=  [False, False, False, False]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="62" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a96f38c67f660bd8d84fca4f97ff55e3e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::fn_pdbs</definition>
+        <argsstring></argsstring>
+        <name>fn_pdbs</name>
+        <qualifiedname>config_step_1.Experiment.fn_pdbs</qualifiedname>
+        <initializer>=  [&quot;3sfdA.pdb&quot;, &quot;3sfdB.pdb&quot;, &quot;3sfdC.pdb&quot;, &quot;3sfdD.pdb&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="58" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a5c858f3fa295db69838900d07453b8a2" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::model_name</definition>
+        <argsstring></argsstring>
+        <name>model_name</name>
+        <qualifiedname>config_step_1.Experiment.model_name</qualifiedname>
+        <initializer>=  [&quot;3sfd&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="56" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a6b90ed7c04eb1de98a9c56bdd524093e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_step_1.Experiment::monte_carlo</definition>
+        <argsstring></argsstring>
+        <name>monte_carlo</name>
+        <qualifiedname>config_step_1.Experiment.monte_carlo</qualifiedname>
+        <initializer>=  MonteCarloParams()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="138" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ae727b8f6549821173148481877455dcc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_step_1.Experiment::n_residues</definition>
+        <argsstring></argsstring>
+        <name>n_residues</name>
+        <qualifiedname>config_step_1.Experiment.n_residues</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="59" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a668da7afdf2352ce449f9a679f84d3c5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_step_1.Experiment::n_solutions</definition>
+        <argsstring></argsstring>
+        <name>n_solutions</name>
+        <qualifiedname>config_step_1.Experiment.n_solutions</qualifiedname>
+        <initializer>=  2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="146" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a23f601c958ca0cf46ff827fed44d0ed5" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::names</definition>
+        <argsstring></argsstring>
+        <name>names</name>
+        <qualifiedname>config_step_1.Experiment.names</qualifiedname>
+        <initializer>=  [&quot;3sfdA&quot;, &quot;3sfdB&quot;, &quot;3sfdC&quot;, &quot;3sfdD&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="57" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ad107997796effd4b03120fc19e4b4010" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_step_1.Experiment::orderby</definition>
+        <argsstring></argsstring>
+        <name>orderby</name>
+        <qualifiedname>config_step_1.Experiment.orderby</qualifiedname>
+        <initializer>=  &quot;em2d&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="147" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a6f7b9bf728010c75c4ef7cc15100e904" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::pair_score_restraints</definition>
+        <argsstring></argsstring>
+        <name>pair_score_restraints</name>
+        <qualifiedname>config_step_1.Experiment.pair_score_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="66" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ad7fcf2887e55fda10732246345ff6a09" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::pairs_excluded_restraint</definition>
+        <argsstring></argsstring>
+        <name>pairs_excluded_restraint</name>
+        <qualifiedname>config_step_1.Experiment.pairs_excluded_restraint</qualifiedname>
+        <initializer>=  [0, 1, 0.1, 2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="74" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1ac64c23f01b8990b5ef90b800bb6a2066" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_step_1.Experiment::sampling_positions</definition>
+        <argsstring></argsstring>
+        <name>sampling_positions</name>
+        <qualifiedname>config_step_1.Experiment.sampling_positions</qualifiedname>
+        <initializer>=  DominoSamplingPositions()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="136" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1af197a9230ff3b8bcfa40d81c251e2506" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>config_step_1.Experiment::test_opts</definition>
+        <argsstring></argsstring>
+        <name>test_opts</name>
+        <qualifiedname>config_step_1.Experiment.test_opts</qualifiedname>
+        <initializer>=  TestParameters()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="141" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__1_1_1Experiment_1a34f6692fbd2b871e1ade6e18fbc688ed" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_step_1.Experiment::xlink_restraints</definition>
+        <argsstring></argsstring>
+        <name>xlink_restraints</name>
+        <qualifiedname>config_step_1.Experiment.xlink_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="83" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__step__1_1_1Experiment_1a73c1c249fb3a42d24f9cece37afce826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_step_1.Experiment.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_step_1.Experiment.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="53" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="53" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" line="51" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_1.py" bodystart="51" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classconfig__step__1_1_1Experiment_1a73c1c249fb3a42d24f9cece37afce826" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>__init__</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a8e776a6b931db9a389e12a2806651025" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>anchor</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1acf441a93901b2ac336b3297b2c9c9ec5" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>benchmark</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ac69a98e062085e7bf7fc9507302cf58d" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>dock_transforms</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a992ec102e1a22388e4a7d33d8559402c" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>domino_params</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ace429c22b6636ee8abe818b17aa1fe87" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>em2d_restraints</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a9d3d1598038209417832185b56005b1f" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>fixed</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a96f38c67f660bd8d84fca4f97ff55e3e" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>fn_pdbs</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a5c858f3fa295db69838900d07453b8a2" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>model_name</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a6b90ed7c04eb1de98a9c56bdd524093e" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>monte_carlo</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ae727b8f6549821173148481877455dcc" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>n_residues</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a668da7afdf2352ce449f9a679f84d3c5" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>n_solutions</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a23f601c958ca0cf46ff827fed44d0ed5" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>names</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ad107997796effd4b03120fc19e4b4010" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>orderby</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a6f7b9bf728010c75c4ef7cc15100e904" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>pair_score_restraints</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ad7fcf2887e55fda10732246345ff6a09" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>pairs_excluded_restraint</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1ac64c23f01b8990b5ef90b800bb6a2066" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>sampling_positions</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1af197a9230ff3b8bcfa40d81c251e2506" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>test_opts</name></member>
+      <member refid="classconfig__step__1_1_1Experiment_1a34f6692fbd2b871e1ade6e18fbc688ed" prot="public" virt="non-virtual"><scope>config_step_1::Experiment</scope><name>xlink_restraints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

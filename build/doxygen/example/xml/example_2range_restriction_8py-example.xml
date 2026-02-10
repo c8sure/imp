@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="example_2range_restriction_8py-example" kind="example">
+    <compoundname>example/range_restriction.py</compoundname>
+    <briefdescription>
+<para>This example shows how to use the example singleton modifier to constrain the coordinates of a set of particles to remain within a box. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example shows how to use the example singleton modifier to constrain the coordinates of a set of particles to remain within a box. <programlisting filename="example/range_restriction.py"><codeline><highlight class="comment">##<sp/>\example<sp/>example/range_restriction.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>shows<sp/>how<sp/>to<sp/>use<sp/>the<sp/>example<sp/>singleton<sp/>modifier<sp/>to<sp/>constrain<sp/>the</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>coordinates<sp/>of<sp/>a<sp/>set<sp/>of<sp/>particles<sp/>to<sp/>remain<sp/>within<sp/>a<sp/>box.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1example" kindref="compound">IMP.example</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>can<sp/>use<sp/>this<sp/>argument<sp/>to<sp/>shorten<sp/>the<sp/>test,<sp/>if<sp/>necessary</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.add_bool_flag(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Run<sp/>a<sp/>minimal<sp/>test<sp/>on<sp/>the<sp/>script&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>parse<sp/>standard<sp/>IMP<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>trivial<sp/>example<sp/>of<sp/>an<sp/>example.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>IMP.core.create_xyzr_particles(m,<sp/>20,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal">sc<sp/>=<sp/>IMP.container.ListSingletonContainer(m,<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>apply<sp/>the<sp/>range<sp/>restriction<sp/>modifier<sp/>to<sp/>each<sp/>each<sp/>particle<sp/>in<sp/>sc</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ss<sp/>=<sp/>IMP.container.SingletonsConstraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIMP_1_1example_1_1ExampleSingletonModifier" kindref="compound">IMP.example.ExampleSingletonModifier</ref>(bb),<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>sc)</highlight></codeline>
+<codeline><highlight class="normal">m.add_score_state(ss)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>now<sp/>optimize<sp/>and<sp/>things</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/example/range_restriction.py"/>
+  </compounddef>
+</doxygen>

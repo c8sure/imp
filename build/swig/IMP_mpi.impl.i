@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/mpi/pyext/swig.i-in

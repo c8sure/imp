@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="AlignmentParams_8h" kind="file" language="C++">
+    <compoundname>AlignmentParams.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes refid="multifit__config_8h" local="no">IMP/multifit/multifit_config.h</includes>
+    <includes local="no">IMP/value_macros.h</includes>
+    <includes local="no">boost/property_tree/ptree.hpp</includes>
+    <includes local="no">cereal/access.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="proteomics__em__alignment__atomic_8h" local="yes">proteomics_em_alignment_atomic.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>AlignmentParams.h</label>
+        <link refid="AlignmentParams_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/value_macros.h</label>
+      </node>
+      <node id="5">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="6">
+        <label>cereal/access.hpp</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1multifit_1_1AlignmentParams" prot="public">IMP::multifit::AlignmentParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1ComplementarityParams" prot="public">IMP::multifit::ComplementarityParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1ConnectivityParams" prot="public">IMP::multifit::ConnectivityParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1DominoParams" prot="public">IMP::multifit::DominoParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1EVParams" prot="public">IMP::multifit::EVParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FiltersParams" prot="public">IMP::multifit::FiltersParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FittingParams" prot="public">IMP::multifit::FittingParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FragmentsParams" prot="public">IMP::multifit::FragmentsParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1RogParams" prot="public">IMP::multifit::RogParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1XlinkParams" prot="public">IMP::multifit::XlinkParams</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit">IMP::multifit</innernamespace>
+    <briefdescription>
+<para>Parameters for alignments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h"/>
+  </compounddef>
+</doxygen>

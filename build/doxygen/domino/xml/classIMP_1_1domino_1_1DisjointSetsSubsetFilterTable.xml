@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::DisjointSetsSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::EqualitySubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::EquivalenceAndExclusionSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::EquivalenceSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::ExclusionSubsetFilterTable</derivedcompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1af6a6eaedb26601a53d83a6020a28669c" prot="private" static="no" mutable="yes">
+        <type>boost::disjoint_sets&lt; boost::vector_property_map&lt; int &gt;, boost::vector_property_map&lt; int &gt; &gt;</type>
+        <definition>boost::disjoint_sets&lt;boost::vector_property_map&lt;int&gt;, boost::vector_property_map&lt;int&gt; &gt; IMP::domino::DisjointSetsSubsetFilterTable::disjoint_sets_</definition>
+        <argsstring></argsstring>
+        <name>disjoint_sets_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::disjoint_sets_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="169" column="2" bodyfile="include/IMP/domino/subset_filters.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1abc1a5b7b2062d4102e3d25057e20b108" prot="private" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::DisjointSetsSubsetFilterTable::elements_</definition>
+        <argsstring></argsstring>
+        <name>elements_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::elements_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="166" column="17" bodyfile="include/IMP/domino/subset_filters.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a50c7a683d1707994e0bf3d30af78eb11" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; const Particle *, int &gt;</type>
+        <definition>boost::unordered_map&lt;const Particle *, int&gt; IMP::domino::DisjointSetsSubsetFilterTable::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="170" column="24" bodyfile="include/IMP/domino/subset_filters.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2a185515212636e1597e5d5ba2febd9a" prot="private" static="no" mutable="no">
+        <type>boost::vector_property_map&lt; int &gt;</type>
+        <definition>boost::vector_property_map&lt;int&gt; IMP::domino::DisjointSetsSubsetFilterTable::parent_</definition>
+        <argsstring></argsstring>
+        <name>parent_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::parent_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="167" column="30" bodyfile="include/IMP/domino/subset_filters.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a82911696ad4cefba994ac2e042b04043" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt;</type>
+        <definition>Pointer&lt;ParticleStatesTable&gt; IMP::domino::DisjointSetsSubsetFilterTable::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="165" column="11" bodyfile="include/IMP/domino/subset_filters.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a812c0cca5ba1cf83952d43983930a351" prot="private" static="no" mutable="no">
+        <type>boost::vector_property_map&lt; int &gt;</type>
+        <definition>boost::vector_property_map&lt;int&gt; IMP::domino::DisjointSetsSubsetFilterTable::rank_</definition>
+        <argsstring></argsstring>
+        <name>rank_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::rank_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="167" column="38" bodyfile="include/IMP/domino/subset_filters.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a220a860d22d787cb4432fbafb73b2b67" prot="private" static="no" mutable="yes">
+        <type>boost::unordered_map&lt; const Particle *, int &gt;</type>
+        <definition>boost::unordered_map&lt;const Particle *, int&gt; IMP::domino::DisjointSetsSubsetFilterTable::set_indexes_</definition>
+        <argsstring></argsstring>
+        <name>set_indexes_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::set_indexes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="172" column="32" bodyfile="include/IMP/domino/subset_filters.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a199b397b9bf763189e854c8fb38df475" prot="private" static="no" mutable="yes">
+        <type>Vector&lt; ParticlesTemp &gt;</type>
+        <definition>Vector&lt;ParticlesTemp&gt; IMP::domino::DisjointSetsSubsetFilterTable::sets_</definition>
+        <argsstring></argsstring>
+        <name>sets_</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::sets_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="171" column="18" bodyfile="include/IMP/domino/subset_filters.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a186064f25d9aaaa98ad7eaf220f05c4b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DisjointSetsSubsetFilterTable::build_sets</definition>
+        <argsstring>() const</argsstring>
+        <name>build_sets</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::build_sets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="176" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3805c30908b11f8e72daddb3fbc3c7a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::domino::DisjointSetsSubsetFilterTable::get_index</definition>
+        <argsstring>(Particle *p)</argsstring>
+        <name>get_index</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::get_index</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="174" column="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DisjointSetsSubsetFilterTable::DisjointSetsSubsetFilterTable</definition>
+        <argsstring>(ParticleStatesTable *pst, std::string name)</argsstring>
+        <name>DisjointSetsSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::DisjointSetsSubsetFilterTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="184" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DisjointSetsSubsetFilterTable::DisjointSetsSubsetFilterTable</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>DisjointSetsSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::DisjointSetsSubsetFilterTable</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="185" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DisjointSetsSubsetFilterTable::get_number_of_sets</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_sets</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::get_number_of_sets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="179" column="16" bodyfile="include/IMP/domino/subset_filters.h" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::DisjointSetsSubsetFilterTable::get_set</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_set</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::get_set</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="183" column="17" bodyfile="include/IMP/domino/subset_filters.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DisjointSetsSubsetFilterTable::add_pair</definition>
+        <argsstring>(const ParticlePair &amp;pp)</argsstring>
+        <name>add_pair</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::add_pair</qualifiedname>
+        <param>
+          <type>const ParticlePair &amp;</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="200" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DisjointSetsSubsetFilterTable::add_set</definition>
+        <argsstring>(const ParticlesTemp &amp;ps)</argsstring>
+        <name>add_set</name>
+        <qualifiedname>IMP::domino::DisjointSetsSubsetFilterTable::add_set</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="199" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A base class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A number of filters work on disjoint sets of the input particles. These can be specified in several different ways<itemizedlist>
+<listitem><para>implicitly via having the same <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> objects</para>
+</listitem><listitem><para>as a list of particle equivalencies</para>
+</listitem><listitem><para>as a list of disjoint sets of equivalent particles </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::EqualitySubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IMP::domino::EquivalenceSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IMP::domino::ExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="164" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="164" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" prot="public" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>add_pair</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" prot="public" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>add_set</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a186064f25d9aaaa98ad7eaf220f05c4b" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>build_sets</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1af6a6eaedb26601a53d83a6020a28669c" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>disjoint_sets_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" prot="protected" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" prot="protected" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1abc1a5b7b2062d4102e3d25057e20b108" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>elements_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3805c30908b11f8e72daddb3fbc3c7a7" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>get_index</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" prot="protected" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>get_number_of_sets</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" prot="protected" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>get_set</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b" prot="public" virt="pure-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" prot="public" virt="pure-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a50c7a683d1707994e0bf3d30af78eb11" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>index_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2a185515212636e1597e5d5ba2febd9a" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>parent_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a82911696ad4cefba994ac2e042b04043" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a812c0cca5ba1cf83952d43983930a351" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>rank_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a220a860d22d787cb4432fbafb73b2b67" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>set_indexes_</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a199b397b9bf763189e854c8fb38df475" prot="private" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>sets_</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::DisjointSetsSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

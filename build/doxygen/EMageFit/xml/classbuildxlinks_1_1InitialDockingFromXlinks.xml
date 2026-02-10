@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classbuildxlinks_1_1InitialDockingFromXlinks" kind="class" language="Python" prot="public">
+    <compoundname>buildxlinks::InitialDockingFromXlinks</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a58fc6a69ca92c09ad567305e83ba380e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.get_residue_coordinates</definition>
+        <argsstring>(self, h, ch, res)</argsstring>
+        <name>get_residue_coordinates</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.get_residue_coordinates</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>ch</type>
+          <defname>ch</defname>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+<para>Get the coordinates for a residue in a molecular hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atom.Hierarchy object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The chain id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="295" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="295" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a64790598c0b4b41e743097c35dff0365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.get_residue_particle</definition>
+        <argsstring>(self, h, ch, res)</argsstring>
+        <name>get_residue_particle</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.get_residue_particle</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>ch</type>
+          <defname>ch</defname>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+<para>Get the particle representing a residue in a hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atom.Hierarchy containing the residue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The chain id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the residue </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="285" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="285" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1ac7d72d4aecf2d4c3e9473d9544bf6d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.move_ligand</definition>
+        <argsstring>(self)</argsstring>
+        <name>move_ligand</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.move_ligand</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Movest the ligand close to the receptor based on the xlinks provided by <ref refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a36c687fac116b43917ad3ce8bb5abe56" kindref="member">set_xlinks()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="273" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="273" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1ae46758125c11953e1f411e78fee62221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.move_one_xlink</definition>
+        <argsstring>(self)</argsstring>
+        <name>move_one_xlink</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.move_one_xlink</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Put the residues in a random distance between 0 and the maximum cross-linkin distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="312" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="312" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1aae5a41ceca6e78f5ac606f92eee0599d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.move_xlinks</definition>
+        <argsstring>(self)</argsstring>
+        <name>move_xlinks</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.move_xlinks</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Function equivalent to <ref refid="classbuildxlinks_1_1InitialDockingFromXlinks_1ae46758125c11953e1f411e78fee62221" kindref="member">move_one_xlink()</ref> for the case where there are more than one cross-link restraints available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Puts the ligand residues as close as possible to the receptor residues </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="336" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="336" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a19ba1b698ece68a9f79916633f6f55ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.set_hierarchies</definition>
+        <argsstring>(self, h_receptor, h_ligand)</argsstring>
+        <name>set_hierarchies</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.set_hierarchies</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>h_receptor</type>
+          <defname>h_receptor</defname>
+        </param>
+        <param>
+          <type>h_ligand</type>
+          <defname>h_ligand</defname>
+        </param>
+        <briefdescription>
+<para>Set the hierarchies (atom.Hierarchy objects) for the receptor and the ligand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h_receptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_ligand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="253" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="253" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a567a90a840f2e044bdf80822f80d5ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.set_pdbs</definition>
+        <argsstring>(self, fn_receptor, fn_ligand)</argsstring>
+        <name>set_pdbs</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.set_pdbs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn_receptor</type>
+          <defname>fn_receptor</defname>
+        </param>
+        <param>
+          <type>fn_ligand</type>
+          <defname>fn_ligand</defname>
+        </param>
+        <briefdescription>
+<para>Set the name of the PDB files of the receptor and the ligand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_receptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_ligand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="241" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="241" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1ab16efc57ef139dcf2ddd4da2f592e383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.set_rigid_bodies</definition>
+        <argsstring>(self, rb_receptor, rb_ligand)</argsstring>
+        <name>set_rigid_bodies</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.set_rigid_bodies</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rb_receptor</type>
+          <defname>rb_receptor</defname>
+        </param>
+        <param>
+          <type>rb_ligand</type>
+          <defname>rb_ligand</defname>
+        </param>
+        <briefdescription>
+<para>Sets the rigid bodies (core.RigidBody objects) for the receptor and the ligand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rb_receptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rb_ligand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="263" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a36c687fac116b43917ad3ce8bb5abe56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.set_xlinks</definition>
+        <argsstring>(self, xlinks_list)</argsstring>
+        <name>set_xlinks</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.set_xlinks</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xlinks_list</type>
+          <defname>xlinks_list</defname>
+        </param>
+        <briefdescription>
+<para>Sets the xlinks used for the computation for the initial rough docking solution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xlinks_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of <ref refid="classbuildxlinks_1_1Xlink" kindref="compound">Xlink</ref> classes residue1 belongs to the receptor and residue2 belongs to the ligand </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="232" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="232" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1InitialDockingFromXlinks_1a82d546ebd3b38c8855b6e61a8b6bde33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.InitialDockingFromXlinks.write_ligand</definition>
+        <argsstring>(self, fn)</argsstring>
+        <name>write_ligand</name>
+        <qualifiedname>buildxlinks.InitialDockingFromXlinks.write_ligand</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <briefdescription>
+<para>Write a pdb file the coordinates of the ligand. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="305" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="305" bodyend="309"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Puts two subunits together using the Xlinkins restraints. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The solutions offered by this class are just an initial position of the components to be fed to HEX</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/buildxlinks.py" line="221" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="221" bodyend="338"/>
+    <listofallmembers>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a58fc6a69ca92c09ad567305e83ba380e" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>get_residue_coordinates</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a64790598c0b4b41e743097c35dff0365" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>get_residue_particle</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1ac7d72d4aecf2d4c3e9473d9544bf6d2d" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>move_ligand</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1ae46758125c11953e1f411e78fee62221" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>move_one_xlink</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1aae5a41ceca6e78f5ac606f92eee0599d" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>move_xlinks</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a19ba1b698ece68a9f79916633f6f55ef" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>set_hierarchies</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a567a90a840f2e044bdf80822f80d5ddf" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>set_pdbs</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1ab16efc57ef139dcf2ddd4da2f592e383" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>set_rigid_bodies</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a36c687fac116b43917ad3ce8bb5abe56" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>set_xlinks</name></member>
+      <member refid="classbuildxlinks_1_1InitialDockingFromXlinks_1a82d546ebd3b38c8855b6e61a8b6bde33" prot="public" virt="non-virtual"><scope>buildxlinks::InitialDockingFromXlinks</scope><name>write_ligand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

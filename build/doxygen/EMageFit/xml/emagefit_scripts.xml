@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="emagefit_scripts" kind="page">
+    <compoundname>emagefit_scripts</compoundname>
+    <title>EMageFit scripts and tools</title>
+    <tableofcontents>
+      <tocsect>
+        <name>Command line tools</name>
+        <docs><para>Command line tools </para>
+</docs>
+        <reference>emagefit_scripts_1tools</reference>
+        <tableofcontents>
+          <tocsect>
+            <name>emagefit: Run all steps of modeling</name>
+            <docs><para>emagefit: Run all steps of modeling </para>
+</docs>
+            <reference>emagefit_scripts_1emagefit_bin</reference>
+          </tocsect>
+          <tocsect>
+            <name>emagefit_dock: Docking using the HEXDOCK program</name>
+            <docs><para>emagefit_dock: Docking using the HEXDOCK program </para>
+</docs>
+            <reference>emagefit_scripts_1emagefit_dock_bin</reference>
+          </tocsect>
+          <tocsect>
+            <name>emagefit_cluster: Performs clustering of the solutions stored in a database file.</name>
+            <docs><para>emagefit_cluster: Performs clustering of the solutions stored in a database file. </para>
+</docs>
+            <reference>emagefit_scripts_1emagefit_cluster_bin</reference>
+          </tocsect>
+          <tocsect>
+            <name>emagefit_score: Scores a model using EM images.</name>
+            <docs><para>emagefit_score: Scores a model using EM images. </para>
+</docs>
+            <reference>emagefit_scripts_1emagefit_score_bin</reference>
+          </tocsect>
+          <tocsect>
+            <name>convert_spider_to_jpg: Image conversion utility for EMageFit.</name>
+            <docs><para>convert_spider_to_jpg: Image conversion utility for EMageFit. </para>
+</docs>
+            <reference>emagefit_scripts_1convert_spider_to_jpg_bin</reference>
+          </tocsect>
+        </tableofcontents>
+      </tocsect>
+      <tocsect>
+        <name>IMP.em2d Python package utilities</name>
+        <docs><para><ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP.em2d</ref> Python package utilities </para>
+</docs>
+        <reference>emagefit_scripts_1em2d_pkg</reference>
+      </tocsect>
+      <tocsect>
+        <name>IMP.em2d.imp_general Python package utilities</name>
+        <docs><para>IMP.em2d.imp_general Python package utilities </para>
+</docs>
+        <reference>emagefit_scripts_1em2d_gen_pkg</reference>
+      </tocsect>
+    </tableofcontents>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="emagefit_scripts_1tools">
+<title>Command line tools</title><sect2 id="emagefit_scripts_1emagefit_bin">
+<title>emagefit: Run all steps of modeling</title><para>This script performs Docking, Monte Carlo optimization, gathering of solutions from the Monte Carlo runs, DOMINO sampling, and finally writing the resulting models.</para>
+</sect2>
+<sect2 id="emagefit_scripts_1emagefit_dock_bin">
+<title>emagefit_dock: Docking using the HEXDOCK program</title><para>This uses HEXDOCK in text mode to perform a docking of a subunit (the ligand) into another subunit (the receptor). The script can be used as a standalone program to perform a docking or write the solutions. The script can be modified to use any docking program, by making a couple of changes:</para>
+<para><itemizedlist>
+<listitem><para>The class <computeroutput>HexDocking</computeroutput> is used only from emagefit and uses the <computeroutput>dock()</computeroutput> method. This class can be replaced with another class that provides a <computeroutput>dock()</computeroutput> method that saves the results to a file.</para>
+</listitem><listitem><para>emagefit also calls the functions <computeroutput>read_hex_transforms()</computeroutput> and <computeroutput>filter_docking_results()</computeroutput>. The only function that needs to be adapted for a different docking program is <computeroutput>parse_hex_transform()</computeroutput>, which both of them use.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="emagefit_scripts_1emagefit_cluster_bin">
+<title>emagefit_cluster: Performs clustering of the solutions stored in a database file.</title><para>This can be run as a standalone program. The help of the script gives the parameters required, and a typical command is:</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">emagefit_cluster<sp/>--exp<sp/>config_step_3.py<sp/>--db<sp/>domino_solutions.db<sp/>--o<sp/>clusters.db<sp/>--n<sp/>100<sp/>--orderby<sp/>em2d<sp/>--log<sp/>clusters.log<sp/>--rmsd<sp/>10</highlight></codeline>
+</programlisting></para>
+<para>To write the elements of the first cluster:</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">emagefit<sp/>--exp<sp/>config_step_3.py<sp/>--o<sp/>domino_solutions.db<sp/>--wcl<sp/>clusters.db<sp/>1</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="emagefit_scripts_1emagefit_score_bin">
+<title>emagefit_score: Scores a model using EM images.</title><para>This script returns the em2d score. It is useful for comparing models obtained by other sampling algorithms apart from the one described in the EMageFit paper. To score a model the parameters required are:</para>
+<para><itemizedlist>
+<listitem><para>The PDB file of the model.</para>
+</listitem><listitem><para>The selection file for the EM images.</para>
+</listitem><listitem><para>The pixel size of the EM images.</para>
+</listitem><listitem><para>The number of projections used for the coarse registration step of the scoring.</para>
+</listitem><listitem><para>The resolution used to generate the projections. The model is downsampled to this value of the resolution before projecting it. The larger the value, the blurrier the projections generated. For the published EMageFit benchmark a value as low as 2 was used, as the results are not very different from using lower resolutions. For images of poor quality, with no distinguishable features, values of 10-15 may be used.</para>
+</listitem><listitem><para>Images per batch. This parameter is used to avoid running out of memory when the number of images used for scoring a model is large. The scoring is done keeping in memory only the number of images specified by the parameter.</para>
+</listitem></itemizedlist>
+</para>
+<para>An example:</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">emagefit_score<sp/>structure.pdb<sp/>myimages.sel<sp/>3.6<sp/>20<sp/>5<sp/>100</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="emagefit_scripts_1convert_spider_to_jpg_bin">
+<title>convert_spider_to_jpg: Image conversion utility for EMageFit.</title><para>This utility can be used to convert one or more EM images from Spider format to JPG.</para>
+</sect2>
+</sect1>
+<sect1 id="emagefit_scripts_1em2d_pkg">
+<title>IMP.em2d Python package utilities</title><para>The <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP.em2d</ref> Python package contains a number of utility modules:</para>
+<para>IMP.em2d.buildxlinks - Contains all the code for generating the order of the dockings. It also contains the class <computeroutput>InitialDockingFromXlinks</computeroutput>, which is used to move the position of the subunits acting as ligand close to the receptor.</para>
+<para>IMP.em2d.DominoModel - Contains the <computeroutput>DominoModel</computeroutput> class, which has an IMP.Model as the main member. The class manages the details of setting the model restraints, performing the Monte Carlo runs, configuring the DOMINO sampler, and storing the results in a database.</para>
+<para>IMP.em2d.MonteCarloRelativeMoves - Contains the class <computeroutput>MonteCarloRelativeMoves</computeroutput> for setting and configuring a simulated annealing Monte Carlo optimizer. It also manages the profiles of temperature and iterations for the sampling. The optimizer uses one <ref refid="classIMP_1_1em2d_1_1RelativePositionMover" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP.em2d.RelativePositionMover</ref> object per docking to propose relative moves of a ligand respect to the receptor.</para>
+<para>IMP.em2d.restraints - Creates the restraints used for the modeling. It is called from DominoModel.</para>
+<para>IMP.em2d.sampling - Sets the positions and orientations for the components of the assembly before combining them using DOMINO. In the EMageFit benchmark the set of Monte Carlo solutions was used as input to DOMINO, but any other combination of positions and orientations for the subunits could be used.</para>
+<para>IMP.em2d.solutions_io - Contains the class <computeroutput>ResultsDB</computeroutput> for managing the database of solutions obtained during modeling.</para>
+<para>IMP.em2d.Database, IMP.em2d.argminmax, IMP.em2d.csv_related, and IMP.em2d.utility.py are supporting modules. <computeroutput>ResultsDB</computeroutput> inherits all the basic functionality from IMP.em2d.Database, which is a wrapper for SQLite databases. The wrapper is easy to use, general, and it does not depend on <computeroutput>IMP</computeroutput>.</para>
+</sect1>
+<sect1 id="emagefit_scripts_1em2d_gen_pkg">
+<title>IMP.em2d.imp_general Python package utilities</title><para>Some other scripts can be found in the IMP.em2d.imp_general Python package. These scripts are general and perform basic and/or frequent tasks in <computeroutput>IMP</computeroutput>. In principle they could be used in other <computeroutput>IMP</computeroutput> scripts.</para>
+<para>IMP.em2d.imp_general.representation - The main script. It contains functions for obtaining the representation of an assembly from one or more PDB files, creating rigid bodies for the components of the assembly, simplifying the structure of a protein using beads, getting coordinates and distance between residues, etc.</para>
+<para>IMP.em2d.imp_general.alignments - A couple of functions to align assemblies.</para>
+<para>IMP.em2d.imp_general.comparisons - Functions to compute the cross-correlation coefficient between density maps, RMSD and DRMS between models, and placement score for the subunits of an assembly as defined in the EMageFit paper.</para>
+<para>IMP.em2d.imp_general.movement - Functions for transforming a rigid body or a structure. </para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/doc/scripts.dox"/>
+  </compounddef>
+</doxygen>

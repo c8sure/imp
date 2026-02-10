@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ComplementarityRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ComplementarityRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/multifit/ComplementarityRestraint.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a2c867dd22d4353e3de5fb058362d7cc9" prot="private" static="no">
+        <type>core::DataObject&lt; GridPair &gt;</type>
+        <definition>typedef core::DataObject&lt;GridPair&gt; IMP::multifit::ComplementarityRestraint::GridObject</definition>
+        <argsstring></argsstring>
+        <name>GridObject</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::GridObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="92" column="28" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4625d64d6e168a6e45474e968b04d218" prot="private" static="no">
+        <type>std::pair&lt; algebra::Transformation3D, algebra::DenseGrid3D&lt; float &gt; &gt;</type>
+        <definition>typedef std::pair&lt;algebra::Transformation3D, algebra::DenseGrid3D&lt;float&gt; &gt; IMP::multifit::ComplementarityRestraint::GridPair</definition>
+        <argsstring></argsstring>
+        <name>GridPair</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::GridPair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="91" column="7" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a96185fb5ef5506d10f049d05e39eff7a" prot="private" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::multifit::ComplementarityRestraint::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::a_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="102" column="17" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa1ebeb669c4b4e4efc208a9c4948567a" prot="private" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::multifit::ComplementarityRestraint::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::b_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="102" column="20" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1aecc7f4c65e8e4986dde0e72f762125f1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::boundary_coef_</definition>
+        <argsstring></argsstring>
+        <name>boundary_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::boundary_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="109" column="50" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a33add92d0a07e3ef2adfa9cbb0cfa6b1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::complementarity_coef_</definition>
+        <argsstring></argsstring>
+        <name>complementarity_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::complementarity_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="109" column="28" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa9906158feaf5a6a9afed5cd497c52cd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::complementarity_thickness_</definition>
+        <argsstring></argsstring>
+        <name>complementarity_thickness_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::complementarity_thickness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="108" column="10" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1af77a24306b18cbf3e7764ed13289356b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::complementarity_value_</definition>
+        <argsstring></argsstring>
+        <name>complementarity_value_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::complementarity_value_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="108" column="37" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a8f1c499232bd504d6e2c831ab8aeb9e8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::interior_thickness_</definition>
+        <argsstring></argsstring>
+        <name>interior_thickness_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::interior_thickness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="110" column="10" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a137a691a6166dc28b3835f1c0ac7c57b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::maximum_penetration_</definition>
+        <argsstring></argsstring>
+        <name>maximum_penetration_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::maximum_penetration_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="107" column="10" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a5b319d8ee80b63f319b4dc68c62fd4d2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::maximum_penetration_score_</definition>
+        <argsstring></argsstring>
+        <name>maximum_penetration_score_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::maximum_penetration_score_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="106" column="30" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a50a5ee05d57cf7509a5f62f8aaaccef6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::maximum_separation_</definition>
+        <argsstring></argsstring>
+        <name>maximum_separation_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::maximum_separation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="106" column="10" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a74801e7a2f95ed27769b392944e98b90" prot="private" static="no" mutable="no">
+        <type>ObjectKey</type>
+        <definition>ObjectKey IMP::multifit::ComplementarityRestraint::ok_</definition>
+        <argsstring></argsstring>
+        <name>ok_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::ok_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="104" column="13" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4a634da16e0a9a1a98f22689fb7137be" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::penetration_coef_</definition>
+        <argsstring></argsstring>
+        <name>penetration_coef_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::penetration_coef_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="109" column="10" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9e5f9bfc9b6eef3d607838d07220cc0e" prot="private" static="no" mutable="no">
+        <type>core::RigidBody</type>
+        <definition>core::RigidBody IMP::multifit::ComplementarityRestraint::rba_</definition>
+        <argsstring></argsstring>
+        <name>rba_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::rba_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="103" column="19" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1ac6ab5fbd43e51a000163770f006b932b" prot="private" static="no" mutable="no">
+        <type>core::RigidBody</type>
+        <definition>core::RigidBody IMP::multifit::ComplementarityRestraint::rbb_</definition>
+        <argsstring></argsstring>
+        <name>rbb_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::rbb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="103" column="24" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1aafac9ccb60aa04ee67ba11609bd004d5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ComplementarityRestraint::voxel_size_</definition>
+        <argsstring></argsstring>
+        <name>voxel_size_</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::voxel_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="110" column="30" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a37d184825a954eb3580697ff662d29ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ComplementarityRestraint::ComplementarityRestraint</definition>
+        <argsstring>(const ParticlesTemp &amp;a, const ParticlesTemp &amp;b, std::string name=&quot;ComplementarityRestraint %1%&quot;)</argsstring>
+        <name>ComplementarityRestraint</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::ComplementarityRestraint</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;ComplementarityRestraint %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1af7d46c7bd5fe85b93f3d2bdc71a25b87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::ComplementarityRestraint::~ComplementarityRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~ComplementarityRestraint</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::~ComplementarityRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="84" column="231" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1ae26e624e20723cd439633fb012880a3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::multifit::ComplementarityRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="83" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1ab99fec8290126b70109965692ada5879" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::ComplementarityRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="84" column="34" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3fb871bbb061e460881096b1864139a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::ComplementarityRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="84" column="103" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4f57e73a4d0b01fdf3f987b7d3dffa25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::ComplementarityRestraint::get_voxel_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_voxel_size</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::get_voxel_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="80" column="9" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a27d2804cdd56909b2588535dbd00f095" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_boundary_coefficient</definition>
+        <argsstring>(double bc)</argsstring>
+        <name>set_boundary_coefficient</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_boundary_coefficient</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>bc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="79" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3e9518671cf97900ca6aec1e6e1b9e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_complementarity_coefficient</definition>
+        <argsstring>(double cc)</argsstring>
+        <name>set_complementarity_coefficient</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_complementarity_coefficient</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="75" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9f77d866de59965ead8ce1626ffa4d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_complementarity_thickness</definition>
+        <argsstring>(double th)</argsstring>
+        <name>set_complementarity_thickness</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_complementarity_thickness</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>th</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the thickness to use for the external complementarity layer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="60" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1ad5cf5dc29719b19a9deb7cb3504c6250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_complementarity_value</definition>
+        <argsstring>(double th)</argsstring>
+        <name>set_complementarity_value</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_complementarity_value</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>th</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value to use for external complementarity voxels. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="66" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a1172757f971a296631e3ec15b39df6a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_interior_layer_thickness</definition>
+        <argsstring>(double th)</argsstring>
+        <name>set_interior_layer_thickness</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_interior_layer_thickness</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>th</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the thickness of the interior layers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="68" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a865805a86d84f35935fc2115b0feb075" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_maximum_penetration</definition>
+        <argsstring>(double d)</argsstring>
+        <name>set_maximum_penetration</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_maximum_penetration</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Alternatively, you can bound the maximum allowed penetration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="54" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1af73ad08df0acb0c0d7fdbc415c4d79f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_maximum_penetration_score</definition>
+        <argsstring>(double s)</argsstring>
+        <name>set_maximum_penetration_score</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_maximum_penetration_score</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the two molecules have a penetration score of more than this, infinity is returned as the score. This score is roughly the number of cubic angstroms that the two molecules overlap (assuming only one internal layer). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="49" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a882c153d956b972f12180cf0af3a15c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_maximum_separation</definition>
+        <argsstring>(double s)</argsstring>
+        <name>set_maximum_separation</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_maximum_separation</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the two molecules&apos; bounding sphere surfaces are separated by more than this distance, infinity is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="58" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1af1f5f93747777705e02b93874a2e55c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::set_penetration_coefficient</definition>
+        <argsstring>(double pc)</argsstring>
+        <name>set_penetration_coefficient</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::set_penetration_coefficient</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="73" column="8" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9c7331674e24e5874371f4966a6f2cbd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::multifit::ComplementarityRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="81" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3dba3b7a1925a2a199e12cbfe707d5f4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::algebra::DenseGrid3D&lt; float &gt;</type>
+        <definition>IMP::algebra::DenseGrid3D&lt; float &gt; IMP::multifit::ComplementarityRestraint::get_grid</definition>
+        <argsstring>(const ParticlesTemp &amp;a, double thickness, double value, double interior_thickness, double voxel) const</argsstring>
+        <name>get_grid</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::get_grid</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>interior_thickness</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>voxel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="97" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1a6d96995f818a8ec4c6b7de87fd251c89" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>GridObject *</type>
+        <definition>GridObject * IMP::multifit::ComplementarityRestraint::get_grid_object</definition>
+        <argsstring>(core::RigidBody rb, const ParticlesTemp &amp;a, ObjectKey ok, double thickness, double value, double interior_thickness, double voxel) const</argsstring>
+        <name>get_grid_object</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::get_grid_object</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>ObjectKey</type>
+          <declname>ok</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>interior_thickness</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>voxel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="93" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComplementarityRestraint_1aac4c550657ba4b18d248a3e09e118d85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComplementarityRestraint::update_voxel</definition>
+        <argsstring>()</argsstring>
+        <name>update_voxel</name>
+        <qualifiedname>IMP::multifit::ComplementarityRestraint::update_voxel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ComplementarityRestraint.h" line="101" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Compute the complementarity between two molecules. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The score returned is infinity if the two molecules overlap by more than the value set for <ref refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af73ad08df0acb0c0d7fdbc415c4d79f1" kindref="member">set_maximum_penetration_score()</ref> or if the two molecules are separated by more than <ref refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a882c153d956b972f12180cf0af3a15c6" kindref="member">set_maximum_separation()</ref>.</para>
+<para>Otherwise, the integral of the <ref refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ad5cf5dc29719b19a9deb7cb3504c6250" kindref="member">set_complementarity_value()</ref> value over a layer of thickness <ref refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9f77d866de59965ead8ce1626ffa4d52" kindref="member">set_complementarity_thickness()</ref> around the molecule is returned.</para>
+<para><simplesect kind="note"><para>currently each of the particle lists must belong to exactly one rigid body. And, currently, each rigid body can only be associated with one list of particles (that is, there cannot be multiple restraints with different lists of particles that all belong to the same rigid body).</para>
+</simplesect>
+<simplesect kind="note"><para>The restraint does not support derivatives.</para>
+</simplesect>
+<simplesect kind="note"><para>The restraint pretty much only makes sense for use with Domino as it returns infinity for many cases. Monte Carlo might make sense with certain parameters. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/ComplementarityRestraint.h" line="40" column="1" bodyfile="include/IMP/multifit/ComplementarityRestraint.h" bodystart="40" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a96185fb5ef5506d10f049d05e39eff7a" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>a_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa1ebeb669c4b4e4efc208a9c4948567a" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>b_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aecc7f4c65e8e4986dde0e72f762125f1" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>boundary_coef_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a33add92d0a07e3ef2adfa9cbb0cfa6b1" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>complementarity_coef_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa9906158feaf5a6a9afed5cd497c52cd" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>complementarity_thickness_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af77a24306b18cbf3e7764ed13289356b" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>complementarity_value_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a37d184825a954eb3580697ff662d29ed" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>ComplementarityRestraint</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ae26e624e20723cd439633fb012880a3b" prot="public" virt="virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3dba3b7a1925a2a199e12cbfe707d5f4" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>get_grid</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a6d96995f818a8ec4c6b7de87fd251c89" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>get_grid_object</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ab99fec8290126b70109965692ada5879" prot="public" virt="virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3fb871bbb061e460881096b1864139a8" prot="public" virt="virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4f57e73a4d0b01fdf3f987b7d3dffa25" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>get_voxel_size</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a2c867dd22d4353e3de5fb058362d7cc9" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>GridObject</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4625d64d6e168a6e45474e968b04d218" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>GridPair</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a8f1c499232bd504d6e2c831ab8aeb9e8" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>interior_thickness_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a137a691a6166dc28b3835f1c0ac7c57b" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>maximum_penetration_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a5b319d8ee80b63f319b4dc68c62fd4d2" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>maximum_penetration_score_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a50a5ee05d57cf7509a5f62f8aaaccef6" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>maximum_separation_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a74801e7a2f95ed27769b392944e98b90" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>ok_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4a634da16e0a9a1a98f22689fb7137be" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>penetration_coef_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9e5f9bfc9b6eef3d607838d07220cc0e" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>rba_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ac6ab5fbd43e51a000163770f006b932b" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>rbb_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a27d2804cdd56909b2588535dbd00f095" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_boundary_coefficient</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3e9518671cf97900ca6aec1e6e1b9e6a" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_complementarity_coefficient</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9f77d866de59965ead8ce1626ffa4d52" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_complementarity_thickness</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ad5cf5dc29719b19a9deb7cb3504c6250" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_complementarity_value</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a1172757f971a296631e3ec15b39df6a9" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_interior_layer_thickness</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a865805a86d84f35935fc2115b0feb075" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_maximum_penetration</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af73ad08df0acb0c0d7fdbc415c4d79f1" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_maximum_penetration_score</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a882c153d956b972f12180cf0af3a15c6" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_maximum_separation</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af1f5f93747777705e02b93874a2e55c4" prot="public" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>set_penetration_coefficient</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9c7331674e24e5874371f4966a6f2cbd" prot="public" virt="virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aac4c550657ba4b18d248a3e09e118d85" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>update_voxel</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aafac9ccb60aa04ee67ba11609bd004d5" prot="private" virt="non-virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>voxel_size_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af7d46c7bd5fe85b93f3d2bdc71a25b87" prot="public" virt="virtual"><scope>IMP::multifit::ComplementarityRestraint</scope><name>~ComplementarityRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

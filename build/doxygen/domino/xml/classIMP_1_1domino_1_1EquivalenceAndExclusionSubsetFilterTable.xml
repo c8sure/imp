@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::DisjointSetsSubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a07a441b0c4ee3a0bc3b412a7d49bf598" prot="private" static="no">
+        <type><ref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" kindref="compound">DisjointSetsSubsetFilterTable</ref></type>
+        <definition>typedef DisjointSetsSubsetFilterTable IMP::domino::EquivalenceAndExclusionSubsetFilterTable::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="124" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1abde0e31347fa2fa0c058dc0f5cf30ca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::EquivalenceAndExclusionSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>EquivalenceAndExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::EquivalenceAndExclusionSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="187" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a2354750aa4ca41885dd8726639902dc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::EquivalenceAndExclusionSubsetFilterTable</definition>
+        <argsstring>(IMP::domino::ParticleStatesTable *pst)</argsstring>
+        <name>EquivalenceAndExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::EquivalenceAndExclusionSubsetFilterTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP::domino::ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="140" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a80531c03f947c9ed8c8b73db44ddac97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::EquivalenceAndExclusionSubsetFilterTable::~EquivalenceAndExclusionSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~EquivalenceAndExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::~EquivalenceAndExclusionSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="591" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1ad8e11b7bd6f1bb6c5b155a9529ef1d82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a85889920c87005d79278db21d4fbcafb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a3a0292c7cf313f19a831227bce4023d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="394" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a453ef3ccac3fd973597a72126aff9944" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="463" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Define sets of equivalent and exclusive particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is equivalent to having both an <ref refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" kindref="compound">EquivalenceSubsetFilterTable</ref> and an <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">ExclusionSubsetFilterTable</ref> on the same particles, but faster. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="245" column="2" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="245"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" prot="public" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>add_pair</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" prot="public" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>add_set</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" prot="protected" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" prot="protected" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a2354750aa4ca41885dd8726639902dc4" prot="public" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>EquivalenceAndExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1abde0e31347fa2fa0c058dc0f5cf30ca9" prot="public" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>EquivalenceAndExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" prot="protected" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_number_of_sets</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" prot="protected" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_set</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1ad8e11b7bd6f1bb6c5b155a9529ef1d82" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a85889920c87005d79278db21d4fbcafb" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a3a0292c7cf313f19a831227bce4023d4" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a453ef3ccac3fd973597a72126aff9944" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a07a441b0c4ee3a0bc3b412a7d49bf598" prot="private" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a80531c03f947c9ed8c8b73db44ddac97" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>~EquivalenceAndExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

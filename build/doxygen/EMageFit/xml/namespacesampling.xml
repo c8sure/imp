@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacesampling" kind="namespace" language="Python">
+    <compoundname>sampling</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="sampling_8py_1ab943a2e62b7e08580fce932cf465fe9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sampling.create_sampling_grid_2d</definition>
+        <argsstring>(diameter, n_axis_points)</argsstring>
+        <name>create_sampling_grid_2d</name>
+        <qualifiedname>sampling.create_sampling_grid_2d</qualifiedname>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>n_axis_points</type>
+          <defname>n_axis_points</defname>
+        </param>
+        <briefdescription>
+<para>Creates a grid of positions (Vector3Ds), centered at 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The shape of the grid is a circle with diameter given by the parameter. n_axis_points is the number of points along an axis: The axis X Y will contain n_axis_points, equispaced. The other regions of space will contain only the points allowed by the size of the circle.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/sampling.py" line="47" column="1" bodyfile="lib/IMP/EMageFit/sampling.py" bodystart="47" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="sampling_8py_1ae1a362aea27e72bd7e4f3ea6f7cce006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sampling.create_sampling_grid_3d</definition>
+        <argsstring>(diameter, n_axis_points)</argsstring>
+        <name>create_sampling_grid_3d</name>
+        <qualifiedname>sampling.create_sampling_grid_3d</qualifiedname>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>n_axis_points</type>
+          <defname>n_axis_points</defname>
+        </param>
+        <briefdescription>
+<para>Creates a grid of positions (Vector3Ds), centered at 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape of the grid is a sphere with this diameter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_axis_points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points used along an axis for the grid. The axis X Y and Z will contain n_axis_points, equispaced. The other regions of space will contain only the points allowed by the size of the sphere.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/sampling.py" line="23" column="1" bodyfile="lib/IMP/EMageFit/sampling.py" bodystart="23" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="sampling_8py_1ae48c4055512552bff47800b1cffe4895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sampling.get_orientations_nearby</definition>
+        <argsstring>(rotation, n, f)</argsstring>
+        <name>get_orientations_nearby</name>
+        <qualifiedname>sampling.get_orientations_nearby</qualifiedname>
+        <param>
+          <type>rotation</type>
+          <defname>rotation</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+<para>Rotations nearby a given one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>They are got interpolating with the rotations of the uniform coverage. The parameter f (0 &lt;= f &lt;= 1) must be close to 0 to get orientations that are close to the given orientation<itemizedlist>
+<listitem><para>Values from 0.1 (tight cluster) to 0.4 (loose) seem to be ok n - number of rotations requested</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/sampling.py" line="72" column="1" bodyfile="lib/IMP/EMageFit/sampling.py" bodystart="72" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/sampling.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

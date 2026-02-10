@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1TwoStateGoModelRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::TwoStateGoModelRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Restraint</basecompoundref>
+    <includes local="no">IMP/spb/TwoStateGoModelRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aed6d782f18b6faf3556380ecbec53e08" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::TwoStateGoModelRestraint::Beta_</definition>
+        <argsstring></argsstring>
+        <name>Beta_</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::Beta_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="24" column="9" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ac1eaeee3de43fd926aaa0a44fbaf3c9b" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::TwoStateGoModelRestraint::DeltaV_</definition>
+        <argsstring></argsstring>
+        <name>DeltaV_</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::DeltaV_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="25" column="9" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3aea0e29974266798ef362cdccedf0f8" prot="private" static="no" mutable="no">
+        <type>std::map&lt; IntPair, Float &gt;</type>
+        <definition>std::map&lt;IntPair, Float&gt; IMP::spb::TwoStateGoModelRestraint::native_attrA_</definition>
+        <argsstring></argsstring>
+        <name>native_attrA_</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::native_attrA_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="26" column="12" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a245f2db1e412c68cc5b9f288a9ce453a" prot="private" static="no" mutable="no">
+        <type>std::map&lt; IntPair, Float &gt;</type>
+        <definition>std::map&lt;IntPair, Float&gt; IMP::spb::TwoStateGoModelRestraint::native_attrB_</definition>
+        <argsstring></argsstring>
+        <name>native_attrB_</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::native_attrB_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="27" column="12" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3d5c8b5bb4bdd6e5a6101acf61602f02" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::TwoStateGoModelRestraint::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="23" column="13" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a928b36d702bc4b2981ee7741e2ee8f33" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TwoStateGoModelRestraint::get_contribution</definition>
+        <argsstring>(Float dist, Float dist0) const</argsstring>
+        <name>get_contribution</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::get_contribution</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>dist0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="30" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a652669233eaa79ce8de83f4b78cc997e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TwoStateGoModelRestraint::get_native_potential</definition>
+        <argsstring>(const std::map&lt; IntPair, Float &gt; &amp;native) const</argsstring>
+        <name>get_native_potential</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::get_native_potential</qualifiedname>
+        <param>
+          <type>const std::map&lt; IntPair, Float &gt; &amp;</type>
+          <declname>native</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a777d991ba45adb75ca10e02de5000f6a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::TwoStateGoModelRestraint::set_parameters</definition>
+        <argsstring>(Particles psA, Particles psB, Float cutoff)</argsstring>
+        <name>set_parameters</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::set_parameters</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>psA</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>psB</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="29" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a86411f5aaf5aabbd595385cc1cc079f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::TwoStateGoModelRestraint::TwoStateGoModelRestraint</definition>
+        <argsstring>(Particles ps, Particles psA, Particles psB, Float Beta, Float Delta, Float Cutoff)</argsstring>
+        <name>TwoStateGoModelRestraint</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::TwoStateGoModelRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>psA</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>psB</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>Beta</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>Delta</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>Cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a5cb3482738d4c21392afb5c6e4df7237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::TwoStateGoModelRestraint::~TwoStateGoModelRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~TwoStateGoModelRestraint</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::~TwoStateGoModelRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="42" column="231" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ad7ec415885c8ac3ca98aadeca26a73a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::TwoStateGoModelRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="39" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aa49defd2033fdc973612bfebc2a62eb9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::TwoStateGoModelRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="42" column="34" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ae85a46b2c7144b0103effac2d53f7662" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::TwoStateGoModelRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="42" column="103" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a7ae206ec555800493787a24ba0c8fdce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::TwoStateGoModelRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::spb::TwoStateGoModelRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="37" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Two-state Go-Model Restraint. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/TwoStateGoModelRestraint.h" line="21" column="1" bodyfile="include/IMP/spb/TwoStateGoModelRestraint.h" bodystart="21" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aed6d782f18b6faf3556380ecbec53e08" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>Beta_</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ac1eaeee3de43fd926aaa0a44fbaf3c9b" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>DeltaV_</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ad7ec415885c8ac3ca98aadeca26a73a4" prot="public" virt="virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a928b36d702bc4b2981ee7741e2ee8f33" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>get_contribution</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a652669233eaa79ce8de83f4b78cc997e" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>get_native_potential</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aa49defd2033fdc973612bfebc2a62eb9" prot="public" virt="virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ae85a46b2c7144b0103effac2d53f7662" prot="public" virt="virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3aea0e29974266798ef362cdccedf0f8" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>native_attrA_</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a245f2db1e412c68cc5b9f288a9ce453a" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>native_attrB_</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3d5c8b5bb4bdd6e5a6101acf61602f02" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a777d991ba45adb75ca10e02de5000f6a" prot="private" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>set_parameters</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a86411f5aaf5aabbd595385cc1cc079f0" prot="public" virt="non-virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>TwoStateGoModelRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a7ae206ec555800493787a24ba0c8fdce" prot="public" virt="virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a5cb3482738d4c21392afb5c6e4df7237" prot="public" virt="virtual"><scope>IMP::spb::TwoStateGoModelRestraint</scope><name>~TwoStateGoModelRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

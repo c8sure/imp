@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1TiltSingletonScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::TiltSingletonScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SingletonScore</basecompoundref>
+    <includes local="no">IMP/spb/TiltSingletonScore.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TiltSingletonScore_1addbe1d1e7019ce9606774085d1d48f47" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; UnaryFunction &gt;</type>
+        <definition>IMP::PointerMember&lt;UnaryFunction&gt; IMP::spb::TiltSingletonScore::f_</definition>
+        <argsstring></argsstring>
+        <name>f_</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::f_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="30" column="22" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TiltSingletonScore_1ae9f4cf615167ccb1dc32fd581fe8b319" prot="private" static="no" mutable="no">
+        <type>algebra::VectorD&lt; 3 &gt;</type>
+        <definition>algebra::VectorD&lt;3&gt; IMP::spb::TiltSingletonScore::global_</definition>
+        <argsstring></argsstring>
+        <name>global_</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::global_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="32" column="20" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TiltSingletonScore_1abd2e5669f7edeb1f49dd2e3da973ae9e" prot="private" static="no" mutable="no">
+        <type>algebra::VectorD&lt; 3 &gt;</type>
+        <definition>algebra::VectorD&lt;3&gt; IMP::spb::TiltSingletonScore::local_</definition>
+        <argsstring></argsstring>
+        <name>local_</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::local_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="31" column="20" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a342433901f7f30ddc1d221ea9a2ea5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::TiltSingletonScore::TiltSingletonScore</definition>
+        <argsstring>(UnaryFunction *f, const algebra::VectorD&lt; 3 &gt; &amp;v1, const algebra::VectorD&lt; 3 &gt; &amp;v2)</argsstring>
+        <name>TiltSingletonScore</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::TiltSingletonScore</qualifiedname>
+        <param>
+          <type>UnaryFunction *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const algebra::VectorD&lt; 3 &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const algebra::VectorD&lt; 3 &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1ab8fd03075aae562eeef25e76915808cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::TiltSingletonScore::~TiltSingletonScore</definition>
+        <argsstring>()</argsstring>
+        <name>~TiltSingletonScore</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::~TiltSingletonScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="45" column="231" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a3a80bfed17479205093bdb892c7af638" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::TiltSingletonScore::do_get_inputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::do_get_inputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="41" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a4742c27bd2bbc8d21413e8e9a520c6cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TiltSingletonScore::evaluate_if_good_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;p, DerivativeAccumulator *da, double max, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override</argsstring>
+        <name>evaluate_if_good_indexes</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::evaluate_if_good_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="44" column="905" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a67fde55f6a70f6c0c444dfe9ea8a17b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::TiltSingletonScore::evaluate_index</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndex p, DerivativeAccumulator *da) const override</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::evaluate_index</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a405b170d08c98b54c85472e64ed9e30b" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TiltSingletonScore::evaluate_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::evaluate_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="44" column="11" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a61a8eb79c8063b655f5c10b11167d2d4" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TiltSingletonScore::evaluate_indexes_delta</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;p, DerivativeAccumulator *da, const std::vector&lt; unsigned &gt; &amp;indexes, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_delta</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::evaluate_indexes_delta</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned &gt; &amp;</type>
+          <declname>indexes</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="44" column="555" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1ab31bc26c6eb0a97b3dfd3e231464806f" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::TiltSingletonScore::evaluate_indexes_scores</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_scores</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::evaluate_indexes_scores</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="44" column="260" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1ad11ee3d24bd286bdf60036634e335710" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::TiltSingletonScore::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="45" column="34" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1a29d625ac5350e407a0f75baeb94ff7dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::TiltSingletonScore::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="45" column="103" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TiltSingletonScore_1aa1491006c6b2fd518e03457e4f00e11f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::TiltSingletonScore::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::TiltSingletonScore::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TiltSingletonScore.h" line="46" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Apply a function to the distance to a fixed point. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A particle is scored based on the distance between it and a constant point as passed to a UnaryFunction. This is useful for anchoring constraining particles within a sphere.</para>
+<para>To restrain a set of particles store in SingletonContainer pc in a sphere do the following: <htmlonly></htmlonly> </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/TiltSingletonScore.h" line="29" column="1" bodyfile="include/IMP/spb/TiltSingletonScore.h" bodystart="29" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a3a80bfed17479205093bdb892c7af638" prot="public" virt="virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a4742c27bd2bbc8d21413e8e9a520c6cc" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>evaluate_if_good_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a67fde55f6a70f6c0c444dfe9ea8a17b7" prot="public" virt="virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>evaluate_index</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a405b170d08c98b54c85472e64ed9e30b" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>evaluate_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a61a8eb79c8063b655f5c10b11167d2d4" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>evaluate_indexes_delta</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ab31bc26c6eb0a97b3dfd3e231464806f" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>evaluate_indexes_scores</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1addbe1d1e7019ce9606774085d1d48f47" prot="private" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>f_</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ad11ee3d24bd286bdf60036634e335710" prot="public" virt="virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a29d625ac5350e407a0f75baeb94ff7dd" prot="public" virt="virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ae9f4cf615167ccb1dc32fd581fe8b319" prot="private" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>global_</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1abd2e5669f7edeb1f49dd2e3da973ae9e" prot="private" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>local_</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1aa1491006c6b2fd518e03457e4f00e11f" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a342433901f7f30ddc1d221ea9a2ea5c7" prot="public" virt="non-virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>TiltSingletonScore</name></member>
+      <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ab8fd03075aae562eeef25e76915808cd" prot="public" virt="virtual"><scope>IMP::spb::TiltSingletonScore</scope><name>~TiltSingletonScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

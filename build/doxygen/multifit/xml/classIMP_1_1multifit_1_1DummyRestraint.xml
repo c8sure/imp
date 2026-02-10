@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1DummyRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::DummyRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/multifit/merge_tree_utils.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DummyRestraint_1a31b2bf8169cbc2ca4ce07aace413ed97" prot="protected" static="no" mutable="no">
+        <type>Particle *</type>
+        <definition>Particle* IMP::multifit::DummyRestraint::p1_</definition>
+        <argsstring></argsstring>
+        <name>p1_</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::p1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="55" column="12" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1DummyRestraint_1a16c662d39a05fbcf9f20fc52a1d3b9f3" prot="protected" static="no" mutable="no">
+        <type>Particle *</type>
+        <definition>Particle * IMP::multifit::DummyRestraint::p2_</definition>
+        <argsstring></argsstring>
+        <name>p2_</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::p2_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="55" column="16" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1ac1b4e09d329595adea38a845ec741ed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::DummyRestraint::DummyRestraint</definition>
+        <argsstring>(Particle *a, Particle *b)</argsstring>
+        <name>DummyRestraint</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::DummyRestraint</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="45" column="3" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1af1f487bc8a61e22bdcfe9621d27b86ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::DummyRestraint::~DummyRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~DummyRestraint</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::~DummyRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="52" column="231" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1ad3a0387c86e2f83fcab3985e9a58a033" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::multifit::DummyRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="51" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1a0947501259bf41c1d2c5ed2da4152d7d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::DummyRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="52" column="34" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1aae8c8ee56232b6bd0d7588e441eef333" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::DummyRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="52" column="103" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1DummyRestraint_1a31afcd6930599e78a4798ad4918c54d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::multifit::DummyRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::multifit::DummyRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="49" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple Restraint that always returns a score of zero. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/merge_tree_utils.h" line="43" column="1" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="43" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1ad3a0387c86e2f83fcab3985e9a58a033" prot="public" virt="virtual"><scope>IMP::multifit::DummyRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1ac1b4e09d329595adea38a845ec741ed6" prot="public" virt="non-virtual"><scope>IMP::multifit::DummyRestraint</scope><name>DummyRestraint</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a0947501259bf41c1d2c5ed2da4152d7d" prot="public" virt="virtual"><scope>IMP::multifit::DummyRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1aae8c8ee56232b6bd0d7588e441eef333" prot="public" virt="virtual"><scope>IMP::multifit::DummyRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a31b2bf8169cbc2ca4ce07aace413ed97" prot="protected" virt="non-virtual"><scope>IMP::multifit::DummyRestraint</scope><name>p1_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a16c662d39a05fbcf9f20fc52a1d3b9f3" prot="protected" virt="non-virtual"><scope>IMP::multifit::DummyRestraint</scope><name>p2_</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a31afcd6930599e78a4798ad4918c54d7" prot="public" virt="virtual"><scope>IMP::multifit::DummyRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1multifit_1_1DummyRestraint_1af1f487bc8a61e22bdcfe9621d27b86ad" prot="public" virt="virtual"><scope>IMP::multifit::DummyRestraint</scope><name>~DummyRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

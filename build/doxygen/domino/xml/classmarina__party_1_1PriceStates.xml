@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classmarina__party_1_1PriceStates" kind="class" language="Python" prot="public">
+    <compoundname>marina_party::PriceStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmarina__party_1_1PriceStates_1a5b3d9c9d3b6662773c96a83c61570a0a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.PriceStates::prices</definition>
+        <argsstring></argsstring>
+        <name>prices</name>
+        <qualifiedname>marina_party.PriceStates.prices</qualifiedname>
+        <initializer>=  prices</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="42" column="1" bodyfile="examples/domino/marina_party.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmarina__party_1_1PriceStates_1aba5553d165cd04b8f9283afd9e20e30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.PriceStates.__init__</definition>
+        <argsstring>(self, prices)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>marina_party.PriceStates.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>prices</type>
+          <defname>prices</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="41" column="1" bodyfile="examples/domino/marina_party.py" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1PriceStates_1a3352d7fb020872b9883e410b723ff244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.PriceStates.get_number_of_particle_states</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>marina_party.PriceStates.get_number_of_particle_states</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="49" column="1" bodyfile="examples/domino/marina_party.py" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1PriceStates_1a8eb73fe999f2fc1b8c1e1c4ff87c746e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.PriceStates.load_particle_state</definition>
+        <argsstring>(self, i, particle)</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>marina_party.PriceStates.load_particle_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>particle</type>
+          <defname>particle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="45" column="1" bodyfile="examples/domino/marina_party.py" bodystart="45" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>marina_party.PriceStates</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>marina_party.PriceStates</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="examples/domino/marina_party.py" line="39" column="1" bodyfile="examples/domino/marina_party.py" bodystart="39" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classmarina__party_1_1PriceStates_1aba5553d165cd04b8f9283afd9e20e30d" prot="public" virt="non-virtual"><scope>marina_party::PriceStates</scope><name>__init__</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>marina_party::PriceStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>marina_party::PriceStates</scope><name>get_nearest_state</name></member>
+      <member refid="classmarina__party_1_1PriceStates_1a3352d7fb020872b9883e410b723ff244" prot="public" virt="non-virtual"><scope>marina_party::PriceStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classmarina__party_1_1PriceStates_1a8eb73fe999f2fc1b8c1e1c4ff87c746e" prot="public" virt="non-virtual"><scope>marina_party::PriceStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>marina_party::PriceStates</scope><name>ParticleStates</name></member>
+      <member refid="classmarina__party_1_1PriceStates_1a5b3d9c9d3b6662773c96a83c61570a0a" prot="public" virt="non-virtual"><scope>marina_party::PriceStates</scope><name>prices</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>marina_party::PriceStates</scope><name>~ParticleStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

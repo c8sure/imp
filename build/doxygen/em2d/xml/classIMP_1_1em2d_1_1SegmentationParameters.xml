@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1SegmentationParameters" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::SegmentationParameters</compoundname>
+    <includes local="no">IMP/em2d/image_processing.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1em2d_1_1SegmentationParameters_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="24" column="16" bodyfile="include/IMP/em2d/image_processing.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1af48d6a87d149cae79800406fb958567c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::em2d::SegmentationParameters::binary_background</definition>
+        <argsstring></argsstring>
+        <name>binary_background</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::binary_background</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="39" column="7" bodyfile="include/IMP/em2d/image_processing.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1a32de358dececfaa5189dbed89c10ad2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::em2d::SegmentationParameters::binary_foreground</definition>
+        <argsstring></argsstring>
+        <name>binary_foreground</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::binary_foreground</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="40" column="7" bodyfile="include/IMP/em2d/image_processing.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1ac6165203216416e001cd20d1c1a67769" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::diffusion_beta</definition>
+        <argsstring></argsstring>
+        <name>diffusion_beta</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::diffusion_beta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="34" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1aba746354e253308a4abe40b0da0f138c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::diffusion_timesteps</definition>
+        <argsstring></argsstring>
+        <name>diffusion_timesteps</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::diffusion_timesteps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="35" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1aa2e7497ee46a3e60e6602b78579381cb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::fill_holes_stddevs</definition>
+        <argsstring></argsstring>
+        <name>fill_holes_stddevs</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::fill_holes_stddevs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="36" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1aa9f4858f81423a290c37b8bfccf53167" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::image_pixel_size</definition>
+        <argsstring></argsstring>
+        <name>image_pixel_size</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::image_pixel_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="33" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1af9e04a93ec80b92cc43998a652ae3716" prot="public" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::SegmentationParameters::opening_kernel</definition>
+        <argsstring></argsstring>
+        <name>opening_kernel</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::opening_kernel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="37" column="11" bodyfile="include/IMP/em2d/image_processing.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1afc590a1a09b6a4e7ae4b6ed413d7609c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::remove_sizing_percentage</definition>
+        <argsstring></argsstring>
+        <name>remove_sizing_percentage</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::remove_sizing_percentage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="38" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1SegmentationParameters_1a4df1cb6b8b762d7d9ca1b6ec9af12bcf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::SegmentationParameters::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="41" column="10" bodyfile="include/IMP/em2d/image_processing.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SegmentationParameters_1adc833501b94bef1921594a2cd17731a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::em2d::SegmentationParameters::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="26" column="19" bodyfile="include/IMP/em2d/image_processing.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SegmentationParameters_1afa5cecfaa3f086500112a4b9ea16f1fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::SegmentationParameters::SegmentationParameters</definition>
+        <argsstring>()</argsstring>
+        <name>SegmentationParameters</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::SegmentationParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="43" column="3" bodyfile="include/IMP/em2d/image_processing.h" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SegmentationParameters_1a225c5d8cb135469ff2ffec837dbd4909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::SegmentationParameters::SegmentationParameters</definition>
+        <argsstring>(double apix, double diff_beta, unsigned int diff_timesteps, double fh_stddevs, const cv::Mat &amp;kr, int background, int foreground)</argsstring>
+        <name>SegmentationParameters</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::SegmentationParameters</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>apix</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diff_beta</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>diff_timesteps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fh_stddevs</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>kr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>background</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>foreground</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="55" column="3" bodyfile="include/IMP/em2d/image_processing.h" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SegmentationParameters_1a73aa8974813287b6bdb3c17ab5033c7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SegmentationParameters::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::SegmentationParameters::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/image_processing.h" line="66" column="8" bodyfile="include/IMP/em2d/image_processing.h" bodystart="66" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class to provide all the parameters to the segmentation function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/image_processing.h" line="22" column="1" bodyfile="include/IMP/em2d/image_processing.h" bodystart="22" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1af48d6a87d149cae79800406fb958567c" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>binary_background</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1a32de358dececfaa5189dbed89c10ad2e" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>binary_foreground</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1ac6165203216416e001cd20d1c1a67769" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>diffusion_beta</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1aba746354e253308a4abe40b0da0f138c" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>diffusion_timesteps</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1aa2e7497ee46a3e60e6602b78579381cb" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>fill_holes_stddevs</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1aa9f4858f81423a290c37b8bfccf53167" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>image_pixel_size</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1af9e04a93ec80b92cc43998a652ae3716" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>opening_kernel</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1afc590a1a09b6a4e7ae4b6ed413d7609c" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>remove_sizing_percentage</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1afa5cecfaa3f086500112a4b9ea16f1fb" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>SegmentationParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1a225c5d8cb135469ff2ffec837dbd4909" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>SegmentationParameters</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1adc833501b94bef1921594a2cd17731a3" prot="private" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1a73aa8974813287b6bdb3c17ab5033c7a" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1SegmentationParameters_1a4df1cb6b8b762d7d9ca1b6ec9af12bcf" prot="public" virt="non-virtual"><scope>IMP::em2d::SegmentationParameters</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

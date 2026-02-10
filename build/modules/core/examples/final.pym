@@ -1,0 +1,161 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'P0 0 0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1.142, 3.81807, 0.539651, 0,
+]
+k= 'P0 0 0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P0 0 1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1.73475, 3.95227, 0.523969, 0,
+]
+k= 'P0 0 1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P0 1 0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.574757, 4.83299, 2.26683, 0,
+]
+k= 'P0 1 0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P0 1 1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1.19485, 4.5301, 2.29338, 0,
+]
+k= 'P0 1 1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 0 0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.28851, 4.3581, 4.66071, 0,
+]
+k= 'P1 0 0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 0 1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.86841, 4.29825, 4.61592, 0,
+]
+k= 'P1 0 1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 1 0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.2, 0.627451, 0.172549,
+SPHERE, 1.3642, 3.50311, 4.16204, 0,
+]
+k= 'P1 1 0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 1 1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.2, 0.627451, 0.172549,
+SPHERE, 1.99102, 3.15886, 4.20571, 0,
+]
+k= 'P1 1 1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'bb'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+BEGIN, LINES,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 0, 0,
+VERTEX, 0, 0, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 0, 0,
+VERTEX, 0, 10, 0,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 0, 0,
+VERTEX, 10, 0, 0,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 0, 10,
+VERTEX, 0, 10, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 0, 10,
+VERTEX, 10, 0, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 10, 0,
+VERTEX, 0, 10, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 10, 0,
+VERTEX, 10, 10, 0,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 0, 10, 10,
+VERTEX, 10, 10, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 10, 0, 0,
+VERTEX, 10, 0, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 10, 0, 0,
+VERTEX, 10, 10, 0,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 10, 0, 10,
+VERTEX, 10, 10, 10,
+COLOR, 0.7, 0.7, 0.7,
+VERTEX, 10, 10, 0,
+VERTEX, 10, 10, 10,
+END,
+]
+k= 'bb'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}

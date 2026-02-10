@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacemarina__party" kind="namespace" language="Python">
+    <compoundname>marina_party</compoundname>
+    <innerclass refid="classmarina__party_1_1Price" prot="public">marina_party::Price</innerclass>
+    <innerclass refid="classmarina__party_1_1PriceStates" prot="public">marina_party::PriceStates</innerclass>
+    <innerclass refid="classmarina__party_1_1SumPricePairScore" prot="public">marina_party::SumPricePairScore</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="marina__party_8py_1af73f04f8984544ed2b4801efd4c805d7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.all_possible_states</definition>
+        <argsstring></argsstring>
+        <name>all_possible_states</name>
+        <qualifiedname>marina_party.all_possible_states</qualifiedname>
+        <initializer>=  PriceStates(prices)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="105" column="1" bodyfile="examples/domino/marina_party.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1aa0e6130b86b1878aad66bdea4bcf6f54" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list marina_party.allowed_states_indices</definition>
+        <argsstring></argsstring>
+        <name>allowed_states_indices</name>
+        <qualifiedname>marina_party.allowed_states_indices</qualifiedname>
+        <initializer>=  [prices.index(price) for price in selection]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="124" column="1" bodyfile="examples/domino/marina_party.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a660d26579dbb6f3096074160d9764429" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.best_solution</definition>
+        <argsstring></argsstring>
+        <name>best_solution</name>
+        <qualifiedname>marina_party.best_solution</qualifiedname>
+        <initializer>=  solutions[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="154" column="1" bodyfile="examples/domino/marina_party.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1ad1d35d9c8551e027bfd88e2d05a9d877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.friends</definition>
+        <argsstring></argsstring>
+        <name>friends</name>
+        <qualifiedname>marina_party.friends</qualifiedname>
+        <initializer>=  IMP.ParticlePair(girls[i], girls[j])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="137" column="1" bodyfile="examples/domino/marina_party.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1af7fea7ecbc4d202cf90d1420064c59f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.ft</definition>
+        <argsstring></argsstring>
+        <name>ft</name>
+        <qualifiedname>marina_party.ft</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="142" column="1" bodyfile="examples/domino/marina_party.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a42824a3e38ab33a6292cf147badc0ca4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list marina_party.girls</definition>
+        <argsstring></argsstring>
+        <name>girls</name>
+        <qualifiedname>marina_party.girls</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="96" column="1" bodyfile="examples/domino/marina_party.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1adaa084b7b58c5305579cde9aacf9f7be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>marina_party.i</qualifiedname>
+        <initializer>=  random.randrange(0, n_girls)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="135" column="1" bodyfile="examples/domino/marina_party.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a16156c3c9c3d91e84baeac92221457c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <qualifiedname>marina_party.j</qualifiedname>
+        <initializer>=  random.randrange(0, n_girls)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="136" column="1" bodyfile="examples/domino/marina_party.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a6d957793f33f3ca31b0bcfe19f4a73b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.list_states_table</definition>
+        <argsstring></argsstring>
+        <name>list_states_table</name>
+        <qualifiedname>marina_party.list_states_table</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">IMP.domino.ListSubsetFilterTable</ref>(states_table)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="127" column="1" bodyfile="examples/domino/marina_party.py" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1aaf519923e321f474e14e4290eff599b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>marina_party.model</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="100" column="1" bodyfile="examples/domino/marina_party.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a01c964974e718ffc8e39fbfb644a03ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>marina_party.most_expensive</definition>
+        <argsstring></argsstring>
+        <name>most_expensive</name>
+        <qualifiedname>marina_party.most_expensive</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="153" column="1" bodyfile="examples/domino/marina_party.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a51b9529ad8bf27724ef0ad4f8b1c1c10" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>marina_party.n_dresses</definition>
+        <argsstring></argsstring>
+        <name>n_dresses</name>
+        <qualifiedname>marina_party.n_dresses</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="118" column="1" bodyfile="examples/domino/marina_party.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1aa1746ab5f15ef24e17e32bffeee4f5ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int marina_party.n_edges</definition>
+        <argsstring></argsstring>
+        <name>n_edges</name>
+        <qualifiedname>marina_party.n_edges</qualifiedname>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="95" column="1" bodyfile="examples/domino/marina_party.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a093488275670662ba6b06a365c5b1b2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int marina_party.n_girls</definition>
+        <argsstring></argsstring>
+        <name>n_girls</name>
+        <qualifiedname>marina_party.n_girls</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="94" column="1" bodyfile="examples/domino/marina_party.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a73e019aa870a462b46c47cb3780091f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>marina_party.p</qualifiedname>
+        <initializer>=  IMP.Particle(model, &quot;girl-%d&quot; % i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="110" column="1" bodyfile="examples/domino/marina_party.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a228f2013611e7c6416b22dd7b32bf749" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.pr</definition>
+        <argsstring></argsstring>
+        <name>pr</name>
+        <qualifiedname>marina_party.pr</qualifiedname>
+        <initializer>=  Price(p)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="111" column="1" bodyfile="examples/domino/marina_party.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a52462824d362750995195967c7a3eeb0" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list marina_party.prices</definition>
+        <argsstring></argsstring>
+        <name>prices</name>
+        <qualifiedname>marina_party.prices</qualifiedname>
+        <initializer>=  [100, 200, 400, 600, 800]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="97" column="1" bodyfile="examples/domino/marina_party.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a534f88fe2edb4cf9fcc17020e0b8e243" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list marina_party.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>marina_party.rs</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="132" column="1" bodyfile="examples/domino/marina_party.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a526afcfa66ca5b2979d6aed619569596" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.sampler</definition>
+        <argsstring></argsstring>
+        <name>sampler</name>
+        <qualifiedname>marina_party.sampler</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(model, states_table)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="104" column="1" bodyfile="examples/domino/marina_party.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a906d06c2c848f8b3c9f51342a6ae39d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>marina_party.score</qualifiedname>
+        <initializer>=  SumPricePairScore()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="139" column="1" bodyfile="examples/domino/marina_party.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1adb1fe200c32aa5bf7da1197de87ac47d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.selection</definition>
+        <argsstring></argsstring>
+        <name>selection</name>
+        <qualifiedname>marina_party.selection</qualifiedname>
+        <initializer>=  random.sample(prices, n_dresses)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="123" column="1" bodyfile="examples/domino/marina_party.py" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1ab807a97a06ec0b6914e7f8e33e8c5bad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.solutions</definition>
+        <argsstring></argsstring>
+        <name>solutions</name>
+        <qualifiedname>marina_party.solutions</qualifiedname>
+        <initializer>=  sampler.get_sample_assignments(subset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="148" column="1" bodyfile="examples/domino/marina_party.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a237243829d24c751084cf98514f9fa63" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.states_table</definition>
+        <argsstring></argsstring>
+        <name>states_table</name>
+        <qualifiedname>marina_party.states_table</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="103" column="1" bodyfile="examples/domino/marina_party.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1a397a3d414c3da7eb86c5ec630289539b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.subset</definition>
+        <argsstring></argsstring>
+        <name>subset</name>
+        <qualifiedname>marina_party.subset</qualifiedname>
+        <initializer>=  states_table.get_subset()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="147" column="1" bodyfile="examples/domino/marina_party.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="marina__party_8py_1ac38fdfeb716610522a5480c91fdbbc87" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>marina_party.total_price</definition>
+        <argsstring></argsstring>
+        <name>total_price</name>
+        <qualifiedname>marina_party.total_price</qualifiedname>
+        <initializer>=  get_total_price(states_table, subset, assignment)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="156" column="1" bodyfile="examples/domino/marina_party.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="marina__party_8py_1a57c69073e21b39a161e2495c49a03235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.get_total_price</definition>
+        <argsstring>(states_table, subset, assignment)</argsstring>
+        <name>get_total_price</name>
+        <qualifiedname>marina_party.get_total_price</qualifiedname>
+        <param>
+          <type>states_table</type>
+          <defname>states_table</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="75" column="1" bodyfile="examples/domino/marina_party.py" bodystart="75" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="marina__party_8py_1a133949aa6875703f6d72b77491108d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.print_assignment</definition>
+        <argsstring>(states_table, subset, assignment)</argsstring>
+        <name>print_assignment</name>
+        <qualifiedname>marina_party.print_assignment</qualifiedname>
+        <param>
+          <type>states_table</type>
+          <defname>states_table</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="85" column="1" bodyfile="examples/domino/marina_party.py" bodystart="85" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/marina_party.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

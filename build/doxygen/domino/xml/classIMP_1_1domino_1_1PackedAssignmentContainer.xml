@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1PackedAssignmentContainer" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::PackedAssignmentContainer</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1AssignmentContainer" prot="public" virt="non-virtual">IMP::domino::AssignmentContainer</basecompoundref>
+    <includes local="no">IMP/domino/assignment_containers.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1af9e7587ae72ac268cffb99b3ceb59bf6" prot="private" static="no" mutable="no">
+        <type>Ints</type>
+        <definition>Ints IMP::domino::PackedAssignmentContainer::d_</definition>
+        <argsstring></argsstring>
+        <name>d_</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::d_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="69" column="8" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1a5c8477682a7cdb924a85d9b7ab3b4031" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::domino::PackedAssignmentContainer::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="70" column="7" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1a3f08bf9f7f2cf76510bc2e3116064edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::PackedAssignmentContainer::PackedAssignmentContainer</definition>
+        <argsstring>(std::string name=&quot;PackedAssignmentContainer %1%&quot;)</argsstring>
+        <name>PackedAssignmentContainer</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::PackedAssignmentContainer</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;PackedAssignmentContainer %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="73" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1a674c96a2be4a40b9f65a196cb2a05a9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::PackedAssignmentContainer::~PackedAssignmentContainer</definition>
+        <argsstring>()</argsstring>
+        <name>~PackedAssignmentContainer</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::~PackedAssignmentContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="79" column="231" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac60ec8ac6b534857e6320494b193be58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::PackedAssignmentContainer::add_assignment</definition>
+        <argsstring>(const Assignment &amp;a) override</argsstring>
+        <name>add_assignment</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::add_assignment</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a205dd896cae1e38d153254a34cf57b5d">add_assignment</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="77" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1abd8cdf6e7f00b5ecdac265f198e4abd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::PackedAssignmentContainer::add_assignments</definition>
+        <argsstring>(const Assignments &amp;asgn) override</argsstring>
+        <name>add_assignments</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::add_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a06ac84ac6f6261350b0e6f2f2b4a22e8">add_assignments</reimplements>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>asgn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="78" column="382" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac30fa155daac1182b10eac73092776bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>virtual Assignment IMP::domino::PackedAssignmentContainer::get_assignment</definition>
+        <argsstring>(unsigned int i) const override</argsstring>
+        <name>get_assignment</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_assignment</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1aa81ef13a668c41da618439be20b6f2aa">get_assignment</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="76" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1aea0e6d229b8028da21b6895774a3d55c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>virtual Assignments IMP::domino::PackedAssignmentContainer::get_assignments</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d3dbe5e367345d51c494adcbb75852b">get_assignments</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="78" column="265" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1aaf23b79c80697335fc559734aebc922c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>virtual Assignments IMP::domino::PackedAssignmentContainer::get_assignments</definition>
+        <argsstring>(IntRange r) const override</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1abc19e460ebf37595c3e135f8126103e8">get_assignments</reimplements>
+        <param>
+          <type>IntRange</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="78" column="34" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1abe7ee7e2056c13cbf0c419eb1f73b5a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::PackedAssignmentContainer::get_number_of_assignments</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_assignments</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_number_of_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d1147ab073394ed0a1bf8e5913440ea">get_number_of_assignments</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="75" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1aa8fb2986c01f0a8e2e92c71d2147e4f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>Ints</type>
+        <definition>virtual Ints IMP::domino::PackedAssignmentContainer::get_particle_assignments</definition>
+        <argsstring>(unsigned int index) const override</argsstring>
+        <name>get_particle_assignments</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_particle_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentContainer_1aa0d8e3d96ae816d7a6462666ec8c0d04">get_particle_assignments</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get all the assignments for the ith particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="78" column="534" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1a643738da9d64870fea8ce1e72cc01ef4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::PackedAssignmentContainer::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="79" column="34" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PackedAssignmentContainer_1af18d053b1724fc86a1445095d789fe88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::PackedAssignmentContainer::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::PackedAssignmentContainer::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="79" column="103" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Store assignments in a compact form in memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This should use less memory than the <ref refid="classIMP_1_1domino_1_1ListAssignmentContainer" kindref="compound">ListAssignmentContainer</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentContainer"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::PackedAssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1PackedAssignmentContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentContainer"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::PackedAssignmentContainer</label>
+        <link refid="classIMP_1_1domino_1_1PackedAssignmentContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/assignment_containers.h" line="67" column="1" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="67" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac60ec8ac6b534857e6320494b193be58" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>add_assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1abd8cdf6e7f00b5ecdac265f198e4abd3" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>add_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a35fdaba04bd3906f121ce3842cf41254" prot="public" virt="non-virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>AssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1af9e7587ae72ac268cffb99b3ceb59bf6" prot="private" virt="non-virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>d_</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac30fa155daac1182b10eac73092776bf" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aaf23b79c80697335fc559734aebc922c" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aea0e6d229b8028da21b6895774a3d55c" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1abe7ee7e2056c13cbf0c419eb1f73b5a4" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aa8fb2986c01f0a8e2e92c71d2147e4f5" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_particle_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a643738da9d64870fea8ce1e72cc01ef4" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1af18d053b1724fc86a1445095d789fe88" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a3f08bf9f7f2cf76510bc2e3116064edc" prot="public" virt="non-virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>PackedAssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a5c8477682a7cdb924a85d9b7ab3b4031" prot="private" virt="non-virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>width_</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a8498b96e8ded4bc39527ae645fcbb4ce" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>~AssignmentContainer</name></member>
+      <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a674c96a2be4a40b9f65a196cb2a05a9a" prot="public" virt="virtual"><scope>IMP::domino::PackedAssignmentContainer</scope><name>~PackedAssignmentContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

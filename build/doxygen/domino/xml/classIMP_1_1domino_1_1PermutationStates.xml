@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1PermutationStates" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::PermutationStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1PermutationStates_1aeea87fd7853995eb2591ae9e7752cc13" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;ParticleStates&gt; IMP::domino::PermutationStates::inner_</definition>
+        <argsstring></argsstring>
+        <name>inner_</name>
+        <qualifiedname>IMP::domino::PermutationStates::inner_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="256" column="22" bodyfile="include/IMP/domino/particle_states.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1PermutationStates_1ac22610c7acdeae9a6883aaa2ab355efc" prot="private" static="no" mutable="no">
+        <type>IMP::Vector&lt; int &gt;</type>
+        <definition>IMP::Vector&lt;int&gt; IMP::domino::PermutationStates::permutation_</definition>
+        <argsstring></argsstring>
+        <name>permutation_</name>
+        <qualifiedname>IMP::domino::PermutationStates::permutation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="257" column="15" bodyfile="include/IMP/domino/particle_states.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1a95308fa6fbdd565f52c7d58d4fdbaee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::PermutationStates::PermutationStates</definition>
+        <argsstring>(ParticleStates *inner)</argsstring>
+        <name>PermutationStates</name>
+        <qualifiedname>IMP::domino::PermutationStates::PermutationStates</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="260" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1a04bff8d9a8d56bf2f2e63593cb0e8927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::PermutationStates::~PermutationStates</definition>
+        <argsstring>()</argsstring>
+        <name>~PermutationStates</name>
+        <qualifiedname>IMP::domino::PermutationStates::~PermutationStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="274" column="231" bodyfile="include/IMP/domino/particle_states.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1acc0f74f3fee5477e11360ba64f017e50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::PermutationStates::get_inner_state</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_inner_state</name>
+        <qualifiedname>IMP::domino::PermutationStates::get_inner_state</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the index of the ith state in the inner ParticleState object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="263" column="16" bodyfile="include/IMP/domino/particle_states.h" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1ab1c205ed52a1a6700ec314f28784b4f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::PermutationStates::get_number_of_particle_states</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::domino::PermutationStates::get_number_of_particle_states</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196">get_number_of_particle_states</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="271" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1af2534b4e7c3a2e3db06dea3a26e89d05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::PermutationStates::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::PermutationStates::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="274" column="34" bodyfile="include/IMP/domino/particle_states.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1abb7aa61a82398a8ec609be5f38585813" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::PermutationStates::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::PermutationStates::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="274" column="103" bodyfile="include/IMP/domino/particle_states.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1PermutationStates_1ab8e0ac868eb15d0c59eb2514e3699c06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::PermutationStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const override</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::domino::PermutationStates::load_particle_state</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53">load_particle_state</reimplements>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="272" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Permute the states of a particle. This might be useful when trying to sample from a too large set of <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref>. However, it will break many filters, so use with care. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::PermutationStates</label>
+        <link refid="classIMP_1_1domino_1_1PermutationStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::PermutationStates</label>
+        <link refid="classIMP_1_1domino_1_1PermutationStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/particle_states.h" line="255" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="255" bodyend="275"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1acc0f74f3fee5477e11360ba64f017e50" prot="public" virt="non-virtual"><scope>IMP::domino::PermutationStates</scope><name>get_inner_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1ab1c205ed52a1a6700ec314f28784b4f3" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1af2534b4e7c3a2e3db06dea3a26e89d05" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1abb7aa61a82398a8ec609be5f38585813" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1aeea87fd7853995eb2591ae9e7752cc13" prot="private" virt="non-virtual"><scope>IMP::domino::PermutationStates</scope><name>inner_</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1ab8e0ac868eb15d0c59eb2514e3699c06" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>IMP::domino::PermutationStates</scope><name>ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1ac22610c7acdeae9a6883aaa2ab355efc" prot="private" virt="non-virtual"><scope>IMP::domino::PermutationStates</scope><name>permutation_</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1a95308fa6fbdd565f52c7d58d4fdbaee8" prot="public" virt="non-virtual"><scope>IMP::domino::PermutationStates</scope><name>PermutationStates</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>~ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1PermutationStates_1a04bff8d9a8d56bf2f2e63593cb0e8927" prot="public" virt="virtual"><scope>IMP::domino::PermutationStates</scope><name>~PermutationStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

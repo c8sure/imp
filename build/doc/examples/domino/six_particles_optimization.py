@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/domino/examples/six_particles_optimization.py

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1Assignment" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::Assignment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ConstVector&lt; int &gt;</basecompoundref>
+    <includes local="no">IMP/domino/Assignment.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1Assignment_1a1b9649b37841c09eefab3b1ca2ad103e" prot="private" static="no">
+        <type>ConstVector&lt; int &gt;</type>
+        <definition>typedef ConstVector&lt;int&gt; IMP::domino::Assignment::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::Assignment::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="36" column="23" bodyfile="include/IMP/domino/Assignment.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1domino_1_1Assignment_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::domino::Assignment::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="38" column="16" bodyfile="include/IMP/domino/Assignment.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Assignment_1a08ec4e21f3b14e1904d8086494beb3dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::domino::Assignment::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::domino::Assignment::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="40" column="19" bodyfile="include/IMP/domino/Assignment.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Assignment_1a6605c3151f9ea6eadfcfa1f4f7b67060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Assignment::Assignment</definition>
+        <argsstring>()</argsstring>
+        <name>Assignment</name>
+        <qualifiedname>IMP::domino::Assignment::Assignment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="45" column="3" bodyfile="include/IMP/domino/Assignment.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Assignment_1a9dbd4739c7edc70af313f994b9315970" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Assignment::Assignment</definition>
+        <argsstring>(const Ints &amp;i)</argsstring>
+        <name>Assignment</name>
+        <qualifiedname>IMP::domino::Assignment::Assignment</qualifiedname>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="50" column="12" bodyfile="include/IMP/domino/Assignment.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Assignment_1aff85a1eaee66a07129134c88409d2415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class It</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>IMP::domino::Assignment::Assignment</definition>
+        <argsstring>(It b, It e)</argsstring>
+        <name>Assignment</name>
+        <qualifiedname>IMP::domino::Assignment::Assignment</qualifiedname>
+        <param>
+          <type>It</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>It</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="48" column="3" bodyfile="include/IMP/domino/Assignment.h" bodystart="48" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Assignment_1a483eb474161ad4ada461ca9147eaae25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Assignment::Assignment</definition>
+        <argsstring>(unsigned int sz)</argsstring>
+        <name>Assignment</name>
+        <qualifiedname>IMP::domino::Assignment::Assignment</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="46" column="3" bodyfile="include/IMP/domino/Assignment.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Store a configuration of a subset. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class stores a configuration of a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> object. The indices of the corresponding Subset/Assignment objects correspond. That is, the state of the ith particle in a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> is the ith value in the <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref>.</para>
+<para>Like <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> objects, <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> objects cannot be modified and provide a vector/Python list like interface. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/Assignment.h" line="35" column="1" bodyfile="include/IMP/domino/Assignment.h" bodystart="35" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1Assignment_1a6605c3151f9ea6eadfcfa1f4f7b67060" prot="public" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>Assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1Assignment_1a483eb474161ad4ada461ca9147eaae25" prot="public" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>Assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1Assignment_1aff85a1eaee66a07129134c88409d2415" prot="public" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>Assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1Assignment_1a9dbd4739c7edc70af313f994b9315970" prot="public" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>Assignment</name></member>
+      <member refid="classIMP_1_1domino_1_1Assignment_1a1b9649b37841c09eefab3b1ca2ad103e" prot="private" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1Assignment_1a08ec4e21f3b14e1904d8086494beb3dd" prot="private" virt="non-virtual"><scope>IMP::domino::Assignment</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

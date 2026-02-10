@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1ContactMapMetric" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::ContactMapMetric</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">statistics::Metric</basecompoundref>
+    <includes local="no">IMP/spb/ContactMapMetric.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1ae4edcba2199c1943d33769fe66f01d50" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Floats &gt;</type>
+        <definition>std::vector&lt;Floats&gt; IMP::spb::ContactMapMetric::matrices_</definition>
+        <argsstring></argsstring>
+        <name>matrices_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::matrices_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="24" column="15" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1ac3e2772a1fec4e2be25b13ec3f92d853" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::ContactMapMetric::mm_</definition>
+        <argsstring></argsstring>
+        <name>mm_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::mm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="22" column="7" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1a0df7a1a8641baca27fa1e467e972c43a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::ContactMapMetric::nn_</definition>
+        <argsstring></argsstring>
+        <name>nn_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::nn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="21" column="7" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1aba5f1792b645a1ea1f974ec1eaf9cebe" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::ContactMapMetric::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="19" column="13" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1ab50c712899cca1da2903101c0dc24ddb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::ContactMapMetric::r0_</definition>
+        <argsstring></argsstring>
+        <name>r0_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::r0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="20" column="10" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ContactMapMetric_1aef44faa64db4c8a825380b786c0287e6" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ContactMapMetric::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::weight_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="23" column="10" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a57dbc961c058049f122a6863aba253dd" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ContactMapMetric::get_contact_map</definition>
+        <argsstring>(algebra::Vector3Ds coords) const</argsstring>
+        <name>get_contact_map</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_contact_map</qualifiedname>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="27" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a7ee392aee6596c49577d0356fc375f6d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ContactMapMetric::get_rmsd</definition>
+        <argsstring>(Floats m0, Floats m1) const</argsstring>
+        <name>get_rmsd</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_rmsd</qualifiedname>
+        <param>
+          <type>Floats</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>m1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="26" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a8015c7ecf2602d122821322c3ef68c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::ContactMapMetric::ContactMapMetric</definition>
+        <argsstring>(Particles ps, double r0, int nn, int mm)</argsstring>
+        <name>ContactMapMetric</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::ContactMapMetric</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a8dd8f3cd34eccdf89a96ba1a7d36ae1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::ContactMapMetric::~ContactMapMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~ContactMapMetric</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::~ContactMapMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="41" column="231" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a5edf4cc3a35d0140a1f01fbb3c4e8adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::ContactMapMetric::add_configuration</definition>
+        <argsstring>(double weight=1.0)</argsstring>
+        <name>add_configuration</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::add_configuration</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a2744c5577035f8afeeff19ec48330a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::ContactMapMetric::add_map</definition>
+        <argsstring>(Floats matrix, double weight=1.0)</argsstring>
+        <name>add_map</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::add_map</qualifiedname>
+        <param>
+          <type>Floats</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1ad70a3ce8478b65f246139595af48282f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ContactMapMetric::get_distance</definition>
+        <argsstring>(unsigned int i, unsigned int j) const override</argsstring>
+        <name>get_distance</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_distance</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1ad57d626b4b6db024fc49bf92c9f64b58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ContactMapMetric::get_item</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_item</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_item</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a9564124d6d0a624a8c9c7e4de62a5986" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::spb::ContactMapMetric::get_number_of_items</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_items</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_number_of_items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1aefccb08fd5c81e551bab3a9cfc35ab5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::ContactMapMetric::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="41" column="34" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1ab14e00eeed77d0ff2dfc4ca892b34eb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::ContactMapMetric::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="41" column="103" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ContactMapMetric_1a830ecca07ab0a0cf625fc4466cf291bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::ContactMapMetric::get_weight</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_weight</name>
+        <qualifiedname>IMP::spb::ContactMapMetric::get_weight</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ContactMapMetric.h" line="35" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Compute the RMSD between two sets of particles in two configurations. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/ContactMapMetric.h" line="18" column="1" bodyfile="include/IMP/spb/ContactMapMetric.h" bodystart="18" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a5edf4cc3a35d0140a1f01fbb3c4e8adc" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>add_configuration</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a2744c5577035f8afeeff19ec48330a9d" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>add_map</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a8015c7ecf2602d122821322c3ef68c2b" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>ContactMapMetric</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a57dbc961c058049f122a6863aba253dd" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_contact_map</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ad70a3ce8478b65f246139595af48282f" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ad57d626b4b6db024fc49bf92c9f64b58" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_item</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a9564124d6d0a624a8c9c7e4de62a5986" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_number_of_items</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a7ee392aee6596c49577d0356fc375f6d" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_rmsd</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aefccb08fd5c81e551bab3a9cfc35ab5a" prot="public" virt="virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ab14e00eeed77d0ff2dfc4ca892b34eb3" prot="public" virt="virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a830ecca07ab0a0cf625fc4466cf291bc" prot="public" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>get_weight</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ae4edcba2199c1943d33769fe66f01d50" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>matrices_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ac3e2772a1fec4e2be25b13ec3f92d853" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>mm_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a0df7a1a8641baca27fa1e467e972c43a" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>nn_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aba5f1792b645a1ea1f974ec1eaf9cebe" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ab50c712899cca1da2903101c0dc24ddb" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>r0_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aef44faa64db4c8a825380b786c0287e6" prot="private" virt="non-virtual"><scope>IMP::spb::ContactMapMetric</scope><name>weight_</name></member>
+      <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a8dd8f3cd34eccdf89a96ba1a7d36ae1f" prot="public" virt="virtual"><scope>IMP::spb::ContactMapMetric</scope><name>~ContactMapMetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

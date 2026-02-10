@@ -1,0 +1,4 @@
+ok=True
+modules = 'container:core:score_functor:display:algebra:cgal:kernel'
+dependencies = 'CGAL:Boost.FileSystem:Boost.Random:HDF5:Boost.Regex:Boost.System:Boost.ProgramOptions:python-ihm:NumPy'
+swig_includes = 'IMP/atom/atom_macros.h'

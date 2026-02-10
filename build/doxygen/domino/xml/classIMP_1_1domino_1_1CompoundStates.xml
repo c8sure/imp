@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1CompoundStates" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::CompoundStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1CompoundStates_1a49f481710d6b55733e6f1a4337f84950" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;ParticleStates&gt; IMP::domino::CompoundStates::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>IMP::domino::CompoundStates::a_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="219" column="22" bodyfile="include/IMP/domino/particle_states.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1CompoundStates_1ac56dbd574a6aad3a6a2ae4b2235379cd" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;ParticleStates&gt; IMP::domino::CompoundStates::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>IMP::domino::CompoundStates::b_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="219" column="25" bodyfile="include/IMP/domino/particle_states.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a43d16cc20bd7c0c107341a1395319ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::CompoundStates::CompoundStates</definition>
+        <argsstring>(ParticleStates *a, ParticleStates *b)</argsstring>
+        <name>CompoundStates</name>
+        <qualifiedname>IMP::domino::CompoundStates::CompoundStates</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="222" column="3" bodyfile="include/IMP/domino/particle_states.h" bodystart="222" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a4851ef8870bda67a73409a00b14f6a63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::CompoundStates::~CompoundStates</definition>
+        <argsstring>()</argsstring>
+        <name>~CompoundStates</name>
+        <qualifiedname>IMP::domino::CompoundStates::~CompoundStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="227" column="231" bodyfile="include/IMP/domino/particle_states.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a631d58ba1db6806a9d0deeff8dc6461f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::CompoundStates::get_number_of_particle_states</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::domino::CompoundStates::get_number_of_particle_states</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196">get_number_of_particle_states</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="224" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a37483428dcec34d7d83a1301826178e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::CompoundStates::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::CompoundStates::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="227" column="34" bodyfile="include/IMP/domino/particle_states.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a27f4d825beff38d25658b1255963ba65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::CompoundStates::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::CompoundStates::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="227" column="103" bodyfile="include/IMP/domino/particle_states.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1CompoundStates_1a9ea5304ccd6c3e6098dd41bfd6207ee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::CompoundStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const override</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::domino::CompoundStates::load_particle_state</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53">load_particle_state</reimplements>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="225" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Combine two particle states together. They must both have the same number of states. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::CompoundStates</label>
+        <link refid="classIMP_1_1domino_1_1CompoundStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::domino::CompoundStates</label>
+        <link refid="classIMP_1_1domino_1_1CompoundStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/particle_states.h" line="218" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="218" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a49f481710d6b55733e6f1a4337f84950" prot="private" virt="non-virtual"><scope>IMP::domino::CompoundStates</scope><name>a_</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1ac56dbd574a6aad3a6a2ae4b2235379cd" prot="private" virt="non-virtual"><scope>IMP::domino::CompoundStates</scope><name>b_</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a43d16cc20bd7c0c107341a1395319ca7" prot="public" virt="non-virtual"><scope>IMP::domino::CompoundStates</scope><name>CompoundStates</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a631d58ba1db6806a9d0deeff8dc6461f" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a37483428dcec34d7d83a1301826178e0" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a27f4d825beff38d25658b1255963ba65" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a9ea5304ccd6c3e6098dd41bfd6207ee4" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>IMP::domino::CompoundStates</scope><name>ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1CompoundStates_1a4851ef8870bda67a73409a00b14f6a63" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>~CompoundStates</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>IMP::domino::CompoundStates</scope><name>~ParticleStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

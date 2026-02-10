@@ -1,0 +1,2297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1spb" kind="namespace" language="C++">
+    <compoundname>IMP::spb</compoundname>
+    <innerclass refid="classIMP_1_1spb_1_1AttributeDistancePairScore" prot="public">IMP::spb::AttributeDistancePairScore</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1BoxedMover" prot="public">IMP::spb::BoxedMover</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1CellMover" prot="public">IMP::spb::CellMover</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1ChiSquareMetric" prot="public">IMP::spb::ChiSquareMetric</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1ClusterParameters" prot="public">IMP::spb::ClusterParameters</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1ContactMapMetric" prot="public">IMP::spb::ContactMapMetric</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1DiameterRgyrRestraint" prot="public">IMP::spb::DiameterRgyrRestraint</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1DistanceRMSDMetric" prot="public">IMP::spb::DistanceRMSDMetric</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1DistanceTerminiRestraint" prot="public">IMP::spb::DistanceTerminiRestraint</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1EM2DParameters" prot="public">IMP::spb::EM2DParameters</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1EM2DRestraint" prot="public">IMP::spb::EM2DRestraint</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1FretParameters" prot="public">IMP::spb::FretParameters</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1Gaussian" prot="public">IMP::spb::Gaussian</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1HelixDecorator" prot="public">IMP::spb::HelixDecorator</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1ISDRestraint" prot="public">IMP::spb::ISDRestraint</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1KinkPairScore" prot="public">IMP::spb::KinkPairScore</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1MapParameters" prot="public">IMP::spb::MapParameters</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1MCParameters" prot="public">IMP::spb::MCParameters</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte" prot="public">IMP::spb::MolecularDynamicsWithWte</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1MonteCarloWithWte" prot="public">IMP::spb::MonteCarloWithWte</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1NuisanceRangeModifier" prot="public">IMP::spb::NuisanceRangeModifier</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1PbcBoxedMover" prot="public">IMP::spb::PbcBoxedMover</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover" prot="public">IMP::spb::PbcBoxedRigidBodyMover</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1RigidBodyNewMover" prot="public">IMP::spb::RigidBodyNewMover</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1RigidBodyPackingScore" prot="public">IMP::spb::RigidBodyPackingScore</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1RMSDMetric" prot="public">IMP::spb::RMSDMetric</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1SameParticlePairFilter" prot="public">IMP::spb::SameParticlePairFilter</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter" prot="public">IMP::spb::SameRigidBodyPairFilter</innerclass>
+    <innerclass refid="structIMP_1_1spb_1_1SPBParameters" prot="public">IMP::spb::SPBParameters</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1TiltSingletonScore" prot="public">IMP::spb::TiltSingletonScore</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1TransformationSymmetry" prot="public">IMP::spb::TransformationSymmetry</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint" prot="public">IMP::spb::TwoStateGoModelRestraint</innerclass>
+    <innerclass refid="classIMP_1_1spb_1_1UniformBoundedRestraint" prot="public">IMP::spb::UniformBoundedRestraint</innerclass>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a267bfe077fd4c62eaf5a2c560879971e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::spb::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="153" column="18" declfile="include/IMP/spb/spb_config.h" declline="153" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a4e58657ff071e099e38abc014311daac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::spb::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="158" column="24" bodyfile="include/IMP/spb/spb_config.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac4d6b102ab93bb1da1d22860c1536d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::spb::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1spb_1ac4d6b102ab93bb1da1d22860c1536d2b" kindref="member">IMP::spb::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="174" column="18" declfile="include/IMP/spb/spb_config.h" declline="174" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a1a7c475c82ab592f468be0340cf39c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::spb::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1spb_1a1a7c475c82ab592f468be0340cf39c71" kindref="member">IMP::spb::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_config.h" line="190" column="18" declfile="include/IMP/spb/spb_config.h" declline="190" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1a12e9981a67e009aafc50f06c4eb11508" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1spb_1_1AttributeDistancePairScore" kindref="compound">AttributeDistancePairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;AttributeDistancePairScore&gt; &gt; IMP::spb::AttributeDistancePairScores</definition>
+        <argsstring></argsstring>
+        <name>AttributeDistancePairScores</name>
+        <qualifiedname>IMP::spb::AttributeDistancePairScores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/AttributeDistancePairScore.h" line="49" column="25" bodyfile="include/IMP/spb/AttributeDistancePairScore.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1aeac4ab83dad6b61d9baa6dc981fe7692" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1spb_1_1AttributeDistancePairScore" kindref="compound">AttributeDistancePairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;AttributeDistancePairScore&gt; &gt; IMP::spb::AttributeDistancePairScoresTemp</definition>
+        <argsstring></argsstring>
+        <name>AttributeDistancePairScoresTemp</name>
+        <qualifiedname>IMP::spb::AttributeDistancePairScoresTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1spb_1_1AttributeDistancePairScore" kindref="compound">AttributeDistancePairScore</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/AttributeDistancePairScore.h" line="49" column="78" bodyfile="include/IMP/spb/AttributeDistancePairScore.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1a281476d628dd9e78caa81bce755eba00" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1spb_1_1HelixDecorator" kindref="compound">HelixDecorator</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;HelixDecorator&gt; IMP::spb::HelixDecorators</definition>
+        <argsstring></argsstring>
+        <name>HelixDecorators</name>
+        <qualifiedname>IMP::spb::HelixDecorators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1spb_1_1HelixDecorator" kindref="compound">HelixDecorator</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="60" column="23" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1afee07212a942f47d3cd6643ad9130304" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1spb_1_1KinkPairScore" kindref="compound">KinkPairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;KinkPairScore&gt; &gt; IMP::spb::KinkPairScores</definition>
+        <argsstring></argsstring>
+        <name>KinkPairScores</name>
+        <qualifiedname>IMP::spb::KinkPairScores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="40" column="25" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1aa5a72f14d064bbe546708eb8d315f30a" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1spb_1_1KinkPairScore" kindref="compound">KinkPairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;KinkPairScore&gt; &gt; IMP::spb::KinkPairScoresTemp</definition>
+        <argsstring></argsstring>
+        <name>KinkPairScoresTemp</name>
+        <qualifiedname>IMP::spb::KinkPairScoresTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1spb_1_1KinkPairScore" kindref="compound">KinkPairScore</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="40" column="65" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1a930907282957d364a7b9592c119df5f0" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1spb_1_1RigidBodyPackingScore" kindref="compound">RigidBodyPackingScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;RigidBodyPackingScore&gt; &gt; IMP::spb::RigidBodyPackingScores</definition>
+        <argsstring></argsstring>
+        <name>RigidBodyPackingScores</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="41" column="25" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1spb_1a1f655e3ed84aef5664486d8351e57d58" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1spb_1_1RigidBodyPackingScore" kindref="compound">RigidBodyPackingScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;RigidBodyPackingScore&gt; &gt; IMP::spb::RigidBodyPackingScoresTemp</definition>
+        <argsstring></argsstring>
+        <name>RigidBodyPackingScoresTemp</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScoresTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1spb_1_1RigidBodyPackingScore" kindref="compound">RigidBodyPackingScore</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="41" column="73" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac2f1c4f7d0477ff1f40bdd383b9dc914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_BallMover</definition>
+        <argsstring>(Particles ps, double dx, core::MonteCarloMovers &amp;mvs)</argsstring>
+        <name>add_BallMover</name>
+        <qualifiedname>IMP::spb::add_BallMover</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_sampler.h" line="24" column="8" declfile="include/IMP/spb/spb_sampler.h" declline="24" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a4f4e29033718c00197737912b750ef5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_bayesian_layer_restraint</definition>
+        <argsstring>(RestraintSet *allrs, container::ListSingletonContainer *lsc, Particle *a, Particle *b)</argsstring>
+        <name>add_bayesian_layer_restraint</name>
+        <qualifiedname>IMP::spb::add_bayesian_layer_restraint</qualifiedname>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>lsc</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="69" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="69" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a5cf4889f38b10df0422f43533e1efa71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_diameter_rgyr_restraint</definition>
+        <argsstring>(RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein, double diameter, double rgyr, double kappa)</argsstring>
+        <name>add_diameter_rgyr_restraint</name>
+        <qualifiedname>IMP::spb::add_diameter_rgyr_restraint</qualifiedname>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rgyr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="158" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="158" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a6a49d172ebb893d6a3b0de6234cb318e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_GFP_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, double kappa)</argsstring>
+        <name>add_GFP_restraint</name>
+        <qualifiedname>IMP::spb::add_GFP_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="138" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="138" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a23e14d249f701c421fd66833c044539a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_internal_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, std::string name, atom::Molecule protein_a, atom::Molecule protein_b, double kappa, double dist)</argsstring>
+        <name>add_internal_restraint</name>
+        <qualifiedname>IMP::spb::add_internal_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>atom::Molecule</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>atom::Molecule</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="36" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="36" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1af0dea7316b888d0d73dee803e66e8d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, IMP::Pointer&lt; Particle &gt; &gt;</type>
+        <definition>std::map&lt; std::string, IMP::Pointer&lt; Particle &gt; &gt; IMP::spb::add_ISD_particles</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, spb::SPBParameters mydata, core::MonteCarloMovers &amp;mvs)</argsstring>
+        <name>add_ISD_particles</name>
+        <qualifiedname>IMP::spb::add_ISD_particles</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters</type>
+          <declname>mydata</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_ISD_particles.h" line="19" column="1" declfile="include/IMP/spb/spb_ISD_particles.h" declline="19" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a89c91f69eb459a1a6ef9a2da1c9d885a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_layer_restraint</definition>
+        <argsstring>(RestraintSet *allrs, container::ListSingletonContainer *lsc, FloatRange range, double kappa)</argsstring>
+        <name>add_layer_restraint</name>
+        <qualifiedname>IMP::spb::add_layer_restraint</qualifiedname>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>lsc</declname>
+        </param>
+        <param>
+          <type>FloatRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="65" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="65" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac82266395d7d5fcf26defd3c2f2f9f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_link</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein_a, std::string residues_a, atom::Hierarchies &amp;hs, std::string protein_b, IntRange residues_b, double kappa)</argsstring>
+        <name>add_link</name>
+        <qualifiedname>IMP::spb::add_link</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="116" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="116" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a2e319d74f871dffac11765e34a748794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_link</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein_a, std::string residues_a, atom::Hierarchies &amp;hs, std::string protein_b, std::string residues_b, double kappa)</argsstring>
+        <name>add_link</name>
+        <qualifiedname>IMP::spb::add_link</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="122" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="122" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac5d9e593d188cd0afbeb276881d82996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_my_connectivity</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, std::string name, atom::Molecule protein, double kappa)</argsstring>
+        <name>add_my_connectivity</name>
+        <qualifiedname>IMP::spb::add_my_connectivity</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>atom::Molecule</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="42" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="42" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a647eefa83fcb00316337141fc940792b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_NuisanceMover</definition>
+        <argsstring>(Particle *p, double dp, core::MonteCarloMovers &amp;mvs)</argsstring>
+        <name>add_NuisanceMover</name>
+        <qualifiedname>IMP::spb::add_NuisanceMover</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dp</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_sampler.h" line="38" column="8" declfile="include/IMP/spb/spb_sampler.h" declline="38" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac8ec6f7f84c9684326f06ce1e0f9e74e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_PbcBoxedMover</definition>
+        <argsstring>(Particles ps, double dx, algebra::Vector3Ds centers, algebra::Transformation3Ds trs, core::MonteCarloMovers &amp;mvs, Particle *SideXY, Particle *SideZ)</argsstring>
+        <name>add_PbcBoxedMover</name>
+        <qualifiedname>IMP::spb::add_PbcBoxedMover</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>centers</declname>
+        </param>
+        <param>
+          <type>algebra::Transformation3Ds</type>
+          <declname>trs</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideXY</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_sampler.h" line="27" column="8" declfile="include/IMP/spb/spb_sampler.h" declline="27" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aec465b74f8f98da4682c157f396f8a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_PbcBoxedRigidBodyMover</definition>
+        <argsstring>(Particles ps, double dx, double dang, algebra::Vector3Ds centers, algebra::Transformation3Ds trs, core::MonteCarloMovers &amp;mvs, Particle *SideXY, Particle *SideZ)</argsstring>
+        <name>add_PbcBoxedRigidBodyMover</name>
+        <qualifiedname>IMP::spb::add_PbcBoxedRigidBodyMover</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dang</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>centers</declname>
+        </param>
+        <param>
+          <type>algebra::Transformation3Ds</type>
+          <declname>trs</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideXY</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_sampler.h" line="33" column="8" declfile="include/IMP/spb/spb_sampler.h" declline="33" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a1d50546bf0502a542c492062c8f0f42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_restrain_coiledcoil_to_cterm</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;hs, std::string protein_a, Particle *dist, double sigma0_dist)</argsstring>
+        <name>add_restrain_coiledcoil_to_cterm</name>
+        <qualifiedname>IMP::spb::add_restrain_coiledcoil_to_cterm</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma0_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="51" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="51" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ada54561155757e22856d4066515ecca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_restrain_protein_length</definition>
+        <argsstring>(RestraintSet *allrs, const atom::Hierarchy &amp;hs, std::string protein_a, Particle *dist, double sigma0_dist)</argsstring>
+        <name>add_restrain_protein_length</name>
+        <qualifiedname>IMP::spb::add_restrain_protein_length</qualifiedname>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma0_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="47" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="47" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a238100618f48d22ed7acd619702caea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_SPBexcluded_volume</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, atom::Hierarchies &amp;hs, bool GFP_exc_volume, double kappa)</argsstring>
+        <name>add_SPBexcluded_volume</name>
+        <qualifiedname>IMP::spb::add_SPBexcluded_volume</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>GFP_exc_volume</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="31" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="31" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac09f34c6ac78e8632549a693c32154e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_stay_close_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein, double kappa)</argsstring>
+        <name>add_stay_close_restraint</name>
+        <qualifiedname>IMP::spb::add_stay_close_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="142" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="142" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a575f993823c11b8c6d9b11c1fcd089f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_stay_close_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein, int residue, double kappa)</argsstring>
+        <name>add_stay_close_restraint</name>
+        <qualifiedname>IMP::spb::add_stay_close_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>residue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="147" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="147" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aaf1e29ff21dfe105c06b225967d4849e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_stay_on_plane_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string protein, int residue, double kappa)</argsstring>
+        <name>add_stay_on_plane_restraint</name>
+        <qualifiedname>IMP::spb::add_stay_on_plane_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>residue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="152" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="152" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a06b534d7a1f9697f71f4a75366ba0a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_symmetry_restraint</definition>
+        <argsstring>(Model *m, atom::Hierarchies &amp;hs, algebra::Transformation3Ds transformations, Particle *SideXY, Particle *SideZ)</argsstring>
+        <name>add_symmetry_restraint</name>
+        <qualifiedname>IMP::spb::add_symmetry_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>algebra::Transformation3Ds</type>
+          <declname>transformations</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideXY</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="112" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="112" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a69efcfb24ba7b76acf747b54f9c8ce75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_tilt</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, const atom::Hierarchy &amp;h, std::string name, IntRange range, double tilt, double kappa)</argsstring>
+        <name>add_tilt</name>
+        <qualifiedname>IMP::spb::add_tilt</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tilt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="134" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="134" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1acf08490a12bf75b525b03a2b88f55ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::add_tilt_restraint</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, Particle *p, FloatRange trange, double kappa)</argsstring>
+        <name>add_tilt_restraint</name>
+        <qualifiedname>IMP::spb::add_tilt_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>FloatRange</type>
+          <declname>trange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="130" column="8" declfile="include/IMP/spb/spb_restraint.h" declline="130" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1af9854762e7ddee17e6b588f2a8502c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Molecules</type>
+        <definition>atom::Molecules IMP::spb::create_coiled_coil</definition>
+        <argsstring>(Model *m, std::string name, std::string filename_A, std::string filename_B, int nbeads, display::Color colore, int copy, algebra::Vector3D x0, int offset=0)</argsstring>
+        <name>create_coiled_coil</name>
+        <qualifiedname>IMP::spb::create_coiled_coil</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename_A</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename_B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbeads</declname>
+        </param>
+        <param>
+          <type>display::Color</type>
+          <declname>colore</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="44" column="19" declfile="include/IMP/spb/spb_representation.h" declline="44" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ae8957e05a946a61598e363e00de9763c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Molecule</type>
+        <definition>atom::Molecule IMP::spb::create_GFP</definition>
+        <argsstring>(Model *m, std::string name, int copy, container::ListSingletonContainer *lsc, algebra::Vector3D x0, core::MonteCarloMovers &amp;mvs, spb::SPBParameters mydata, Particle *SideXY, Particle *SideZ)</argsstring>
+        <name>create_GFP</name>
+        <qualifiedname>IMP::spb::create_GFP</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>lsc</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters</type>
+          <declname>mydata</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideXY</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="52" column="18" declfile="include/IMP/spb/spb_representation.h" declline="52" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a6c573f1af4a6acef53105cd2b5a89dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>statistics::PartitionalClustering *</type>
+        <definition>statistics::PartitionalClustering * IMP::spb::create_gromos_clustering</definition>
+        <argsstring>(statistics::Metric *d, double cutoff)</argsstring>
+        <name>create_gromos_clustering</name>
+        <qualifiedname>IMP::spb::create_gromos_clustering</qualifiedname>
+        <param>
+          <type>statistics::Metric *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="51" column="37" declfile="include/IMP/spb/DistanceRMSDMetric.h" declline="51" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a3e962cefa954af2af9faf2922c7cb656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int * IMP::spb::create_indexes</definition>
+        <argsstring>(int nrep)</argsstring>
+        <name>create_indexes</name>
+        <qualifiedname>IMP::spb::create_indexes</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/pt_stuff.h" line="18" column="7" declfile="include/IMP/spb/pt_stuff.h" declline="18" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1abeff346a43c51e4d81a56567357880a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Molecule</type>
+        <definition>atom::Molecule IMP::spb::create_merged_protein</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, std::string name, atom::Molecules proteins, int copy, double kappa, double dist=-1.0)</argsstring>
+        <name>create_merged_protein</name>
+        <qualifiedname>IMP::spb::create_merged_protein</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>atom::Molecules</type>
+          <declname>proteins</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dist</declname>
+          <defval>-1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="36" column="18" declfile="include/IMP/spb/spb_representation.h" declline="36" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a78b1fb512e1db9c6362bb36df94293be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Molecule</type>
+        <definition>atom::Molecule IMP::spb::create_protein</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, std::string name, double mass, int nbeads, display::Color color, int copy, double kappa, algebra::Vector3D x0, bool use_connectivity, int start_residue=1, int length=-1)</argsstring>
+        <name>create_protein</name>
+        <qualifiedname>IMP::spb::create_protein</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbeads</declname>
+        </param>
+        <param>
+          <type>display::Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_connectivity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_residue</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="26" column="18" declfile="include/IMP/spb/spb_representation.h" declline="26" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a994bd0fe39346bf4f08cbc6693a230f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Molecule</type>
+        <definition>atom::Molecule IMP::spb::create_protein</definition>
+        <argsstring>(Model *m, std::string name, std::string filename, int nbeads, display::Color colore, int copy, algebra::Vector3D x0, int offset=0, bool makerigid=true)</argsstring>
+        <name>create_protein</name>
+        <qualifiedname>IMP::spb::create_protein</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbeads</declname>
+        </param>
+        <param>
+          <type>display::Color</type>
+          <declname>colore</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>makerigid</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="31" column="18" declfile="include/IMP/spb/spb_representation.h" declline="31" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ae9d935784a933409cd306c7c046cfff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::spb::create_representation</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, spb::SPBParameters mydata, container::ListSingletonContainer *CP_ps, container::ListSingletonContainer *IL2_ps, core::MonteCarloMovers &amp;mvs, Particle *SideXY, Particle *SideZ, int iseed)</argsstring>
+        <name>create_representation</name>
+        <qualifiedname>IMP::spb::create_representation</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters</type>
+          <declname>mydata</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>CP_ps</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>IL2_ps</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideXY</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>SideZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iseed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="20" column="21" declfile="include/IMP/spb/spb_representation.h" declline="20" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a3507c2c0b90c3857c8b20ad6ed4c2436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * IMP::spb::create_temperatures</definition>
+        <argsstring>(double tmin, double tmax, int nrep)</argsstring>
+        <name>create_temperatures</name>
+        <qualifiedname>IMP::spb::create_temperatures</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>tmin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/pt_stuff.h" line="15" column="10" declfile="include/IMP/spb/pt_stuff.h" declline="15" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1af1567f1edb38909704aef9bf78f4d206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::do_bipartite_mindist</definition>
+        <argsstring>(Model *m, Particles p1, Particles p2, IMP::Pointer&lt; core::DistancePairScore &gt; sps, bool filter=true)</argsstring>
+        <name>do_bipartite_mindist</name>
+        <qualifiedname>IMP::spb::do_bipartite_mindist</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>IMP::Pointer&lt; core::DistancePairScore &gt;</type>
+          <declname>sps</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>filter</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="61" column="1" declfile="include/IMP/spb/spb_restraint.h" declline="61" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ada4e704add4083fbe486ca0847ea5e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::do_bipartite_mindist</definition>
+        <argsstring>(Model *m, Particles p1, Particles p2, IMP::Pointer&lt; core::SphereDistancePairScore &gt; sps, bool filter=true)</argsstring>
+        <name>do_bipartite_mindist</name>
+        <qualifiedname>IMP::spb::do_bipartite_mindist</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Particles</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>IMP::Pointer&lt; core::SphereDistancePairScore &gt;</type>
+          <declname>sps</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>filter</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="56" column="1" declfile="include/IMP/spb/spb_restraint.h" declline="56" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a041db50dc3843c8d79203e0b32abc025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; <ref refid="classIMP_1_1spb_1_1EM2DRestraint" kindref="compound">spb::EM2DRestraint</ref> &gt;</type>
+        <definition>IMP::Pointer&lt; spb::EM2DRestraint &gt; IMP::spb::em2d_restraint</definition>
+        <argsstring>(atom::Hierarchies &amp;hs, std::string protein, EM2DParameters EM2D, Floats sigma_grid, Floats fmod_grid)</argsstring>
+        <name>em2d_restraint</name>
+        <qualifiedname>IMP::spb::em2d_restraint</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>EM2DParameters</type>
+          <declname>EM2D</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>sigma_grid</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>fmod_grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="166" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="166" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a0bea85caf13973079e597fbd22a6faaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; <ref refid="classIMP_1_1spb_1_1EM2DRestraint" kindref="compound">spb::EM2DRestraint</ref> &gt;</type>
+        <definition>IMP::Pointer&lt; spb::EM2DRestraint &gt; IMP::spb::em2d_restraint</definition>
+        <argsstring>(atom::Hierarchies &amp;hs, std::string protein, EM2DParameters EM2D, Particle *Sigma)</argsstring>
+        <name>em2d_restraint</name>
+        <qualifiedname>IMP::spb::em2d_restraint</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein</declname>
+        </param>
+        <param>
+          <type>EM2DParameters</type>
+          <declname>EM2D</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="162" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="162" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a8f8f5a2c38fcb4058800e16901009fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; isd::FretRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; isd::FretRestraint &gt; IMP::spb::fret_restraint</definition>
+        <argsstring>(atom::Hierarchies &amp;hs, std::string protein_a, int residues_a, std::string protein_b, std::string residues_b, double fexp, FretParameters Fret, std::string cell_type, bool use_GFP, Particle *Kda, Particle *Ida, Particle *R0, Particle *Sigma0, Particle *pBl)</argsstring>
+        <name>fret_restraint</name>
+        <qualifiedname>IMP::spb::fret_restraint</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fexp</declname>
+        </param>
+        <param>
+          <type>FretParameters</type>
+          <declname>Fret</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cell_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_GFP</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Kda</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Ida</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>R0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Sigma0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>pBl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="86" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="86" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a99e5eaecb6f84927e01a845887c92049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; isd::FretRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; isd::FretRestraint &gt; IMP::spb::fret_restraint</definition>
+        <argsstring>(atom::Hierarchies &amp;hs, std::string protein_a, std::string residues_a, std::string protein_b, int residues_b, double fexp, FretParameters Fret, std::string cell_type, bool use_GFP, Particle *Kda, Particle *Ida, Particle *R0, Particle *Sigma0, Particle *pBl)</argsstring>
+        <name>fret_restraint</name>
+        <qualifiedname>IMP::spb::fret_restraint</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fexp</declname>
+        </param>
+        <param>
+          <type>FretParameters</type>
+          <declname>Fret</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cell_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_GFP</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Kda</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Ida</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>R0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Sigma0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>pBl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="80" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="80" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aa40bd3cf6d2fe0fdffd9821965580965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; isd::FretRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; isd::FretRestraint &gt; IMP::spb::fret_restraint</definition>
+        <argsstring>(atom::Hierarchies &amp;hs, std::string protein_a, std::string residues_a, std::string protein_b, std::string residues_b, double fexp, FretParameters Fret, std::string cell_type, bool use_GFP, Particle *Kda, Particle *Ida, Particle *R0, Particle *Sigma0, Particle *pBl)</argsstring>
+        <name>fret_restraint</name>
+        <qualifiedname>IMP::spb::fret_restraint</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fexp</declname>
+        </param>
+        <param>
+          <type>FretParameters</type>
+          <declname>Fret</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cell_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_GFP</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Kda</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Ida</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>R0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>Sigma0</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>pBl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="73" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="73" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aa0266705d186273b495afe66e6cee4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::spb::get_acceptance</definition>
+        <argsstring>(double score0, double score1, double delta_wte, double T0, double T1)</argsstring>
+        <name>get_acceptance</name>
+        <qualifiedname>IMP::spb::get_acceptance</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>score0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>score1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>delta_wte</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/pt_stuff.h" line="22" column="8" declfile="include/IMP/spb/pt_stuff.h" declline="22" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aecabdb4e7356a9158c2bc1dad02b9026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::spb::get_friend</definition>
+        <argsstring>(int *index, int myrank, int step, int nrep)</argsstring>
+        <name>get_friend</name>
+        <qualifiedname>IMP::spb::get_friend</qualifiedname>
+        <param>
+          <type>int *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>myrank</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/pt_stuff.h" line="20" column="7" declfile="include/IMP/spb/pt_stuff.h" declline="20" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ad4e10f451b36d8b629a12dd633718a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; core::DistancePairScore &gt;</type>
+        <definition>IMP::Pointer&lt; core::DistancePairScore &gt; IMP::spb::get_pair_score</definition>
+        <argsstring>(FloatRange dist, double kappa)</argsstring>
+        <name>get_pair_score</name>
+        <qualifiedname>IMP::spb::get_pair_score</qualifiedname>
+        <param>
+          <type>FloatRange</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="22" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="22" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a7987de4c2636867e18e70e325cf0c89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; core::RigidBody &gt;</type>
+        <definition>std::vector&lt; core::RigidBody &gt; IMP::spb::get_rigid_bodies</definition>
+        <argsstring>(Particles ps)</argsstring>
+        <name>get_rigid_bodies</name>
+        <qualifiedname>IMP::spb::get_rigid_bodies</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="128" column="15" declfile="include/IMP/spb/spb_restraint.h" declline="128" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a74a565a80cd426faecd53074703dfcf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SPBParameters</type>
+        <definition>SPBParameters IMP::spb::get_SPBParameters</definition>
+        <argsstring>(IMP::TextInput in, std::string suffix)</argsstring>
+        <name>get_SPBParameters</name>
+        <qualifiedname>IMP::spb::get_SPBParameters</qualifiedname>
+        <param>
+          <type>IMP::TextInput</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_parser.h" line="18" column="17" declfile="include/IMP/spb/spb_parser.h" declline="18" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aa3f80f1f50048d7d7c392d9ad128d144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; core::SphereDistancePairScore &gt;</type>
+        <definition>IMP::Pointer&lt; core::SphereDistancePairScore &gt; IMP::spb::get_sphere_pair_score</definition>
+        <argsstring>(double dist, double kappa)</argsstring>
+        <name>get_sphere_pair_score</name>
+        <qualifiedname>IMP::spb::get_sphere_pair_score</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="29" column="1" declfile="include/IMP/spb/spb_restraint.h" declline="29" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a9745363649ecfebf6062da5120e9e393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; core::SphereDistancePairScore &gt;</type>
+        <definition>IMP::Pointer&lt; core::SphereDistancePairScore &gt; IMP::spb::get_sphere_pair_score</definition>
+        <argsstring>(FloatRange dist, double kappa)</argsstring>
+        <name>get_sphere_pair_score</name>
+        <qualifiedname>IMP::spb::get_sphere_pair_score</qualifiedname>
+        <param>
+          <type>FloatRange</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="26" column="1" declfile="include/IMP/spb/spb_restraint.h" declline="26" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a58a94cfc6958d85d112e235f74068ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::load_restart</definition>
+        <argsstring>(atom::Hierarchies &amp;all_mol, spb::SPBParameters mydata)</argsstring>
+        <name>load_restart</name>
+        <qualifiedname>IMP::spb::load_restart</qualifiedname>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>all_mol</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters</type>
+          <declname>mydata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="49" column="8" declfile="include/IMP/spb/spb_representation.h" declline="49" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1ac8a844e54abb00f619e6b71704acf0b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::radians</definition>
+        <argsstring>(double d)</argsstring>
+        <name>radians</name>
+        <qualifiedname>IMP::spb::radians</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="22" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="22" bodyend="22" declfile="include/IMP/spb/spb_main.h" declline="21" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a2271ff41d487482a3029eb6e6ccd06cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::recenter_rb</definition>
+        <argsstring>(core::RigidBody &amp;rb, core::XYZRs &amp;rbps, algebra::Vector3D x0, bool coiledcoil=false)</argsstring>
+        <name>recenter_rb</name>
+        <qualifiedname>IMP::spb::recenter_rb</qualifiedname>
+        <param>
+          <type>core::RigidBody &amp;</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>core::XYZRs &amp;</type>
+          <declname>rbps</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>coiledcoil</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_representation.h" line="40" column="8" declfile="include/IMP/spb/spb_representation.h" declline="40" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a2da88f5c1c47aa1813b7319e0adf0204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; core::MonteCarlo &gt;</type>
+        <definition>IMP::Pointer&lt; core::MonteCarlo &gt; IMP::spb::setup_SPBMonteCarlo</definition>
+        <argsstring>(Model *m, core::MonteCarloMovers &amp;mvs, double temp, spb::SPBParameters myparam)</argsstring>
+        <name>setup_SPBMonteCarlo</name>
+        <qualifiedname>IMP::spb::setup_SPBMonteCarlo</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>core::MonteCarloMovers &amp;</type>
+          <declname>mvs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters</type>
+          <declname>myparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_sampler.h" line="20" column="16" declfile="include/IMP/spb/spb_sampler.h" declline="20" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a593b6099d43825461dd8f56df9ae11c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, IMP::Pointer&lt; RestraintSet &gt; &gt;</type>
+        <definition>std::map&lt; std::string, IMP::Pointer&lt; RestraintSet &gt; &gt; IMP::spb::spb_assemble_restraints</definition>
+        <argsstring>(Model *m, RestraintSet *allrs, spb::SPBParameters &amp;myparam, atom::Hierarchies &amp;all_mol, container::ListSingletonContainer *CP_ps, container::ListSingletonContainer *IL2_ps, std::map&lt; std::string, IMP::Pointer&lt; Particle &gt; &gt; ISD_ps)</argsstring>
+        <name>spb_assemble_restraints</name>
+        <qualifiedname>IMP::spb::spb_assemble_restraints</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>allrs</declname>
+        </param>
+        <param>
+          <type>spb::SPBParameters &amp;</type>
+          <declname>myparam</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>all_mol</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>CP_ps</declname>
+        </param>
+        <param>
+          <type>container::ListSingletonContainer *</type>
+          <declname>IL2_ps</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, IMP::Pointer&lt; Particle &gt; &gt;</type>
+          <declname>ISD_ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_assemble_restraints.h" line="19" column="1" declfile="include/IMP/spb/spb_assemble_restraints.h" declline="19" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a723dc9441d99bc32b505b1297dbc9d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::y2h_restraint</definition>
+        <argsstring>(Model *m, const atom::Hierarchy &amp;ha, std::string protein_a, IntRange residues_a, atom::Hierarchies &amp;hb, std::string protein_b, IntRange residues_b, double kappa)</argsstring>
+        <name>y2h_restraint</name>
+        <qualifiedname>IMP::spb::y2h_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="92" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="92" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a5b221c3d36f014665e4e683f386d60c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::y2h_restraint</definition>
+        <argsstring>(Model *m, const atom::Hierarchy &amp;ha, std::string protein_a, IntRange residues_a, atom::Hierarchies &amp;hb, std::string protein_b, std::string residues_b, double kappa)</argsstring>
+        <name>y2h_restraint</name>
+        <qualifiedname>IMP::spb::y2h_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="102" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="102" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1a54d0fc740422b10af6f5e580d8c8cf1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::y2h_restraint</definition>
+        <argsstring>(Model *m, const atom::Hierarchy &amp;ha, std::string protein_a, std::string residues_a, atom::Hierarchies &amp;hb, std::string protein_b, IntRange residues_b, double kappa)</argsstring>
+        <name>y2h_restraint</name>
+        <qualifiedname>IMP::spb::y2h_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>IntRange</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="107" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="107" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1spb_1aaa482337c92405e97517e612b3cbebd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Pointer&lt; container::MinimumPairRestraint &gt;</type>
+        <definition>IMP::Pointer&lt; container::MinimumPairRestraint &gt; IMP::spb::y2h_restraint</definition>
+        <argsstring>(Model *m, const atom::Hierarchy &amp;ha, std::string protein_a, std::string residues_a, atom::Hierarchies &amp;hb, std::string protein_b, std::string residues_b, double kappa)</argsstring>
+        <name>y2h_restraint</name>
+        <qualifiedname>IMP::spb::y2h_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_a</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_a</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchies &amp;</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>protein_b</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>residues_b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_restraint.h" line="97" column="16" declfile="include/IMP/spb/spb_restraint.h" declline="97" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Classes, functions and executables for modeling of the Spindle Pole Body. </para>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="namespaceIMP_1_1spb_1autotoc_md0">
+<title>Integrative Modeling of the Spindle Pole Body Core</title><para>Here we determine the molecular architecture of the yeast spindle pole body (SPB), the structural and functional equivalent of the metazoan centrosome. Data from in vivo FRET and yeast two-hybrid, along with SAXS, X-ray crystallography, and electron microscopy were integrated by a Bayesian structure modeling approach.</para>
+<para>This module provides classes, functions and executables for running the sampling, analysis, clustering and density calculation for this project.</para>
+<sect2 id="namespaceIMP_1_1spb_1autotoc_md1_1s2"><sect3 id="namespaceIMP_1_1spb_1autotoc_md1">
+<title>Prerequisites:</title><para><ulink url="https://integrativemodeling.org/2.7.0/doc/ref/namespaceIMP_1_1mpi.html">MPI</ulink> must be used to compile the <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> code so that replica exchange can be used.</para>
+</sect3></sect2>
+<sect2 id="namespaceIMP_1_1spb_1autotoc_md2_1s2"><sect3 id="namespaceIMP_1_1spb_1autotoc_md2">
+<title>Note:</title><para>For detailed information on inputs, outputs and how to run each executable, refer to the README and files in the <ulink url="https://github.com/integrativemodeling/spb">SPB biosystems page</ulink>.</para>
+<para>Here&apos;s a brief description of the command line executables.</para>
+</sect3></sect2>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_bin">
+<title>spb</title><para>This is the main executable for running sampling using Well-Tempered Ensemble Replica Exchange, based on FRET, yeast two-hybrid and other restraints.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_analysis_bin">
+<title>spb_analysis</title><para>After running sampling, we need to rescore the final ensemble (all models at 1 K) based on the EM2D score. This step performs the rescoring and attaches a weight to each model (higher the better) based on the Well-tempered ensemble Replica Exchange method.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_cluster_bin">
+<title>spb_cluster</title><para>Models are clustered taking their weight into account. Distance threshold-based clustering is performed with a 1.5 nm threshold.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_density_bin">
+<title>spb_density</title><para>Localization density is calculated per protein for models of a given cluster.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_density_perbead_bin">
+<title>spb_density_perbead</title><para>To better localize the protein termini, localization density is calculated per bead per protein for a given cluster.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1spb_test_score_bin">
+<title>spb_test_score</title><para>Code to output the restraint values of a model. Takes 2 RMFs as input: one containing structural coordinations and another containing ISD values.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1spb_1autotoc_md3">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Massimiliano Bonomi, Shruthi Viswanath</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>shruthivis</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>S. Viswanath*, M. Bonomi*, S.J. Kim, V.A. Klenchin, K.C. Taylor, K.C. Yabut, N.T. Umbreit, H.A. Van Epps, J. Meehl, M.H. Jones, D. Russel, J.A. Velazquez-Muriel, M. Winey, I. Rayment, T.N. Davis, A. Sali, and E.G. Muller. The molecular architecture of the yeast spindle pole body core determined by Bayesian integrative modeling. Mol Biol Cell 28, 3298-3314, 2017.</para>
+</listitem><listitem><para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">main IMP papers list</ref>. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/spb/AttributeDistancePairScore.h" line="17" column="14"/>
+  </compounddef>
+</doxygen>

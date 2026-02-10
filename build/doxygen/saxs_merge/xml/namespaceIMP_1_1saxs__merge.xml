@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1saxs__merge" kind="namespace" language="C++">
+    <compoundname>IMP::saxs_merge</compoundname>
+    <briefdescription>
+<para>A method for merging SAXS profiles using Gaussian processes. </para>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="namespaceIMP_1_1saxs__merge_1saxs_merge_bin">
+<title>saxs_merge</title><para>A method for merging SAXS profiles using Gaussian processes. Small-Angle X-ray Scattering (SAXS) is an experimental technique that allows gathering structural information on biomolecules in solution. High-quality SAXS profiles are usually obtained by manual merging of scattering profiles from different concentrations and exposure times.</para>
+<para>SAXS Merge is a fully automated statistical method for merging SAXS profiles using Gaussian processes. This method requires only the buffer-subtracted profile files in a specific order. At the heart of its formulation is nonlinear interpolation using Gaussian Processes, which provide a statement of the problem that accounts for correlation in the data. The method is <ulink url="https://salilab.org/saxsmerge/benchmark">benchmarked</ulink>.</para>
+<para>A <ulink url="https://salilab.org/saxsmerge">webserver</ulink> is also available.</para>
+<para><emphasis>Examples</emphasis>:<itemizedlist>
+<listitem><para><ref refid="namespaceIMP_1_1saxs__merge" kindref="compound">Merging of SAXS profiles</ref></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1saxs__merge_1autotoc_md0">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Yannick Spill, Seong Joong Kim, Dina Schneidman-Duhovny</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>yannickspill</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>SAXS Merge: an Automated Webserver to Statistically Merge SAXS Profiles. Submitted.</para>
+</listitem><listitem><para>SAXS Merge: an Automated Statistical Method to Merge SAXS Profiles using Gaussian Processes. Accepted in the Journal of Synchrotron Radiation. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/catherine/imp/build/doxygen/generated/IMP_saxs_merge.dox" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1TIFFImageReaderWriter" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::TIFFImageReaderWriter</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ImageReaderWriter" prot="public" virt="non-virtual">IMP::em2d::ImageReaderWriter</basecompoundref>
+    <includes local="no">IMP/em2d/TIFFImageReaderWriter.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1acd1b2d4b26fea0ab4c1d72c2281decf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::TIFFImageReaderWriter::TIFFImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>TIFFImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::TIFFImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="22" column="3" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1ac17327290237aadb22f4bc25cbf6fdf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::TIFFImageReaderWriter::~TIFFImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~TIFFImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::~TIFFImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="104" column="231" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a668ade7be79e29f2036ea7750efe1856" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::TIFFImageReaderWriter::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::get_type_name</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a68d4ec44e98f1d72ec870593bbcbc4af">get_type_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="104" column="34" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a2b9c81001b2a001b63e075aaff4a8944" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::TIFFImageReaderWriter::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::get_version_info</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a05c699b3c44b2ef9f8eed2801e6bc196">get_version_info</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="104" column="103" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1aa6e55985737f12091836972d4c533e89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::read</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</argsstring>
+        <name>read</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::read</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a5e44ebd2e762bc482741d31eb2f61ae5">read</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="24" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a9c7f5e275c757dcac82222bd91168585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::read_from_floats</definition>
+        <argsstring>(const String &amp;, em::ImageHeader &amp;, cv::Mat &amp;) const override</argsstring>
+        <name>read_from_floats</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::read_from_floats</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1adbd764fa1dacf7cf79ec44670f49b6a4">read_from_floats</reimplements>
+        <param>
+          <type>const String &amp;</type>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="37" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a79e71352278aba3e88a035c0a1d9b378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::read_from_ints</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</argsstring>
+        <name>read_from_ints</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::read_from_ints</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ad5d892bb53865c0995d9226d3d7dadfe">read_from_ints</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Reads an image file in TIFF format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header to store the info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a matrix to store the grid of data of the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Warning:: The header passed is filled with standard values</title><para>If you need full header information you must work with other format. Eg, Spider. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="49" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a000fe6ea38a22e3f25b147df1812fe6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::write</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</argsstring>
+        <name>write</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::write</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1aae799f91ac40249ea85441d1154ad0f1">write</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="29" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a329cac8a4541ae5d2c19348a6e434230" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::write_to_floats</definition>
+        <argsstring>(const String &amp;, em::ImageHeader &amp;, const cv::Mat &amp;) const override</argsstring>
+        <name>write_to_floats</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::write_to_floats</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a59263b05b2204f8a045cadb975604e72">write_to_floats</reimplements>
+        <param>
+          <type>const String &amp;</type>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="34" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="34" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a5318892665b2405c50f7347d31024961" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::TIFFImageReaderWriter::write_to_ints</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</argsstring>
+        <name>write_to_ints</name>
+        <qualifiedname>IMP::em2d::TIFFImageReaderWriter::write_to_ints</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ImageReaderWriter_1acdc118dbb9ccf187f29072010f4e71d6">write_to_ints</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writes an EM image in TIFF format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header with the image info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a matrix with the grid of data of the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Warning:: Careful: This function writes a 16-bit image.</title><para>You might be discarding float information. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="70" column="8" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="70" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Management of reading/writing TIFF images. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::em2d::ImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1ImageReaderWriter"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::TIFFImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::em2d::ImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1ImageReaderWriter"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::TIFFImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/TIFFImageReaderWriter.h" line="19" column="1" bodyfile="include/IMP/em2d/TIFFImageReaderWriter.h" bodystart="19" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a668ade7be79e29f2036ea7750efe1856" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a2b9c81001b2a001b63e075aaff4a8944" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a197519249a9bf215c5e3b1c93454dd6e" prot="public" virt="non-virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>ImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1aa6e55985737f12091836972d4c533e89" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>read</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a9c7f5e275c757dcac82222bd91168585" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>read_from_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a79e71352278aba3e88a035c0a1d9b378" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>read_from_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1acd1b2d4b26fea0ab4c1d72c2281decf8" prot="public" virt="non-virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>TIFFImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a000fe6ea38a22e3f25b147df1812fe6c" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>write</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a329cac8a4541ae5d2c19348a6e434230" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>write_to_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a5318892665b2405c50f7347d31024961" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>write_to_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ae3a2db063f891b1ac487cad40101f874" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>~ImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1ac17327290237aadb22f4bc25cbf6fdf4" prot="public" virt="virtual"><scope>IMP::em2d::TIFFImageReaderWriter</scope><name>~TIFFImageReaderWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

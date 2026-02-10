@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="integrative__docking__config_8h" kind="file" language="C++">
+    <compoundname>integrative_docking_config.h</compoundname>
+    <includes local="no">IMP/kernel_config.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">IMP/compiler_macros.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>integrative_docking_config.h</label>
+        <link refid="integrative__docking__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/compiler_macros.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/kernel_config.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1integrative__docking">IMP::integrative_docking</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="integrative__docking__config_8h_1aef58ef44cd5374c1461e0cc88a0f3700" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_BOOST_FILESYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="125" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a019b0f9a19227b002f3472cbeeb57fe1" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_BOOST_GRAPH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="127" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a0c9b79c615a2d711ebd8321be6dea93a" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_BOOST_RANDOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="129" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1ad16f5e45afd0e2d226b55ba85b8442f7" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_BOOST_REGEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="131" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a8fa5885c72e310ebed4931772cd3f699" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_BOOST_SYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="133" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a2661c03a49cfa2342e6e5fc887944cbe" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="135" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a426562b604ceded09ef381e608d6ff95" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_FFTW3</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="137" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a6dfa69ae1dfac9ed849c76a3c30c27ae" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_GSL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="139" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1ac420b09f68dc6b5302c66d8cee7541ac" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_HDF5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="141" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aeb2519b25cd5c219ccc553cdf003fe45" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_ALGEBRA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="99" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1ad490292bfd0dce7668308cd0b8ed3592" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_ATOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="101" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a2d154f25ebc7900780b0b05cc4c9a994" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="103" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a5358677849ee8c15719d59fee2db5907" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_CONTAINER</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="105" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aa0df96b16d90677d55f4a20cfd4718c8" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_CORE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="107" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a84e98d2d078b8121db4183141f3f02a1" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_DISPLAY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="109" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a980dd33fac4a19edcc683f32a77c3273" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_DOMINO</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="111" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a7ef3bfb501b19ab25997610494295dcd" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_GSL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="113" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1af35430ac903c247d9c91b14acc4a5c42" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_ISD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="115" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a444c57a3ae39906e8f0f3b250862505b" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_KERNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="117" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a87e1d0fbc32ac3c552b43a9914d0f5f1" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="119" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a281137e34c5ae244b045737cc666c4df" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_SCORE_FUNCTOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="121" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a359aa89edd3ce07567579969a14e572e" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_IMP_STATISTICS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="123" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a11faef73e01706b85485894645684398" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_NUMPY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="143" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a47fa4403224237b6f0052b572312bd6b" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_OPENCV3</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="145" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a068d5a3cfbe559ace5b8446b8853e30c" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_PYTHON_IHM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="149" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a28adecdc158a6fe73f779d2d6edc7ba6" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_HAS_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="147" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a028dcd840678e4ae5826371e2d489988" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_BOOST_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="124" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a9a7bc3bdd1a7f964093262a16ba35ee9" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_BOOST_GRAPH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="126" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a994a0bd881e5a55de9c63a64cea3ceac" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_BOOST_RANDOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="128" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1af319883d26da199abd16e950fa6f92f8" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_BOOST_REGEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="130" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1afcb2540f1ed6c5fd2b289b32ff6a09ca" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_BOOST_SYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="132" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a45ca4c1e9b03a2183080600b5b77e409" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="134" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1abb5c84adce401277d81dc5562ba26442" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_FFTW3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="136" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1ac39e06ae600676f796b936e2b68e231c" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_GSL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="138" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aeaeec5b1e0407156204e68876d43ed3b" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_HDF5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="140" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a664ac34585dfcc4dffc4e592d810fa2b" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_ALGEBRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="98" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a305e3d2cdaef0dd6d8aa9f641ff87abf" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_ATOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="100" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1abf7804985a517d951b03798aa6d75dff" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="102" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a876098d5be0513630ca210f05bd28856" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_CONTAINER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="104" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a9a262397397eff624cd4e537f93befc9" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_CORE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="106" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a84c0e2f33a71beb9083c81ee5225cca6" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_DISPLAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="108" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aa5fd9f3589c1838a831199398666ac39" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_DOMINO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="110" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1abf8614faeea521abaa704f746bb4fc46" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_GSL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="112" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a1d96b271b31786a3a7f764a8d6f538c0" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_ISD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="114" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a8bd4c6c74559c61025207e1255062da7" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_KERNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="116" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a383cb68b383e3019b70b18691993695a" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="118" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a448325919ea73046594572a0b917e374" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_SCORE_FUNCTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="120" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1acf270696d190d054f5ad943b6f691032" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_IMP_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="122" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aa98a59a97b8af96e22e6490992189408" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_NUMPY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="142" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a9e6bbfc566e9e85ee90c3d706b54bbf1" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_OPENCV3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="144" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a02f737dac91223583b53ddb33921a587" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_PYTHON_IHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="148" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a6940c1087ead205eaf9d1f8b3e59421a" prot="public" static="no">
+        <name>IMP_INTEGRATIVE_DOCKING_USE_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="146" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a62c2d22a1bcc7e526f03c9610a80ec5d" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_BEGIN_INTERNAL_NAMESPACE</name>
+        <initializer>  IMPINTEGRATIVEDOCKING_BEGIN_NAMESPACE\
+  namespace internal {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="91" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aa35b90227b883d946ef9981c123625c5" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_BEGIN_NAMESPACE</name>
+        <initializer>namespace IMP{ namespace integrative_docking {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="87" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1abdc0cba72e60c53e6d1543bd8bb1850d" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_FUNCTION_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="278" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aaad2ebd63451c3c01a1818f9e949bf04" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_FUNCTION_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_FUNCTION_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="308" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="308" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a6bc85beade542e25af448d1d3e7172ac" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_HEADER</name>
+        <param><defname>version</defname></param>
+        <param><defname>help_message</defname></param>
+        <initializer>/** See [deprecation support](@ref deprecation). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="272" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="272" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1af0651e764cee4556c784ba6c49d313fc" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_MACRO</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="292" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a3b709b73a0df3997c6f0f701d215de68" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_METHOD_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="280" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aae3e77aeb1064d7ae3f1615762d37b65" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_METHOD_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_METHOD_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="312" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="312" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a834cef603a80471eeb7f74d693020501" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_OBJECT_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="276" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1af46b3badb831d543e969362b59ed7a49" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_OBJECT_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_OBJECT_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="304" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="304" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a7e825940cdacb41b0f91556442b6e55e" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_VALUE_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="274" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a4d8b821dac22f03c3a940deefa54f839" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_DEPRECATED_VALUE_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_VALUE_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="300" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="300" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a362d5f1442e34c633517db2c354c86d5" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_END_INTERNAL_NAMESPACE</name>
+        <initializer>} IMPINTEGRATIVEDOCKING_END_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="94" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a35a79709d0266c2e6832bd81e5d93d73" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_END_NAMESPACE</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="89" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1aa7aaa85a2dd94039d027df52ece4e5b8" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_EXPORT_TEMPLATE</name>
+        <param><defname>name</defname></param>
+        <initializer>IMP_REQUIRE_SEMICOLON_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="69" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a9ba4ee0cbdcc29baa351826375b759ed" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKING_SHOW_WARNINGS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="252" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="integrative__docking__config_8h_1a56b4850e720f40b17e16b9df15ef5cb7" prot="public" static="no">
+        <name>IMPINTEGRATIVEDOCKINGEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="50" column="9" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/integrative_docking/integrative_docking_config.h"/>
+  </compounddef>
+</doxygen>

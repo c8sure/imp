@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::multifit::GeometricHash::inside_sphere_inf</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad372d6c7e3f2b85c5d0c0d9628393887" prot="public" static="no" mutable="no">
+        <type>const Point &amp;</type>
+        <definition>const Point&amp; IMP::multifit::GeometricHash&lt; T, D &gt;::inside_sphere_inf::center_</definition>
+        <argsstring></argsstring>
+        <name>center_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_sphere_inf::center_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="192" column="17" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aad68cf6b95cb51b3e19dc3e296e3452d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::inside_sphere_inf::radius_</definition>
+        <argsstring></argsstring>
+        <name>radius_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_sphere_inf::radius_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="193" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aa33baf46fc397413a7c46e65f081e570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::GeometricHash&lt; T, D &gt;::inside_sphere_inf::inside_sphere_inf</definition>
+        <argsstring>(const Point &amp;center, double radius)</argsstring>
+        <name>inside_sphere_inf</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_sphere_inf::inside_sphere_inf</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="183" column="5" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="183" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1a0e147598e0f0d266b290d124c654b92a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::GeometricHash&lt; T, D &gt;::inside_sphere_inf::operator()</definition>
+        <argsstring>(const Point &amp;pt) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_sphere_inf::operator()</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="186" column="10" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="186" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad97c32eed27654059ee1f5ae0ce70baf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::inside_sphere_inf::radius</definition>
+        <argsstring>(int) const</argsstring>
+        <name>radius</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_sphere_inf::radius</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="190" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/GeometricHash.h" line="182" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="182" bodyend="194"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad372d6c7e3f2b85c5d0c0d9628393887" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_sphere_inf</scope><name>center_</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aa33baf46fc397413a7c46e65f081e570" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_sphere_inf</scope><name>inside_sphere_inf</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1a0e147598e0f0d266b290d124c654b92a" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_sphere_inf</scope><name>operator()</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad97c32eed27654059ee1f5ae0ce70baf" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_sphere_inf</scope><name>radius</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aad68cf6b95cb51b3e19dc3e296e3452d" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_sphere_inf</scope><name>radius_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacecereal" kind="namespace" language="C++">
+    <compoundname>cereal</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ProjectionMask_8h_1a0c4475da7c6e20409dea4e6d227bd85e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cereal::load</definition>
+        <argsstring>(Archive &amp;ar, std::map&lt; double, IMP::em2d::ProjectionMaskPtr &gt; &amp;m)</argsstring>
+        <name>load</name>
+        <qualifiedname>cereal::load</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>std::map&lt; double, IMP::em2d::ProjectionMaskPtr &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="91" column="26" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="ProjectionMask_8h_1a02396da670d59407eede73a698a87366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cereal::save</definition>
+        <argsstring>(Archive &amp;ar, const std::map&lt; double, IMP::em2d::ProjectionMaskPtr &gt; &amp;m)</argsstring>
+        <name>save</name>
+        <qualifiedname>cereal::save</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; double, IMP::em2d::ProjectionMaskPtr &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="80" column="26" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="opencv__interface_8h_1a59b15295a14cac2b59815b0e2b73ee5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cereal::serialize</definition>
+        <argsstring>(Archive &amp;ar, cv::Mat &amp;m)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>cereal::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/opencv_interface.h" line="61" column="15" bodyfile="include/IMP/em2d/opencv_interface.h" bodystart="61" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/opencv_interface.h" line="59" column="1"/>
+  </compounddef>
+</doxygen>

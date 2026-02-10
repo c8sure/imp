@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classbuildxlinks_1_1Xlink" kind="class" language="Python" prot="public">
+    <compoundname>buildxlinks::Xlink</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbuildxlinks_1_1Xlink_1abb3a976acac5dbd35b6daf0a1325b0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.Xlink.__init__</definition>
+        <argsstring>(self, id1, chain1, residue1, id2, chain2, residue2, distance)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>buildxlinks.Xlink.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id1</type>
+          <defname>id1</defname>
+        </param>
+        <param>
+          <type>chain1</type>
+          <defname>chain1</defname>
+        </param>
+        <param>
+          <type>residue1</type>
+          <defname>residue1</defname>
+        </param>
+        <param>
+          <type>id2</type>
+          <defname>id2</defname>
+        </param>
+        <param>
+          <type>chain2</type>
+          <defname>chain2</defname>
+        </param>
+        <param>
+          <type>residue2</type>
+          <defname>residue2</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+        </param>
+        <briefdescription>
+<para>Initialize the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">id1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the first component of the cross-link </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chain1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chain of the first component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">residue1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue cross-linked in the first component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the second component of the cross-link </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chain2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chain1 Chain of the second component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">residue2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue cross-linked in the second component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="25" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="25" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1Xlink_1ac307585a9766058b4024faa8c28939de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.Xlink.get_name</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_name</name>
+        <qualifiedname>buildxlinks.Xlink.get_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Generate a unique name for the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>: The name cannot start with a number, upsets sqlite </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="77" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1Xlink_1a37d5a17ea3d70a59d55c92e79f51c32a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.Xlink.swap</definition>
+        <argsstring>(self)</argsstring>
+        <name>swap</name>
+        <qualifiedname>buildxlinks.Xlink.swap</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>swaps the order of the residues in the restraint </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="60" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="60" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class defining a cross-link. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/buildxlinks.py" line="16" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="16" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classbuildxlinks_1_1Xlink_1abb3a976acac5dbd35b6daf0a1325b0d7" prot="public" virt="non-virtual"><scope>buildxlinks::Xlink</scope><name>__init__</name></member>
+      <member refid="classbuildxlinks_1_1Xlink_1ac307585a9766058b4024faa8c28939de" prot="public" virt="non-virtual"><scope>buildxlinks::Xlink</scope><name>get_name</name></member>
+      <member refid="classbuildxlinks_1_1Xlink_1a37d5a17ea3d70a59d55c92e79f51c32a" prot="public" virt="non-virtual"><scope>buildxlinks::Xlink</scope><name>swap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

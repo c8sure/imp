@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1ISDRestraint" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::spb::ISDRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Restraint</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1spb_1_1EM2DRestraint" prot="public" virt="non-virtual">IMP::spb::EM2DRestraint</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1spb_1_1UniformBoundedRestraint" prot="public" virt="non-virtual">IMP::spb::UniformBoundedRestraint</derivedcompoundref>
+    <includes local="no">IMP/spb/ISDRestraint.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ISDRestraint_1ae876b1fe13a179659800c38a9521e45c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::ISDRestraint::ISDRestraint</definition>
+        <argsstring>(Model *mdl, std::string name)</argsstring>
+        <name>ISDRestraint</name>
+        <qualifiedname>IMP::spb::ISDRestraint::ISDRestraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>mdl</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ISDRestraint.h" line="34" column="3" bodyfile="include/IMP/spb/ISDRestraint.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ISDRestraint_1a633dbe887307b93953c10b590232a751" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::ISDRestraint::get_probability</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_probability</name>
+        <qualifiedname>IMP::spb::ISDRestraint::get_probability</qualifiedname>
+        <reimplementedby refid="classIMP_1_1spb_1_1EM2DRestraint_1a35b35a46b5451585e089c7f6486ec10b">get_probability</reimplementedby>
+        <reimplementedby refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aea291a16e6ec8fe13d3a22529ddbd4d6">get_probability</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ISDRestraint.h" line="37" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Apply an NOE distance restraint between two particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Be sure to check out the swig wrapper file and how it wraps this class.</para>
+</simplesect>
+The source code is as follows: <programlisting filename="ISDRestraint.h"></programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::spb::EM2DRestraint</label>
+        <link refid="classIMP_1_1spb_1_1EM2DRestraint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::spb::ISDRestraint</label>
+        <link refid="classIMP_1_1spb_1_1ISDRestraint"/>
+      </node>
+      <node id="3">
+        <label>IMP::spb::UniformBoundedRestraint</label>
+        <link refid="classIMP_1_1spb_1_1UniformBoundedRestraint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/spb/ISDRestraint.h" line="30" column="1" bodyfile="include/IMP/spb/ISDRestraint.h" bodystart="30" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1ISDRestraint_1a633dbe887307b93953c10b590232a751" prot="public" virt="pure-virtual"><scope>IMP::spb::ISDRestraint</scope><name>get_probability</name></member>
+      <member refid="classIMP_1_1spb_1_1ISDRestraint_1ae876b1fe13a179659800c38a9521e45c" prot="public" virt="non-virtual"><scope>IMP::spb::ISDRestraint</scope><name>ISDRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2merge_tree_8py-example" kind="example">
+    <compoundname>domino/merge_tree.py</compoundname>
+    <briefdescription>
+<para>The example shows how to generate and inspect a merge tree for use in Domino. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The example shows how to generate and inspect a merge tree for use in Domino. <programlisting filename="domino/merge_tree.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/merge_tree.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>The<sp/>example<sp/>shows<sp/>how<sp/>to<sp/>generate<sp/>and<sp/>inspect<sp/>a<sp/>merge<sp/>tree<sp/>for<sp/>use<sp/>in<sp/>Domino.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;merge<sp/>tree&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.TERSE)</highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>don&apos;t<sp/>print<sp/>messages<sp/>about<sp/>evaluation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D((0,<sp/>0,<sp/>0),<sp/>(10,<sp/>10,<sp/>10))</highlight></codeline>
+<codeline><highlight class="normal">allc<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>7):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>IMP.Particle(m)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>IMP.core.XYZR.setup_particle(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p,<sp/>IMP.algebra.Sphere3D(IMP.algebra.get_random_vector_in(bb),<sp/>1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>allc.append(d.get_coordinates())</highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal">ss<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(allc)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>m.get_particle_indexes():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst.set_particle_states(m.get_particle(p),<sp/>ss)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>generate<sp/>a<sp/>set<sp/>of<sp/>restraints<sp/>based<sp/>on<sp/>the<sp/>close<sp/>pairs<sp/>in<sp/>this<sp/>randomly</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>chosen<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">cp<sp/>=<sp/>IMP.core.GridClosePairsFinder()</highlight></codeline>
+<codeline><highlight class="normal">cp.set_distance(1)</highlight></codeline>
+<codeline><highlight class="normal">cps<sp/>=<sp/>cp.get_close_pairs(m,<sp/>m.get_particle_indexes())</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(cps)<sp/>&gt;<sp/>0:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>one<sp/>cannot<sp/>create<sp/>a<sp/>container<sp/>from<sp/>an<sp/>empty<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>acp<sp/>=<sp/>IMP.container.ListPairContainer(m,<sp/>cps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>acp<sp/>=<sp/>IMP.container.ListPairContainer(m)</highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>IMP.core.SoftSpherePairScore(1)</highlight></codeline>
+<codeline><highlight class="normal">r<sp/>=<sp/>IMP.container.PairsRestraint(ps,<sp/>acp)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>compute<sp/>the<sp/>interaction<sp/>graph<sp/>based<sp/>on<sp/>all<sp/>the<sp/>restraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ig<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1a7745ea629841a6a4475211ba0a134b44" kindref="member">IMP.domino.get_interaction_graph</ref>([r],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>generate<sp/>a<sp/>junction<sp/>tree<sp/>from<sp/>the<sp/>interaction<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">jt<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1af4ecbb31cd9704335911eef3d583a754" kindref="member">IMP.domino.get_junction_tree</ref>(ig)</highlight></codeline>
+<codeline><highlight class="normal">print(dir(jt))</highlight></codeline>
+<codeline><highlight class="normal">print(type(jt))</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>merge<sp/>tree<sp/>from<sp/>the<sp/>junction<sp/>tree,<sp/>this<sp/>can<sp/>be<sp/>passed<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>IMP.domin.DominoSampler</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mt<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>(jt)</highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>pst.get_subset()</highlight></codeline>
+<codeline><highlight class="normal">print(s,<sp/>type(s))</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/merge_tree.py"/>
+  </compounddef>
+</doxygen>

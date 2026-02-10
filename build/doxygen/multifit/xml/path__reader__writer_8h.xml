@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="path__reader__writer_8h" kind="file" language="C++">
+    <compoundname>path_reader_writer.h</compoundname>
+    <includes refid="multifit__config_8h" local="no">IMP/multifit/multifit_config.h</includes>
+    <includes local="no">IMP/domino/DominoSampler.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>path_reader_writer.h</label>
+        <link refid="path__reader__writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/domino/DominoSampler.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit">IMP::multifit</innernamespace>
+    <briefdescription>
+<para>Read and write paths. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/path_reader_writer.h"/>
+  </compounddef>
+</doxygen>

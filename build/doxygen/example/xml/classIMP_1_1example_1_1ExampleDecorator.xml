@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleDecorator" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleDecorator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Decorator</basecompoundref>
+    <includes local="no">IMP/example/ExampleDecorator.h</includes>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1afe38435b033b301eab9b9816ed77de92" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExampleDecorator::do_setup_particle</definition>
+        <argsstring>(Model *m, ParticleIndex pi, std::string name)</argsstring>
+        <name>do_setup_particle</name>
+        <qualifiedname>IMP::example::ExampleDecorator::do_setup_particle</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>pi</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Add a name to the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The create function should take arguments which allow the initial state of the Decorator to be reasonable (i.e. make sure there is a non-empty name). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="44" column="15" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a5e77ddd662179c0e2622b7e9bc4b2d5c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>StringKey</type>
+        <definition>static StringKey IMP::example::ExampleDecorator::get_name_key</definition>
+        <argsstring>()</argsstring>
+        <name>get_name_key</name>
+        <qualifiedname>IMP::example::ExampleDecorator::get_name_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="38" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a372c4193645cf40d6598ed9d214d498e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IMP::example::ExampleDecorator::get_is_setup</definition>
+        <argsstring>(const IMP::ParticleAdaptor &amp;p)</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>IMP::example::ExampleDecorator::get_is_setup</qualifiedname>
+        <param>
+          <type>const IMP::ParticleAdaptor &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="70" column="123" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a42e9462d9fccab327fdadac0a4ab45d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IMP::example::ExampleDecorator::get_is_setup</definition>
+        <argsstring>(Model *m, ParticleIndex pi)</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>IMP::example::ExampleDecorator::get_is_setup</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>pi</declname>
+        </param>
+        <briefdescription>
+<para>return true if the particle has a name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="53" column="15" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a173127079675cb7866584f44d127edeb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1example_1_1ExampleDecorator" kindref="compound">ExampleDecorator</ref></type>
+        <definition>static ExampleDecorator IMP::example::ExampleDecorator::setup_particle</definition>
+        <argsstring>(IMP::ParticleAdaptor pa, std::string name)</argsstring>
+        <name>setup_particle</name>
+        <qualifiedname>IMP::example::ExampleDecorator::setup_particle</qualifiedname>
+        <param>
+          <type>IMP::ParticleAdaptor</type>
+          <declname>pa</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a <ref refid="classIMP_1_1example_1_1ExampleDecorator" kindref="compound">ExampleDecorator</ref> object that decorates the particle specified by pa </para>
+</simplesect>
+<simplesect kind="see"><para>setup_particle(m, pi, name) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="71" column="159" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1af8dcc04f322c06a8873d069a62c886c0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1example_1_1ExampleDecorator" kindref="compound">ExampleDecorator</ref></type>
+        <definition>static ExampleDecorator IMP::example::ExampleDecorator::setup_particle</definition>
+        <argsstring>(Model *m, ParticleIndex pi, std::string name)</argsstring>
+        <name>setup_particle</name>
+        <qualifiedname>IMP::example::ExampleDecorator::setup_particle</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>pi</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a <ref refid="classIMP_1_1example_1_1ExampleDecorator" kindref="compound">ExampleDecorator</ref> object that decorates particle pi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="71" column="31" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1aeb9f774566be7d1e940f3a50b05516d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleDecorator::ExampleDecorator</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleDecorator</name>
+        <qualifiedname>IMP::example::ExampleDecorator::ExampleDecorator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="70" column="19" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1afc3c440008a7178095ab44b53ed5ce9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleDecorator::ExampleDecorator</definition>
+        <argsstring>(::IMP::Model *m, ::IMP::ParticleIndex id)</argsstring>
+        <name>ExampleDecorator</name>
+        <qualifiedname>IMP::example::ExampleDecorator::ExampleDecorator</qualifiedname>
+        <param>
+          <type>::IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>::IMP::ParticleIndex</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="70" column="39" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a37e75134ddde85054ad7bc4bf7b8bb5b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleDecorator::ExampleDecorator</definition>
+        <argsstring>(const IMP::ParticleAdaptor &amp;d)</argsstring>
+        <name>ExampleDecorator</name>
+        <qualifiedname>IMP::example::ExampleDecorator::ExampleDecorator</qualifiedname>
+        <param>
+          <type>const IMP::ParticleAdaptor &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="70" column="81" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a815356f91c2d34e0c86d3656628dc5f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::example::ExampleDecorator::get_decorator_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_decorator_name</name>
+        <qualifiedname>IMP::example::ExampleDecorator::get_decorator_name</qualifiedname>
+        <briefdescription>
+<para>Get the name added to the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="58" column="15" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a112e84cddc4b161028d835386d92d7a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::example::ExampleDecorator::set_decorator_name</definition>
+        <argsstring>(std::string nm)</argsstring>
+        <name>set_decorator_name</name>
+        <qualifiedname>IMP::example::ExampleDecorator::set_decorator_name</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>nm</declname>
+        </param>
+        <briefdescription>
+<para>Set the name added to the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="63" column="8" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleDecorator_1a88bd01df5043ff577a1367129ac98cfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::example::ExampleDecorator::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::example::ExampleDecorator::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="70" column="211"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple decorator which adds a name to a particle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A decorator adds functionality to a particle and ensures that invariants are preserved. In this case, the functionality is the setting and access of a name for the Particle and the invariant is that the name is always non-empty.</para>
+<para>The source code is as follows: <programlisting filename="ExampleDecorator.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleDecorator.h<sp/><sp/><sp/><sp/><sp/>\brief<sp/>Add<sp/>a<sp/>name<sp/>to<sp/>a<sp/>particle.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_DECORATOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_DECORATOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Particle.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Model.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Decorator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/decorator_macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/exception.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>A<sp/>simple<sp/>decorator<sp/>which<sp/>adds<sp/>a<sp/>name<sp/>to<sp/>a<sp/>particle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>A<sp/>decorator<sp/>adds<sp/>functionality<sp/>to<sp/>a<sp/>particle<sp/>and<sp/>ensures<sp/>that<sp/>invariants</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>are<sp/>preserved.<sp/>In<sp/>this<sp/>case,<sp/>the<sp/>functionality<sp/>is<sp/>the<sp/>setting<sp/>and<sp/>access</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>of<sp/>a<sp/>name<sp/>for<sp/>the<sp/>Particle<sp/>and<sp/>the<sp/>invariant<sp/>is<sp/>that<sp/>the<sp/>name<sp/>is</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>always</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>non-empty.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleDecorator.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleDecorator.cpp</highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleDecorator<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Decorator<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Use<sp/>a<sp/>static<sp/>variable<sp/>in<sp/>a<sp/>static<sp/>method<sp/>to<sp/>create<sp/>the<sp/>key</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>so<sp/>that<sp/>it<sp/>is<sp/>only<sp/>done<sp/>once<sp/>and<sp/>is<sp/>only<sp/>done<sp/>when<sp/>it<sp/>is<sp/>first</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>needed.<sp/>Lazy<sp/>initialization<sp/>of<sp/>keys<sp/>makes<sp/>\imp<sp/>more<sp/>efficient<sp/>as</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>Particles<sp/>do<sp/>not<sp/>have<sp/>to<sp/>allocate<sp/>memory<sp/>for<sp/>unused<sp/>keys.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>StringKey<sp/>get_name_key();</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Add<sp/>a<sp/>name<sp/>to<sp/>the<sp/>particle</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/**<sp/>The<sp/>create<sp/>function<sp/>should<sp/>take<sp/>arguments<sp/>which<sp/>allow</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>initial<sp/>state<sp/>of<sp/>the<sp/>Decorator<sp/>to<sp/>be<sp/>reasonable<sp/>(i.e.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>make<sp/>sure<sp/>there<sp/>is<sp/>a<sp/>non-empty<sp/>name).</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_setup_particle(Model<sp/>*m,<sp/>ParticleIndex<sp/>pi,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>the<sp/>usage<sp/>check<sp/>macro<sp/>to<sp/>make<sp/>sure<sp/>that<sp/>arguments<sp/>are<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_USAGE_CHECK(!name.empty(),<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>name<sp/>cannot<sp/>be<sp/>empty.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m-&gt;add_attribute(get_name_key(),<sp/>pi,<sp/>name);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>return<sp/>true<sp/>if<sp/>the<sp/>particle<sp/>has<sp/>a<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>get_is_setup(Model<sp/>*m,<sp/>ParticleIndex<sp/>pi)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m-&gt;get_has_attribute(get_name_key(),<sp/>pi);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Get<sp/>the<sp/>name<sp/>added<sp/>to<sp/>the<sp/>particle</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::string<sp/>get_decorator_name()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>get_particle()-&gt;get_value(get_name_key());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Set<sp/>the<sp/>name<sp/>added<sp/>to<sp/>the<sp/>particle</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_decorator_name(std::string<sp/>nm)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>the<sp/>usage<sp/>check<sp/>macro<sp/>to<sp/>check<sp/>that<sp/>functions<sp/>are<sp/>called<sp/>properly</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_USAGE_CHECK(!nm.empty(),<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>name<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>get_particle()-&gt;set_value(get_name_key(),<sp/>nm);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>basic<sp/>constructors<sp/>and<sp/>the<sp/>cast<sp/>function.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_DECORATOR_METHODS(ExampleDecorator,<sp/>Decorator);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_DECORATOR_SETUP_1(ExampleDecorator,<sp/>std::string,<sp/>name);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">/**<sp/>Define<sp/>a<sp/>collection<sp/>of<sp/>them.<sp/>Also<sp/>look<sp/>at<sp/>example.i*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_DECORATORS(ExampleDecorator,<sp/>ExampleDecorators,<sp/>Particles);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_DECORATOR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleDecorator.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>example/ExampleDecorator.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>Add<sp/>a<sp/>name<sp/>to<sp/>a<sp/>particle.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/ExampleDecorator.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">StringKey<sp/>ExampleDecorator::get_name_key()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>compiler<sp/>will<sp/>make<sp/>sure<sp/>this<sp/>is<sp/>initialized<sp/>the<sp/>first<sp/>time<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>method<sp/>is<sp/>called.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>StringKey<sp/>mykey(</highlight><highlight class="stringliteral">&quot;my<sp/>name&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mykey;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ExampleDecorator::show(std::ostream<sp/>&amp;out)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>out<sp/>&lt;&lt;<sp/>get_decorator_name();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleDecorator.h" line="32" column="1" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="32" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1afe38435b033b301eab9b9816ed77de92" prot="private" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>do_setup_particle</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1aeb9f774566be7d1e940f3a50b05516d4" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>ExampleDecorator</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1afc3c440008a7178095ab44b53ed5ce9e" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>ExampleDecorator</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a37e75134ddde85054ad7bc4bf7b8bb5b" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>ExampleDecorator</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a815356f91c2d34e0c86d3656628dc5f6" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>get_decorator_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a42e9462d9fccab327fdadac0a4ab45d7" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>get_is_setup</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a372c4193645cf40d6598ed9d214d498e" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>get_is_setup</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a5e77ddd662179c0e2622b7e9bc4b2d5c" prot="private" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>get_name_key</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a112e84cddc4b161028d835386d92d7a9" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>set_decorator_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1af8dcc04f322c06a8873d069a62c886c0" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>setup_particle</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a173127079675cb7866584f44d127edeb" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>setup_particle</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleDecorator_1a88bd01df5043ff577a1367129ac98cfe" prot="public" virt="non-virtual"><scope>IMP::example::ExampleDecorator</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

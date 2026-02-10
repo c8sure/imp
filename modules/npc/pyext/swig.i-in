@@ -23,6 +23,7 @@ IMP_SWIG_OBJECT_SERIALIZE( IMP::npc, XAxialPositionLowerRestraint, XAxialPositio
 IMP_SWIG_OBJECT_SERIALIZE( IMP::npc, XAxialPositionRestraint, XAxialPositionRestraints);
 IMP_SWIG_OBJECT_SERIALIZE( IMP::npc, XAxialPositionUpperRestraint, XAxialPositionUpperRestraints);
 IMP_SWIG_OBJECT_SERIALIZE( IMP::npc, OverallPositionRestraint, OverallPositionRestraints);
+IMP_SWIG_OBJECT_SERIALIZE( IMP::npc, SphericalIndentMembraneSurfaceLocationRestraint, SphericalIndentMembraneSurfaceLocationRestraints);
 IMP_SWIG_DECORATOR(IMP::npc, SlabWithSphericalIndent, SlabWithSphericalIndents);
 IMP_SWIG_OBJECT(IMP::npc, SlabWithSphericalIndentMBMScore, SlabWithSphericalIndentMBMScores);
 IMP_SWIG_OBJECT(IMP::npc, SlabWithSphericalIndentGeometry, SlabWithSphericalIndentGeometries);
@@ -35,6 +36,7 @@ IMP_SWIG_DECORATOR(IMP::npc, SlabWithToroidalPore, SlabWithToroidalPores);
 IMP_SWIG_OBJECT(IMP::npc, SlabWithToroidalPoreWireGeometry, SlabWithToroidalPoreWireGeometries);
 
 %include "IMP/npc/ProteinLocalizationRestraint.h"
+%include "IMP/npc/SphericalIndentProteinLocalizationRestraint.h"
 %include "IMP/npc/CompositeRestraint.h"
 %include "IMP/npc/MinimumSphereDistancePairScore.h"
 %include "IMP/npc/SlabWithSphericalIndent.h"

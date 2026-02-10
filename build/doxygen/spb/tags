@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::spb::AttributeDistancePairScore</name>
+    <filename>classIMP_1_1spb_1_1AttributeDistancePairScore.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>AttributeDistancePairScore</name>
+      <anchorfile>classIMP_1_1spb_1_1AttributeDistancePairScore.html</anchorfile>
+      <anchor>abd9f3f36a0742a1dbf85cb6021e905da</anchor>
+      <arglist>(UnaryFunction *f, FloatKey k)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::BoxedMover</name>
+    <filename>classIMP_1_1spb_1_1BoxedMover.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>BoxedMover</name>
+      <anchorfile>classIMP_1_1spb_1_1BoxedMover.html</anchorfile>
+      <anchor>a42b03b596dab01a65b08165d60d1f588</anchor>
+      <arglist>(Particle *p, Float max_tr, algebra::Vector3Ds centers)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::CellMover</name>
+    <filename>classIMP_1_1spb_1_1CellMover.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::ChiSquareMetric</name>
+    <filename>classIMP_1_1spb_1_1ChiSquareMetric.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::ContactMapMetric</name>
+    <filename>classIMP_1_1spb_1_1ContactMapMetric.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::DiameterRgyrRestraint</name>
+    <filename>classIMP_1_1spb_1_1DiameterRgyrRestraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::DistanceRMSDMetric</name>
+    <filename>classIMP_1_1spb_1_1DistanceRMSDMetric.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::DistanceTerminiRestraint</name>
+    <filename>classIMP_1_1spb_1_1DistanceTerminiRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DistanceTerminiRestraint</name>
+      <anchorfile>classIMP_1_1spb_1_1DistanceTerminiRestraint.html</anchorfile>
+      <anchor>a43c5d156666d4d3a9997ca5380322c30</anchor>
+      <arglist>(IMP::Particle *nterm, IMP::Particle *cterm, IMP::Particle *reqd_dist_term, double sigma0_dist)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>unprotected_evaluate</name>
+      <anchorfile>classIMP_1_1spb_1_1DistanceTerminiRestraint.html</anchorfile>
+      <anchor>ad3aa68a4b00274594adc6c634ba604be</anchor>
+      <arglist>(IMP::DerivativeAccumulator *accum) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::EM2DRestraint</name>
+    <filename>classIMP_1_1spb_1_1EM2DRestraint.html</filename>
+    <base>IMP::spb::ISDRestraint</base>
+    <member kind="function">
+      <type></type>
+      <name>EM2DRestraint</name>
+      <anchorfile>classIMP_1_1spb_1_1EM2DRestraint.html</anchorfile>
+      <anchor>af1c4225392bb43cb37bd9014cb24eb2e</anchor>
+      <arglist>(Particles ps, Particle *sigma, std::string ifile, Float px_size, Float res)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>unprotected_evaluate</name>
+      <anchorfile>classIMP_1_1spb_1_1EM2DRestraint.html</anchorfile>
+      <anchor>a8d6b189e88acca5fc8b4f9b6e76e6570</anchor>
+      <arglist>(IMP::DerivativeAccumulator *accum) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::Gaussian</name>
+    <filename>classIMP_1_1spb_1_1Gaussian.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Gaussian</name>
+      <anchorfile>classIMP_1_1spb_1_1Gaussian.html</anchorfile>
+      <anchor>ae2252aa908524d4ab6d81a96df1ea810</anchor>
+      <arglist>(Float Emin, Float Zmin, Float sigma)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::HelixDecorator</name>
+    <filename>classIMP_1_1spb_1_1HelixDecorator.html</filename>
+    <member kind="function">
+      <type>Float</type>
+      <name>get_begin</name>
+      <anchorfile>classIMP_1_1spb_1_1HelixDecorator.html</anchorfile>
+      <anchor>a36e0736b4d124306b22b6cec7788eda7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Float</type>
+      <name>get_end</name>
+      <anchorfile>classIMP_1_1spb_1_1HelixDecorator.html</anchorfile>
+      <anchor>aa0866c25382813651cd299826d5c5677</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_begin</name>
+      <anchorfile>classIMP_1_1spb_1_1HelixDecorator.html</anchorfile>
+      <anchor>af71ac58d6940ae687acac7bb6d85b97d</anchor>
+      <arglist>(Float v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_end</name>
+      <anchorfile>classIMP_1_1spb_1_1HelixDecorator.html</anchorfile>
+      <anchor>a944390e70f53fa38f6351dbdf7fb6840</anchor>
+      <arglist>(Float v)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::ISDRestraint</name>
+    <filename>classIMP_1_1spb_1_1ISDRestraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::KinkPairScore</name>
+    <filename>classIMP_1_1spb_1_1KinkPairScore.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::MolecularDynamicsWithWte</name>
+    <filename>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MolecularDynamicsWithWte</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a2666b8ac4baae12e5ebbf94bc125c3cc</anchor>
+      <arglist>(Model *m, double emin, double emax, double sigma, double gamma, double w0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>assign_velocities</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a0a5cb1e977b6c3800b2dfae41a8c04a6</anchor>
+      <arglist>(Float temperature)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Float</type>
+      <name>get_kinetic_energy</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a5da7a96cb9e1d6a7d755219366c9b897</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Float</type>
+      <name>get_kinetic_temperature</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a11a715826a1f7cfb3d235f44719201b2</anchor>
+      <arglist>(Float ekinetic) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>rescale_velocities</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a3519d92cba5ffac12ee5846a1b3d61c4</anchor>
+      <arglist>(Float rescale)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_velocity_cap</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a4af44ce176e7b374f5113ce43b345646</anchor>
+      <arglist>(Float velocity_cap)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>cap_velocity_component</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a839fb25aefb7d685bf2a8c777c048a99</anchor>
+      <arglist>(Float &amp;vel)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>propagate_coordinates</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>af060e5e297ad3e6b35de01133dab2c0a</anchor>
+      <arglist>(const ParticleIndexes &amp;ps, double step_size)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>propagate_velocities</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>aebf18749657dcaad6ad378f51b2a7b43</anchor>
+      <arglist>(const ParticleIndexes &amp;ps, double step_size)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>degrees_of_freedom_</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>ad4c3aada1b651f808d33e45ac142ec89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Float</type>
+      <name>velocity_cap_</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a85abb384e2bda9e6b8fcb176b7dc123f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>FloatKey</type>
+      <name>vs_</name>
+      <anchorfile>classIMP_1_1spb_1_1MolecularDynamicsWithWte.html</anchorfile>
+      <anchor>a01404fe1683a97d9bc5603103efd0a03</anchor>
+      <arglist>[3]</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::MonteCarloWithWte</name>
+    <filename>classIMP_1_1spb_1_1MonteCarloWithWte.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::NuisanceRangeModifier</name>
+    <filename>classIMP_1_1spb_1_1NuisanceRangeModifier.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::PbcBoxedMover</name>
+    <filename>classIMP_1_1spb_1_1PbcBoxedMover.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PbcBoxedMover</name>
+      <anchorfile>classIMP_1_1spb_1_1PbcBoxedMover.html</anchorfile>
+      <anchor>a131c4510cd00aaa4229c157b4bfd601d</anchor>
+      <arglist>(Particle *p, Particles ps, Float max_tr, algebra::Vector3Ds centers, algebra::Transformation3Ds transformations, Particle *px, Particle *py, Particle *pz)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::PbcBoxedRigidBodyMover</name>
+    <filename>classIMP_1_1spb_1_1PbcBoxedRigidBodyMover.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PbcBoxedRigidBodyMover</name>
+      <anchorfile>classIMP_1_1spb_1_1PbcBoxedRigidBodyMover.html</anchorfile>
+      <anchor>a71a75e5182b952b8fb0b4a4e5ca49eeb</anchor>
+      <arglist>(core::RigidBody d, Particles ps, Float max_translation, Float max_rotation, algebra::Vector3Ds centers, algebra::Transformation3Ds transformations, Particle *px, Particle *py, Particle *pz)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::RigidBodyNewMover</name>
+    <filename>classIMP_1_1spb_1_1RigidBodyNewMover.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RigidBodyNewMover</name>
+      <anchorfile>classIMP_1_1spb_1_1RigidBodyNewMover.html</anchorfile>
+      <anchor>af43951b1f208f16ca904dd5bb845f30f</anchor>
+      <arglist>(core::RigidBody d, Float max_x_translation, Float max_y_translation, Float max_z_translation, Float max_rot)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::RigidBodyPackingScore</name>
+    <filename>classIMP_1_1spb_1_1RigidBodyPackingScore.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::RMSDMetric</name>
+    <filename>classIMP_1_1spb_1_1RMSDMetric.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::SameParticlePairFilter</name>
+    <filename>classIMP_1_1spb_1_1SameParticlePairFilter.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::SameRigidBodyPairFilter</name>
+    <filename>classIMP_1_1spb_1_1SameRigidBodyPairFilter.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::TiltSingletonScore</name>
+    <filename>classIMP_1_1spb_1_1TiltSingletonScore.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::TransformationSymmetry</name>
+    <filename>classIMP_1_1spb_1_1TransformationSymmetry.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>TransformationSymmetry</name>
+      <anchorfile>classIMP_1_1spb_1_1TransformationSymmetry.html</anchorfile>
+      <anchor>abbd918cd369d5b315141934b20ac0868</anchor>
+      <arglist>(algebra::Transformation3D t, Particle *px, Particle *py, Particle *pz)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::TwoStateGoModelRestraint</name>
+    <filename>classIMP_1_1spb_1_1TwoStateGoModelRestraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::spb::UniformBoundedRestraint</name>
+    <filename>classIMP_1_1spb_1_1UniformBoundedRestraint.html</filename>
+    <base>IMP::spb::ISDRestraint</base>
+    <member kind="function">
+      <type></type>
+      <name>UniformBoundedRestraint</name>
+      <anchorfile>classIMP_1_1spb_1_1UniformBoundedRestraint.html</anchorfile>
+      <anchor>ad778f9dd80c267b5860c40d80a7d6da9</anchor>
+      <arglist>(Particle *p, FloatKey fk, Particle *a, Particle *b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>unprotected_evaluate</name>
+      <anchorfile>classIMP_1_1spb_1_1UniformBoundedRestraint.html</anchorfile>
+      <anchor>aaf72b7cc4c37b6242af4c42d903e0328</anchor>
+      <arglist>(IMP::DerivativeAccumulator *accum) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::spb</name>
+    <filename>namespaceIMP_1_1spb.html</filename>
+    <class kind="class">IMP::spb::AttributeDistancePairScore</class>
+    <class kind="class">IMP::spb::BoxedMover</class>
+    <class kind="class">IMP::spb::CellMover</class>
+    <class kind="class">IMP::spb::ChiSquareMetric</class>
+    <class kind="class">IMP::spb::ContactMapMetric</class>
+    <class kind="class">IMP::spb::DiameterRgyrRestraint</class>
+    <class kind="class">IMP::spb::DistanceRMSDMetric</class>
+    <class kind="class">IMP::spb::DistanceTerminiRestraint</class>
+    <class kind="class">IMP::spb::EM2DRestraint</class>
+    <class kind="class">IMP::spb::Gaussian</class>
+    <class kind="class">IMP::spb::HelixDecorator</class>
+    <class kind="class">IMP::spb::ISDRestraint</class>
+    <class kind="class">IMP::spb::KinkPairScore</class>
+    <class kind="class">IMP::spb::MolecularDynamicsWithWte</class>
+    <class kind="class">IMP::spb::MonteCarloWithWte</class>
+    <class kind="class">IMP::spb::NuisanceRangeModifier</class>
+    <class kind="class">IMP::spb::PbcBoxedMover</class>
+    <class kind="class">IMP::spb::PbcBoxedRigidBodyMover</class>
+    <class kind="class">IMP::spb::RigidBodyNewMover</class>
+    <class kind="class">IMP::spb::RigidBodyPackingScore</class>
+    <class kind="class">IMP::spb::RMSDMetric</class>
+    <class kind="class">IMP::spb::SameParticlePairFilter</class>
+    <class kind="class">IMP::spb::SameRigidBodyPairFilter</class>
+    <class kind="class">IMP::spb::TiltSingletonScore</class>
+    <class kind="class">IMP::spb::TransformationSymmetry</class>
+    <class kind="class">IMP::spb::TwoStateGoModelRestraint</class>
+    <class kind="class">IMP::spb::UniformBoundedRestraint</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; AttributeDistancePairScore &gt; &gt;</type>
+      <name>AttributeDistancePairScores</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>a12e9981a67e009aafc50f06c4eb11508</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; AttributeDistancePairScore &gt; &gt;</type>
+      <name>AttributeDistancePairScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>aeac4ab83dad6b61d9baa6dc981fe7692</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; HelixDecorator &gt;</type>
+      <name>HelixDecorators</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>a281476d628dd9e78caa81bce755eba00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; KinkPairScore &gt; &gt;</type>
+      <name>KinkPairScores</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>afee07212a942f47d3cd6643ad9130304</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; KinkPairScore &gt; &gt;</type>
+      <name>KinkPairScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>aa5a72f14d064bbe546708eb8d315f30a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; RigidBodyPackingScore &gt; &gt;</type>
+      <name>RigidBodyPackingScores</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>a930907282957d364a7b9592c119df5f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; RigidBodyPackingScore &gt; &gt;</type>
+      <name>RigidBodyPackingScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>a1f655e3ed84aef5664486d8351e57d58</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>ac4d6b102ab93bb1da1d22860c1536d2b</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1spb.html</anchorfile>
+      <anchor>a1a7c475c82ab592f468be0340cf39c71</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb">spb_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb_analysis">spb_analysis_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb_cluster">spb_cluster_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb_density">spb_density_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb_density_perbead">spb_density_perbead_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1spb.html" title="spb_test_score">spb_test_score_bin</docanchor>
+  </compound>
+</tagfile>

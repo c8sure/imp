@@ -1,0 +1,1185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="structIMP_1_1domino_1_1RestraintCache_1_1ApproximatelyEqual" kind="struct"><name>IMP::domino::RestraintCache::ApproximatelyEqual</name>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1ApproximatelyEqual_1a88b43110886d4cbb053f80c1f599b08b" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1Assignment" kind="class"><name>IMP::domino::Assignment</name>
+    <member refid="classIMP_1_1domino_1_1Assignment_1a1b9649b37841c09eefab3b1ca2ad103e" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1a08ec4e21f3b14e1904d8086494beb3dd" kind="function"><name>serialize</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1a6605c3151f9ea6eadfcfa1f4f7b67060" kind="function"><name>Assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1a9dbd4739c7edc70af313f994b9315970" kind="function"><name>Assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1aff85a1eaee66a07129134c88409d2415" kind="function"><name>Assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1Assignment_1a483eb474161ad4ada461ca9147eaae25" kind="function"><name>Assignment</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1AssignmentContainer" kind="class"><name>IMP::domino::AssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a35fdaba04bd3906f121ce3842cf41254" kind="function"><name>AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a8498b96e8ded4bc39527ae645fcbb4ce" kind="function"><name>~AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a205dd896cae1e38d153254a34cf57b5d" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a06ac84ac6f6261350b0e6f2f2b4a22e8" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1aa81ef13a668c41da618439be20b6f2aa" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d3dbe5e367345d51c494adcbb75852b" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1abc19e460ebf37595c3e135f8126103e8" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1a2d1147ab073394ed0a1bf8e5913440ea" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentContainer_1aa0d8e3d96ae816d7a6462666ec8c0d04" kind="function"><name>get_particle_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1AssignmentsTable" kind="class"><name>IMP::domino::AssignmentsTable</name>
+    <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a437a06ae6c19f35c2dfb706ad650d24f" kind="function"><name>AssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a325612e584018e745a52a9659fcf1e66" kind="function"><name>~AssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a82165fe3c39a0a5bd1005826f5121c26" kind="function"><name>load_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" kind="class"><name>IMP::domino::BranchAndBoundAssignmentsTable</name>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1a4c39de9b95b22e5efe0804df01b95ee7" kind="function"><name>BranchAndBoundAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1accf75e3559c78e408852c8ca87fc55a3" kind="function"><name>~BranchAndBoundAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1a36970111b0756c7e1759e08f8ed873f6" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1ac00a002ba6634d67393615acc8df1555" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1a009975ad8c84fe2df97f49bbe03629ec" kind="function"><name>load_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1BranchAndBoundSampler" kind="class"><name>IMP::domino::BranchAndBoundSampler</name>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a8246e854a8ba9054935a9c75cb9c3a5b" kind="function"><name>BranchAndBoundSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a6731519ba2c15c8de889184c7d8d1285" kind="function"><name>BranchAndBoundSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1ae50c7c9b77083f5de350c9c40bfb4cda" kind="function"><name>~BranchAndBoundSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a5cea53f64ca7069761bd84c447ccbf2e" kind="function"><name>do_get_sample_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a41253405335d754eabc0e14c9a40559e" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a0b1c142e1299f182f4448d5872ff954c" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1CappedAssignmentContainer" kind="class"><name>IMP::domino::CappedAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1ae06b067426599cf0f91f0adc3d0d1667" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1abe7384456872b2fa592302d98e47082c" kind="variable"><name>contained_</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a15f4e8899d83e740138dee1cd083a181" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1aadd0ba7f3194ad727071371a0551a9b5" kind="function"><name>check_number</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a981ac5833c29ad4c1a881b3a89a84710" kind="function"><name>CappedAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a5bbe7826ab9d3f998a410e4a7c9d2ed0" kind="function"><name>~CappedAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a96536bcc2c3a44ab528e1293421db093" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a1df7b24f7697d8b5ff9bc999d287c14b" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a70d2a417f44ffa5c2b9398f922d68476" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1ade8c544f4ee0689f34800536596885c2" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1ab05ffa8956c79b6e55de098aeed22c6c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a60b7911f36c36eb5020f11cf67ab7018" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a30fec5a310e2e2c1b55ede0309d0b009" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1ab312d73f1c4a854fec84a94ee524671e" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1CappedAssignmentContainer_1a65e5f0000d6d39176de37c48b74f7cba" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1CompoundStates" kind="class"><name>IMP::domino::CompoundStates</name>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a49f481710d6b55733e6f1a4337f84950" kind="variable"><name>a_</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1ac56dbd574a6aad3a6a2ae4b2235379cd" kind="variable"><name>b_</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a43d16cc20bd7c0c107341a1395319ca7" kind="function"><name>CompoundStates</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a4851ef8870bda67a73409a00b14f6a63" kind="function"><name>~CompoundStates</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a631d58ba1db6806a9d0deeff8dc6461f" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a37483428dcec34d7d83a1301826178e0" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a27f4d825beff38d25658b1255963ba65" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1CompoundStates_1a9ea5304ccd6c3e6098dd41bfd6207ee4" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1DependencyScoreState" kind="class"><name>IMP::domino::DependencyScoreState</name>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ace2e54042967034d4390bb2d8babf458" kind="variable"><name>inputc_</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1abaca9b7972998b6d5901a2e9d58814b3" kind="variable"><name>inputp_</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ae731eb6180cbec5268fedc8952a04f3a" kind="variable"><name>outputc_</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1acb942d64e66a3fce990f3476472b1b0a" kind="variable"><name>outputp_</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a7a5d8d31092d6fddb59d066e44a10e43" kind="function"><name>DependencyScoreState</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ae099876ed588e375fae005263d53976b" kind="function"><name>~DependencyScoreState</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ad428a3b460d0b410041af0f6d52bda70" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1acbb8a7b784a27b19b9bcd02c5e25a743" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a8f2ca42b21e373b97a129d8f8ddf9e01" kind="function"><name>set_input_containers</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a09a195a99a2c51b40e139fd4ffd7fb3e" kind="function"><name>set_input_particles</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a469015de3f50073d6aa773fdb92b0c7a" kind="function"><name>set_output_containers</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1aab35d7027a786fded6cd30ea6b33312e" kind="function"><name>set_output_particles</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ac6870a108cba38e70caa3521dbf75647" kind="function"><name>do_after_evaluate</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a2eceeb32e09a853661205131bae2803c" kind="function"><name>do_before_evaluate</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a3cf68c2feb6998bcab1a4c8fa8e8f4a0" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a8de92cb4803f72a9047048cbb90acafa" kind="function"><name>do_get_outputs</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1DiscreteSampler" kind="class"><name>IMP::domino::DiscreteSampler</name>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aed5d2eda883429164d051dd4f5a25df4" kind="variable"><name>subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ae87fc3c189ff87dbc93ba9959da79e4f" kind="function"><name>set_particle_states_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aad5f8f5ee7e3e9b17f247917235ab62b" kind="function"><name>set_assignments_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1abe0c80e27d1174e2b2d8911a0b4e9b94" kind="function"><name>get_particle_states_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aea4629b51fe360838144aa20d647c9c4" kind="function"><name>remove_subset_filter_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a5f13ae32a9d25b7d5c8f3fdd4cbf8c4d" kind="function"><name>remove_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a33a06eb8981e4333a409c5134376159b" kind="function"><name>set_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a11fc13bac2048a81f7f3cdd2fd0fa98e" kind="function"><name>set_subset_filter_tables_order</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a69a5fd252f550161d778f1a3c0654fa7" kind="function"><name>add_subset_filter_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a04d99a77362e655bcf99d4da9ebc2f7c" kind="function"><name>add_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1adee0538dc659ab8daf6695b87002eca1" kind="function"><name>clear_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1acfa9aa0506e2bad96e350b30a8dbde6f" kind="function"><name>get_number_of_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0509dccb6c592b9c4f7e1cd53dbcd9e1" kind="function"><name>get_has_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ab078563c0d96bb299d0926cfec89c617" kind="function"><name>get_subset_filter_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a93bb393836d64c1f3bdda56e9a51b736" kind="function"><name>get_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a154d39cd2016935468ec93ebf616df15" kind="function"><name>erase_subset_filter_table</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ad73b0cfd867f9b364fb997a618839a41" kind="function"><name>reserve_subset_filter_tables</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a839c189f7a034a3da4fe1eb0363cc116" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a8c6aaad8e78764eac379ba6e4c40b16e" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0131fbf2486ac79dabf734eecc13f081" kind="variable"><name>restraints_set_</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a8014980c7b2c4cbc8fba8764970f6bc5" kind="variable"><name>rs_</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a33f9398f31c32b3f02616a542205e539" kind="variable"><name>sst_</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a127213eff7a87b103e692c4f2d82d133" kind="function"><name>do_get_sample_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a14c559dad946def14f1870d5abd14ed5" kind="function"><name>do_sample</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa1d1cb77fa302aec372410283bd7fc7d" kind="function"><name>get_assignments_table_to_use</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0fc3cb755fe0cd91520b8146e31ea1af" kind="function"><name>get_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af9ba5f8c591c97d25444bc8f2b290884" kind="function"><name>get_subset_filter_tables_to_use</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a721fbf1b3bf0780e90966a0453f547d4" kind="function"><name>DiscreteSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a9b816446ab5953ee7b6245493f3d7dbd" kind="function"><name>~DiscreteSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa6db66d511c3b2409ca61bc39b85ec14" kind="function"><name>get_maximum_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a6f93b40d485b8617d38245bd6bf4ebae" kind="function"><name>get_sample_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a78d158c2aba7c490635e949fc234294a" kind="function"><name>set_maximum_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af01fe0f3283adc61bdb94b716afca5cd" kind="function"><name>set_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa88d60254ee2cf156c3405437af23ee1" kind="function"><name>set_restraints</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" kind="class"><name>IMP::domino::DisjointSetsSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1af6a6eaedb26601a53d83a6020a28669c" kind="variable"><name>disjoint_sets_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1abc1a5b7b2062d4102e3d25057e20b108" kind="variable"><name>elements_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a50c7a683d1707994e0bf3d30af78eb11" kind="variable"><name>index_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2a185515212636e1597e5d5ba2febd9a" kind="variable"><name>parent_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a82911696ad4cefba994ac2e042b04043" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a812c0cca5ba1cf83952d43983930a351" kind="variable"><name>rank_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a220a860d22d787cb4432fbafb73b2b67" kind="variable"><name>set_indexes_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a199b397b9bf763189e854c8fb38df475" kind="variable"><name>sets_</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a186064f25d9aaaa98ad7eaf220f05c4b" kind="function"><name>build_sets</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3805c30908b11f8e72daddb3fbc3c7a7" kind="function"><name>get_index</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" kind="function"><name>DisjointSetsSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" kind="function"><name>DisjointSetsSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" kind="function"><name>get_number_of_sets</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" kind="function"><name>get_set</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" kind="function"><name>add_pair</name></member>
+    <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" kind="function"><name>add_set</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1DominoSampler" kind="class"><name>IMP::domino::DominoSampler</name>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a3fa84e77ae8b8319806e7eee75ffccbd" kind="function"><name>set_merge_tree</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a63edbfbb10c14328fdea085c28069143" kind="function"><name>get_number_of_assignments_for_vertex</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a488b7a234ab96de88b4d65e2a809453d" kind="function"><name>get_sample_assignments_for_vertex</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a7eded480b712ab248437df2c7b4fd445" kind="function"><name>get_vertex_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1adb962ba7080d3c004a9518c1d3c37147" kind="function"><name>get_vertex_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a2c329800af8d9a96dbf63a85187f376d" kind="function"><name>load_vertex_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1aaf4a53a95fbb2b8ce4a5cba2cbdd611d" kind="function"><name>load_vertex_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a3762763c53b745c97f49e25c6b43ee3b" kind="variable"><name>csf_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1af797e9fbebd3746fe40988ede0849858" kind="variable"><name>has_mt_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1ac2e81526007031dab36c2bd31b2c558d" kind="variable"><name>mt_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a5b45b2d252a87de8c1ea236867d43e85" kind="variable"><name>sg_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1ab6fe6872bd529262a9f06f60c820f99b" kind="variable"><name>sst_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a5bcc42cb8310f4d19a054b0a03b6f519" kind="variable"><name>stats_</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a383966690daeef40257e5f33c3a76ada" kind="function"><name>DominoSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1aeff05638cf880db5cd89ceffd0e03286" kind="function"><name>DominoSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a28bf7f25c11dfd6dc25ec3b2df42462c" kind="function"><name>~DominoSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a11b5bb3dc3f272044f1eb5678e1aa2fc" kind="function"><name>do_get_sample_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1ac9f5e5e44bfef700558b1b1a801ddeee" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a0280a26aea5ad30f6b6a283332130909" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1DominoSampler_1a345858fb854b0a00e562a5cd84fa2375" kind="function"><name>set_use_cross_subset_filtering</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" kind="class"><name>IMP::domino::EqualitySubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a8c1d58b6f10eab91ed8ec1bddb0e26d4" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a616d10168b39c8b56768e28b49365274" kind="function"><name>EqualitySubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a4e777dc82d3cac03bffe26eddb42e129" kind="function"><name>EqualitySubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a49c6da597a91a480788eb2c134ec3a5c" kind="function"><name>~EqualitySubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a999b8886dc88e95d7f0625866f44c086" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1add976b9af33451a1242c84f6dd1b5f5a" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a09a545bcc222c922153576ec688cbe3b" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a2e5c7c5af60dfe0fd7187b049dda8f35" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" kind="class"><name>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a07a441b0c4ee3a0bc3b412a7d49bf598" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1abde0e31347fa2fa0c058dc0f5cf30ca9" kind="function"><name>EquivalenceAndExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a2354750aa4ca41885dd8726639902dc4" kind="function"><name>EquivalenceAndExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a80531c03f947c9ed8c8b73db44ddac97" kind="function"><name>~EquivalenceAndExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1ad8e11b7bd6f1bb6c5b155a9529ef1d82" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a85889920c87005d79278db21d4fbcafb" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a3a0292c7cf313f19a831227bce4023d4" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a453ef3ccac3fd973597a72126aff9944" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" kind="class"><name>IMP::domino::EquivalenceSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a0183ddc5cf9f201c872b56937fb22063" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a5df0925181f0895df77819671e97908c" kind="function"><name>EquivalenceSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a90d1efcd9ae9d2bbc3d14662893a8d28" kind="function"><name>EquivalenceSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a454ea9853b740918324805128efff845" kind="function"><name>~EquivalenceSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1afaf4a9fb8664923b0eabcb3de862b630" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1abc8c55522e6deb309345f4b0631cfee5" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a18da1c001595d1633856ebe891697979" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1a645c5fadf84bca8511339919cf4f6c8f" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kind="class"><name>IMP::domino::ExclusionSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4811c2b1d4f16018fd144ffd7cdfba50" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a49d3c61276b14cae0df505259479b65d" kind="function"><name>ExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a7a840667473246f7a134eba28011636e" kind="function"><name>ExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aa1600843a591a565f46e670077aaa0d3" kind="function"><name>~ExclusionSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1afef056d22f6adf21391a906f87856c24" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aac3df5a9304a06e1e245bcf8b7ca041d" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a44e6b18d6e6dd9227b5bf69ee57e82dc" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4677d4ed2c1517e1a95d342606854042" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1domino_1_1HeapAssignmentContainer_1_1GreaterSecond" kind="struct"><name>IMP::domino::HeapAssignmentContainer::GreaterSecond</name>
+    <member refid="structIMP_1_1domino_1_1HeapAssignmentContainer_1_1GreaterSecond_1abd86981600b0dc7de22994d49670bf8f" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1HeapAssignmentContainer" kind="class"><name>IMP::domino::HeapAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1ab836980faf43bf37b1eb62b7a2de312e" kind="typedef"><name>AP</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1ab3dabc3549e5a7b13c4d983fddc90d44" kind="typedef"><name>C</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a46aaaf12a0ea618a42b1a046b75172a9" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1ab1f4e670e4e90794a0a1142e642c1a92" kind="variable"><name>k_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a3e8060d1e76f7b7373b4a80b907f33ac" kind="variable"><name>rs_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a4da971254dd0eae80e3a73917b20da51" kind="variable"><name>rssf_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a4abdf8e5e4bc34114222af037dd0be9d" kind="variable"><name>slices_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1af4cb180d496d04d33ced68972c4ea083" kind="variable"><name>subset_</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1ae441675fd3cc83cc810db7fcfc9928e9" kind="function"><name>HeapAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a2fd8f5b386212a02207f5d77b9bc7615" kind="function"><name>~HeapAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a02e0cfc2840c1a8f572f12d5fd454010" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a66a2145b1fa44bd2de1dcdf444456244" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a75b4c6590290622f2a591526c2d7d980" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1aaed283d52b8699562e098ad3cc09fba0" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a0a97e977d1b06abe612551d5a0f1d8f9" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1adbc4921d70838f4f04726afc20a6457a" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1aaa0539bb9e61357438a79e67fd0deb4c" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a5b35b72f936a73b4f962da51829d8dd8" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1HeapAssignmentContainer_1a611aa58e2517dc73fe0bab52911fe4b5" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1IndexStates" kind="class"><name>IMP::domino::IndexStates</name>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a534dd6a9e0b83417c979b81ce6844139" kind="variable"><name>k_</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a97d0593835b227b465ac989c2f2d6079" kind="variable"><name>n_</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a6830eb687329980d50db931ac69b0794" kind="function"><name>IndexStates</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a60372d2f1ad8160f825ec17e2945d99e" kind="function"><name>~IndexStates</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a523d4146f648e765c6c369b3a03d6722" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1aeeeb51338b1a376b14f6c0714bfb5dc6" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a56e653212698961c6f90049d9334e33e" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1IndexStates_1a5c150d4ce46d029e94e21240fb2eabc1" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1InteractionGraphVertexIndex" kind="class"><name>IMP::domino::InteractionGraphVertexIndex</name>
+  </compound>
+  <compound refid="structIMP_1_1domino_1_1RestraintCache_1_1Key" kind="struct"><name>IMP::domino::RestraintCache::Key</name>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a6338dc36f6fd6bd5c19a792b935b5b1a" kind="variable"><name>assignment_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a6c0177a4af02c21a75fc6c0bd02e8e8e" kind="variable"><name>restraint_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a9798f75462eb532021d5ca69d58857d3" kind="function"><name>Key</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a002abf10c1e60ba25e1e0e554a730193" kind="function"><name>access_assignment</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1aa2b1a3caed3047e5a845311f1a0f9f9d" kind="function"><name>access_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a9e20f59684d124bfd4053202c2fc1ce3" kind="function"><name>get_assignment</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a2368280880c26dc324064c1c21615ae5" kind="function"><name>get_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a16f4ab4073965147324ada5dc65012dd" kind="function"><name>set_assignment</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a7b5a8ed8d4ef6efb0174a3ceae424231" kind="function"><name>set_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1a387b480f3c5cabb2dd3e04dc3f5a1186" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1Key_1aa784305c5666c1dadf50047212d460e1" kind="function"><name>compare</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ListAssignmentContainer" kind="class"><name>IMP::domino::ListAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a23a619bdaddf861c37489f7f0884b5e9" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1ad207c081d4ad1ccbec469dfc4ddb69b0" kind="function"><name>ListAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1add7ff148aa00d9ef15fab48eb0901f65" kind="function"><name>~ListAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a5b9c3b77b026f7185153b934306006ba" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a7aeb12921a100363a2594a6f78e26622" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1aecff7e9b8b9b160d4600acca18476325" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1afbc358b4b29f2469a89cbea44f903bf3" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a4831820dc49466729dfaf143bc67459c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a5b8db954e61a1907912d6b6143b6bc7a" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a54d7844045d19f57502c5af3bb43d256" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a9facc3ff046fd95f0a85664def72f561" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentContainer_1a92e5c39deb5ebdd9d90cf55df7309e68" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ListAssignmentsTable" kind="class"><name>IMP::domino::ListAssignmentsTable</name>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1aa7885e6d0825afb24f0b34031133af03" kind="variable"><name>states_</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a111e84a9d7df4b8d707b789f5730cb6c" kind="function"><name>ListAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a04d80d423288a9edc4daef0b202cb713" kind="function"><name>~ListAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a5c134819d5c4bd02702d53bf3145c5a0" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1ad26ed109596cd5c716efdd5f16afa7be" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a3bd8084d67c8802f30680d2b4d7cd0ac" kind="function"><name>load_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a15fa28a76023dd8fa328b452d2245908" kind="function"><name>set_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kind="class"><name>IMP::domino::ListSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a43f47a195717a826c88ad066c1553656" kind="function"><name>ListSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a4be7c23601871caa57b0e2b43bcd7404" kind="function"><name>~ListSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a9f35d50ceb1c6776c542d8bacd30c5cd" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1ae4067dc5f00f54afa8a2652a704d0fbb" kind="function"><name>get_ok_rate</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a6fa55d460daba6d493df8b6aefc5b26d" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a28d884c45ae7db6ed2daa028fb3ddb42" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1ad65e8b4d52e402233ec9ba7b8949b439" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1aead7c604bac1a9270155b5f10fd78b42" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1abcb5b2e0ec46754f150167b60c8b85b6" kind="function"><name>set_allowed_states</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1MergeTreeVertexIndex" kind="class"><name>IMP::domino::MergeTreeVertexIndex</name>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" kind="class"><name>IMP::domino::MinimumRestraintScoreSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aea3a428ae7bfce07b28e7bc98d164a57" kind="variable"><name>max_violated_</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a7f5a1d38a1ed37059bc09031333223f2" kind="variable"><name>rc_</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1af6199f1ad0b09579dce17d40daeb19d0" kind="variable"><name>rs_</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aefc4f66f0db5ec560bd2911b500c9206" kind="function"><name>get_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a8af4401981928e337a9e624884c15937" kind="function"><name>MinimumRestraintScoreSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ac3b4079a7f495f4035300b6cfa246b58" kind="function"><name>~MinimumRestraintScoreSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a6c203fd6d867f44fcc5811f3ffdf2464" kind="function"><name>get_maximum_number_of_violated_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a1ca4fb1e30e643e007f48c372816d98a" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aeec52a6555047ee1d398659e532087c9" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae550cd534675a4ccc86f6dc9378e87fa" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1ae82b67e82322f9ca1bfcba1527943fb6" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter" kind="class"><name>custom_filter::MyFilterTable::MyFilter</name>
+    <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a2272c767201362fb30cc648cd90c851b" kind="variable"><name>pos</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a945478718922781dc9b8018dbb79c30e" kind="variable"><name>value</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a0a5a4bad339f612e0bfad78a0a1cdc2f" kind="function"><name>__init__</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adbb0cf2782638bbaedddcd1f23016272" kind="function"><name>get_is_ok</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adc38569efcd158de6252460f86d8a560" kind="function"><name>get_next_state</name></member>
+  </compound>
+  <compound refid="classcustom__filter_1_1MyFilterTable" kind="class"><name>custom_filter::MyFilterTable</name>
+    <member refid="classcustom__filter_1_1MyFilterTable_1a6a5d83e0bc56faa63ed1734c5b492f04" kind="variable"><name>p</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1aa202675f25983b7f4de13db1c3056f12" kind="variable"><name>s</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1a43211bb0044b9d82cf2fa88d3b0e16ed" kind="function"><name>__init__</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1ab29caab6baedc846decbe3be667ffbc2" kind="function"><name>get_strength</name></member>
+    <member refid="classcustom__filter_1_1MyFilterTable_1a5d0cd22938504e72bb892201cd138ed2" kind="function"><name>get_subset_filter</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1NestedRigidBodyStates" kind="class"><name>IMP::domino::NestedRigidBodyStates</name>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1ad0e0e2a53027efa37719a22f081ca571" kind="variable"><name>nn_</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a1a1493440ff9498db689e8907df3b02a" kind="variable"><name>scale_</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a6946c62f0ca81c0d0b1566dc4977706a" kind="variable"><name>states_</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a68719c9f3f06e88c45f1decd8ab699e0" kind="function"><name>NestedRigidBodyStates</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a60b9c53c905f169338b581baa6e8cd9e" kind="function"><name>~NestedRigidBodyStates</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1aed92f776156830ada8948042b91ee639" kind="function"><name>get_embedding</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a5adb7aa357986502e98ad9936bba0efd" kind="function"><name>get_nearest_state</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a51fd0f1a68fbd478e845837d14c0c4dc" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a66045ae4e0770bdeecce4bdc15bdd1b5" kind="function"><name>get_transformation</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a874ef4a71dfa73b863d7ef8d3ca6aec5" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1ab1e3a003adc2c919b48eece0209024ce" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a94eeddf6266a93b978677cbfcdee5d2c" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1Order" kind="class"><name>IMP::domino::Order</name>
+    <member refid="classIMP_1_1domino_1_1Order_1aeeac03e6a62b3bff385e5abd69d2e5d2" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1a668b15ba066ed03d1664cffd26c6ccac" kind="function"><name>serialize</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1a4f48f99e0aeddce86c2f593c8821f0fe" kind="function"><name>Order</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1af3c283658a88922d49dea1706bf5dade" kind="function"><name>Order</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1a47a31c910cbfd7d358a7f989552599ec" kind="function"><name>get_list_ordered</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1ac946a6a84f3645bdd67e29c238a2eebb" kind="function"><name>get_list_ordered</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1a350eb54bade461e96589eb1d1c0c6304" kind="function"><name>get_subset_ordered</name></member>
+    <member refid="classIMP_1_1domino_1_1Order_1a006b09c626ce452f86d6d25f33a01768" kind="function"><name>get_subset_ordered</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1PackedAssignmentContainer" kind="class"><name>IMP::domino::PackedAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1af9e7587ae72ac268cffb99b3ceb59bf6" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a5c8477682a7cdb924a85d9b7ab3b4031" kind="variable"><name>width_</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a3f08bf9f7f2cf76510bc2e3116064edc" kind="function"><name>PackedAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a674c96a2be4a40b9f65a196cb2a05a9a" kind="function"><name>~PackedAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac60ec8ac6b534857e6320494b193be58" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1abd8cdf6e7f00b5ecdac265f198e4abd3" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1ac30fa155daac1182b10eac73092776bf" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aea0e6d229b8028da21b6895774a3d55c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aaf23b79c80697335fc559734aebc922c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1abe7ee7e2056c13cbf0c419eb1f73b5a4" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1aa8fb2986c01f0a8e2e92c71d2147e4f5" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1a643738da9d64870fea8ce1e72cc01ef4" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1PackedAssignmentContainer_1af18d053b1724fc86a1445095d789fe88" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" kind="class"><name>IMP::domino::PairListSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1a3c44da09881113c0b3565cb8123792fa" kind="variable"><name>allowed_</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1ade6e71565c30a0bc129b9145a2c97eb2" kind="function"><name>fill</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1a42c57fe027e3fa8c6ca1941cf02be067" kind="function"><name>PairListSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1adf7027d7ad0eef5ccbbd4071b68e324a" kind="function"><name>~PairListSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1ad3ac8ec08c800f563ceb0552c9338e47" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1a9b10e836020d595f3e3696308d394282" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1ab701b45c87c643381ca64cdb7b96d18a" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1aa2a6f3f069959b6b5b62b0e29fc21855" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1a86fe6926bef8e7f59c00f01faa883068" kind="function"><name>set_allowed_states</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ParticlesAdaptor" kind="class"><name>IMP::domino::ParticlesAdaptor</name>
+    <member refid="classIMP_1_1domino_1_1ParticlesAdaptor_1a1c4a738167a9f04d5debafee805c5228" kind="function"><name>ParticlesAdaptor</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticlesAdaptor_1a7de81f47fe87067fd633f6d442055117" kind="function"><name>ParticlesAdaptor</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ParticleStates" kind="class"><name>IMP::domino::ParticleStates</name>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" kind="function"><name>ParticleStates</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" kind="function"><name>~ParticleStates</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" kind="function"><name>get_embedding</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" kind="function"><name>get_nearest_state</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ParticleStatesTable" kind="class"><name>IMP::domino::ParticleStatesTable</name>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1aabb5ebd3409dcaf56d0cdc07ed640a5d" kind="typedef"><name>Map</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a3691d94fc63a93dccff633bc4f8af543" kind="variable"><name>enumerators_</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a46cba82e39bec352ac29dbb74bc6b885" kind="friend"><name>DominoSampler</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a1acef27ef906852b1ef5782df4b3473e" kind="function"><name>ParticleStatesTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1ac8884587abfeca1f9109da53521154ab" kind="function"><name>~ParticleStatesTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a61d70b97cb459ddacdb8b2bcd87c9e90" kind="function"><name>get_has_particle</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a61b22552dce86ceba492fc1da5955160" kind="function"><name>get_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a4eb53117201faae7c73572b38f4f2b54" kind="function"><name>get_particles</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1acbdfa0698fe458d5d5cb24860ee47651" kind="function"><name>get_subset</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a8ee0a5389c5e7da34a32550e09f0d97b" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1af8734dfdc6574db7edd6e23b3e4d9210" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a9ad869bd5d88c52e03c4395d8ab36e9e" kind="function"><name>set_particle_states</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1PermutationStates" kind="class"><name>IMP::domino::PermutationStates</name>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1aeea87fd7853995eb2591ae9e7752cc13" kind="variable"><name>inner_</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1ac22610c7acdeae9a6883aaa2ab355efc" kind="variable"><name>permutation_</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1a95308fa6fbdd565f52c7d58d4fdbaee8" kind="function"><name>PermutationStates</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1a04bff8d9a8d56bf2f2e63593cb0e8927" kind="function"><name>~PermutationStates</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1acc0f74f3fee5477e11360ba64f017e50" kind="function"><name>get_inner_state</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1ab1c205ed52a1a6700ec314f28784b4f3" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1af2534b4e7c3a2e3db06dea3a26e89d05" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1abb7aa61a82398a8ec609be5f38585813" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1PermutationStates_1ab8e0ac868eb15d0c59eb2514e3699c06" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classmarina__party_1_1Price" kind="class"><name>marina_party::Price</name>
+    <member refid="classmarina__party_1_1Price_1a6a4e102e86584717d2bffa5e6ba53d68" kind="variable"><name>price_key</name></member>
+    <member refid="classmarina__party_1_1Price_1af42808ec2687b056bbaa895dd9c310b2" kind="variable"><name>particle</name></member>
+    <member refid="classmarina__party_1_1Price_1a19a2c3446797ca15e43ec316e9f8ec5a" kind="function"><name>__init__</name></member>
+    <member refid="classmarina__party_1_1Price_1a13f08f576a58b357f4a7150ff7ffb3f6" kind="function"><name>get_is_setup</name></member>
+    <member refid="classmarina__party_1_1Price_1a1671ed1650a3f0d9ad37fe282e2a1a7b" kind="function"><name>get_price</name></member>
+    <member refid="classmarina__party_1_1Price_1a766c465c8ca5170ed6974c6e4f41bf21" kind="function"><name>set_price</name></member>
+    <member refid="classmarina__party_1_1Price_1aa7deb095eb0e6b8772627467ef28a253" kind="function"><name>setup_particle</name></member>
+  </compound>
+  <compound refid="classmarina__party_1_1PriceStates" kind="class"><name>marina_party::PriceStates</name>
+    <member refid="classmarina__party_1_1PriceStates_1a5b3d9c9d3b6662773c96a83c61570a0a" kind="variable"><name>prices</name></member>
+    <member refid="classmarina__party_1_1PriceStates_1aba5553d165cd04b8f9283afd9e20e30d" kind="function"><name>__init__</name></member>
+    <member refid="classmarina__party_1_1PriceStates_1a3352d7fb020872b9883e410b723ff244" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classmarina__party_1_1PriceStates_1a8eb73fe999f2fc1b8c1e1c4ff87c746e" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable" kind="class"><name>IMP::domino::ProbabilisticSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a65462678fb5be523906282a0c15fd812" kind="variable"><name>leaves_only_</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1aed9a2c78b8829fd921708d6b416ac1a6" kind="variable"><name>p_</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ab6cbafd1e3e6c10598aaa9ee4d82b14d" kind="function"><name>ProbabilisticSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a33c583edb7e9c709059e204869ab33dc" kind="function"><name>~ProbabilisticSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1abba1df8888d2bd56e4da89bbb6d3f011" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a549261d347b1c2df7cf55533629f552e" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ae596c2c59ee26c41f8e8eade57f9592c" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a8088455aa8776c75ec4d8e608171e294" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer" kind="class"><name>IMP::domino::RangeViewAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1aff447e50e209478495f0897ecf9681f1" kind="variable"><name>begin_</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1aec27024491acf7ab4d048c0a599c0b88" kind="variable"><name>end_</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a9120ab9f1cacabb2b15b65696e1c9d13" kind="variable"><name>inner_</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a7de21afe06173ad8218f45a82cf21e15" kind="function"><name>RangeViewAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1aa882aeeaad5275ac95b2583a02a8ec60" kind="function"><name>~RangeViewAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1ac7558256c7ae844c7befc1c17ba80e8d" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a5bde09ebf5eb0127857583a070fff622" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a4873660d67875ee0555ade12a5d27cef" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a5e1c24cb361126e41d040581c6af9da4" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1ab5b727c064afc5bca8d419b49844b365" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a7b1f2d9e4f97c04e665074f0cd1351ce" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a49e5eadf897ba43302cc90f69bc3c4d7" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a4eafd858e2c952623d1d401a01ce6ae2" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer_1a5f75653051db5c9674832b3c88a602dc" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kind="class"><name>IMP::domino::ReadAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a699139faaa4273e2ea10b731b1439c28" kind="variable"><name>cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a92959013fef42f469e72c8ef708ad356" kind="variable"><name>f_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a3c513d2b9e6e2e1bc912d36609f27f4a" kind="variable"><name>max_cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a050581a403b2bb0ec3ad9c52cb9ff627" kind="variable"><name>offset_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a0eeddb3a58e55b2c305112d1e3a1c44d" kind="variable"><name>order_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a83e9c90ac3de8438065b6590731c28d0" kind="variable"><name>size_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1ae0d36fa81e4b01ec8c015bd3ce53d788" kind="function"><name>do_destroy</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a64260a4cc0a37ec54ca79c7f5638801f" kind="function"><name>ReadAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a70fdf56a93d71463e8208473668015d7" kind="function"><name>~ReadAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a82a9dc63760e12e8a1761a72cd931d30" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a118e5bd5958f897e2cec7ce2157f304f" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a1c63b2c726878bd81ba1892f8631ee3c" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a6c1feec43e62d3dc78875db61da5e95c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a4b7939dc1de86af7db12da310a0e0252" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a388fbed0837a826897964c44e5eecded" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1aaad0cc874a4bf3fc0c49babf62ff9ec8" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1ae29437a191ca11bc96852b4201d2e726" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1a9f950f81f4aaabe66a38d7497f4b594c" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadAssignmentContainer_1aaaeaac2063c52de3801dfb26a1c58a11" kind="function"><name>set_cache_size</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer" kind="class"><name>IMP::domino::ReadHDF5AssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a782a45e9d6581e56235aac6ec02869f1" kind="variable"><name>cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a6189cd6518141caa5d22704a517a2f3b" kind="variable"><name>ds_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1af60aff97490ae9773c80f0c50c22302b" kind="variable"><name>max_cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1aaf219dd79ca75dd4906862f2d15eadf3" kind="variable"><name>order_</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1acf2ed813abafb6fe0e3bdd6d781e97a0" kind="function"><name>flush</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a036c1db5a3e3dfe65ef9a28edc610de4" kind="function"><name>ReadHDF5AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a76fdaeb360b17cf4280b80f6cb3eb96c" kind="function"><name>~ReadHDF5AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a8b345902bf5c257f01b1ccf53e0cb8f5" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1aad917f2215c593114804c3d58a50c19d" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1ae4005d10d8c190ca20ef7348b0e79ad5" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1ac6504656d46ecce274a7fc5363480c71" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a0ea2b3f79f29e126f229f2f109c6ed12" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a7250bf27ef3a93b01c063a55a6630120" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a8419f54f06e7c63d16423618816eff20" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a313e7257fe742355271ac03390cd7330" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1ad1bfe7f63326f5e5872bd014c951ce8e" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer_1a399f957b8c5e9435f4afa278c70d5a20" kind="function"><name>set_cache_size</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable" kind="class"><name>IMP::domino::RecursiveAssignmentsTable</name>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1abec9b261ba6abd7216c79b6630490321" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1116fde42bd6c5998486fdc5973ca425" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1aad7d7b8a9faf5819a1367116e4e71cc5" kind="variable"><name>sft_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a0809f8c142a88c80dbd62f57197e795d" kind="function"><name>RecursiveAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1afc4e684b518acecdd259d839ff164358" kind="function"><name>~RecursiveAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1ca17c9c1570de0704a5f77b7672def7" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a7277eca2056cd5f4f001025b53791f8f" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a209c5eccf0cccfad3528842d734559df" kind="function"><name>load_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RecursiveStates" kind="class"><name>IMP::domino::RecursiveStates</name>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac41a96ecbb3dd82646ccc9ca2fcf474f" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a6746a4c2c3faa103e9e7fe33fccdbca1" kind="variable"><name>s_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1ab36d0cbe3d0c5758b9ca8abd04910ffd" kind="variable"><name>ss_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a688c6b2e541da26d7dba98dac1ec64ee" kind="variable"><name>sss_</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a64d119281ac852e97227186e68b69c0c" kind="function"><name>RecursiveStates</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a6cc4417831cdae1a67222de1a65bb942" kind="function"><name>~RecursiveStates</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a0b98f7cd3de72626929f457528de2f7e" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac79ae3df8dd8ba55cd73447aa76e8a7d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac29a3bf098dc7244bddd3bb19e6f998f" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1RecursiveStates_1a16118537f48fd7c53bcabc1c56a4ff30" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RestraintCache" kind="class"><name>IMP::domino::RestraintCache</name>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a204972361d83c22465d8465bf0b18276" kind="typedef"><name>DepMap</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1acac06c433943dbcee46fa251777abf2a" kind="typedef"><name>Keys</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1acbb602b712de0e4786228344c13f2b30" kind="typedef"><name>KnownRestraints</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1ac09ee7cc604b97a3451c49ebd0ab1d0c" kind="typedef"><name>RestraintDatas</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a1363e60a85ab18208977483b66f8f88b" kind="typedef"><name>RestraintIndex</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a7478c0f0bb383b16f74750b32e9cf193" kind="typedef"><name>RestraintSetDatas</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a0541b36991c61f031c7c3907b43c5a7d" kind="typedef"><name>SetDatas</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1ad756d6a4f0666d25ed6f1e6c4e0c818a" kind="variable"><name>known_restraints_</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1aeba72c202488bfa2d802a7d366e2efe1" kind="variable"><name>next_index_</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a454bc04ee8dd931d70310a102eb2b639" kind="variable"><name>restraint_index_</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1ab63563966e52189ed4944e938c148660" kind="function"><name>add_restraint_internal</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1afec39699a2c73dfbe5176b6564c02124" kind="function"><name>add_restraint_set_child_internal</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1ae7e20f6f1ca49677a51ed9bd7b1884e0" kind="function"><name>add_restraint_set_internal</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1aa7075e21657e40ebf721ff55b52a9cad" kind="function"><name>get_subset</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1aa442ea37df1d8b970993d4ce57c6e68a" kind="function"><name>RestraintCache</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a5511a57a42e8808f60b73271047ac4df" kind="function"><name>~RestraintCache</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a7f717d32d3a03455618395539b261846" kind="function"><name>add_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1acef2031bdaa6aedeb1f833ce55e8f553" kind="function"><name>get_hit_rate</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1ac8fe0413b14847abcb7c6825d9c2c57a" kind="function"><name>get_number_of_entries</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a139298f71aabcbe3a1efc84e51340b37" kind="function"><name>get_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a631f20394a65b289da020b509c3838a6" kind="function"><name>get_restraints</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a172773374b37d174e7fb4e910ad5fca0" kind="function"><name>get_score</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a7a8e78d7f668f8a60b6fc0a02df58b16" kind="function"><name>get_score</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a11d41b0adf1bdc67e790eb9acb7787c4" kind="function"><name>get_slice</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a72ab6a47df48508011820529688722dd" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a886eba211145ea7b38913a48b918b4a8" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a88b21c74bccae54aa694be8260aed83e" kind="function"><name>load_cache</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a7cb8d67a4032980ccdbbb2393c4a8aad" kind="function"><name>load_last_score</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a2997d5f930386359987e678d52e63a4b" kind="function"><name>save_cache</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a1236fa8ddc3d73b7b326e19ed7e16c7e" kind="function"><name>show_restraint_information</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintCache_1a39917ea290416c3c6e4af76aba5d5b89" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData" kind="struct"><name>IMP::domino::RestraintCache::RestraintData</name>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a89fe65213e2f70c6ae9e7717a2a0e630" kind="variable"><name>max_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a64170c572da83b90d331d58c42383602" kind="variable"><name>scoring_function_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a896528fa34c199066023e2489b1b426b" kind="variable"><name>subset_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1ad08e531167f09b3c36c5989966d8ce82" kind="function"><name>RestraintData</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1ab80231ec9fc73bcdf06f644d5d364278" kind="function"><name>access_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1aff4a88a40269da3dc07d016ce9ba89b4" kind="function"><name>access_scoring_function</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1acc4e654722082f5f9edd2dfec776071e" kind="function"><name>access_subset</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a4fd89c9aa2e9d3fcbcdc3fc77b65e2d7" kind="function"><name>get_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a7904ec2fb0441f0b8985724c17971503" kind="function"><name>get_scoring_function</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a37d4062b5b79c95d8022e0828444cca5" kind="function"><name>get_subset</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a1478d8574d0e7bc367a605c30672368b" kind="function"><name>set_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a39758506236d6a6f7f27ebd1aeef20b9" kind="function"><name>set_scoring_function</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a82f5618edeabc6116b87a944892fa1a6" kind="function"><name>set_subset</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1aac87ace290172976891fc5bc3592d46e" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData_1a9fbba2224083701c03cdc902ecfe6515" kind="function"><name>compare</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kind="class"><name>IMP::domino::RestraintScoreSubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a99cef5b43381cc26c1a71655e93b7a3f" kind="variable"><name>cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a45ccee01273dd9697e150ef906d6f028" kind="variable"><name>rs_</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1afea31f7827234768b9e719e4db0545d2" kind="function"><name>RestraintScoreSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a27a72d5b2d3000fa72df9c45755db866" kind="function"><name>RestraintScoreSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1aed921b9262009b9620293580149e4ea2" kind="function"><name>~RestraintScoreSubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a94ab65eebb88dd4d75e6d16aeff11007" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ac5c3a1ff7b96e313cda93283e4c50602" kind="function"><name>get_subset_filter</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ab382557848a96cb575d741a8eace0f5a" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ad50b6c1d68356cafa1c51752102f039a" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData" kind="struct"><name>IMP::domino::RestraintCache::RestraintSetData</name>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ade1c6dd928415e9c0534bbc9215806b5" kind="variable"><name>restraint_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a1593f7b97d8c0d6268663ee67c47442b" kind="variable"><name>slice_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a41582ca3a61dc3ca22cd132ce6b01332" kind="function"><name>RestraintSetData</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a8498d104f51a34b1fbd4d9b7d15485b8" kind="function"><name>access_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa97ce8df25160345303b0ee1898656a6" kind="function"><name>access_slice</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aeb956230175a74fa61df96692047ede1" kind="function"><name>get_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ae91940ef7424e708ad8a3c4a931d2202" kind="function"><name>get_slice</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a54c0f70effd7e528c769f5e9695bafaa" kind="function"><name>set_restraint</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0cbb933946967b004ee71309df68d87b" kind="function"><name>set_slice</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa78ced009c65090d260b69ea7098bf1d" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0f602c7e7a99f88138579fbaab3e6041" kind="function"><name>compare</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1RigidBodyStates" kind="class"><name>IMP::domino::RigidBodyStates</name>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a20a961c9470c636ae48db583c92daf41" kind="variable"><name>nn_</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a418b1135a85163542cab0d24b65b0880" kind="variable"><name>scale_</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a7753ea4613e485e65a0ec9776db3f290" kind="variable"><name>states_</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a498a356c339c8505368b5e7e20212715" kind="function"><name>RigidBodyStates</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a8c65a7e78e6e833feeaf24f5ec6f9a6f" kind="function"><name>~RigidBodyStates</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a01a06e715ffb49eb26d7bdd7da9352d8" kind="function"><name>get_embedding</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a40232b067f9af7b17c5375edd42fbdbf" kind="function"><name>get_nearest_state</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a7d863ef0664185cd85e7380bdf72d3f4" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a57d3f332f8b144d1ff08d6919bd292f0" kind="function"><name>get_reference_frame</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a6d09d5e8795ae0a0f67c63cf56013d41" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a297fcd641df60667b4bc55342dc53778" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1RigidBodyStates_1adab6e6e5a32a99e43fb29d1a27778b7a" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1SampleAssignmentContainer" kind="class"><name>IMP::domino::SampleAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a26bd37d366bd5bfce81aca1c918e154a" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1afbd62c76d8878560702e8297907026c2" kind="variable"><name>i_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1aa601bae4bde9d58545e78da3a3d71ce0" kind="variable"><name>k_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a9fa447ab78480fa4bfae472af83715db" kind="variable"><name>place_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1ae477dddf72e3d7d25721212d87635964" kind="variable"><name>select_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a8bad845fe9e2c1ee2e02ed229c5e052e" kind="variable"><name>width_</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a1fd04d885b2faeadfc449fe7f21328c5" kind="function"><name>SampleAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a91ffc90792f6e2715180d6271d3a2dcb" kind="function"><name>~SampleAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1ac00f657da1a59156eca5e64af2fde46b" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a318aeaa0b05c6811701904c2dcb92005" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1afe0a0b8954b75b9ce2f5441eda1cbf74" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a424eddfe69b08fa3ed7465bdc627159c" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a4b253c737c08f6e630f74a04c2bd4f20" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1aadd30ecdd41855d798639431408635bf" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a8babffa63b3d9419698ab8493d911a93" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a3aceb44b49a28ed8bda9a7f9799fa361" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1SampleAssignmentContainer_1a7f7b6a7735bed5548f3bc928214c9ec5" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData" kind="struct"><name>IMP::domino::RestraintCache::SetData</name>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a64c571a4aa18b7aceb6201bfc7f383f2" kind="variable"><name>max_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ad8d83069064856c02e84137bf5981749" kind="variable"><name>members_</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a25eda7b398a9a376f30730799a38c34b" kind="function"><name>SetData</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a7ddc796f8adf3d18526698be7efa40e2" kind="function"><name>access_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab6f802b94654a255155f720703431252" kind="function"><name>access_members</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a3848fb148348e60dc8ad2fd1b9c82251" kind="function"><name>get_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a27fade45b061a4e4deaa7635d6f4563d" kind="function"><name>get_members</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1ab54a2a6cec4d74c43bfca55b056a92a0" kind="function"><name>set_max</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a919f844b9f8ac4c9055416d1215d79aa" kind="function"><name>set_members</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a353c429c86c7caa4ad9d8c526b506a26" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData_1a5433a74607c74e0dca55e321f942ed66" kind="function"><name>compare</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1SimpleAssignmentsTable" kind="class"><name>IMP::domino::SimpleAssignmentsTable</name>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a9e95f0553ba9bc4c40bd5ca2d73bcca6" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a8e765f2bd41e95ff108113c13a904b8b" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a94debf6305ed95342bfc0898d8612921" kind="variable"><name>sft_</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a327026ad51858f3eb8800617576fea85" kind="function"><name>SimpleAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a99e032bfb26528e39e3a0bdac24d3979" kind="function"><name>~SimpleAssignmentsTable</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a599db439eb0d3389af7e93035b92ea76" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a98c54efb667b399ab14be8d685689e5e" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1ae99efe9637e6c99af3c438f778461cc9" kind="function"><name>load_assignments</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1Slice" kind="class"><name>IMP::domino::Slice</name>
+    <member refid="classIMP_1_1domino_1_1Slice_1a255091cac51912e531274ff849cb6ec7" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1af1ac4c116bbd1afcd8552b656c5410db" kind="function"><name>serialize</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1aea927878d3695d75c661a75968659d17" kind="function"><name>get_slice</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1a5d72de5f10aa980637eedcf1cdb39521" kind="function"><name>Slice</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1a70118528acacd6664939fe4131de82e7" kind="function"><name>Slice</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1a0c8f2124877373b86b5f69b393f6b586" kind="function"><name>get_sliced</name></member>
+    <member refid="classIMP_1_1domino_1_1Slice_1ae8d169f1e0b188889bc7050265d21dfe" kind="function"><name>get_sliced</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1Subset" kind="class"><name>IMP::domino::Subset</name>
+    <member refid="classIMP_1_1domino_1_1Subset_1a1ec5b833427632204c599423b3292698" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1a971963027acbb48933a5e2fd9f60f3e9" kind="function"><name>get_sorted</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1af319d2dc0738d2269ef8cde6d83d7bcb" kind="function"><name>Subset</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1a2bb9c03148cb537ca42deb6ae50311c1" kind="function"><name>Subset</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1acc03863eaf7cc9df3b262f1335b4372e" kind="function"><name>get_contains</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1afb1c4abc4995064ae567b06f21b27ede" kind="function"><name>get_model</name></member>
+    <member refid="classIMP_1_1domino_1_1Subset_1a512ddd607592632fc207bd5f2d057e72" kind="function"><name>get_name</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1SubsetFilter" kind="class"><name>IMP::domino::SubsetFilter</name>
+    <member refid="classIMP_1_1domino_1_1SubsetFilter_1a3e9fb62bfb3ea92b633874a993644d9f" kind="function"><name>SubsetFilter</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilter_1a27a6ae1f850f637cf6b3d502ddbd631e" kind="function"><name>~SubsetFilter</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" kind="function"><name>get_is_ok</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilter_1a4e4324bb2545f10986cd6e147a2bddf6" kind="function"><name>get_next_state</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1SubsetFilterTable" kind="class"><name>IMP::domino::SubsetFilterTable</name>
+    <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" kind="function"><name>SubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" kind="function"><name>~SubsetFilterTable</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b" kind="function"><name>get_strength</name></member>
+    <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" kind="function"><name>get_subset_filter</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1SubsetGraphVertexIndex" kind="class"><name>IMP::domino::SubsetGraphVertexIndex</name>
+  </compound>
+  <compound refid="classmarina__party_1_1SumPricePairScore" kind="class"><name>marina_party::SumPricePairScore</name>
+    <member refid="classmarina__party_1_1SumPricePairScore_1ab9d07027bf57633b047a3550dc0830f8" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classmarina__party_1_1SumPricePairScore_1a3cd456990ecc778f79a6e0d2f31cecc3" kind="function"><name>evaluate_index</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1WriteAssignmentContainer" kind="class"><name>IMP::domino::WriteAssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a753b19413ad8ae158471c898666df143" kind="variable"><name>cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1acf5a1fc7516fc87e39b18b73a5fca161" kind="variable"><name>f_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ff9049b012489c3d5828ef065f21f0a" kind="variable"><name>max_cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a0cdbd7b8bcd5cb4b1bc973d34bddd629" kind="variable"><name>number_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1adcca8853df988065aae1226ed0b77f30" kind="variable"><name>order_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a1ce00801c0ab0a403692cb005a7ff408" kind="function"><name>do_destroy</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a7142314f01f16327a7c0c01c7ada0d71" kind="function"><name>flush</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa38651e93740676aadac20cc808c6314" kind="function"><name>WriteAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa2c9b4b93ae5f8d05fc7cebd1d1415b8" kind="function"><name>~WriteAssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a56b9d660a36dc0296222707359068759" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1ad2d128a27909529d04ef24146644f4fc" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a8536920e0d6d48f1b9724aff7d96abdd" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a4f9ae3baeef5a92230bcf56600d6df94" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa9e0276e59a7b0eb2aa16d71ede691f3" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6af42d2e009d30ebb58b37ed6bc87446" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a86ed9aa97333fd510ca0ad3e064d86e2" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a5e705a06f36b6ac7bd406da545581317" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1aa97ab46179815bf8f34fe60537d35e38" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteAssignmentContainer_1a6cadf22a4058d22fc7e121c20139fb2c" kind="function"><name>set_cache_size</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer" kind="class"><name>IMP::domino::WriteHDF5AssignmentContainer</name>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1ad767e2a4e1eaa29d5208be6f474f74d1" kind="variable"><name>cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a2de7b2c82868d08f7e7d0d5ee8c47cd4" kind="variable"><name>ds_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a394e14723019fc4e1e5b1f65c12eb9c5" kind="variable"><name>max_cache_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1aea932e9270b61aa05ab887714a7a8d72" kind="variable"><name>order_</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a0bcbe647f74d5e7a1a92b88c70a75b51" kind="function"><name>do_destroy</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a0dc82e80989d1a5a9c6b49953e713ec8" kind="function"><name>flush</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a5d18c778ada3f85a22eb699e18ece884" kind="function"><name>WriteHDF5AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a6e731107ef281e262906e58a5f945ee8" kind="function"><name>WriteHDF5AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1ac51dc577797fb3665d1e75e8fd4b550f" kind="function"><name>~WriteHDF5AssignmentContainer</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1ad0151014bbc1e6b4da51bcaed219b398" kind="function"><name>add_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a7825b72543decdbca174f1c27b97a32f" kind="function"><name>add_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1aaf256614cd8a08a899a9573dfbaece17" kind="function"><name>get_assignment</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1ad5ac3be2732ea43a9fe83995537a6532" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1ad4d055e4716d6cfd5475591c3ee87b76" kind="function"><name>get_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a19fc959fb9782d10f1c80a910e7a9a6a" kind="function"><name>get_number_of_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a82d17d32b6b6fb6765659fd79b05c33e" kind="function"><name>get_particle_assignments</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a1cbdd1feecd3fe54ec2ee3517a6573ad" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1abc900f3eb2dae7fa7d53ba9a417307f7" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer_1a2bd759b4f65aa2740b3463370ed2515f" kind="function"><name>set_cache_size</name></member>
+  </compound>
+  <compound refid="classIMP_1_1domino_1_1XYZStates" kind="class"><name>IMP::domino::XYZStates</name>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1a70691034d90dcef5ee9cc8b9c3c06d87" kind="variable"><name>nn_</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1ad5c904c93fc9f329d08f510de8a51203" kind="variable"><name>states_</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1a9ab98734011675c74b1048a1b2e5665a" kind="function"><name>XYZStates</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1a28c6651953723f90beb8f08e99490ede" kind="function"><name>~XYZStates</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1acf31006ae1ecc70594721c64fa496dc6" kind="function"><name>get_embedding</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1a11862e085003f210367923516af8f474" kind="function"><name>get_nearest_state</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1acb9b52b4b2ec152be1eb8769cd5dc821" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1afa85c29472c820fd2d79a4007b7ae40d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1a67ec5512fdc7812465ea38b45c835d1a" kind="function"><name>get_vector</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1aa413cb4e08a670af7cf1bce59f95e84b" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1domino_1_1XYZStates_1afc87ab307074a98b6d1c495d0466d903" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="namespacecustom__filter" kind="namespace"><name>custom_filter</name>
+    <member refid="custom__filter_8py_1a7fdf9ed34126c0b786cb8c4101545d57" kind="variable"><name>cs</name></member>
+    <member refid="custom__filter_8py_1a7583709291ca7688617c0d1a672c7fdb" kind="variable"><name>m</name></member>
+    <member refid="custom__filter_8py_1ab6c64df246efbb863cb66edec1f2b5db" kind="variable"><name>ps</name></member>
+    <member refid="custom__filter_8py_1a54c34e09f05c91c83d7da02490c9e808" kind="variable"><name>pst</name></member>
+    <member refid="custom__filter_8py_1a8fa66989c80e97023a0b4ac22b55944a" kind="variable"><name>rs</name></member>
+    <member refid="custom__filter_8py_1af7c1715a3b817c7da743101901b5d972" kind="variable"><name>s</name></member>
+    <member refid="custom__filter_8py_1a001b58dd8a7b358c67654363fa107bf4" kind="variable"><name>sf</name></member>
+    <member refid="custom__filter_8py_1aeebe311902711c12179ab3349e17f9d7" kind="function"><name>create_discrete_states</name></member>
+    <member refid="custom__filter_8py_1a9696bc001b7d6f57b356b33b7f8bce0f" kind="function"><name>create_representation</name></member>
+    <member refid="custom__filter_8py_1a48db523e332fdafe515b50dfbe4073ef" kind="function"><name>create_sampler</name></member>
+    <member refid="custom__filter_8py_1ab70712b40faae7815942c71572ca4169" kind="function"><name>create_scoring</name></member>
+  </compound>
+  <compound refid="namespacedomino__approach" kind="namespace"><name>domino_approach</name>
+    <member refid="domino__approach_8py_1a135e5853588f4f2b116d5cb12ae65398" kind="variable"><name>cs</name></member>
+    <member refid="domino__approach_8py_1aea24f9894028a2cc95291163ae4f29ee" kind="variable"><name>domino_smp</name></member>
+    <member refid="domino__approach_8py_1a32170eee32440a889a2c30c35993ba11" kind="variable"><name>mdl</name></member>
+    <member refid="domino__approach_8py_1aee8dc9e3cfdba5c7e950b1d4859284bb" kind="variable"><name>p</name></member>
+    <member refid="domino__approach_8py_1aa4ef8b8d935102d0c5fb75c4f0ca0886" kind="variable"><name>ps</name></member>
+    <member refid="domino__approach_8py_1afe9bf72233bee1a3a71e1bbb22863b53" kind="variable"><name>pst</name></member>
+    <member refid="domino__approach_8py_1ace48cc2eaadbb473ae6b18d7cc3c66b2" kind="variable"><name>rs</name></member>
+    <member refid="domino__approach_8py_1aad82fe5f36278b5423c5bcf42bd6f8a9" kind="variable"><name>subsets</name></member>
+    <member refid="domino__approach_8py_1a599106a68b9d306031caaa222d30f0e0" kind="function"><name>get_subsets</name></member>
+    <member refid="domino__approach_8py_1ae4c6b1e21330efb58d35c9b25d5d87f4" kind="function"><name>initiate_configuration</name></member>
+    <member refid="domino__approach_8py_1ab27806cc808a02c2af90e591101f8272" kind="function"><name>optimize_subsets</name></member>
+    <member refid="domino__approach_8py_1a4bad028a03a9c6fee7d414672e3d0f9c" kind="function"><name>setup_scoring_function</name></member>
+  </compound>
+  <compound refid="namespaceIMP_1_1domino" kind="namespace"><name>IMP::domino</name>
+    <member refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kind="typedef"><name>MergeTree</name></member>
+    <member refid="namespaceIMP_1_1domino_1a247eca0fd866939112d2b745a285ad1c" kind="typedef"><name>MergeTreeConstVertexName</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2f84a0f86c8349a4a40722abe3f42437" kind="typedef"><name>MergeTreeConstEdgeName</name></member>
+    <member refid="namespaceIMP_1_1domino_1a898c3e64e73dd10bded6b7a1cc3d1b22" kind="typedef"><name>MergeTreeTraits</name></member>
+    <member refid="namespaceIMP_1_1domino_1a5f0254b13a87ce2e6d0a4652962395b3" kind="typedef"><name>MergeTreeVertex</name></member>
+    <member refid="namespaceIMP_1_1domino_1a013379f9fee41ac44ba3cdc4afbf964e" kind="typedef"><name>MergeTreeEdge</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2d03716c9c16a8174cab8627835cf716" kind="function"><name>show_as_graphviz</name></member>
+    <member refid="namespaceIMP_1_1domino_1a9cc613c4eddead7d1c5a1c7c56fe6ecb" kind="function"><name>get_vertex_index</name></member>
+    <member refid="namespaceIMP_1_1domino_1a7745ea629841a6a4475211ba0a134b44" kind="function"><name>get_interaction_graph</name></member>
+    <member refid="namespaceIMP_1_1domino_1a32c0b82e732879cbf0d77bbea28541bb" kind="function"><name>get_interaction_graph</name></member>
+    <member refid="namespaceIMP_1_1domino_1a6ffff7ad684ef09edb410ae5bc69ffea" kind="function"><name>get_interaction_graph_geometry</name></member>
+    <member refid="namespaceIMP_1_1domino_1a65e48f223bd909759754f61224256b21" kind="function"><name>get_subset_graph_geometry</name></member>
+    <member refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kind="function"><name>get_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1a4253062f182189cdac543e96eaf8633f" kind="function"><name>get_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1acab55ab855b7cff0e33d25fd2056067a" kind="function"><name>get_balanced_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1a36895b9e0319ed81ff55feca2b07d596" kind="function"><name>get_is_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1a28a4d914228bb96a3aad3c01bb57beeb" kind="function"><name>get_module_version</name></member>
+    <member refid="namespaceIMP_1_1domino_1a97334f22229a81b49387de8579dc4358" kind="function"><name>get_module_name</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3624d5a38e6a71d1e41b17e57fe836b6" kind="function"><name>get_data_path</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2095dc8230d6c30f29361536f7b93d31" kind="function"><name>get_example_path</name></member>
+    <member refid="namespaceIMP_1_1domino_1a541325fed96c13d825cbd4aa9dd7c5eb" kind="function"><name>write_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1aca9cd1b21d36f9766400b55396ae3239" kind="function"><name>read_merge_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1a0c08cfa3955a23464c5f59c15f95a4ae" kind="function"><name>load_particle_states</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab0efd3e3db335ea082bf9b7567011958" kind="function"><name>get_restraints</name></member>
+    <member refid="namespaceIMP_1_1domino_1aa52a96217327b16c26306725d07e4098" kind="typedef"><name>AssignmentContainers</name></member>
+    <member refid="namespaceIMP_1_1domino_1a5dd5cb19d7794464191cec241ddbe8cc" kind="typedef"><name>AssignmentContainersTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kind="typedef"><name>Assignments</name></member>
+    <member refid="namespaceIMP_1_1domino_1a66796ab73724d0ea5152f7627f70853b" kind="typedef"><name>AssignmentsTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a9a5cce24c45b6a03b4d0e5503e70cd67" kind="typedef"><name>AssignmentsTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a1419517ca7dc2875f3c403f8146f392a" kind="typedef"><name>BranchAndBoundSamplers</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2331d81c62fb3d69358f11a7240ca163" kind="typedef"><name>BranchAndBoundSamplersTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1ae036346cfb6ed4ac574bc87a4465f7fd" kind="typedef"><name>DiscreteSamplers</name></member>
+    <member refid="namespaceIMP_1_1domino_1a8a2f1a37eb3ae64df286d3d8694b8628" kind="typedef"><name>DiscreteSamplersTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1af843ca5b6488ba9b2bdce370f08862b6" kind="typedef"><name>DominoSamplers</name></member>
+    <member refid="namespaceIMP_1_1domino_1a52a0f028f4f3b8c730f0da2f22c5ee56" kind="typedef"><name>DominoSamplersTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a1bfde8674823f5843e03333cc92ef439" kind="typedef"><name>EqualitySubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a19118f4a5321d5f781947c96e77e4549" kind="typedef"><name>EqualitySubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1aca4c2011c5ebdc5129d8f8e0b38e5549" kind="typedef"><name>EquivalenceAndExclusionSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a144a352deb0ea68ae8971f7a03da04de" kind="typedef"><name>EquivalenceAndExclusionSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a89b670ec4dea8a71ba9e9b9aac757ddf" kind="typedef"><name>EquivalenceSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a1aa09c83846c540ae261ebce946613f2" kind="typedef"><name>EquivalenceSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab21d39960b2ed70431178fe967e353b7" kind="typedef"><name>ExclusionSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a521e430f05778eaf72510b4067cfbf71" kind="typedef"><name>ExclusionSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kind="typedef"><name>InteractionGraph</name></member>
+    <member refid="namespaceIMP_1_1domino_1a0c3e3d33bd49d8cb5fe51d04184957d1" kind="typedef"><name>InteractionGraphConstEdgeName</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab9e99729d34a0b057a4686e33748d33f" kind="typedef"><name>InteractionGraphConstVertexName</name></member>
+    <member refid="namespaceIMP_1_1domino_1a394f68d3ad0ab0b1c880599b47fe1f99" kind="typedef"><name>InteractionGraphEdge</name></member>
+    <member refid="namespaceIMP_1_1domino_1a915f0dcf319bbf9b56c876123cd4715b" kind="typedef"><name>InteractionGraphTraits</name></member>
+    <member refid="namespaceIMP_1_1domino_1adf343f86945e990cb2d4c5e58827f731" kind="typedef"><name>InteractionGraphVertex</name></member>
+    <member refid="namespaceIMP_1_1domino_1aab2ded464a1644afab41986952e6fcfd" kind="typedef"><name>ListSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a6b2382f6fb28df47a1a21d0b3df393c6" kind="typedef"><name>ListSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a376f14f0f745b9aec67ec1597d509def" kind="typedef"><name>MinimumRestraintScoreSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab548eae5cbeee6a51b590ebfb9673078" kind="typedef"><name>MinimumRestraintScoreSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2778218e2d07143e8222fe91b8eca6a9" kind="typedef"><name>Orders</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2d63fc95e80b0ea8f70bbab4c7dac2c3" kind="typedef"><name>PairListSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a9f9995d31f81edc5ba27d9722c7461f9" kind="typedef"><name>PairListSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a8a04d287e64e366c3ac62937825b129e" kind="typedef"><name>ParticleStatesList</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3be36832312f1eda06ba2349c1e94889" kind="typedef"><name>ParticleStatesListTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1abfd99ef2cd1453fc699a008e6c7c5e03" kind="typedef"><name>ParticleStatesTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1aad5baa65a9bfc90c3aaea5802fec64f9" kind="typedef"><name>ParticleStatesTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2756c0d34334024ea936b8b864bc505d" kind="typedef"><name>RestraintScoreSubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1aff006820bdd23b5c0bc53a05d1cff1aa" kind="typedef"><name>RestraintScoreSubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a7a2af715dc689429150765d274f5e9ef" kind="typedef"><name>Slices</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab69ae709f2bd9a4b9c6174bd1ceee747" kind="typedef"><name>SubsetFilters</name></member>
+    <member refid="namespaceIMP_1_1domino_1a0958a7dd459bc9056cfa9612d7e36181" kind="typedef"><name>SubsetFiltersTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kind="typedef"><name>SubsetFilterTables</name></member>
+    <member refid="namespaceIMP_1_1domino_1a046c1e9885f4e981e10aefeba6f0e297" kind="typedef"><name>SubsetFilterTablesTemp</name></member>
+    <member refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kind="typedef"><name>SubsetGraph</name></member>
+    <member refid="namespaceIMP_1_1domino_1ac8f63280e2e1364893f9284656904e54" kind="typedef"><name>SubsetGraphConstEdgeName</name></member>
+    <member refid="namespaceIMP_1_1domino_1a84f5940aaf6b3c02741db768925fb5eb" kind="typedef"><name>SubsetGraphConstVertexName</name></member>
+    <member refid="namespaceIMP_1_1domino_1a4ffd940aaaf6b2fc33b6347b8e6b5ed3" kind="typedef"><name>SubsetGraphEdge</name></member>
+    <member refid="namespaceIMP_1_1domino_1a145a31f9bed4d4955a40149f91e9a680" kind="typedef"><name>SubsetGraphTraits</name></member>
+    <member refid="namespaceIMP_1_1domino_1a2ea872d4edb865d283043f99e8676277" kind="typedef"><name>SubsetGraphVertex</name></member>
+    <member refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kind="typedef"><name>Subsets</name></member>
+    <member refid="namespaceIMP_1_1domino_1a1e91ca287b91fd6144aeeff14960c14a" kind="function"><name>get_difference</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3a112fd41a97e8e93dbff8be3dfb8bb6" kind="function"><name>get_distance_if_smaller_than</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3247d32b900c4633e5c58cd7032d043b" kind="function"><name>get_embedding</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab5fc791399c0d6c76e1bea5d4b3da6ca" kind="function"><name>get_index</name></member>
+    <member refid="namespaceIMP_1_1domino_1a399d7344a0696fbab4a6ca6c2796157b" kind="function"><name>get_intersection</name></member>
+    <member refid="namespaceIMP_1_1domino_1af4ecbb31cd9704335911eef3d583a754" kind="function"><name>get_junction_tree</name></member>
+    <member refid="namespaceIMP_1_1domino_1abd8a69ba2cc2b8fea2f49c99189d8711" kind="function"><name>get_nearest_assignment</name></member>
+    <member refid="namespaceIMP_1_1domino_1a0f43ef4b4efed8a9481e65694ce3fadb" kind="function"><name>get_order</name></member>
+    <member refid="namespaceIMP_1_1domino_1a4c8c50c718ab2dcabacc4b2e41aba522" kind="function"><name>get_partial_index</name></member>
+    <member refid="namespaceIMP_1_1domino_1aa29c2ec35739c08db3a13ffe4ec38088" kind="function"><name>get_possible_interactions</name></member>
+    <member refid="namespaceIMP_1_1domino_1ab0eb2c05d5eb0c9e64fba8c85011ad01" kind="function"><name>get_restraint_graph</name></member>
+    <member refid="namespaceIMP_1_1domino_1a619c0aea6816fda8b69b08cf5e57876d" kind="function"><name>get_slice</name></member>
+    <member refid="namespaceIMP_1_1domino_1a7b094ee7dac304dfc212772818a9ba04" kind="function"><name>get_state_clusters</name></member>
+    <member refid="namespaceIMP_1_1domino_1a451bc898770bf9a620fa517ff74d4ef6" kind="function"><name>get_subsets</name></member>
+    <member refid="namespaceIMP_1_1domino_1adc940e96eb944fe259a8fba40830a251" kind="function"><name>get_union</name></member>
+    <member refid="namespaceIMP_1_1domino_1a4570cce69f194985e23b710c3b5e18b4" kind="function"><name>load_leaf_assignments</name></member>
+    <member refid="namespaceIMP_1_1domino_1a200c71a273844cc32fd32f6a5eafa0aa" kind="function"><name>load_merged_assignments</name></member>
+    <member refid="namespaceIMP_1_1domino_1a3305fe8f61d81cba57e9f6896024b263" kind="function"><name>load_merged_assignments_random_order</name></member>
+    <member refid="namespaceIMP_1_1domino_1a419db1b5a46dd7eefe31fd0279087c94" kind="function"><name>swap</name></member>
+    <member refid="namespaceIMP_1_1domino_1adf25d025631b32526e9e794ae0be804a" kind="function"><name>swap</name></member>
+    <member refid="namespaceIMP_1_1domino_1a52a530f6cadbd362b3c42b9210ef5dae" kind="function"><name>swap</name></member>
+    <member refid="namespaceIMP_1_1domino_1a517fc7420fdb629c2f09280f36e898d3" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="namespaceinteractive" kind="namespace"><name>interactive</name>
+    <member refid="interactive_8py_1a8591e5326210ebd0647eddd41e87c440" kind="variable"><name>ds</name></member>
+    <member refid="interactive_8py_1a5927f4f7bc414bed7b14621ab4dc4c76" kind="variable"><name>lpc</name></member>
+    <member refid="interactive_8py_1adb0291a336f2027b19ec5c909c4deba8" kind="variable"><name>m</name></member>
+    <member refid="interactive_8py_1aa9a89a3d3a9bfb15358e4403e55197a8" kind="variable"><name>mt</name></member>
+    <member refid="interactive_8py_1a0c04cebca0786a58a2adff6b16abf5ad" kind="variable"><name>ps</name></member>
+    <member refid="interactive_8py_1a47dd069a2b7cdb98f9fc64fb384b2a4e" kind="variable"><name>pst</name></member>
+    <member refid="interactive_8py_1a28ad89e8575eb428315e19dec4558865" kind="variable"><name>r</name></member>
+    <member refid="interactive_8py_1aad493115b5a7ada7a54f4263878d1c2d" kind="variable"><name>s</name></member>
+    <member refid="interactive_8py_1abdd32f622d00f1867f404de5ca36a14f" kind="variable"><name>schedule</name></member>
+    <member refid="interactive_8py_1a0a047ced91edc595f82963d3481b88fb" kind="variable"><name>space</name></member>
+    <member refid="interactive_8py_1abfb3188563dee2e9d454d4f1bbdb4329" kind="function"><name>get_assignments</name></member>
+    <member refid="interactive_8py_1abd01d88b3e66538bf9967c1fb5d11bae" kind="function"><name>schedule_job</name></member>
+  </compound>
+  <compound refid="namespaceinteractive__with__containers" kind="namespace"><name>interactive_with_containers</name>
+    <member refid="interactive__with__containers_8py_1a5fbc599fffba4211a60a91032e88cc5f" kind="variable"><name>all</name></member>
+    <member refid="interactive__with__containers_8py_1a8ac0c12b35f2ede54730bed70f5c2e03" kind="variable"><name>filters</name></member>
+    <member refid="interactive__with__containers_8py_1ac9fb0e72dd97aff83abc92b6730cf567" kind="variable"><name>leaf_table</name></member>
+    <member refid="interactive__with__containers_8py_1a475fc1a9e594183f8cb51630bf1694cd" kind="variable"><name>lpc</name></member>
+    <member refid="interactive__with__containers_8py_1a7169cf088fd85a82c9ed19ed5cb257f5" kind="variable"><name>m</name></member>
+    <member refid="interactive__with__containers_8py_1ab32d18c2bc789002c0db11057a3079a8" kind="variable"><name>mt</name></member>
+    <member refid="interactive__with__containers_8py_1a5589de9ffd0490e1aed3303837c0c644" kind="variable"><name>name</name></member>
+    <member refid="interactive__with__containers_8py_1a68485a6086283bada65c5f1601c03fb6" kind="variable"><name>ps</name></member>
+    <member refid="interactive__with__containers_8py_1a49eced25398a1ff3fcb8cd0b3bc041d5" kind="variable"><name>pst</name></member>
+    <member refid="interactive__with__containers_8py_1a97fbb91a22260ad9ff4e0a828be5bb48" kind="variable"><name>r</name></member>
+    <member refid="interactive__with__containers_8py_1a84fee2dd710ea22e8238d482f9bc4890" kind="variable"><name>rc</name></member>
+    <member refid="interactive__with__containers_8py_1a153c768bd9dac1abeb0e65989dd61ff7" kind="variable"><name>root</name></member>
+    <member refid="interactive__with__containers_8py_1ab815846384895e3455accb92f56a034a" kind="variable"><name>s</name></member>
+    <member refid="interactive__with__containers_8py_1af43d65c4db5a25e22df482f0881ea1cd" kind="variable"><name>space</name></member>
+    <member refid="interactive__with__containers_8py_1a183dd281ee425ead8fd528a2d9443604" kind="function"><name>get_assignments</name></member>
+  </compound>
+  <compound refid="namespacemarina__party" kind="namespace"><name>marina_party</name>
+    <member refid="marina__party_8py_1af73f04f8984544ed2b4801efd4c805d7" kind="variable"><name>all_possible_states</name></member>
+    <member refid="marina__party_8py_1aa0e6130b86b1878aad66bdea4bcf6f54" kind="variable"><name>allowed_states_indices</name></member>
+    <member refid="marina__party_8py_1a660d26579dbb6f3096074160d9764429" kind="variable"><name>best_solution</name></member>
+    <member refid="marina__party_8py_1ad1d35d9c8551e027bfd88e2d05a9d877" kind="variable"><name>friends</name></member>
+    <member refid="marina__party_8py_1af7fea7ecbc4d202cf90d1420064c59f9" kind="variable"><name>ft</name></member>
+    <member refid="marina__party_8py_1a42824a3e38ab33a6292cf147badc0ca4" kind="variable"><name>girls</name></member>
+    <member refid="marina__party_8py_1adaa084b7b58c5305579cde9aacf9f7be" kind="variable"><name>i</name></member>
+    <member refid="marina__party_8py_1a16156c3c9c3d91e84baeac92221457c4" kind="variable"><name>j</name></member>
+    <member refid="marina__party_8py_1a6d957793f33f3ca31b0bcfe19f4a73b2" kind="variable"><name>list_states_table</name></member>
+    <member refid="marina__party_8py_1aaf519923e321f474e14e4290eff599b7" kind="variable"><name>model</name></member>
+    <member refid="marina__party_8py_1a01c964974e718ffc8e39fbfb644a03ca" kind="variable"><name>most_expensive</name></member>
+    <member refid="marina__party_8py_1a51b9529ad8bf27724ef0ad4f8b1c1c10" kind="variable"><name>n_dresses</name></member>
+    <member refid="marina__party_8py_1aa1746ab5f15ef24e17e32bffeee4f5ce" kind="variable"><name>n_edges</name></member>
+    <member refid="marina__party_8py_1a093488275670662ba6b06a365c5b1b2e" kind="variable"><name>n_girls</name></member>
+    <member refid="marina__party_8py_1a73e019aa870a462b46c47cb3780091f9" kind="variable"><name>p</name></member>
+    <member refid="marina__party_8py_1a228f2013611e7c6416b22dd7b32bf749" kind="variable"><name>pr</name></member>
+    <member refid="marina__party_8py_1a52462824d362750995195967c7a3eeb0" kind="variable"><name>prices</name></member>
+    <member refid="marina__party_8py_1a534f88fe2edb4cf9fcc17020e0b8e243" kind="variable"><name>rs</name></member>
+    <member refid="marina__party_8py_1a526afcfa66ca5b2979d6aed619569596" kind="variable"><name>sampler</name></member>
+    <member refid="marina__party_8py_1a906d06c2c848f8b3c9f51342a6ae39d6" kind="variable"><name>score</name></member>
+    <member refid="marina__party_8py_1adb1fe200c32aa5bf7da1197de87ac47d" kind="variable"><name>selection</name></member>
+    <member refid="marina__party_8py_1ab807a97a06ec0b6914e7f8e33e8c5bad" kind="variable"><name>solutions</name></member>
+    <member refid="marina__party_8py_1a237243829d24c751084cf98514f9fa63" kind="variable"><name>states_table</name></member>
+    <member refid="marina__party_8py_1a397a3d414c3da7eb86c5ec630289539b" kind="variable"><name>subset</name></member>
+    <member refid="marina__party_8py_1ac38fdfeb716610522a5480c91fdbbc87" kind="variable"><name>total_price</name></member>
+    <member refid="marina__party_8py_1a57c69073e21b39a161e2495c49a03235" kind="function"><name>get_total_price</name></member>
+    <member refid="marina__party_8py_1a133949aa6875703f6d72b77491108d64" kind="function"><name>print_assignment</name></member>
+  </compound>
+  <compound refid="namespacemerge__tree" kind="namespace"><name>merge_tree</name>
+    <member refid="merge__tree_8py_1a60cd1fc9ab81d103480f02393e8862b6" kind="variable"><name>acp</name></member>
+    <member refid="merge__tree_8py_1a5663964f9fc84271a5a77de071675eb8" kind="variable"><name>allc</name></member>
+    <member refid="merge__tree_8py_1a0f1489a08e28e33e2ae8b17873de1ce1" kind="variable"><name>bb</name></member>
+    <member refid="merge__tree_8py_1ac545afb321ce3995169d63af06054c87" kind="variable"><name>cp</name></member>
+    <member refid="merge__tree_8py_1a069f1d072f9a8c93ec0290c6d40fbd47" kind="variable"><name>cps</name></member>
+    <member refid="merge__tree_8py_1abfe5ab5e43f7ca8f8c2490183116646f" kind="variable"><name>d</name></member>
+    <member refid="merge__tree_8py_1ab99b180a322d4e8d5eb0741aaec87c0e" kind="variable"><name>ig</name></member>
+    <member refid="merge__tree_8py_1a8bb29f6131de5408428954a83c1e3d7a" kind="variable"><name>jt</name></member>
+    <member refid="merge__tree_8py_1a9a3efea7bf9116d55dfbede2df2476be" kind="variable"><name>m</name></member>
+    <member refid="merge__tree_8py_1aeb4c7b021336ef90e3142e87fbad8510" kind="variable"><name>mt</name></member>
+    <member refid="merge__tree_8py_1a21273c9d9b8c53a7640cb4422b24ef47" kind="variable"><name>p</name></member>
+    <member refid="merge__tree_8py_1a653bff22b54658a3225b8aa3b075340a" kind="variable"><name>ps</name></member>
+    <member refid="merge__tree_8py_1a3ada7053dc126b31815096f9cafc989a" kind="variable"><name>pst</name></member>
+    <member refid="merge__tree_8py_1afec05cc945932ff63756b50c337f4453" kind="variable"><name>r</name></member>
+    <member refid="merge__tree_8py_1a2fe964e93382424f478dd1202be410a8" kind="variable"><name>s</name></member>
+    <member refid="merge__tree_8py_1ae2a2f0c3ebdddf3329b6903a1fa86604" kind="variable"><name>ss</name></member>
+  </compound>
+  <compound refid="namespacemultiscale" kind="namespace"><name>multiscale</name>
+    <member refid="multiscale_8py_1ab7ef4df9f904ddf8e5e5b8d760af2bdf" kind="variable"><name>ac</name></member>
+    <member refid="multiscale_8py_1a5b9e5cfda70cb44ae5cf753995292ca4" kind="variable"><name>allowed</name></member>
+    <member refid="multiscale_8py_1ac20d719aff83640acdaa4715d659d7f3" kind="variable"><name>bb</name></member>
+    <member refid="multiscale_8py_1a023096659594c8013e08c3e12bc14ba7" kind="variable"><name>cac</name></member>
+    <member refid="multiscale_8py_1a02d2a61efe6f8b22b86fad6c9ebe981d" kind="variable"><name>ccac</name></member>
+    <member refid="multiscale_8py_1abdf9a8a55c64bab8bea5923b9e72d913" kind="variable"><name>covers</name></member>
+    <member refid="multiscale_8py_1a6a52a12df0bb25a9bad38e347ea3cb33" kind="variable"><name>cur</name></member>
+    <member refid="multiscale_8py_1ac5b52fac124c1462462a4fcaef93c1a2" kind="variable"><name>ds</name></member>
+    <member refid="multiscale_8py_1a83d17e9aa6edcb090e718136acb8117e" kind="variable"><name>g</name></member>
+    <member refid="multiscale_8py_1ac88f729f642c9b1639746ceb3d33865f" kind="variable"><name>h</name></member>
+    <member refid="multiscale_8py_1aa79dc8e22015d4f5625672ec474cc893" kind="variable"><name>k</name></member>
+    <member refid="multiscale_8py_1a1d2f1194a3994a57c88da79445fe8571" kind="variable"><name>lac</name></member>
+    <member refid="multiscale_8py_1aefba9a162409e1e2eb56ee33d6c26127" kind="variable"><name>lf</name></member>
+    <member refid="multiscale_8py_1ac92ef957407a39761bca8db7e7393f41" kind="variable"><name>m</name></member>
+    <member refid="multiscale_8py_1a8720f58b42b92ffb7a2e33fc419cb14b" kind="variable"><name>mapping</name></member>
+    <member refid="multiscale_8py_1add597a091c856e5791ea98e91e82f356" kind="variable"><name>mw</name></member>
+    <member refid="multiscale_8py_1ab37179cf29d64a15b35c5f4c2c7a4d99" kind="variable"><name>pst</name></member>
+    <member refid="multiscale_8py_1a92e298540b6204db80656bcc267e347d" kind="variable"><name>r</name></member>
+    <member refid="multiscale_8py_1aeb8b0b6dd2422245241d542e08c01bdb" kind="variable"><name>r0</name></member>
+    <member refid="multiscale_8py_1a82eaae205c8276899429add456de98a6" kind="variable"><name>r1</name></member>
+    <member refid="multiscale_8py_1a9d2e8ac61d9aa59b57e750d1c110546f" kind="variable"><name>rs</name></member>
+    <member refid="multiscale_8py_1ab1a141d230892d5a102ab85541b8e109" kind="variable"><name>s</name></member>
+    <member refid="multiscale_8py_1a31e0e768c70e56d723b2ac91c6d5f0dd" kind="variable"><name>sampler</name></member>
+    <member refid="multiscale_8py_1a243302ce3efbfb9256591485490500df" kind="variable"><name>scale</name></member>
+    <member refid="multiscale_8py_1a3c38212dca18fa56ef75c1507e95b1e6" kind="variable"><name>subset</name></member>
+    <member refid="multiscale_8py_1abbb564d3235079fde1b720cce7b6f9f1" kind="variable"><name>sw</name></member>
+    <member refid="multiscale_8py_1a31352e2c6cb38756ee7555806dec8ea3" kind="function"><name>display_mapping</name></member>
+    <member refid="multiscale_8py_1a4e48e37cc433f6e8cd9eef9a80611020" kind="function"><name>get_mapping</name></member>
+    <member refid="multiscale_8py_1a0d6ce447793c2d5e8837e09c4e1c8a23" kind="function"><name>setup</name></member>
+  </compound>
+  <compound refid="namespacerestraint__cache" kind="namespace"><name>restraint_cache</name>
+    <member refid="restraint__cache_8py_1a8e9bb5c8d407e32b00e6931beee0da74" kind="variable"><name>alls</name></member>
+    <member refid="restraint__cache_8py_1af689ec2832130bebfa5a3c44feea02d7" kind="variable"><name>color</name></member>
+    <member refid="restraint__cache_8py_1a2cb90b4d1486181c78433420bcf15080" kind="variable"><name>domino_restraints</name></member>
+    <member refid="restraint__cache_8py_1abcab1c539013225bd8be98f6edfe8752" kind="variable"><name>ef</name></member>
+    <member refid="restraint__cache_8py_1a70eaa8e8152ed85d8000a62c65c017d3" kind="variable"><name>eps</name></member>
+    <member refid="restraint__cache_8py_1a482fbefa05451d551b922c453da40ba2" kind="variable"><name>g</name></member>
+    <member refid="restraint__cache_8py_1a4bbdc0e7eeb79c17caad7716f4d55f78" kind="variable"><name>h</name></member>
+    <member refid="restraint__cache_8py_1a35aba5430ba7f13a5ba080b7df4238e6" kind="variable"><name>m</name></member>
+    <member refid="restraint__cache_8py_1af0fc67ec52bc2e0f62ea244041ea9933" kind="variable"><name>order</name></member>
+    <member refid="restraint__cache_8py_1a5c8eec05d21236a7a87e1df4bca0ddf3" kind="variable"><name>ps</name></member>
+    <member refid="restraint__cache_8py_1af2875aa45c7b1a24409e78e5f352d4d2" kind="variable"><name>pst</name></member>
+    <member refid="restraint__cache_8py_1a748d9d93fb47cc96e045487d0b4fb1b7" kind="variable"><name>r</name></member>
+    <member refid="restraint__cache_8py_1a7635844aab8eba5c129cac6f71f0a47e" kind="variable"><name>rc</name></member>
+    <member refid="restraint__cache_8py_1a37e81fc2452931a30348dad87c28159f" kind="variable"><name>resolution</name></member>
+    <member refid="restraint__cache_8py_1a34721b2ec3578a87bba35d30e3627be1" kind="variable"><name>rmf</name></member>
+    <member refid="restraint__cache_8py_1acc4676d7818ada5541ee4449388d95e4" kind="variable"><name>rssft</name></member>
+    <member refid="restraint__cache_8py_1aaf520b5e5405fcd3cc1ec262dece243f" kind="variable"><name>s</name></member>
+    <member refid="restraint__cache_8py_1a6f4d2b5d9008e1715ceb3084b6334948" kind="variable"><name>states</name></member>
+    <member refid="restraint__cache_8py_1ad4f92d00f2c3c8571e2331c87fa183ca" kind="variable"><name>sts</name></member>
+    <member refid="restraint__cache_8py_1a1e1413cbb8e63f634a73cc6f9c259e9d" kind="variable"><name>vs</name></member>
+  </compound>
+  <compound refid="namespacerigid__body__excluded__volume" kind="namespace"><name>rigid_body_excluded_volume</name>
+    <member refid="rigid__body__excluded__volume_8py_1a63076816f4c860eb7b79d2bbc6568ba0" kind="variable"><name>cs</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a2a415e2c96f4149c04fdd44ce60f9bdb" kind="variable"><name>helices</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a901c19f3019133e929ec277d348a70e5" kind="variable"><name>m</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1afbba66455bbd9d7216f850379a2e85b2" kind="variable"><name>pst</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a0cab3aeaf3d3b7cd870041355be47c48" kind="variable"><name>rs</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a516c7e34c0c84cbbfef64f012c96edee" kind="variable"><name>s</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a81e4a9fb7daed5501f5f272ee8078c17" kind="variable"><name>score</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1ac55d579bc5a64fa6fe7ba71129adba39" kind="variable"><name>sf</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a665ef42da46012f2757f729cd25b9866" kind="variable"><name>ss</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a3cd8a12ddeaa4730755a269e89a9403c" kind="function"><name>create_discrete_states</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1af7669766e04117d05047e5b11ad67e55" kind="function"><name>create_excluded_volume</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a7959b2b3be2d2b8bd1bc7c6b047d16f2" kind="function"><name>create_representation</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a82244bdde346dcbd7a92923fb289ad51" kind="function"><name>create_sampler</name></member>
+    <member refid="rigid__body__excluded__volume_8py_1a6122f6b25c6b7a96c182c8d0faab975c" kind="function"><name>display</name></member>
+  </compound>
+  <compound refid="namespacesave__assignments" kind="namespace"><name>save_assignments</name>
+    <member refid="save__assignments_8py_1a72129c65ab48436f32d90fbb796b0311" kind="variable"><name>a</name></member>
+    <member refid="save__assignments_8py_1a69e9f28b3cdf5d86dfe1e6800f3b48e5" kind="variable"><name>asl</name></member>
+    <member refid="save__assignments_8py_1a9e073cb3381f38ea90f9daacaf4435b2" kind="variable"><name>back_asl</name></member>
+    <member refid="save__assignments_8py_1adcf98591f72c295d67d8b1aaa3a3ef7a" kind="variable"><name>back_aslp</name></member>
+    <member refid="save__assignments_8py_1aa2d697ba18d9d794b286abe5037a198e" kind="variable"><name>file_name</name></member>
+    <member refid="save__assignments_8py_1ade8182a4a48bfa15ad01ffd1a59bbcdc" kind="variable"><name>m</name></member>
+    <member refid="save__assignments_8py_1a137e87dd62a4b21bb017eb3c1ce4da2b" kind="variable"><name>mp</name></member>
+    <member refid="save__assignments_8py_1a3e8da9f67bf53332058f50b81353b371" kind="variable"><name>ps</name></member>
+    <member refid="save__assignments_8py_1afc3ceefbef36bf5a11c4e0a30644a26e" kind="variable"><name>psp</name></member>
+    <member refid="save__assignments_8py_1ac157819d45983465c19f759e23828bba" kind="variable"><name>ss</name></member>
+    <member refid="save__assignments_8py_1afb3c224c8f461e6c8c1ae5f60d5df8d5" kind="variable"><name>ssp</name></member>
+    <member refid="save__assignments_8py_1a47507a35b3b80907435ce16a628a985c" kind="variable"><name>written</name></member>
+  </compound>
+  <compound refid="namespacesix__particles__optimization" kind="namespace"><name>six_particles_optimization</name>
+    <member refid="six__particles__optimization_8py_1a49575ad6136af281c7ae0aff371edfb5" kind="variable"><name>cs</name></member>
+    <member refid="six__particles__optimization_8py_1a9e13b6d6d27cbfc799e5f6aba9b737a3" kind="variable"><name>m</name></member>
+    <member refid="six__particles__optimization_8py_1a8b7b3b63396c815031b82983841f2ea3" kind="variable"><name>ps</name></member>
+    <member refid="six__particles__optimization_8py_1a14a28acbb493c3e289c0f7bbda43adf8" kind="variable"><name>pst</name></member>
+    <member refid="six__particles__optimization_8py_1acb8639c69b303dc8f08ab6fec8b1d9a6" kind="variable"><name>rs</name></member>
+    <member refid="six__particles__optimization_8py_1abfafd7b985df3cb5fce3cfb6906ac288" kind="variable"><name>s</name></member>
+    <member refid="six__particles__optimization_8py_1a1d331ec455dec6653feca9daac02804b" kind="variable"><name>sf</name></member>
+    <member refid="six__particles__optimization_8py_1a4c75207215c0b9ab22a7c28d30f13d9a" kind="function"><name>create_discrete_states</name></member>
+    <member refid="six__particles__optimization_8py_1a41194d20dcf22a87b503d79379672c85" kind="function"><name>create_representation</name></member>
+    <member refid="six__particles__optimization_8py_1a66837f7d1e91f8a1b73d2ccde1998950" kind="function"><name>create_sampler</name></member>
+    <member refid="six__particles__optimization_8py_1a31e4faf5be5e128d51f79b028c337d87" kind="function"><name>create_scoring</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="custom__filter_8py" kind="file"><name>custom_filter.py</name>
+  </compound>
+  <compound refid="domino__approach_8py" kind="file"><name>domino_approach.py</name>
+  </compound>
+  <compound refid="interactive_8py" kind="file"><name>interactive.py</name>
+  </compound>
+  <compound refid="interactive__with__containers_8py" kind="file"><name>interactive_with_containers.py</name>
+  </compound>
+  <compound refid="marina__party_8py" kind="file"><name>marina_party.py</name>
+  </compound>
+  <compound refid="merge__tree_8py" kind="file"><name>merge_tree.py</name>
+  </compound>
+  <compound refid="multiscale_8py" kind="file"><name>multiscale.py</name>
+  </compound>
+  <compound refid="restraint__cache_8py" kind="file"><name>restraint_cache.py</name>
+  </compound>
+  <compound refid="rigid__body__excluded__volume_8py" kind="file"><name>rigid_body_excluded_volume.py</name>
+  </compound>
+  <compound refid="save__assignments_8py" kind="file"><name>save_assignments.py</name>
+  </compound>
+  <compound refid="six__particles__optimization_8py" kind="file"><name>six_particles_optimization.py</name>
+  </compound>
+  <compound refid="analysis_8h" kind="file"><name>analysis.h</name>
+  </compound>
+  <compound refid="Assignment_8h" kind="file"><name>Assignment.h</name>
+  </compound>
+  <compound refid="assignment__containers_8h" kind="file"><name>assignment_containers.h</name>
+  </compound>
+  <compound refid="assignment__tables_8h" kind="file"><name>assignment_tables.h</name>
+  </compound>
+  <compound refid="BranchAndBoundSampler_8h" kind="file"><name>BranchAndBoundSampler.h</name>
+  </compound>
+  <compound refid="DependencyScoreState_8h" kind="file"><name>DependencyScoreState.h</name>
+  </compound>
+  <compound refid="DiscreteSampler_8h" kind="file"><name>DiscreteSampler.h</name>
+  </compound>
+  <compound refid="domino__config_8h" kind="file"><name>domino_config.h</name>
+    <member refid="domino__config_8h_1a058c1437506b921cb2a257df61c46c44" kind="define"><name>IMP_DOMINO_HAS_BOOST_FILESYSTEM</name></member>
+    <member refid="domino__config_8h_1ac4a4f8ca993b6c75d4dfb8d9fb71e025" kind="define"><name>IMP_DOMINO_HAS_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="domino__config_8h_1ad4d80cc597cfb7a71658e01cadce203b" kind="define"><name>IMP_DOMINO_HAS_BOOST_RANDOM</name></member>
+    <member refid="domino__config_8h_1ab1f7922bf687a9f225e4db53a5461d67" kind="define"><name>IMP_DOMINO_HAS_BOOST_REGEX</name></member>
+    <member refid="domino__config_8h_1a4b38edd36404fa9b6492d90b98b9cd69" kind="define"><name>IMP_DOMINO_HAS_BOOST_SYSTEM</name></member>
+    <member refid="domino__config_8h_1a2737daad9efd190bb9b3a64265f7d23d" kind="define"><name>IMP_DOMINO_HAS_CGAL</name></member>
+    <member refid="domino__config_8h_1ac50ccd46679b1fecd6e64d16ceb3da9c" kind="define"><name>IMP_DOMINO_HAS_HDF5</name></member>
+    <member refid="domino__config_8h_1a89f8cec7c206fa352ee6c5951ff3482e" kind="define"><name>IMP_DOMINO_HAS_IMP_ATOM</name></member>
+    <member refid="domino__config_8h_1a7d01ca082f02e39a534c5e3df360345f" kind="define"><name>IMP_DOMINO_HAS_IMP_CGAL</name></member>
+    <member refid="domino__config_8h_1a5e6951e1168ce107666994bbad7cd121" kind="define"><name>IMP_DOMINO_HAS_IMP_EM</name></member>
+    <member refid="domino__config_8h_1a311a0ed61fa8f6c8162bfe6b9c57dd01" kind="define"><name>IMP_DOMINO_HAS_IMP_ISD</name></member>
+    <member refid="domino__config_8h_1a5d3ba7716bc40b2fc59d0425b1a35634" kind="define"><name>IMP_DOMINO_HAS_IMP_KERNEL</name></member>
+    <member refid="domino__config_8h_1a0eae8d95ba0c33b30b293c32ae8f07e9" kind="define"><name>IMP_DOMINO_HAS_IMP_RMF</name></member>
+    <member refid="domino__config_8h_1ad1145ba638ed06a08d875cfe092618df" kind="define"><name>IMP_DOMINO_HAS_IMP_SAXS</name></member>
+    <member refid="domino__config_8h_1a88f7c1445c42267201ee4a0dce3e015c" kind="define"><name>IMP_DOMINO_HAS_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="domino__config_8h_1aa1b89b0cb2ff5858e7f6922dbc469912" kind="define"><name>IMP_DOMINO_HAS_NUMPY</name></member>
+    <member refid="domino__config_8h_1ac75d42a5a85fad3a255b983a9ddf7794" kind="define"><name>IMP_DOMINO_HAS_PYTHON_IHM</name></member>
+    <member refid="domino__config_8h_1ab80e44bafbb617dff4c97118086c7c34" kind="define"><name>IMP_DOMINO_HAS_RMF</name></member>
+    <member refid="domino__config_8h_1a58af619ce40dc81e682f7add6b1e3cb9" kind="define"><name>IMP_DOMINO_USE_BOOST_FILESYSTEM</name></member>
+    <member refid="domino__config_8h_1aff2279bb62f8a0b670c1cb6b6a6ad71c" kind="define"><name>IMP_DOMINO_USE_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="domino__config_8h_1a5376b9e45e2c793a14b99e6f369ae07e" kind="define"><name>IMP_DOMINO_USE_BOOST_RANDOM</name></member>
+    <member refid="domino__config_8h_1a579feadfc3e72b3ec3130859238b1eab" kind="define"><name>IMP_DOMINO_USE_BOOST_REGEX</name></member>
+    <member refid="domino__config_8h_1afd3ef9ba83e9be18a95dd2f1f9c9a112" kind="define"><name>IMP_DOMINO_USE_BOOST_SYSTEM</name></member>
+    <member refid="domino__config_8h_1ad44ac9a697a8bc982aa07455992d3d8d" kind="define"><name>IMP_DOMINO_USE_CGAL</name></member>
+    <member refid="domino__config_8h_1afa2ba4de75cb31e1e913921afb8d0d86" kind="define"><name>IMP_DOMINO_USE_HDF5</name></member>
+    <member refid="domino__config_8h_1a60991ac3cca492907ab36123daa19830" kind="define"><name>IMP_DOMINO_USE_IMP_ATOM</name></member>
+    <member refid="domino__config_8h_1a7d5e5aff450ae5288dd567e18a392083" kind="define"><name>IMP_DOMINO_USE_IMP_CGAL</name></member>
+    <member refid="domino__config_8h_1a6d4c7aeb26d00fa30df93be7ef3cfea4" kind="define"><name>IMP_DOMINO_USE_IMP_EM</name></member>
+    <member refid="domino__config_8h_1a65102542691a6647f38c5e20e79c50d8" kind="define"><name>IMP_DOMINO_USE_IMP_ISD</name></member>
+    <member refid="domino__config_8h_1a7518bac991951ce9985732d9b7764037" kind="define"><name>IMP_DOMINO_USE_IMP_KERNEL</name></member>
+    <member refid="domino__config_8h_1a2e6fb2b1c0ed5e22db44fbb341544964" kind="define"><name>IMP_DOMINO_USE_IMP_RMF</name></member>
+    <member refid="domino__config_8h_1af2d2998ab153ec1226b40d129faecb18" kind="define"><name>IMP_DOMINO_USE_IMP_SAXS</name></member>
+    <member refid="domino__config_8h_1ae10d7ed7aca7df477e7b546ece08e867" kind="define"><name>IMP_DOMINO_USE_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="domino__config_8h_1abb201ae503ca2b4d146eb6cbe360d843" kind="define"><name>IMP_DOMINO_USE_NUMPY</name></member>
+    <member refid="domino__config_8h_1a8f8078393ec46617b9196923ba81001d" kind="define"><name>IMP_DOMINO_USE_PYTHON_IHM</name></member>
+    <member refid="domino__config_8h_1a5173e021c020e54a06c7470279f1a007" kind="define"><name>IMP_DOMINO_USE_RMF</name></member>
+    <member refid="domino__config_8h_1a7d49927c49bf71519b92e1d4b38c5a89" kind="define"><name>IMPDOMINO_BEGIN_INTERNAL_NAMESPACE</name></member>
+    <member refid="domino__config_8h_1af9436492b3fb2d6087aed3c9659f7a1a" kind="define"><name>IMPDOMINO_BEGIN_NAMESPACE</name></member>
+    <member refid="domino__config_8h_1ac308d3b0430f8f7a0009838af7c167ae" kind="define"><name>IMPDOMINO_DEPRECATED_FUNCTION_DECL</name></member>
+    <member refid="domino__config_8h_1a31264558fdfd6f5a0945191c4fb02cbc" kind="define"><name>IMPDOMINO_DEPRECATED_FUNCTION_DEF</name></member>
+    <member refid="domino__config_8h_1a53ec65320109c222d8ba7760321f7b8b" kind="define"><name>IMPDOMINO_DEPRECATED_HEADER</name></member>
+    <member refid="domino__config_8h_1ac4b0d2400516638e6449d3e7020e953c" kind="define"><name>IMPDOMINO_DEPRECATED_MACRO</name></member>
+    <member refid="domino__config_8h_1a4e59709722079a4643124b6a42e462bf" kind="define"><name>IMPDOMINO_DEPRECATED_METHOD_DECL</name></member>
+    <member refid="domino__config_8h_1a1343af826cf6e2faac1f6690b28154f6" kind="define"><name>IMPDOMINO_DEPRECATED_METHOD_DEF</name></member>
+    <member refid="domino__config_8h_1a212bca8e8ca0277d332a09a248f5e2d1" kind="define"><name>IMPDOMINO_DEPRECATED_OBJECT_DECL</name></member>
+    <member refid="domino__config_8h_1a9a50e4eae905f696a8fd1c0e6839e766" kind="define"><name>IMPDOMINO_DEPRECATED_OBJECT_DEF</name></member>
+    <member refid="domino__config_8h_1a2a323919cafb4bd0c67b86dc84fa7bf0" kind="define"><name>IMPDOMINO_DEPRECATED_VALUE_DECL</name></member>
+    <member refid="domino__config_8h_1a0709c03a70ec654e04c55cde027541f3" kind="define"><name>IMPDOMINO_DEPRECATED_VALUE_DEF</name></member>
+    <member refid="domino__config_8h_1a850b0475cf78d9725db96db9daabf091" kind="define"><name>IMPDOMINO_END_INTERNAL_NAMESPACE</name></member>
+    <member refid="domino__config_8h_1a8ec0ad2379fb760f4a3baeac81ac5517" kind="define"><name>IMPDOMINO_END_NAMESPACE</name></member>
+    <member refid="domino__config_8h_1a428b9890f5858fde785bf1d25975740c" kind="define"><name>IMPDOMINO_EXPORT_TEMPLATE</name></member>
+    <member refid="domino__config_8h_1a8cf7337c395f3d35e07c2768df99be78" kind="define"><name>IMPDOMINO_SHOW_WARNINGS</name></member>
+    <member refid="domino__config_8h_1a6260de2b1d429f1d86a28169423aa6d6" kind="define"><name>IMPDOMINOEXPORT</name></member>
+  </compound>
+  <compound refid="domino__macros_8h" kind="file"><name>domino_macros.h</name>
+    <member refid="domino__macros_8h_1add1dbc5dedf89823db714443cd55dfda" kind="define"><name>IMP_ASSIGNMENT_CONTAINER_METHODS</name></member>
+    <member refid="domino__macros_8h_1a3c8c066268a662855b9f27254ad39c9b" kind="define"><name>IMP_DISJOINT_SUBSET_FILTER_TABLE_DECL</name></member>
+    <member refid="domino__macros_8h_1a85c1b67d0e8044a416bd4642f95abd02" kind="define"><name>IMP_DISJOINT_SUBSET_FILTER_TABLE_DEF</name></member>
+  </compound>
+  <compound refid="DominoSampler_8h" kind="file"><name>DominoSampler.h</name>
+  </compound>
+  <compound refid="interactive_8h" kind="file"><name>interactive.h</name>
+  </compound>
+  <compound refid="Order_8h" kind="file"><name>Order.h</name>
+  </compound>
+  <compound refid="particle__states_8h" kind="file"><name>particle_states.h</name>
+  </compound>
+  <compound refid="Slice_8h" kind="file"><name>Slice.h</name>
+  </compound>
+  <compound refid="Subset_8h" kind="file"><name>Subset.h</name>
+  </compound>
+  <compound refid="subset__filters_8h" kind="file"><name>subset_filters.h</name>
+  </compound>
+  <compound refid="subset__graphs_8h" kind="file"><name>subset_graphs.h</name>
+  </compound>
+  <compound refid="subset__scores_8h" kind="file"><name>subset_scores.h</name>
+  </compound>
+  <compound refid="utility_8h" kind="file"><name>utility.h</name>
+  </compound>
+  <compound refid="IMP__domino_8dox" kind="file"><name>IMP_domino.dox</name>
+  </compound>
+  <compound refid="dir_6aa001e3e89a797fce06e7366ecbd24c" kind="dir"><name>domino</name>
+  </compound>
+  <compound refid="dir_0f232d48a100b530c5c4ac8dc5846b5c" kind="dir"><name>domino</name>
+  </compound>
+  <compound refid="dir_6865c128386e5cda3e9fb411ef2df730" kind="dir"><name>examples</name>
+  </compound>
+  <compound refid="dir_84fc5dba3506812825191c0c043e3c97" kind="dir"><name>generated</name>
+  </compound>
+  <compound refid="dir_b5a750d04c542bbd3deed7241f5ae067" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_7070d906b54de181f9b8a8210a0f21a0" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="domino_2custom_filter_8py-example" kind="example"><name>domino/custom_filter.py</name>
+  </compound>
+  <compound refid="domino_2domino_approach_8py-example" kind="example"><name>domino/domino_approach.py</name>
+  </compound>
+  <compound refid="domino_2interactive_8py-example" kind="example"><name>domino/interactive.py</name>
+  </compound>
+  <compound refid="domino_2interactive_with_containers_8py-example" kind="example"><name>domino/interactive_with_containers.py</name>
+  </compound>
+  <compound refid="domino_2marina_party_8py-example" kind="example"><name>domino/marina_party.py</name>
+  </compound>
+  <compound refid="domino_2merge_tree_8py-example" kind="example"><name>domino/merge_tree.py</name>
+  </compound>
+  <compound refid="domino_2multiscale_8py-example" kind="example"><name>domino/multiscale.py</name>
+  </compound>
+  <compound refid="domino_2restraint_cache_8py-example" kind="example"><name>domino/restraint_cache.py</name>
+  </compound>
+  <compound refid="domino_2rigid_body_excluded_volume_8py-example" kind="example"><name>domino/rigid_body_excluded_volume.py</name>
+  </compound>
+  <compound refid="domino_2save_assignments_8py-example" kind="example"><name>domino/save_assignments.py</name>
+  </compound>
+  <compound refid="domino_2six_particles_optimization_8py-example" kind="example"><name>domino/six_particles_optimization.py</name>
+  </compound>
+</doxygenindex>

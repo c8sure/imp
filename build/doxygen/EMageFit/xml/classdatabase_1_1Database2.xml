@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classdatabase_1_1Database2" kind="class" language="Python" prot="public">
+    <compoundname>database::Database2</compoundname>
+    <derivedcompoundref refid="classsolutions__io_1_1ResultsDB" prot="public" virt="non-virtual">solutions_io.ResultsDB</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdatabase_1_1Database2_1aa6a001c7dc3affc96501d75445136109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.add_column</definition>
+        <argsstring>(self, table, column, data_type)</argsstring>
+        <name>add_column</name>
+        <qualifiedname>database.Database2.add_column</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table</type>
+          <defname>table</defname>
+        </param>
+        <param>
+          <type>column</type>
+          <defname>column</defname>
+        </param>
+        <param>
+          <type>data_type</type>
+          <defname>data_type</defname>
+        </param>
+        <briefdescription>
+<para>Add a column to a table column - the name of the column. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>data_type - the type: int, float, str </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="246" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="246" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1aea98465b1764ff367733b2104f96369e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.add_columns</definition>
+        <argsstring>(self, table, names, types, check=True)</argsstring>
+        <name>add_columns</name>
+        <qualifiedname>database.Database2.add_columns</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table</type>
+          <defname>table</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <param>
+          <type>types</type>
+          <defname>types</defname>
+        </param>
+        <param>
+          <type>check</type>
+          <defname>check</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+<para>Add columns to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If check=True, columns with names already in the database are skipped. If check=False no check is done and trying to add a column that already exists will raise and exception </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="257" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="257" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a8230c7e781e2a88212e33ab1e51f913d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.check_if_is_connected</definition>
+        <argsstring>(self)</argsstring>
+        <name>check_if_is_connected</name>
+        <qualifiedname>database.Database2.check_if_is_connected</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Checks if the class is connected to the database filename. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="42" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a8774a37878c5d01db0cc74877f23c475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <qualifiedname>database.Database2.close</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Closes the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="196" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a103d67b9465154178ca7757c5437bfbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.connect</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>connect</name>
+        <qualifiedname>database.Database2.connect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+<para>Connects to the database in filename. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="35" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a17c823da2c69929a135bab3c3a922cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.create</definition>
+        <argsstring>(self, filename, overwrite=False)</argsstring>
+        <name>create</name>
+        <qualifiedname>database.Database2.create</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>overwrite</type>
+          <defname>overwrite</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Creates a database by simply connecting to the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="28" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1aaea851dba1c2bfe467975eaa657e5bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.create_table</definition>
+        <argsstring>(self, table_name, column_names, column_types)</argsstring>
+        <name>create_table</name>
+        <qualifiedname>database.Database2.create_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>column_names</type>
+          <defname>column_names</defname>
+        </param>
+        <param>
+          <type>column_types</type>
+          <defname>column_types</defname>
+        </param>
+        <briefdescription>
+<para>Creates a table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It expects a sorted dictionary of (data_field,typename) entries </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="48" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="48" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a398eb8bd52f2f3ae94fa1f5dfe767638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.create_view</definition>
+        <argsstring>(self, view_name, table_name, condition_fields, condition_values)</argsstring>
+        <name>create_view</name>
+        <qualifiedname>database.Database2.create_view</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>view_name</type>
+          <defname>view_name</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>condition_fields</type>
+          <defname>condition_fields</defname>
+        </param>
+        <param>
+          <type>condition_values</type>
+          <defname>condition_values</defname>
+        </param>
+        <briefdescription>
+<para>creates a view of the given table where the values are selected using the condition values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See the help for <ref refid="classdatabase_1_1Database2_1ad04f392b2827ea181fd578e4c1b58cdd" kindref="member">update_data()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="145" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="145" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a7067103e2feab5b71ad247f30119dd23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.drop_table</definition>
+        <argsstring>(self, table_name)</argsstring>
+        <name>drop_table</name>
+        <qualifiedname>database.Database2.drop_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <briefdescription>
+<para>Delete a table if it exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="64" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a22d93fce6f36d3b98f994790e46577bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.drop_view</definition>
+        <argsstring>(self, view_name)</argsstring>
+        <name>drop_view</name>
+        <qualifiedname>database.Database2.drop_view</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>view_name</type>
+          <defname>view_name</defname>
+        </param>
+        <briefdescription>
+<para>Removes a view from the database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="178" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1af066724cbff90d1a2baa0803a71d875b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.get_condition_string</definition>
+        <argsstring>(self, fields, values)</argsstring>
+        <name>get_condition_string</name>
+        <qualifiedname>database.Database2.get_condition_string</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+        </param>
+        <briefdescription>
+<para>creates a condition applying each value to each field </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="202" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="202" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1ad9dbb99672f38f1284bb40acb14810e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.get_table</definition>
+        <argsstring>(self, table_name, fields=False, orderby=False)</argsstring>
+        <name>get_table</name>
+        <qualifiedname>database.Database2.get_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Returns th fields requested from the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="182" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="182" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1aab56bdc976ceedb6e9557aac97ffed95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.get_table_column_names</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>get_table_column_names</name>
+        <qualifiedname>database.Database2.get_table_column_names</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Get the names of the columns for a given table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="231" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="231" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a2fa40eea056016db9bc344c630e0e3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.get_table_types</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>get_table_types</name>
+        <qualifiedname>database.Database2.get_table_types</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Gets info about a table and returns all the types in it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="213" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="213" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1ab2bd9ca3acab93621573876401b26e70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.retrieve_data</definition>
+        <argsstring>(self, sql_command)</argsstring>
+        <name>retrieve_data</name>
+        <qualifiedname>database.Database2.retrieve_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sql_command</type>
+          <defname>sql_command</defname>
+        </param>
+        <briefdescription>
+<para>Retrieves data from the database using the sql_command returns the records as a list of tuples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="117" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="117" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a4837e84cf1ce1e8878ccfc6b5585c6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.select_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>select_table</name>
+        <qualifiedname>database.Database2.select_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Prompt for tables so the user can choose one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="279" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="279" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a7a308d771a2b75d6401e16851daaf47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.store_data</definition>
+        <argsstring>(self, table_name, data)</argsstring>
+        <name>store_data</name>
+        <qualifiedname>database.Database2.store_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+<para>Inserts information in a given table of the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The info must be a list of tuples containing as many values as columns in the table Conversion of values is done AUTOMATICALLY after checking the types stored in the table </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="95" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="95" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1a14a23bea65d779efd4c9ffdec73a486a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.store_dataV1</definition>
+        <argsstring>(self, table_name, data)</argsstring>
+        <name>store_dataV1</name>
+        <qualifiedname>database.Database2.store_dataV1</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+<para>Inserts information in a given table of the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The info must be a list of tuples containing as many values as columns in the table Conversion of values is done AUTOMATICALLY after checking the types stored in the table </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="75" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="75" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classdatabase_1_1Database2_1ad04f392b2827ea181fd578e4c1b58cdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.Database2.update_data</definition>
+        <argsstring>(self, table_name, updated_fields, updated_values, condition_fields, condition_values)</argsstring>
+        <name>update_data</name>
+        <qualifiedname>database.Database2.update_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table_name</type>
+          <defname>table_name</defname>
+        </param>
+        <param>
+          <type>updated_fields</type>
+          <defname>updated_fields</defname>
+        </param>
+        <param>
+          <type>updated_values</type>
+          <defname>updated_values</defname>
+        </param>
+        <param>
+          <type>condition_fields</type>
+          <defname>condition_fields</defname>
+        </param>
+        <param>
+          <type>condition_values</type>
+          <defname>condition_values</defname>
+        </param>
+        <briefdescription>
+<para>updates the register in the table identified by the condition values for the condition fields </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="125" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="125" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class to manage a SQL database built with sqlite3. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>database.Database2</label>
+        <link refid="classdatabase_1_1Database2"/>
+      </node>
+      <node id="2">
+        <label>solutions_io.ResultsDB</label>
+        <link refid="classsolutions__io_1_1ResultsDB"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/IMP/EMageFit/database.py" line="16" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="16" bodyend="312"/>
+    <listofallmembers>
+      <member refid="classdatabase_1_1Database2_1aa6a001c7dc3affc96501d75445136109" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>add_column</name></member>
+      <member refid="classdatabase_1_1Database2_1aea98465b1764ff367733b2104f96369e" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>add_columns</name></member>
+      <member refid="classdatabase_1_1Database2_1a8230c7e781e2a88212e33ab1e51f913d" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>check_if_is_connected</name></member>
+      <member refid="classdatabase_1_1Database2_1a8774a37878c5d01db0cc74877f23c475" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>close</name></member>
+      <member refid="classdatabase_1_1Database2_1a103d67b9465154178ca7757c5437bfbe" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>connect</name></member>
+      <member refid="classdatabase_1_1Database2_1a17c823da2c69929a135bab3c3a922cea" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>create</name></member>
+      <member refid="classdatabase_1_1Database2_1aaea851dba1c2bfe467975eaa657e5bee" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>create_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a398eb8bd52f2f3ae94fa1f5dfe767638" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>create_view</name></member>
+      <member refid="classdatabase_1_1Database2_1a7067103e2feab5b71ad247f30119dd23" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>drop_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a22d93fce6f36d3b98f994790e46577bb" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>drop_view</name></member>
+      <member refid="classdatabase_1_1Database2_1af066724cbff90d1a2baa0803a71d875b" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>get_condition_string</name></member>
+      <member refid="classdatabase_1_1Database2_1ad9dbb99672f38f1284bb40acb14810e9" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>get_table</name></member>
+      <member refid="classdatabase_1_1Database2_1aab56bdc976ceedb6e9557aac97ffed95" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>get_table_column_names</name></member>
+      <member refid="classdatabase_1_1Database2_1a2fa40eea056016db9bc344c630e0e3ec" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>get_table_types</name></member>
+      <member refid="classdatabase_1_1Database2_1ab2bd9ca3acab93621573876401b26e70" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>retrieve_data</name></member>
+      <member refid="classdatabase_1_1Database2_1a4837e84cf1ce1e8878ccfc6b5585c6c9" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>select_table</name></member>
+      <member refid="classdatabase_1_1Database2_1a7a308d771a2b75d6401e16851daaf47c" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>store_data</name></member>
+      <member refid="classdatabase_1_1Database2_1a14a23bea65d779efd4c9ffdec73a486a" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>store_dataV1</name></member>
+      <member refid="classdatabase_1_1Database2_1ad04f392b2827ea181fd578e4c1b58cdd" prot="public" virt="non-virtual"><scope>database::Database2</scope><name>update_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

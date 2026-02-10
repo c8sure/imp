@@ -1,0 +1,5 @@
+ok=True
+modules = 'kernel'
+dependencies = 'NumPy:Boost.Random:Boost.FileSystem:Boost.System:Boost.ProgramOptions'
+swig_includes = 'IMP/test/test_macros.h'
+python_only = True

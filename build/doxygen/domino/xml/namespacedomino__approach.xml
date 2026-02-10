@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacedomino__approach" kind="namespace" language="Python">
+    <compoundname>domino_approach</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="domino__approach_8py_1a135e5853588f4f2b116d5cb12ae65398" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.cs</definition>
+        <argsstring></argsstring>
+        <name>cs</name>
+        <qualifiedname>domino_approach.cs</qualifiedname>
+        <initializer>=  domino_smp.create_sample()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="100" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1aea24f9894028a2cc95291163ae4f29ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.domino_smp</definition>
+        <argsstring></argsstring>
+        <name>domino_smp</name>
+        <qualifiedname>domino_approach.domino_smp</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="89" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1a32170eee32440a889a2c30c35993ba11" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.mdl</definition>
+        <argsstring></argsstring>
+        <name>mdl</name>
+        <qualifiedname>domino_approach.mdl</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="60" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1aee8dc9e3cfdba5c7e950b1d4859284bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>domino_approach.p</qualifiedname>
+        <initializer>=  IMP.Particle(mdl)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="64" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1aa4ef8b8d935102d0c5fb75c4f0ca0886" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list domino_approach.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>domino_approach.ps</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="62" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1afe9bf72233bee1a3a71e1bbb22863b53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>domino_approach.pst</qualifiedname>
+        <initializer>=  optimize_subsets(subsets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="76" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1ace48cc2eaadbb473ae6b18d7cc3c66b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>domino_approach.rs</qualifiedname>
+        <initializer>=  setup_scoring_function(ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="70" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="domino__approach_8py_1aad82fe5f36278b5423c5bcf42bd6f8a9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>domino_approach.subsets</definition>
+        <argsstring></argsstring>
+        <name>subsets</name>
+        <qualifiedname>domino_approach.subsets</qualifiedname>
+        <initializer>=  get_subsets(ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="73" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="domino__approach_8py_1a599106a68b9d306031caaa222d30f0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_approach.get_subsets</definition>
+        <argsstring>(ps)</argsstring>
+        <name>get_subsets</name>
+        <qualifiedname>domino_approach.get_subsets</qualifiedname>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="23" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="domino__approach_8py_1ae4c6b1e21330efb58d35c9b25d5d87f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_approach.initiate_configuration</definition>
+        <argsstring>(domino_smp, ps)</argsstring>
+        <name>initiate_configuration</name>
+        <qualifiedname>domino_approach.initiate_configuration</qualifiedname>
+        <param>
+          <type>domino_smp</type>
+          <defname>domino_smp</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="44" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="44" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="domino__approach_8py_1ab27806cc808a02c2af90e591101f8272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_approach.optimize_subsets</definition>
+        <argsstring>(subsets)</argsstring>
+        <name>optimize_subsets</name>
+        <qualifiedname>domino_approach.optimize_subsets</qualifiedname>
+        <param>
+          <type>subsets</type>
+          <defname>subsets</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="13" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="domino__approach_8py_1a4bad028a03a9c6fee7d414672e3d0f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_approach.setup_scoring_function</definition>
+        <argsstring>(ps)</argsstring>
+        <name>setup_scoring_function</name>
+        <qualifiedname>domino_approach.setup_scoring_function</qualifiedname>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/domino_approach.py" line="31" column="1" bodyfile="examples/domino/domino_approach.py" bodystart="31" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/domino_approach.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

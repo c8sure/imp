@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__example_1_1MonteCarloParams" kind="class" language="Python" prot="public">
+    <compoundname>config_example::MonteCarloParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1a803d0038037da4311f9dc399fdf7ed43" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_example.MonteCarloParams::cycles</definition>
+        <argsstring></argsstring>
+        <name>cycles</name>
+        <qualifiedname>config_example.MonteCarloParams.cycles</qualifiedname>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="22" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1ab5befc72825fbca8205e6c026aac0c4b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_example.MonteCarloParams::iterations</definition>
+        <argsstring></argsstring>
+        <name>iterations</name>
+        <qualifiedname>config_example.MonteCarloParams.iterations</qualifiedname>
+        <initializer>=  [200, 200, 200, 200]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="13" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1a4ca87402e8d6201e4f95f9350f0e839f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_example.MonteCarloParams::max_rotations</definition>
+        <argsstring></argsstring>
+        <name>max_rotations</name>
+        <qualifiedname>config_example.MonteCarloParams.max_rotations</qualifiedname>
+        <initializer>=  [1, 0.5, 0.25, 0.1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="18" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1a9eff933670ad9726a0a91b094c23b3b7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_example.MonteCarloParams::max_translations</definition>
+        <argsstring></argsstring>
+        <name>max_translations</name>
+        <qualifiedname>config_example.MonteCarloParams.max_translations</qualifiedname>
+        <initializer>=  [20, 15, 10, 5]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="16" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1aa78589bca2675d71e4554814d0623c44" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float config_example.MonteCarloParams::non_relative_move_prob</definition>
+        <argsstring></argsstring>
+        <name>non_relative_move_prob</name>
+        <qualifiedname>config_example.MonteCarloParams.non_relative_move_prob</qualifiedname>
+        <initializer>=  0.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="30" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1MonteCarloParams_1a17fac64d0c94a82926c46b942a703116" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list config_example.MonteCarloParams::temperatures</definition>
+        <argsstring></argsstring>
+        <name>temperatures</name>
+        <qualifiedname>config_example.MonteCarloParams.temperatures</qualifiedname>
+        <initializer>=  [30000, 15000, 10000, 5000, 1000]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="10" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__example_1_1MonteCarloParams_1aae972f0eddb9b2d5a0e73265d0ca254b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_example.MonteCarloParams.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_example.MonteCarloParams.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="6" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="6" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="4" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="4" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classconfig__example_1_1MonteCarloParams_1aae972f0eddb9b2d5a0e73265d0ca254b" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>__init__</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1a803d0038037da4311f9dc399fdf7ed43" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>cycles</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1ab5befc72825fbca8205e6c026aac0c4b" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>iterations</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1a4ca87402e8d6201e4f95f9350f0e839f" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>max_rotations</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1a9eff933670ad9726a0a91b094c23b3b7" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>max_translations</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1aa78589bca2675d71e4554814d0623c44" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>non_relative_move_prob</name></member>
+      <member refid="classconfig__example_1_1MonteCarloParams_1a17fac64d0c94a82926c46b942a703116" prot="public" virt="non-virtual"><scope>config_example::MonteCarloParams</scope><name>temperatures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="subset__filters_8h" kind="file" language="C++">
+    <compoundname>subset_filters.h</compoundname>
+    <includes refid="domino__config_8h" local="no">IMP/domino/domino_config.h</includes>
+    <includes refid="particle__states_8h" local="yes">particle_states.h</includes>
+    <includes refid="Assignment_8h" local="yes">Assignment.h</includes>
+    <includes refid="Subset_8h" local="yes">Subset.h</includes>
+    <includes refid="domino__macros_8h" local="yes">domino_macros.h</includes>
+    <includes refid="subset__scores_8h" local="yes">subset_scores.h</includes>
+    <includes local="no">IMP/Object.h</includes>
+    <includes local="no">IMP/Pointer.h</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includes local="no">IMP/Configuration.h</includes>
+    <includes local="no">IMP/Model.h</includes>
+    <includes local="no">IMP/macros.h</includes>
+    <includes local="no">boost/dynamic_bitset.hpp</includes>
+    <includes local="no">IMP/utility_macros.h</includes>
+    <includes local="no">boost/property_map/property_map.hpp</includes>
+    <includes local="no">boost/pending/disjoint_sets.hpp</includes>
+    <includedby refid="DiscreteSampler_8h" local="yes">DiscreteSampler.h</includedby>
+    <includedby refid="assignment__tables_8h" local="yes">assignment_tables.h</includedby>
+    <includedby refid="interactive_8h" local="yes">interactive.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>subset_filters.h</label>
+        <link refid="subset__filters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IMP/Configuration.h</label>
+      </node>
+      <node id="6">
+        <label>IMP/Model.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/Object.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="7">
+        <label>IMP/macros.h</label>
+      </node>
+      <node id="9">
+        <label>IMP/utility_macros.h</label>
+      </node>
+      <node id="8">
+        <label>boost/dynamic_bitset.hpp</label>
+      </node>
+      <node id="11">
+        <label>boost/pending/disjoint_sets.hpp</label>
+      </node>
+      <node id="10">
+        <label>boost/property_map/property_map.hpp</label>
+      </node>
+      <node id="4">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public">IMP::domino::DisjointSetsSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" prot="public">IMP::domino::EqualitySubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" prot="public">IMP::domino::EquivalenceAndExclusionSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" prot="public">IMP::domino::EquivalenceSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" prot="public">IMP::domino::ExclusionSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ListSubsetFilterTable" prot="public">IMP::domino::ListSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" prot="public">IMP::domino::MinimumRestraintScoreSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" prot="public">IMP::domino::PairListSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable" prot="public">IMP::domino::ProbabilisticSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" prot="public">IMP::domino::RestraintScoreSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SubsetFilter" prot="public">IMP::domino::SubsetFilter</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public">IMP::domino::SubsetFilterTable</innerclass>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP::domino</innernamespace>
+    <briefdescription>
+<para>A Bayesian inference-based sampler. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1rmf" kindref="compound" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_filters.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::RadiusOfGyrationRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/multifit/RadiusOfGyrationRestraint.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3969666db8a2c52c752a28f41a78300b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list IMP::multifit::RadiusOfGyrationRestraint::particles</definition>
+        <argsstring></argsstring>
+        <name>particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::particles</qualifiedname>
+        <briefdescription>
+<para>A Python list of Particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This class member is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="23" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a5e89bfd54c5da15a4043fc601692d6a9" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; core::HarmonicUpperBound &gt;</type>
+        <definition>Pointer&lt;core::HarmonicUpperBound&gt; IMP::multifit::RadiusOfGyrationRestraint::hub_</definition>
+        <argsstring></argsstring>
+        <name>hub_</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::hub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="57" column="11" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3b2d173e81b1bcfae4f24ff06b94b5c5" prot="protected" static="no" mutable="no">
+        <type>Model *</type>
+        <definition>Model* IMP::multifit::RadiusOfGyrationRestraint::mdl_</definition>
+        <argsstring></argsstring>
+        <name>mdl_</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::mdl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="54" column="9" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a574d11ca3a10f5473763543b9036eab8" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::RadiusOfGyrationRestraint::predicted_rog_</definition>
+        <argsstring></argsstring>
+        <name>predicted_rog_</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::predicted_rog_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="55" column="9" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a8ee7b87f58d8bf85eea5f1d21411e441" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::RadiusOfGyrationRestraint::scale_</definition>
+        <argsstring></argsstring>
+        <name>scale_</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="56" column="9" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1acbda675b11c0086ecf8d6ce4e6f2028a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::RadiusOfGyrationRestraint::RadiusOfGyrationRestraint</definition>
+        <argsstring>(Particles ps, int num_residues, Float scale=1.)</argsstring>
+        <name>RadiusOfGyrationRestraint</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::RadiusOfGyrationRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_residues</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>scale</declname>
+          <defval>1.</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the particles to work on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_residues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of residues the particles represent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allow the radius of gyration of the particles to be at most scale times the predicted one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a2ea96e98e8caafe34f5c8b3e0f16c356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::RadiusOfGyrationRestraint::~RadiusOfGyrationRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~RadiusOfGyrationRestraint</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::~RadiusOfGyrationRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="41" column="231" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a9d5a3ef6d2d70ddbdaa5ed1ffb783f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::RadiusOfGyrationRestraint::add_particle</definition>
+        <argsstring>(Particle *obj)</argsstring>
+        <name>add_particle</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::add_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ad8d4d12dc8f9213a8f688654bdac5278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::add_particles</definition>
+        <argsstring>(const Particles &amp;objs)</argsstring>
+        <name>add_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::add_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aba0a61f0b7e2c0f7f21ae3ef974eb4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::clear_particles</definition>
+        <argsstring>()</argsstring>
+        <name>clear_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::clear_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1afb65095d175421f7ed20b1d60a1f1f63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::multifit::RadiusOfGyrationRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="40" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a52405e9044041b90a45b6921409c5140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::erase_particle</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>erase_particle</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::erase_particle</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a7995e05e35c65eed71cf1d72bc735d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::RadiusOfGyrationRestraint::get_has_particles</definition>
+        <argsstring>()</argsstring>
+        <name>get_has_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_has_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0a548f48ff0c1c8298e331ad2cead54c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::RadiusOfGyrationRestraint::get_number_of_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_number_of_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a61152b4976d1a200bd510d38228dfe55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Particle *</type>
+        <definition>Particle * IMP::multifit::RadiusOfGyrationRestraint::get_particle</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_particle</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_particle</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a810d34ecdf1e0609a325fc82828775a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Particles</type>
+        <definition>Particles IMP::multifit::RadiusOfGyrationRestraint::get_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a847cc2b1894c5d6a192cb28b780588c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::multifit::RadiusOfGyrationRestraint::get_radius_of_gyration</definition>
+        <argsstring>()</argsstring>
+        <name>get_radius_of_gyration</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_radius_of_gyration</qualifiedname>
+        <briefdescription>
+<para>Get the predicted radius of gyration used in the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="48" column="16" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aebe9d9ba14e47de88c0381b9e2c393b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::RadiusOfGyrationRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="41" column="34" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1af319510c563d76d6fc852076a950c703" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::RadiusOfGyrationRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="41" column="103" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a341070d65dd034fdf5fff3e3fd0beebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::remove_particle</definition>
+        <argsstring>(Particle *d)</argsstring>
+        <name>remove_particle</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::remove_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ace8b99b068e9257bfdf38e3782297153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::remove_particles</definition>
+        <argsstring>(const Particles &amp;d)</argsstring>
+        <name>remove_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::remove_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aa94c0101e7ee7b3341eb1069b17ea813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::reserve_particles</definition>
+        <argsstring>(unsigned int sz)</argsstring>
+        <name>reserve_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::reserve_particles</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ac6c426634221d9655454c3a430e8140d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::set_particles</definition>
+        <argsstring>(const Particles &amp;ps)</argsstring>
+        <name>set_particles</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::set_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a60af29ef58bb8c294eac7b3504086807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::set_particles_order</definition>
+        <argsstring>(const Particles &amp;objs)</argsstring>
+        <name>set_particles_order</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::set_particles_order</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="51" column="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a88174776515fb9fb9725bd91c725fe7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::RadiusOfGyrationRestraint::set_radius_of_gyration</definition>
+        <argsstring>(Float r)</argsstring>
+        <name>set_radius_of_gyration</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::set_radius_of_gyration</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Set the predicted radius of gyration used in the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="43" column="8" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0477925f07f75b8525fa1a23227cdc7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::multifit::RadiusOfGyrationRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::multifit::RadiusOfGyrationRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="38" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Ensure the radius of gyration of particles fits the predicted one. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>a harmonic upper bound is applied between the predicted radius and the actual radius </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="27" column="1" bodyfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" bodystart="27" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a9d5a3ef6d2d70ddbdaa5ed1ffb783f3d" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>add_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ad8d4d12dc8f9213a8f688654bdac5278" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>add_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aba0a61f0b7e2c0f7f21ae3ef974eb4b5" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>clear_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1afb65095d175421f7ed20b1d60a1f1f63" prot="public" virt="virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a52405e9044041b90a45b6921409c5140" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>erase_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a7995e05e35c65eed71cf1d72bc735d4c" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_has_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0a548f48ff0c1c8298e331ad2cead54c" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_number_of_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a61152b4976d1a200bd510d38228dfe55" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a810d34ecdf1e0609a325fc82828775a1" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a847cc2b1894c5d6a192cb28b780588c9" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_radius_of_gyration</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aebe9d9ba14e47de88c0381b9e2c393b3" prot="public" virt="virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1af319510c563d76d6fc852076a950c703" prot="public" virt="virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a5e89bfd54c5da15a4043fc601692d6a9" prot="protected" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>hub_</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3b2d173e81b1bcfae4f24ff06b94b5c5" prot="protected" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>mdl_</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3969666db8a2c52c752a28f41a78300b" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a574d11ca3a10f5473763543b9036eab8" prot="protected" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>predicted_rog_</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1acbda675b11c0086ecf8d6ce4e6f2028a" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>RadiusOfGyrationRestraint</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a341070d65dd034fdf5fff3e3fd0beebd" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>remove_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ace8b99b068e9257bfdf38e3782297153" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>remove_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aa94c0101e7ee7b3341eb1069b17ea813" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>reserve_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a8ee7b87f58d8bf85eea5f1d21411e441" prot="protected" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>scale_</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ac6c426634221d9655454c3a430e8140d" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>set_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a60af29ef58bb8c294eac7b3504086807" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>set_particles_order</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a88174776515fb9fb9725bd91c725fe7e" prot="public" virt="non-virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>set_radius_of_gyration</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0477925f07f75b8525fa1a23227cdc7a" prot="public" virt="virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a2ea96e98e8caafe34f5c8b3e0f16c356" prot="public" virt="virtual"><scope>IMP::multifit::RadiusOfGyrationRestraint</scope><name>~RadiusOfGyrationRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

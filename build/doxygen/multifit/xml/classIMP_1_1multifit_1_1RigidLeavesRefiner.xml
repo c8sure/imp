@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1RigidLeavesRefiner" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::RigidLeavesRefiner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Refiner</basecompoundref>
+    <includes local="no">IMP/multifit/RigidLeavesRefiner.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4f416c69ba43663595cfddafe62579bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::RigidLeavesRefiner::RigidLeavesRefiner</definition>
+        <argsstring>(std::string name=&quot;RigidLeavesRefiner%d&quot;)</argsstring>
+        <name>RigidLeavesRefiner</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::RigidLeavesRefiner</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;RigidLeavesRefiner%d&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="20" column="3" bodyfile="include/IMP/multifit/RigidLeavesRefiner.h" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1aacc6d74baffad099ced1013e9c0f99d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::RigidLeavesRefiner::~RigidLeavesRefiner</definition>
+        <argsstring>()</argsstring>
+        <name>~RigidLeavesRefiner</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::~RigidLeavesRefiner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="29" column="231" bodyfile="include/IMP/multifit/RigidLeavesRefiner.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4891c1d914cda24c748074ac6b6d1bc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::multifit::RigidLeavesRefiner::do_get_inputs</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::do_get_inputs</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="27" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ac0a25db0576ae7c43b3d636df657450e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IMP::multifit::RigidLeavesRefiner::get_can_refine</definition>
+        <argsstring>(Particle *) const override</argsstring>
+        <name>get_can_refine</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::get_can_refine</qualifiedname>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a42116e2b0e24cdf0bde9c9aebe031e82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const ParticlesTemp</type>
+        <definition>virtual const ParticlesTemp IMP::multifit::RigidLeavesRefiner::get_refined</definition>
+        <argsstring>(Particle *) const override</argsstring>
+        <name>get_refined</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::get_refined</qualifiedname>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="26" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ab7cbebf0f0f07b20a498fd9b9e785f6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::RigidLeavesRefiner::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="29" column="34" bodyfile="include/IMP/multifit/RigidLeavesRefiner.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a2be9ae3cd9ed95d1cdf5d08d77b3cfe1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::RigidLeavesRefiner::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::RigidLeavesRefiner::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="29" column="103" bodyfile="include/IMP/multifit/RigidLeavesRefiner.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Return all rigid body members that are also hierarchy leaves. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/RigidLeavesRefiner.h" line="18" column="1" bodyfile="include/IMP/multifit/RigidLeavesRefiner.h" bodystart="18" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4891c1d914cda24c748074ac6b6d1bc7" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ac0a25db0576ae7c43b3d636df657450e" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>get_can_refine</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a42116e2b0e24cdf0bde9c9aebe031e82" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>get_refined</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ab7cbebf0f0f07b20a498fd9b9e785f6d" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a2be9ae3cd9ed95d1cdf5d08d77b3cfe1" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4f416c69ba43663595cfddafe62579bc" prot="public" virt="non-virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>RigidLeavesRefiner</name></member>
+      <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1aacc6d74baffad099ced1013e9c0f99d4" prot="public" virt="virtual"><scope>IMP::multifit::RigidLeavesRefiner</scope><name>~RigidLeavesRefiner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

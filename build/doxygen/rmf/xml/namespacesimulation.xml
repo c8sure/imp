@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacesimulation" kind="namespace" language="Python">
+    <compoundname>simulation</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="simulation_8py_1a230e0f73aa58602e577406185ad68b7c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <qualifiedname>simulation.bb</qualifiedname>
+        <initializer>=  IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(0, 0, 0),
+                               IMP.algebra.Vector3D(10, 10, 10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="19" column="1" bodyfile="examples/rmf/simulation.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a9938899a53155f9fabc24c11adc10e7a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.bbr</definition>
+        <argsstring></argsstring>
+        <name>bbr</name>
+        <qualifiedname>simulation.bbr</qualifiedname>
+        <initializer>=  IMP.container.SingletonsRestraint(bbss, ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="54" column="1" bodyfile="examples/rmf/simulation.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1af1f602abdeee260d4877ee13f7336edf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.bbss</definition>
+        <argsstring></argsstring>
+        <name>bbss</name>
+        <qualifiedname>simulation.bbss</qualifiedname>
+        <initializer>=  IMP.core.BoundingBox3DSingletonScore(
+    IMP.core.HarmonicUpperBound(0, k), bb)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="52" column="1" bodyfile="examples/rmf/simulation.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a83db5bf41a3f9f9c3068fc9133c750b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.bd</definition>
+        <argsstring></argsstring>
+        <name>bd</name>
+        <qualifiedname>simulation.bd</qualifiedname>
+        <initializer>=  IMP.atom.BrownianDynamics(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="59" column="1" bodyfile="examples/rmf/simulation.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a39d802bc0dfab65fa300994396d2d22b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.ev</definition>
+        <argsstring></argsstring>
+        <name>ev</name>
+        <qualifiedname>simulation.ev</qualifiedname>
+        <initializer>=  IMP.core.ExcludedVolumeRestraint(ps, k, 1, &quot;EV&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="49" column="1" bodyfile="examples/rmf/simulation.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1ac9c0e1ff392481f1e99da382dbdce2c2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simulation.frames</definition>
+        <argsstring></argsstring>
+        <name>frames</name>
+        <qualifiedname>simulation.frames</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="16" column="1" bodyfile="examples/rmf/simulation.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1afa93b8f41dfc6fca9e3becebe2707a6b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>simulation.h</qualifiedname>
+        <initializer>=  IMP.atom.Hierarchy.setup_particle(IMP.Particle(m, &quot;root&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="24" column="1" bodyfile="examples/rmf/simulation.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a3c920e590d8aace51e47d872465d110c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.hr</definition>
+        <argsstring></argsstring>
+        <name>hr</name>
+        <qualifiedname>simulation.hr</qualifiedname>
+        <initializer>=  IMP.atom.Hierarchy.setup_particle(
+        IMP.Particle(m, &quot;molecule &quot; + str(i)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="41" column="1" bodyfile="examples/rmf/simulation.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1aab0096894d992f4651c63a3d10b29355" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float simulation.k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>simulation.k</qualifiedname>
+        <initializer>=  10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="14" column="1" bodyfile="examples/rmf/simulation.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a5d37200dfe576ad4f08643751f3c7e25" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>simulation.link</qualifiedname>
+        <initializer>=  IMP.core.HarmonicUpperBoundSphereDistancePairScore(0, k)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="32" column="1" bodyfile="examples/rmf/simulation.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1abbfc13431b7a58ed6af162fe7865663e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>simulation.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="18" column="1" bodyfile="examples/rmf/simulation.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1ad0d7cdb06283bfb7bd88add626ac01d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simulation.np</definition>
+        <argsstring></argsstring>
+        <name>np</name>
+        <qualifiedname>simulation.np</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="15" column="1" bodyfile="examples/rmf/simulation.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a41eaa145dace1a706dde1bf063385560" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.os</definition>
+        <argsstring></argsstring>
+        <name>os</name>
+        <qualifiedname>simulation.os</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1rmf_1_1SaveOptimizerState" kindref="compound">IMP.rmf.SaveOptimizerState</ref>(m, rmf)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="71" column="1" bodyfile="examples/rmf/simulation.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1ab36f3ef08d83880b292354778ca64d66" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list simulation.pl</definition>
+        <argsstring></argsstring>
+        <name>pl</name>
+        <qualifiedname>simulation.pl</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="33" column="1" bodyfile="examples/rmf/simulation.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1aa37087d4f0f8ba8ef52df15c2037c148" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple simulation.pp</definition>
+        <argsstring></argsstring>
+        <name>pp</name>
+        <qualifiedname>simulation.pp</qualifiedname>
+        <initializer>=  (ps[2 * i], ps[2 * i + 1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="35" column="1" bodyfile="examples/rmf/simulation.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a0e5cd196f5be4b12b932aa12ef22ce0b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list simulation.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>simulation.ps</qualifiedname>
+        <initializer>=  [IMP.core.XYZR.setup_particle(IMP.Particle(m))
+      for i in range(0, np)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="22" column="1" bodyfile="examples/rmf/simulation.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1ab9d28c23e0720db122fd451da0dff7be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>simulation.r</qualifiedname>
+        <initializer>=  IMP.container.PairsRestraint(link, pl, &quot;Bonds&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="46" column="1" bodyfile="examples/rmf/simulation.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a91786b63665e909311c16d3777c8f33c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.rmf</definition>
+        <argsstring></argsstring>
+        <name>rmf</name>
+        <qualifiedname>simulation.rmf</qualifiedname>
+        <initializer>=  RMF.create_rmf_file(&quot;brownian.rmf&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="65" column="1" bodyfile="examples/rmf/simulation.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1a1e418f48966108d73f12536d2c5b1b29" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list simulation.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>simulation.rs</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="31" column="1" bodyfile="examples/rmf/simulation.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="simulation_8py_1aa5c7d0e51f5fb7d0b85ab590373a3641" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>simulation.sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <qualifiedname>simulation.sf</qualifiedname>
+        <initializer>=  IMP.core.RestraintsScoringFunction(rs, &quot;SF&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/simulation.py" line="57" column="1" bodyfile="examples/rmf/simulation.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/rmf/simulation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

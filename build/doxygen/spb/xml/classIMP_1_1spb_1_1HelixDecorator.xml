@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1HelixDecorator" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::HelixDecorator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Decorator</basecompoundref>
+    <includes local="no">IMP/spb/HelixDecorator.h</includes>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a1f54656e563eeb59e05c0a49d95dac9e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FloatKey</type>
+        <definition>static FloatKey IMP::spb::HelixDecorator::get_helix_key</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>get_helix_key</name>
+        <qualifiedname>IMP::spb::HelixDecorator::get_helix_key</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="23" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a5d97df7f4eb45404b50bfb18429b10ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::HelixDecorator::HelixDecorator</definition>
+        <argsstring>()</argsstring>
+        <name>HelixDecorator</name>
+        <qualifiedname>IMP::spb::HelixDecorator::HelixDecorator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="26" column="19" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a9e760c0fda858c33f445031ebb0ed763" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::HelixDecorator::HelixDecorator</definition>
+        <argsstring>(::IMP::Model *m, ::IMP::ParticleIndex id)</argsstring>
+        <name>HelixDecorator</name>
+        <qualifiedname>IMP::spb::HelixDecorator::HelixDecorator</qualifiedname>
+        <param>
+          <type>::IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>::IMP::ParticleIndex</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="26" column="37" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a2a2866201561eb03be940d7dd558786e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::HelixDecorator::HelixDecorator</definition>
+        <argsstring>(const IMP::ParticleAdaptor &amp;d)</argsstring>
+        <name>HelixDecorator</name>
+        <qualifiedname>IMP::spb::HelixDecorator::HelixDecorator</qualifiedname>
+        <param>
+          <type>const IMP::ParticleAdaptor &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="26" column="77" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a36e0736b4d124306b22b6cec7788eda7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::HelixDecorator::get_begin</definition>
+        <argsstring>() const</argsstring>
+        <name>get_begin</name>
+        <qualifiedname>IMP::spb::HelixDecorator::get_begin</qualifiedname>
+        <briefdescription>
+<para>Get the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="36" column="9" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1aa0866c25382813651cd299826d5c5677" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::HelixDecorator::get_end</definition>
+        <argsstring>() const</argsstring>
+        <name>get_end</name>
+        <qualifiedname>IMP::spb::HelixDecorator::get_end</qualifiedname>
+        <briefdescription>
+<para>Get the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="41" column="9" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1af71ac58d6940ae687acac7bb6d85b97d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::HelixDecorator::set_begin</definition>
+        <argsstring>(Float v)</argsstring>
+        <name>set_begin</name>
+        <qualifiedname>IMP::spb::HelixDecorator::set_begin</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>set begin </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="54" column="8" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a944390e70f53fa38f6351dbdf7fb6840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::HelixDecorator::set_end</definition>
+        <argsstring>(Float v)</argsstring>
+        <name>set_end</name>
+        <qualifiedname>IMP::spb::HelixDecorator::set_end</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>set end </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="57" column="8" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a367e5344f2c7ed77423ff04df46d1b8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::HelixDecorator::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::HelixDecorator::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="26" column="205"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1ade35a69f558117d6ddc786e28f9330c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IMP::spb::HelixDecorator::get_is_setup</definition>
+        <argsstring>(const IMP::ParticleAdaptor &amp;p)</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>IMP::spb::HelixDecorator::get_is_setup</qualifiedname>
+        <param>
+          <type>const IMP::ParticleAdaptor &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="26" column="117" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1ac789cc92aa47df9fe2e8e365e20fab3d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IMP::spb::HelixDecorator::get_is_setup</definition>
+        <argsstring>(IMP::Model *m, IMP::ParticleIndex id)</argsstring>
+        <name>get_is_setup</name>
+        <qualifiedname>IMP::spb::HelixDecorator::get_is_setup</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>IMP::ParticleIndex</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="43" column="15" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1HelixDecorator_1a3bdcdea309db55d9a67bc6d2ed12a5ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1spb_1_1HelixDecorator" kindref="compound">HelixDecorator</ref></type>
+        <definition>static HelixDecorator IMP::spb::HelixDecorator::setup_particle</definition>
+        <argsstring>(Particle *p, Float b, Float e)</argsstring>
+        <name>setup_particle</name>
+        <qualifiedname>IMP::spb::HelixDecorator::setup_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/HelixDecorator.h" line="28" column="25" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Add helix parameters to a particle. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/HelixDecorator.h" line="22" column="1" bodyfile="include/IMP/spb/HelixDecorator.h" bodystart="22" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a36e0736b4d124306b22b6cec7788eda7" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>get_begin</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1aa0866c25382813651cd299826d5c5677" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>get_end</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a1f54656e563eeb59e05c0a49d95dac9e" prot="private" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>get_helix_key</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1ade35a69f558117d6ddc786e28f9330c4" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>get_is_setup</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1ac789cc92aa47df9fe2e8e365e20fab3d" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>get_is_setup</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a5d97df7f4eb45404b50bfb18429b10ea" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>HelixDecorator</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a9e760c0fda858c33f445031ebb0ed763" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>HelixDecorator</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a2a2866201561eb03be940d7dd558786e" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>HelixDecorator</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1af71ac58d6940ae687acac7bb6d85b97d" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>set_begin</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a944390e70f53fa38f6351dbdf7fb6840" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>set_end</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a3bdcdea309db55d9a67bc6d2ed12a5ea" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>setup_particle</name></member>
+      <member refid="classIMP_1_1spb_1_1HelixDecorator_1a367e5344f2c7ed77423ff04df46d1b8d" prot="public" virt="non-virtual"><scope>IMP::spb::HelixDecorator</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

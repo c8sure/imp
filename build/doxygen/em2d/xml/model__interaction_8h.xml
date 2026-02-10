@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="model__interaction_8h" kind="file" language="C++">
+    <compoundname>model_interaction.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes local="yes">IMP/em/DensityMap.h</includes>
+    <includes local="yes">IMP/em/SampledDensityMap.h</includes>
+    <includes local="yes">IMP/em/MapReaderWriter.h</includes>
+    <includes local="yes">IMP/algebra/Vector2D.h</includes>
+    <includes local="yes">IMP/algebra/Vector3D.h</includes>
+    <includes local="yes">IMP/atom/pdb.h</includes>
+    <includes local="yes">IMP/atom/Hierarchy.h</includes>
+    <includes local="yes">IMP/atom/Chain.h</includes>
+    <includes local="yes">IMP/atom/Residue.h</includes>
+    <includes local="yes">IMP/atom/Atom.h</includes>
+    <includes local="yes">IMP/core/XYZ.h</includes>
+    <includes local="yes">IMP/core.h</includes>
+    <includes local="yes">IMP/Pointer.h</includes>
+    <includes local="yes">IMP.h</includes>
+    <includes local="no">typeinfo</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>model_interaction.h</label>
+        <link refid="model__interaction_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IMP.h</label>
+      </node>
+      <node id="14">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/algebra/Vector2D.h</label>
+      </node>
+      <node id="6">
+        <label>IMP/algebra/Vector3D.h</label>
+      </node>
+      <node id="11">
+        <label>IMP/atom/Atom.h</label>
+      </node>
+      <node id="9">
+        <label>IMP/atom/Chain.h</label>
+      </node>
+      <node id="8">
+        <label>IMP/atom/Hierarchy.h</label>
+      </node>
+      <node id="10">
+        <label>IMP/atom/Residue.h</label>
+      </node>
+      <node id="7">
+        <label>IMP/atom/pdb.h</label>
+      </node>
+      <node id="13">
+        <label>IMP/core.h</label>
+      </node>
+      <node id="12">
+        <label>IMP/core/XYZ.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/em/DensityMap.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/em/MapReaderWriter.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/em/SampledDensityMap.h</label>
+      </node>
+      <node id="16">
+        <label>typeinfo</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>operations implying interaction of models and the EM module </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/model_interaction.h"/>
+  </compounddef>
+</doxygen>

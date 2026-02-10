@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1DistanceRMSDMetric" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::DistanceRMSDMetric</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">statistics::Metric</basecompoundref>
+    <includes local="no">IMP/spb/DistanceRMSDMetric.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a859a1628bfdc7b4c699762b660898352" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Floats &gt;</type>
+        <definition>std::vector&lt;Floats&gt; IMP::spb::DistanceRMSDMetric::matrices_</definition>
+        <argsstring></argsstring>
+        <name>matrices_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::matrices_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="28" column="15" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a96dadfd34a636950571d932d0bb760be" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; unsigned &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;unsigned&gt; &gt; IMP::spb::DistanceRMSDMetric::matrixmap_</definition>
+        <argsstring></argsstring>
+        <name>matrixmap_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::matrixmap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="29" column="15" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a45c8e68fb5daf1f4887af85f96366161" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::DistanceRMSDMetric::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="22" column="13" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a601f534657494ed0204aa57c3b35fcde" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; IMP::Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;IMP::Particle&gt; IMP::spb::DistanceRMSDMetric::px_</definition>
+        <argsstring></argsstring>
+        <name>px_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::px_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="24" column="22" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1ae57ba6af4266d665a7365e5a91c8c70a" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; IMP::Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;IMP::Particle&gt; IMP::spb::DistanceRMSDMetric::py_</definition>
+        <argsstring></argsstring>
+        <name>py_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::py_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="25" column="22" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1aac640c4a0f1bc396e5e5c45bbc59f458" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; IMP::Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;IMP::Particle&gt; IMP::spb::DistanceRMSDMetric::pz_</definition>
+        <argsstring></argsstring>
+        <name>pz_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::pz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="26" column="22" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a3e61983729e0822db8e949a39f9fd84e" prot="private" static="no" mutable="no">
+        <type>algebra::Transformation3Ds</type>
+        <definition>algebra::Transformation3Ds IMP::spb::DistanceRMSDMetric::tr_</definition>
+        <argsstring></argsstring>
+        <name>tr_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::tr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="23" column="30" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a956764b928f2bc55091a71cecbd31766" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::DistanceRMSDMetric::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::weight_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="27" column="10" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab8990e4dbf8581a44425c8e7f9882aa9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::DistanceRMSDMetric::get_distance</definition>
+        <argsstring>(algebra::Vector3D v0, algebra::Vector3D v1) const</argsstring>
+        <name>get_distance</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_distance</qualifiedname>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="33" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a2e64a8a97d28e874faee02fade41a489" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::DistanceRMSDMetric::get_distance_matrix</definition>
+        <argsstring>(algebra::Vector3Ds coords) const</argsstring>
+        <name>get_distance_matrix</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_distance_matrix</qualifiedname>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="32" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1af43a93475b61102e8561781b89b7a469" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::DistanceRMSDMetric::get_drmsd</definition>
+        <argsstring>(const Floats &amp;m0, const Floats &amp;m1) const</argsstring>
+        <name>get_drmsd</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_drmsd</qualifiedname>
+        <param>
+          <type>const Floats &amp;</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>const Floats &amp;</type>
+          <declname>m1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="34" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a381525e1391b3e59f868e37007fbb541" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::spb::DistanceRMSDMetric::get_transformation</definition>
+        <argsstring>(algebra::Transformation3D trans) const</argsstring>
+        <name>get_transformation</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_transformation</qualifiedname>
+        <param>
+          <type>algebra::Transformation3D</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="36" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab2970c964f8f51f309588a32d373df70" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::spb::DistanceRMSDMetric::get_vector</definition>
+        <argsstring>(algebra::Vector3D center) const</argsstring>
+        <name>get_vector</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_vector</qualifiedname>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a81193d86d549c04ec1eb1a6c73406b97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::DistanceRMSDMetric::initialize</definition>
+        <argsstring>(Ints align)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::initialize</qualifiedname>
+        <param>
+          <type>Ints</type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="31" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1acec32b3f8c372e2eea6771f88cfeeb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::DistanceRMSDMetric::DistanceRMSDMetric</definition>
+        <argsstring>(Particles ps, Ints align, algebra::Transformation3Ds tr, Particle *px, Particle *py, Particle *pz)</argsstring>
+        <name>DistanceRMSDMetric</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::DistanceRMSDMetric</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Ints</type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>algebra::Transformation3Ds</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>pz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1afc039a8720b83742318912ddf730a757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::DistanceRMSDMetric::~DistanceRMSDMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~DistanceRMSDMetric</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::~DistanceRMSDMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="48" column="231" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1afa103ba34f268060000f291562c3a308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::DistanceRMSDMetric::add_configuration</definition>
+        <argsstring>(double weight=1.0)</argsstring>
+        <name>add_configuration</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::add_configuration</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a70951cf2f420961f254408dcb61696c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::DistanceRMSDMetric::get_distance</definition>
+        <argsstring>(unsigned int i, unsigned int j) const override</argsstring>
+        <name>get_distance</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_distance</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a56dea66dbd16b2374ed0bed04cc87bfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::spb::DistanceRMSDMetric::get_number_of_items</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_items</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_number_of_items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="47" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1aee7e1a77980aa974d4fcaf560ee0b3ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::DistanceRMSDMetric::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="48" column="34" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1adf1b20f4840efa19033c88c7cb8ad8a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::DistanceRMSDMetric::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="48" column="103" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceRMSDMetric_1a06486aee416db2f27e007cdb06bd01ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::DistanceRMSDMetric::get_weight</definition>
+        <argsstring>(unsigned i)</argsstring>
+        <name>get_weight</name>
+        <qualifiedname>IMP::spb::DistanceRMSDMetric::get_weight</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceRMSDMetric.h" line="43" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Compute the RMSD between two sets of particles in two configurations. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/DistanceRMSDMetric.h" line="21" column="1" bodyfile="include/IMP/spb/DistanceRMSDMetric.h" bodystart="21" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1afa103ba34f268060000f291562c3a308" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>add_configuration</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1acec32b3f8c372e2eea6771f88cfeeb00" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>DistanceRMSDMetric</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab8990e4dbf8581a44425c8e7f9882aa9" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a70951cf2f420961f254408dcb61696c8" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a2e64a8a97d28e874faee02fade41a489" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_distance_matrix</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1af43a93475b61102e8561781b89b7a469" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_drmsd</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a56dea66dbd16b2374ed0bed04cc87bfc" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_number_of_items</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a381525e1391b3e59f868e37007fbb541" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_transformation</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1aee7e1a77980aa974d4fcaf560ee0b3ea" prot="public" virt="virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab2970c964f8f51f309588a32d373df70" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_vector</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1adf1b20f4840efa19033c88c7cb8ad8a5" prot="public" virt="virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a06486aee416db2f27e007cdb06bd01ad" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>get_weight</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a81193d86d549c04ec1eb1a6c73406b97" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>initialize</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a859a1628bfdc7b4c699762b660898352" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>matrices_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a96dadfd34a636950571d932d0bb760be" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>matrixmap_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a45c8e68fb5daf1f4887af85f96366161" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a601f534657494ed0204aa57c3b35fcde" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>px_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ae57ba6af4266d665a7365e5a91c8c70a" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>py_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1aac640c4a0f1bc396e5e5c45bbc59f458" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>pz_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a3e61983729e0822db8e949a39f9fd84e" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>tr_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a956764b928f2bc55091a71cecbd31766" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>weight_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1afc039a8720b83742318912ddf730a757" prot="public" virt="virtual"><scope>IMP::spb::DistanceRMSDMetric</scope><name>~DistanceRMSDMetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

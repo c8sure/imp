@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="protein__anchors__mapping__reader_8h" kind="file" language="C++">
+    <compoundname>protein_anchors_mapping_reader.h</compoundname>
+    <includes refid="multifit__config_8h" local="no">IMP/multifit/multifit_config.h</includes>
+    <includes refid="anchors__reader_8h" local="no">IMP/multifit/anchors_reader.h</includes>
+    <includes local="no">IMP/domino/DominoSampler.h</includes>
+    <includes refid="SettingsData_8h" local="no">IMP/multifit/SettingsData.h</includes>
+    <includes refid="proteomics__reader_8h" local="no">IMP/multifit/proteomics_reader.h</includes>
+    <includedby refid="ensemble__analysis_8h" local="no">ensemble_analysis.h</includedby>
+    <includedby refid="proteomics__em__alignment__atomic_8h" local="yes">proteomics_em_alignment_atomic.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>protein_anchors_mapping_reader.h</label>
+        <link refid="protein__anchors__mapping__reader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/domino/DominoSampler.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" prot="public">IMP::multifit::ProteinsAnchorsSamplingSpace</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit">IMP::multifit</innernamespace>
+    <briefdescription>
+<para>handles reading matches between a protein and its anchors </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/protein_anchors_mapping_reader.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ComponentHeader" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ComponentHeader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/SettingsData.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1ac32b9fd7f8463bff8d4d5f9f0a3cf29a" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::filename_</definition>
+        <argsstring></argsstring>
+        <name>filename_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="64" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a5ec75bcaaca73506440e3946c5fbb4b4" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="63" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a5c2bcf176f32ebe8fd0ef6247e02daae" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ComponentHeader::num_ap_</definition>
+        <argsstring></argsstring>
+        <name>num_ap_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::num_ap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="67" column="7" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a2287c136c3102ab8ad66cf1542c43cbf" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ComponentHeader::num_fine_ap_</definition>
+        <argsstring></argsstring>
+        <name>num_fine_ap_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::num_fine_ap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="69" column="7" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a660a6c3d12359076b584546e2d7bbada" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::pdb_ap_fn_</definition>
+        <argsstring></argsstring>
+        <name>pdb_ap_fn_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::pdb_ap_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="66" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a16394e571bcf943133b96b68ed8cfadf" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::pdb_fine_ap_fn_</definition>
+        <argsstring></argsstring>
+        <name>pdb_fine_ap_fn_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::pdb_fine_ap_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="68" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a56dfc44cfff83b3b01454a1964855d59" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::reference_fn_</definition>
+        <argsstring></argsstring>
+        <name>reference_fn_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::reference_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="71" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a34da55d379a71a37fc12ceb6f494ec0c" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::surface_fn_</definition>
+        <argsstring></argsstring>
+        <name>surface_fn_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::surface_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="65" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ComponentHeader_1a497ef533895e7edb02f9579ea11ffe78" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::transformations_fn_</definition>
+        <argsstring></argsstring>
+        <name>transformations_fn_</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::transformations_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="70" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a6363ab1941f7ccff19cb482166eb80f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ComponentHeader::ComponentHeader</definition>
+        <argsstring>()</argsstring>
+        <name>ComponentHeader</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::ComponentHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="24" column="3" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ab7ebcfeee9818933b582d3b96622305a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::ComponentHeader::~ComponentHeader</definition>
+        <argsstring>()</argsstring>
+        <name>~ComponentHeader</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::~ComponentHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="56" column="231" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a9b3fda5910321592da1dcc35ebaf7ed1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_filename</definition>
+        <argsstring>() const</argsstring>
+        <name>get_filename</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="36" column="22" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1afe8b4aab6eb062f56c81f0573f3b913e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="35" column="22" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a03b8b65d982eab72dbcd298622e7e080" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ComponentHeader::get_num_ap</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_ap</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_num_ap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="47" column="14" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a921306c69d6f2a1cee02e8fa4e3da959" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ComponentHeader::get_num_fine_ap</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_fine_ap</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_num_fine_ap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="49" column="14" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a0eeb74d98567db62250fb1643f8a7c2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_reference_fn</definition>
+        <argsstring>() const</argsstring>
+        <name>get_reference_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_reference_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="55" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ac173449417ec5d316568a91acdb4f1b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_surface_fn</definition>
+        <argsstring>() const</argsstring>
+        <name>get_surface_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_surface_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="38" column="22" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1aa828dbdd49baf05642d509664c66bafd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_transformations_fn</definition>
+        <argsstring>() const</argsstring>
+        <name>get_transformations_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_transformations_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="53" column="15" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a35044345946fcaea31342a679cbe2450" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_txt_ap_fn</definition>
+        <argsstring>() const</argsstring>
+        <name>get_txt_ap_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_txt_ap_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="41" column="22" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1aa8bea18f4afe54f3d630f47d37f7643c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ComponentHeader::get_txt_fine_ap_fn</definition>
+        <argsstring>() const</argsstring>
+        <name>get_txt_fine_ap_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_txt_fine_ap_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="45" column="22" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a64f9c2144adceda064308565f4787983" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::ComponentHeader::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="56" column="34" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a81aced1ad9ac945c66d954e0c0be71e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::ComponentHeader::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="56" column="103" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a3177e09dc25177314957f401c372ba64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_filename</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>set_filename</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_filename</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="37" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ad68196ccee1a2cb456aadd5f0fe349bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>set_name</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_name</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="34" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ae49277761fb9a46977978d4da08eebe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_num_ap</definition>
+        <argsstring>(int num_ap)</argsstring>
+        <name>set_num_ap</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_num_ap</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num_ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="46" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ad21a41254c90dd226e051efc50481be9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_num_fine_ap</definition>
+        <argsstring>(int num_ap)</argsstring>
+        <name>set_num_fine_ap</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_num_fine_ap</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num_ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="48" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a8faadd8b23c04c081b8b48d46a99018a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_reference_fn</definition>
+        <argsstring>(const std::string &amp;ref_fn)</argsstring>
+        <name>set_reference_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_reference_fn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ref_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="54" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a15b19e906421a316ba1ab597280264a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_surface_fn</definition>
+        <argsstring>(const std::string &amp;fn)</argsstring>
+        <name>set_surface_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_surface_fn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="39" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1ad24e3d3ba6ad51c5e2ab591eb4f4c73c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_transformations_fn</definition>
+        <argsstring>(std::string transformations_fn)</argsstring>
+        <name>set_transformations_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_transformations_fn</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>transformations_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="50" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a7bed0f99f5418b8f14dae4b6fc09dbe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_txt_ap_fn</definition>
+        <argsstring>(const std::string &amp;pdb_ap_fn)</argsstring>
+        <name>set_txt_ap_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_txt_ap_fn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pdb_ap_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="40" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ComponentHeader_1a794866ea9cee6565f13f970e731a504b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ComponentHeader::set_txt_fine_ap_fn</definition>
+        <argsstring>(const std::string &amp;pdb_ap_fn)</argsstring>
+        <name>set_txt_fine_ap_fn</name>
+        <qualifiedname>IMP::multifit::ComponentHeader::set_txt_fine_ap_fn</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pdb_ap_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="42" column="8" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Holds data about a component needed for optimization. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/SettingsData.h" line="22" column="1" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="22" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a6363ab1941f7ccff19cb482166eb80f5" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>ComponentHeader</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ac32b9fd7f8463bff8d4d5f9f0a3cf29a" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>filename_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a9b3fda5910321592da1dcc35ebaf7ed1" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1afe8b4aab6eb062f56c81f0573f3b913e" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a03b8b65d982eab72dbcd298622e7e080" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_num_ap</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a921306c69d6f2a1cee02e8fa4e3da959" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_num_fine_ap</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a0eeb74d98567db62250fb1643f8a7c2c" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_reference_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ac173449417ec5d316568a91acdb4f1b9" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_surface_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1aa828dbdd49baf05642d509664c66bafd" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_transformations_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a35044345946fcaea31342a679cbe2450" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_txt_ap_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1aa8bea18f4afe54f3d630f47d37f7643c" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_txt_fine_ap_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a64f9c2144adceda064308565f4787983" prot="public" virt="virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a81aced1ad9ac945c66d954e0c0be71e7" prot="public" virt="virtual"><scope>IMP::multifit::ComponentHeader</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a5ec75bcaaca73506440e3946c5fbb4b4" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>name_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a5c2bcf176f32ebe8fd0ef6247e02daae" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>num_ap_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a2287c136c3102ab8ad66cf1542c43cbf" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>num_fine_ap_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a660a6c3d12359076b584546e2d7bbada" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>pdb_ap_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a16394e571bcf943133b96b68ed8cfadf" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>pdb_fine_ap_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a56dfc44cfff83b3b01454a1964855d59" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>reference_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a3177e09dc25177314957f401c372ba64" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad68196ccee1a2cb456aadd5f0fe349bb" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ae49277761fb9a46977978d4da08eebe4" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_num_ap</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad21a41254c90dd226e051efc50481be9" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_num_fine_ap</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a8faadd8b23c04c081b8b48d46a99018a" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_reference_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a15b19e906421a316ba1ab597280264a9" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_surface_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad24e3d3ba6ad51c5e2ab591eb4f4c73c" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_transformations_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a7bed0f99f5418b8f14dae4b6fc09dbe3" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_txt_ap_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a794866ea9cee6565f13f970e731a504b" prot="public" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>set_txt_fine_ap_fn</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a34da55d379a71a37fc12ceb6f494ec0c" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>surface_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a497ef533895e7edb02f9579ea11ffe78" prot="protected" virt="non-virtual"><scope>IMP::multifit::ComponentHeader</scope><name>transformations_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ab7ebcfeee9818933b582d3b96622305a" prot="public" virt="virtual"><scope>IMP::multifit::ComponentHeader</scope><name>~ComponentHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

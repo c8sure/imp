@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1RigidBodyStates" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::RigidBodyStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RigidBodyStates_1a20a961c9470c636ae48db583c92daf41" prot="private" static="no" mutable="no">
+        <type>PointerMember&lt; algebra::NearestNeighbor6D &gt;</type>
+        <definition>PointerMember&lt;algebra::NearestNeighbor6D&gt; IMP::domino::RigidBodyStates::nn_</definition>
+        <argsstring></argsstring>
+        <name>nn_</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::nn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="170" column="17" bodyfile="include/IMP/domino/particle_states.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RigidBodyStates_1a418b1135a85163542cab0d24b65b0880" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::domino::RigidBodyStates::scale_</definition>
+        <argsstring></argsstring>
+        <name>scale_</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="169" column="10" bodyfile="include/IMP/domino/particle_states.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RigidBodyStates_1a7753ea4613e485e65a0ec9776db3f290" prot="private" static="no" mutable="no">
+        <type>algebra::ReferenceFrame3Ds</type>
+        <definition>algebra::ReferenceFrame3Ds IMP::domino::RigidBodyStates::states_</definition>
+        <argsstring></argsstring>
+        <name>states_</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::states_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="168" column="30" bodyfile="include/IMP/domino/particle_states.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a498a356c339c8505368b5e7e20212715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RigidBodyStates::RigidBodyStates</definition>
+        <argsstring>(const algebra::ReferenceFrame3Ds &amp;states, double scale=1)</argsstring>
+        <name>RigidBodyStates</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::RigidBodyStates</qualifiedname>
+        <param>
+          <type>const algebra::ReferenceFrame3Ds &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="173" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a8c65a7e78e6e833feeaf24f5ec6f9a6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::RigidBodyStates::~RigidBodyStates</definition>
+        <argsstring>()</argsstring>
+        <name>~RigidBodyStates</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::~RigidBodyStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="183" column="231" bodyfile="include/IMP/domino/particle_states.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a01a06e715ffb49eb26d7bdd7da9352d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>algebra::VectorKD</type>
+        <definition>algebra::VectorKD IMP::domino::RigidBodyStates::get_embedding</definition>
+        <argsstring>(unsigned int i) const override</argsstring>
+        <name>get_embedding</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_embedding</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37">get_embedding</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Return an embedding of the state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default this just returns a 1D vector containing the index. The vector needs to have the same dimension for each value of i. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="178" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a40232b067f9af7b17c5375edd42fbdbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::RigidBodyStates::get_nearest_state</definition>
+        <argsstring>(const algebra::VectorKD &amp;v) const override</argsstring>
+        <name>get_nearest_state</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_nearest_state</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e">get_nearest_state</reimplements>
+        <param>
+          <type>const algebra::VectorKD &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Return the state closest to a given embedding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="179" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a7d863ef0664185cd85e7380bdf72d3f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::RigidBodyStates::get_number_of_particle_states</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_number_of_particle_states</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196">get_number_of_particle_states</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="180" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a57d3f332f8b144d1ff08d6919bd292f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::ReferenceFrame3D</type>
+        <definition>algebra::ReferenceFrame3D IMP::domino::RigidBodyStates::get_reference_frame</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_reference_frame</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_reference_frame</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="174" column="29" bodyfile="include/IMP/domino/particle_states.h" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a6d09d5e8795ae0a0f67c63cf56013d41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::RigidBodyStates::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="183" column="34" bodyfile="include/IMP/domino/particle_states.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1a297fcd641df60667b4bc55342dc53778" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::RigidBodyStates::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="183" column="103" bodyfile="include/IMP/domino/particle_states.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RigidBodyStates_1adab6e6e5a32a99e43fb29d1a27778b7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::RigidBodyStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const override</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::domino::RigidBodyStates::load_particle_state</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53">load_particle_state</reimplements>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="181" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Store a set of states which explicitly define the transformation coordinates of the particle in question. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RigidBodyStates</label>
+        <link refid="classIMP_1_1domino_1_1RigidBodyStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RigidBodyStates</label>
+        <link refid="classIMP_1_1domino_1_1RigidBodyStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/particle_states.h" line="167" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="167" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a01a06e715ffb49eb26d7bdd7da9352d8" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a40232b067f9af7b17c5375edd42fbdbf" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a7d863ef0664185cd85e7380bdf72d3f4" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a57d3f332f8b144d1ff08d6919bd292f0" prot="public" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_reference_frame</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a6d09d5e8795ae0a0f67c63cf56013d41" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a297fcd641df60667b4bc55342dc53778" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1adab6e6e5a32a99e43fb29d1a27778b7a" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a20a961c9470c636ae48db583c92daf41" prot="private" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>nn_</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a498a356c339c8505368b5e7e20212715" prot="public" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>RigidBodyStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a418b1135a85163542cab0d24b65b0880" prot="private" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>scale_</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a7753ea4613e485e65a0ec9776db3f290" prot="private" virt="non-virtual"><scope>IMP::domino::RigidBodyStates</scope><name>states_</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>~ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RigidBodyStates_1a8c65a7e78e6e833feeaf24f5ec6f9a6f" prot="public" virt="virtual"><scope>IMP::domino::RigidBodyStates</scope><name>~RigidBodyStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

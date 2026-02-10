@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1IntsOrder" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::IntsOrder</compoundname>
+    <includes local="no">IMP/em2d/RigidBodiesImageFitRestraint.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1IntsOrder_1a44ca7ebae7d53dff776134b5ad5624aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::em2d::IntsOrder::operator()</definition>
+        <argsstring>(const Ints &amp;a, const Ints &amp;b) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::em2d::IntsOrder::operator()</qualifiedname>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="29" column="8" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Comparison function for the keys of the mapping between quaternion of rotation and their corresponding cached mask </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/RigidBodiesImageFitRestraint.h" line="26" column="1" bodyfile="include/IMP/em2d/RigidBodiesImageFitRestraint.h" bodystart="26" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1IntsOrder_1a44ca7ebae7d53dff776134b5ad5624aa" prot="public" virt="non-virtual"><scope>IMP::em2d::IntsOrder</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

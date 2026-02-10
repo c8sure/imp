@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="emagefit_protocol" kind="page">
+    <compoundname>emagefit_protocol</compoundname>
+    <title>EMageFit protocol</title>
+    <tableofcontents>
+      <tocsect>
+        <name>Input data</name>
+        <docs><para>Input data </para>
+</docs>
+        <reference>emagefit_protocol_1input</reference>
+      </tocsect>
+      <tocsect>
+        <name>Producing models</name>
+        <docs><para>Producing models </para>
+</docs>
+        <reference>emagefit_protocol_1models</reference>
+        <tableofcontents>
+          <tocsect>
+            <name>Pairwise dockings</name>
+            <docs><para>Pairwise dockings </para>
+</docs>
+            <reference>emagefit_protocol_1docking</reference>
+          </tocsect>
+          <tocsect>
+            <name>Obtain models with Simulated annealing Monte Carlo optimization</name>
+            <docs><para>Obtain models with Simulated annealing Monte Carlo optimization </para>
+</docs>
+            <reference>emagefit_protocol_1montecarlo</reference>
+          </tocsect>
+          <tocsect>
+            <name>Gather the results of all Monte Carlo optimizations</name>
+            <docs><para>Gather the results of all Monte Carlo optimizations </para>
+</docs>
+            <reference>emagefit_protocol_1gather</reference>
+          </tocsect>
+          <tocsect>
+            <name>Combine the models from Monte Carlo with DOMINO</name>
+            <docs><para>Combine the models from Monte Carlo with DOMINO </para>
+</docs>
+            <reference>emagefit_protocol_1domino</reference>
+          </tocsect>
+          <tocsect>
+            <name>Visualizing the models and understanding the information in the database of solutions</name>
+            <docs><para>Visualizing the models and understanding the information in the database of solutions </para>
+</docs>
+            <reference>emagefit_protocol_1db</reference>
+          </tocsect>
+        </tableofcontents>
+      </tocsect>
+    </tableofcontents>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This page gives a full description of running EMageFit, from the collection of data to the final production of models. For a demonstration of actually applying it to an example complex, see the EMageFit tutorial.</para>
+<sect1 id="emagefit_protocol_1input">
+<title>Input data</title><para>Only three things are needed to get models using EMageFit:</para>
+<para><orderedlist>
+<listitem><para>A set of PDB files with the components of the assembly.</para>
+</listitem><listitem><para>A set of EM images.</para>
+</listitem><listitem><para>A configuration file.</para>
+</listitem></orderedlist>
+</para>
+<para>Each PDB file must contain a protein, a DNA strand, or a subcomplex. It is possible to have various different chains within the same PDB, and all of them will be considered as a rigid body. All the chains that are going to be assembled must have different ID (for example a chain with ID &apos;A&apos; cannot be present in two different files). All the atoms in each PDB file will be used ,so if there are duplicated atoms, they need to be removed; in fact there is no harm in also removing other records like REMARK, SOURCE, COMPND, SEQRES, DBREF, CONECT. They are not relevant for the type of problem that EMageFit solves.</para>
+<para><computeroutput>IMP</computeroutput> can understand 3 image formats: Spider, JPG and TIFF. Spider is probably the most commonly used, since it is specific for EM. The free program <ulink url="http://www.imagescience.de/em2em.html">em2em</ulink> can be used to convert other EM image formats to Spider. JPG and TIFF are more useful for visualization; EMageFit includes a script (convert_spider_to_jpg) to convert Spider files to JPG.</para>
+<para>Each EM image has to be a separate file. The images to be used need to be listed in a &quot;selection file&quot;. This is just a file with 2 columns; the left column is simply the name of the image, and the right column is either 0 or 1. 0 signifies that that image will not be used. For example, the following selection file</para>
+<para><verbatim>image1.spi 1
+image2.spi 0
+image3.spi 1
+</verbatim></para>
+<para>contains 3 images but only image1.spi and image3.spi will be used for modeling.</para>
+<para>An EMageFit configuration file is just a Python file with classes that describe all the parameters and restraints for the modeling. Using a Python file as configuration file makes adding new parameters to the simulation trivial. An example configuration file is included as part of the EMageFit tutorial.</para>
+</sect1>
+<sect1 id="emagefit_protocol_1models">
+<title>Producing models</title><para>Producing models requires 4 steps:</para>
+<para><orderedlist>
+<listitem><para>Doing the preliminary dockings.</para>
+</listitem><listitem><para>Obtaining models with Monte Carlo optimization.</para>
+</listitem><listitem><para>Gathering the solutions from the Monte Carlo optimizations.</para>
+</listitem><listitem><para>Combining models from Monte Carlo with DOMINO to get even better models.</para>
+</listitem></orderedlist>
+</para>
+<sect2 id="emagefit_protocol_1docking">
+<title>Pairwise dockings</title><para>EMageFit performs docking between components that are subject to cross-linking restraints using the program <ulink url="http://hex.loria.fr/">HEXDOCK</ulink>. This is what EMageFit does:</para>
+<para><itemizedlist>
+<listitem><para>Finds a very rough estimation of the orientation between two components by minimizing the distance between the aminoacids implied in the cross-linking restraints. Admittedly, this is not going to be very good, but it will help the HEXDOCK program providing a &quot;hint&quot; of the orientation. HEXDOCK is instructed not to search all possible orientations for the ligand, just a given angle around the orientation obtained from the rough guess. This works well in most cases.</para>
+</listitem><listitem><para>Determines an optimal way of doing the required dockings. It finds the component of the assembly that needs to be kept anchored, and establishes an order for the dockings. The docking order is based on the maximum spanning tree of the graph built by the component connections. For example, given a complex with 5 chains: A B C D E, and cross-linking restraints that say that the components should be connected like this: <verbatim>    A-B-D-E
+     \|/
+      C
+</verbatim> the computed maximum spanning tree could look similar to: <verbatim>    A-B-D-E
+      |
+      C
+</verbatim> which implies that B should be anchored and be the first receptor, as it is the component with the largest number of neighbors. An edge indicates that a docking should be done. In this case: A (ligand) is docked to B (receptor), C is docked to B, D is docked to B, and finally E is docked to D.</para>
+</listitem><listitem><para>Runs HEXDOCK. (Optionally, given the docking order computed in the previous step, a different docking program or server could be employed to do these dockings, as long as it generates a file listing the relative transformation of the ligand with respect to the receptor for each solution. See the explanation for the emagefit_dock script to see how to integrate a different docking program.)</para>
+</listitem><listitem><para>Filters the docking solutions that are compatible with the cross-linking restraints. As an emergency measure, if there are no solutions compatible with the restraints, all of them are taken. Of course this implies the risk of using solutions that are not very accurate. The rough estimation calculated during the first step is also kept.</para>
+</listitem></itemizedlist>
+</para>
+<para>This procedure is run with the <computeroutput><ndash/>dock</computeroutput> argument to the <computeroutput>emagefit</computeroutput> command line tool. (See the EMageFit tutorial for an example command line.)</para>
+<para>Once this step is complete, the user must take the information from the dockings and put it in the configuration file, indicating which component is anchored and referencing the files of relative transformations from the dockings. The options to modify are <computeroutput>self.anchor</computeroutput> and <computeroutput>self.dock_transforms</computeroutput>. See the EMageFit tutorial for an example. As mentioned before, the pairwise dockings are optional; EMageFit can work without them. In that case all the Monte Carlo moves will be random. The user should indicate that docking solutions are not available by setting the option <computeroutput>self.non_relative_move_prob</computeroutput> (probability of doing a not docking-related move) to value 1. This means that EmageFit will always do a random move. Another strategy is possible: even if the docking program does not produce solutions compatible with the cross-linking restraints the user may still want to use them. They have reasonable conformations after all, without classes, and perhaps not far from some other conformation that actually satisfies the restraints. It is advisable then to set <computeroutput>self.non_relative_move_prob</computeroutput> to a low number (say 0.2, meaning that a move from a docking solution will be chosen only 20% of the time).</para>
+<para>emagefit also takes an option <computeroutput><ndash/>log</computeroutput>. If it is used (recommended), a log file is generated (otherwise, the log is output to the screen). This logging information comes only from EMageFit itself, and is different from the <computeroutput>IMP</computeroutput> logging system. The granularity of the logging can be selected by using the variables from the <ulink url="http://docs.python.org/2/library/logging.html">Python logging module</ulink>, e.g. DEBUG, INFO, etc.</para>
+</sect2>
+<sect2 id="emagefit_protocol_1montecarlo">
+<title>Obtain models with Simulated annealing Monte Carlo optimization</title><para>Once the relative docking transformations are set, models can be generated using Monte Carlo optimizations. This uses the <computeroutput><ndash/>monte_carlo</computeroutput> argument to emagefit, which takes a single numeric argument, which is the random seed to use for the optimization. Repeated runs using the same random seed should generate the same outputs. If running on a single machine, the special value -1 can be used, which uses the current time to set the random seed (this is not recommended when running multiple jobs on a compute cluster, since several jobs could start at the same time).</para>
+<para>Each run generates an SQLite database containing only one solution. It should be repeated many times to generate multiple solutions, as multiple database files.</para>
+</sect2>
+<sect2 id="emagefit_protocol_1gather">
+<title>Gather the results of all Monte Carlo optimizations</title><para>In this step, all of the independent Monte Carlo solutions are gathered into a single database file. This uses the <computeroutput><ndash/>gather</computeroutput> option to emagefit.</para>
+</sect2>
+<sect2 id="emagefit_protocol_1domino">
+<title>Combine the models from Monte Carlo with DOMINO</title><para>The solutions in the gathered database are already solutions for the modeling. They are a set of discrete solutions that can be improved by combining the positions of the components in all of them. For example, if there are 100 solutions from the Monte Carlo experiments, then each component has 100 100 possible positions. The positions should be already correct, but DOMINO will explore all the possible combinations of Monte Carlo solutions further improving their quality. If the assembly has 4 components, DOMINO can efficiently explore the 100<superscript>4</superscript> possible combinations.</para>
+</sect2>
+<sect2 id="emagefit_protocol_1db">
+<title>Visualizing the models and understanding the information in the database of solutions</title><para>The database of results contains all the positions for the rigid bodies in the solutions. At this point, EMageFit can write them out as PDB files.</para>
+<para>Each record for a solution in the database contains the following information:</para>
+<para><itemizedlist>
+<listitem><para>Solution_id - A unique number that identifies the model (solutions are not ranked by quality, so solution_id=0 does not mean the best solution).</para>
+</listitem><listitem><para>assignment - The set of numbers identifying a combination in DOMINO. For the previous example with 4 components and 100 positions, one assignment could be &quot;11|23|45|76&quot;, meaning that the position of the first component is taken from solution 11, that of the second is taken from solution 23, and so on.</para>
+</listitem><listitem><para>Reference frames - These are the values used to build an IMP::algebra::ReferenceFrame3D object. There is one reference frame per component of the assembly. Generating a solution is as simple as setting the reference frame of each of the rigid bodies of the components of the assembly.</para>
+</listitem><listitem><para>Total_score - The total value of the scoring function.</para>
+</listitem><listitem><para>{restraints} - this is a list of values for the restraints. There is one column in the database for each restraint. The list changes with the number and nature of the restraints. The names can be accessed using the IMP.em2d.Database Python module. </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/doc/protocol.dox"/>
+  </compounddef>
+</doxygen>

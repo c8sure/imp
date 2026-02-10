@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1RigidBodyPackingScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::RigidBodyPackingScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PairScore</basecompoundref>
+    <includes local="no">IMP/spb/RigidBodyPackingScore.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1aebd607e90ddc13ac9415be80530d8bbf" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::RigidBodyPackingScore::ddb_</definition>
+        <argsstring></argsstring>
+        <name>ddb_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::ddb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="22" column="20" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a668529d40b444cd67b3760dbfae85e03" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::RigidBodyPackingScore::dde_</definition>
+        <argsstring></argsstring>
+        <name>dde_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::dde_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="22" column="25" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa8f09cf00d60ed37c75a1acdbe76ef34" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::RigidBodyPackingScore::kappa_</definition>
+        <argsstring></argsstring>
+        <name>kappa_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::kappa_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="23" column="10" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa18fd87376752b90de81cbb633d9bf63" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::RigidBodyPackingScore::omb_</definition>
+        <argsstring></argsstring>
+        <name>omb_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::omb_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="22" column="10" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a6fe59d08856fd9c0e3eeeb81498ab287" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::RigidBodyPackingScore::ome_</definition>
+        <argsstring></argsstring>
+        <name>ome_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::ome_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="22" column="15" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a47ed6f1d4df5e9fa06a364d65c7f4faf" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; core::TableRefiner &gt;</type>
+        <definition>IMP::PointerMember&lt;core::TableRefiner&gt; IMP::spb::RigidBodyPackingScore::tbr_</definition>
+        <argsstring></argsstring>
+        <name>tbr_</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::tbr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="21" column="22" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1af9450aec17ade4688cbcfcf7981772af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::RigidBodyPackingScore::RigidBodyPackingScore</definition>
+        <argsstring>(core::TableRefiner *tbr, Floats omb, Floats ome, Floats ddb, Floats dde, double kappa)</argsstring>
+        <name>RigidBodyPackingScore</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::RigidBodyPackingScore</qualifiedname>
+        <param>
+          <type>core::TableRefiner *</type>
+          <declname>tbr</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>omb</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>ome</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>ddb</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>dde</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="26" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a1a5190b3fd84786ff14566b87f71aa8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::RigidBodyPackingScore::do_get_inputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::do_get_inputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="32" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1ae9ab1a52fc21bb5c07a15bb85a67bfca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RigidBodyPackingScore::evaluate_if_good_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, double max, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override</argsstring>
+        <name>evaluate_if_good_indexes</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::evaluate_if_good_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="37" column="905" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a15cccb6e5f73f6f7005995f7462a0577" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::RigidBodyPackingScore::evaluate_index</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexPair &amp;p, DerivativeAccumulator *da) const override</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::evaluate_index</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexPair &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="29" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a43e479690c4a8c11a9bbbf52fa291cc8" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RigidBodyPackingScore::evaluate_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::evaluate_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="37" column="11" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a804a92ab3bb427b5a5882ca7b6797ccf" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RigidBodyPackingScore::evaluate_indexes_delta</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, const std::vector&lt; unsigned &gt; &amp;indexes, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_delta</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::evaluate_indexes_delta</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned &gt; &amp;</type>
+          <declname>indexes</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="37" column="555" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1a327d21d959edaa4376aa983bcd3f4b88" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RigidBodyPackingScore::evaluate_indexes_scores</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_scores</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::evaluate_indexes_scores</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="37" column="260" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyPackingScore_1aed2268e4601ddcafc03d4eabadfe89ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::RigidBodyPackingScore::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::RigidBodyPackingScore::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyPackingScore.h" line="38" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Score on the crossing angles between two helices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/RigidBodyPackingScore.h" line="20" column="1" bodyfile="include/IMP/spb/RigidBodyPackingScore.h" bodystart="20" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aebd607e90ddc13ac9415be80530d8bbf" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>ddb_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a668529d40b444cd67b3760dbfae85e03" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>dde_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a1a5190b3fd84786ff14566b87f71aa8f" prot="public" virt="virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1ae9ab1a52fc21bb5c07a15bb85a67bfca" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>evaluate_if_good_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a15cccb6e5f73f6f7005995f7462a0577" prot="public" virt="virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>evaluate_index</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a43e479690c4a8c11a9bbbf52fa291cc8" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>evaluate_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a804a92ab3bb427b5a5882ca7b6797ccf" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>evaluate_indexes_delta</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a327d21d959edaa4376aa983bcd3f4b88" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>evaluate_indexes_scores</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa8f09cf00d60ed37c75a1acdbe76ef34" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>kappa_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa18fd87376752b90de81cbb633d9bf63" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>omb_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a6fe59d08856fd9c0e3eeeb81498ab287" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>ome_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1af9450aec17ade4688cbcfcf7981772af" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>RigidBodyPackingScore</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aed2268e4601ddcafc03d4eabadfe89ea" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a47ed6f1d4df5e9fa06a364d65c7f4faf" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyPackingScore</scope><name>tbr_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

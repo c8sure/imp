@@ -1,0 +1,1984 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1domino" kind="namespace" language="C++">
+    <compoundname>IMP::domino</compoundname>
+    <innerclass refid="classIMP_1_1domino_1_1Assignment" prot="public">IMP::domino::Assignment</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1AssignmentContainer" prot="public">IMP::domino::AssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1AssignmentsTable" prot="public">IMP::domino::AssignmentsTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" prot="public">IMP::domino::BranchAndBoundAssignmentsTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1BranchAndBoundSampler" prot="public">IMP::domino::BranchAndBoundSampler</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1CappedAssignmentContainer" prot="public">IMP::domino::CappedAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1CompoundStates" prot="public">IMP::domino::CompoundStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1DependencyScoreState" prot="public">IMP::domino::DependencyScoreState</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1DiscreteSampler" prot="public">IMP::domino::DiscreteSampler</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public">IMP::domino::DisjointSetsSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1DominoSampler" prot="public">IMP::domino::DominoSampler</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" prot="public">IMP::domino::EqualitySubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" prot="public">IMP::domino::EquivalenceAndExclusionSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" prot="public">IMP::domino::EquivalenceSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" prot="public">IMP::domino::ExclusionSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1HeapAssignmentContainer" prot="public">IMP::domino::HeapAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1IndexStates" prot="public">IMP::domino::IndexStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1InteractionGraphVertexIndex" prot="public">IMP::domino::InteractionGraphVertexIndex</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ListAssignmentContainer" prot="public">IMP::domino::ListAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ListAssignmentsTable" prot="public">IMP::domino::ListAssignmentsTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ListSubsetFilterTable" prot="public">IMP::domino::ListSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1MergeTreeVertexIndex" prot="public">IMP::domino::MergeTreeVertexIndex</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" prot="public">IMP::domino::MinimumRestraintScoreSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1NestedRigidBodyStates" prot="public">IMP::domino::NestedRigidBodyStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1Order" prot="public">IMP::domino::Order</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1PackedAssignmentContainer" prot="public">IMP::domino::PackedAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" prot="public">IMP::domino::PairListSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ParticlesAdaptor" prot="public">IMP::domino::ParticlesAdaptor</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ParticleStates" prot="public">IMP::domino::ParticleStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ParticleStatesTable" prot="public">IMP::domino::ParticleStatesTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1PermutationStates" prot="public">IMP::domino::PermutationStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable" prot="public">IMP::domino::ProbabilisticSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RangeViewAssignmentContainer" prot="public">IMP::domino::RangeViewAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ReadAssignmentContainer" prot="public">IMP::domino::ReadAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer" prot="public">IMP::domino::ReadHDF5AssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable" prot="public">IMP::domino::RecursiveAssignmentsTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RecursiveStates" prot="public">IMP::domino::RecursiveStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RestraintCache" prot="public">IMP::domino::RestraintCache</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" prot="public">IMP::domino::RestraintScoreSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RigidBodyStates" prot="public">IMP::domino::RigidBodyStates</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SampleAssignmentContainer" prot="public">IMP::domino::SampleAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SimpleAssignmentsTable" prot="public">IMP::domino::SimpleAssignmentsTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1Slice" prot="public">IMP::domino::Slice</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1Subset" prot="public">IMP::domino::Subset</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SubsetFilter" prot="public">IMP::domino::SubsetFilter</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public">IMP::domino::SubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1SubsetGraphVertexIndex" prot="public">IMP::domino::SubsetGraphVertexIndex</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1WriteAssignmentContainer" prot="public">IMP::domino::WriteAssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer" prot="public">IMP::domino::WriteHDF5AssignmentContainer</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1XYZStates" prot="public">IMP::domino::XYZStates</innerclass>
+    <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" prot="public" static="no">
+        <type>boost::graph</type>
+        <definition>typedef boost::graph IMP::domino::MergeTree</definition>
+        <argsstring></argsstring>
+        <name>MergeTree</name>
+        <qualifiedname>IMP::domino::MergeTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A directed graph on subsets of vertices. Each vertex is named with a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref>. See Graphs in IMP for more information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="26" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a247eca0fd866939112d2b745a285ad1c" prot="public" static="no">
+        <type>MergeTree::VertexNameMap</type>
+        <definition>typedef MergeTree::VertexNameMap IMP::domino::MergeTreeConstVertexName</definition>
+        <argsstring></argsstring>
+        <name>MergeTreeConstVertexName</name>
+        <qualifiedname>IMP::domino::MergeTreeConstVertexName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="71" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2f84a0f86c8349a4a40722abe3f42437" prot="public" static="no">
+        <type>MergeTree::EdgeNameMap</type>
+        <definition>typedef MergeTree::EdgeNameMap IMP::domino::MergeTreeConstEdgeName</definition>
+        <argsstring></argsstring>
+        <name>MergeTreeConstEdgeName</name>
+        <qualifiedname>IMP::domino::MergeTreeConstEdgeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="129" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a898c3e64e73dd10bded6b7a1cc3d1b22" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref> &gt;</type>
+        <definition>typedef boost::graph_traits&lt;MergeTree&gt; IMP::domino::MergeTreeTraits</definition>
+        <argsstring></argsstring>
+        <name>MergeTreeTraits</name>
+        <qualifiedname>IMP::domino::MergeTreeTraits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="182" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a5f0254b13a87ce2e6d0a4652962395b3" prot="public" static="no">
+        <type>MergeTree::vertex_descriptor</type>
+        <definition>typedef MergeTree::vertex_descriptor IMP::domino::MergeTreeVertex</definition>
+        <argsstring></argsstring>
+        <name>MergeTreeVertex</name>
+        <qualifiedname>IMP::domino::MergeTreeVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="237" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a013379f9fee41ac44ba3cdc4afbf964e" prot="public" static="no">
+        <type>MergeTree::edge_descriptor</type>
+        <definition>typedef MergeTree::edge_descriptor IMP::domino::MergeTreeEdge</definition>
+        <argsstring></argsstring>
+        <name>MergeTreeEdge</name>
+        <qualifiedname>IMP::domino::MergeTreeEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="117" column="290" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a2d03716c9c16a8174cab8627835cf716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::show_as_graphviz</definition>
+        <argsstring>(const SubsetGraph &amp;name, TextOutput out)</argsstring>
+        <name>show_as_graphviz</name>
+        <qualifiedname>IMP::domino::show_as_graphviz</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>TextOutput</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="369" declfile="include/IMP/domino/subset_graphs.h" declline="23" declcolumn="369"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a9cc613c4eddead7d1c5a1c7c56fe6ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SubsetGraphVertexIndex</type>
+        <definition>MergeTreeVertexIndex IMP::domino::get_vertex_index</definition>
+        <argsstring>(const SubsetGraph &amp;g)</argsstring>
+        <name>get_vertex_index</name>
+        <qualifiedname>IMP::domino::get_vertex_index</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="415" declfile="include/IMP/domino/subset_graphs.h" declline="23" declcolumn="415"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a7745ea629841a6a4475211ba0a134b44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref></type>
+        <definition>InteractionGraph IMP::domino::get_interaction_graph</definition>
+        <argsstring>(ScoringFunctionAdaptor rs, const ParticleStatesTable *pst)</argsstring>
+        <name>get_interaction_graph</name>
+        <qualifiedname>IMP::domino::get_interaction_graph</qualifiedname>
+        <param>
+          <type>ScoringFunctionAdaptor</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the interaction graph of the restraints and the specified particles. The dependency graph in the model is traversed to determine how the passed particles relate to the actual particles read as input by the model. For example, if particles contains a rigid body, then a restraint which uses a member of the rigid body will have an edge from the rigid body particle.</para>
+<para><simplesect kind="note"><para>You may want to create an OptimizeRestraints object before calling this function.</para>
+</simplesect>
+<simplesect kind="note"><para>These functions are here to aid in debugging of optimization protocols that use Domino. As a result, its signature and functionality may change without notice. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="94" column="5" declfile="include/IMP/domino/subset_graphs.h" declline="94" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a32c0b82e732879cbf0d77bbea28541bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref></type>
+        <definition>InteractionGraph IMP::domino::get_interaction_graph</definition>
+        <argsstring>(ScoringFunctionAdaptor rs, const ParticlesTemp &amp;pst)</argsstring>
+        <name>get_interaction_graph</name>
+        <qualifiedname>IMP::domino::get_interaction_graph</qualifiedname>
+        <param>
+          <type>ScoringFunctionAdaptor</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="98" column="5" declfile="include/IMP/domino/subset_graphs.h" declline="98" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a6ffff7ad684ef09edb410ae5bc69ffea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>display::Geometries</type>
+        <definition>display::Geometries IMP::domino::get_interaction_graph_geometry</definition>
+        <argsstring>(const InteractionGraph &amp;ig)</argsstring>
+        <name>get_interaction_graph_geometry</name>
+        <qualifiedname>IMP::domino::get_interaction_graph_geometry</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref> &amp;</type>
+          <declname>ig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assuming that all the particles have Cartesian coordinates, output edges corresponding to the edges in the interaction graph. The edges are named by the restraint which induces them. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="105" column="23" declfile="include/IMP/domino/subset_graphs.h" declline="105" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a65e48f223bd909759754f61224256b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>display::Geometries</type>
+        <definition>display::Geometries IMP::domino::get_subset_graph_geometry</definition>
+        <argsstring>(const SubsetGraph &amp;ig)</argsstring>
+        <name>get_subset_graph_geometry</name>
+        <qualifiedname>IMP::domino::get_subset_graph_geometry</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>ig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display the subsets of a subset graph, superimposed on the 3D coordinates of the particles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="111" column="23" declfile="include/IMP/domino/subset_graphs.h" declline="111" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref></type>
+        <definition>MergeTree IMP::domino::get_merge_tree</definition>
+        <argsstring>(ScoringFunctionAdaptor input, const ParticleStatesTable *pst)</argsstring>
+        <name>get_merge_tree</name>
+        <qualifiedname>IMP::domino::get_merge_tree</qualifiedname>
+        <param>
+          <type>ScoringFunctionAdaptor</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespaceIMP_1_1domino_1a4253062f182189cdac543e96eaf8633f" kindref="member">get_merge_tree(const SubsetGraph&amp;)</ref></para>
+</simplesect>
+Compute the merge tree for a given restraint set and particle states table. An OptimizeRestraints object is created to improve the <ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref> used internally. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="125" column="13" declfile="include/IMP/domino/subset_graphs.h" declline="125" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a4253062f182189cdac543e96eaf8633f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref></type>
+        <definition>MergeTree IMP::domino::get_merge_tree</definition>
+        <argsstring>(const SubsetGraph &amp;junction_tree)</argsstring>
+        <name>get_merge_tree</name>
+        <qualifiedname>IMP::domino::get_merge_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>junction_tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>get_merge_tree(RestraintSet*,const ParticleStatesTable*)</para>
+</simplesect>
+Compute the merge tree from a junction tree.</para>
+<para><simplesect kind="note"><para>the merge tree is not necessarily deterministic (you can get different answers if you run it different times with the same inputs). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="135" column="13" declfile="include/IMP/domino/subset_graphs.h" declline="135" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1acab55ab855b7cff0e33d25fd2056067a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref></type>
+        <definition>MergeTree IMP::domino::get_balanced_merge_tree</definition>
+        <argsstring>(const SubsetGraph &amp;junction_tree)</argsstring>
+        <name>get_balanced_merge_tree</name>
+        <qualifiedname>IMP::domino::get_balanced_merge_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>junction_tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>get_merge_tree(RestraintSet*,const ParticleStatesTable*)</para>
+</simplesect>
+Compute the merge tree from a junction tree, attempting to keep it fairly balanced.</para>
+<para><simplesect kind="note"><para>the merge tree is not necessarily deterministic (you can get different answers if you run it different times with the same inputs). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="146" column="5" declfile="include/IMP/domino/subset_graphs.h" declline="146" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a36895b9e0319ed81ff55feca2b07d596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::domino::get_is_merge_tree</definition>
+        <argsstring>(const MergeTree &amp;tree, Subset all, bool verbose=true)</argsstring>
+        <name>get_is_merge_tree</name>
+        <qualifiedname>IMP::domino::get_is_merge_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref> &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>all</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verbose</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="148" column="8" declfile="include/IMP/domino/subset_graphs.h" declline="148" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a28a4d914228bb96a3aad3c01bb57beeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::domino::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::domino::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="143" column="18" declfile="include/IMP/domino/domino_config.h" declline="143" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a97334f22229a81b49387de8579dc4358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::domino::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::domino::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="148" column="24" bodyfile="include/IMP/domino/domino_config.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a3624d5a38e6a71d1e41b17e57fe836b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::domino::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::domino::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1domino_1a3624d5a38e6a71d1e41b17e57fe836b6" kindref="member">IMP::domino::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="164" column="18" declfile="include/IMP/domino/domino_config.h" declline="164" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a2095dc8230d6c30f29361536f7b93d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::domino::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::domino::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1domino_1a2095dc8230d6c30f29361536f7b93d31" kindref="member">IMP::domino::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="180" column="18" declfile="include/IMP/domino/domino_config.h" declline="180" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Read and write merge trees</header>
+      <description><para>Merge trees can be written to and read from a text stream. As always, this requires a canonical particles list whose order is the same for the reading and writing. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a541325fed96c13d825cbd4aa9dd7c5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::write_merge_tree</definition>
+        <argsstring>(const MergeTree &amp;tree, const ParticlesTemp &amp;ps, std::ostream &amp;out)</argsstring>
+        <name>write_merge_tree</name>
+        <qualifiedname>IMP::domino::write_merge_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref> &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="158" column="8" declfile="include/IMP/domino/subset_graphs.h" declline="158" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1aca9cd1b21d36f9766400b55396ae3239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref></type>
+        <definition>MergeTree IMP::domino::read_merge_tree</definition>
+        <argsstring>(std::istream &amp;input, const ParticlesTemp &amp;ps)</argsstring>
+        <name>read_merge_tree</name>
+        <qualifiedname>IMP::domino::read_merge_tree</qualifiedname>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="162" column="5" declfile="include/IMP/domino/subset_graphs.h" declline="162" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Debug tools</header>
+      <description><para>We provide a number of different functions for helping optimize and understand domino-based sampling. These functions expose part of the implementation and are liable to change without notice. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a0c08cfa3955a23464c5f59c15f95a4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::load_particle_states</definition>
+        <argsstring>(const Subset &amp;s, const Assignment &amp;ss, const ParticleStatesTable *pst)</argsstring>
+        <name>load_particle_states</name>
+        <qualifiedname>IMP::domino::load_particle_states</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+<para>Load the appropriate state for each particle in a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="54" column="8" declfile="include/IMP/domino/utility.h" declline="54" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1ab0efd3e3db335ea082bf9b7567011958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::domino::get_restraints</definition>
+        <argsstring>(const Subset &amp;s, const ParticleStatesTable *pst, const DependencyGraph &amp;dg, RestraintSet *rs)</argsstring>
+        <name>get_restraints</name>
+        <qualifiedname>IMP::domino::get_restraints</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>const DependencyGraph &amp;</type>
+          <declname>dg</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a list of all restraints from rs that do not depend on any particle in pst-&gt;get_particles() that is not in s. The dependency graph is passed for efficiency. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="61" column="18" declfile="include/IMP/domino/utility.h" declline="61" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1aa52a96217327b16c26306725d07e4098" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;AssignmentContainer&gt; &gt; IMP::domino::AssignmentContainers</definition>
+        <argsstring></argsstring>
+        <name>AssignmentContainers</name>
+        <qualifiedname>IMP::domino::AssignmentContainers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="62" column="25" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a5dd5cb19d7794464191cec241ddbe8cc" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;AssignmentContainer&gt; &gt; IMP::domino::AssignmentContainersTemp</definition>
+        <argsstring></argsstring>
+        <name>AssignmentContainersTemp</name>
+        <qualifiedname>IMP::domino::AssignmentContainersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_containers.h" line="62" column="71" bodyfile="include/IMP/domino/assignment_containers.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;Assignment&gt; IMP::domino::Assignments</definition>
+        <argsstring></argsstring>
+        <name>Assignments</name>
+        <qualifiedname>IMP::domino::Assignments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="53" column="23" bodyfile="include/IMP/domino/Assignment.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a66796ab73724d0ea5152f7627f70853b" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;AssignmentsTable&gt; &gt; IMP::domino::AssignmentsTables</definition>
+        <argsstring></argsstring>
+        <name>AssignmentsTables</name>
+        <qualifiedname>IMP::domino::AssignmentsTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="40" column="25" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a9a5cce24c45b6a03b4d0e5503e70cd67" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;AssignmentsTable&gt; &gt; IMP::domino::AssignmentsTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>AssignmentsTablesTemp</name>
+        <qualifiedname>IMP::domino::AssignmentsTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="40" column="68" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a1419517ca7dc2875f3c403f8146f392a" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1BranchAndBoundSampler" kindref="compound">BranchAndBoundSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;BranchAndBoundSampler&gt; &gt; IMP::domino::BranchAndBoundSamplers</definition>
+        <argsstring></argsstring>
+        <name>BranchAndBoundSamplers</name>
+        <qualifiedname>IMP::domino::BranchAndBoundSamplers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/BranchAndBoundSampler.h" line="38" column="25" bodyfile="include/IMP/domino/BranchAndBoundSampler.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2331d81c62fb3d69358f11a7240ca163" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1BranchAndBoundSampler" kindref="compound">BranchAndBoundSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;BranchAndBoundSampler&gt; &gt; IMP::domino::BranchAndBoundSamplersTemp</definition>
+        <argsstring></argsstring>
+        <name>BranchAndBoundSamplersTemp</name>
+        <qualifiedname>IMP::domino::BranchAndBoundSamplersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1BranchAndBoundSampler" kindref="compound">BranchAndBoundSampler</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/BranchAndBoundSampler.h" line="38" column="73" bodyfile="include/IMP/domino/BranchAndBoundSampler.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ae036346cfb6ed4ac574bc87a4465f7fd" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1DiscreteSampler" kindref="compound">DiscreteSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;DiscreteSampler&gt; &gt; IMP::domino::DiscreteSamplers</definition>
+        <argsstring></argsstring>
+        <name>DiscreteSamplers</name>
+        <qualifiedname>IMP::domino::DiscreteSamplers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="132" column="25" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a8a2f1a37eb3ae64df286d3d8694b8628" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1DiscreteSampler" kindref="compound">DiscreteSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;DiscreteSampler&gt; &gt; IMP::domino::DiscreteSamplersTemp</definition>
+        <argsstring></argsstring>
+        <name>DiscreteSamplersTemp</name>
+        <qualifiedname>IMP::domino::DiscreteSamplersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1DiscreteSampler" kindref="compound">DiscreteSampler</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="132" column="67" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1af843ca5b6488ba9b2bdce370f08862b6" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">DominoSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;DominoSampler&gt; &gt; IMP::domino::DominoSamplers</definition>
+        <argsstring></argsstring>
+        <name>DominoSamplers</name>
+        <qualifiedname>IMP::domino::DominoSamplers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="122" column="25" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a52a0f028f4f3b8c730f0da2f22c5ee56" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">DominoSampler</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;DominoSampler&gt; &gt; IMP::domino::DominoSamplersTemp</definition>
+        <argsstring></argsstring>
+        <name>DominoSamplersTemp</name>
+        <qualifiedname>IMP::domino::DominoSamplersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">DominoSampler</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="122" column="65" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a1bfde8674823f5843e03333cc92ef439" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" kindref="compound">EqualitySubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;EqualitySubsetFilterTable&gt; &gt; IMP::domino::EqualitySubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>EqualitySubsetFilterTables</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="97" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a19118f4a5321d5f781947c96e77e4549" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" kindref="compound">EqualitySubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;EqualitySubsetFilterTable&gt; &gt; IMP::domino::EqualitySubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>EqualitySubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable" kindref="compound">EqualitySubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="149" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1aca4c2011c5ebdc5129d8f8e0b38e5549" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" kindref="compound">EquivalenceAndExclusionSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;EquivalenceAndExclusionSubsetFilterTable&gt; &gt; IMP::domino::EquivalenceAndExclusionSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>EquivalenceAndExclusionSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="112" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a144a352deb0ea68ae8971f7a03da04de" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" kindref="compound">EquivalenceAndExclusionSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;EquivalenceAndExclusionSubsetFilterTable&gt; &gt; IMP::domino::EquivalenceAndExclusionSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>EquivalenceAndExclusionSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::EquivalenceAndExclusionSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable" kindref="compound">EquivalenceAndExclusionSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="245" column="179" bodyfile="include/IMP/domino/subset_filters.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a89b670ec4dea8a71ba9e9b9aac757ddf" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" kindref="compound">EquivalenceSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;EquivalenceSubsetFilterTable&gt; &gt; IMP::domino::EquivalenceSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>EquivalenceSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::EquivalenceSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="238" column="100" bodyfile="include/IMP/domino/subset_filters.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a1aa09c83846c540ae261ebce946613f2" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" kindref="compound">EquivalenceSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;EquivalenceSubsetFilterTable&gt; &gt; IMP::domino::EquivalenceSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>EquivalenceSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::EquivalenceSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable" kindref="compound">EquivalenceSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="238" column="155" bodyfile="include/IMP/domino/subset_filters.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ab21d39960b2ed70431178fe967e353b7" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">ExclusionSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ExclusionSubsetFilterTable&gt; &gt; IMP::domino::ExclusionSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>ExclusionSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="98" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a521e430f05778eaf72510b4067cfbf71" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">ExclusionSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ExclusionSubsetFilterTable&gt; &gt; IMP::domino::ExclusionSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>ExclusionSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">ExclusionSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="151" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" prot="public" static="no">
+        <type>boost::graph</type>
+        <definition>typedef boost::graph IMP::domino::InteractionGraph</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraph</name>
+        <qualifiedname>IMP::domino::InteractionGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An undirected graph with one vertex per particle of interest. Two particles are connected by an edge if a Restraint or ScoreState creates an interaction between the two particles.</para>
+<para>See Graphs in IMP for more information. See Graphs in IMP for more information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="26" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a0c3e3d33bd49d8cb5fe51d04184957d1" prot="public" static="no">
+        <type>InteractionGraph::EdgeNameMap</type>
+        <definition>typedef InteractionGraph::EdgeNameMap IMP::domino::InteractionGraphConstEdgeName</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraphConstEdgeName</name>
+        <qualifiedname>IMP::domino::InteractionGraphConstEdgeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="157" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ab9e99729d34a0b057a4686e33748d33f" prot="public" static="no">
+        <type>InteractionGraph::VertexNameMap</type>
+        <definition>typedef InteractionGraph::VertexNameMap IMP::domino::InteractionGraphConstVertexName</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraphConstVertexName</name>
+        <qualifiedname>IMP::domino::InteractionGraphConstVertexName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="85" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a394f68d3ad0ab0b1c880599b47fe1f99" prot="public" static="no">
+        <type>InteractionGraph::edge_descriptor</type>
+        <definition>typedef InteractionGraph::edge_descriptor IMP::domino::InteractionGraphEdge</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraphEdge</name>
+        <qualifiedname>IMP::domino::InteractionGraphEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="353" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a915f0dcf319bbf9b56c876123cd4715b" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref> &gt;</type>
+        <definition>typedef boost::graph_traits&lt;InteractionGraph&gt; IMP::domino::InteractionGraphTraits</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraphTraits</name>
+        <qualifiedname>IMP::domino::InteractionGraphTraits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="217" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1adf343f86945e990cb2d4c5e58827f731" prot="public" static="no">
+        <type>InteractionGraph::vertex_descriptor</type>
+        <definition>typedef InteractionGraph::vertex_descriptor IMP::domino::InteractionGraphVertex</definition>
+        <argsstring></argsstring>
+        <name>InteractionGraphVertex</name>
+        <qualifiedname>IMP::domino::InteractionGraphVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="33" column="286" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1aab2ded464a1644afab41986952e6fcfd" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">ListSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ListSubsetFilterTable&gt; &gt; IMP::domino::ListSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>ListSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::ListSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="289" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a6b2382f6fb28df47a1a21d0b3df393c6" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">ListSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ListSubsetFilterTable&gt; &gt; IMP::domino::ListSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>ListSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::ListSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">ListSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="289" column="73" bodyfile="include/IMP/domino/subset_filters.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a376f14f0f745b9aec67ec1597d509def" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" kindref="compound">MinimumRestraintScoreSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;MinimumRestraintScoreSubsetFilterTable&gt; &gt; IMP::domino::MinimumRestraintScoreSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>MinimumRestraintScoreSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="154" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ab548eae5cbeee6a51b590ebfb9673078" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" kindref="compound">MinimumRestraintScoreSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;MinimumRestraintScoreSubsetFilterTable&gt; &gt; IMP::domino::MinimumRestraintScoreSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>MinimumRestraintScoreSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::MinimumRestraintScoreSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" kindref="compound">MinimumRestraintScoreSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="154" column="90" bodyfile="include/IMP/domino/subset_filters.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2778218e2d07143e8222fe91b8eca6a9" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1domino_1_1Order" kindref="compound">Order</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;Order&gt; IMP::domino::Orders</definition>
+        <argsstring></argsstring>
+        <name>Orders</name>
+        <qualifiedname>IMP::domino::Orders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1domino_1_1Order" kindref="compound">Order</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="76" column="23" bodyfile="include/IMP/domino/Order.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2d63fc95e80b0ea8f70bbab4c7dac2c3" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" kindref="compound">PairListSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;PairListSubsetFilterTable&gt; &gt; IMP::domino::PairListSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>PairListSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::PairListSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="315" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a9f9995d31f81edc5ba27d9722c7461f9" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" kindref="compound">PairListSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;PairListSubsetFilterTable&gt; &gt; IMP::domino::PairListSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>PairListSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::PairListSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" kindref="compound">PairListSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="315" column="77" bodyfile="include/IMP/domino/subset_filters.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a8a04d287e64e366c3ac62937825b129e" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ParticleStates&gt; &gt; IMP::domino::ParticleStatesList</definition>
+        <argsstring></argsstring>
+        <name>ParticleStatesList</name>
+        <qualifiedname>IMP::domino::ParticleStatesList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="64" column="25" bodyfile="include/IMP/domino/particle_states.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a3be36832312f1eda06ba2349c1e94889" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ParticleStates&gt; &gt; IMP::domino::ParticleStatesListTemp</definition>
+        <argsstring></argsstring>
+        <name>ParticleStatesListTemp</name>
+        <qualifiedname>IMP::domino::ParticleStatesListTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="64" column="69" bodyfile="include/IMP/domino/particle_states.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1abfd99ef2cd1453fc699a008e6c7c5e03" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ParticleStatesTable&gt; &gt; IMP::domino::ParticleStatesTables</definition>
+        <argsstring></argsstring>
+        <name>ParticleStatesTables</name>
+        <qualifiedname>IMP::domino::ParticleStatesTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="114" column="25" bodyfile="include/IMP/domino/particle_states.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1aad5baa65a9bfc90c3aaea5802fec64f9" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ParticleStatesTable&gt; &gt; IMP::domino::ParticleStatesTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>ParticleStatesTablesTemp</name>
+        <qualifiedname>IMP::domino::ParticleStatesTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="114" column="71" bodyfile="include/IMP/domino/particle_states.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2756c0d34334024ea936b8b864bc505d" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;RestraintScoreSubsetFilterTable&gt; &gt; IMP::domino::RestraintScoreSubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>RestraintScoreSubsetFilterTables</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="123" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1aff006820bdd23b5c0bc53a05d1cff1aa" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;RestraintScoreSubsetFilterTable&gt; &gt; IMP::domino::RestraintScoreSubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>RestraintScoreSubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::RestraintScoreSubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="123" column="83" bodyfile="include/IMP/domino/subset_filters.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a7a2af715dc689429150765d274f5e9ef" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;Slice&gt; IMP::domino::Slices</definition>
+        <argsstring></argsstring>
+        <name>Slices</name>
+        <qualifiedname>IMP::domino::Slices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="70" column="23" bodyfile="include/IMP/domino/Slice.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ab69ae709f2bd9a4b9c6174bd1ceee747" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;SubsetFilter&gt; &gt; IMP::domino::SubsetFilters</definition>
+        <argsstring></argsstring>
+        <name>SubsetFilters</name>
+        <qualifiedname>IMP::domino::SubsetFilters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="65" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a0958a7dd459bc9056cfa9612d7e36181" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;SubsetFilter&gt; &gt; IMP::domino::SubsetFiltersTemp</definition>
+        <argsstring></argsstring>
+        <name>SubsetFiltersTemp</name>
+        <qualifiedname>IMP::domino::SubsetFiltersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="65" column="64" bodyfile="include/IMP/domino/subset_filters.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;SubsetFilterTable&gt; &gt; IMP::domino::SubsetFilterTables</definition>
+        <argsstring></argsstring>
+        <name>SubsetFilterTables</name>
+        <qualifiedname>IMP::domino::SubsetFilterTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="341" column="25" bodyfile="include/IMP/domino/subset_filters.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a046c1e9885f4e981e10aefeba6f0e297" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;SubsetFilterTable&gt; &gt; IMP::domino::SubsetFilterTablesTemp</definition>
+        <argsstring></argsstring>
+        <name>SubsetFilterTablesTemp</name>
+        <qualifiedname>IMP::domino::SubsetFilterTablesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="341" column="69" bodyfile="include/IMP/domino/subset_filters.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" prot="public" static="no">
+        <type>boost::graph</type>
+        <definition>typedef boost::graph IMP::domino::SubsetGraph</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraph</name>
+        <qualifiedname>IMP::domino::SubsetGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An undirected graph on subsets of vertices. Each vertex is named with a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref>. See Graphs in IMP for more information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="26" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ac8f63280e2e1364893f9284656904e54" prot="public" static="no">
+        <type>SubsetGraph::EdgeNameMap</type>
+        <definition>typedef SubsetGraph::EdgeNameMap IMP::domino::SubsetGraphConstEdgeName</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraphConstEdgeName</name>
+        <qualifiedname>IMP::domino::SubsetGraphConstEdgeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="137" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a84f5940aaf6b3c02741db768925fb5eb" prot="public" static="no">
+        <type>SubsetGraph::VertexNameMap</type>
+        <definition>typedef SubsetGraph::VertexNameMap IMP::domino::SubsetGraphConstVertexName</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraphConstVertexName</name>
+        <qualifiedname>IMP::domino::SubsetGraphConstVertexName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="75" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a4ffd940aaaf6b2fc33b6347b8e6b5ed3" prot="public" static="no">
+        <type>SubsetGraph::edge_descriptor</type>
+        <definition>typedef SubsetGraph::edge_descriptor IMP::domino::SubsetGraphEdge</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraphEdge</name>
+        <qualifiedname>IMP::domino::SubsetGraphEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="308" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a145a31f9bed4d4955a40149f91e9a680" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &gt;</type>
+        <definition>typedef boost::graph_traits&lt;SubsetGraph&gt; IMP::domino::SubsetGraphTraits</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraphTraits</name>
+        <qualifiedname>IMP::domino::SubsetGraphTraits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="192" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1a2ea872d4edb865d283043f99e8676277" prot="public" static="no">
+        <type>SubsetGraph::vertex_descriptor</type>
+        <definition>typedef SubsetGraph::vertex_descriptor IMP::domino::SubsetGraphVertex</definition>
+        <argsstring></argsstring>
+        <name>SubsetGraphVertex</name>
+        <qualifiedname>IMP::domino::SubsetGraphVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="23" column="251" bodyfile="include/IMP/domino/subset_graphs.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;Subset&gt; IMP::domino::Subsets</definition>
+        <argsstring></argsstring>
+        <name>Subsets</name>
+        <qualifiedname>IMP::domino::Subsets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="76" column="23" bodyfile="include/IMP/domino/Subset.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a1e91ca287b91fd6144aeeff14960c14a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::get_difference</definition>
+        <argsstring>(const Subset &amp;a, const Subset &amp;b)</argsstring>
+        <name>get_difference</name>
+        <qualifiedname>IMP::domino::get_difference</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="96" column="15" bodyfile="include/IMP/domino/Subset.h" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a3a112fd41a97e8e93dbff8be3dfb8bb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::domino::get_distance_if_smaller_than</definition>
+        <argsstring>(const Subset &amp;s, const Assignment &amp;a, const Assignment &amp;b, ParticleStatesTable *pst, const statistics::Metrics &amp;metrics, double max)</argsstring>
+        <name>get_distance_if_smaller_than</name>
+        <qualifiedname>IMP::domino::get_distance_if_smaller_than</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>const statistics::Metrics &amp;</type>
+          <declname>metrics</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a distance between two assignments if they are less than a threshold. The distance returned is the l2 norm on the distances between each state as given by the corresponding metric. If no metric is passed, then the l2 norm on the embedding is used. <simplesect kind="par"><title>Warning: get_distance_if_close has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="117" column="15" bodyfile="include/IMP/domino/utility.h" bodystart="117" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a3247d32b900c4633e5c58cd7032d043b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::VectorKD</type>
+        <definition>algebra::VectorKD IMP::domino::get_embedding</definition>
+        <argsstring>(const Subset &amp;s, const Assignment &amp;a, ParticleStatesTable *pst)</argsstring>
+        <name>get_embedding</name>
+        <qualifiedname>IMP::domino::get_embedding</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+<para>Return an embedding for an assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="102" column="21" declfile="include/IMP/domino/utility.h" declline="102" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1ab5fc791399c0d6c76e1bea5d4b3da6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::domino::get_index</definition>
+        <argsstring>(const ParticlesTemp &amp;particles, const Subset &amp;subset, const Subsets &amp;excluded)</argsstring>
+        <name>get_index</name>
+        <qualifiedname>IMP::domino::get_index</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>subset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the passed particles are all contained in the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> and are not contained any of the <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> in excluded, then return a list of indices given the location of each passed particle in the passed subset. That is <programlisting><codeline><highlight class="normal">particles[i]==subset[returned[i]];</highlight></codeline>
+</programlisting> Otherwise return an empty list.</para>
+<para>This function is designed to be used for implementing <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="79" column="8" declfile="include/IMP/domino/utility.h" declline="79" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a399d7344a0696fbab4a6ca6c2796157b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::get_intersection</definition>
+        <argsstring>(const Subset &amp;a, const Subset &amp;b)</argsstring>
+        <name>get_intersection</name>
+        <qualifiedname>IMP::domino::get_intersection</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="85" column="15" bodyfile="include/IMP/domino/Subset.h" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1af4ecbb31cd9704335911eef3d583a754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref></type>
+        <definition>SubsetGraph IMP::domino::get_junction_tree</definition>
+        <argsstring>(const InteractionGraph &amp;ig)</argsstring>
+        <name>get_junction_tree</name>
+        <qualifiedname>IMP::domino::get_junction_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a1b3e02fbad93dad74459f871a1bb0dae" kindref="member">InteractionGraph</ref> &amp;</type>
+          <declname>ig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the exact <ulink url="https://en.wikipedia.org/wiki/Junction_tree">junction tree</ulink> for an interaction graph. The resulting graph has the junction tree properties<itemizedlist>
+<listitem><para>it is a tree</para>
+</listitem><listitem><para>for any two vertices whose subsets both contain a vertex, that vertex is contained in all subsets along the path connecting those two vertices.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>the junction tree is not necessarily deterministic (you can get different answers if you run it different times with the same inputs). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="49" column="15" declfile="include/IMP/domino/subset_graphs.h" declline="49" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1abd8a69ba2cc2b8fea2f49c99189d8711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>Assignment IMP::domino::get_nearest_assignment</definition>
+        <argsstring>(const Subset &amp;s, const algebra::VectorKD &amp;embedding, ParticleStatesTable *pst)</argsstring>
+        <name>get_nearest_assignment</name>
+        <qualifiedname>IMP::domino::get_nearest_assignment</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const algebra::VectorKD &amp;</type>
+          <declname>embedding</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+<para>Return the nearest assignment from an embedding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="108" column="5" declfile="include/IMP/domino/utility.h" declline="108" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a0f43ef4b4efed8a9481e65694ce3fadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::get_order</definition>
+        <argsstring>(const Subset &amp;s, const SubsetFilterTables &amp;sft)</argsstring>
+        <name>get_order</name>
+        <qualifiedname>IMP::domino::get_order</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>sft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the order computed for the particles in the subset to be used for enumeration. This function is there in order to expose internal functionality for easier testing and should not be depended upon. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="138" column="17" declfile="include/IMP/domino/assignment_tables.h" declline="138" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a4c8c50c718ab2dcabacc4b2e41aba522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::domino::get_partial_index</definition>
+        <argsstring>(const ParticlesTemp &amp;particles, const Subset &amp;subset, const Subsets &amp;excluded)</argsstring>
+        <name>get_partial_index</name>
+        <qualifiedname>IMP::domino::get_partial_index</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>subset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For each of the passed particles, if it is contained in the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> and not contained in any of the <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> in excluded, return the index of that particle in the passed subset; otherwise, return -1. A list of all such indexes is returned. Compare with <ref refid="namespaceIMP_1_1domino_1ab5fc791399c0d6c76e1bea5d4b3da6ca" kindref="member">get_index()</ref>.</para>
+<para>This function is designed to be used for implementing <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="90" column="8" declfile="include/IMP/domino/utility.h" declline="90" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1aa29c2ec35739c08db3a13ffe4ec38088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ParticlePairsTemp</type>
+        <definition>ParticlePairsTemp IMP::domino::get_possible_interactions</definition>
+        <argsstring>(const ParticlesTemp &amp;ps, double max_distance, ParticleStatesTable *pst)</argsstring>
+        <name>get_possible_interactions</name>
+        <qualifiedname>IMP::domino::get_possible_interactions</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_distance</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the list of interactions implied by the passed balls given the allowed positions specified by the <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/utility.h" line="97" column="21" declfile="include/IMP/domino/utility.h" declline="97" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1ab0eb2c05d5eb0c9e64fba8c85011ad01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref></type>
+        <definition>SubsetGraph IMP::domino::get_restraint_graph</definition>
+        <argsstring>(ScoringFunctionAdaptor rs, const ParticleStatesTable *pst)</argsstring>
+        <name>get_restraint_graph</name>
+        <qualifiedname>IMP::domino::get_restraint_graph</qualifiedname>
+        <param>
+          <type>ScoringFunctionAdaptor</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The restraint graph is formed by having one node per restraint and an edge connecting two restraints if they share input particles. The associated <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> are the set of input particles for the restraint, projected onto ps.</para>
+<para><simplesect kind="note"><para>The graph for the optimized restraints (after temporary application of OptimizeContainers and OptimizeRestraints) is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="75" column="15" declfile="include/IMP/domino/subset_graphs.h" declline="75" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a619c0aea6816fda8b69b08cf5e57876d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref></type>
+        <definition>Slice IMP::domino::get_slice</definition>
+        <argsstring>(Subset outer, Subset inner, const Subsets &amp;excluded)</argsstring>
+        <name>get_slice</name>
+        <qualifiedname>IMP::domino::get_slice</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>outer</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>inner</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a slice for the inner subset if it is not contained in any of the excluded subsets, otherwise return the empty slice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="76" column="14" bodyfile="include/IMP/domino/Slice.h" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a7b094ee7dac304dfc212772818a9ba04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::get_state_clusters</definition>
+        <argsstring>(const Subset &amp;subset, const Assignments &amp;states, ParticleStatesTable *pst, double resolution)</argsstring>
+        <name>get_state_clusters</name>
+        <qualifiedname>IMP::domino::get_state_clusters</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>subset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+<para>Return subset of the passed states which are representative. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The states for each particle is clustered and then the passed states are reduced to only be on the centers of that clustering.</para>
+<para>The XYZ coordinates are used for clustering, there is not currently a nice mechanism to vary this, but it should be figured out. Probably by subclasses statistics::Embedding to statistics::ParticleEmbedding which has a method which takes a particle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/analysis.h" line="29" column="5" declfile="include/IMP/domino/analysis.h" declline="29" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a451bc898770bf9a620fa517ff74d4ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref></type>
+        <definition>Subsets IMP::domino::get_subsets</definition>
+        <argsstring>(const SubsetGraph &amp;g)</argsstring>
+        <name>get_subsets</name>
+        <qualifiedname>IMP::domino::get_subsets</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>Gets all of the <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> of a <ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_graphs.h" line="36" column="11" declfile="include/IMP/domino/subset_graphs.h" declline="36" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1adc940e96eb944fe259a8fba40830a251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::get_union</definition>
+        <argsstring>(const Subset &amp;a, const Subset &amp;b)</argsstring>
+        <name>get_union</name>
+        <qualifiedname>IMP::domino::get_union</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="79" column="15" bodyfile="include/IMP/domino/Subset.h" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a4570cce69f194985e23b710c3b5e18b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::load_leaf_assignments</definition>
+        <argsstring>(const Subset &amp;subset, AssignmentsTable *at, AssignmentContainer *ac)</argsstring>
+        <name>load_leaf_assignments</name>
+        <qualifiedname>IMP::domino::load_leaf_assignments</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>subset</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for a leaf. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/interactive.h" line="35" column="8" declfile="include/IMP/domino/interactive.h" declline="35" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a200c71a273844cc32fd32f6a5eafa0aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::load_merged_assignments</definition>
+        <argsstring>(const Subset &amp;first_subset, AssignmentContainer *first, const Subset &amp;second_subset, AssignmentContainer *second, const SubsetFilterTablesTemp &amp;filters, AssignmentContainer *ret)</argsstring>
+        <name>load_merged_assignments</name>
+        <qualifiedname>IMP::domino::load_merged_assignments</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>first_subset</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>second_subset</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a046c1e9885f4e981e10aefeba6f0e297" kindref="member">SubsetFilterTablesTemp</ref> &amp;</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for an internal node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The passed assignments, the ordering for the children is that of the node indexes for the children. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/interactive.h" line="43" column="8" declfile="include/IMP/domino/interactive.h" declline="43" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a3305fe8f61d81cba57e9f6896024b263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::load_merged_assignments_random_order</definition>
+        <argsstring>(const Subset &amp;first_subset, AssignmentContainer *first, const Subset &amp;second_subset, AssignmentContainer *second, const SubsetFilterTablesTemp &amp;filters, unsigned int maximum_tries, AssignmentContainer *ret)</argsstring>
+        <name>load_merged_assignments_random_order</name>
+        <qualifiedname>IMP::domino::load_merged_assignments_random_order</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>first_subset</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>second_subset</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a046c1e9885f4e981e10aefeba6f0e297" kindref="member">SubsetFilterTablesTemp</ref> &amp;</type>
+          <declname>filters</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maximum_tries</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+<para>Sample from the merged assignments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The passed assignments, the ordering for the children is that of the node indexes for the children.</para>
+<para>It will try maximum_tries times to merge an assignment from the first set with a randomly chosen assignment from the second. Note that duplicate solutions may be present in the output and the output will never be guaranteed to be complete.</para>
+<para><simplesect kind="par"><title>Warning: load_sampled_merged_assignments has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/interactive.h" line="60" column="8" declfile="include/IMP/domino/interactive.h" declline="60" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a419db1b5a46dd7eefe31fd0279087c94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::swap</definition>
+        <argsstring>(Assignment &amp;a, Assignment &amp;b)</argsstring>
+        <name>swap</name>
+        <qualifiedname>IMP::domino::swap</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Assignment.h" line="54" column="14" bodyfile="include/IMP/domino/Assignment.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1adf25d025631b32526e9e794ae0be804a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::swap</definition>
+        <argsstring>(Order &amp;a, Order &amp;b)</argsstring>
+        <name>swap</name>
+        <qualifiedname>IMP::domino::swap</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Order" kindref="compound">Order</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Order" kindref="compound">Order</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="77" column="14" bodyfile="include/IMP/domino/Order.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a52a530f6cadbd362b3c42b9210ef5dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::swap</definition>
+        <argsstring>(Slice &amp;a, Slice &amp;b)</argsstring>
+        <name>swap</name>
+        <qualifiedname>IMP::domino::swap</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="71" column="14" bodyfile="include/IMP/domino/Slice.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1domino_1a517fc7420fdb629c2f09280f36e898d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::swap</definition>
+        <argsstring>(Subset &amp;a, Subset &amp;b)</argsstring>
+        <name>swap</name>
+        <qualifiedname>IMP::domino::swap</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="77" column="14" bodyfile="include/IMP/domino/Subset.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Divide-and-conquer inferential optimization in discrete space. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Traditional optimizers require the data be encoded as a single (or a small number of) scoring function and then move the particles with a variety of random and downhill steps to try to find configurations of the particles which minimize the scoring function used. These sampling processes, in practice, provide no guarantees about whether the true minimal solutions. Since they depend on a scoring function, the set of solutions they do find are sensitive to the relative weights of the terms coming from different types of data, which can be difficult to choose correctly. Finally, the choice of which type of moves to take an when can make a large difference.</para>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md0">
+<title>How Domino is different</title><para>The Domino sampler provides a wider variety of ways in which the data about the system can be encoded as restrictions on the allowed configurations and then enumerates all configurations that meet the restrictions, given sufficient memory/time to represent/store them all. Specifically, in a Domino encoding of a problem, each particle has a discrete set of states that it can be assigned. Data that concerns only a single particle, such as that about a particles absolute location/orientation and can be encoded directly this sampling space. Other data is encoded as filters, which determine whether a particular assignment of discrete states to a subset of the particles is acceptable or not. Most simply, a filter can be a scoring function term (a Restraint) along with an associated maximum value that term is allowed to take. Other filters include ones based on a maximum score for a set of scoring function terms, that eliminate all except one of assignments that are invariant under the permutation of particles which are deemed to be equivalent (eg to only find unique volumes occupied by proteins when sequence information is not used), that eliminate assignments where multiple variables are to the same state (eg to provide cheap excluded volume). There is no need to establish weighting between different types of experimental data.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md1">
+<title>Why Domino works</title><para>Domino can efficiently perform the enumeration by subdividing the particles into possibly overlapping subsets. The set of satisfying assignments for each subset is enumerated independently and then the subsets are repeatedly merged pairwise until only the set of all particles is remaining. A merge step involves first enumerating all consistent assignments of the two subsets being merged (that is, those assignments which agree on the assignment of any shared particles). Then, each such assignment is checked for consistency with all the filters which additionally constrain the newly created subset of particles. Since after each merge only the satisfying assignments for the currently subset are kept, and any satisfying assignment for a merged subset can be generated from satisfying assignments of subsets it was created by merging, at the end, exactly the set of satisfying assignments of the full particles set is generated.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md2">
+<title>Considerations for choosing a merge tree</title><para>Each filters is used to prune the assignments as early in the process as possible, that is, as soon as all the needed particles are first found in the same subset. In general, the earlier in the subset enumeration and merging filters can be applied, the more efficient the enumeration process. We have found that a depth first traversal of the junction tree {ref something} on a sparse subset of the interactions implied by connectivity based restraints (those derived from protein structures, proteomics, cross linking etc) is a good starting point for the merge tree. The junction tree ensures that the set of particles used by each filter occurs together in at least one of the leaf sets. The junction tree also ensures that each particle only is found in a connected subtree, helping limit the creation of assignments which will later be eliminated due to incompatibility during later merges. For further efficiency, each node of the junction tree -derived merge tree is broken down into a linear tree of subsets each containing a single particle. The particles are ordered heuristically, attempting to merge the most constrained particles first.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md3">
+<title>Domino as spatial filtering</title><para>An alternate way to think about the way Domino works is to imagine eliminating parts of the space of all possible assignments based on the filters. Initially we have a n dimensional grid (n is the number of particles), which has m (the number of states for each particles, assuming, for simplicity, they all have the same number) voxels along each dimension. Each n^m voxel in the grid is a possible assignment. Applying filters to a subset of size k involves eliminating an m-k-dimensional line of voxels (orthogonal to the k-dimension subspace of the subset, passing through the eliminated assignment of in the subset space). Each time two subsets of size k are merged, a never seen before 2k-dimensional subspace of solutions is made available that can have filters applied to it. Each such state eliminated by a filter again eliminates a m-2k-dimensional line.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md4">
+<title>Rules of Thumb</title><para>There are some good general rules of thumb for converting data into a problem suitable for a Domino sampler. First, data is only useful in the sampling process in so far as it can be used to accept or discard a configuration of a subset of the particles unconditionally. That is, simply scoring a configuration is not useful one must be able to say that a certain configuration is not worth considering. The restrictions can be relaxed in later runs to find configurations which are less good, so there is nothing to be worried about from having the filters be fine up front.</para>
+<para>Pieces of data which concern only a single particle should be used to determine the discrete set of conformations allowed for that particle. This way, no computation has to be done during sampling for those terms.</para>
+<para>Other data can be incorporated into the sampling process either as restraints with accompanying maximum scores (or sets of restraints with a maximum score), or more directly as filters. The latter can be more efficient, but requires more thought and so the former should be the default.</para>
+<para>The set of data which involve only a few particles each (pair scores, connectivity etc), should be encoded as restraints and used to build the interaction graph (which is then used to build the junction tree and the merge tree). Other data that involves many particles interacting at once or all pairs of particles (eg dope scoring terms, when one can not show that most pairs of particles are never close to one another), can still be used, they just should not be used for the interaction graph.</para>
+<para>The idea of a Table is used in several places in the module. A Table, here, is an object which, for example, knows how to create a an object which can filter the subset states of a particular subset. That is, a <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> knows how to create a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> (via the <ref refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" kindref="member">SubsetFilterTable::get_subset_filter()</ref> ) which can answer queries about whether a particular SubsetState is OK (via the <ref refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" kindref="member">SubsetFilter::get_is_ok()</ref> method). This makes it easy to perform preprocessing to make the <ref refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" kindref="member">SubsetFilter::get_is_ok()</ref> calls faster. The table idea is usedf with <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref>, SubsetStatesTable and <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref>.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1domino_1autotoc_md5">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Daniel Russel, Keren Lasker</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>benmwebb</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">main IMP papers list</ref>. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/domino/analysis.h" line="15" column="14"/>
+  </compounddef>
+</doxygen>

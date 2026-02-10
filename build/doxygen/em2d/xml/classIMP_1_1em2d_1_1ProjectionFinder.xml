@@ -1,0 +1,887 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ProjectionFinder" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::ProjectionFinder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/em2d/ProjectionFinder.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1aec3b971b61d4cd9be1a0afb9acec0ff3" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::coarse_registration_time_</definition>
+        <argsstring></argsstring>
+        <name>coarse_registration_time_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::coarse_registration_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="179" column="30" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a70b72aa2dcb0714f11b451fbf7604229" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectionFinder::fast_optimization_mode_</definition>
+        <argsstring></argsstring>
+        <name>fast_optimization_mode_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::fast_optimization_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="203" column="7" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a835b3dcc9f09dab5035f142e602af5e7" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::fine_registration_time_</definition>
+        <argsstring></argsstring>
+        <name>fine_registration_time_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::fine_registration_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="180" column="7" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a83fcc942eda44e4e08244898c6ec6d43" prot="protected" static="no" mutable="no">
+        <type>MasksManagerPtr</type>
+        <definition>MasksManagerPtr IMP::em2d::ProjectionFinder::masks_manager_</definition>
+        <argsstring></argsstring>
+        <name>masks_manager_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::masks_manager_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classIMP_1_1em2d_1_1MasksManager" kindref="compound">MasksManager</ref> masks_manager_; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="219" column="19" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a7ee2b6296c9414da664080354f4df4d5" prot="protected" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::em2d::ProjectionFinder::model_particles_</definition>
+        <argsstring></argsstring>
+        <name>model_particles_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::model_particles_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="198" column="17" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a662b4f93a9f56824974dd09f4e9dc56f" prot="protected" static="no" mutable="no">
+        <type>Ints</type>
+        <definition>Ints IMP::em2d::ProjectionFinder::n_members_</definition>
+        <argsstring></argsstring>
+        <name>n_members_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::n_members_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="199" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a21981557ead37a1d559dc07adbfef7ab" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::ProjectionFinder::number_of_optimized_projections_</definition>
+        <argsstring></argsstring>
+        <name>number_of_optimized_projections_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::number_of_optimized_projections_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="205" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a83d288f03759e60ec628c4fa148bf5b7" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectionFinder::parameters_setup_</definition>
+        <argsstring></argsstring>
+        <name>parameters_setup_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::parameters_setup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="202" column="23" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1aeb7530db67b53070c23f81e645d2a6aa" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">Em2DRestraintParameters</ref></type>
+        <definition>Em2DRestraintParameters IMP::em2d::ProjectionFinder::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="215" column="27" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a53a95f0726834141c9d5f21a705ac50b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectionFinder::particles_set_</definition>
+        <argsstring></argsstring>
+        <name>particles_set_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::particles_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="202" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1adde9ab5209071e746380d9018495caae" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1em2d_1_1PolarResamplingParameters" kindref="compound">PolarResamplingParameters</ref></type>
+        <definition>PolarResamplingParameters IMP::em2d::ProjectionFinder::polar_params_</definition>
+        <argsstring></argsstring>
+        <name>polar_params_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::polar_params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="213" column="29" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a3035ae7ea99e3275fba4e315b2125726" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::preprocessing_time_</definition>
+        <argsstring></argsstring>
+        <name>preprocessing_time_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::preprocessing_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="179" column="10" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1ae69b481cd409d01c3110357ef874bc97" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+        <definition>em2d::Images IMP::em2d::ProjectionFinder::projections_</definition>
+        <argsstring></argsstring>
+        <name>projections_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::projections_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="196" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1add4162c202b024bd7e985a1c04f12594" prot="protected" static="no" mutable="no">
+        <type>algebra::Vector2Ds</type>
+        <definition>algebra::Vector2Ds IMP::em2d::ProjectionFinder::projections_cog_</definition>
+        <argsstring></argsstring>
+        <name>projections_cog_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::projections_cog_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="212" column="22" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1ac18a63c6773e869ca81b0e568381395d" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; cv::Mat &gt;</type>
+        <definition>std::vector&lt;cv::Mat&gt; IMP::em2d::ProjectionFinder::PROJECTIONS_POLAR_AUTOC_</definition>
+        <argsstring></argsstring>
+        <name>PROJECTIONS_POLAR_AUTOC_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::PROJECTIONS_POLAR_AUTOC_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="210" column="15" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a456fa37674f8d5a71f11022415e4e13c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectionFinder::registration_done_</definition>
+        <argsstring></argsstring>
+        <name>registration_done_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::registration_done_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="202" column="41" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1ab32f8907a2c85187607d23a9ff3f0845" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member">RegistrationResults</ref></type>
+        <definition>RegistrationResults IMP::em2d::ProjectionFinder::registration_results_</definition>
+        <argsstring></argsstring>
+        <name>registration_results_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::registration_results_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="197" column="23" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a1f43ef70ec3bf753c4da7406a0b36a8e" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1ScoreFunction" kindref="compound">ScoreFunction</ref> &gt;</type>
+        <definition>Pointer&lt;ScoreFunction&gt; IMP::em2d::ProjectionFinder::score_function_</definition>
+        <argsstring></argsstring>
+        <name>score_function_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::score_function_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="200" column="11" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1ad0ef6a0d0c86925556169647610da214" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; cv::Mat &gt;</type>
+        <definition>std::vector&lt;cv::Mat&gt; IMP::em2d::ProjectionFinder::SUBJECTS_</definition>
+        <argsstring></argsstring>
+        <name>SUBJECTS_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::SUBJECTS_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="207" column="15" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1afcfb81baf5ac05d42a5d75f203fc2cd1" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+        <definition>em2d::Images IMP::em2d::ProjectionFinder::subjects_</definition>
+        <argsstring></argsstring>
+        <name>subjects_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::subjects_</qualifiedname>
+        <briefdescription>
+<para>Main parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="194" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1af8367363aff2771aa3db22a8e3ada38c" prot="protected" static="no" mutable="no">
+        <type>algebra::Vector2Ds</type>
+        <definition>algebra::Vector2Ds IMP::em2d::ProjectionFinder::subjects_cog_</definition>
+        <argsstring></argsstring>
+        <name>subjects_cog_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::subjects_cog_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="211" column="22" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1abb8df99110cd30151e1477faf67be543" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; cv::Mat &gt;</type>
+        <definition>std::vector&lt;cv::Mat&gt; IMP::em2d::ProjectionFinder::SUBJECTS_POLAR_AUTOC_</definition>
+        <argsstring></argsstring>
+        <name>SUBJECTS_POLAR_AUTOC_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::SUBJECTS_POLAR_AUTOC_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="209" column="15" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionFinder_1a51ee4fd35e4d2df522a50a910ae4416c" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+        <definition>em2d::Images IMP::em2d::ProjectionFinder::variances_</definition>
+        <argsstring></argsstring>
+        <name>variances_</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::variances_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="195" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a94bd0a6dcef8a6a568b1e34a3819cb21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectionFinder::ProjectionFinder</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectionFinder</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::ProjectionFinder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="88" column="3" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a6315df3984dcc0624a171a31d697da27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::ProjectionFinder::~ProjectionFinder</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectionFinder</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::~ProjectionFinder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="176" column="231" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1aecbc29de7d691a79a8eaaff440ad6baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::get_coarse_registration</definition>
+        <argsstring>()</argsstring>
+        <name>get_coarse_registration</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_coarse_registration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coarse registration of all the images using the projections Based in 2D alignments of the images <simplesect kind="note"><para>Given that this registration is based on 2D alignment maximizing the cross correlation, the a better score is the best correlation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="147" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a819d2867f18b5a7eeddc2b596db60478" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::get_coarse_registration_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_coarse_registration_time</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_coarse_registration_time</qualifiedname>
+        <briefdescription>
+<para>Time employed for the coarse registration part. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="163" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a6bf2e86816303b0eb4bd04d0c7cec917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::get_complete_registration</definition>
+        <argsstring>()</argsstring>
+        <name>get_complete_registration</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_complete_registration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs complete registration of projections against the images. This means the coarse registration followed by simplex optimization </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="151" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a6abacb04a0259c1ebd490ea8aeb15f1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::get_fine_registration_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_fine_registration_time</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_fine_registration_time</qualifiedname>
+        <briefdescription>
+<para>Time employed for the fine registration part. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a03f68b5f6e6781ec5f84cde36f416947" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::get_global_score</definition>
+        <argsstring>() const</argsstring>
+        <name>get_global_score</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_global_score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="namespaceIMP_1_1em2d" kindref="compound">em2d</ref> score for a model after the registration performed: coarse or complete. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a6e0e8d0e7cca46945cc9af11c09891be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::ProjectionFinder::get_number_of_projections</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_projections</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_number_of_projections</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="174" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a40d00be1d76c969fb0f4aa8a0131b7ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::ProjectionFinder::get_number_of_subjects</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_subjects</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_number_of_subjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="168" column="16" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a7003ba189aafea834d816cc75584512f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionFinder::get_preprocessing_time</definition>
+        <argsstring>() const</argsstring>
+        <name>get_preprocessing_time</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_preprocessing_time</qualifiedname>
+        <briefdescription>
+<para>Time employed for preprocessing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="160" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a4ff7561eca3b709ebff998191da89bc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member">RegistrationResults</ref></type>
+        <definition>RegistrationResults IMP::em2d::ProjectionFinder::get_registration_results</definition>
+        <argsstring>() const</argsstring>
+        <name>get_registration_results</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_registration_results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recover the registration results. Only works if a registration has been done previously </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="139" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1af5821bbd60e0bc5556790dc11363ba48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::em2d::ProjectionFinder::get_save_match_images</definition>
+        <argsstring>() const</argsstring>
+        <name>get_save_match_images</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_save_match_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="129" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a5e0442d9926814c014f414756e3f1ab1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::ProjectionFinder::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="176" column="34" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a3c99d56acb924c5c38c7044633600320" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::ProjectionFinder::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="176" column="103" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a177b68e1d5180244e3b8f8ada3055c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_fast_mode</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>set_fast_mode</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_fast_mode</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>With this fast mode, only the first number n of best scoring projections during the coarse search are refined. Saves vast times of computation time with some loss of accuracy. Try starting with 1 (risky) or 2, and increase it to get more chances of finding the best projection </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="135" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1af750554814ed2896d3c65bee308e36db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_model_particles</definition>
+        <argsstring>(const ParticlesTemp &amp;ps)</argsstring>
+        <name>set_model_particles</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_model_particles</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+<para>Set the particles where the em2D restraint is applied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="119" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a067222356065f5c9465bca502dce8494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_number_of_class_averages_members</definition>
+        <argsstring>(Ints n_members)</argsstring>
+        <name>set_number_of_class_averages_members</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_number_of_class_averages_members</qualifiedname>
+        <param>
+          <type>Ints</type>
+          <declname>n_members</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="170" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1ae2fd66029152065fd368461492cc6b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_projections</definition>
+        <argsstring>(const em2d::Images &amp;projections)</argsstring>
+        <name>set_projections</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_projections</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref> &amp;</type>
+          <declname>projections</declname>
+        </param>
+        <briefdescription>
+<para>Set the projections of the model to use for initial coarse correlation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="113" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a5d9fe5d8cd056e216f37f8c4dcfbe5b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_save_match_images</definition>
+        <argsstring>(bool x)</argsstring>
+        <name>set_save_match_images</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_save_match_images</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The projections of the model that best match the subject EM images are saved.</para>
+<para>Their name will be: coarse-match-i.spi for coarse registration and fine_match-i.spi for full registration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="127" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a7dd29466d12fc84818bef5ea38d9fd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_subjects</definition>
+        <argsstring>(const em2d::Images &amp;subjects)</argsstring>
+        <name>set_subjects</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_subjects</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref> &amp;</type>
+          <declname>subjects</declname>
+        </param>
+        <briefdescription>
+<para>Set EM images to use as restraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a831a5befa05d173fbfa9d667f5196874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::set_variance_images</definition>
+        <argsstring>(const em2d::Images &amp;variances)</argsstring>
+        <name>set_variance_images</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::set_variance_images</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref> &amp;</type>
+          <declname>variances</declname>
+        </param>
+        <briefdescription>
+<para>Set the projections of the model to use for initial coarse correlation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="116" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1aff42f0cb55360eba23aca76e71cc25fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::setup</definition>
+        <argsstring>(ScoreFunction *score_function, const Em2DRestraintParameters &amp;params)</argsstring>
+        <name>setup</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::setup</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1ScoreFunction" kindref="compound">ScoreFunction</ref> *</type>
+          <declname>score_function</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">Em2DRestraintParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the parameters to generate and match projections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="94" column="8" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="94" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a5e85691363f5c02ad4290eb7fe63e7e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::show</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="157" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1abb1c43a0e5e08947d9c1dd10db5e511c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::do_preprocess_for_fast_coarse_registration</definition>
+        <argsstring>(const cv::Mat &amp;m, algebra::Vector2D &amp;center, cv::Mat &amp;POLAR_AUTOC)</argsstring>
+        <name>do_preprocess_for_fast_coarse_registration</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::do_preprocess_for_fast_coarse_registration</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>algebra::Vector2D &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>POLAR_AUTOC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the weighted centroid and the FFT of the polar-resampled autocorrelation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="190" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a679131a2be9206131be9d89b12457720" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::do_preprocess_projection</definition>
+        <argsstring>(unsigned int j)</argsstring>
+        <name>do_preprocess_projection</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::do_preprocess_projection</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="185" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1a388f284a8d2b21cc3d54d1e54cbb5a63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::do_preprocess_subject</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>do_preprocess_subject</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::do_preprocess_subject</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="186" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionFinder_1af3e664255644a3fd5143c5b7ac8755be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionFinder::get_coarse_registrations_for_subject</definition>
+        <argsstring>(unsigned int i, RegistrationResults &amp;coarse_RRs)</argsstring>
+        <name>get_coarse_registrations_for_subject</name>
+        <qualifiedname>IMP::em2d::ProjectionFinder::get_coarse_registrations_for_subject</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member">RegistrationResults</ref> &amp;</type>
+          <declname>coarse_RRs</declname>
+        </param>
+        <briefdescription>
+<para>Coarse registration for one subject. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionFinder.h" line="182" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class to perform registration of model projections to images. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>IMP::em2d::Em2DRestraintParameters</label>
+        <link refid="classIMP_1_1em2d_1_1Em2DRestraintParameters"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::PolarResamplingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1PolarResamplingParameters"/>
+      </node>
+      <node id="4">
+        <label>IMP::em2d::ProjectingParameters</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectingParameters"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::ProjectionFinder</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectionFinder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>polar_params_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>params_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/ProjectionFinder.h" line="86" column="1" bodyfile="include/IMP/em2d/ProjectionFinder.h" bodystart="86" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1aec3b971b61d4cd9be1a0afb9acec0ff3" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>coarse_registration_time_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1abb1c43a0e5e08947d9c1dd10db5e511c" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>do_preprocess_for_fast_coarse_registration</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a679131a2be9206131be9d89b12457720" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>do_preprocess_projection</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a388f284a8d2b21cc3d54d1e54cbb5a63" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>do_preprocess_subject</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a70b72aa2dcb0714f11b451fbf7604229" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>fast_optimization_mode_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a835b3dcc9f09dab5035f142e602af5e7" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>fine_registration_time_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1aecbc29de7d691a79a8eaaff440ad6baa" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_coarse_registration</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a819d2867f18b5a7eeddc2b596db60478" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_coarse_registration_time</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1af3e664255644a3fd5143c5b7ac8755be" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_coarse_registrations_for_subject</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a6bf2e86816303b0eb4bd04d0c7cec917" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_complete_registration</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a6abacb04a0259c1ebd490ea8aeb15f1a" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_fine_registration_time</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a03f68b5f6e6781ec5f84cde36f416947" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_global_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a6e0e8d0e7cca46945cc9af11c09891be" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_number_of_projections</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a40d00be1d76c969fb0f4aa8a0131b7ba" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_number_of_subjects</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a7003ba189aafea834d816cc75584512f" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_preprocessing_time</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a4ff7561eca3b709ebff998191da89bc6" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_registration_results</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1af5821bbd60e0bc5556790dc11363ba48" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_save_match_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a5e0442d9926814c014f414756e3f1ab1" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a3c99d56acb924c5c38c7044633600320" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a83fcc942eda44e4e08244898c6ec6d43" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>masks_manager_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a7ee2b6296c9414da664080354f4df4d5" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>model_particles_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a662b4f93a9f56824974dd09f4e9dc56f" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>n_members_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a21981557ead37a1d559dc07adbfef7ab" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>number_of_optimized_projections_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a83d288f03759e60ec628c4fa148bf5b7" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>parameters_setup_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1aeb7530db67b53070c23f81e645d2a6aa" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>params_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a53a95f0726834141c9d5f21a705ac50b" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>particles_set_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1adde9ab5209071e746380d9018495caae" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>polar_params_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a3035ae7ea99e3275fba4e315b2125726" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>preprocessing_time_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a94bd0a6dcef8a6a568b1e34a3819cb21" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>ProjectionFinder</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1ae69b481cd409d01c3110357ef874bc97" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>projections_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1add4162c202b024bd7e985a1c04f12594" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>projections_cog_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1ac18a63c6773e869ca81b0e568381395d" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>PROJECTIONS_POLAR_AUTOC_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a456fa37674f8d5a71f11022415e4e13c" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>registration_done_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1ab32f8907a2c85187607d23a9ff3f0845" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>registration_results_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a1f43ef70ec3bf753c4da7406a0b36a8e" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>score_function_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a177b68e1d5180244e3b8f8ada3055c7d" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_fast_mode</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1af750554814ed2896d3c65bee308e36db" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_model_particles</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a067222356065f5c9465bca502dce8494" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_number_of_class_averages_members</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1ae2fd66029152065fd368461492cc6b11" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_projections</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a5d9fe5d8cd056e216f37f8c4dcfbe5b9" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_save_match_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a7dd29466d12fc84818bef5ea38d9fd90" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_subjects</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a831a5befa05d173fbfa9d667f5196874" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>set_variance_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1aff42f0cb55360eba23aca76e71cc25fd" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>setup</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a5e85691363f5c02ad4290eb7fe63e7e3" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1ad0ef6a0d0c86925556169647610da214" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>SUBJECTS_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1afcfb81baf5ac05d42a5d75f203fc2cd1" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>subjects_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1af8367363aff2771aa3db22a8e3ada38c" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>subjects_cog_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1abb8df99110cd30151e1477faf67be543" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>SUBJECTS_POLAR_AUTOC_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a51ee4fd35e4d2df522a50a910ae4416c" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>variances_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionFinder_1a6315df3984dcc0624a171a31d697da27" prot="public" virt="virtual"><scope>IMP::em2d::ProjectionFinder</scope><name>~ProjectionFinder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

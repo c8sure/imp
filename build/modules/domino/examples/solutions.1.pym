@@ -1,0 +1,493 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 3, 3, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 2)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 3)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 3, 1, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 4)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 5)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 3, 3, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 6)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 7)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 1, 1, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 1, 3, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 3, 1, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 1, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 1, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1, 3, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3, 3, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 8)
+data= {}

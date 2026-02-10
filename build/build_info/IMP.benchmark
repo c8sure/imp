@@ -1,0 +1,4 @@
+ok=True
+modules = 'kernel'
+dependencies = 'Boost.System:Boost.Random:Boost.ProgramOptions:Boost.FileSystem:NumPy'
+swig_includes = 'IMP/benchmark/benchmark_macros.h'

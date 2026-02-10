@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/rotamer/pyext/swig.i-in

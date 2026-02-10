@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classbuildxlinks_1_1DockOrder" kind="class" language="Python" prot="public">
+    <compoundname>buildxlinks::DockOrder</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbuildxlinks_1_1DockOrder_1aa2136d213b2505b6c78d864341f7bf15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.DockOrder.get_docking_order</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_docking_order</name>
+        <qualifiedname>buildxlinks.DockOrder.get_docking_order</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>return the order to dock components from the cross links </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="202" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="202" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1DockOrder_1adcf672c60faf02e96273f03a0db5354d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.DockOrder.set_components_and_connections</definition>
+        <argsstring>(self, subunits, edges)</argsstring>
+        <name>set_components_and_connections</name>
+        <qualifiedname>buildxlinks.DockOrder.set_components_and_connections</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>subunits</type>
+          <defname>subunits</defname>
+        </param>
+        <param>
+          <type>edges</type>
+          <defname>edges</defname>
+        </param>
+        <briefdescription>
+<para>Instead of setting the xlink restraints, init the graph directly Example of what to pass with the structure in 3sfd G.add_nodes_from([&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]) G.add_edges_from([(&quot;B&quot;,&quot;C&quot;), (&quot;B&quot;,&quot;A&quot;), (&quot;B&quot;,&quot;D&quot;), (&quot;C&quot;,&quot;D&quot;)]) (&quot;B&quot;,&quot;C&quot;) means that there are cross-links between B and C. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="183" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="183" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1DockOrder_1acd63996e56cfd9db6b95a9ebec4d6c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.DockOrder.set_xlinks</definition>
+        <argsstring>(self, xlinks_dict)</argsstring>
+        <name>set_xlinks</name>
+        <qualifiedname>buildxlinks.DockOrder.set_xlinks</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xlinks_dict</type>
+          <defname>xlinks_dict</defname>
+        </param>
+        <briefdescription>
+<para>Sets the xlinks used for computing the docking order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xlinks_dict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classbuildxlinks_1_1XlinksDict" kindref="compound">XlinksDict</ref> class </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="194" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="194" bodyend="200"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Compute the order of the docking experiments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The order is derived from the cross-linking restraints: 1) The subunit with the highest number of cross-links with others works as the first receptor (A) 2) All the subunits cross-linked with A are docked into A. 3) The next receptor (B) is the subunit that has the highest number of cross-links after A. 4) All the subunits cross-linked to B are docked into B (except A) 5) The procedure is repeated until there are no more cross-links</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/buildxlinks.py" line="166" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="166" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classbuildxlinks_1_1DockOrder_1aa2136d213b2505b6c78d864341f7bf15" prot="public" virt="non-virtual"><scope>buildxlinks::DockOrder</scope><name>get_docking_order</name></member>
+      <member refid="classbuildxlinks_1_1DockOrder_1adcf672c60faf02e96273f03a0db5354d" prot="public" virt="non-virtual"><scope>buildxlinks::DockOrder</scope><name>set_components_and_connections</name></member>
+      <member refid="classbuildxlinks_1_1DockOrder_1acd63996e56cfd9db6b95a9ebec4d6c4d" prot="public" virt="non-virtual"><scope>buildxlinks::DockOrder</scope><name>set_xlinks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

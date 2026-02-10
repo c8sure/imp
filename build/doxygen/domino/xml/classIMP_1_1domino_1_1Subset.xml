@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1Subset" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::Subset</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::ConstVector&lt; IMP::WeakPointer&lt; Particle &gt;, Particle * &gt;</basecompoundref>
+    <includes local="no">IMP/domino/Subset.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1Subset_1a1ec5b833427632204c599423b3292698" prot="private" static="no">
+        <type>ConstVector&lt; WeakPointer&lt; Particle &gt;, Particle * &gt;</type>
+        <definition>typedef ConstVector&lt;WeakPointer&lt;Particle&gt;, Particle *&gt; IMP::domino::Subset::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::Subset::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="35" column="23" bodyfile="include/IMP/domino/Subset.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1a971963027acbb48933a5e2fd9f60f3e9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ParticlesTemp &amp;</type>
+        <definition>static const ParticlesTemp &amp; IMP::domino::Subset::get_sorted</definition>
+        <argsstring>(ParticlesTemp &amp;ps)</argsstring>
+        <name>get_sorted</name>
+        <qualifiedname>IMP::domino::Subset::get_sorted</qualifiedname>
+        <param>
+          <type>ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="36" column="30" bodyfile="include/IMP/domino/Subset.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1af319d2dc0738d2269ef8cde6d83d7bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Subset::Subset</definition>
+        <argsstring>()</argsstring>
+        <name>Subset</name>
+        <qualifiedname>IMP::domino::Subset::Subset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="55" column="3" bodyfile="include/IMP/domino/Subset.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1a2bb9c03148cb537ca42deb6ae50311c1" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Subset::Subset</definition>
+        <argsstring>(ParticlesTemp ps)</argsstring>
+        <name>Subset</name>
+        <qualifiedname>IMP::domino::Subset::Subset</qualifiedname>
+        <param>
+          <type>ParticlesTemp</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a subset from a non-empty list of particles. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="58" column="12" bodyfile="include/IMP/domino/Subset.h" bodystart="58" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1acc03863eaf7cc9df3b262f1335b4372e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::domino::Subset::get_contains</definition>
+        <argsstring>(const Subset &amp;o) const</argsstring>
+        <name>get_contains</name>
+        <qualifiedname>IMP::domino::Subset::get_contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="71" column="8" bodyfile="include/IMP/domino/Subset.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1afb1c4abc4995064ae567b06f21b27ede" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Model *</type>
+        <definition>Model * IMP::domino::Subset::get_model</definition>
+        <argsstring>() const</argsstring>
+        <name>get_model</name>
+        <qualifiedname>IMP::domino::Subset::get_model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="69" column="9" bodyfile="include/IMP/domino/Subset.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Subset_1a512ddd607592632fc207bd5f2d057e72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::domino::Subset::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <qualifiedname>IMP::domino::Subset::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Subset.h" line="70" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represent a subset of the particles being optimized. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Domino acts by dividing the particles being changed into subsets and optimizing the subsets independently. Each subset is represented using a <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> class. These classes, like the <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> classes, simply store a constant list (in this case of particles). The list is stored in sorted order. Their interface is more or less that of a constant vector in C++ or a constant list in Python. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/Subset.h" line="33" column="1" bodyfile="include/IMP/domino/Subset.h" bodystart="34" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1Subset_1acc03863eaf7cc9df3b262f1335b4372e" prot="public" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>get_contains</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1afb1c4abc4995064ae567b06f21b27ede" prot="public" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>get_model</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1a512ddd607592632fc207bd5f2d057e72" prot="public" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>get_name</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1a971963027acbb48933a5e2fd9f60f3e9" prot="private" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>get_sorted</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1a1ec5b833427632204c599423b3292698" prot="private" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1af319d2dc0738d2269ef8cde6d83d7bcb" prot="public" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>Subset</name></member>
+      <member refid="classIMP_1_1domino_1_1Subset_1a2bb9c03148cb537ca42deb6ae50311c1" prot="public" virt="non-virtual"><scope>IMP::domino::Subset</scope><name>Subset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

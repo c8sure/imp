@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::rmf::HierarchyLoadLink::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a917ac74b62f007a237ea22f93a1e02e8" prot="public" static="no" mutable="no">
+        <type>internal::HierarchyLoadBonds</type>
+        <definition>internal::HierarchyLoadBonds IMP::rmf::HierarchyLoadLink::Data::load_bonds</definition>
+        <argsstring></argsstring>
+        <name>load_bonds</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::load_bonds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="55" column="34" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a56c048d01b0d83cf9c8453943c1bc6b7" prot="public" static="no" mutable="no">
+        <type>internal::HierarchyLoadGaussians</type>
+        <definition>internal::HierarchyLoadGaussians IMP::rmf::HierarchyLoadLink::Data::load_gaussians</definition>
+        <argsstring></argsstring>
+        <name>load_gaussians</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::load_gaussians</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="57" column="38" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c63eec7089a378c109649a02e6ed821" prot="public" static="no" mutable="no">
+        <type>internal::HierarchyLoadRigidBodies</type>
+        <definition>internal::HierarchyLoadRigidBodies IMP::rmf::HierarchyLoadLink::Data::load_rigid_bodies</definition>
+        <argsstring></argsstring>
+        <name>load_rigid_bodies</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::load_rigid_bodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="58" column="40" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1afaa63ced50723e7a40e4951e84a154e6" prot="public" static="no" mutable="no">
+        <type>internal::HierarchyLoadStatic</type>
+        <definition>internal::HierarchyLoadStatic IMP::rmf::HierarchyLoadLink::Data::load_static</definition>
+        <argsstring></argsstring>
+        <name>load_static</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::load_static</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="54" column="35" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a58f26cd5cd286dbeac20fcb5f1a194e5" prot="public" static="no" mutable="no">
+        <type>internal::HierarchyLoadXYZs</type>
+        <definition>internal::HierarchyLoadXYZs IMP::rmf::HierarchyLoadLink::Data::load_xyzs</definition>
+        <argsstring></argsstring>
+        <name>load_xyzs</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::load_xyzs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="56" column="33" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c26a823ad51375aa1405f44ecf79ded" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::HierarchyLoadLink::Data::Data</definition>
+        <argsstring>(RMF::FileConstHandle h)</argsstring>
+        <name>Data</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::Data::Data</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="59" column="5" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="59" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/rmf/HierarchyLoadLink.h" line="53" column="3" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="53" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c26a823ad51375aa1405f44ecf79ded" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>Data</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a917ac74b62f007a237ea22f93a1e02e8" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>load_bonds</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a56c048d01b0d83cf9c8453943c1bc6b7" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>load_gaussians</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c63eec7089a378c109649a02e6ed821" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>load_rigid_bodies</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1afaa63ced50723e7a40e4951e84a154e6" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>load_static</name></member>
+      <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a58f26cd5cd286dbeac20fcb5f1a194e5" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink::Data</scope><name>load_xyzs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+# CMake generated Testfile for 
+# Source directory: /home/catherine/imp/modules/atom/benchmark
+# Build directory: /home/catherine/imp/build/modules/atom/benchmark
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(IMP.atom-benchmark_md_charmm.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/atom/benchmark/atom/benchmark_md_charmm" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.atom-benchmark_md_charmm.cpp PROPERTIES  COST "3" LABELS "IMP.atom-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;45;imp_add_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;0;")
+add_test(IMP.atom-benchmark_move_aware.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/atom/benchmark/atom/benchmark_move_aware" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.atom-benchmark_move_aware.cpp PROPERTIES  COST "3" LABELS "IMP.atom-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;45;imp_add_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;0;")
+add_test(IMP.atom-benchmark_pdb.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/atom/benchmark/atom/benchmark_pdb" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.atom-benchmark_pdb.cpp PROPERTIES  COST "3" LABELS "IMP.atom-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;45;imp_add_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;0;")
+add_test(IMP.atom-benchmark_refiners.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/atom/benchmark/atom/benchmark_refiners" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.atom-benchmark_refiners.cpp PROPERTIES  COST "3" LABELS "IMP.atom-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;45;imp_add_tests;/home/catherine/imp/modules/atom/benchmark/CMakeLists.txt;0;")

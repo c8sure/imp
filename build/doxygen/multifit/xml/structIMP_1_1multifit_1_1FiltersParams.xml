@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1FiltersParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::FiltersParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FiltersParams_1a6b98ec4b5fa3baed848011212d0ae39d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FiltersParams::max_num_violated_conn_</definition>
+        <argsstring></argsstring>
+        <name>max_num_violated_conn_</name>
+        <qualifiedname>IMP::multifit::FiltersParams::max_num_violated_conn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="248" column="31" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FiltersParams_1ab88cc39f3d2a4f2bac0c6e8e79af3707" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FiltersParams::max_num_violated_ev_</definition>
+        <argsstring></argsstring>
+        <name>max_num_violated_ev_</name>
+        <qualifiedname>IMP::multifit::FiltersParams::max_num_violated_ev_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="249" column="7" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1FiltersParams_1aabab900d61e58fb1f1267cb8df4bd12f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::FiltersParams::max_num_violated_xlink_</definition>
+        <argsstring></argsstring>
+        <name>max_num_violated_xlink_</name>
+        <qualifiedname>IMP::multifit::FiltersParams::max_num_violated_xlink_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="248" column="7" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1FiltersParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::FiltersParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="251" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FiltersParams_1acd820cbd875be371e2c1a349ad161ebb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FiltersParams::FiltersParams</definition>
+        <argsstring>()</argsstring>
+        <name>FiltersParams</name>
+        <qualifiedname>IMP::multifit::FiltersParams::FiltersParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="232" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FiltersParams_1a1db5e6568b4005785f97f5c5e9dceac9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FiltersParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::FiltersParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="236" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="236" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FiltersParams_1a28ffb3d8582e78868600821ed7cab2aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FiltersParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::FiltersParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="241" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="241" bodyend="245"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1FiltersParams_1ac5c92a95d614dab8249c176762c27cfb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::FiltersParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::FiltersParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="253" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="253" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="230" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="230" bodyend="257"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1a1db5e6568b4005785f97f5c5e9dceac9" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1acd820cbd875be371e2c1a349ad161ebb" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>FiltersParams</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1a6b98ec4b5fa3baed848011212d0ae39d" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>max_num_violated_conn_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1ab88cc39f3d2a4f2bac0c6e8e79af3707" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>max_num_violated_ev_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1aabab900d61e58fb1f1267cb8df4bd12f" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>max_num_violated_xlink_</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1ac5c92a95d614dab8249c176762c27cfb" prot="private" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1FiltersParams_1a28ffb3d8582e78868600821ed7cab2aa" prot="public" virt="non-virtual"><scope>IMP::multifit::FiltersParams</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1DependencyScoreState" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::DependencyScoreState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScoreState</basecompoundref>
+    <includes local="no">IMP/domino/DependencyScoreState.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DependencyScoreState_1ace2e54042967034d4390bb2d8babf458" prot="private" static="no" mutable="no">
+        <type>ContainersTemp</type>
+        <definition>ContainersTemp IMP::domino::DependencyScoreState::inputc_</definition>
+        <argsstring></argsstring>
+        <name>inputc_</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::inputc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="26" column="18" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DependencyScoreState_1abaca9b7972998b6d5901a2e9d58814b3" prot="private" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::DependencyScoreState::inputp_</definition>
+        <argsstring></argsstring>
+        <name>inputp_</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::inputp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="25" column="17" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DependencyScoreState_1ae731eb6180cbec5268fedc8952a04f3a" prot="private" static="no" mutable="no">
+        <type>ContainersTemp</type>
+        <definition>ContainersTemp IMP::domino::DependencyScoreState::outputc_</definition>
+        <argsstring></argsstring>
+        <name>outputc_</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::outputc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="26" column="26" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DependencyScoreState_1acb942d64e66a3fce990f3476472b1b0a" prot="private" static="no" mutable="no">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::DependencyScoreState::outputp_</definition>
+        <argsstring></argsstring>
+        <name>outputp_</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::outputp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="25" column="25" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a7a5d8d31092d6fddb59d066e44a10e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DependencyScoreState::DependencyScoreState</definition>
+        <argsstring>(Model *m)</argsstring>
+        <name>DependencyScoreState</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::DependencyScoreState</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1ae099876ed588e375fae005263d53976b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::DependencyScoreState::~DependencyScoreState</definition>
+        <argsstring>()</argsstring>
+        <name>~DependencyScoreState</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::~DependencyScoreState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="56" column="231" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1ad428a3b460d0b410041af0f6d52bda70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::DependencyScoreState::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="56" column="34" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1acbb8a7b784a27b19b9bcd02c5e25a743" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::DependencyScoreState::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="56" column="103" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a8f2ca42b21e373b97a129d8f8ddf9e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DependencyScoreState::set_input_containers</definition>
+        <argsstring>(const ContainersTemp &amp;pt)</argsstring>
+        <name>set_input_containers</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::set_input_containers</qualifiedname>
+        <param>
+          <type>const ContainersTemp &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="40" column="8" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a09a195a99a2c51b40e139fd4ffd7fb3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DependencyScoreState::set_input_particles</definition>
+        <argsstring>(const ParticlesTemp &amp;pt)</argsstring>
+        <name>set_input_particles</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::set_input_particles</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="30" column="8" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a469015de3f50073d6aa773fdb92b0c7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DependencyScoreState::set_output_containers</definition>
+        <argsstring>(const ContainersTemp &amp;pt)</argsstring>
+        <name>set_output_containers</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::set_output_containers</qualifiedname>
+        <param>
+          <type>const ContainersTemp &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="45" column="8" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1aab35d7027a786fded6cd30ea6b33312e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DependencyScoreState::set_output_particles</definition>
+        <argsstring>(const ParticlesTemp &amp;pt)</argsstring>
+        <name>set_output_particles</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::set_output_particles</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="35" column="8" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="35" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1ac6870a108cba38e70caa3521dbf75647" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::DependencyScoreState::do_after_evaluate</definition>
+        <argsstring>(DerivativeAccumulator *da) override</argsstring>
+        <name>do_after_evaluate</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::do_after_evaluate</qualifiedname>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="53" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a2eceeb32e09a853661205131bae2803c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::DependencyScoreState::do_before_evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>do_before_evaluate</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::do_before_evaluate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="52" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a3cf68c2feb6998bcab1a4c8fa8e8f4a0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::domino::DependencyScoreState::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="54" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DependencyScoreState_1a8de92cb4803f72a9047048cbb90acafa" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::domino::DependencyScoreState::do_get_outputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_outputs</name>
+        <qualifiedname>IMP::domino::DependencyScoreState::do_get_outputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DependencyScoreState.h" line="55" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Add a dependency to the dependency graph. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This score state doesn&apos;t do anything other than add edges to the dependency graph. This can be useful when involved filters are used as they are not included in the dependency graph. This may go away and be replaced by adding dependencies to the <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref>. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/DependencyScoreState.h" line="24" column="1" bodyfile="include/IMP/domino/DependencyScoreState.h" bodystart="24" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a7a5d8d31092d6fddb59d066e44a10e43" prot="public" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>DependencyScoreState</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ac6870a108cba38e70caa3521dbf75647" prot="protected" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>do_after_evaluate</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a2eceeb32e09a853661205131bae2803c" prot="protected" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>do_before_evaluate</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a3cf68c2feb6998bcab1a4c8fa8e8f4a0" prot="protected" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a8de92cb4803f72a9047048cbb90acafa" prot="protected" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>do_get_outputs</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ad428a3b460d0b410041af0f6d52bda70" prot="public" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1acbb8a7b784a27b19b9bcd02c5e25a743" prot="public" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ace2e54042967034d4390bb2d8babf458" prot="private" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>inputc_</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1abaca9b7972998b6d5901a2e9d58814b3" prot="private" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>inputp_</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ae731eb6180cbec5268fedc8952a04f3a" prot="private" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>outputc_</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1acb942d64e66a3fce990f3476472b1b0a" prot="private" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>outputp_</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a8f2ca42b21e373b97a129d8f8ddf9e01" prot="public" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>set_input_containers</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a09a195a99a2c51b40e139fd4ffd7fb3e" prot="public" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>set_input_particles</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1a469015de3f50073d6aa773fdb92b0c7a" prot="public" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>set_output_containers</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1aab35d7027a786fded6cd30ea6b33312e" prot="public" virt="non-virtual"><scope>IMP::domino::DependencyScoreState</scope><name>set_output_particles</name></member>
+      <member refid="classIMP_1_1domino_1_1DependencyScoreState_1ae099876ed588e375fae005263d53976b" prot="public" virt="virtual"><scope>IMP::domino::DependencyScoreState</scope><name>~DependencyScoreState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

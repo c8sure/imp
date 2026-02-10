@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1Order" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::Order</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ConstVector&lt; unsigned int &gt;</basecompoundref>
+    <includes local="no">IMP/domino/Order.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1Order_1aeeac03e6a62b3bff385e5abd69d2e5d2" prot="private" static="no">
+        <type>ConstVector&lt; unsigned int &gt;</type>
+        <definition>typedef ConstVector&lt;unsigned int&gt; IMP::domino::Order::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::Order::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="33" column="23" bodyfile="include/IMP/domino/Order.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1domino_1_1Order_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::domino::Order::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="35" column="16" bodyfile="include/IMP/domino/Order.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1a668b15ba066ed03d1664cffd26c6ccac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::domino::Order::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::domino::Order::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="37" column="19" bodyfile="include/IMP/domino/Order.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1a4f48f99e0aeddce86c2f593c8821f0fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Order::Order</definition>
+        <argsstring>()</argsstring>
+        <name>Order</name>
+        <qualifiedname>IMP::domino::Order::Order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="42" column="3" bodyfile="include/IMP/domino/Order.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1af3c283658a88922d49dea1706bf5dade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Order::Order</definition>
+        <argsstring>(Subset outer, const ParticlesTemp &amp;order)</argsstring>
+        <name>Order</name>
+        <qualifiedname>IMP::domino::Order::Order</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>outer</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1a47a31c910cbfd7d358a7f989552599ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::domino::Order::get_list_ordered</definition>
+        <argsstring>(const Assignment &amp;a) const</argsstring>
+        <name>get_list_ordered</name>
+        <qualifiedname>IMP::domino::Order::get_list_ordered</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="68" column="8" bodyfile="include/IMP/domino/Order.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1ac946a6a84f3645bdd67e29c238a2eebb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class It</type>
+          </param>
+        </templateparamlist>
+        <type>Ints</type>
+        <definition>Ints IMP::domino::Order::get_list_ordered</definition>
+        <argsstring>(It b, It e) const</argsstring>
+        <name>get_list_ordered</name>
+        <qualifiedname>IMP::domino::Order::get_list_ordered</qualifiedname>
+        <param>
+          <type>It</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>It</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="45" column="8" bodyfile="include/IMP/domino/Order.h" bodystart="45" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1a350eb54bade461e96589eb1d1c0c6304" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>Assignment IMP::domino::Order::get_subset_ordered</definition>
+        <argsstring>(const Ints &amp;a) const</argsstring>
+        <name>get_subset_ordered</name>
+        <qualifiedname>IMP::domino::Order::get_subset_ordered</qualifiedname>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="71" column="14" bodyfile="include/IMP/domino/Order.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Order_1a006b09c626ce452f86d6d25f33a01768" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class It</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>Assignment IMP::domino::Order::get_subset_ordered</definition>
+        <argsstring>(It b, It e) const</argsstring>
+        <name>get_subset_ordered</name>
+        <qualifiedname>IMP::domino::Order::get_subset_ordered</qualifiedname>
+        <param>
+          <type>It</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>It</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Order.h" line="58" column="14" bodyfile="include/IMP/domino/Order.h" bodystart="58" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Store a persistent ordering for a subset based on the list. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="return"><para>a list of indexes into s, representing a permutation of the particles in s, so that they are ordered according to all_particles. This order can be used to write s to disk, as the order in s can change between domino runs. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/domino/Order.h" line="32" column="1" bodyfile="include/IMP/domino/Order.h" bodystart="32" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1Order_1ac946a6a84f3645bdd67e29c238a2eebb" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>get_list_ordered</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1a47a31c910cbfd7d358a7f989552599ec" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>get_list_ordered</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1a006b09c626ce452f86d6d25f33a01768" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>get_subset_ordered</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1a350eb54bade461e96589eb1d1c0c6304" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>get_subset_ordered</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1a4f48f99e0aeddce86c2f593c8821f0fe" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>Order</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1af3c283658a88922d49dea1706bf5dade" prot="public" virt="non-virtual"><scope>IMP::domino::Order</scope><name>Order</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1aeeac03e6a62b3bff385e5abd69d2e5d2" prot="private" virt="non-virtual"><scope>IMP::domino::Order</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1Order_1a668b15ba066ed03d1664cffd26c6ccac" prot="private" virt="non-virtual"><scope>IMP::domino::Order</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

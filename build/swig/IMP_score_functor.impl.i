@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/score_functor/pyext/swig.i-in

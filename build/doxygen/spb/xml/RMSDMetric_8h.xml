@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="RMSDMetric_8h" kind="file" language="C++">
+    <compoundname>RMSDMetric.h</compoundname>
+    <includes refid="spb__config_8h" local="no">IMP/spb/spb_config.h</includes>
+    <includes local="no">IMP/statistics/Metric.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>RMSDMetric.h</label>
+        <link refid="RMSDMetric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/statistics/Metric.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1spb_1_1RMSDMetric" prot="public">IMP::spb::RMSDMetric</innerclass>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1spb">IMP::spb</innernamespace>
+    <briefdescription>
+<para>Distance RMSD Metric. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/RMSDMetric.h"/>
+  </compounddef>
+</doxygen>

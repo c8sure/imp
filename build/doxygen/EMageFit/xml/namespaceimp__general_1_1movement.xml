@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceimp__general_1_1movement" kind="namespace" language="Python">
+    <compoundname>imp_general::movement</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="movement_8py_1a51215cea7638c027622bd9bde712d4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.movement.apply_random_transform</definition>
+        <argsstring>(rb, max_trans=100)</argsstring>
+        <name>apply_random_transform</name>
+        <qualifiedname>imp_general.movement.apply_random_transform</qualifiedname>
+        <param>
+          <type>rb</type>
+          <defname>rb</defname>
+        </param>
+        <param>
+          <type>max_trans</type>
+          <defname>max_trans</defname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+<para>Apply a random transformation to the rigid body and change the reference frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/movement.py" line="12" column="1" bodyfile="lib/IMP/EMageFit/imp_general/movement.py" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="movement_8py_1a156ae321294c0de30c93c2138863b4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.movement.apply_transformation_to_hierarchy</definition>
+        <argsstring>(prot, T, fn_write=False)</argsstring>
+        <name>apply_transformation_to_hierarchy</name>
+        <qualifiedname>imp_general.movement.apply_transformation_to_hierarchy</qualifiedname>
+        <param>
+          <type>prot</type>
+          <defname>prot</defname>
+        </param>
+        <param>
+          <type>T</type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>fn_write</type>
+          <defname>fn_write</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>If fn_write is different from False, write to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/movement.py" line="27" column="1" bodyfile="lib/IMP/EMageFit/imp_general/movement.py" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="movement_8py_1adaabbd926cc1f81deefea9557952603c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.movement.get_random_transformation</definition>
+        <argsstring>(max_distance, max_angle, seed=-1)</argsstring>
+        <name>get_random_transformation</name>
+        <qualifiedname>imp_general.movement.get_random_transformation</qualifiedname>
+        <param>
+          <type>max_distance</type>
+          <defname>max_distance</defname>
+        </param>
+        <param>
+          <type>max_angle</type>
+          <defname>max_angle</defname>
+        </param>
+        <param>
+          <type>seed</type>
+          <defname>seed</defname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Return a random transformation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum translation allowed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum rotation angle allowed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If specified, seed for random number generator</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/movement.py" line="42" column="1" bodyfile="lib/IMP/EMageFit/imp_general/movement.py" bodystart="42" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/imp_general/movement.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

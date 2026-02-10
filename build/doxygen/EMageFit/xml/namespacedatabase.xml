@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacedatabase" kind="namespace" language="Python">
+    <compoundname>database</compoundname>
+    <innerclass refid="classdatabase_1_1Database2" prot="public">database::Database2</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="database_8py_1a5c4458a35d19717bbec2abe232d2627a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.get_sorting_indices</definition>
+        <argsstring>(ls)</argsstring>
+        <name>get_sorting_indices</name>
+        <qualifiedname>database.get_sorting_indices</qualifiedname>
+        <param>
+          <type>ls</type>
+          <defname>ls</defname>
+        </param>
+        <briefdescription>
+<para>Return indices that sort the list ls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="357" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="357" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="database_8py_1a80fa2a9c4570650ad93b360cdea05c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.merge_databases</definition>
+        <argsstring>(fns, fn_output, tbl)</argsstring>
+        <name>merge_databases</name>
+        <qualifiedname>database.merge_databases</qualifiedname>
+        <param>
+          <type>fns</type>
+          <defname>fns</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <param>
+          <type>tbl</type>
+          <defname>tbl</defname>
+        </param>
+        <briefdescription>
+<para>Reads a table from a set of database files into a single file Makes sure to reorder all column names if necessary before merging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="364" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="364" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="database_8py_1a285013335a12ad786b19b8eb89c04ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.print_data</definition>
+        <argsstring>(data, delimiter=&apos; &apos;)</argsstring>
+        <name>print_data</name>
+        <qualifiedname>database.print_data</qualifiedname>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>delimiter</type>
+          <defname>delimiter</defname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+<para>Prints the data recovered from a database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="316" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="316" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="database_8py_1abab515bb3a0a1c4985537fd6cd52cb66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>database.write_data</definition>
+        <argsstring>(data, output_file, delimiter=&apos; &apos;)</argsstring>
+        <name>write_data</name>
+        <qualifiedname>database.write_data</qualifiedname>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>output_file</type>
+          <defname>output_file</defname>
+        </param>
+        <param>
+          <type>delimiter</type>
+          <defname>delimiter</defname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+<para>writes data to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The output file is expected to be a python file object</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/database.py" line="323" column="1" bodyfile="lib/IMP/EMageFit/database.py" bodystart="323" bodyend="353"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/database.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacerestraint__cache" kind="namespace" language="Python">
+    <compoundname>restraint_cache</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="restraint__cache_8py_1a8e9bb5c8d407e32b00e6931beee0da74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.alls</definition>
+        <argsstring></argsstring>
+        <name>alls</name>
+        <qualifiedname>restraint_cache.alls</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>(ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="84" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1af689ec2832130bebfa5a3c44feea02d7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>restraint_cache.color</qualifiedname>
+        <initializer>=  IMP.display.get_jet_color(float(i) / (len(order) - 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="46" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a2cb90b4d1486181c78433420bcf15080" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.domino_restraints</definition>
+        <argsstring></argsstring>
+        <name>domino_restraints</name>
+        <qualifiedname>restraint_cache.domino_restraints</qualifiedname>
+        <initializer>=  rc.get_restraints()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="98" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1abcab1c539013225bd8be98f6edfe8752" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.ef</definition>
+        <argsstring></argsstring>
+        <name>ef</name>
+        <qualifiedname>restraint_cache.ef</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="75" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a70eaa8e8152ed85d8000a62c65c017d3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list restraint_cache.eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <qualifiedname>restraint_cache.eps</qualifiedname>
+        <initializer>=  [IMP.core.XYZR.setup_particle(IMP.Particle(m))
+           for i in range(0, 2)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="32" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a482fbefa05451d551b922c453da40ba2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>restraint_cache.g</qualifiedname>
+        <initializer>=  IMP.algebra.DenseFloatGrid3D(
+        resolution, IMP.algebra.get_unit_bounding_box_3d())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="56" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a4bbdc0e7eeb79c17caad7716f4d55f78" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>restraint_cache.h</qualifiedname>
+        <initializer>=  IMP.atom.Hierarchy.setup_particle(IMP.Particle(m))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="42" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a35aba5430ba7f13a5ba080b7df4238e6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>restraint_cache.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="26" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1af0fc67ec52bc2e0f62ea244041ea9933" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list restraint_cache.order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>restraint_cache.order</qualifiedname>
+        <initializer>=  [eps[0]] + ps + [eps[1]]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="40" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a5c8eec05d21236a7a87e1df4bca0ddf3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list restraint_cache.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>restraint_cache.ps</qualifiedname>
+        <initializer>=  [IMP.core.XYZR.setup_particle(IMP.Particle(m))
+          for i in range(0, int(2.0 / resolution))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="30" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1af2875aa45c7b1a24409e78e5f352d4d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>restraint_cache.pst</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="61" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a748d9d93fb47cc96e045487d0b4fb1b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>restraint_cache.r</qualifiedname>
+        <initializer>=  IMP.container.PairsRestraint(
+        IMP.core.HarmonicUpperBoundSphereDistancePairScore(0, 1),
+        IMP.container.ConsecutivePairContainer(m, order))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="49" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a7635844aab8eba5c129cac6f71f0a47e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.rc</definition>
+        <argsstring></argsstring>
+        <name>rc</name>
+        <qualifiedname>restraint_cache.rc</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst, 1000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="68" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a37e81fc2452931a30348dad87c28159f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int restraint_cache.resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>restraint_cache.resolution</qualifiedname>
+        <initializer>=  .5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="23" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a34721b2ec3578a87bba35d30e3627be1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.rmf</definition>
+        <argsstring></argsstring>
+        <name>rmf</name>
+        <qualifiedname>restraint_cache.rmf</qualifiedname>
+        <initializer>=  RMF.create_rmf_file(IMP.create_temporary_file_name(&quot;cache&quot;, &quot;.rmf&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="90" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1acc4676d7818ada5541ee4449388d95e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.rssft</definition>
+        <argsstring></argsstring>
+        <name>rssft</name>
+        <qualifiedname>restraint_cache.rssft</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="78" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1aaf520b5e5405fcd3cc1ec262dece243f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>restraint_cache.s</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m, pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="72" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a6f4d2b5d9008e1715ceb3084b6334948" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <qualifiedname>restraint_cache.states</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(vs)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="62" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1ad4f92d00f2c3c8571e2331c87fa183ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>restraint_cache.sts</definition>
+        <argsstring></argsstring>
+        <name>sts</name>
+        <qualifiedname>restraint_cache.sts</qualifiedname>
+        <initializer>=  s.get_sample_assignments(alls)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="87" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="restraint__cache_8py_1a1e1413cbb8e63f634a73cc6f9c259e9d" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list restraint_cache.vs</definition>
+        <argsstring></argsstring>
+        <name>vs</name>
+        <qualifiedname>restraint_cache.vs</qualifiedname>
+        <initializer>=  [g.get_center(i) for i in g.get_all_indexes()]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/restraint_cache.py" line="59" column="1" bodyfile="examples/domino/restraint_cache.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/restraint_cache.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

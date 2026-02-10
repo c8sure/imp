@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore" kind="class" language="Python" prot="public">
+    <compoundname>optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP.OptimizerState</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a791e3c184fd018e8d25f84b5dea40a5b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.count</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="22" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a0ae8b36235a87b058c0857deaa1a7b05" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore::restraints</definition>
+        <argsstring></argsstring>
+        <name>restraints</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.restraints</qualifiedname>
+        <initializer>=  restraints</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="23" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a992a9a6a8e81cb4227e630739be38f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.__init__</definition>
+        <argsstring>(self, m, restraints)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>restraints</type>
+          <defname>restraints</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="20" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a0dde7de566226b2ec267c97b5f7a6708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.WriteStatisticsOptimizerScore.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="25" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="25" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="18" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="18" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a992a9a6a8e81cb4227e630739be38f4d" prot="public" virt="non-virtual"><scope>optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</scope><name>__init__</name></member>
+      <member refid="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a791e3c184fd018e8d25f84b5dea40a5b" prot="public" virt="non-virtual"><scope>optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</scope><name>count</name></member>
+      <member refid="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a0ae8b36235a87b058c0857deaa1a7b05" prot="public" virt="non-virtual"><scope>optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</scope><name>restraints</name></member>
+      <member refid="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore_1a0dde7de566226b2ec267c97b5f7a6708" prot="public" virt="non-virtual"><scope>optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

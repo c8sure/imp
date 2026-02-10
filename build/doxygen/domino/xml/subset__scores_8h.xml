@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="subset__scores_8h" kind="file" language="C++">
+    <compoundname>subset_scores.h</compoundname>
+    <includes refid="particle__states_8h" local="yes">particle_states.h</includes>
+    <includes refid="Assignment_8h" local="yes">Assignment.h</includes>
+    <includes refid="Subset_8h" local="yes">Subset.h</includes>
+    <includes refid="Slice_8h" local="yes">Slice.h</includes>
+    <includes refid="utility_8h" local="yes">utility.h</includes>
+    <includes local="no">IMP/log.h</includes>
+    <includes local="no">IMP/Object.h</includes>
+    <includes local="no">IMP/cache.h</includes>
+    <includes local="no">IMP/Restraint.h</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includes local="no">RMF/config.h</includes>
+    <includedby refid="assignment__containers_8h" local="yes">assignment_containers.h</includedby>
+    <includedby refid="subset__filters_8h" local="yes">subset_filters.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>subset_scores.h</label>
+        <link refid="subset__scores_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/Object.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/Restraint.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/cache.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/log.h</label>
+      </node>
+      <node id="7">
+        <label>RMF/config.h</label>
+      </node>
+      <node id="6">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1ApproximatelyEqual" prot="private">IMP::domino::RestraintCache::ApproximatelyEqual</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1Key" prot="private">IMP::domino::RestraintCache::Key</innerclass>
+    <innerclass refid="classIMP_1_1domino_1_1RestraintCache" prot="public">IMP::domino::RestraintCache</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintData" prot="private">IMP::domino::RestraintCache::RestraintData</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData" prot="private">IMP::domino::RestraintCache::RestraintSetData</innerclass>
+    <innerclass refid="structIMP_1_1domino_1_1RestraintCache_1_1SetData" prot="private">IMP::domino::RestraintCache::SetData</innerclass>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP::domino</innernamespace>
+    <briefdescription>
+<para>A Bayesian inference-based sampler. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1rmf" kindref="compound" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_scores.h"/>
+  </compounddef>
+</doxygen>

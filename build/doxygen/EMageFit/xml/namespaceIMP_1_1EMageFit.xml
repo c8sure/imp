@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1EMageFit" kind="namespace" language="Python">
+    <compoundname>IMP::EMageFit</compoundname>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1argminmax">IMP::EMageFit::argminmax</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1buildxlinks">IMP::EMageFit::buildxlinks</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1csv__related">IMP::EMageFit::csv_related</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1database">IMP::EMageFit::database</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1domino__model">IMP::EMageFit::domino_model</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1imp__general">IMP::EMageFit::imp_general</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1monte__carlo">IMP::EMageFit::monte_carlo</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1restraints">IMP::EMageFit::restraints</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1sampling">IMP::EMageFit::sampling</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1solutions__io">IMP::EMageFit::solutions_io</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1EMageFit_1_1utility">IMP::EMageFit::utility</innernamespace>
+    <briefdescription>
+<para>Build assembly models consistent with EM images (class averages). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceIMP_1_1EMageFit" kindref="compound">EMageFit</ref> is an application to build models of macromolecular assemblies using restraints from EM images (class averages).</para>
+<para>Apart from EM images, the method relies on other types of restraints:<itemizedlist>
+<listitem><para>Maximum distance restraints imposing a maximum distance between a pair of residues, as derived from cross-linking experiments. You can of course impose maximum distance between any part of the complex. As shown in the paper, this type of restraint is required to accurately determine the orientation between the subunits of an assembly.</para>
+</listitem><listitem><para>Proximity restraints forcing a pair of subunits to be within a certain distance, suitable for proteomics data.</para>
+</listitem><listitem><para>Excluded volume restraints preventing the components of the assembly from interpenetrating.</para>
+</listitem><listitem><para>Geometric complementarity restraints favoring large contact surfaces between interacting subunits. These restraints can be somewhat useful if the subunits of the assembly are expected to have large contact surfaces. Among all of the restraints considered here, they are the least useful.</para>
+</listitem></itemizedlist>
+</para>
+<para><ref refid="namespaceIMP_1_1EMageFit" kindref="compound">EMageFit</ref> samples for good conformations of the macromolecular assembly using multiple molecular docking (optional, but it can be very useful), Simulated Annealing Monte Carlo optimization, and sampling with the discrete optimizer DOMINO. It is also straightforward to incorporate other restraints to the method.</para>
+<para>If available, <ref refid="namespaceIMP_1_1EMageFit" kindref="compound">EMageFit</ref> will use the docking program <ulink url="http://hex.loria.fr/">HEXDOCK</ulink> to do docking between subunits that are related by cross-links. But it is worth mentioning that <ref refid="namespaceIMP_1_1EMageFit" kindref="compound">EMageFit</ref> can also work with any other docking program, or simply using the cross-linking restraints and no docking at all.</para>
+<para>More detail on the functioning of <ref refid="namespaceIMP_1_1EMageFit" kindref="compound">EMageFit</ref> can be found on the <ref refid="emagefit_protocol" kindref="compound">protocol page</ref>, and many of the scripts and utilities are documented on the <ref refid="emagefit_scripts" kindref="compound">scripts page</ref>.</para>
+<para><emphasis>Examples</emphasis>:<itemizedlist>
+<listitem><para>Modeling of 3sfd</para>
+</listitem></itemizedlist>
+</para>
+<sect1 id="namespaceIMP_1_1EMageFit_1autotoc_md0">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Javier Velázquez-Muriel</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>benmwebb</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/gpl.html">GPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>Javier A. Velázquez-Muriel, Keren Lasker, Daniel Russel, Jeremy Phillips, Benjamin M. Webb, Dina Schneidman, Andrej Sali, <ldquo/>Assembly of macromolecular complexes by satisfaction of spatial restraints from electron microscopy images<rdquo/>, <emphasis>Proc Natl Acad Sci USA 109(46), 18821-18826</emphasis>, 2012. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/catherine/imp/build/doxygen/generated/IMP_EMageFit.dox" line="1" column="1"/>
+  </compounddef>
+</doxygen>

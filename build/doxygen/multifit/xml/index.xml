@@ -1,0 +1,1091 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering" kind="class"><name>IMP::multifit::cluster::AlignmentClustering</name>
+    <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a5408d179e1227c139c6a09be0321f675" kind="function"><name>do_clustering</name></member>
+    <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1a54ef15cc650fa190ca079370bb71296d" kind="function"><name>get_cc</name></member>
+    <member refid="classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering_1acabc2215397c67036b868af293376489" kind="function"><name>get_placement_score_from_coordinates</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1AlignmentParams" kind="class"><name>IMP::multifit::AlignmentParams</name>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1af234849bcc182548342dfeafa981f9a4" kind="variable"><name>complementarity_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a4fbe48b8e0fb6eca3ea95daf9beaa057" kind="variable"><name>conn_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1aee9557331d19e5eb910a60ff4d64751c" kind="variable"><name>domino_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1adde646e526b6bb3cf2c04ee3152f9f81" kind="variable"><name>ev_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a59571902c3cc113845cab734c8e6e472" kind="variable"><name>filters_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a00d90301ec94ad17c9830c51f56936a3" kind="variable"><name>fitting_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a9c8f3663d9fb3037778857f52611e23f" kind="variable"><name>fragments_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a3f0561645bb33432c605eac01f3f974a" kind="variable"><name>rog_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a55e61c5f372b9412ff91278425b3c5fa" kind="variable"><name>xlink_params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1abe817c5d58884d45d89566697d823060" kind="function"><name>AlignmentParams</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1ac27cfc7c2cdf563be71f9b11c2e14e36" kind="function"><name>AlignmentParams</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a8668739ad8f1436943f362b07118c7e1" kind="function"><name>get_complementarity_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a41c6c3f251f9fcb785affd6ac9998329" kind="function"><name>get_connectivity_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a14a0d809c037805de07ba3edda6a5795" kind="function"><name>get_domino_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a41f5b713c26b531ba79f82b2c681e352" kind="function"><name>get_ev_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1abf0485ab323ff370e1be0491616eb65f" kind="function"><name>get_filters_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a488cc9921fb1605767f64f2a112b6992" kind="function"><name>get_fitting_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a60fecc4a21633c935a44019cac82790f" kind="function"><name>get_fragments_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a98c0a6d755aaf69e1ec34f45742e00b2" kind="function"><name>get_rog_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a0622b72f23a94b0577a03b1ad13c72d6" kind="function"><name>get_xlink_params</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1a0c23909ebbcac8e48a15042a0675dc8b" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1multifit_1_1AlignmentParams_1af333b0bc99ae281770f6e68f7d2dbe54" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1AnchorsData" kind="class"><name>IMP::multifit::AnchorsData</name>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1aa4a4269c1ba6f0dc38a6dc920787a289" kind="variable"><name>consider_point_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ace703653a5d3fac4f250600c42c2e661" kind="variable"><name>edges_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ae659a684de59a6bfc8d437b77325a7f2" kind="variable"><name>points_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ae286ebd132d10f29db030b0ada03dcd1" kind="variable"><name>secondary_structure_ps_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad4a8c68c96d969f7b90231f7d175b1b1" kind="function"><name>AnchorsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a35d9e6563e86d85d093d6bd4f945a5a5" kind="function"><name>AnchorsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a8de5331ba44eac00da2ab723976c6416" kind="function"><name>get_is_point_considered</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a33a1040d80714ef4232087cbb7eda894" kind="function"><name>get_number_of_edges</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a5d660fa05f3d78ae5735f3d0250a9280" kind="function"><name>get_number_of_points</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad0ab430d781b9d0cd4663dec6090a7d4" kind="function"><name>get_secondary_structure_is_set</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a2e8267968dc824ee66725e1939e1d516" kind="function"><name>get_secondary_structure_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1a1e5788b64c43c265b0a7d320332cedab" kind="function"><name>remove_edges_for_node</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1aa26fd429b4e9224d656c5d8936306967" kind="function"><name>set_secondary_structure_probabilities</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1ad199d93f2865c7448b8d28d1663c9efd" kind="function"><name>setup_secondary_structure</name></member>
+    <member refid="classIMP_1_1multifit_1_1AnchorsData_1aecc2424f2f2f869bedfbe01240f4ebb9" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1AssemblyHeader" kind="class"><name>IMP::multifit::AssemblyHeader</name>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ad29c182851f7b0fbc00296d3b8be6975" kind="variable"><name>coarse_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a93ce5e4966999bee9afa2095e8c93944" kind="variable"><name>coarse_over_sampled_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a6bc0d117614928306779cfce1b691710" kind="variable"><name>dens_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ab737b34de972d90335e0324688543b34" kind="variable"><name>fine_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a30bbba8a357f6cbc894793a3fad88548" kind="variable"><name>fine_over_sampled_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ad5d3a976a4e0df4afbf310f3d3187f55" kind="variable"><name>origin_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1afc0e716bf06065707b6e1e76da3464be" kind="variable"><name>resolution_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1aad92d2d3ef158a848fa9ba8b77f1bca7" kind="variable"><name>spacing_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a4506d37feb055dee769040e68a29d5c1" kind="variable"><name>threshold_</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1aae46c5cee094ac5d24152a4600584ba7" kind="function"><name>AssemblyHeader</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ac495d8bdd0c3a5055344cdfbda24e348" kind="function"><name>~AssemblyHeader</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ab26173258aa9b8cbf3b1a6417d2de26a" kind="function"><name>get_coarse_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a554479b7c92e747ef5668c3120b9ca33" kind="function"><name>get_coarse_over_sampled_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a614797b1b77f9f5b361f735619525789" kind="function"><name>get_dens_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ab689c565049f511fdfbdfafad90eaa31" kind="function"><name>get_fine_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1afde8f3328e6a34cd7757034496791551" kind="function"><name>get_fine_over_sampled_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1af91dd80207fe2539c17903c982f116e4" kind="function"><name>get_origin</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a2ce2507beef3be3ab963619204164178" kind="function"><name>get_resolution</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a612745d4f94bc8b762990b58be276f2b" kind="function"><name>get_spacing</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a11eb1b9bc8a3ee29913b45e92ef5b73a" kind="function"><name>get_threshold</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1abbc1431906cd265e1e03eeffa64c8cf9" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ab182e67eb0f992e5a81fa41bbc7e8643" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1aaa94d81eebc3c9f584ded58a4616e2cc" kind="function"><name>set_coarse_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1ae1a12a52e48c4055037c120717f8881c" kind="function"><name>set_coarse_over_sampled_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a74474ef6f0421a2ec0d17980954bdcc6" kind="function"><name>set_dens_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1af1ace75aa2772da7cec62506bf16df01" kind="function"><name>set_fine_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a349d4c07f144d2617ea8f2b79280ea17" kind="function"><name>set_fine_over_sampled_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a149d094e7336923ac9fdbc50ed96b826" kind="function"><name>set_origin</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a6461dff6026bbc54f261193059d80e59" kind="function"><name>set_resolution</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a3a9378689a931b70abf1672447a6d4ad" kind="function"><name>set_spacing</name></member>
+    <member refid="classIMP_1_1multifit_1_1AssemblyHeader_1a421838677fb527d765e2b4af3a081f1f" kind="function"><name>set_threshold</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1transforms_1_1ChimeraFormatter" kind="class"><name>IMP::multifit::transforms::ChimeraFormatter</name>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1ComplementarityParams" kind="struct"><name>IMP::multifit::ComplementarityParams</name>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a75dc3306eecbb3f12de3ad40b30667f6" kind="variable"><name>boundary_coef_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1af468aaca4a16158438dc6371d2b187af" kind="variable"><name>comp_coef_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a5aca939ea4450aff111139ab274d200c" kind="variable"><name>interior_layer_thickness_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a0592d5ac981326b4abdc2183c752a2fc" kind="variable"><name>max_penetration_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1adb83c5b548544373102c021a214629d3" kind="variable"><name>max_score_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a7dd160a639f69b1f32c1ec0bf37fb7a4" kind="variable"><name>penetration_coef_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a046e59b6c5d19f3149b973037c2e7d66" kind="function"><name>ComplementarityParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1aa48ac2c4cd4cf572506a4969a91b64a7" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1aefcd7cf32954a480b8be31694d5a1f88" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1ComplementarityParams_1a1bc0f36ed3b029440f525bf3b646fa1e" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ComplementarityRestraint" kind="class"><name>IMP::multifit::ComplementarityRestraint</name>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a2c867dd22d4353e3de5fb058362d7cc9" kind="typedef"><name>GridObject</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4625d64d6e168a6e45474e968b04d218" kind="typedef"><name>GridPair</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a96185fb5ef5506d10f049d05e39eff7a" kind="variable"><name>a_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa1ebeb669c4b4e4efc208a9c4948567a" kind="variable"><name>b_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aecc7f4c65e8e4986dde0e72f762125f1" kind="variable"><name>boundary_coef_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a33add92d0a07e3ef2adfa9cbb0cfa6b1" kind="variable"><name>complementarity_coef_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aa9906158feaf5a6a9afed5cd497c52cd" kind="variable"><name>complementarity_thickness_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af77a24306b18cbf3e7764ed13289356b" kind="variable"><name>complementarity_value_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a8f1c499232bd504d6e2c831ab8aeb9e8" kind="variable"><name>interior_thickness_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a137a691a6166dc28b3835f1c0ac7c57b" kind="variable"><name>maximum_penetration_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a5b319d8ee80b63f319b4dc68c62fd4d2" kind="variable"><name>maximum_penetration_score_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a50a5ee05d57cf7509a5f62f8aaaccef6" kind="variable"><name>maximum_separation_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a74801e7a2f95ed27769b392944e98b90" kind="variable"><name>ok_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4a634da16e0a9a1a98f22689fb7137be" kind="variable"><name>penetration_coef_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9e5f9bfc9b6eef3d607838d07220cc0e" kind="variable"><name>rba_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ac6ab5fbd43e51a000163770f006b932b" kind="variable"><name>rbb_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aafac9ccb60aa04ee67ba11609bd004d5" kind="variable"><name>voxel_size_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a37d184825a954eb3580697ff662d29ed" kind="function"><name>ComplementarityRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af7d46c7bd5fe85b93f3d2bdc71a25b87" kind="function"><name>~ComplementarityRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ae26e624e20723cd439633fb012880a3b" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ab99fec8290126b70109965692ada5879" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3fb871bbb061e460881096b1864139a8" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a4f57e73a4d0b01fdf3f987b7d3dffa25" kind="function"><name>get_voxel_size</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a27d2804cdd56909b2588535dbd00f095" kind="function"><name>set_boundary_coefficient</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3e9518671cf97900ca6aec1e6e1b9e6a" kind="function"><name>set_complementarity_coefficient</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9f77d866de59965ead8ce1626ffa4d52" kind="function"><name>set_complementarity_thickness</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1ad5cf5dc29719b19a9deb7cb3504c6250" kind="function"><name>set_complementarity_value</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a1172757f971a296631e3ec15b39df6a9" kind="function"><name>set_interior_layer_thickness</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a865805a86d84f35935fc2115b0feb075" kind="function"><name>set_maximum_penetration</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af73ad08df0acb0c0d7fdbc415c4d79f1" kind="function"><name>set_maximum_penetration_score</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a882c153d956b972f12180cf0af3a15c6" kind="function"><name>set_maximum_separation</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1af1f5f93747777705e02b93874a2e55c4" kind="function"><name>set_penetration_coefficient</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a9c7331674e24e5874371f4966a6f2cbd" kind="function"><name>unprotected_evaluate</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a3dba3b7a1925a2a199e12cbfe707d5f4" kind="function"><name>get_grid</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1a6d96995f818a8ec4c6b7de87fd251c89" kind="function"><name>get_grid_object</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComplementarityRestraint_1aac4c550657ba4b18d248a3e09e118d85" kind="function"><name>update_voxel</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ComponentHeader" kind="class"><name>IMP::multifit::ComponentHeader</name>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ac32b9fd7f8463bff8d4d5f9f0a3cf29a" kind="variable"><name>filename_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a5ec75bcaaca73506440e3946c5fbb4b4" kind="variable"><name>name_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a5c2bcf176f32ebe8fd0ef6247e02daae" kind="variable"><name>num_ap_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a2287c136c3102ab8ad66cf1542c43cbf" kind="variable"><name>num_fine_ap_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a660a6c3d12359076b584546e2d7bbada" kind="variable"><name>pdb_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a16394e571bcf943133b96b68ed8cfadf" kind="variable"><name>pdb_fine_ap_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a56dfc44cfff83b3b01454a1964855d59" kind="variable"><name>reference_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a34da55d379a71a37fc12ceb6f494ec0c" kind="variable"><name>surface_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a497ef533895e7edb02f9579ea11ffe78" kind="variable"><name>transformations_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a6363ab1941f7ccff19cb482166eb80f5" kind="function"><name>ComponentHeader</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ab7ebcfeee9818933b582d3b96622305a" kind="function"><name>~ComponentHeader</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a9b3fda5910321592da1dcc35ebaf7ed1" kind="function"><name>get_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1afe8b4aab6eb062f56c81f0573f3b913e" kind="function"><name>get_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a03b8b65d982eab72dbcd298622e7e080" kind="function"><name>get_num_ap</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a921306c69d6f2a1cee02e8fa4e3da959" kind="function"><name>get_num_fine_ap</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a0eeb74d98567db62250fb1643f8a7c2c" kind="function"><name>get_reference_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ac173449417ec5d316568a91acdb4f1b9" kind="function"><name>get_surface_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1aa828dbdd49baf05642d509664c66bafd" kind="function"><name>get_transformations_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a35044345946fcaea31342a679cbe2450" kind="function"><name>get_txt_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1aa8bea18f4afe54f3d630f47d37f7643c" kind="function"><name>get_txt_fine_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a64f9c2144adceda064308565f4787983" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a81aced1ad9ac945c66d954e0c0be71e7" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a3177e09dc25177314957f401c372ba64" kind="function"><name>set_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad68196ccee1a2cb456aadd5f0fe349bb" kind="function"><name>set_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ae49277761fb9a46977978d4da08eebe4" kind="function"><name>set_num_ap</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad21a41254c90dd226e051efc50481be9" kind="function"><name>set_num_fine_ap</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a8faadd8b23c04c081b8b48d46a99018a" kind="function"><name>set_reference_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a15b19e906421a316ba1ab597280264a9" kind="function"><name>set_surface_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1ad24e3d3ba6ad51c5e2ab591eb4f4c73c" kind="function"><name>set_transformations_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a7bed0f99f5418b8f14dae4b6fc09dbe3" kind="function"><name>set_txt_ap_fn</name></member>
+    <member refid="classIMP_1_1multifit_1_1ComponentHeader_1a794866ea9cee6565f13f970e731a504b" kind="function"><name>set_txt_fine_ap_fn</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1ConnectivityParams" kind="struct"><name>IMP::multifit::ConnectivityParams</name>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1ad5666ce1ff7a68612d1ed0eb79415080" kind="variable"><name>k_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a2472c2a0fe91413055fd7755d4d98c3b" kind="variable"><name>max_conn_rest_val_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a6272b7026c11cec11332979f87b506b2" kind="variable"><name>upper_bound_</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a2ba0a501e6eb4d3c57f4674bb990e39f" kind="function"><name>ConnectivityParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1afaa555980cb8349e11f6fb2ba34ea52c" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1a454cf677d708199d187fe177c4f933e1" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1ConnectivityParams_1aee0eb43eef665ed5d7c164d973733d92" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1DataPointsAssignment" kind="class"><name>IMP::multifit::DataPointsAssignment</name>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a69ae682f294fc852bddd44084d6579a3" kind="variable"><name>cluster_engine_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a5d23ba26a8e8321303515b9570a8e2da" kind="variable"><name>cluster_sets_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a2b9c6fb29f1fc8745c5641869259c5d9" kind="variable"><name>data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae4878ffd212a7a2e341598afd64514ca" kind="variable"><name>edges_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a7c0a9d31379d14eecb1d17454e970b19" kind="variable"><name>edges_map_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae5b2f7f031789d26990b47eb426a9cf4" kind="function"><name>DataPointsAssignment</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a71a755f4acc98df8ed7b39462c769861" kind="function"><name>~DataPointsAssignment</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a740c4f873568770ab45bad6265c4d538" kind="function"><name>get_centers</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a954cde97a4a32d198ba37c4ba2bc8fda" kind="function"><name>get_cluster_engine</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1ae8ea2f5508b52e1d6ad38a3b76934cf4" kind="function"><name>get_cluster_vectors</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a8e266c06110b99483645273c47fee23c" kind="function"><name>get_cluster_xyz</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a130f7823f7419fbae5350dc1a2542345" kind="function"><name>get_edges</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1adedcc679f4ec71472863dfb8fa7d6609" kind="function"><name>get_number_of_clusters</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a3a2f77c83bf68e5ab000ff5afc4ed2d0" kind="function"><name>connect_clusters</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a5b457c30e71c2464f908a2521b52eaa5" kind="function"><name>set_cluster</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a2bdbb3864efa417fb9eab0cf93a235e9" kind="function"><name>set_clusters</name></member>
+    <member refid="classIMP_1_1multifit_1_1DataPointsAssignment_1a95fa5f876eb9649ea34697718677b278" kind="function"><name>set_edges</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1DensityDataPoints" kind="class"><name>IMP::multifit::DensityDataPoints</name>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a4c0ba4116c374db38fa557ea8141b5fd" kind="variable"><name>dens_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a15af58a33484c2fa122c5612226f1b9d" kind="variable"><name>max_value_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aee4960612f7ff23cd2070baac16a588b" kind="variable"><name>min_value_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aec19d9352a2bcdbe8865011b78450968" kind="variable"><name>threshold_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1aef54339a0d8c06ededf80addc49d46e2" kind="function"><name>DensityDataPoints</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a51782d49c5e98b159037c274f4e0e99c" kind="function"><name>DensityDataPoints</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ad53d230c42325cb231d18fc0e8ce76c0" kind="function"><name>~DensityDataPoints</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ade03c94817cc76ac044d66fed31fed6b" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a8e71fc485fa957575c42e6001a91548b" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a8c0fe5b7e465a05f80e381f856a8f77e" kind="function"><name>sample</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a15ca4a605fee7b34441f1699f701a845" kind="function"><name>populate_data</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a7ee7bb1085f191fa2210ad31fb5ffa4c" kind="function"><name>set_density</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1ab0e076ff29e061cafed9b70b181b089c" kind="function"><name>set_density</name></member>
+    <member refid="classIMP_1_1multifit_1_1DensityDataPoints_1a468ce94846850582636ae77d3c022176" kind="function"><name>set_max_min_density_values</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1transforms_1_1DockRefFormatter" kind="class"><name>IMP::multifit::transforms::DockRefFormatter</name>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1DominoParams" kind="struct"><name>IMP::multifit::DominoParams</name>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1a47ff49101d6fa1ddefee19bacee3a442" kind="variable"><name>cache_size_</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1af4c96aaff6b67bfd9749209a069b6e5d" kind="variable"><name>heap_size_</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1a0347ee2a682cf3ea790eb58cede387e9" kind="variable"><name>max_anchor_penetration_</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1a7ec4df61e2cd1023fdf19f768adf6ec6" kind="variable"><name>max_num_states_for_subset_</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1ac03bf317abd21f05476923474b49c039" kind="variable"><name>max_value_threshold_</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1ae7cd6cefab2010ca0a79ddcffdb7cb69" kind="function"><name>DominoParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1a0de2080fd2f4cb65859ef6ca2720863e" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1aa57897972fe1da5ed0ee525bbe2d8a3c" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1DominoParams_1aef695955d8d654ca48a4af464607f8e1" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1DummyRestraint" kind="class"><name>IMP::multifit::DummyRestraint</name>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a31b2bf8169cbc2ca4ce07aace413ed97" kind="variable"><name>p1_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a16c662d39a05fbcf9f20fc52a1d3b9f3" kind="variable"><name>p2_</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1ac1b4e09d329595adea38a845ec741ed6" kind="function"><name>DummyRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1af1f487bc8a61e22bdcfe9621d27b86ad" kind="function"><name>~DummyRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1ad3a0387c86e2f83fcab3985e9a58a033" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a0947501259bf41c1d2c5ed2da4152d7d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1aae8c8ee56232b6bd0d7588e441eef333" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1DummyRestraint_1a31afcd6930599e78a4798ad4918c54d7" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1Ensemble" kind="class"><name>IMP::multifit::Ensemble</name>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a42a01db32defa7263b21ef80a8b73d5e" kind="variable"><name>fits_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a0d17a1222d257620e1156009ff34ae2d" kind="variable"><name>mapping_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1abcd5cd61f5fd237dbe26276bd0405796" kind="variable"><name>mhs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1acdccd91ffb1cd470abecc5eb7a02f88e" kind="variable"><name>orig_rf_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a8e46850ff0e42ad5dca8cb2427ae2e3f" kind="variable"><name>rbs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a875ab6195f01f1a7608a000aa89df336" kind="variable"><name>sd_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a244baa352fc017439fc5d86ddc96ee2d" kind="variable"><name>xyz_</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1ac3c46ee809eda56b27ed47c510d6b70b" kind="function"><name>Ensemble</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a3f19c9ad72ae71ea0210bb22154c1eb0" kind="function"><name>~Ensemble</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1aaccff3f8521198b49310efcaf86f5ea9" kind="function"><name>add_component_and_fits</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a79b54491052f8514a4782eab5c9592d0" kind="function"><name>get_molecules</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1aa827725129407831e916b4cefdcfb7d2" kind="function"><name>get_rigid_bodies</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a800b1ebb84ae8bc91f1aaa76bb197978" kind="function"><name>get_rmsd</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a8050bc468340392b27ca0a34ca6c7d9d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a5a02b2e14f7be4f3b790040d17db2477" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1a63d760baee6c3c703f9ee51a9cab91b5" kind="function"><name>load_combination</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1ab548ecd7cbd42c2edc976c73f8b0d778" kind="function"><name>score_by_restraints</name></member>
+    <member refid="classIMP_1_1multifit_1_1Ensemble_1ac3113a6291dd0edae1612d3f781606c0" kind="function"><name>unload_combination</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1EVParams" kind="struct"><name>IMP::multifit::EVParams</name>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a50b21216bd3fa8947e56978d1f0ccdb5" kind="variable"><name>allowed_percentage_of_bad_pairs_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a762779e02a37f2bb782d5e9cea6f0699" kind="variable"><name>hlb_k_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1ae21928febe06591256d42b7754a885ae" kind="variable"><name>hlb_mean_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a644c2a922358f559bf4e2cb7a982d632" kind="variable"><name>maximum_ev_score_for_pair_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1abc46de794fc03e5bc884ade1fd386724" kind="variable"><name>pair_distance_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1ac2f48f8c22783ec16498bf06a550fbfa" kind="variable"><name>pair_slack_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a2f7982f1c075f9cb4357c4bc28dc1d08" kind="variable"><name>scoring_mode_</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a744096f49ac206f05a017972104da958" kind="function"><name>EVParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a0f3dd9bbe2d536b217a000cf1fc83dbf" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1a42bdb83b8f444e4bb42daf9a8665e0e0" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1EVParams_1ad0cc42af6995ee9914b845197957f6a5" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1FFTFitting" kind="class"><name>IMP::multifit::FFTFitting</name>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a219ce1447901c5e07e307272a5d21345" kind="variable"><name>asmb_norm_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aabb824cdadbf5fee5163103f099922ab" kind="variable"><name>best_fits_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a9f8802530728193f986c00ad670138e0" kind="variable"><name>best_trans_per_rot_log_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1af7aeda5f915a48828c99a07107d32d90" kind="variable"><name>cen_trans_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a41710d7bc9f67f1980ab7d783f4b175a" kind="variable"><name>copy_mol_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a17b6c9d245a116e858f5904fe9102e00" kind="variable"><name>corr_mode_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8239ef1504cc0ffac7ec62642b4b451e" kind="variable"><name>fft_scores_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a6abf892d48116e915c4eb6156a4fa6c2" kind="variable"><name>fft_scores_flipped_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab9d601a0c3ddb079fe4dcdb00a9c3b59" kind="variable"><name>fftw_grid_hi_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a7ba2bfce2c6f188b253b19ef82f302c3" kind="variable"><name>fftw_grid_lo_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a166e229d546006928306bcd2b1ae7a32" kind="variable"><name>fftw_nvox_c2r_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aa6ef2b4b9fe870142e7b73aa5fd1d2b2" kind="variable"><name>fftw_nvox_r2c_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab11023944b9dbcb4aee93fff81eb2684" kind="variable"><name>fftw_pad_factor_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a0fa43489d700ec30e1f736088197832a" kind="variable"><name>fftw_plan_forward_hi_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8922119959c93daf3e06bcd531bd5795" kind="variable"><name>fftw_plan_forward_lo_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a069871df07929693f93ff68f9731c5a4" kind="variable"><name>fftw_plan_reverse_hi_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab339c7ccd74dd6a8f20aa10be474e7b9" kind="variable"><name>fftw_r_grid_mol_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a22e306c2baad37558f667b7e302676bd" kind="variable"><name>fftw_scale_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab506f90bac035a98822fc42e4b0ee1a8" kind="variable"><name>fftw_zero_padding_extent_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1af5022d12c2e89b394e40e3a0e2b614eb" kind="variable"><name>filtered_kernel_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a385181ef1002f97535f0fefafc5623b0" kind="variable"><name>filtered_kernel_ext_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a987dd1b7e0f08867d4faecded65bce03" kind="variable"><name>fits_hash_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1afba09c0797e2b8bed7c8b3365d13dc3d" kind="variable"><name>gauss_kernel_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aad8ddbcee92364d1663a4229bfdca531" kind="variable"><name>gauss_kernel_ext_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a00f417d8a257f01addd7cade3c420a19" kind="variable"><name>gauss_kernel_nvox_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1acee1232b598a0ab5e31cb1c42492363b" kind="variable"><name>high_mol_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a333d9254ef62671be7beebeb070635bb" kind="variable"><name>inside_num_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a830c0bc1eb478ffe4f68c5deff65f1d8" kind="variable"><name>inside_num_flipped_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aecde012630cb3fffd29215429fbc1dd4" kind="variable"><name>kernel_filter_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ace7e8b3fcb7151d0a5b6c4e69fbbfffd" kind="variable"><name>kernel_filter_ext_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a19264232c25e84787f21fa006b34cd76" kind="variable"><name>low_cutoff_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a478bec41c8be74e2874b09343cced48e" kind="variable"><name>low_map_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a0d437790d7ac0020cb009cc12f5bf2ab" kind="variable"><name>low_map_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8cc7ba45852f986b7b98d10922b41e04" kind="variable"><name>map_cen_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a3718c02ea2ac701a4ed96c04c0958065" kind="variable"><name>margin_ignored_in_conv_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8da106c43c7efe6571fdcc9b73c9af40" kind="variable"><name>num_angle_per_voxel_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aab24cc53fdbaf2b2556f9dcd9fb4bfda" kind="variable"><name>num_fits_reported_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a83f8e241de824709768e4ed55a01f6df" kind="variable"><name>nvox_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a87be4d8efb2400366138d7e68690009b" kind="variable"><name>nx_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab5728a4a570639534c8606fdca732fed" kind="variable"><name>nx_half_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aadbb0a1ebc92176e7f8d8ec016d88d36" kind="variable"><name>ny_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a9c0722a26008e3979d3c4499ac29ba05" kind="variable"><name>ny_half_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a33d59dd0e189df1a92a252e85193595d" kind="variable"><name>nz_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a05eb0f015d46dae96d68b203ab510eea" kind="variable"><name>nz_half_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a56f7872c0f48d435a024ca593795dbc2" kind="variable"><name>orig_cen_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1adcb52b69e1fdff865dbcdde00128b4f7" kind="variable"><name>orig_mol_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a4774a648899152fb8e4834ea8e5292fc" kind="variable"><name>orig_mol_copy_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ac6bbd98241ca6e137e3df90e73fa58f6" kind="variable"><name>orig_rb_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a36e9db509a0022bb434d20c861884711" kind="variable"><name>origx_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a26cfb88d914fa83d16baf0bda051087e" kind="variable"><name>origy_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aa5f6c9d5ac1e20f652b691a8a12d4e9a" kind="variable"><name>origz_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8dbb2dc0cb2469634e0f8c09efff5f8e" kind="variable"><name>resolution_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab9a8eae5c25d9595b194b2154e76bcdc" kind="variable"><name>reversed_fftw_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1acabd9f85e7e0c6b7e9b972a26f9af43f" kind="variable"><name>rots_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a38bfd55923a31501975a010379c3c1a4" kind="variable"><name>sampled_map_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a744588dbb419eacfca85574e25b413d1" kind="variable"><name>sampled_map_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a866f7f895d256bec57caa965b7a729a5" kind="variable"><name>sampled_norm_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ad7a14b88ee4f95b8661ecfa7f1198551" kind="variable"><name>spacing_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a62ebb622f0d78309397c0400981fb658" kind="function"><name>FFTFitting</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a2b09f51e39aa706b36b2337cef4d917d" kind="function"><name>~FFTFitting</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1af852eac69c96a429dfd981874da98caf" kind="function"><name>do_global_fitting</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ae968f045c0616e5599a853f4734aa477" kind="function"><name>do_local_fitting</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a34528d1f31f813f5ad08c85bde661b01" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a62c07961bde4c2ae78346345ce27f9ab" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aaeb4a52a506bcee42b2cacb393fbaa43" kind="function"><name>copy_density_data</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a8c3501ba6abe128fda347f62406d87e0" kind="function"><name>crop_margin</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ac4e0b3ee481b867448bdb5e5fed83115" kind="function"><name>detect_top_fits</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a74dba3ac8f5c530c2a3dd6bdd1a1cff7" kind="function"><name>fftw_translational_search</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1acd7df257d05cf51d782a013210e4572d" kind="function"><name>get_unwrapped_index</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1accd7f75da3e55504aca2b9abda45ee1e" kind="function"><name>pad_resolution_map</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1af94977d86c307960a89b1a15d4cbda63" kind="function"><name>prepare_kernels</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab063459cb69df88446f638fded7d95da" kind="function"><name>prepare_lowres_map</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1aced49e5f2dae277cdcc74732c76c4aca" kind="function"><name>prepare_poslist</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1a91969e61ffab79ed9b4f9cd5d222ef37" kind="function"><name>prepare_poslist_flipped</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFitting_1ab18f1bb918cf5b1f45d22d800a80fad4" kind="function"><name>prepare_probe</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1FFTFittingOutput" kind="class"><name>IMP::multifit::FFTFittingOutput</name>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1ae81664b2371f03961210eedbe72fbb2c" kind="variable"><name>best_fits_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1aab91a4255439b2b699ff0b91bb35e85f" kind="variable"><name>best_trans_per_rot_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a3132be6c58872bb5920e5700b72ad651" kind="function"><name>FFTFittingOutput</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a01b23900bd28dc9a7bde7504ba22f0f3" kind="function"><name>~FFTFittingOutput</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a5de54b83475362aa746b302fbfbdcd66" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a3daf74185ac58f0ca7affcb67073cbd7" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1FiltersParams" kind="struct"><name>IMP::multifit::FiltersParams</name>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1a6b98ec4b5fa3baed848011212d0ae39d" kind="variable"><name>max_num_violated_conn_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1ab88cc39f3d2a4f2bac0c6e8e79af3707" kind="variable"><name>max_num_violated_ev_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1aabab900d61e58fb1f1267cb8df4bd12f" kind="variable"><name>max_num_violated_xlink_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1acd820cbd875be371e2c1a349ad161ebb" kind="function"><name>FiltersParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1a1db5e6568b4005785f97f5c5e9dceac9" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1a28ffb3d8582e78868600821ed7cab2aa" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1FiltersParams_1ac5c92a95d614dab8249c176762c27cfb" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1FittingParams" kind="struct"><name>IMP::multifit::FittingParams</name>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1a78793c06b6954be695d63d48c637be36" kind="variable"><name>max_asmb_fit_score_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1affdc81cf96da19b0f61cf9eeb8e9ce04" kind="variable"><name>pca_max_angle_diff_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1afe49100b93c5ab489f7c4552248eab81" kind="variable"><name>pca_max_cent_dist_diff_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1af6827eb67c3f51f531aa015b9211ed6f" kind="variable"><name>pca_max_size_diff_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1ae1af023e5be95977794f8fd3fd61e1de" kind="function"><name>FittingParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1a2f0d23c91bb4e2ac37d8e2df8911cf2f" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1a9237c7da1dd7401627ff577a0f56871c" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1FittingParams_1a94334c2a45c17370dcacf325ac78504c" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1FittingSolutionRecord" kind="class"><name>IMP::multifit::FittingSolutionRecord</name>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae314976007b48dc8a894bf53a73b08c1" kind="variable"><name>dock_transformation_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ab1f78e15e5cf42dd0991962972b33d88" kind="variable"><name>env_pen_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1afbfdff81064951d75737f08066d502a1" kind="variable"><name>fit_transformation_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac3b0e32661a0e263b760b91a7de707c9" kind="variable"><name>fitting_score_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aa4d5ede936346dbc21b94420f84da35b" kind="variable"><name>index_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ad3104565e5f74b5ca1ff0c15873cb4e1" kind="variable"><name>match_avg_dist_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a88489c67315bab85d37973ba0385464f" kind="variable"><name>match_size_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a55b91b3d32a779b8759be77a0338db32" kind="variable"><name>rmsd_to_ref_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a981f3c580b4642f23cab6b1b01f75628" kind="variable"><name>sol_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aeae3aef9eae5c906c9dc0cf4d1dc7c60" kind="function"><name>FittingSolutionRecord</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a6f86bd905143161b4e3e98c7f70b8277" kind="function"><name>get_dock_transformation</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2a7f65d392daa1285e586c28690fb700" kind="function"><name>get_envelope_penetration_score</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a124621254c401bbd9f5dac74c91f3c68" kind="function"><name>get_fit_transformation</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb87e509701bc82ddf8c7e34ba803b07" kind="function"><name>get_fitting_score</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac6576090e921b6b1ac234fdd426173f7" kind="function"><name>get_index</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae8541db13d19add969a313074624763a" kind="function"><name>get_match_average_distance</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a760c8a2e3884e139350fefaee897b0b5" kind="function"><name>get_match_size</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a02715fd60249a19097e85406ec7845af" kind="function"><name>get_rmsd_to_reference</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a94e8a3924fc4d3d6f651a510182323bb" kind="function"><name>get_solution_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a630272d692c4a3ca1667619ab555ddb7" kind="function"><name>set_dock_transformation</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a864233c8bb158c5471051f8af10238e4" kind="function"><name>set_envelope_penetration_score</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a5691631ad5cb65972c19a04120ded5be" kind="function"><name>set_fit_transformation</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb8cc63e2a217a084a3c2e04af9d2ca0" kind="function"><name>set_fitting_score</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2d1321766a682a3b3685aa23405912b6" kind="function"><name>set_index</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aadcf952af4362a3aac65bea961824240" kind="function"><name>set_match_average_distance</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a31681a00f4e404886739fc1b35c5c4a4" kind="function"><name>set_match_size</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac7fca8edcb3b928ab7d404c63d6dd611" kind="function"><name>set_rmsd_to_reference</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a36aecbb906a03aff62cf50689c21f8ea" kind="function"><name>set_solution_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acd801ea6cff6b0804cef0016ae666539" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2fd7370f7d68cf9436c9b5d74f7ce8fc" kind="function"><name>get_record_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a291b53a2f9dadce0c5d7be1374312b6a" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1FittingStates" kind="class"><name>IMP::multifit::FittingStates</name>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1acb2aafecc5814cb42bc9eb8a0648e679" kind="variable"><name>fit_state_key_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1a8fe9b34b00037f5cb03a365408d96229" kind="variable"><name>states_</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1ac29fc77e8f9808fb3090b2a37a46ab51" kind="function"><name>FittingStates</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1a505adaf327931c6e6bd257e72e8ce8f0" kind="function"><name>~FittingStates</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1aec62b0a3c1975ebf1471357f888be616" kind="function"><name>get_number_of_particle_states</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1a7173a2c1208a43ea29625ea666eb82c0" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1aca8c255de582acdef6198c68ea65ac9e" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1FittingStates_1af525c2781fdd956860eca2070a565c8d" kind="function"><name>load_particle_state</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1FragmentsParams" kind="struct"><name>IMP::multifit::FragmentsParams</name>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a57145f7c641786625554385f9b4f7c25" kind="variable"><name>bead_radius_scale_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a0ca679bf631b3756e152d201c59d60cc" kind="variable"><name>frag_len_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a7f168e420efd9e20d316fe9cf16e9188" kind="variable"><name>load_atomic_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a56bd4ff61b6bb545e0f12eb5e0635994" kind="variable"><name>subunit_rigid_</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a99e20ed9477c0b47950a05e14f4c2640" kind="function"><name>FragmentsParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a75c6b0c6b4ab11ab68ae3b8d70ab60db" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1aa28b1db6cdd72c12ad429dd670305510" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1FragmentsParams_1a4490c6a58040d02ec52daee3f6a85de1" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1GeometricHash" kind="class"><name>IMP::multifit::GeometricHash</name>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4bc48ec3443f73ccf32bbe32598eae1f" kind="typedef"><name>Bucket</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5b68d38c99130772be4e4a6b6b4bfc80" kind="typedef"><name>BucketList</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1abf6750eb3d4d023b595e2660fefba81e" kind="typedef"><name>const_iterator</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551" kind="enum"><name>Distance</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551ac8ab34acc6c47e955b3f390738e3cc96" kind="enumvalue"><name>INF</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a50fa338903efb76c083687c16cf50551a6c0f6e00537ee2e3513f1158bc4cd9ad" kind="enumvalue"><name>EUCLIDEAN</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1aa3e7a26287ef3589579df4e28663f859" kind="typedef"><name>GeomMap</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1ae31af98ef2aa3538693d4e1274b40448" kind="typedef"><name>HashResult</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a693b8a5c02a61e97fda71f0048d04df0" kind="typedef"><name>HashResultT</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1ac4598b335f6c809eb04442d852b29c83" kind="typedef"><name>iterator</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1aa6109d77bea9c8865be3db6b046ff912" kind="typedef"><name>Point</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a6175fb1aed1af39caab281a3809cddf4" kind="typedef"><name>PointList</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a16d50b69c869e1fe8267fd63c6628bc8" kind="typedef"><name>ValueType</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1acf05d5e43d9f652a26408422a7bb3450" kind="variable"><name>gmap_</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5447a2adba7752604d77c87792c52dd6" kind="variable"><name>radii_</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a8dbc8daec12deaf6fad60f92ed5837e2" kind="function"><name>GeometricHash</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a9bf53590a57851a7bd929f5466045819" kind="function"><name>GeometricHash</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4acb476c9506a1b209d3491f0d61cfba" kind="function"><name>GeometricHash</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a55cdc6df5f5b89e3c5f8f42e4a1b749d" kind="function"><name>add</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a05745d7e9d0f798ad5991b998412728a" kind="function"><name>add</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a0ff3b95782ccecdddb7988446b5b378b" kind="function"><name>begin</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a3cb9c4f6a322eee368bff3ab14e9dff2" kind="function"><name>begin</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a2660b80e89ba7272854bbe1b4e8af3f2" kind="function"><name>bucket</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a04e368aff3a3e7dc3f190bcceb7409d6" kind="function"><name>clear</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1acb372a29b472a63cd4cba9d3acba9236" kind="function"><name>end</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a785714643292badd0b35a3316cac14b7" kind="function"><name>end</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a9d0a02c371dc0d8cbaa03bb39ba086b6" kind="function"><name>get_buckets</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a51da300a7bc68ccef180cb5f5d3b5509" kind="function"><name>Map</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1adb8e5c95a478e0bbe3d809319c83b1b9" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1afa0a14f72fec14457954e8f06a8ed5c0" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a915215bf25a17767d24e51af54a1109e" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1ad440c810e29befea7d1ef7318d57afd0" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a6c2ba8256d11954e48844f26d8a09ff4" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1abb18f667799028a2afd4f9ff789cc2d0" kind="function"><name>neighbors</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a3510d090771cfb51a21b40df6f87ded3" kind="function"><name>neighbors_data</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a5bb504bf90d2241127ad3edf2062ecb4" kind="function"><name>resolution</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a95f3d7db3c0be0b5ed30b9cacdb53d8d" kind="function"><name>cube_inside_sphere</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a7df64d828ca9dd00210851b16e45459b" kind="function"><name>cube_inside_sphere_rec</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a1f764a77c19b9111495fccccb9ee4f49" kind="function"><name>from_bucket</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a329d8fba9a45d13734e0f785472c7c17" kind="function"><name>points_in_sphere</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a62092e6e3da8471312a820c42d262d48" kind="function"><name>points_in_sphere_rec</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1a4132cbbe9a2c3f0da267d1fb260ab487" kind="function"><name>to_bucket</name></member>
+    <member refid="classIMP_1_1multifit_1_1GeometricHash_1ab715cee46df8e90e95c9981a8b7d6a9e" kind="function"><name>inf_distance</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube" kind="struct"><name>IMP::multifit::GeometricHash::inside_cube</name>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1ae6e0013bfc417213758d4a285b156a4a" kind="variable"><name>center_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a6cc16ac04b67b9d002495c3ba3018617" kind="variable"><name>radii_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1afc50947970ab768f15873fc58c540b60" kind="function"><name>inside_cube</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a3e4ded37168a6dc919b5459af5d5094a" kind="function"><name>operator()</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a321e0705f48e4289d94b26d414204df6" kind="function"><name>radius</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere" kind="struct"><name>IMP::multifit::GeometricHash::inside_sphere</name>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1a8e6f0879f366546a52ef2e50e88a1d00" kind="variable"><name>center_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1a44ecdcfe7e8ddeea965b92cdfec263eb" kind="variable"><name>radius_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1a77185bac4d3a691811bbf5b7a5aa061b" kind="variable"><name>sq_radius_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1ae6511cfa180bdae28531466e6653d6be" kind="function"><name>inside_sphere</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1a784f4a88321334e8d72598bc2616a538" kind="function"><name>operator()</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere_1a4dc693de4444a66ffdba6ef300f923c3" kind="function"><name>radius</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf" kind="struct"><name>IMP::multifit::GeometricHash::inside_sphere_inf</name>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad372d6c7e3f2b85c5d0c0d9628393887" kind="variable"><name>center_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aad68cf6b95cb51b3e19dc3e296e3452d" kind="variable"><name>radius_</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1aa33baf46fc397413a7c46e65f081e570" kind="function"><name>inside_sphere_inf</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1a0e147598e0f0d266b290d124c654b92a" kind="function"><name>operator()</name></member>
+    <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__sphere__inf_1ad97c32eed27654059ee1f5ae0ce70baf" kind="function"><name>radius</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1MergeTreeBuilder" kind="class"><name>IMP::multifit::MergeTreeBuilder</name>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1a79423abc2b9696cd6ad25e07032a46f7" kind="variable"><name>g_</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1a641de0dba9b07e1e40de2155d003fa56" kind="variable"><name>mhs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1afab14f5c9a72cd77d53336549b6ca154" kind="variable"><name>mol2node_</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1a13a3e1c414e519bedf56aafb73df229c" kind="variable"><name>node2mol_</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1af3df8d98d63354063b425132f74beaca" kind="function"><name>MergeTreeBuilder</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1a50141f1fed86092ac974cecadef3a754" kind="function"><name>get_mst_dependency</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1ae22a43002fc2abd6556fdc73b5c6166a" kind="function"><name>increase_edge</name></member>
+    <member refid="classIMP_1_1multifit_1_1MergeTreeBuilder_1afe1112fee71c5aa2143a77bf7249b51f" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" kind="class"><name>IMP::multifit::ProbabilisticAnchorGraph</name>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a27fa74b081a284ab2f74ec1fa6e70d87" kind="typedef"><name>AnchorGraph</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a78bc19a4bb47e8339a0f1def0b317dde" kind="typedef"><name>Const_GTraits</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ac42de342f2933900b1a32ec7b9cc4a60" kind="typedef"><name>EdgeWeightProperty</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab3924358de0d94bd3f158d831a25deff" kind="typedef"><name>GEdge</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a09b685d0ed967e349d55cbadfd3fd712" kind="typedef"><name>GTraits</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1adae477aa11401579f2fab336af84acc2" kind="typedef"><name>GVertex</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab0a21db449162da84a5b2fa97a2fa394" kind="typedef"><name>VertexIndexProperty</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a4e24dcea16986afaa39170a569280652" kind="variable"><name>g_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7a4666afc6b956eb52b5cf994cc7c495" kind="variable"><name>id2node_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aff5eabaebf0818e9f3b6ce1386a81a3b" kind="variable"><name>particle_to_anchor_probabilities_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6b6fc14de205e3f6590cfffa0dbaa467" kind="variable"><name>positions_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abfe16f182ca11750346b34dd55e0c8af" kind="function"><name>ProbabilisticAnchorGraph</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6ada36d30eee14e113ebb4ac5b2d294e" kind="function"><name>~ProbabilisticAnchorGraph</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9907bbba7378306f54613ebceeafdd18" kind="function"><name>add_edge</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9eac35549f083d5d60c2f9fbbd9b0566" kind="function"><name>get_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9cd1241a4018bf4d052e428a8b28fdd0" kind="function"><name>get_are_probabilities_for_particle_set</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7777585517e48794da31ba351b615ef0" kind="function"><name>get_edge_list</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a0fae35aa7f0d882f7cf7ff97412795b8" kind="function"><name>get_number_of_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a594ae6fdcd13a45dd1fb44cdf7d19b4f" kind="function"><name>get_number_of_edges</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a572ce951699d3bd966723e338e8735ef" kind="function"><name>get_particle_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a8c34f994978cae431376fdf1835e1365" kind="function"><name>get_particle_probabilities</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abc62ec98ee6327466296d5e2a106294e" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a1f40bf6af06636a9d3a05ad2d5c13803" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab94a576dc10c30919f4d7ee8087883ec" kind="function"><name>set_particle_probabilities_on_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aa2a1d46319061640c62baf0681b5bfd5" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ProteinRecordData" kind="class"><name>IMP::multifit::ProteinRecordData</name>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ae0ff511fda1b27da24ff653a7d394dca" kind="variable"><name>end_res_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1abd8fcf1b9e5975114027c2b641a7869c" kind="variable"><name>filename_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a0ec43beaff9bb1682ace2f56b8907adf" kind="variable"><name>name_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a78b30c4527da314acbe749c2b128d392" kind="variable"><name>ref_filename_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a9c3a28ae230a16e2403fe09f7505f9ee" kind="variable"><name>start_res_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a7bcbefd43fb29703751764eb9e69136f" kind="variable"><name>surface_filename_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ac50c3c0fe8acb49095d3842f2a961743" kind="function"><name>ProteinRecordData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a320ab22779515843495b78949c5d83d5" kind="function"><name>ProteinRecordData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a147920b94dcdc8bb55833cce80dd1ccf" kind="function"><name>ProteinRecordData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a74b7d18a19d89919874db0f8e91467db" kind="function"><name>ProteinRecordData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a3cda97644fbf5ac3d45b78b072dcec0a" kind="function"><name>ProteinRecordData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1a9d146d8803cdac40158f121f66d38360" kind="function"><name>reset_all</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1ac4fde2408f3c3a9f1739c2d70f94702b" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinRecordData_1abaa068be5745fcf9bccba7b8a00d7005" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kind="class"><name>IMP::multifit::ProteinsAnchorsSamplingSpace</name>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ae9cf573467a36791711cedf62369eb2b" kind="variable"><name>anchors_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1acd845324d2c9960d2ec968e6b5ba6bdf" kind="variable"><name>anchors_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1af736501f027ca6922ca18eb967331e5a" kind="variable"><name>paths_filename_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a84f28e9ff0dde94b5bbaf9ef1c32351f" kind="variable"><name>paths_map_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a39d21f652c171547c188b3a49625ccf8" kind="variable"><name>prots_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a5611298f4d66c2966344bb6f37783df5" kind="function"><name>ProteinsAnchorsSamplingSpace</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a2adc909ac97063c90a2abd5d65421132" kind="function"><name>add_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a3048214c1c0110dc6050f42fc918d489" kind="function"><name>get_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a0dada9a30967c22705113c904c871633" kind="function"><name>get_anchors_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a7430ac6694bb6cd87911d265d4d8d265" kind="function"><name>get_paths_filename_for_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ac3aa61d58bccf439385a60cd60eb03ae" kind="function"><name>get_paths_for_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1abf7b80722b5350b57ef2eb593826829d" kind="function"><name>get_proteomics_data</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a897a2e3f157111ff53f6b1f94687c217" kind="function"><name>set_anchors</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a09789e0e14348d1860e8bdc6644ad645" kind="function"><name>set_anchors_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a62510633960ba1f30358d89d2f855594" kind="function"><name>set_paths_filename_for_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1aad80860098e9e52065ed90ccb90f8151" kind="function"><name>set_paths_for_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1adaffaadcf2ee58ee7105375bf0532850" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ProteomicsData" kind="class"><name>IMP::multifit::ProteomicsData</name>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6c47f704bb058bb9c46d1324967c8c8b" kind="variable"><name>ev_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ae87c877a944b380b3c186289eefbb1c4" kind="variable"><name>interaction_in_filter_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ab5d2a3f31cf27db2bb1b317ba9ba2366" kind="variable"><name>interaction_linker_len_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a60fd1d9615d55bd729e7f2232d1fe657" kind="variable"><name>interactions_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a20903c64443b1427d27cbf9ce2441b5f" kind="variable"><name>num_allowed_violated_ev_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ac73c4d9b3d62bdd171cccccba3f6b753" kind="variable"><name>num_allowed_violated_interactions_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a138800425a9a8281b9b3c131b248f163" kind="variable"><name>num_allowed_violated_xlinks_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a8a3ece2077f297bdbd6efb2c1e723986" kind="variable"><name>prot_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6fe91bfba53aba0b0114ff9a12e1e968" kind="variable"><name>prot_map_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aaaaa360062536e3b9ca3bb2cd07641d4" kind="variable"><name>xlink_in_filter_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ac6d513a2ed363e3b3325b67e7b43cbb5" kind="variable"><name>xlink_len_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a45600f9f57d9a637f7816353b419fb7a" kind="variable"><name>xlinks_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a3963855d9557744d88218534e6b009b6" kind="function"><name>ProteomicsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa8d45eda1772c246237b1c4000ce9400" kind="function"><name>~ProteomicsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a663840285df143bbe25a73abe28aa419" kind="function"><name>add_cross_link_interaction</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a0d6a98e6b336a4608a7c27545bd98aed" kind="function"><name>add_ev_pair</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a50da5531364ecf0205d410ac0d4b75aa" kind="function"><name>add_interaction</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a5414b856576ca514581bef639cea77cf" kind="function"><name>add_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ab0c990e6e1c1b47dcd7766976e4297b4" kind="function"><name>add_protein</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1acea04969c4067024a532b7fadb005ee2" kind="function"><name>find</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1acfc4b15d925b308b762f93aa38d04f23" kind="function"><name>get_cross_link</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a37f42f9ffc29d43a411179fe4d797585" kind="function"><name>get_cross_link_length</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a9839edde7a747fd41886dd44dba6cb91" kind="function"><name>get_cross_link_part_of_filter</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7147996b9081fbc0606c37b784f3d04f" kind="function"><name>get_end_res</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa68876bfec22a332f3e58ab9c11a1914" kind="function"><name>get_ev_pair</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ae8372ba3170975b16a9070fe361e62f2" kind="function"><name>get_interaction</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1af334ce946b15c00c98d9a579e9e8890e" kind="function"><name>get_interaction_linker_length</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6f12fe51360c06de050fe6a6fb192f6e" kind="function"><name>get_interaction_part_of_filter</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a5d8b9ed56fb0302c5d8d0ff1ebd05e30" kind="function"><name>get_num_allowed_violated_cross_links</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1adedf149186733c56ee26088da6e398b4" kind="function"><name>get_num_allowed_violated_ev</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1afdde2b7bfa8f381637f033c997febbc9" kind="function"><name>get_num_allowed_violated_interactions</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1add90366c5cc4336651e9282e820d7678" kind="function"><name>get_number_of_cross_links</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa1500a64000b0fea0d6a260c9cd407e7" kind="function"><name>get_number_of_ev_pairs</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa5a98d3218250e93f0afe38d86ec5cb8" kind="function"><name>get_number_of_interactions</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7897c66e4ab0492d9bc21b0219e81cc0" kind="function"><name>get_number_of_proteins</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a012ff630abb7fe1483fcdcc555882edf" kind="function"><name>get_protein_data</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a26345023847a7dd6a49c476ad5005f2c" kind="function"><name>get_protein_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a4edb51a2a4b78129c78206ed1a036e11" kind="function"><name>get_protein_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a1ee490cf05bc4b9e8e27f4fe47330fb0" kind="function"><name>get_reference_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a73c1748a44a19ed3064adf8efad666e2" kind="function"><name>get_start_res</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7194e3b7aa8e62da03f75d8630aea6f2" kind="function"><name>get_surface_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a1f79c1222a060146c904cbc1cf100543" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1afa1e74f7eca6ee59f2e7d2a345975133" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a351169747a2058f8f75076982fd623fe" kind="function"><name>set_num_allowed_violated_cross_links</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a90b8dbbd8e84b9555ffad3edf41ad67f" kind="function"><name>set_num_allowed_violated_ev</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a877f2288d6c176e48d7c19ba2dfb1892" kind="function"><name>set_num_allowed_violated_interactions</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" kind="class"><name>IMP::multifit::ProteomicsEMAlignmentAtomic</name>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a16a7307ac5596f86925d4e2c6099cc0e" kind="variable"><name>all_rs_filt_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afb76a0a66788cfbb7fd59e34953234b1" kind="variable"><name>asmb_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ad520b8e1d7b326c2b5dd6143970b50b7" kind="variable"><name>cg_sorted_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acd4d2ae137e9febd31c43ab24130fff0" kind="variable"><name>conn_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a485dbdae1af665827c978aa85ab1e836" kind="variable"><name>conn_rs_with_filter_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aeb8fdf75435b57c2aa2e09b9f3e4ee30" kind="variable"><name>dmap_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aa171fa5ecf3e48c7aa10557070316152" kind="variable"><name>dummy_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4dc396dcc0bf3e9aa20600b8f0d02802" kind="variable"><name>em_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5aaf39ff161c73ab7762eb06e05ad3ef" kind="variable"><name>ev_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1accba0493a1cb9930ca98db7592846602" kind="variable"><name>ev_thr_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae723ef400571c634ae54889633ead0c3" kind="variable"><name>fast_scoring_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae9b721f12392f407c7ebee921dc9cd01" kind="variable"><name>filters_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a72119345d1c4dd22c074314e6a7792ca" kind="variable"><name>filters_set_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a69dc79a5f8e34e7a7742758d37b6f31d" kind="variable"><name>fit_state_key_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a732da6b6d4f8d6ae45599cf4155b0f6f" kind="variable"><name>jt_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a44fbe31347d478aaf647aef184ae71c9" kind="variable"><name>mapping_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a30b7d69ccd980a64c3c17973e6f30e2f" kind="variable"><name>mdl_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acc65c9bff560edd2e87631f07d6890b1" kind="variable"><name>mhs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a61a12a948cbbc7bf693abdd4137f2f14" kind="variable"><name>order_key_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a01c13a09c4b95d6314fff9071393b22f" kind="variable"><name>params_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6ac13be325bd378b35a8ef070f869d66" kind="variable"><name>post_sampling_ev_pairs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acbdb89d545a58709f99fe6d45d7a4cce" kind="variable"><name>prot_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afc607ba70de11c663872d124dbb58b96" kind="variable"><name>pst_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3be724722de8d0a07f33c9aefd5cda83" kind="variable"><name>rbs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5715e4532774638d836544c6c157b454" kind="variable"><name>rc_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b290d5b6741ead49d735114b73de4b0" kind="variable"><name>restraint_set_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aaa6906f50f48353fc38e284ac0df306e" kind="variable"><name>sampled_assignments_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4af1ad2c850f3ee63d064b8e23d28f99" kind="variable"><name>sampled_solutions_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6db97c71ab7392ae4b52c136fe983d29" kind="variable"><name>states_set_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a7bd95464723cf6ce1f1235d7d7aacc20" kind="variable"><name>threshold_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aac11b1e43340fe37d1914c185a09d51d" kind="variable"><name>xlink_rs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b64c03ab91f9d32ebb9c5e5c02a07d2" kind="variable"><name>xlink_rs_with_filter_</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5951962f4133ac2a456960ced4511253" kind="function"><name>ProteomicsEMAlignmentAtomic</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3fd6b63839923c827e8e545a2aacea22" kind="function"><name>~ProteomicsEMAlignmentAtomic</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6f54cacaabe39632cf282d202d1327a7" kind="function"><name>add_all_restraints</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a402d4ed4897f546017b433afae5f4cad" kind="function"><name>add_states_and_filters</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a545e0c57c4339e33e70cd5ce7c291617" kind="function"><name>align</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a961069a86a3c5e2e99158a1f587a13e2" kind="function"><name>get_combinations</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af055112ec18e4cef70c1ffaf3d0068f0" kind="function"><name>get_model</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac7e7fcbc5f6efec9633725bd8f61f593" kind="function"><name>get_molecules</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a277ca787728e3ffa00977e12e4f79c4e" kind="function"><name>get_restraint_set</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aca82d5eb12a417ab0fca4c3240116d02" kind="function"><name>get_rigid_bodies</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac2b7bc6d6be89f9d3892b16a18fa57b6" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a35f786bf818d87dea5605de4889ab8e8" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac82cf2f7f641892f456c67da2ae3568b" kind="function"><name>load_combination_of_states</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88d1ed53c74d930ee8bd5d6d07a95112" kind="function"><name>set_density_map</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a568c21102d08963792bae063a1820f45" kind="function"><name>set_fast_scoring</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac5089f6031e36c98cb91e5befeae0a76" kind="function"><name>show_domino_merge_tree</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3b18c7b66b198cdfdf8a9fdee56da5fd" kind="function"><name>show_scores_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88ed595348792789d7d9904bd48e4c64" kind="function"><name>get_alignment_restraints</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5abdddf1b7bb906f168a9bc04d829e68" kind="function"><name>load_atomic_molecules</name></member>
+    <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af3c22028fa5de638f72e8f15ed585f5f" kind="function"><name>set_particle_states_table</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint" kind="class"><name>IMP::multifit::RadiusOfGyrationRestraint</name>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3969666db8a2c52c752a28f41a78300b" kind="variable"><name>particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a5e89bfd54c5da15a4043fc601692d6a9" kind="variable"><name>hub_</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a3b2d173e81b1bcfae4f24ff06b94b5c5" kind="variable"><name>mdl_</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a574d11ca3a10f5473763543b9036eab8" kind="variable"><name>predicted_rog_</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a8ee7b87f58d8bf85eea5f1d21411e441" kind="variable"><name>scale_</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1acbda675b11c0086ecf8d6ce4e6f2028a" kind="function"><name>RadiusOfGyrationRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a2ea96e98e8caafe34f5c8b3e0f16c356" kind="function"><name>~RadiusOfGyrationRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a9d5a3ef6d2d70ddbdaa5ed1ffb783f3d" kind="function"><name>add_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ad8d4d12dc8f9213a8f688654bdac5278" kind="function"><name>add_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aba0a61f0b7e2c0f7f21ae3ef974eb4b5" kind="function"><name>clear_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1afb65095d175421f7ed20b1d60a1f1f63" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a52405e9044041b90a45b6921409c5140" kind="function"><name>erase_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a7995e05e35c65eed71cf1d72bc735d4c" kind="function"><name>get_has_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0a548f48ff0c1c8298e331ad2cead54c" kind="function"><name>get_number_of_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a61152b4976d1a200bd510d38228dfe55" kind="function"><name>get_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a810d34ecdf1e0609a325fc82828775a1" kind="function"><name>get_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a847cc2b1894c5d6a192cb28b780588c9" kind="function"><name>get_radius_of_gyration</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aebe9d9ba14e47de88c0381b9e2c393b3" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1af319510c563d76d6fc852076a950c703" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a341070d65dd034fdf5fff3e3fd0beebd" kind="function"><name>remove_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ace8b99b068e9257bfdf38e3782297153" kind="function"><name>remove_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1aa94c0101e7ee7b3341eb1069b17ea813" kind="function"><name>reserve_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1ac6c426634221d9655454c3a430e8140d" kind="function"><name>set_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a60af29ef58bb8c294eac7b3504086807" kind="function"><name>set_particles_order</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a88174776515fb9fb9725bd91c725fe7e" kind="function"><name>set_radius_of_gyration</name></member>
+    <member refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint_1a0477925f07f75b8525fa1a23227cdc7a" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1RigidLeavesRefiner" kind="class"><name>IMP::multifit::RigidLeavesRefiner</name>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4f416c69ba43663595cfddafe62579bc" kind="function"><name>RigidLeavesRefiner</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1aacc6d74baffad099ced1013e9c0f99d4" kind="function"><name>~RigidLeavesRefiner</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a4891c1d914cda24c748074ac6b6d1bc7" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ac0a25db0576ae7c43b3d636df657450e" kind="function"><name>get_can_refine</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a42116e2b0e24cdf0bde9c9aebe031e82" kind="function"><name>get_refined</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1ab7cbebf0f0f07b20a498fd9b9e785f6d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1RigidLeavesRefiner_1a2be9ae3cd9ed95d1cdf5d08d77b3cfe1" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1RogParams" kind="struct"><name>IMP::multifit::RogParams</name>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1a44ecbe91c96cc420a8286ea2f5f193a8" kind="variable"><name>max_score_</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1a849432f8d5443ff43efbcf775baa840e" kind="variable"><name>scale_</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1a80ef67b15a4074aea10b1d5f3461845a" kind="function"><name>RogParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1aa3abbd92fa675a41067707050eace167" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1ad6d8896a07b98164ac1bee4d9ed96e50" kind="function"><name>get_max_score</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1a4a34b79e0f80f9e82e5962269dc2fbdb" kind="function"><name>get_scale</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1aa934943b5a0446ebc52b215102224841" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1RogParams_1abd5821760bb4b2f0a7a3d10ab44d893d" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1SettingsData" kind="class"><name>IMP::multifit::SettingsData</name>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a5bbfc02e8dc9e3b0dc3802927480873d" kind="variable"><name>component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a7a99dfecbc6a994e4a9b9a68e249547d" kind="variable"><name>asmb_fn_</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aed8c99012558399ce5e44312de3a9212" kind="variable"><name>data_path_</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1afe54716993102ddd3673f0d577c92d2d" kind="variable"><name>dens_data_</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a56a5a7b507ef7dfceaeca9e8764a4943" kind="function"><name>SettingsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a6cb79b35c1b0cebd350ecce696a9f8d1" kind="function"><name>~SettingsData</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a991309d896089e3fd7ec4f9b70ad0ecb" kind="function"><name>add_component_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a181e30bfd465247abf2b4c5653503978" kind="function"><name>add_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aeb05edf30d9887535b13e13685abf437" kind="function"><name>clear_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a3d931c3d663ddd5f209c4be47d773d2a" kind="function"><name>erase_component_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a874628edf7d45932d29bfae35768b430" kind="function"><name>get_assembly_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a6e95fdaf66e031c4d7853d25f456d108" kind="function"><name>get_assembly_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a2009beaae4b0cf899638c65ebb62af52" kind="function"><name>get_component_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a5d17d342d9d2804450a5c68f94c0e9fb" kind="function"><name>get_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1ac81d144f7e50c94d2305938e6e7c88fe" kind="function"><name>get_data_path</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aa7ebf5f49ef99584ff31850e3beedc24" kind="function"><name>get_has_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a90545722d2b6cf4b042c3cb20770f0ad" kind="function"><name>get_number_of_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a41b7fca46b21491a409d75b2cbde13b3" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a4034d9d91078a8fe34d2ce572333744f" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a6c99c0e9881422ed66c90ffd42a6d9e4" kind="function"><name>remove_component_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a816876dc2c9fbb13e1ef1873ef5e0dea" kind="function"><name>remove_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a493051c231e9732c6220e35cde0c598d" kind="function"><name>reserve_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aa9a644242c70dd6e280132f338e927e3" kind="function"><name>set_assembly_filename</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aaa24862022bf887ad2291a4e9e488a48" kind="function"><name>set_assembly_header</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a724e35ef819b0ec71aded7b0059722a4" kind="function"><name>set_component_headers</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a254bb421930b754091533e0768dc6437" kind="function"><name>set_component_headers_order</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a2755bba46497aca2afd4e865c6b46eef" kind="function"><name>set_data_path</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aa78cd62b71458fdc8ee9ff3464985c63" kind="function"><name>get_component_header_line</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a28ae1d5b805f26ab3529c2cfe2448d9f" kind="function"><name>get_density_header_line</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1a2b17842e2c060bbbc76493e66e7c869c" kind="function"><name>show_component_header_line</name></member>
+    <member refid="classIMP_1_1multifit_1_1SettingsData_1aa04d1563da8f576c02934a5c64c38748" kind="function"><name>show_density_header_line</name></member>
+  </compound>
+  <compound refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint" kind="class"><name>IMP::multifit::WeightedExcludedVolumeRestraint</name>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a65c3b72ae2fb2d369601c839c32b9fdb" kind="variable"><name>particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5c548736eb00e8758be63c78fd75f219" kind="variable"><name>rb_refined_dx_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ac4813058edf9a245f39c022367aa2d46" kind="variable"><name>rb_refined_dy_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8a3870bfb0b5b4c3569fa2bcf2984058" kind="variable"><name>rb_refined_dz_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a998d32419e3b8888885ba8dfbe0e7a0f" kind="variable"><name>rb_refiner_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a697d3171503b25b1068d91d2439e1eb6" kind="variable"><name>rbs_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5843cd77197f86a9bf8ff2120965080e" kind="variable"><name>rbs_orig_trans_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4d24b525ad16618fb02eafd6d1c023ae" kind="variable"><name>rbs_surface_maps_</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a1b6c81a897d408afc71a09df136738c3" kind="function"><name>WeightedExcludedVolumeRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4b3048ee222265eaed7a4edee3ee7469" kind="function"><name>~WeightedExcludedVolumeRestraint</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8b224b6c3383ab126405607461d31952" kind="function"><name>add_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aea7c29c9499cdc650f46a3ea79823cc8" kind="function"><name>add_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3f6519c55b712437e0d256345c1f3762" kind="function"><name>clear_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab126d0e712711e6f1e8de098855ca669" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af2bb28744a729e9f3051ea8dd5d25013" kind="function"><name>erase_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3bc3f5586a87bf358b5a7e5effe3a3dc" kind="function"><name>get_has_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aeae5c03ecaa487ff9d9d12bc08120a84" kind="function"><name>get_number_of_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1add359e9550c0adb0802588c2d20b6bd2" kind="function"><name>get_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a54b8145c610a21bcda3596ecb5b2332f" kind="function"><name>get_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab07d5212fb8f26794effe725c31f2c7f" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1adeb5c5034841fd693ddc848a32919763" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7171fe3b218ad0ea70dc07f8cce3f397" kind="function"><name>remove_particle</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af8f96ae6bb6be6b87368a6d198927f65" kind="function"><name>remove_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1afc32b0b883fc7ed868bfc1d26d83c523" kind="function"><name>reserve_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aaa8baa476a0301bc8222fafd82f4c8fd" kind="function"><name>set_particles</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ae4ccdb99f1c68c82480d0111d086a876" kind="function"><name>set_particles_order</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7c7ca51814d10be0e9ad264a6c5ce045" kind="function"><name>unprotected_evaluate</name></member>
+    <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a194294484da2efb24967fb55f8095552" kind="function"><name>initialize_model_density_map</name></member>
+  </compound>
+  <compound refid="structIMP_1_1multifit_1_1XlinkParams" kind="struct"><name>IMP::multifit::XlinkParams</name>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a8f60a32461ab85cdf667e13d8449edfe" kind="variable"><name>k_</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a2087b4a9df7b08537f503629332ce4cd" kind="variable"><name>max_xlink_val_</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a50a49d2de9d551d9c29b3bc375b2c70c" kind="variable"><name>treat_between_residues_</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1ac3b440e6009c529d4d038bfc3101945c" kind="variable"><name>upper_bound_</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1ab2f44cbb59a08132f4c843e5225bba0e" kind="friend"><name>cereal::access</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a2f44923a3c9e28e7268ad298212cd49f" kind="function"><name>XlinkParams</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a094fe7c0d56ae41d85f760dd3a6adc54" kind="function"><name>add</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1a86de3a53ee6354000e51211fe34f6ab3" kind="function"><name>show</name></member>
+    <member refid="structIMP_1_1multifit_1_1XlinkParams_1ac70040f07f3c17083bee763ce309d2b3" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit" kind="namespace"><name>IMP::multifit</name>
+    <member refid="namespaceIMP_1_1multifit_1a5285f017ecaf54c7034267601dd13dba" kind="function"><name>get_module_version</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a366abc3ee84fd2a8a3db283ab6c15d00" kind="function"><name>get_module_name</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a480006a88bd3b793459c5afaa4bee23c" kind="function"><name>get_data_path</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a4e6ed029ea3a4a15f38cd998c8bacbd2" kind="function"><name>get_example_path</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a93702dee83b99ce6f65045c99bff5f92" kind="typedef"><name>AlignmentParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a33eb25dc768e2409b9ba92138cdc6381" kind="typedef"><name>AnchorsDataList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a5e9e93bd24c2a63705024c7eadd94493" kind="typedef"><name>CEdges</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ada2444c48b39cdee70f088b39b82ad4f" kind="typedef"><name>ComplementarityParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1aef96d3c7da11dfbec697f469247e14" kind="typedef"><name>ComponentHeaders</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a581738aa18758a7bc20b52d1495b232c" kind="typedef"><name>ComponentHeadersTemp</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a8d335a599eaccffcd1990e6b245553ff" kind="typedef"><name>ConnectivityParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1af32a9d2e4738a7cd8d6bf19ce972e32e" kind="typedef"><name>DensGrid</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a9fea6dd4cc1090cc1463eaa9c98e2214" kind="typedef"><name>DensityDataPointsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a4e9f87fa6b97abe41658032d3a8c4ebf" kind="typedef"><name>DensityDataPointsListTemp</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1805a1a12680b4b43b9bb54ca39ab8fa" kind="typedef"><name>DominoParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a56e542eec1755b6290b34386ff6027fa" kind="typedef"><name>Ensembles</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aa79506d6b48c8451305991a579dd6616" kind="typedef"><name>EnsemblesTemp</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aaf84c6e4694a5d0c404a098956e6c0e4" kind="typedef"><name>EVParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a287ecaae7be209cbffb03111e7a9061f" kind="typedef"><name>FiltersParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a556d45fa12736e5e2038b532ba55ee8f" kind="typedef"><name>FittingParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kind="typedef"><name>FittingSolutionRecords</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a3b68bd2e40f71a27c8bcdfa1abd0fa92" kind="typedef"><name>FragmentsParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a6bb9c874d071e408b061cc86d6440441" kind="typedef"><name>ProbabilisticAnchorGraphs</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a2d9ee3034cc2b99c3cc64ceb6d25054f" kind="typedef"><name>ProbabilisticAnchorGraphsTemp</name></member>
+    <member refid="namespaceIMP_1_1multifit_1adf69456ca590d975b754d570908eb958" kind="typedef"><name>ProteinRecordDataList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a7414f0cfa457f7d7d51f94aebac121d4" kind="typedef"><name>ProteinsAnchorsSamplingSpaces</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ae3a35cac442f676b76b2c329aa0cbd15" kind="typedef"><name>ProteomicsEMAlignmentAtomics</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a408344076f0482bbd3ab4a8b42ec6345" kind="typedef"><name>ProteomicsEMAlignmentAtomicsTemp</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ace98b2a0311da4ae45256b679f15765a" kind="typedef"><name>RogParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a236f4248804e1976652e364c86ab6320" kind="typedef"><name>XlinkParamsList</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a3e058408a3879546f50897a4e8f9253b" kind="function"><name>add_surface_index</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a04303e2e87f1a25c6e4fdf2ca2e73453" kind="function"><name>convert_em_to_multifit_format</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a9cb92499e58b7dfe7bef97caa65868da" kind="function"><name>convert_multifit_format_to_transformations</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a2a2ca63805bc102fbf07209c85e2ce44" kind="function"><name>convert_multifit_to_em_format</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aa489658c81686d2102d9282c4d55273a" kind="function"><name>convert_transformations_to_multifit_format</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a3ae2f2b63f2b07f548e4fd095871d9b8" kind="function"><name>create_coarse_molecule_from_density</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a87f632921c6ce1bbede55924135efefb" kind="function"><name>create_hit_map</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a4b27a69a21d1b1ae08bec9d4eeb709a6" kind="function"><name>create_weighted_excluded_volume_restraint</name></member>
+    <member refid="namespaceIMP_1_1multifit_1af83b1866a4b7bb6747eea98bd9bb28e1" kind="function"><name>fft_based_rigid_fitting</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a0ba5b604076ef3a7ee623203283c3ab6" kind="function"><name>get_actual_radius_of_gyration</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a173eff7add1e1652a69ce9c1365ddf2f" kind="function"><name>get_anchor_indices_matching_secondary_structure</name></member>
+    <member refid="namespaceIMP_1_1multifit_1af5cfce601c0bc38d4fd668dec337b3f4" kind="function"><name>get_anchors_for_density</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a5bd3c99e9424628f45b3f014de2fa6f0" kind="function"><name>get_approximated_radius</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1d5503ac4b79a75dea9d6c9b7819bded" kind="function"><name>get_approximated_radius_of_gyration</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a72317593e3aff9f9e43e2e4f92481f47" kind="function"><name>get_close_to_point</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aebdba0d523d4730ee0031629b70b8ea1" kind="function"><name>get_connected_components</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1cc01cbbbb1cf9bb7f226524e0616e12" kind="function"><name>get_part_of_sampling_space</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aba7fd97a801a6872f5c53f38b0ec905f" kind="function"><name>get_partial_assembly_setting_data</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1e925f75a8a6d8df2fb48a5a33b248a6" kind="function"><name>get_partial_proteomics_data</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ad9a90449965866bc3f547eb9e2193399" kind="function"><name>get_points_close_to_molecule</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a602f75b13bf7afebbc5fbfb3ab89e1e9" kind="function"><name>get_points_far_from_molecule</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ab1ebb302ab2e310015f0f643bcef86f7" kind="function"><name>get_segment_maximum</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a6945fa68efec8cd7f189ebd51b7af727" kind="function"><name>get_segment_maximum</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aeb628c3804ee3d8aa7df59051b0ad1d2" kind="function"><name>get_segmentation</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ab1f9561f757fe3ee9728979ab8dd15c6" kind="function"><name>grid2map</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a9d757c08cb0c3fcca8f05f4eaded4eaa" kind="function"><name>load_ensemble</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aedc64c26eefe139ef34e5cce89d13a51" kind="function"><name>molecule2anchors</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a45c8385d6183240ec7216ae97374c7a9" kind="function"><name>pca_based_rigid_fitting</name></member>
+    <member refid="namespaceIMP_1_1multifit_1afdf294ea4f4b41a0fa4da41f6c95e32c" kind="function"><name>pca_based_rigid_fitting</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1311b5448ea5d757a085c959a77e5fc2" kind="function"><name>read_anchors_data</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1acaf6184a51a758cf4f1a69f6b1bdd6" kind="function"><name>read_cmm</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ae07f089c01764aa197297e2da4aa743a" kind="function"><name>read_fitting_solutions</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a6d1c73d19e87fced1f49e28866f6acf7" kind="function"><name>read_paths</name></member>
+    <member refid="namespaceIMP_1_1multifit_1adbd924144aee36a0b6dd9789ca164da8" kind="function"><name>read_protein_anchors_mapping</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ac616e7aaf0efc33662e75b3ff9c98097" kind="function"><name>read_proteomics_data</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a89c8364aa6b757da222745adfecd24ab" kind="function"><name>read_settings</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a74da7bc0c5074fd40f6552956ea3a75a" kind="function"><name>remove_background</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a1ab8b06464f3c9727f0a710d4f1e2f0a" kind="function"><name>write_chimera</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ae4ba0e88472d3177de3ea67a7583d5c0" kind="function"><name>write_cmm</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ad3f92bb765e32aee3d6f1c0d15366d5a" kind="function"><name>write_connolly_surface</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a353be2a32c95fe02505606f5fc25465f" kind="function"><name>write_fitting_solutions</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a2ded6207f6b3f25048701821adf3bea7" kind="function"><name>write_markers</name></member>
+    <member refid="namespaceIMP_1_1multifit_1af71d85febb3cedd2ad1c0fbcade3e4b9" kind="function"><name>write_paths</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a3f44dc59f3fb41dfdd084270d6a10a61" kind="function"><name>write_pdb</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a11b1f20be441ca935aedaf5947b01cb6" kind="function"><name>write_protein_anchors_mapping</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a36fc7ae568bb5d07373bc1ad2e14328f" kind="function"><name>write_protein_anchors_mapping</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a8009ecb4c53812a36bf544ed7e9fe9a0" kind="function"><name>write_segment_as_mrc</name></member>
+    <member refid="namespaceIMP_1_1multifit_1afa9365426346e3cbf57346e724da4691" kind="function"><name>write_segment_as_pdb</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ac66c9128b0009595989bc520e3e6dcd3" kind="function"><name>write_segments_as_mrc</name></member>
+    <member refid="namespaceIMP_1_1multifit_1a52c63362745917843277eb7ba97d76d5" kind="function"><name>write_segments_as_pdb</name></member>
+    <member refid="namespaceIMP_1_1multifit_1aa9401684ce59f4d47aaa1e519e1d574b" kind="function"><name>write_settings</name></member>
+    <member refid="namespaceIMP_1_1multifit_1ae2e18c9a8f1e3e81cf1a561a93e235c0" kind="function"><name>write_txt</name></member>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1add__fit__rmsd" kind="namespace"><name>IMP::multifit::add_fit_rmsd</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1align" kind="namespace"><name>IMP::multifit::align</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1anchors" kind="namespace"><name>IMP::multifit::anchors</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1cluster" kind="namespace"><name>IMP::multifit::cluster</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1cluster__coarse" kind="namespace"><name>IMP::multifit::cluster_coarse</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1fit__fft" kind="namespace"><name>IMP::multifit::fit_fft</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1indexes" kind="namespace"><name>IMP::multifit::indexes</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1merge__tree" kind="namespace"><name>IMP::multifit::merge_tree</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1models" kind="namespace"><name>IMP::multifit::models</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1MTU" kind="namespace"><name>IMP::multifit::MTU</name>
+    <member refid="merge__tree__utils_8h_1a66a15afa3521dc6f063dc8cd9c9c4e6a" kind="typedef"><name>DependencyGraph</name></member>
+    <member refid="merge__tree__utils_8h_1a7d90f0d8aa346d112a594657ecf8c857" kind="typedef"><name>DGEdge</name></member>
+    <member refid="merge__tree__utils_8h_1a94704a5753834a39696dbc14b18f3815" kind="typedef"><name>DGVertex</name></member>
+    <member refid="merge__tree__utils_8h_1a0650729f28d7b818f125e7fa2805a729" kind="typedef"><name>DGWeight</name></member>
+    <member refid="merge__tree__utils_8h_1a673c3b784e8b0ef912fcdc227895adc6" kind="typedef"><name>PVMAP</name></member>
+    <member refid="merge__tree__utils_8h_1ac6c46e2603d8b14e8fd1b1dd73dde52e" kind="typedef"><name>VPMAP</name></member>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1param" kind="namespace"><name>IMP::multifit::param</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1proteomics" kind="namespace"><name>IMP::multifit::proteomics</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1reference" kind="namespace"><name>IMP::multifit::reference</name>
+    <member refid="reference_8py_1a80830f95317cce0b67638ff7bb711d7f" kind="function"><name>get_components_placement_scores</name></member>
+    <member refid="reference_8py_1a465cea3db93891588661adcfd81a09e2" kind="function"><name>get_placement_score_from_coordinates</name></member>
+    <member refid="reference_8py_1a53d5a5f7ab642a5a28a8771ce915a4df" kind="function"><name>get_placement_scores_from_coordinates</name></member>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1refine__fft" kind="namespace"><name>IMP::multifit::refine_fft</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1score" kind="namespace"><name>IMP::multifit::score</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1segment" kind="namespace"><name>IMP::multifit::segment</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1multifit_1_1transforms" kind="namespace"><name>IMP::multifit::transforms</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1statistics" kind="namespace"><name>IMP::statistics</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1statistics_1_1internal" kind="namespace"><name>IMP::statistics::internal</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="IMP__multifit_8dox" kind="file"><name>IMP_multifit.dox</name>
+  </compound>
+  <compound refid="AlignmentParams_8h" kind="file"><name>AlignmentParams.h</name>
+  </compound>
+  <compound refid="anchor__graph_8h" kind="file"><name>anchor_graph.h</name>
+  </compound>
+  <compound refid="anchor__utilities_8h" kind="file"><name>anchor_utilities.h</name>
+  </compound>
+  <compound refid="anchors__reader_8h" kind="file"><name>anchors_reader.h</name>
+  </compound>
+  <compound refid="coarse__molecule_8h" kind="file"><name>coarse_molecule.h</name>
+  </compound>
+  <compound refid="ComplementarityRestraint_8h" kind="file"><name>ComplementarityRestraint.h</name>
+  </compound>
+  <compound refid="connolly__surface_8h" kind="file"><name>connolly_surface.h</name>
+  </compound>
+  <compound refid="DataPointsAssignment_8h" kind="file"><name>DataPointsAssignment.h</name>
+  </compound>
+  <compound refid="density__analysis_8h" kind="file"><name>density_analysis.h</name>
+  </compound>
+  <compound refid="DensityDataPoints_8h" kind="file"><name>DensityDataPoints.h</name>
+  </compound>
+  <compound refid="ensemble__analysis_8h" kind="file"><name>ensemble_analysis.h</name>
+  </compound>
+  <compound refid="fft__based__rigid__fitting_8h" kind="file"><name>fft_based_rigid_fitting.h</name>
+  </compound>
+  <compound refid="fitting__solutions__reader__writer_8h" kind="file"><name>fitting_solutions_reader_writer.h</name>
+  </compound>
+  <compound refid="fitting__states_8h" kind="file"><name>fitting_states.h</name>
+  </compound>
+  <compound refid="fitting__tools_8h" kind="file"><name>fitting_tools.h</name>
+  </compound>
+  <compound refid="fitting__utils_8h" kind="file"><name>fitting_utils.h</name>
+  </compound>
+  <compound refid="FittingSolutionRecord_8h" kind="file"><name>FittingSolutionRecord.h</name>
+  </compound>
+  <compound refid="GeometricHash_8h" kind="file"><name>GeometricHash.h</name>
+  </compound>
+  <compound refid="merge__tree__utils_8h" kind="file"><name>merge_tree_utils.h</name>
+  </compound>
+  <compound refid="multifit__config_8h" kind="file"><name>multifit_config.h</name>
+    <member refid="multifit__config_8h_1a8b49a68bdcd9c72940e6146aced09586" kind="define"><name>IMP_MULTIFIT_HAS_BOOST_GRAPH</name></member>
+    <member refid="multifit__config_8h_1a881a85f4752101713065635bb7acdc95" kind="define"><name>IMP_MULTIFIT_HAS_BOOST_RANDOM</name></member>
+    <member refid="multifit__config_8h_1ad0f382490ffc023d03da986e77326100" kind="define"><name>IMP_MULTIFIT_HAS_BOOST_REGEX</name></member>
+    <member refid="multifit__config_8h_1a0b2c42c51719590cc13ac90aa92aee69" kind="define"><name>IMP_MULTIFIT_HAS_BOOST_SYSTEM</name></member>
+    <member refid="multifit__config_8h_1a22d35bab5f3e23af68f170e1f11b4719" kind="define"><name>IMP_MULTIFIT_HAS_CGAL</name></member>
+    <member refid="multifit__config_8h_1a310b4e3215a01c3b0cb34198d5589c79" kind="define"><name>IMP_MULTIFIT_HAS_HDF5</name></member>
+    <member refid="multifit__config_8h_1ac556bd1dd9edae66617d04db3934f27f" kind="define"><name>IMP_MULTIFIT_HAS_IMP_CGAL</name></member>
+    <member refid="multifit__config_8h_1a73667ca885eb06891564f6dc1d5f4c05" kind="define"><name>IMP_MULTIFIT_HAS_IMP_CONTAINER</name></member>
+    <member refid="multifit__config_8h_1a9f8b5b0da9eccc0ddeae54e9f38904ac" kind="define"><name>IMP_MULTIFIT_HAS_IMP_DISPLAY</name></member>
+    <member refid="multifit__config_8h_1a7e8d87adacaa8ad8bb0933a25e237b60" kind="define"><name>IMP_MULTIFIT_HAS_IMP_ISD</name></member>
+    <member refid="multifit__config_8h_1ad79c62c0191bc7d72b24d8eb106fa131" kind="define"><name>IMP_MULTIFIT_HAS_IMP_KERNEL</name></member>
+    <member refid="multifit__config_8h_1afed0a91ef2aad10611cf1e14c5b248b9" kind="define"><name>IMP_MULTIFIT_HAS_IMP_RMF</name></member>
+    <member refid="multifit__config_8h_1aef58449635723a6af4ed4f3fd96f0588" kind="define"><name>IMP_MULTIFIT_HAS_IMP_SAXS</name></member>
+    <member refid="multifit__config_8h_1a885a81524ed96df34e41700912311396" kind="define"><name>IMP_MULTIFIT_HAS_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="multifit__config_8h_1a9342a30908476342f0b50fdf3ec7186b" kind="define"><name>IMP_MULTIFIT_HAS_NUMPY</name></member>
+    <member refid="multifit__config_8h_1a30233b994603acf769d2983915b5e2a5" kind="define"><name>IMP_MULTIFIT_HAS_PYTHON_IHM</name></member>
+    <member refid="multifit__config_8h_1ac5358660ff5635923381d9268f4b5b6a" kind="define"><name>IMP_MULTIFIT_HAS_RMF</name></member>
+    <member refid="multifit__config_8h_1a5a139760662eba3eeb3d53481fcf5f81" kind="define"><name>IMP_MULTIFIT_USE_BOOST_GRAPH</name></member>
+    <member refid="multifit__config_8h_1a42276316f9101269a1a7a93d62e2b319" kind="define"><name>IMP_MULTIFIT_USE_BOOST_RANDOM</name></member>
+    <member refid="multifit__config_8h_1a66a787b4a8a206debf7569c1a47bc853" kind="define"><name>IMP_MULTIFIT_USE_BOOST_REGEX</name></member>
+    <member refid="multifit__config_8h_1a7b52657698cb01bff508073aff9b0af7" kind="define"><name>IMP_MULTIFIT_USE_BOOST_SYSTEM</name></member>
+    <member refid="multifit__config_8h_1a758d7d16ac390cce4f1839352f58c2a5" kind="define"><name>IMP_MULTIFIT_USE_CGAL</name></member>
+    <member refid="multifit__config_8h_1a5579bed8b461a70a85d3f8a274502a99" kind="define"><name>IMP_MULTIFIT_USE_HDF5</name></member>
+    <member refid="multifit__config_8h_1a303329051112c0babea58b65ecc5adbd" kind="define"><name>IMP_MULTIFIT_USE_IMP_CGAL</name></member>
+    <member refid="multifit__config_8h_1a1a03853492caffd0226d44b472e2ebd2" kind="define"><name>IMP_MULTIFIT_USE_IMP_CONTAINER</name></member>
+    <member refid="multifit__config_8h_1a81798b7e159f6efd1f8b40c227a5b8a7" kind="define"><name>IMP_MULTIFIT_USE_IMP_DISPLAY</name></member>
+    <member refid="multifit__config_8h_1a00dcb7a4179ce92e411d0c469794ac2a" kind="define"><name>IMP_MULTIFIT_USE_IMP_ISD</name></member>
+    <member refid="multifit__config_8h_1ad76d3eef12c090387627512c626a813d" kind="define"><name>IMP_MULTIFIT_USE_IMP_KERNEL</name></member>
+    <member refid="multifit__config_8h_1aadf86ecf9acd7b34b67148989f2be62c" kind="define"><name>IMP_MULTIFIT_USE_IMP_RMF</name></member>
+    <member refid="multifit__config_8h_1a414fea612ed5a4af218575aa7ebc70cc" kind="define"><name>IMP_MULTIFIT_USE_IMP_SAXS</name></member>
+    <member refid="multifit__config_8h_1a9bbb2b51e5ac6e98cc859b9356a3fd87" kind="define"><name>IMP_MULTIFIT_USE_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="multifit__config_8h_1abe444074dabf64a799f249d24942fee5" kind="define"><name>IMP_MULTIFIT_USE_NUMPY</name></member>
+    <member refid="multifit__config_8h_1a27454e99f140520a9c2040855d1e57e6" kind="define"><name>IMP_MULTIFIT_USE_PYTHON_IHM</name></member>
+    <member refid="multifit__config_8h_1af62fe0cde8050c778b03cb4788e40191" kind="define"><name>IMP_MULTIFIT_USE_RMF</name></member>
+    <member refid="multifit__config_8h_1a53573b3166532cf9b0db1dae46c940d9" kind="define"><name>IMPMULTIFIT_BEGIN_INTERNAL_NAMESPACE</name></member>
+    <member refid="multifit__config_8h_1aad702906e8f219cf4d7f8612030f7cc8" kind="define"><name>IMPMULTIFIT_BEGIN_NAMESPACE</name></member>
+    <member refid="multifit__config_8h_1a8696a10015b779c08f8d1d3d0664ca8d" kind="define"><name>IMPMULTIFIT_DEPRECATED_FUNCTION_DECL</name></member>
+    <member refid="multifit__config_8h_1aafbe573591b1e41ec5f9fcd93d02e917" kind="define"><name>IMPMULTIFIT_DEPRECATED_FUNCTION_DEF</name></member>
+    <member refid="multifit__config_8h_1ab50c10be9fe0b08ed4067d00e05632e3" kind="define"><name>IMPMULTIFIT_DEPRECATED_HEADER</name></member>
+    <member refid="multifit__config_8h_1a0516b643c59a35a04f10ebbbef5f94cf" kind="define"><name>IMPMULTIFIT_DEPRECATED_MACRO</name></member>
+    <member refid="multifit__config_8h_1ae1e549f5772fba149fb2e7c844090fbf" kind="define"><name>IMPMULTIFIT_DEPRECATED_METHOD_DECL</name></member>
+    <member refid="multifit__config_8h_1a67feb0422eae81a737f2ab1fcb69c2a9" kind="define"><name>IMPMULTIFIT_DEPRECATED_METHOD_DEF</name></member>
+    <member refid="multifit__config_8h_1a5cb71b3cba47421c00ff1129613caa14" kind="define"><name>IMPMULTIFIT_DEPRECATED_OBJECT_DECL</name></member>
+    <member refid="multifit__config_8h_1a6e6c521d912bf7e361836cf9310f6d9e" kind="define"><name>IMPMULTIFIT_DEPRECATED_OBJECT_DEF</name></member>
+    <member refid="multifit__config_8h_1a24d1d878f328faefe4f15e5c5892af53" kind="define"><name>IMPMULTIFIT_DEPRECATED_VALUE_DECL</name></member>
+    <member refid="multifit__config_8h_1a75daef7d9771c52d87bad4b2ae9c3d97" kind="define"><name>IMPMULTIFIT_DEPRECATED_VALUE_DEF</name></member>
+    <member refid="multifit__config_8h_1adc036452303562566b8e7d619114dff1" kind="define"><name>IMPMULTIFIT_END_INTERNAL_NAMESPACE</name></member>
+    <member refid="multifit__config_8h_1a1af9f3f38041824cbc5b67acc766a5f4" kind="define"><name>IMPMULTIFIT_END_NAMESPACE</name></member>
+    <member refid="multifit__config_8h_1acfae13935c7833391b26ecebbf4b1466" kind="define"><name>IMPMULTIFIT_EXPORT_TEMPLATE</name></member>
+    <member refid="multifit__config_8h_1aabf27764a65464256a35c24235f531af" kind="define"><name>IMPMULTIFIT_SHOW_WARNINGS</name></member>
+    <member refid="multifit__config_8h_1af8c171de3a4d163a749bfd3e96dcbd29" kind="define"><name>IMPMULTIFITEXPORT</name></member>
+  </compound>
+  <compound refid="path__reader__writer_8h" kind="file"><name>path_reader_writer.h</name>
+  </compound>
+  <compound refid="pca__based__rigid__fitting_8h" kind="file"><name>pca_based_rigid_fitting.h</name>
+  </compound>
+  <compound refid="protein__anchors__mapping__reader_8h" kind="file"><name>protein_anchors_mapping_reader.h</name>
+  </compound>
+  <compound refid="proteomics__em__alignment__atomic_8h" kind="file"><name>proteomics_em_alignment_atomic.h</name>
+  </compound>
+  <compound refid="proteomics__reader_8h" kind="file"><name>proteomics_reader.h</name>
+  </compound>
+  <compound refid="RadiusOfGyrationRestraint_8h" kind="file"><name>RadiusOfGyrationRestraint.h</name>
+  </compound>
+  <compound refid="RigidLeavesRefiner_8h" kind="file"><name>RigidLeavesRefiner.h</name>
+  </compound>
+  <compound refid="SettingsData_8h" kind="file"><name>SettingsData.h</name>
+  </compound>
+  <compound refid="weighted__excluded__volume_8h" kind="file"><name>weighted_excluded_volume.h</name>
+  </compound>
+  <compound refid="WeightedExcludedVolumeRestraint_8h" kind="file"><name>WeightedExcludedVolumeRestraint.h</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="add__fit__rmsd_8py" kind="file"><name>add_fit_rmsd.py</name>
+  </compound>
+  <compound refid="align_8py" kind="file"><name>align.py</name>
+  </compound>
+  <compound refid="anchors_8py" kind="file"><name>anchors.py</name>
+  </compound>
+  <compound refid="cluster_8py" kind="file"><name>cluster.py</name>
+  </compound>
+  <compound refid="cluster__coarse_8py" kind="file"><name>cluster_coarse.py</name>
+  </compound>
+  <compound refid="fit__fft_8py" kind="file"><name>fit_fft.py</name>
+  </compound>
+  <compound refid="indexes_8py" kind="file"><name>indexes.py</name>
+  </compound>
+  <compound refid="merge__tree_8py" kind="file"><name>merge_tree.py</name>
+  </compound>
+  <compound refid="models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="param_8py" kind="file"><name>param.py</name>
+  </compound>
+  <compound refid="proteomics_8py" kind="file"><name>proteomics.py</name>
+  </compound>
+  <compound refid="reference_8py" kind="file"><name>reference.py</name>
+  </compound>
+  <compound refid="refine__fft_8py" kind="file"><name>refine_fft.py</name>
+  </compound>
+  <compound refid="score_8py" kind="file"><name>score.py</name>
+  </compound>
+  <compound refid="segment_8py" kind="file"><name>segment.py</name>
+  </compound>
+  <compound refid="transforms_8py" kind="file"><name>transforms.py</name>
+  </compound>
+  <compound refid="dir_84fc5dba3506812825191c0c043e3c97" kind="dir"><name>generated</name>
+  </compound>
+  <compound refid="dir_279697036cfaa15a5decf25df47ae2b9" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_834197089dc89882e94bb173a847f4d3" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_8c75c1176791575a2e13c1fa9253151e" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_2875c12cde55ddbdd178b824a801ec81" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_2573ed228c77071c5b80f0ffa900c255" kind="dir"><name>multifit</name>
+  </compound>
+  <compound refid="dir_87692fb59aeed2107866760e7fc5db65" kind="dir"><name>multifit</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceinteractive" kind="namespace" language="Python">
+    <compoundname>interactive</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="interactive_8py_1a8591e5326210ebd0647eddd41e87c440" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.ds</definition>
+        <argsstring></argsstring>
+        <name>ds</name>
+        <qualifiedname>interactive.ds</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m, pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="48" column="1" bodyfile="examples/domino/interactive.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1a5927f4f7bc414bed7b14621ab4dc4c76" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.lpc</definition>
+        <argsstring></argsstring>
+        <name>lpc</name>
+        <qualifiedname>interactive.lpc</qualifiedname>
+        <initializer>=  IMP.container.ListPairContainer(
+    m, [(ps[i[0]], ps[i[1]]) for i in [(0, 1), (1, 2)]])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="25" column="1" bodyfile="examples/domino/interactive.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1adb0291a336f2027b19ec5c909c4deba8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>interactive.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="18" column="1" bodyfile="examples/domino/interactive.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1aa9a89a3d3a9bfb15358e4403e55197a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.mt</definition>
+        <argsstring></argsstring>
+        <name>mt</name>
+        <qualifiedname>interactive.mt</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>([r], pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="42" column="1" bodyfile="examples/domino/interactive.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1a0c04cebca0786a58a2adff6b16abf5ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>interactive.ps</qualifiedname>
+        <initializer>=  IMP.get_indexes([IMP.core.XYZ.setup_particle(IMP.Particle(m))
+                      for x in range(0, 3)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="21" column="1" bodyfile="examples/domino/interactive.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1a47dd069a2b7cdb98f9fc64fb384b2a4e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>interactive.pst</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="35" column="1" bodyfile="examples/domino/interactive.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1a28ad89e8575eb428315e19dec4558865" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>interactive.r</qualifiedname>
+        <initializer>=  IMP.container.PairsRestraint(s, lpc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="29" column="1" bodyfile="examples/domino/interactive.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1aad493115b5a7ada7a54f4263878d1c2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>interactive.s</qualifiedname>
+        <initializer>=  IMP.core.HarmonicDistancePairScore(1, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="24" column="1" bodyfile="examples/domino/interactive.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1abdd32f622d00f1867f404de5ca36a14f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list interactive.schedule</definition>
+        <argsstring></argsstring>
+        <name>schedule</name>
+        <qualifiedname>interactive.schedule</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="79" column="1" bodyfile="examples/domino/interactive.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interactive_8py_1a0a047ced91edc595f82963d3481b88fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>interactive.space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <qualifiedname>interactive.space</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(
+    [IMP.algebra.Vector3D(i, 0, 0) for i in range(0, 6)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="32" column="1" bodyfile="examples/domino/interactive.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="interactive_8py_1abfb3188563dee2e9d454d4f1bbdb4329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>interactive.get_assignments</definition>
+        <argsstring>(vertex)</argsstring>
+        <name>get_assignments</name>
+        <qualifiedname>interactive.get_assignments</qualifiedname>
+        <param>
+          <type>vertex</type>
+          <defname>vertex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="58" column="1" bodyfile="examples/domino/interactive.py" bodystart="58" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="interactive_8py_1abd01d88b3e66538bf9967c1fb5d11bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>interactive.schedule_job</definition>
+        <argsstring>(vertex)</argsstring>
+        <name>schedule_job</name>
+        <qualifiedname>interactive.schedule_job</qualifiedname>
+        <param>
+          <type>vertex</type>
+          <defname>vertex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/interactive.py" line="83" column="1" bodyfile="examples/domino/interactive.py" bodystart="83" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/interactive.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

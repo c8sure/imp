@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino__config_8h" kind="file" language="C++">
+    <compoundname>domino_config.h</compoundname>
+    <includes local="no">IMP/kernel_config.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">IMP/compiler_macros.h</includes>
+    <includedby refid="Assignment_8h" local="no">Assignment.h</includedby>
+    <includedby refid="BranchAndBoundSampler_8h" local="no">BranchAndBoundSampler.h</includedby>
+    <includedby refid="DependencyScoreState_8h" local="no">DependencyScoreState.h</includedby>
+    <includedby refid="DiscreteSampler_8h" local="no">DiscreteSampler.h</includedby>
+    <includedby refid="DominoSampler_8h" local="no">DominoSampler.h</includedby>
+    <includedby refid="Order_8h" local="no">Order.h</includedby>
+    <includedby refid="Slice_8h" local="no">Slice.h</includedby>
+    <includedby refid="Subset_8h" local="no">Subset.h</includedby>
+    <includedby refid="analysis_8h" local="no">analysis.h</includedby>
+    <includedby refid="assignment__containers_8h" local="no">assignment_containers.h</includedby>
+    <includedby refid="assignment__tables_8h" local="no">assignment_tables.h</includedby>
+    <includedby refid="domino__macros_8h" local="no">domino_macros.h</includedby>
+    <includedby refid="interactive_8h" local="no">interactive.h</includedby>
+    <includedby refid="particle__states_8h" local="no">particle_states.h</includedby>
+    <includedby refid="subset__filters_8h" local="no">subset_filters.h</includedby>
+    <includedby refid="utility_8h" local="no">utility.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>domino_config.h</label>
+        <link refid="domino__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/compiler_macros.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/kernel_config.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP::domino</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="domino__config_8h_1a058c1437506b921cb2a257df61c46c44" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_BOOST_FILESYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="115" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ac4a4f8ca993b6c75d4dfb8d9fb71e025" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_BOOST_PROGRAMOPTIONS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="117" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ad4d80cc597cfb7a71658e01cadce203b" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_BOOST_RANDOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="119" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ab1f7922bf687a9f225e4db53a5461d67" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_BOOST_REGEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="121" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a4b38edd36404fa9b6492d90b98b9cd69" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_BOOST_SYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="123" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a2737daad9efd190bb9b3a64265f7d23d" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="125" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ac50ccd46679b1fecd6e64d16ceb3da9c" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_HDF5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="127" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a89f8cec7c206fa352ee6c5951ff3482e" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_ATOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="99" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a7d01ca082f02e39a534c5e3df360345f" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="101" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a5e6951e1168ce107666994bbad7cd121" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_EM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="103" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a311a0ed61fa8f6c8162bfe6b9c57dd01" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_ISD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="105" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a5d3ba7716bc40b2fc59d0425b1a35634" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_KERNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="107" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a0eae8d95ba0c33b30b293c32ae8f07e9" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="109" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ad1145ba638ed06a08d875cfe092618df" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_SAXS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="111" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a88f7c1445c42267201ee4a0dce3e015c" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_IMP_SCORE_FUNCTOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="113" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1aa1b89b0cb2ff5858e7f6922dbc469912" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_NUMPY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="129" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ac75d42a5a85fad3a255b983a9ddf7794" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_PYTHON_IHM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="133" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ab80e44bafbb617dff4c97118086c7c34" prot="public" static="no">
+        <name>IMP_DOMINO_HAS_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="131" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a58af619ce40dc81e682f7add6b1e3cb9" prot="public" static="no">
+        <name>IMP_DOMINO_USE_BOOST_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="114" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1aff2279bb62f8a0b670c1cb6b6a6ad71c" prot="public" static="no">
+        <name>IMP_DOMINO_USE_BOOST_PROGRAMOPTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="116" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a5376b9e45e2c793a14b99e6f369ae07e" prot="public" static="no">
+        <name>IMP_DOMINO_USE_BOOST_RANDOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="118" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a579feadfc3e72b3ec3130859238b1eab" prot="public" static="no">
+        <name>IMP_DOMINO_USE_BOOST_REGEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="120" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1afd3ef9ba83e9be18a95dd2f1f9c9a112" prot="public" static="no">
+        <name>IMP_DOMINO_USE_BOOST_SYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="122" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ad44ac9a697a8bc982aa07455992d3d8d" prot="public" static="no">
+        <name>IMP_DOMINO_USE_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="124" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1afa2ba4de75cb31e1e913921afb8d0d86" prot="public" static="no">
+        <name>IMP_DOMINO_USE_HDF5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="126" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a60991ac3cca492907ab36123daa19830" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_ATOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="98" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a7d5e5aff450ae5288dd567e18a392083" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="100" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a6d4c7aeb26d00fa30df93be7ef3cfea4" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_EM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="102" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a65102542691a6647f38c5e20e79c50d8" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_ISD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="104" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a7518bac991951ce9985732d9b7764037" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_KERNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="106" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a2e6fb2b1c0ed5e22db44fbb341544964" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="108" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1af2d2998ab153ec1226b40d129faecb18" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_SAXS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="110" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ae10d7ed7aca7df477e7b546ece08e867" prot="public" static="no">
+        <name>IMP_DOMINO_USE_IMP_SCORE_FUNCTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="112" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1abb201ae503ca2b4d146eb6cbe360d843" prot="public" static="no">
+        <name>IMP_DOMINO_USE_NUMPY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="128" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a8f8078393ec46617b9196923ba81001d" prot="public" static="no">
+        <name>IMP_DOMINO_USE_PYTHON_IHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="132" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a5173e021c020e54a06c7470279f1a007" prot="public" static="no">
+        <name>IMP_DOMINO_USE_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="130" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a7d49927c49bf71519b92e1d4b38c5a89" prot="public" static="no">
+        <name>IMPDOMINO_BEGIN_INTERNAL_NAMESPACE</name>
+        <initializer>  IMPDOMINO_BEGIN_NAMESPACE\
+  namespace internal {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="91" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1af9436492b3fb2d6087aed3c9659f7a1a" prot="public" static="no">
+        <name>IMPDOMINO_BEGIN_NAMESPACE</name>
+        <initializer>namespace IMP{ namespace domino {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="87" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ac308d3b0430f8f7a0009838af7c167ae" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_FUNCTION_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="262" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a31264558fdfd6f5a0945191c4fb02cbc" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_FUNCTION_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_FUNCTION_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="292" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="292" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a53ec65320109c222d8ba7760321f7b8b" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_HEADER</name>
+        <param><defname>version</defname></param>
+        <param><defname>help_message</defname></param>
+        <initializer>/** See [deprecation support](@ref deprecation). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="256" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="256" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1ac4b0d2400516638e6449d3e7020e953c" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_MACRO</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="276" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a4e59709722079a4643124b6a42e462bf" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_METHOD_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="264" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a1343af826cf6e2faac1f6690b28154f6" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_METHOD_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_METHOD_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="296" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="296" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a212bca8e8ca0277d332a09a248f5e2d1" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_OBJECT_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="260" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a9a50e4eae905f696a8fd1c0e6839e766" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_OBJECT_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_OBJECT_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="288" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="288" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a2a323919cafb4bd0c67b86dc84fa7bf0" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_VALUE_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="258" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a0709c03a70ec654e04c55cde027541f3" prot="public" static="no">
+        <name>IMPDOMINO_DEPRECATED_VALUE_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_VALUE_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="284" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="284" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a850b0475cf78d9725db96db9daabf091" prot="public" static="no">
+        <name>IMPDOMINO_END_INTERNAL_NAMESPACE</name>
+        <initializer>} IMPDOMINO_END_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="94" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a8ec0ad2379fb760f4a3baeac81ac5517" prot="public" static="no">
+        <name>IMPDOMINO_END_NAMESPACE</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="89" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a428b9890f5858fde785bf1d25975740c" prot="public" static="no">
+        <name>IMPDOMINO_EXPORT_TEMPLATE</name>
+        <param><defname>name</defname></param>
+        <initializer>IMP_REQUIRE_SEMICOLON_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="69" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a8cf7337c395f3d35e07c2768df99be78" prot="public" static="no">
+        <name>IMPDOMINO_SHOW_WARNINGS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="236" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="domino__config_8h_1a6260de2b1d429f1d86a28169423aa6d6" prot="public" static="no">
+        <name>IMPDOMINOEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/domino_config.h" line="50" column="9" bodyfile="include/IMP/domino/domino_config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/domino/domino_config.h"/>
+  </compounddef>
+</doxygen>

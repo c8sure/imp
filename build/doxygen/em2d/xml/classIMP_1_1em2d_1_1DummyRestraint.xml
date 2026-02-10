@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1DummyRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::DummyRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/em2d/DummyRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DummyRestraint_1aec1cc371d6491d1a31566a1879b70fa9" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; Particle &gt;</type>
+        <definition>Pointer&lt;Particle&gt; IMP::em2d::DummyRestraint::p0_</definition>
+        <argsstring></argsstring>
+        <name>p0_</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::p0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="34" column="11" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DummyRestraint_1a20956ebfa47b2fd8b1a23abd2f377c30" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; Particle &gt;</type>
+        <definition>Pointer&lt;Particle&gt; IMP::em2d::DummyRestraint::p1_</definition>
+        <argsstring></argsstring>
+        <name>p1_</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::p1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="35" column="11" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a8d10268f28c37978c4824eb8d59758bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::DummyRestraint::DummyRestraint</definition>
+        <argsstring>(IMP::Particle *p, IMP::Particle *q)</argsstring>
+        <name>DummyRestraint</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::DummyRestraint</qualifiedname>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inits the dummy restraint between the particles <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First particle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second particle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="43" column="3" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a622c16a438ab219e23653c8be6fee490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::DummyRestraint::~DummyRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~DummyRestraint</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::~DummyRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="60" column="231" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a66ece982be6992be0bc105d8f4045f33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::em2d::DummyRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="59" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1ac286ab2e64876a627e48aec3c087e3a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::DummyRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="60" column="34" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a3f1bb1fcd809c828a45573f822a42d1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::DummyRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="60" column="103" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a967a0026ca829fe924ea2c83f736054d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::DummyRestraint::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shows information about the class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream used to show the information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="53" column="8" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DummyRestraint_1a9f378ab4f47929cf0992802c65a7efa3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::em2d::DummyRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::em2d::DummyRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/DummyRestraint.h" line="57" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Dummy restraint between two particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The restraint does do anything and returns 0 as a value. Use this restraint to force two particles to be considered by DOMINO as belonging to a restraint. This trick can be useful when building the merge tree for DOMINO, as can add branches that consider pairs of particles before entire subsets. NOTE: Using this restraint for DOMINO requires a fairly good knowledge of the works of merge trees. </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/DummyRestraint.h" line="33" column="1" bodyfile="include/IMP/em2d/DummyRestraint.h" bodystart="33" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a66ece982be6992be0bc105d8f4045f33" prot="public" virt="virtual"><scope>IMP::em2d::DummyRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a8d10268f28c37978c4824eb8d59758bd" prot="public" virt="non-virtual"><scope>IMP::em2d::DummyRestraint</scope><name>DummyRestraint</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1ac286ab2e64876a627e48aec3c087e3a9" prot="public" virt="virtual"><scope>IMP::em2d::DummyRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a3f1bb1fcd809c828a45573f822a42d1a" prot="public" virt="virtual"><scope>IMP::em2d::DummyRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1aec1cc371d6491d1a31566a1879b70fa9" prot="private" virt="non-virtual"><scope>IMP::em2d::DummyRestraint</scope><name>p0_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a20956ebfa47b2fd8b1a23abd2f377c30" prot="private" virt="non-virtual"><scope>IMP::em2d::DummyRestraint</scope><name>p1_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a967a0026ca829fe924ea2c83f736054d" prot="public" virt="non-virtual"><scope>IMP::em2d::DummyRestraint</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a9f378ab4f47929cf0992802c65a7efa3" prot="public" virt="virtual"><scope>IMP::em2d::DummyRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1DummyRestraint_1a622c16a438ab219e23653c8be6fee490" prot="public" virt="virtual"><scope>IMP::em2d::DummyRestraint</scope><name>~DummyRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

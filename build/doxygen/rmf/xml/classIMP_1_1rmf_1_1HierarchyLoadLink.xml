@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1HierarchyLoadLink" kind="class" language="C++" prot="public">
+    <compoundname>IMP::rmf::HierarchyLoadLink</compoundname>
+    <basecompoundref refid="classIMP_1_1rmf_1_1SimpleLoadLink" prot="public" virt="non-virtual">IMP::rmf::SimpleLoadLink&lt; Particle &gt;</basecompoundref>
+    <includes local="no">IMP/rmf/HierarchyLoadLink.h</includes>
+    <innerclass refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data" prot="private">IMP::rmf::HierarchyLoadLink::Data</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab713ba2273fe7306c88238633e615c2a" prot="private" static="no">
+        <type>boost::unordered_map&lt; ParticleIndex, std::shared_ptr&lt; Data &gt; &gt;</type>
+        <definition>typedef boost::unordered_map&lt;ParticleIndex, std::shared_ptr&lt;Data&gt; &gt; IMP::rmf::HierarchyLoadLink::DM</definition>
+        <argsstring></argsstring>
+        <name>DM</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::DM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="67" column="7" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a83adb94b2ca5254cc23d405b8f26af16" prot="private" static="no">
+        <type><ref refid="classIMP_1_1rmf_1_1SimpleLoadLink" kindref="compound">SimpleLoadLink</ref>&lt; Particle &gt;</type>
+        <definition>typedef SimpleLoadLink&lt;Particle&gt; IMP::rmf::HierarchyLoadLink::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="40" column="26" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7100201e0c97adc0afb53aa11295746" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::AlternativesFactory</type>
+        <definition>RMF::decorator::AlternativesFactory IMP::rmf::HierarchyLoadLink::af_</definition>
+        <argsstring></argsstring>
+        <name>af_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::af_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="43" column="39" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1acb3087e104a1fdba7030fa2e6108a1cf" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ClusterProvenanceFactory</type>
+        <definition>RMF::decorator::ClusterProvenanceFactory IMP::rmf::HierarchyLoadLink::clustpf_</definition>
+        <argsstring></argsstring>
+        <name>clustpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::clustpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="48" column="44" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a42c269201247e152517a607c8a17a404" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::CombineProvenanceFactory</type>
+        <definition>RMF::decorator::CombineProvenanceFactory IMP::rmf::HierarchyLoadLink::combpf_</definition>
+        <argsstring></argsstring>
+        <name>combpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::combpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="46" column="44" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9c9aebeaf65c4ea91dc786faa644f128" prot="private" static="no" mutable="no">
+        <type>DM</type>
+        <definition>DM IMP::rmf::HierarchyLoadLink::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="68" column="6" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a757c5dc729791f273b361a3109100ee6" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ExplicitResolutionFactory</type>
+        <definition>RMF::decorator::ExplicitResolutionFactory IMP::rmf::HierarchyLoadLink::explicit_resolution_factory_</definition>
+        <argsstring></argsstring>
+        <name>explicit_resolution_factory_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::explicit_resolution_factory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="51" column="45" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a22f5acfa09a961104afe405f41679b97" prot="private" static="no" mutable="no">
+        <type>RMF::IntKey</type>
+        <definition>RMF::IntKey IMP::rmf::HierarchyLoadLink::external_rigid_body_key_</definition>
+        <argsstring></argsstring>
+        <name>external_rigid_body_key_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::external_rigid_body_key_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="52" column="15" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1ae598706d6e25d03106c28fef350ef135" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::FilterProvenanceFactory</type>
+        <definition>RMF::decorator::FilterProvenanceFactory IMP::rmf::HierarchyLoadLink::filtpf_</definition>
+        <argsstring></argsstring>
+        <name>filtpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::filtpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="47" column="43" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1aeb21380e025e619aa4423c80f90cb93a" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::IntermediateParticleFactory</type>
+        <definition>RMF::decorator::IntermediateParticleFactory IMP::rmf::HierarchyLoadLink::intermediate_particle_factory_</definition>
+        <argsstring></argsstring>
+        <name>intermediate_particle_factory_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::intermediate_particle_factory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="41" column="47" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a3f3a3e9382088de083351926dd8ef9b6" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ReferenceFrameFactory</type>
+        <definition>RMF::decorator::ReferenceFrameFactory IMP::rmf::HierarchyLoadLink::reference_frame_factory_</definition>
+        <argsstring></argsstring>
+        <name>reference_frame_factory_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::reference_frame_factory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="42" column="41" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a801567845915542fda6a5f618d490e91" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::SampleProvenanceFactory</type>
+        <definition>RMF::decorator::SampleProvenanceFactory IMP::rmf::HierarchyLoadLink::samppf_</definition>
+        <argsstring></argsstring>
+        <name>samppf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::samppf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="45" column="43" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1affab7e8199deafe5215cc37b15b3ff54" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ScriptProvenanceFactory</type>
+        <definition>RMF::decorator::ScriptProvenanceFactory IMP::rmf::HierarchyLoadLink::scriptpf_</definition>
+        <argsstring></argsstring>
+        <name>scriptpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::scriptpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="49" column="43" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a972d7cd732df81035fd085a65eb7b804" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::SoftwareProvenanceFactory</type>
+        <definition>RMF::decorator::SoftwareProvenanceFactory IMP::rmf::HierarchyLoadLink::softpf_</definition>
+        <argsstring></argsstring>
+        <name>softpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::softpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="50" column="45" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a97c89a5c3b64babffa29122c3bfa47bc" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::StructureProvenanceFactory</type>
+        <definition>RMF::decorator::StructureProvenanceFactory IMP::rmf::HierarchyLoadLink::strucpf_</definition>
+        <argsstring></argsstring>
+        <name>strucpf_</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::strucpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="44" column="46" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a457f6759860d684136f977bda083e6c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::add_link_recursive</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex o, RMF::NodeConstHandle node, ParticleIndexes rigid_bodies, Data &amp;data)</argsstring>
+        <name>add_link_recursive</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::add_link_recursive</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>ParticleIndexes</type>
+          <declname>rigid_bodies</declname>
+        </param>
+        <param>
+          <type>Data &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="72" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1adb414343f11c2bf660fc4c2eb15cc85c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>core::Provenance</type>
+        <definition>core::Provenance IMP::rmf::HierarchyLoadLink::create_one_provenance</definition>
+        <argsstring>(Model *m, RMF::NodeConstHandle node)</argsstring>
+        <name>create_one_provenance</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::create_one_provenance</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="92" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab195af37f3bbfc88e27e79d51827046f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::HierarchyLoadLink::create_provenance</definition>
+        <argsstring>(Model *m, RMF::NodeConstHandle node, ParticleIndex cur)</argsstring>
+        <name>create_provenance</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::create_provenance</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="88" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a059eeaba16e24a7e3e1a6eb319ad8347" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::HierarchyLoadLink::create_recursive</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex cur, RMF::NodeConstHandle name, ParticleIndexes rigid_bodies, Data &amp;data)</argsstring>
+        <name>create_recursive</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::create_recursive</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>cur</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>ParticleIndexes</type>
+          <declname>rigid_bodies</declname>
+        </param>
+        <param>
+          <type>Data &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="83" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7353515816d2e316316e472fb6b32dd" prot="private" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::do_add_link</definition>
+        <argsstring>(Particle *o, RMF::NodeConstHandle node) final override</argsstring>
+        <name>do_add_link</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_add_link</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleLoadLink_1aa151862b38aae3628b37400bd11286c2">do_add_link</reimplements>
+        <param>
+          <type>Particle *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="78" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a282f6e653575008239e149dbbdef1a2b" prot="private" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>Particle *</type>
+        <definition>virtual Particle * IMP::rmf::HierarchyLoadLink::do_create</definition>
+        <argsstring>(RMF::NodeConstHandle name, Model *m) final override</argsstring>
+        <name>do_create</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_create</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ad40232b276159ffff9fa6a34ee105034">do_create</reimplements>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="81" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1acd3b1ad9deee46dfa04acd28c4657419" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Particle *</type>
+        <definition>virtual Particle * IMP::rmf::SimpleLoadLink&lt; Particle &gt;::do_create</definition>
+        <argsstring>(RMF::NodeConstHandle)</argsstring>
+        <name>do_create</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_create</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a5e9217c073c3ff2bf177410c93622568">do_create</reimplements>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="80" column="3" bodyfile="include/IMP/rmf/simple_links.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a633bea4602d23122e98db9350cfbbd22" prot="private" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::do_load_one</definition>
+        <argsstring>(RMF::NodeConstHandle nh, Particle *o) final override</argsstring>
+        <name>do_load_one</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_load_one</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a7668ecfcaf2cca8f20a64084ba2a5251">do_load_one</reimplements>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="94" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a658afa8a6822b452fa63b543cd267b73" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IMP::rmf::HierarchyLoadLink::get_is</definition>
+        <argsstring>(RMF::NodeConstHandle nh) const override</argsstring>
+        <name>get_is</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::get_is</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a697b6c69d8217dee28221eb8c54ae42a">get_is</reimplements>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="69" column="16" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9ad11ee81d4673d7716254bd0c00bd61" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::do_link_particle</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex cur, RMF::NodeConstHandle node)</argsstring>
+        <name>do_link_particle</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_link_particle</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>cur</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload this to take specific action on linking a member of the hierarchy. <simplesect kind="par"><title>Warning: do_add_link_recursive has not been stabilized and is likely to change without notice. </title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="120" column="16" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1aecf46029c51bfaf16f02092f617f6f37" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::do_load_hierarchy</definition>
+        <argsstring>(RMF::NodeConstHandle root_node, Model *m, ParticleIndex root)</argsstring>
+        <name>do_load_hierarchy</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_load_hierarchy</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>root_node</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called for the hierarchy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="99" column="16" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa017db1cdf052be7f5a8e9e0351c2be1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchyLoadLink::do_setup_particle</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex cur, RMF::NodeConstHandle node)</argsstring>
+        <name>do_setup_particle</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::do_setup_particle</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>cur</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overload this to take specific action on creating a member of the hierarchy. <simplesect kind="par"><title>Warning: do_create_recursive has not been stabilized and is likely to change without notice. </title><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="108" column="16" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="108" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a976388854b4d0acf4500e8a2996566a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::HierarchyLoadLink::HierarchyLoadLink</definition>
+        <argsstring>(RMF::FileConstHandle fh)</argsstring>
+        <name>HierarchyLoadLink</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::HierarchyLoadLink</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="130" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a698cb3a465f06b8aa515010998ef2ed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::rmf::HierarchyLoadLink::~HierarchyLoadLink</definition>
+        <argsstring>()</argsstring>
+        <name>~HierarchyLoadLink</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::~HierarchyLoadLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="134" column="231" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa24f9efc9fca101636744769c3f479b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::rmf::HierarchyLoadLink::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="134" column="34" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1a51cd666b48b447c287b1f1e64f220a3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::rmf::HierarchyLoadLink::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="134" column="103" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchyLoadLink_1ad0b1516c140b565b9b8f8bb536b06087" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * IMP::rmf::HierarchyLoadLink::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <qualifiedname>IMP::rmf::HierarchyLoadLink::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchyLoadLink.h" line="132" column="21" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manage the loading link between an RMF file and an atom::Hierarchy.</para>
+<para><simplesect kind="par"><title>Warning: HierarchyLoadLink has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::rmf::HierarchyLoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1HierarchyLoadLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::rmf::LoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1LoadLink"/>
+      </node>
+      <node id="2">
+        <label>IMP::rmf::SimpleLoadLink&lt; Particle &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::rmf::HierarchyLoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1HierarchyLoadLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::rmf::LoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1LoadLink"/>
+      </node>
+      <node id="2">
+        <label>IMP::rmf::SimpleLoadLink&lt; Particle &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/rmf/HierarchyLoadLink.h" line="39" column="1" bodyfile="include/IMP/rmf/HierarchyLoadLink.h" bodystart="39" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a0d56c63582a4e8fa51a24955069fa9a3" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a457f6759860d684136f977bda083e6c6" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>add_link_recursive</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7100201e0c97adc0afb53aa11295746" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>af_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1acb3087e104a1fdba7030fa2e6108a1cf" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>clustpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a42c269201247e152517a607c8a17a404" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>combpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1afb8ae08602bdec544d7874cc589fd8de" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>create</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a8c2fc3ae53ebbbbe1245bd9f0573a13b" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>create</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1adb414343f11c2bf660fc4c2eb15cc85c" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>create_one_provenance</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab195af37f3bbfc88e27e79d51827046f" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>create_provenance</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a059eeaba16e24a7e3e1a6eb319ad8347" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>create_recursive</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9c9aebeaf65c4ea91dc786faa644f128" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>data_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab713ba2273fe7306c88238633e615c2a" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>DM</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7353515816d2e316316e472fb6b32dd" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a282f6e653575008239e149dbbdef1a2b" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_create</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1acd3b1ad9deee46dfa04acd28c4657419" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_create</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9ad11ee81d4673d7716254bd0c00bd61" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_link_particle</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_load</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aecf46029c51bfaf16f02092f617f6f37" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_load_hierarchy</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a633bea4602d23122e98db9350cfbbd22" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_load_one</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa017db1cdf052be7f5a8e9e0351c2be1" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>do_setup_particle</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a757c5dc729791f273b361a3109100ee6" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>explicit_resolution_factory_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a22f5acfa09a961104afe405f41679b97" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>external_rigid_body_key_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ae598706d6e25d03106c28fef350ef135" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>filtpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a658afa8a6822b452fa63b543cd267b73" prot="private" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>get_is</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ad0b1516c140b565b9b8f8bb536b06087" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>get_name</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa24f9efc9fca101636744769c3f479b7" prot="public" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a51cd666b48b447c287b1f1e64f220a3d" prot="public" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a976388854b4d0acf4500e8a2996566a8" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>HierarchyLoadLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aeb21380e025e619aa4423c80f90cb93a" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>intermediate_particle_factory_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a1abc7e5b88ed526783b7163b54bcd2fb" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>link</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a25147ebd8f5982ba6c44b3d9a20f0a0a" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>load</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a6396a96afbc73eb79623843c93ef625b" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>LoadLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a83adb94b2ca5254cc23d405b8f26af16" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>P</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a3f3a3e9382088de083351926dd8ef9b6" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>reference_frame_factory_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a801567845915542fda6a5f618d490e91" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>samppf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1affab7e8199deafe5215cc37b15b3ff54" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>scriptpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a46b6c6dafc78962a5ef2499ce8769ccf" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>SimpleLoadLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a972d7cd732df81035fd085a65eb7b804" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>softpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a97c89a5c3b64babffa29122c3bfa47bc" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>strucpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a698cb3a465f06b8aa515010998ef2ed6" prot="public" virt="virtual"><scope>IMP::rmf::HierarchyLoadLink</scope><name>~HierarchyLoadLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

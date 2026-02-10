@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1FittingSolutionRecord" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::FittingSolutionRecord</compoundname>
+    <includes local="no">IMP/multifit/FittingSolutionRecord.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae314976007b48dc8a894bf53a73b08c1" prot="protected" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::multifit::FittingSolutionRecord::dock_transformation_</definition>
+        <argsstring></argsstring>
+        <name>dock_transformation_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::dock_transformation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="79" column="29" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ab1f78e15e5cf42dd0991962972b33d88" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::env_pen_</definition>
+        <argsstring></argsstring>
+        <name>env_pen_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::env_pen_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="82" column="9" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1afbfdff81064951d75737f08066d502a1" prot="protected" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::multifit::FittingSolutionRecord::fit_transformation_</definition>
+        <argsstring></argsstring>
+        <name>fit_transformation_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::fit_transformation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="78" column="29" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac3b0e32661a0e263b760b91a7de707c9" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::fitting_score_</definition>
+        <argsstring></argsstring>
+        <name>fitting_score_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::fitting_score_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="83" column="9" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1aa4d5ede936346dbc21b94420f84da35b" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FittingSolutionRecord::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="76" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ad3104565e5f74b5ca1ff0c15873cb4e1" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::match_avg_dist_</definition>
+        <argsstring></argsstring>
+        <name>match_avg_dist_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::match_avg_dist_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="81" column="9" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a88489c67315bab85d37973ba0385464f" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FittingSolutionRecord::match_size_</definition>
+        <argsstring></argsstring>
+        <name>match_size_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::match_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="80" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a55b91b3d32a779b8759be77a0338db32" prot="protected" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::rmsd_to_ref_</definition>
+        <argsstring></argsstring>
+        <name>rmsd_to_ref_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::rmsd_to_ref_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="84" column="9" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a981f3c580b4642f23cab6b1b01f75628" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::FittingSolutionRecord::sol_fn_</definition>
+        <argsstring></argsstring>
+        <name>sol_fn_</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::sol_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="77" column="15" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="87" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1aeae3aef9eae5c906c9dc0cf4d1dc7c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FittingSolutionRecord::FittingSolutionRecord</definition>
+        <argsstring>()</argsstring>
+        <name>FittingSolutionRecord</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::FittingSolutionRecord</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a6f86bd905143161b4e3e98c7f70b8277" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::multifit::FittingSolutionRecord::get_dock_transformation</definition>
+        <argsstring>() const</argsstring>
+        <name>get_dock_transformation</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_dock_transformation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="51" column="36" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2a7f65d392daa1285e586c28690fb700" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::get_envelope_penetration_score</definition>
+        <argsstring>() const</argsstring>
+        <name>get_envelope_penetration_score</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_envelope_penetration_score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="57" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a124621254c401bbd9f5dac74c91f3c68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::multifit::FittingSolutionRecord::get_fit_transformation</definition>
+        <argsstring>() const</argsstring>
+        <name>get_fit_transformation</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_fit_transformation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="35" column="36" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb87e509701bc82ddf8c7e34ba803b07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::get_fitting_score</definition>
+        <argsstring>() const</argsstring>
+        <name>get_fitting_score</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_fitting_score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="47" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac6576090e921b6b1ac234fdd426173f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FittingSolutionRecord::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="31" column="23" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae8541db13d19add969a313074624763a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::get_match_average_distance</definition>
+        <argsstring>() const</argsstring>
+        <name>get_match_average_distance</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_match_average_distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="43" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a760c8a2e3884e139350fefaee897b0b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::FittingSolutionRecord::get_match_size</definition>
+        <argsstring>() const</argsstring>
+        <name>get_match_size</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_match_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="41" column="23" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a02715fd60249a19097e85406ec7845af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::multifit::FittingSolutionRecord::get_rmsd_to_reference</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rmsd_to_reference</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_rmsd_to_reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="49" column="16" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a94e8a3924fc4d3d6f651a510182323bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::FittingSolutionRecord::get_solution_filename</definition>
+        <argsstring>() const</argsstring>
+        <name>get_solution_filename</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_solution_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="33" column="22" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a630272d692c4a3ca1667619ab555ddb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_dock_transformation</definition>
+        <argsstring>(algebra::Transformation3D t)</argsstring>
+        <name>set_dock_transformation</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_dock_transformation</qualifiedname>
+        <param>
+          <type>algebra::Transformation3D</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="54" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a864233c8bb158c5471051f8af10238e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_envelope_penetration_score</definition>
+        <argsstring>(Float s)</argsstring>
+        <name>set_envelope_penetration_score</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_envelope_penetration_score</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="58" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a5691631ad5cb65972c19a04120ded5be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_fit_transformation</definition>
+        <argsstring>(algebra::Transformation3D t)</argsstring>
+        <name>set_fit_transformation</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_fit_transformation</qualifiedname>
+        <param>
+          <type>algebra::Transformation3D</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="38" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb8cc63e2a217a084a3c2e04af9d2ca0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_fitting_score</definition>
+        <argsstring>(Float fit_score)</argsstring>
+        <name>set_fitting_score</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_fitting_score</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>fit_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="48" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2d1321766a682a3b3685aa23405912b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_index</definition>
+        <argsstring>(unsigned int new_ind)</argsstring>
+        <name>set_index</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_index</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>new_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="32" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1aadcf952af4362a3aac65bea961824240" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_match_average_distance</definition>
+        <argsstring>(Float match_avg_dist)</argsstring>
+        <name>set_match_average_distance</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_match_average_distance</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>match_avg_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="44" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a31681a00f4e404886739fc1b35c5c4a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_match_size</definition>
+        <argsstring>(unsigned int match_size)</argsstring>
+        <name>set_match_size</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_match_size</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>match_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="42" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac7fca8edcb3b928ab7d404c63d6dd611" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_rmsd_to_reference</definition>
+        <argsstring>(Float rmsd_to_ref)</argsstring>
+        <name>set_rmsd_to_reference</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_rmsd_to_reference</qualifiedname>
+        <param>
+          <type>Float</type>
+          <declname>rmsd_to_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="50" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a36aecbb906a03aff62cf50689c21f8ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::set_solution_filename</definition>
+        <argsstring>(std::string sol_fn)</argsstring>
+        <name>set_solution_filename</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::set_solution_filename</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>sol_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="34" column="8" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1acd801ea6cff6b0804cef0016ae666539" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+<para>Show. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="63" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2fd7370f7d68cf9436c9b5d74f7ce8fc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string IMP::multifit::FittingSolutionRecord::get_record_header</definition>
+        <argsstring>()</argsstring>
+        <name>get_record_header</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::get_record_header</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="64" column="22" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="64" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FittingSolutionRecord_1a291b53a2f9dadce0c5d7be1374312b6a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::FittingSolutionRecord::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecord::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="89" column="19" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="89" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A fitting solution record. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/FittingSolutionRecord.h" line="24" column="1" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="24" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae314976007b48dc8a894bf53a73b08c1" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>dock_transformation_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ab1f78e15e5cf42dd0991962972b33d88" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>env_pen_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1afbfdff81064951d75737f08066d502a1" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>fit_transformation_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac3b0e32661a0e263b760b91a7de707c9" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>fitting_score_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aeae3aef9eae5c906c9dc0cf4d1dc7c60" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>FittingSolutionRecord</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a6f86bd905143161b4e3e98c7f70b8277" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_dock_transformation</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2a7f65d392daa1285e586c28690fb700" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_envelope_penetration_score</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a124621254c401bbd9f5dac74c91f3c68" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_fit_transformation</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb87e509701bc82ddf8c7e34ba803b07" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_fitting_score</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac6576090e921b6b1ac234fdd426173f7" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_index</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ae8541db13d19add969a313074624763a" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_match_average_distance</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a760c8a2e3884e139350fefaee897b0b5" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_match_size</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2fd7370f7d68cf9436c9b5d74f7ce8fc" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_record_header</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a02715fd60249a19097e85406ec7845af" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_rmsd_to_reference</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a94e8a3924fc4d3d6f651a510182323bb" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>get_solution_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aa4d5ede936346dbc21b94420f84da35b" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>index_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ad3104565e5f74b5ca1ff0c15873cb4e1" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>match_avg_dist_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a88489c67315bab85d37973ba0385464f" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>match_size_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a55b91b3d32a779b8759be77a0338db32" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>rmsd_to_ref_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a291b53a2f9dadce0c5d7be1374312b6a" prot="private" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a630272d692c4a3ca1667619ab555ddb7" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_dock_transformation</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a864233c8bb158c5471051f8af10238e4" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_envelope_penetration_score</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a5691631ad5cb65972c19a04120ded5be" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_fit_transformation</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acb8cc63e2a217a084a3c2e04af9d2ca0" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_fitting_score</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a2d1321766a682a3b3685aa23405912b6" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_index</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1aadcf952af4362a3aac65bea961824240" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_match_average_distance</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a31681a00f4e404886739fc1b35c5c4a4" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_match_size</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1ac7fca8edcb3b928ab7d404c63d6dd611" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_rmsd_to_reference</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a36aecbb906a03aff62cf50689c21f8ea" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>set_solution_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1acd801ea6cff6b0804cef0016ae666539" prot="public" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>show</name></member>
+      <member refid="classIMP_1_1multifit_1_1FittingSolutionRecord_1a981f3c580b4642f23cab6b1b01f75628" prot="protected" virt="non-virtual"><scope>IMP::multifit::FittingSolutionRecord</scope><name>sol_fn_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

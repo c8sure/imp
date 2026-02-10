@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ChiSquaredScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::ChiSquaredScore</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ScoreFunction" prot="public" virt="non-virtual">IMP::em2d::ScoreFunction</basecompoundref>
+    <includes local="no">IMP/em2d/scores2D.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ChiSquaredScore_1a72f979995b96b9346dd1e04a738e20be" prot="private" static="no" mutable="yes">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>Pointer&lt;Image&gt; IMP::em2d::ChiSquaredScore::variance_</definition>
+        <argsstring></argsstring>
+        <name>variance_</name>
+        <qualifiedname>IMP::em2d::ChiSquaredScore::variance_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="87" column="19" bodyfile="include/IMP/em2d/scores2D.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ChiSquaredScore_1af5c2bac6b86452f7bf318d4e492d8488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ChiSquaredScore::ChiSquaredScore</definition>
+        <argsstring>()</argsstring>
+        <name>ChiSquaredScore</name>
+        <qualifiedname>IMP::em2d::ChiSquaredScore::ChiSquaredScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="84" column="3" bodyfile="include/IMP/em2d/scores2D.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ChiSquaredScore_1a663fd20f4ffdbb62281ce54bb2d37463" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::ChiSquaredScore::get_private_score</definition>
+        <argsstring>(Image *, Image *) const override</argsstring>
+        <name>get_private_score</name>
+        <qualifiedname>IMP::em2d::ChiSquaredScore::get_private_score</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ScoreFunction_1a936827b9594e03838640cf7f0fc04155">get_private_score</reimplements>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ChiSquaredScore_1a1fe1b42f7da351ead5b18ac99200940b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ChiSquaredScore::set_variance_imag_private</definition>
+        <argsstring>(Image *var)</argsstring>
+        <name>set_variance_imag_private</name>
+        <qualifiedname>IMP::em2d::ChiSquaredScore::set_variance_imag_private</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="89" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Score based on Chi^2 = ((pixels_image - pixels_projection)/stddev_image)^2. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::em2d::ChiSquaredScore</label>
+        <link refid="classIMP_1_1em2d_1_1ChiSquaredScore"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ScoreFunction</label>
+        <link refid="classIMP_1_1em2d_1_1ScoreFunction"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::em2d::ChiSquaredScore</label>
+        <link refid="classIMP_1_1em2d_1_1ChiSquaredScore"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ScoreFunction</label>
+        <link refid="classIMP_1_1em2d_1_1ScoreFunction"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/scores2D.h" line="82" column="1" bodyfile="include/IMP/em2d/scores2D.h" bodystart="82" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ChiSquaredScore_1af5c2bac6b86452f7bf318d4e492d8488" prot="public" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>ChiSquaredScore</name></member>
+      <member refid="classIMP_1_1em2d_1_1ChiSquaredScore_1a663fd20f4ffdbb62281ce54bb2d37463" prot="private" virt="virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>get_private_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ad147911a73dec50fd79a5f31191820fb" prot="public" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>get_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a7181fa238aec5756809e92ced93e5264" prot="public" virt="virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1aed5d5636adbe8597873ed8e782c5941d" prot="public" virt="virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a39a24a1c413c4e1d3b071d1baa553505" prot="protected" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>n_members_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1acc5f9b38b14cbfcc0929fa72d4bf05e1" prot="public" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>ScoreFunction</name></member>
+      <member refid="classIMP_1_1em2d_1_1ChiSquaredScore_1a1fe1b42f7da351ead5b18ac99200940b" prot="private" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>set_variance_imag_private</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1afb6049939c1645c590a5b4e0911578ac" prot="public" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>set_variance_image</name></member>
+      <member refid="classIMP_1_1em2d_1_1ChiSquaredScore_1a72f979995b96b9346dd1e04a738e20be" prot="private" virt="non-virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>variance_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ab7dfd6b37668cc737cbe12e2d101065f" prot="public" virt="virtual"><scope>IMP::em2d::ChiSquaredScore</scope><name>~ScoreFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

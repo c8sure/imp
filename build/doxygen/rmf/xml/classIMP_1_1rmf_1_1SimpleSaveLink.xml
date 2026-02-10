@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1SimpleSaveLink" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::rmf::SimpleSaveLink</compoundname>
+    <basecompoundref refid="classIMP_1_1rmf_1_1SaveLink" prot="public" virt="non-virtual">IMP::rmf::SaveLink</basecompoundref>
+    <includes local="no">IMP/rmf/simple_links.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class O</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a0f09d8d27f2802b398f95d5f875a229e" prot="private" static="no" mutable="no">
+        <type>RMF::NodeIDs</type>
+        <definition>RMF::NodeIDs IMP::rmf::SimpleSaveLink&lt; O &gt;::nhs_</definition>
+        <argsstring></argsstring>
+        <name>nhs_</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::nhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="134" column="16" bodyfile="include/IMP/rmf/simple_links.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a66ffaf6c1898862460bfb140fa731a82" prot="private" static="no" mutable="no">
+        <type>Vector&lt; Pointer&lt; O &gt; &gt;</type>
+        <definition>Vector&lt;Pointer&lt;O&gt; &gt; IMP::rmf::SimpleSaveLink&lt; O &gt;::os_</definition>
+        <argsstring></argsstring>
+        <name>os_</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::os_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="133" column="10" bodyfile="include/IMP/rmf/simple_links.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a7c23dbc3ecfb1fa49e34004e256d7d2e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::SimpleSaveLink&lt; O &gt;::SimpleSaveLink</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>SimpleSaveLink</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::SimpleSaveLink</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="154" column="3" bodyfile="include/IMP/rmf/simple_links.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1af0c72c2c33df002684ed8f62f9377ddf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleSaveLink&lt; O &gt;::add_link</definition>
+        <argsstring>(O *o, RMF::NodeConstHandle nh)</argsstring>
+        <name>add_link</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::add_link</qualifiedname>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="149" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a3df72fafd16364521124ab382fa75083" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::SimpleSaveLink&lt; O &gt;::do_add</definition>
+        <argsstring>(O *o, RMF::NodeHandle c)</argsstring>
+        <name>do_add</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::do_add</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a295fed0a81adfcbd20a96374b80f47ff">do_add</reimplementedby>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="147" column="16" bodyfile="include/IMP/rmf/simple_links.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a028d2237ae569a4c5b0fd288a930f354" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleSaveLink&lt; O &gt;::do_save</definition>
+        <argsstring>(RMF::FileHandle fh) override</argsstring>
+        <name>do_save</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::do_save</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SaveLink_1a4fa356140cc45ad5abd65e22d9e01b05">do_save</reimplements>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="138" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a62608136b0a77a1551a11e26bc30c279" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::SimpleSaveLink&lt; O &gt;::do_save_one</definition>
+        <argsstring>(O *o, RMF::NodeHandle nh)=0</argsstring>
+        <name>do_save_one</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::do_save_one</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a0890e87956705c4393176ce8d35d935f">do_save_one</reimplementedby>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="137" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1adf8cff94e1aa553eeddb48f737b46745" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>RMF::NodeType</type>
+        <definition>virtual RMF::NodeType IMP::rmf::SimpleSaveLink&lt; O &gt;::get_type</definition>
+        <argsstring>(O *o) const =0</argsstring>
+        <name>get_type</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::get_type</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a30621a05d33b4d829fe85db12555348e">get_type</reimplementedby>
+        <param>
+          <type>O *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="148" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SimpleSaveLink_1a7791c6cc493f92174507c003a068136b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SimpleSaveLink&lt; O &gt;::add</definition>
+        <argsstring>(RMF::NodeHandle parent, const Vector&lt; Pointer&lt; O &gt; &gt; &amp;os)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::rmf::SimpleSaveLink::add</qualifiedname>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const Vector&lt; Pointer&lt; O &gt; &gt; &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/simple_links.h" line="157" column="8" bodyfile="include/IMP/rmf/simple_links.h" bodystart="157" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manage a link between an IMP object and an RMF node.</para>
+<para><simplesect kind="par"><title>Warning: SimpleSaveLink has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::rmf::SaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1SaveLink"/>
+      </node>
+      <node id="1">
+        <label>IMP::rmf::SimpleSaveLink&lt; O &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleSaveLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::rmf::SaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1SaveLink"/>
+      </node>
+      <node id="1">
+        <label>IMP::rmf::SimpleSaveLink&lt; O &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleSaveLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/rmf/simple_links.h" line="132" column="1" bodyfile="include/IMP/rmf/simple_links.h" bodystart="132" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7791c6cc493f92174507c003a068136b" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>add</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1af0c72c2c33df002684ed8f62f9377ddf" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a3df72fafd16364521124ab382fa75083" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>do_add</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a028d2237ae569a4c5b0fd288a930f354" prot="protected" virt="virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>do_save</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a62608136b0a77a1551a11e26bc30c279" prot="protected" virt="pure-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>do_save_one</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1adf8cff94e1aa553eeddb48f737b46745" prot="protected" virt="pure-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>get_type</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a0f09d8d27f2802b398f95d5f875a229e" prot="private" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>nhs_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a66ffaf6c1898862460bfb140fa731a82" prot="private" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>os_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveLink_1aa06d8e546e7b9181db48bf984f40666f" prot="public" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>save</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveLink_1a0e23e6b3dfcf3e8915afa7251863be6d" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>SaveLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7c23dbc3ecfb1fa49e34004e256d7d2e" prot="protected" virt="non-virtual"><scope>IMP::rmf::SimpleSaveLink</scope><name>SimpleSaveLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="example__config_8h" kind="file" language="C++">
+    <compoundname>example_config.h</compoundname>
+    <includes local="no">IMP/kernel_config.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">IMP/compiler_macros.h</includes>
+    <includedby refid="ExampleComplexRestraint_8h" local="no">ExampleComplexRestraint.h</includedby>
+    <includedby refid="ExampleConstraint_8h" local="no">ExampleConstraint.h</includedby>
+    <includedby refid="ExampleDecorator_8h" local="no">ExampleDecorator.h</includedby>
+    <includedby refid="ExampleObject_8h" local="no">ExampleObject.h</includedby>
+    <includedby refid="ExamplePairScore_8h" local="no">ExamplePairScore.h</includedby>
+    <includedby refid="ExampleRestraint_8h" local="no">ExampleRestraint.h</includedby>
+    <includedby refid="ExampleSingletonModifier_8h" local="no">ExampleSingletonModifier.h</includedby>
+    <includedby refid="ExampleSubsetFilterTable_8h" local="no">ExampleSubsetFilterTable.h</includedby>
+    <includedby refid="ExampleTemplateClass_8h" local="no">ExampleTemplateClass.h</includedby>
+    <includedby refid="ExampleUnaryFunction_8h" local="no">ExampleUnaryFunction.h</includedby>
+    <includedby refid="counting_8h" local="no">counting.h</includedby>
+    <includedby refid="creating__restraints_8h" local="no">creating_restraints.h</includedby>
+    <includedby refid="randomizing_8h" local="no">randomizing.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>example_config.h</label>
+        <link refid="example__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP/compiler_macros.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/kernel_config.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1example">IMP::example</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="example__config_8h_1a66e5b8289b875fac70fc5e9931595970" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_FILESYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="119" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a46c30e3f53321ae1a9d009964352e054" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_GRAPH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="121" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a99710ef4b442323c2658160c75a73693" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_PROGRAMOPTIONS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="123" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1aa2ef48ade8209e5363bac6362ce9e72c" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_RANDOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="125" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a9111e44335b4b1ef3fe7a814e5d77738" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_REGEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="127" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a990b40de1cd3f80ff8f8ecdda5a57da0" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_BOOST_SYSTEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="129" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ad4e6f9547460663130e5051022effa52" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="131" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a2ed65fa827ac2f945d3b09a2a9b57bba" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_EXAMPLEDEPENDENCY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="141" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a2f3d4a0538d73394910b2c17f7048196" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_HDF5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="133" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ad53bcaac253b23b7f9c29aaf595eb77d" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_ALGEBRA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="99" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1adbd96b585602753edf915eff3ba16d4f" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_CGAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="101" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1aa120a85246763a5623afcb29ae6e97b2" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_DISPLAY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="103" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a821dcea8657f90e5f56ee87dd8f9e87a" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_EM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="105" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a805369b18e5ef85a33586e019ceacac9" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_ISD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="107" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a3cdb47b49fc1a9e3ad9d692d38150f68" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_KERNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="109" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a1c6fe97847eb1ee6637626c3a6c3eedc" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="111" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a1c9255d1a556c7e66a805f0d10389119" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_SAXS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="113" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1afe4767079bc02317c9263ac956c3bd0f" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_SCORE_FUNCTOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="115" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a96a8838bd1afc437ee7ddf49ddce36c9" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_IMP_STATISTICS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="117" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a79e6baa46d12d58239ee921cf72ef785" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_NUMPY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="135" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a6e027ea040af75153ff53438f877e3a8" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_PYTHON_IHM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="139" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ae567ebb25f901de83903e1e5019f4e22" prot="public" static="no">
+        <name>IMP_EXAMPLE_HAS_RMF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="137" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a5c1b51a720fabeccb95181ff310f8854" prot="public" static="no">
+        <name>IMP_EXAMPLE_NO_EXAMPLEDEPENDENCY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="140" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a4cc79696917064f0a7000da2da8e9752" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="118" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1aeffe838047ae065e82617ee3f95326c3" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_GRAPH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="120" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1adf2c122dc3c1d20fe8220ad6d98c68e3" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_PROGRAMOPTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="122" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a4cddd02612578c1610a583f5485682c8" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_RANDOM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="124" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ab27739d38c47fc9309b972b6266dbe4e" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_REGEX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="126" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a65aa84d47666485e735afa13a75c7654" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_BOOST_SYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="128" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a834892ad61bf574365877314d7f6965d" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="130" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a8d11b794b741ab59cff3da270caa5cc6" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_HDF5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="132" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a7709fb8a3eaeb4c7062962f4b9f8788a" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_ALGEBRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="98" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a1142a9ea29e098ddf75a6a0bdc20a151" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_CGAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="100" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a2df6e4e5649171c998f0ea06c455cb4d" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_DISPLAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="102" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a6a223360066727dee6435acb3b7dc206" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_EM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="104" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ada9949204204548abc11b2a91b6ea129" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_ISD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="106" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1afe91603ccecb1f0075bf238654d1409f" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_KERNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="108" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a65884f54b5541a580e52f3989620fdb9" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="110" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a5b3c7bd68cba14174052b6b6450e77f7" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_SAXS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="112" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ad1ff7e7650b1db954d500477d508af65" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_SCORE_FUNCTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="114" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a6ab870184c4d381c9095f6177d7ae619" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_IMP_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="116" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a3f1e88885f60410eb86bc977b22959b8" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_NUMPY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="134" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a3e6f23e19421d302064bbb89ee362a06" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_PYTHON_IHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="138" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a9c3183a969511373cce56b70f7c18478" prot="public" static="no">
+        <name>IMP_EXAMPLE_USE_RMF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="136" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a8e7af1d26862f08258f823b7afd5db2e" prot="public" static="no">
+        <name>IMPEXAMPLE_BEGIN_INTERNAL_NAMESPACE</name>
+        <initializer>  IMPEXAMPLE_BEGIN_NAMESPACE\
+  namespace internal {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="91" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a5814f350b6c5226dddf81457b18285fa" prot="public" static="no">
+        <name>IMPEXAMPLE_BEGIN_NAMESPACE</name>
+        <initializer>namespace IMP{ namespace example {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="87" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a7dc69c6716e0428be7ec5b23fc9e0bfb" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_FUNCTION_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="270" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a3e47b6cac922e199fc2b35dd0291e47e" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_FUNCTION_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_FUNCTION_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="300" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="300" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1aac407d728d790dc8401afeb11b25f0bd" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_HEADER</name>
+        <param><defname>version</defname></param>
+        <param><defname>help_message</defname></param>
+        <initializer>/** See [deprecation support](@ref deprecation). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="264" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="264" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ab508e6f8c2ff858505ac256f2313377d" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_MACRO</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="284" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a5588c34b9103480b51eb93f8439542c9" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_METHOD_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="272" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a96c47b7b44e0cadab1e0100cd8c73d3a" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_METHOD_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_METHOD_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="304" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="304" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ab537972aaa6d75232c66c6f5de7b87b5" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_OBJECT_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="268" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1aa179434ceaec3c1749f23ca75c7189d4" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_OBJECT_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_OBJECT_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="296" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="296" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1abc7a50f1192950bdfbf295a7a6d146f8" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_VALUE_DECL</name>
+        <param><defname>version</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="266" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a376d948f2dac114ff490068c33654537" prot="public" static="no">
+        <name>IMPEXAMPLE_DEPRECATED_VALUE_DEF</name>
+        <param><defname>version</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>  IMP_DEPRECATED_VALUE_RUNTIME_WARNING(version, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">deprecation support</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="292" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="292" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a2fde64d98c4d6c5c2f146710159ea0de" prot="public" static="no">
+        <name>IMPEXAMPLE_END_INTERNAL_NAMESPACE</name>
+        <initializer>} IMPEXAMPLE_END_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="94" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1ac31b9fb0f07f4f185119ce3d1da5b088" prot="public" static="no">
+        <name>IMPEXAMPLE_END_NAMESPACE</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="89" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a2c7d523395b52dc0d0306bb367c7ef80" prot="public" static="no">
+        <name>IMPEXAMPLE_EXPORT_TEMPLATE</name>
+        <param><defname>name</defname></param>
+        <initializer>IMP_REQUIRE_SEMICOLON_NAMESPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="69" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1acab6f23b76f97046d7757f95596e8313" prot="public" static="no">
+        <name>IMPEXAMPLE_SHOW_WARNINGS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="244" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="example__config_8h_1a9f53577bea01746b9039fb80fc838603" prot="public" static="no">
+        <name>IMPEXAMPLEEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="50" column="9" bodyfile="include/IMP/example/example_config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/example/example_config.h"/>
+  </compounddef>
+</doxygen>

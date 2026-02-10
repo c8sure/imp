@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="frames_8h" kind="file" language="C++">
+    <compoundname>frames.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes local="no">RMF/FileHandle.h</includes>
+    <includes local="no">IMP/deprecation_macros.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>frames.h</label>
+        <link refid="frames_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/deprecation_macros.h</label>
+      </node>
+      <node id="2">
+        <label>RMF/FileHandle.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Read or write RMF frames. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/frames.h"/>
+  </compounddef>
+</doxygen>

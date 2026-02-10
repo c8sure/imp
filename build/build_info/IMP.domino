@@ -1,0 +1,4 @@
+ok=True
+modules = 'rmf:isd:saxs:em:atom:container:core:statistics:score_functor:display:algebra:cgal:kernel'
+dependencies = 'RMF:HDF5:Boost.ProgramOptions:Boost.FileSystem:Boost.System:python-ihm:NumPy:Boost.Graph:Boost.Regex:Boost.Random:CGAL'
+swig_includes = 'IMP_domino.hdf5.i:IMP/domino/domino_macros.h'

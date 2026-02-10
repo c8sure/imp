@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1Slice" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::Slice</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ConstVector&lt; unsigned int &gt;</basecompoundref>
+    <includes local="no">IMP/domino/Slice.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1Slice_1a255091cac51912e531274ff849cb6ec7" prot="private" static="no">
+        <type>ConstVector&lt; unsigned int &gt;</type>
+        <definition>typedef ConstVector&lt;unsigned int&gt; IMP::domino::Slice::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::Slice::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="31" column="23" bodyfile="include/IMP/domino/Slice.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1domino_1_1Slice_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::domino::Slice::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="33" column="16" bodyfile="include/IMP/domino/Slice.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1af1ac4c116bbd1afcd8552b656c5410db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::domino::Slice::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::domino::Slice::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="35" column="19" bodyfile="include/IMP/domino/Slice.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1aea927878d3695d75c661a75968659d17" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ints</type>
+        <definition>static Ints IMP::domino::Slice::get_slice</definition>
+        <argsstring>(Subset outer, Subset inner)</argsstring>
+        <name>get_slice</name>
+        <qualifiedname>IMP::domino::Slice::get_slice</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>outer</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="39" column="15" bodyfile="include/IMP/domino/Slice.h" bodystart="39" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1a5d72de5f10aa980637eedcf1cdb39521" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Slice::Slice</definition>
+        <argsstring>()</argsstring>
+        <name>Slice</name>
+        <qualifiedname>IMP::domino::Slice::Slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="52" column="3" bodyfile="include/IMP/domino/Slice.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1a70118528acacd6664939fe4131de82e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::Slice::Slice</definition>
+        <argsstring>(Subset outer, Subset inner)</argsstring>
+        <name>Slice</name>
+        <qualifiedname>IMP::domino::Slice::Slice</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>outer</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="53" column="3" bodyfile="include/IMP/domino/Slice.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1a0c8f2124877373b86b5f69b393f6b586" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref></type>
+        <definition>Assignment IMP::domino::Slice::get_sliced</definition>
+        <argsstring>(const Assignment &amp;a) const</argsstring>
+        <name>get_sliced</name>
+        <qualifiedname>IMP::domino::Slice::get_sliced</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="54" column="14" bodyfile="include/IMP/domino/Slice.h" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1Slice_1ae8d169f1e0b188889bc7050265d21dfe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::Slice::get_sliced</definition>
+        <argsstring>(const Subset &amp;a) const</argsstring>
+        <name>get_sliced</name>
+        <qualifiedname>IMP::domino::Slice::get_sliced</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/Slice.h" line="61" column="10" bodyfile="include/IMP/domino/Slice.h" bodystart="61" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Store a subset of a subset or assignment. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class stores a particular slice through a subset. The entire inner <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> must be contained in the outer one. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/Slice.h" line="30" column="1" bodyfile="include/IMP/domino/Slice.h" bodystart="30" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1Slice_1aea927878d3695d75c661a75968659d17" prot="private" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>get_slice</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1a0c8f2124877373b86b5f69b393f6b586" prot="public" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>get_sliced</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1ae8d169f1e0b188889bc7050265d21dfe" prot="public" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>get_sliced</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1a255091cac51912e531274ff849cb6ec7" prot="private" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1af1ac4c116bbd1afcd8552b656c5410db" prot="private" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1a5d72de5f10aa980637eedcf1cdb39521" prot="public" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>Slice</name></member>
+      <member refid="classIMP_1_1domino_1_1Slice_1a70118528acacd6664939fe4131de82e7" prot="public" virt="non-virtual"><scope>IMP::domino::Slice</scope><name>Slice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -8,6 +8,7 @@
 #include <IMP/npc/SlabWithSphericalIndentMBMScore.h>
 #include <IMP/core/XYZ.h>
 #include <IMP/UnaryFunction.h>
+#include <cmath>
 //#include <boost/lambda/lambda.hpp>
 
 IMPNPC_BEGIN_NAMESPACE
@@ -50,14 +51,15 @@ double SlabWithSphericalIndentMBMScore::evaluate_index(Model *m,
     // compute the base circle radius
     double a_sqrd = h*(2.0*R-h);
 
-    // compute score for being above the indent
+    // compute score for being in the indent (dome) region
     if ((x*x+y*y) < a_sqrd) {
-        
-        score = 0.5 * k_ * square(z - (sqrt(R*R - x*x - y*y) + (R-h)));
-        //IMP_LOG_PROGRESS("INDENT SCORE: " << score << "\n");
-        // do derivatives
+        // Target z = height of dome surface (dome opens at z=0, bulges up; sphere center at z = -(R-h)).
+        double z_target = (h - R) + std::sqrt(R * R - x * x - y * y);
+        // Old convention (sphere center at z = R-h, target = upper hemisphere; at (0,0) target = 2R-h):
+        // double z_target = std::sqrt(R*R - x*x - y*y) + (R-h);
+        score = 0.5 * k_ * square(z - z_target);
         if (da) {
-            dv = -k_ * (z - (sqrt(R*R - x*x - y*y) + (R-h)));
+            dv = -k_ * (z - z_target);
             algebra::Vector3D udelta = algebra::Vector3D(0.0, 0.0, 1.0);
             d2.add_to_derivatives(udelta * dv, *da);
         }

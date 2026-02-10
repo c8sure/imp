@@ -1,0 +1,4168 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 0.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 2)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 3)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 4)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 0.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 5)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 6)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 0.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 7)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 8)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 9)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 10)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 11)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 0.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 12)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 13)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 0.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 14)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 2.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 15)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 0.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 16)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 0.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 17)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 0.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 18)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 2.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 19)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.75, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 20)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 1.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 2.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 21)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.75, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 1.75, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 22)
+data= {}
+k= 'P0 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 0.25, 0.25, 0, 1,
+]
+k= 'P0 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P1 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 0.25, 2.25, 0, 1,
+]
+k= 'P1 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'P2 geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.698039, 0.87451, 0.541176,
+SPHERE, 2.25, 1.25, 0, 1,
+]
+k= 'P2 geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'grid'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 0.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 1.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 2.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.25, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 0.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 1.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 2.75, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.25, 3.75, 0, 0.1,
+COLOR, 1, 1, 1,
+SPHERE, 3.75, 3.75, 0, 0.1,
+]
+k= 'grid'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 23)
+data= {}

@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1MonteCarloWithWte" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::MonteCarloWithWte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">core::MonteCarlo</basecompoundref>
+    <includes local="no">IMP/spb/MonteCarloWithWte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a4166b65818b2c1082e09aeccd83e9b2d" prot="private" static="no" mutable="no">
+        <type>boost::scoped_array&lt; double &gt;</type>
+        <definition>boost::scoped_array&lt;double&gt; IMP::spb::MonteCarloWithWte::bias_</definition>
+        <argsstring></argsstring>
+        <name>bias_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::bias_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="26" column="23" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1af40b74c1fb2373d88b4354894c83897c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::dx_</definition>
+        <argsstring></argsstring>
+        <name>dx_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::dx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="24" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1ad083d2048470a0775e9d6b1176fcc85f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::spb::MonteCarloWithWte::full_</definition>
+        <argsstring></argsstring>
+        <name>full_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::full_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="28" column="8" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a22b9a56535ddc8ffec53f2b2d29119af" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::gamma_</definition>
+        <argsstring></argsstring>
+        <name>gamma_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::gamma_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="23" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a6ac26cd5acf17d7e184dcd58a82c6ba8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="21" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1ac6f6a9ddff7b492918fb9aaae387f762" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::min_</definition>
+        <argsstring></argsstring>
+        <name>min_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::min_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="20" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a95d19ddc84f7fdccb15da4b28c7fc258" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::MonteCarloWithWte::nbin_</definition>
+        <argsstring></argsstring>
+        <name>nbin_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::nbin_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="27" column="7" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a0e1e1e1b506469b43c2d7b7796a20fc7" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; RestraintSet &gt;</type>
+        <definition>IMP::PointerMember&lt;RestraintSet&gt; IMP::spb::MonteCarloWithWte::rset_</definition>
+        <argsstring></argsstring>
+        <name>rset_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::rset_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="29" column="22" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a1edfd06fc6a727cd3f8492c229ab00af" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::sigma_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="22" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a4bc14838f48f87aca637231d3a0a4371" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::w0_</definition>
+        <argsstring></argsstring>
+        <name>w0_</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::w0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="25" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1aa89b945158ff45bc86a7249f8a7afac0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::MonteCarloWithWte::do_evaluate</definition>
+        <argsstring>(const ParticleIndexes &amp;moved, bool) const override</argsstring>
+        <name>do_evaluate</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::do_evaluate</qualifiedname>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>moved</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="35" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a72f72d3c47ad107ef9eb58fb8c2fde43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::MonteCarloWithWte::do_initialize</definition>
+        <argsstring>(double emin, double emax, double sigma, double gamma, double w0)</argsstring>
+        <name>do_initialize</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::do_initialize</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>emin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>emax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>w0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1ab94c5135f791c563045208b405c70969" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::get_spline</definition>
+        <argsstring>(double score) const</argsstring>
+        <name>get_spline</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_spline</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a92ee046b7766c8e77a5f7f19e35a2e2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::MonteCarloWithWte::update_bias</definition>
+        <argsstring>(double score)</argsstring>
+        <name>update_bias</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::update_bias</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="34" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a5fd6e93ad44c53fa425a8b4b61003a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::MonteCarloWithWte::MonteCarloWithWte</definition>
+        <argsstring>(Model *m, double emin, double emax, double sigma, double gamma, double w0)</argsstring>
+        <name>MonteCarloWithWte</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::MonteCarloWithWte</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>emin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>emax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>w0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1afac90eb879ea01493498a4a753bee8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::MonteCarloWithWte::MonteCarloWithWte</definition>
+        <argsstring>(Model *m, double emin, double emax, double sigma, double gamma, double w0, RestraintSet *rset)</argsstring>
+        <name>MonteCarloWithWte</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::MonteCarloWithWte</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>emin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>emax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>w0</declname>
+        </param>
+        <param>
+          <type>RestraintSet *</type>
+          <declname>rset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1af96ce2bf632ee266f1629c7f6b9c3db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::MonteCarloWithWte::~MonteCarloWithWte</definition>
+        <argsstring>()</argsstring>
+        <name>~MonteCarloWithWte</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::~MonteCarloWithWte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="70" column="231" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1aead2597b0b13c868364090f83980e69c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::MonteCarloWithWte::do_step</definition>
+        <argsstring>() override</argsstring>
+        <name>do_step</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::do_step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="68" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1ab84651d2ea9d90ddd4aec520e304bee0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::MonteCarloWithWte::get_bias</definition>
+        <argsstring>(double score) const</argsstring>
+        <name>get_bias</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_bias</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1adb5a6b63a11e7c79ab552d6ec1c60b87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::MonteCarloWithWte::get_bias_asfloats</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bias_asfloats</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_bias_asfloats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="52" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a75d3321c68459d04d8a086a95b889c05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * IMP::spb::MonteCarloWithWte::get_bias_buffer</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bias_buffer</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_bias_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="49" column="10" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a7a81a24c7f5b000365f133ed3f102134" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::spb::MonteCarloWithWte::get_nbin</definition>
+        <argsstring>() const</argsstring>
+        <name>get_nbin</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_nbin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="57" column="7" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1aaedc60c5ae309fe0e8bef94f784f1d4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::MonteCarloWithWte::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="70" column="34" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a63fbbe0782870f2ba04e99abf0992046" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::MonteCarloWithWte::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="70" column="103" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1aeae7296a49f31fd30e9aec2d686b1e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::MonteCarloWithWte::set_bias</definition>
+        <argsstring>(const Floats &amp;bias)</argsstring>
+        <name>set_bias</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::set_bias</qualifiedname>
+        <param>
+          <type>const Floats &amp;</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="61" column="8" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1MonteCarloWithWte_1a9fcaa174ca8758f3d252e9ad2c5fbe73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::MonteCarloWithWte::set_w0</definition>
+        <argsstring>(double w0)</argsstring>
+        <name>set_w0</name>
+        <qualifiedname>IMP::spb::MonteCarloWithWte::set_w0</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>w0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/MonteCarloWithWte.h" line="59" column="8" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>MonteCarlo in the Well-Tempered Ensemble. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/MonteCarloWithWte.h" line="19" column="1" bodyfile="include/IMP/spb/MonteCarloWithWte.h" bodystart="19" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a4166b65818b2c1082e09aeccd83e9b2d" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>bias_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aa89b945158ff45bc86a7249f8a7afac0" prot="private" virt="virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>do_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a72f72d3c47ad107ef9eb58fb8c2fde43" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>do_initialize</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aead2597b0b13c868364090f83980e69c" prot="public" virt="virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>do_step</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1af40b74c1fb2373d88b4354894c83897c" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>dx_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ad083d2048470a0775e9d6b1176fcc85f" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>full_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a22b9a56535ddc8ffec53f2b2d29119af" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>gamma_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ab84651d2ea9d90ddd4aec520e304bee0" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_bias</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1adb5a6b63a11e7c79ab552d6ec1c60b87" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_bias_asfloats</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a75d3321c68459d04d8a086a95b889c05" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_bias_buffer</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a7a81a24c7f5b000365f133ed3f102134" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_nbin</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ab94c5135f791c563045208b405c70969" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_spline</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aaedc60c5ae309fe0e8bef94f784f1d4d" prot="public" virt="virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a63fbbe0782870f2ba04e99abf0992046" prot="public" virt="virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a6ac26cd5acf17d7e184dcd58a82c6ba8" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>max_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ac6f6a9ddff7b492918fb9aaae387f762" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>min_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a5fd6e93ad44c53fa425a8b4b61003a6d" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>MonteCarloWithWte</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1afac90eb879ea01493498a4a753bee8aa" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>MonteCarloWithWte</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a95d19ddc84f7fdccb15da4b28c7fc258" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>nbin_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a0e1e1e1b506469b43c2d7b7796a20fc7" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>rset_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aeae7296a49f31fd30e9aec2d686b1e6a" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>set_bias</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a9fcaa174ca8758f3d252e9ad2c5fbe73" prot="public" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>set_w0</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a1edfd06fc6a727cd3f8492c229ab00af" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>sigma_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a92ee046b7766c8e77a5f7f19e35a2e2d" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>update_bias</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a4bc14838f48f87aca637231d3a0a4371" prot="private" virt="non-virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>w0_</name></member>
+      <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1af96ce2bf632ee266f1629c7f6b9c3db0" prot="public" virt="virtual"><scope>IMP::spb::MonteCarloWithWte</scope><name>~MonteCarloWithWte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

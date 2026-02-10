@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacemultiscale" kind="namespace" language="Python">
+    <compoundname>multiscale</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="multiscale_8py_1ab7ef4df9f904ddf8e5e5b8d760af2bdf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.ac</definition>
+        <argsstring></argsstring>
+        <name>ac</name>
+        <qualifiedname>multiscale.ac</qualifiedname>
+        <initializer>=  sampler.get_sample_assignments(subset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="70" column="1" bodyfile="examples/domino/multiscale.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a5b9e5cfda70cb44ae5cf753995292ca4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.allowed</definition>
+        <argsstring></argsstring>
+        <name>allowed</name>
+        <qualifiedname>multiscale.allowed</qualifiedname>
+        <initializer>=  mapping[s]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="114" column="1" bodyfile="examples/domino/multiscale.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ac20d719aff83640acdaa4715d659d7f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <qualifiedname>multiscale.bb</qualifiedname>
+        <initializer>=  IMP.algebra.BoundingBox2D(IMP.algebra.Vector2D(0, 0),
+                               IMP.algebra.Vector2D(4, 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="38" column="1" bodyfile="examples/domino/multiscale.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a023096659594c8013e08c3e12bc14ba7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list multiscale::cac</definition>
+        <argsstring></argsstring>
+        <name>cac</name>
+        <qualifiedname>multiscale.cac</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="110" column="1" bodyfile="examples/domino/multiscale.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a02d2a61efe6f8b22b86fad6c9ebe981d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.ccac</definition>
+        <argsstring></argsstring>
+        <name>ccac</name>
+        <qualifiedname>multiscale.ccac</qualifiedname>
+        <initializer>=  sampler.get_sample_assignments(subset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="116" column="1" bodyfile="examples/domino/multiscale.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1abdf9a8a55c64bab8bea5923b9e72d913" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list multiscale.covers</definition>
+        <argsstring></argsstring>
+        <name>covers</name>
+        <qualifiedname>multiscale.covers</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="41" column="1" bodyfile="examples/domino/multiscale.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a6a52a12df0bb25a9bad38e347ea3cb33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <qualifiedname>multiscale.cur</qualifiedname>
+        <initializer>=  IMP.algebra.get_grid_interior_cover_by_spacing(bb, 4.0 / 2 ** i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="43" column="1" bodyfile="examples/domino/multiscale.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ac5b52fac124c1462462a4fcaef93c1a2" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list multiscale.ds</definition>
+        <argsstring></argsstring>
+        <name>ds</name>
+        <qualifiedname>multiscale.ds</qualifiedname>
+        <initializer>=  [IMP.core.XYZR.setup_particle(IMP.Particle(m))
+      for i in range(0, 3)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="13" column="1" bodyfile="examples/domino/multiscale.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a83d17e9aa6edcb090e718136acb8117e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>multiscale.g</qualifiedname>
+        <initializer>=  IMP.core.XYZRGeometry(p)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="126" column="1" bodyfile="examples/domino/multiscale.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ac88f729f642c9b1639746ceb3d33865f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>multiscale.h</qualifiedname>
+        <initializer>=  IMP.core.Harmonic(0, k)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="20" column="1" bodyfile="examples/domino/multiscale.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1aa79dc8e22015d4f5625672ec474cc893" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int multiscale.k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>multiscale.k</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="19" column="1" bodyfile="examples/domino/multiscale.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a1d2f1194a3994a57c88da79445fe8571" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.lac</definition>
+        <argsstring></argsstring>
+        <name>lac</name>
+        <qualifiedname>multiscale.lac</qualifiedname>
+        <initializer>=  ac</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="109" column="1" bodyfile="examples/domino/multiscale.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1aefba9a162409e1e2eb56ee33d6c26127" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.lf</definition>
+        <argsstring></argsstring>
+        <name>lf</name>
+        <qualifiedname>multiscale.lf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="108" column="1" bodyfile="examples/domino/multiscale.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ac92ef957407a39761bca8db7e7393f41" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>multiscale.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="11" column="1" bodyfile="examples/domino/multiscale.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a8720f58b42b92ffb7a2e33fc419cb14b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.mapping</definition>
+        <argsstring></argsstring>
+        <name>mapping</name>
+        <qualifiedname>multiscale.mapping</qualifiedname>
+        <initializer>=  get_mapping(covers[curi - 1], covers[curi])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="105" column="1" bodyfile="examples/domino/multiscale.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1add597a091c856e5791ea98e91e82f356" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.mw</definition>
+        <argsstring></argsstring>
+        <name>mw</name>
+        <qualifiedname>multiscale.mw</qualifiedname>
+        <initializer>=  IMP.display.PymolWriter(&quot;mapping.pym&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="84" column="1" bodyfile="examples/domino/multiscale.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ab37179cf29d64a15b35c5f4c2c7a4d99" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>multiscale.pst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="108" column="1" bodyfile="examples/domino/multiscale.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a92e298540b6204db80656bcc267e347d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>multiscale.r</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="31" column="1" bodyfile="examples/domino/multiscale.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1aeb8b0b6dd2422245241d542e08c01bdb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.r0</definition>
+        <argsstring></argsstring>
+        <name>r0</name>
+        <qualifiedname>multiscale.r0</qualifiedname>
+        <initializer>=  IMP.core.SingletonRestraint(
+    m, IMP.core.DistanceToSingletonScore(h, IMP.algebra.Vector3D(0, 0, 0)),
+    ds[0].get_particle_index(), &quot;0 at origin&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="21" column="1" bodyfile="examples/domino/multiscale.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a82eaae205c8276899429add456de98a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.r1</definition>
+        <argsstring></argsstring>
+        <name>r1</name>
+        <qualifiedname>multiscale.r1</qualifiedname>
+        <initializer>=  IMP.core.SingletonRestraint(
+    m, IMP.core.AttributeSingletonScore(h, IMP.core.XYZ.get_xyz_keys()[0]),
+    ds[1].get_particle_index(), &quot;1 on axis&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="25" column="1" bodyfile="examples/domino/multiscale.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a9d2e8ac61d9aa59b57e750d1c110546f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list multiscale.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>multiscale.rs</qualifiedname>
+        <initializer>=  [r0, r1]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="29" column="1" bodyfile="examples/domino/multiscale.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1ab1a141d230892d5a102ab85541b8e109" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>multiscale.s</qualifiedname>
+        <initializer>=  a[i]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="113" column="1" bodyfile="examples/domino/multiscale.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a31e0e768c70e56d723b2ac91c6d5f0dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.sampler</definition>
+        <argsstring></argsstring>
+        <name>sampler</name>
+        <qualifiedname>multiscale.sampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="108" column="1" bodyfile="examples/domino/multiscale.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a243302ce3efbfb9256591485490500df" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float multiscale.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>multiscale.scale</qualifiedname>
+        <initializer>=  4.0 / 2 ** curi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="103" column="1" bodyfile="examples/domino/multiscale.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1a3c38212dca18fa56ef75c1507e95b1e6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.subset</definition>
+        <argsstring></argsstring>
+        <name>subset</name>
+        <qualifiedname>multiscale.subset</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>(ds)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="69" column="1" bodyfile="examples/domino/multiscale.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiscale_8py_1abbb564d3235079fde1b720cce7b6f9f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiscale.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>multiscale.sw</qualifiedname>
+        <initializer>=  IMP.display.PymolWriter(&quot;solutions.&quot; + str(curi) + &quot;.pym&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="121" column="1" bodyfile="examples/domino/multiscale.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="multiscale_8py_1a31352e2c6cb38756ee7555806dec8ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>multiscale.display_mapping</definition>
+        <argsstring>(index, cover0, cover1, mapping)</argsstring>
+        <name>display_mapping</name>
+        <qualifiedname>multiscale.display_mapping</qualifiedname>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <param>
+          <type>cover0</type>
+          <defname>cover0</defname>
+        </param>
+        <param>
+          <type>cover1</type>
+          <defname>cover1</defname>
+        </param>
+        <param>
+          <type>mapping</type>
+          <defname>mapping</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="87" column="1" bodyfile="examples/domino/multiscale.py" bodystart="87" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="multiscale_8py_1a4e48e37cc433f6e8cd9eef9a80611020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>multiscale.get_mapping</definition>
+        <argsstring>(cover0, cover1)</argsstring>
+        <name>get_mapping</name>
+        <qualifiedname>multiscale.get_mapping</qualifiedname>
+        <param>
+          <type>cover0</type>
+          <defname>cover0</defname>
+        </param>
+        <param>
+          <type>cover1</type>
+          <defname>cover1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="75" column="1" bodyfile="examples/domino/multiscale.py" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="multiscale_8py_1a0d6ce447793c2d5e8837e09c4e1c8a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>multiscale.setup</definition>
+        <argsstring>(cover, scale)</argsstring>
+        <name>setup</name>
+        <qualifiedname>multiscale.setup</qualifiedname>
+        <param>
+          <type>cover</type>
+          <defname>cover</defname>
+        </param>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/multiscale.py" line="48" column="1" bodyfile="examples/domino/multiscale.py" bodystart="48" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/multiscale.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

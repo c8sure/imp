@@ -1,0 +1,4 @@
+#!/home/catherine/miniforge3/envs/imp/bin/python3.10
+fname = '/home/catherine/imp/modules/em/bin/resample_density'
+with open(fname) as fh:
+    exec(compile(fh.read(), fname, 'exec'))

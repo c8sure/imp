@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1multifit_1_1MTU" kind="namespace" language="C++">
+    <compoundname>IMP::multifit::MTU</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1a66a15afa3521dc6f063dc8cd9c9c4e6a" prot="public" static="no">
+        <type>boost::adjacency_matrix&lt; boost::undirectedS, boost::no_property, boost::property&lt; boost::edge_weight_t, double &gt; &gt;</type>
+        <definition>typedef boost::adjacency_matrix&lt;boost::undirectedS, boost::no_property, boost::property&lt;boost::edge_weight_t, double&gt; &gt; IMP::multifit::MTU::DependencyGraph</definition>
+        <argsstring></argsstring>
+        <name>DependencyGraph</name>
+        <qualifiedname>IMP::multifit::MTU::DependencyGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="34" column="5" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1a7d90f0d8aa346d112a594657ecf8c857" prot="public" static="no">
+        <type>boost::graph_traits&lt; DependencyGraph &gt;::edge_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;DependencyGraph&gt;::edge_descriptor IMP::multifit::MTU::DGEdge</definition>
+        <argsstring></argsstring>
+        <name>DGEdge</name>
+        <qualifiedname>IMP::multifit::MTU::DGEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="35" column="47" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1a94704a5753834a39696dbc14b18f3815" prot="public" static="no">
+        <type>boost::graph_traits&lt; DependencyGraph &gt;::vertex_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;DependencyGraph&gt;::vertex_descriptor IMP::multifit::MTU::DGVertex</definition>
+        <argsstring></argsstring>
+        <name>DGVertex</name>
+        <qualifiedname>IMP::multifit::MTU::DGVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="37" column="49" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1a0650729f28d7b818f125e7fa2805a729" prot="public" static="no">
+        <type>DependencyGraph::edge_property_type</type>
+        <definition>typedef DependencyGraph::edge_property_type IMP::multifit::MTU::DGWeight</definition>
+        <argsstring></argsstring>
+        <name>DGWeight</name>
+        <qualifiedname>IMP::multifit::MTU::DGWeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="36" column="45" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1a673c3b784e8b0ef912fcdc227895adc6" prot="public" static="no">
+        <type>boost::unordered_map&lt; Particle *, DGVertex &gt;</type>
+        <definition>typedef boost::unordered_map&lt;Particle *, DGVertex&gt; IMP::multifit::MTU::PVMAP</definition>
+        <argsstring></argsstring>
+        <name>PVMAP</name>
+        <qualifiedname>IMP::multifit::MTU::PVMAP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="38" column="30" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="merge__tree__utils_8h_1ac6c46e2603d8b14e8fd1b1dd73dde52e" prot="public" static="no">
+        <type>boost::unordered_map&lt; DGVertex, Particle * &gt;</type>
+        <definition>typedef boost::unordered_map&lt;DGVertex, Particle *&gt; IMP::multifit::MTU::VPMAP</definition>
+        <argsstring></argsstring>
+        <name>VPMAP</name>
+        <qualifiedname>IMP::multifit::MTU::VPMAP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/merge_tree_utils.h" line="39" column="30" bodyfile="include/IMP/multifit/merge_tree_utils.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/merge_tree_utils.h" line="31" column="1"/>
+  </compounddef>
+</doxygen>

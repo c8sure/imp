@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ImageReaderWriter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::em2d::ImageReaderWriter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1JPGImageReaderWriter" prot="public" virt="non-virtual">IMP::em2d::JPGImageReaderWriter</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter" prot="public" virt="non-virtual">IMP::em2d::SpiderImageReaderWriter</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter" prot="public" virt="non-virtual">IMP::em2d::TIFFImageReaderWriter</derivedcompoundref>
+    <includes local="no">IMP/em2d/ImageReaderWriter.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1a197519249a9bf215c5e3b1c93454dd6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ImageReaderWriter::ImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>ImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::ImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="21" column="3" bodyfile="include/IMP/em2d/ImageReaderWriter.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1ae3a2db063f891b1ac487cad40101f874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::ImageReaderWriter::~ImageReaderWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageReaderWriter</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::~ImageReaderWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="40" column="231" bodyfile="include/IMP/em2d/ImageReaderWriter.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1a68d4ec44e98f1d72ec870593bbcbc4af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::ImageReaderWriter::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::get_type_name</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a65fa01deadc7f65a3bba1983f4492091">get_type_name</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a032ef8ffac91b03a04da8af974132454">get_type_name</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a668ade7be79e29f2036ea7750efe1856">get_type_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="40" column="34" bodyfile="include/IMP/em2d/ImageReaderWriter.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1a05c699b3c44b2ef9f8eed2801e6bc196" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::ImageReaderWriter::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::get_version_info</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1ad0e50f0647d4fd391b8f9c997fa4ef7b">get_version_info</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a6d0b9f574ab7e186682c3ffe1c66c672">get_version_info</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a2b9c81001b2a001b63e075aaff4a8944">get_version_info</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="40" column="103" bodyfile="include/IMP/em2d/ImageReaderWriter.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1a5e44ebd2e762bc482741d31eb2f61ae5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::read</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const =0</argsstring>
+        <name>read</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::read</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1aeed6698ba471192fb6af4aa96156c710">read</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4c6a27beb107b4626f834f071a3d73c2">read</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1aa6e55985737f12091836972d4c533e89">read</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1adbd764fa1dacf7cf79ec44670f49b6a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::read_from_floats</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const =0</argsstring>
+        <name>read_from_floats</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::read_from_floats</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a2cf058e7d61d3e6cd95d21e62853489d">read_from_floats</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a9c08b22839e3ad4f256541b5737b8443">read_from_floats</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a9c7f5e275c757dcac82222bd91168585">read_from_floats</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="25" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1ad5d892bb53865c0995d9226d3d7dadfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::read_from_ints</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const =0</argsstring>
+        <name>read_from_ints</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::read_from_ints</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a95f485195a522b34f9e0bc415ada673b">read_from_ints</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a2daaa715c42d7c2716adf3004aefd039">read_from_ints</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a79e71352278aba3e88a035c0a1d9b378">read_from_ints</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="28" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1aae799f91ac40249ea85441d1154ad0f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::write</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const =0</argsstring>
+        <name>write</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::write</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a0244f1afc3394a84ff9ad713ca313f31">write</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a28f648aaffbbe3f266e4ff3faf7ef674">write</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a000fe6ea38a22e3f25b147df1812fe6c">write</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1a59263b05b2204f8a045cadb975604e72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::write_to_floats</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const =0</argsstring>
+        <name>write_to_floats</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::write_to_floats</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a96d90d761ccf706aa5782128999218d8">write_to_floats</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1acdda9e14c4ebaf55bccaac401e86ae2a">write_to_floats</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a329cac8a4541ae5d2c19348a6e434230">write_to_floats</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="34" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ImageReaderWriter_1acdc118dbb9ccf187f29072010f4e71d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::ImageReaderWriter::write_to_ints</definition>
+        <argsstring>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const =0</argsstring>
+        <name>write_to_ints</name>
+        <qualifiedname>IMP::em2d::ImageReaderWriter::write_to_ints</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1JPGImageReaderWriter_1a9ed60ae84e9b0ee7719df57f9aa3c8ed">write_to_ints</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter_1a4daf99dcf941f0e04e3abb7828e3f90f">write_to_ints</reimplementedby>
+        <reimplementedby refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter_1a5318892665b2405c50f7347d31024961">write_to_ints</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>em::ImageHeader &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ImageReaderWriter.h" line="37" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Virtual class for reader/writers of images. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::em2d::ImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1ImageReaderWriter"/>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::JPGImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1JPGImageReaderWriter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::em2d::SpiderImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::em2d::TIFFImageReaderWriter</label>
+        <link refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/em2d/ImageReaderWriter.h" line="19" column="1" bodyfile="include/IMP/em2d/ImageReaderWriter.h" bodystart="19" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a68d4ec44e98f1d72ec870593bbcbc4af" prot="public" virt="virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a05c699b3c44b2ef9f8eed2801e6bc196" prot="public" virt="virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a197519249a9bf215c5e3b1c93454dd6e" prot="public" virt="non-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>ImageReaderWriter</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a5e44ebd2e762bc482741d31eb2f61ae5" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>read</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1adbd764fa1dacf7cf79ec44670f49b6a4" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>read_from_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ad5d892bb53865c0995d9226d3d7dadfe" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>read_from_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1aae799f91ac40249ea85441d1154ad0f1" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>write</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1a59263b05b2204f8a045cadb975604e72" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>write_to_floats</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1acdc118dbb9ccf187f29072010f4e71d6" prot="public" virt="pure-virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>write_to_ints</name></member>
+      <member refid="classIMP_1_1em2d_1_1ImageReaderWriter_1ae3a2db063f891b1ac487cad40101f874" prot="public" virt="virtual"><scope>IMP::em2d::ImageReaderWriter</scope><name>~ImageReaderWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

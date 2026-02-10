@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacesave__assignments" kind="namespace" language="Python">
+    <compoundname>save_assignments</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="save__assignments_8py_1a72129c65ab48436f32d90fbb796b0311" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>save_assignments.a</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">IMP.domino.Assignment</ref>([i, j, k])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="31" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1a69e9f28b3cdf5d86dfe1e6800f3b48e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.asl</definition>
+        <argsstring></argsstring>
+        <name>asl</name>
+        <qualifiedname>save_assignments.asl</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1WriteAssignmentContainer" kindref="compound">IMP.domino.WriteAssignmentContainer</ref>(file_name, ss, ps, &quot;writer&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="26" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1a9e073cb3381f38ea90f9daacaf4435b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.back_asl</definition>
+        <argsstring></argsstring>
+        <name>back_asl</name>
+        <qualifiedname>save_assignments.back_asl</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kindref="compound">IMP.domino.ReadAssignmentContainer</ref>(file_name, ss, ps, &quot;reader&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="38" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1adcf98591f72c295d67d8b1aaa3a3ef7a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.back_aslp</definition>
+        <argsstring></argsstring>
+        <name>back_aslp</name>
+        <qualifiedname>save_assignments.back_aslp</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1ReadAssignmentContainer" kindref="compound">IMP.domino.ReadAssignmentContainer</ref>(file_name, ssp, psp, &quot;reader2&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="59" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1aa2d697ba18d9d794b286abe5037a198e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.file_name</definition>
+        <argsstring></argsstring>
+        <name>file_name</name>
+        <qualifiedname>save_assignments.file_name</qualifiedname>
+        <initializer>=  IMP.create_temporary_file_name(&quot;assignments&quot;, &quot;.asn&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="19" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1ade8182a4a48bfa15ad01ffd1a59bbcdc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>save_assignments.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="13" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1a137e87dd62a4b21bb017eb3c1ce4da2b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.mp</definition>
+        <argsstring></argsstring>
+        <name>mp</name>
+        <qualifiedname>save_assignments.mp</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="51" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1a3e8da9f67bf53332058f50b81353b371" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list save_assignments.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>save_assignments.ps</qualifiedname>
+        <initializer>=  [IMP.Particle(m) for i in range(0, 10)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="14" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1afc3ceefbef36bf5a11c4e0a30644a26e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list save_assignments.psp</definition>
+        <argsstring></argsstring>
+        <name>psp</name>
+        <qualifiedname>save_assignments.psp</qualifiedname>
+        <initializer>=  [IMP.Particle(mp) for i in range(0, 10)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="52" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1ac157819d45983465c19f759e23828bba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <qualifiedname>save_assignments.ss</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>([ps[3], ps[5], ps[7]])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="17" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1afb3c224c8f461e6c8c1ae5f60d5df8d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>save_assignments.ssp</definition>
+        <argsstring></argsstring>
+        <name>ssp</name>
+        <qualifiedname>save_assignments.ssp</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>([psp[3], psp[5], psp[7]])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="55" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="save__assignments_8py_1a47507a35b3b80907435ce16a628a985c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list save_assignments.written</definition>
+        <argsstring></argsstring>
+        <name>written</name>
+        <qualifiedname>save_assignments.written</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/save_assignments.py" line="27" column="1" bodyfile="examples/domino/save_assignments.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/save_assignments.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1EM2DRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::EM2DRestraint</compoundname>
+    <basecompoundref refid="classIMP_1_1spb_1_1ISDRestraint" prot="public" virt="non-virtual">IMP::spb::ISDRestraint</basecompoundref>
+    <includes local="no">IMP/spb/EM2DRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1a2e5ca856b086afe3ca5fcb77fbf8638e" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::EM2DRestraint::cols_</definition>
+        <argsstring></argsstring>
+        <name>cols_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::cols_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="30" column="9" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ad9304d5e20652a59f7fe99384fcc53d5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::EM2DRestraint::constr_type_</definition>
+        <argsstring></argsstring>
+        <name>constr_type_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::constr_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="27" column="7" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ad554fcb86db3c63ffc9c5a121680322c" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::EM2DRestraint::fmod_grid_</definition>
+        <argsstring></argsstring>
+        <name>fmod_grid_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::fmod_grid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="33" column="10" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ac3c3aae613b5bf660139fa71f84f39b9" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::EM2DRestraint::grid_</definition>
+        <argsstring></argsstring>
+        <name>grid_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::grid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="34" column="10" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ad291acc9bf5e07f65176aafbaa94bfa9" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1em2d_1_1Image" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">em2d::Image</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;em2d::Image&gt; IMP::spb::EM2DRestraint::image_</definition>
+        <argsstring></argsstring>
+        <name>image_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::image_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="28" column="22" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1acee79a7fbdfa537efaed397d0ec53c1f" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1em2d_1_1ProjectingOptions" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">em2d::ProjectingOptions</ref></type>
+        <definition>em2d::ProjectingOptions IMP::spb::EM2DRestraint::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::options_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="31" column="27" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1a03c8d9f44a26f607880e87a6a141b110" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::EM2DRestraint::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="25" column="13" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ae450c42e41021e297ff9996ce359e572" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member" external="/home/catherine/imp/build/doxygen/em2d/tags">em2d::RegistrationResults</ref></type>
+        <definition>em2d::RegistrationResults IMP::spb::EM2DRestraint::reg_res_</definition>
+        <argsstring></argsstring>
+        <name>reg_res_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::reg_res_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="32" column="29" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1a4b032773989ee8e89a2c252699cca406" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::EM2DRestraint::rows_</definition>
+        <argsstring></argsstring>
+        <name>rows_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::rows_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="29" column="9" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1EM2DRestraint_1ae901d7450cd6cfc4b3ad491e786cc67b" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::EM2DRestraint::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::sigma_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="26" column="22" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a4cb308a850058c0b6c246b5bb61df2c6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::spb::EM2DRestraint::get_closest</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;vec, double value) const</argsstring>
+        <name>get_closest</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_closest</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="40" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1ad7f0f62b404a593bf0aae11aa7db857b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_normal_pdf</definition>
+        <argsstring>(double mean, double sigma, double x) const</argsstring>
+        <name>get_normal_pdf</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_normal_pdf</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a5863cbd8999c75e51916f2ca15711974" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_truncated_normalization</definition>
+        <argsstring>(double mean, double sigma) const</argsstring>
+        <name>get_truncated_normalization</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_truncated_normalization</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1ab28b0d0e0d4c1e79a96caab37ad10e45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::EM2DRestraint::init_grid</definition>
+        <argsstring>(const Floats &amp;sigma_grid)</argsstring>
+        <name>init_grid</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::init_grid</qualifiedname>
+        <param>
+          <type>const Floats &amp;</type>
+          <declname>sigma_grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a5d84cbaf7d0e7c740e48690aea6de343" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::EM2DRestraint::read_image</definition>
+        <argsstring>(std::string ifile, Float px_size, Float res)</argsstring>
+        <name>read_image</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::read_image</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>ifile</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>px_size</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="36" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1ae3ba5996fdc708d55178bc327e31c8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::EM2DRestraint::EM2DRestraint</definition>
+        <argsstring>(Particles ps, Floats sigma_grid, Floats fmod_grid, std::string ifile, Float px_size, Float res)</argsstring>
+        <name>EM2DRestraint</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::EM2DRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>sigma_grid</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>fmod_grid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>ifile</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>px_size</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="48" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1af1c4225392bb43cb37bd9014cb24eb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::EM2DRestraint::EM2DRestraint</definition>
+        <argsstring>(Particles ps, Particle *sigma, std::string ifile, Float px_size, Float res)</argsstring>
+        <name>EM2DRestraint</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::EM2DRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>ifile</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>px_size</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>EM2D cross correlation is used to score models in a Bayesian way. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="45" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1ab55601bdd2f993ae1f2455353ac6a4e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::EM2DRestraint::~EM2DRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~EM2DRestraint</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::~EM2DRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="78" column="231" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1abb0d425afdb7c85dd41583026618dba8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>IMP::ModelObjectsTemp IMP::spb::EM2DRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="76" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a80df0685721f898193436a9d0343f13a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_cross_correlation</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cross_correlation</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_cross_correlation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1abdddb50e689292f2e289967dc8c60596" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_element</definition>
+        <argsstring>(double fmod, double sigma) const</argsstring>
+        <name>get_element</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_element</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>fmod</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a0a7f03453b7654756e33d568300331c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_marginal_element</definition>
+        <argsstring>(double fmod) const</argsstring>
+        <name>get_marginal_element</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_marginal_element</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>fmod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a35b35a46b5451585e089c7f6486ec10b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double IMP::spb::EM2DRestraint::get_probability</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_probability</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_probability</qualifiedname>
+        <reimplements refid="classIMP_1_1spb_1_1ISDRestraint_1a633dbe887307b93953c10b590232a751">get_probability</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a059ce641ce5ef4794c83e02a910d60be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::EM2DRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="78" column="34" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a618cbcc25da2a0cc0664487224d4ea25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::EM2DRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="78" column="103" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1ad2b04b3e1e8311556cdf37bdeee2330d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::EM2DRestraint::set_particles</definition>
+        <argsstring>(Particles ps)</argsstring>
+        <name>set_particles</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::set_particles</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1EM2DRestraint_1a8d6b189e88acca5fc8b4f9b6e76e6570" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::EM2DRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::spb::EM2DRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro declares the basic needed methods: evaluate and show This macro declares the basic needed methods: evaluate and show </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/EM2DRestraint.h" line="74" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A restraint for using EM2D cross-corr in a Bayesian way <programlisting filename="EM2DRestraint.cpp"></programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::spb::EM2DRestraint</label>
+        <link refid="classIMP_1_1spb_1_1EM2DRestraint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::spb::ISDRestraint</label>
+        <link refid="classIMP_1_1spb_1_1ISDRestraint"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::spb::EM2DRestraint</label>
+        <link refid="classIMP_1_1spb_1_1EM2DRestraint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::spb::ISDRestraint</label>
+        <link refid="classIMP_1_1spb_1_1ISDRestraint"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/spb/EM2DRestraint.h" line="24" column="1" bodyfile="include/IMP/spb/EM2DRestraint.h" bodystart="24" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a2e5ca856b086afe3ca5fcb77fbf8638e" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>cols_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad9304d5e20652a59f7fe99384fcc53d5" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>constr_type_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1abb0d425afdb7c85dd41583026618dba8" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1af1c4225392bb43cb37bd9014cb24eb2e" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>EM2DRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae3ba5996fdc708d55178bc327e31c8c7" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>EM2DRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad554fcb86db3c63ffc9c5a121680322c" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>fmod_grid_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a4cb308a850058c0b6c246b5bb61df2c6" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_closest</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a80df0685721f898193436a9d0343f13a" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_cross_correlation</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1abdddb50e689292f2e289967dc8c60596" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_element</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a0a7f03453b7654756e33d568300331c7" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_marginal_element</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad7f0f62b404a593bf0aae11aa7db857b" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_normal_pdf</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a35b35a46b5451585e089c7f6486ec10b" prot="public" virt="virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_probability</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a5863cbd8999c75e51916f2ca15711974" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_truncated_normalization</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a059ce641ce5ef4794c83e02a910d60be" prot="public" virt="virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a618cbcc25da2a0cc0664487224d4ea25" prot="public" virt="virtual"><scope>IMP::spb::EM2DRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ac3c3aae613b5bf660139fa71f84f39b9" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>grid_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad291acc9bf5e07f65176aafbaa94bfa9" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>image_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ab28b0d0e0d4c1e79a96caab37ad10e45" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>init_grid</name></member>
+      <member refid="classIMP_1_1spb_1_1ISDRestraint_1ae876b1fe13a179659800c38a9521e45c" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>ISDRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1acee79a7fbdfa537efaed397d0ec53c1f" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>options_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a03c8d9f44a26f607880e87a6a141b110" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a5d84cbaf7d0e7c740e48690aea6de343" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>read_image</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae450c42e41021e297ff9996ce359e572" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>reg_res_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a4b032773989ee8e89a2c252699cca406" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>rows_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad2b04b3e1e8311556cdf37bdeee2330d" prot="public" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>set_particles</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae901d7450cd6cfc4b3ad491e786cc67b" prot="private" virt="non-virtual"><scope>IMP::spb::EM2DRestraint</scope><name>sigma_</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a8d6b189e88acca5fc8b4f9b6e76e6570" prot="public" virt="virtual"><scope>IMP::spb::EM2DRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ab55601bdd2f993ae1f2455353ac6a4e5" prot="public" virt="virtual"><scope>IMP::spb::EM2DRestraint</scope><name>~EM2DRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

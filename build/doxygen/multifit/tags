@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::multifit::cluster::AlignmentClustering</name>
+    <filename>classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>do_clustering</name>
+      <anchorfile>classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering.html</anchorfile>
+      <anchor>a5408d179e1227c139c6a09be0321f675</anchor>
+      <arglist>(self, max_comb_ind, max_rmsd)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_cc</name>
+      <anchorfile>classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering.html</anchorfile>
+      <anchor>a54ef15cc650fa190ca079370bb71296d</anchor>
+      <arglist>(self, ps)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_placement_score_from_coordinates</name>
+      <anchorfile>classIMP_1_1multifit_1_1cluster_1_1AlignmentClustering.html</anchorfile>
+      <anchor>acabc2215397c67036b868af293376489</anchor>
+      <arglist>(self, model_coords, native_coords)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::AnchorsData</name>
+    <filename>classIMP_1_1multifit_1_1AnchorsData.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>get_secondary_structure_is_set</name>
+      <anchorfile>classIMP_1_1multifit_1_1AnchorsData.html</anchorfile>
+      <anchor>ad0ab430d781b9d0cd4663dec6090a7d4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_secondary_structure_probabilities</name>
+      <anchorfile>classIMP_1_1multifit_1_1AnchorsData.html</anchorfile>
+      <anchor>aa26fd429b4e9224d656c5d8936306967</anchor>
+      <arglist>(const Particles &amp;ssres_ps, const Ints &amp;indices=Ints())</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setup_secondary_structure</name>
+      <anchorfile>classIMP_1_1multifit_1_1AnchorsData.html</anchorfile>
+      <anchor>ad199d93f2865c7448b8d28d1663c9efd</anchor>
+      <arglist>(Model *mdl)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::AssemblyHeader</name>
+    <filename>classIMP_1_1multifit_1_1AssemblyHeader.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::transforms::ChimeraFormatter</name>
+    <filename>classIMP_1_1multifit_1_1transforms_1_1ChimeraFormatter.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ComplementarityRestraint</name>
+    <filename>classIMP_1_1multifit_1_1ComplementarityRestraint.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>set_complementarity_thickness</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>a9f77d866de59965ead8ce1626ffa4d52</anchor>
+      <arglist>(double th)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_complementarity_value</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>ad5cf5dc29719b19a9deb7cb3504c6250</anchor>
+      <arglist>(double th)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_interior_layer_thickness</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>a1172757f971a296631e3ec15b39df6a9</anchor>
+      <arglist>(double th)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_maximum_penetration</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>a865805a86d84f35935fc2115b0feb075</anchor>
+      <arglist>(double d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_maximum_penetration_score</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>af73ad08df0acb0c0d7fdbc415c4d79f1</anchor>
+      <arglist>(double s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_maximum_separation</name>
+      <anchorfile>classIMP_1_1multifit_1_1ComplementarityRestraint.html</anchorfile>
+      <anchor>a882c153d956b972f12180cf0af3a15c6</anchor>
+      <arglist>(double s)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ComponentHeader</name>
+    <filename>classIMP_1_1multifit_1_1ComponentHeader.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::DataPointsAssignment</name>
+    <filename>classIMP_1_1multifit_1_1DataPointsAssignment.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::DensityDataPoints</name>
+    <filename>classIMP_1_1multifit_1_1DensityDataPoints.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::transforms::DockRefFormatter</name>
+    <filename>classIMP_1_1multifit_1_1transforms_1_1DockRefFormatter.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::DummyRestraint</name>
+    <filename>classIMP_1_1multifit_1_1DummyRestraint.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::Ensemble</name>
+    <filename>classIMP_1_1multifit_1_1Ensemble.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::FFTFitting</name>
+    <filename>classIMP_1_1multifit_1_1FFTFitting.html</filename>
+    <member kind="function">
+      <type>FFTFittingOutput *</type>
+      <name>do_global_fitting</name>
+      <anchorfile>classIMP_1_1multifit_1_1FFTFitting.html</anchorfile>
+      <anchor>af852eac69c96a429dfd981874da98caf</anchor>
+      <arglist>(em::DensityMap *dmap, double density_threshold, atom::Hierarchy mol2fit, double angle_sampling_interval_rad, int num_fits_to_report, double max_clustering_translation, double max_clustering_angle, bool cluster_fits=true, int num_angle_per_voxel=1, const std::string &amp;angles_filename=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>FFTFittingOutput *</type>
+      <name>do_local_fitting</name>
+      <anchorfile>classIMP_1_1multifit_1_1FFTFitting.html</anchorfile>
+      <anchor>ae968f045c0616e5599a853f4734aa477</anchor>
+      <arglist>(em::DensityMap *dmap, double density_threshold, atom::Hierarchy mol2fit, double angle_sampling_interval_rad, double max_angle_sampling_rad, double max_translation, int num_fits_to_report, bool cluster_fits, int num_angle_per_voxel, double max_clustering_translation, double max_clustering_rotation, const std::string &amp;angles_filename=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>FittingSolutionRecords</type>
+      <name>detect_top_fits</name>
+      <anchorfile>classIMP_1_1multifit_1_1FFTFitting.html</anchorfile>
+      <anchor>ac4e0b3ee481b867448bdb5e5fed83115</anchor>
+      <arglist>(const internal::RotScoresVec &amp;rot_scores, bool cluster_fits, double max_translation, double max_clustering_trans, double max_clustering_rotation)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::FFTFittingOutput</name>
+    <filename>classIMP_1_1multifit_1_1FFTFittingOutput.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::FittingSolutionRecord</name>
+    <filename>classIMP_1_1multifit_1_1FittingSolutionRecord.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>FittingSolutionRecord</name>
+      <anchorfile>classIMP_1_1multifit_1_1FittingSolutionRecord.html</anchorfile>
+      <anchor>aeae3aef9eae5c906c9dc0cf4d1dc7c60</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1multifit_1_1FittingSolutionRecord.html</anchorfile>
+      <anchor>acd801ea6cff6b0804cef0016ae666539</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::FittingStates</name>
+    <filename>classIMP_1_1multifit_1_1FittingStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::GeometricHash</name>
+    <filename>classIMP_1_1multifit_1_1GeometricHash.html</filename>
+    <templarg>typename T</templarg>
+    <templarg>size_t D</templarg>
+    <member kind="function">
+      <type>void</type>
+      <name>clear</name>
+      <anchorfile>classIMP_1_1multifit_1_1GeometricHash.html</anchorfile>
+      <anchor>a04e368aff3a3e7dc3f190bcceb7409d6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>BucketList</type>
+      <name>get_buckets</name>
+      <anchorfile>classIMP_1_1multifit_1_1GeometricHash.html</anchorfile>
+      <anchor>a9d0a02c371dc0d8cbaa03bb39ba086b6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>GeomMap const &amp;</type>
+      <name>Map</name>
+      <anchorfile>classIMP_1_1multifit_1_1GeometricHash.html</anchorfile>
+      <anchor>a51da300a7bc68ccef180cb5f5d3b5509</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::MergeTreeBuilder</name>
+    <filename>classIMP_1_1multifit_1_1MergeTreeBuilder.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ProbabilisticAnchorGraph</name>
+    <filename>classIMP_1_1multifit_1_1ProbabilisticAnchorGraph.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>set_particle_probabilities_on_anchors</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProbabilisticAnchorGraph.html</anchorfile>
+      <anchor>ab94a576dc10c30919f4d7ee8087883ec</anchor>
+      <arglist>(Particle *p, multifit::FittingSolutionRecords sols)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ProteinsAnchorsSamplingSpace</name>
+    <filename>classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ProteomicsData</name>
+    <filename>classIMP_1_1multifit_1_1ProteomicsData.html</filename>
+    <member kind="function">
+      <type>int</type>
+      <name>add_protein</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsData.html</anchorfile>
+      <anchor>a5414b856576ca514581bef639cea77cf</anchor>
+      <arglist>(const ProteinRecordData &amp;rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>add_protein</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsData.html</anchorfile>
+      <anchor>ab0c990e6e1c1b47dcd7766976e4297b4</anchor>
+      <arglist>(std::string name, int start_res, int end_res, const std::string &amp;mol_fn, const std::string &amp;surface_fn, const std::string &amp;ref_fn)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::ProteomicsEMAlignmentAtomic</name>
+    <filename>classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>add_all_restraints</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic.html</anchorfile>
+      <anchor>a6f54cacaabe39632cf282d202d1327a7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>RestraintSet *</type>
+      <name>get_restraint_set</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic.html</anchorfile>
+      <anchor>a277ca787728e3ffa00977e12e4f79c4e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_combination_of_states</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic.html</anchorfile>
+      <anchor>ac82cf2f7f641892f456c67da2ae3568b</anchor>
+      <arglist>(const Ints &amp;state4particles)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_fast_scoring</name>
+      <anchorfile>classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic.html</anchorfile>
+      <anchor>a568c21102d08963792bae063a1820f45</anchor>
+      <arglist>(bool state)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::RadiusOfGyrationRestraint</name>
+    <filename>classIMP_1_1multifit_1_1RadiusOfGyrationRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RadiusOfGyrationRestraint</name>
+      <anchorfile>classIMP_1_1multifit_1_1RadiusOfGyrationRestraint.html</anchorfile>
+      <anchor>acbda675b11c0086ecf8d6ce4e6f2028a</anchor>
+      <arglist>(Particles ps, int num_residues, Float scale=1.)</arglist>
+    </member>
+    <member kind="function">
+      <type>Float</type>
+      <name>get_radius_of_gyration</name>
+      <anchorfile>classIMP_1_1multifit_1_1RadiusOfGyrationRestraint.html</anchorfile>
+      <anchor>a847cc2b1894c5d6a192cb28b780588c9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_radius_of_gyration</name>
+      <anchorfile>classIMP_1_1multifit_1_1RadiusOfGyrationRestraint.html</anchorfile>
+      <anchor>a88174776515fb9fb9725bd91c725fe7e</anchor>
+      <arglist>(Float r)</arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>particles</name>
+      <anchorfile>classIMP_1_1multifit_1_1RadiusOfGyrationRestraint.html</anchorfile>
+      <anchor>a3969666db8a2c52c752a28f41a78300b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::RigidLeavesRefiner</name>
+    <filename>classIMP_1_1multifit_1_1RigidLeavesRefiner.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::SettingsData</name>
+    <filename>classIMP_1_1multifit_1_1SettingsData.html</filename>
+    <member kind="variable">
+      <type>list</type>
+      <name>component_headers</name>
+      <anchorfile>classIMP_1_1multifit_1_1SettingsData.html</anchorfile>
+      <anchor>a5bbfc02e8dc9e3b0dc3802927480873d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::multifit::WeightedExcludedVolumeRestraint</name>
+    <filename>classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>WeightedExcludedVolumeRestraint</name>
+      <anchorfile>classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint.html</anchorfile>
+      <anchor>a1b6c81a897d408afc71a09df136738c3</anchor>
+      <arglist>(core::RigidBodies rbs, Refiner *refiner, FloatKey weight_key=IMP::atom::Mass::get_mass_key())</arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>particles</name>
+      <anchorfile>classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint.html</anchorfile>
+      <anchor>a65c3b72ae2fb2d369601c839c32b9fdb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::multifit</name>
+    <filename>namespaceIMP_1_1multifit.html</filename>
+    <class kind="class">IMP::multifit::AnchorsData</class>
+    <class kind="class">IMP::multifit::AssemblyHeader</class>
+    <class kind="class">IMP::multifit::ComplementarityRestraint</class>
+    <class kind="class">IMP::multifit::ComponentHeader</class>
+    <class kind="class">IMP::multifit::DataPointsAssignment</class>
+    <class kind="class">IMP::multifit::DensityDataPoints</class>
+    <class kind="class">IMP::multifit::DummyRestraint</class>
+    <class kind="class">IMP::multifit::Ensemble</class>
+    <class kind="class">IMP::multifit::FFTFitting</class>
+    <class kind="class">IMP::multifit::FFTFittingOutput</class>
+    <class kind="class">IMP::multifit::FittingSolutionRecord</class>
+    <class kind="class">IMP::multifit::FittingStates</class>
+    <class kind="class">IMP::multifit::GeometricHash</class>
+    <class kind="class">IMP::multifit::MergeTreeBuilder</class>
+    <class kind="class">IMP::multifit::ProbabilisticAnchorGraph</class>
+    <class kind="class">IMP::multifit::ProteinsAnchorsSamplingSpace</class>
+    <class kind="class">IMP::multifit::ProteomicsData</class>
+    <class kind="class">IMP::multifit::ProteomicsEMAlignmentAtomic</class>
+    <class kind="class">IMP::multifit::RadiusOfGyrationRestraint</class>
+    <class kind="class">IMP::multifit::RigidLeavesRefiner</class>
+    <class kind="class">IMP::multifit::SettingsData</class>
+    <class kind="class">IMP::multifit::WeightedExcludedVolumeRestraint</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; AlignmentParams &gt;</type>
+      <name>AlignmentParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a93702dee83b99ce6f65045c99bff5f92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; AnchorsData &gt;</type>
+      <name>AnchorsDataList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a33eb25dc768e2409b9ba92138cdc6381</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ComplementarityParams &gt;</type>
+      <name>ComplementarityParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ada2444c48b39cdee70f088b39b82ad4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ComponentHeader &gt; &gt;</type>
+      <name>ComponentHeaders</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a1aef96d3c7da11dfbec697f469247e14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ComponentHeader &gt; &gt;</type>
+      <name>ComponentHeadersTemp</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a581738aa18758a7bc20b52d1495b232c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ConnectivityParams &gt;</type>
+      <name>ConnectivityParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a8d335a599eaccffcd1990e6b245553ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DensityDataPoints &gt; &gt;</type>
+      <name>DensityDataPointsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a9fea6dd4cc1090cc1463eaa9c98e2214</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DensityDataPoints &gt; &gt;</type>
+      <name>DensityDataPointsListTemp</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a4e9f87fa6b97abe41658032d3a8c4ebf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; DominoParams &gt;</type>
+      <name>DominoParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a1805a1a12680b4b43b9bb54ca39ab8fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; Ensemble &gt; &gt;</type>
+      <name>Ensembles</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a56e542eec1755b6290b34386ff6027fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; Ensemble &gt; &gt;</type>
+      <name>EnsemblesTemp</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>aa79506d6b48c8451305991a579dd6616</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; EVParams &gt;</type>
+      <name>EVParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>aaf84c6e4694a5d0c404a098956e6c0e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; FiltersParams &gt;</type>
+      <name>FiltersParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a287ecaae7be209cbffb03111e7a9061f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; FittingParams &gt;</type>
+      <name>FittingParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a556d45fa12736e5e2038b532ba55ee8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; FittingSolutionRecord &gt;</type>
+      <name>FittingSolutionRecords</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a591b6b30571ca327ba202d496913e83e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; FragmentsParams &gt;</type>
+      <name>FragmentsParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a3b68bd2e40f71a27c8bcdfa1abd0fa92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ProbabilisticAnchorGraph &gt; &gt;</type>
+      <name>ProbabilisticAnchorGraphs</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a6bb9c874d071e408b061cc86d6440441</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ProbabilisticAnchorGraph &gt; &gt;</type>
+      <name>ProbabilisticAnchorGraphsTemp</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a2d9ee3034cc2b99c3cc64ceb6d25054f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ProteinRecordData &gt;</type>
+      <name>ProteinRecordDataList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>adf69456ca590d975b754d570908eb958</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ProteinsAnchorsSamplingSpace &gt;</type>
+      <name>ProteinsAnchorsSamplingSpaces</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a7414f0cfa457f7d7d51f94aebac121d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ProteomicsEMAlignmentAtomic &gt; &gt;</type>
+      <name>ProteomicsEMAlignmentAtomics</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ae3a35cac442f676b76b2c329aa0cbd15</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ProteomicsEMAlignmentAtomic &gt; &gt;</type>
+      <name>ProteomicsEMAlignmentAtomicsTemp</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a408344076f0482bbd3ab4a8b42ec6345</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; RogParams &gt;</type>
+      <name>RogParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ace98b2a0311da4ae45256b679f15765a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; XlinkParams &gt;</type>
+      <name>XlinkParamsList</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a236f4248804e1976652e364c86ab6320</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_surface_index</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a3e058408a3879546f50897a4e8f9253b</anchor>
+      <arglist>(core::Hierarchy mhd, Float apix, FloatKey shell_key=FloatKey(&quot;surf_ind&quot;), FloatKey radius_key=core::XYZR::get_radius_key(), FloatKey weight_key=atom::Mass::get_mass_key())</arglist>
+    </member>
+    <member kind="function">
+      <type>atom::Hierarchy</type>
+      <name>create_coarse_molecule_from_density</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a3ae2f2b63f2b07f548e4fd095871d9b8</anchor>
+      <arglist>(em::DensityMap *dmap, float dens_threshold, int num_beads, Model *mdl, float bead_radius)</arglist>
+    </member>
+    <member kind="function">
+      <type>IMP::Restraint *</type>
+      <name>create_weighted_excluded_volume_restraint</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a4b27a69a21d1b1ae08bec9d4eeb709a6</anchor>
+      <arglist>(core::RigidBody rb1, core::RigidBody rb2, FloatKey shell_key=FloatKey(&quot;surf_ind&quot;))</arglist>
+    </member>
+    <member kind="function">
+      <type>multifit::FittingSolutionRecords</type>
+      <name>fft_based_rigid_fitting</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>af83b1866a4b7bb6747eea98bd9bb28e1</anchor>
+      <arglist>(atom::Hierarchy mol2fit, em::DensityMap *dmap, double density_threshold, double angle_sampling_interval_rad)</arglist>
+    </member>
+    <member kind="function">
+      <type>IntsList</type>
+      <name>get_anchor_indices_matching_secondary_structure</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a173eff7add1e1652a69ce9c1365ddf2f</anchor>
+      <arglist>(const AnchorsData &amp;ad, const atom::SecondaryStructureResidues &amp;ssrs, Float max_rmsd=0.7)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_anchors_for_density</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>af5cfce601c0bc38d4fd668dec337b3f4</anchor>
+      <arglist>(em::DensityMap *dmap, int number_of_means, float density_threshold, std::string pdb_filename, std::string cmm_filename, std::string seg_filename, std::string txt_filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>FittingSolutionRecords</type>
+      <name>get_close_to_point</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a72317593e3aff9f9e43e2e4f92481f47</anchor>
+      <arglist>(const FittingSolutionRecords &amp;fit_sols, atom::Hierarchy mh, IMP::Particle *ap, Float dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>IntsList</type>
+      <name>get_connected_components</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>aebdba0d523d4730ee0031629b70b8ea1</anchor>
+      <arglist>(em::DensityMap *dmap, float threshold, float edge_threshold)</arglist>
+    </member>
+    <member kind="function">
+      <type>ProteinsAnchorsSamplingSpace</type>
+      <name>get_part_of_sampling_space</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a1cc01cbbbb1cf9bb7f226524e0616e12</anchor>
+      <arglist>(const ProteinsAnchorsSamplingSpace &amp;prots_ss, const Strings &amp;prot_names)</arglist>
+    </member>
+    <member kind="function">
+      <type>multifit::SettingsData *</type>
+      <name>get_partial_assembly_setting_data</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>aba7fd97a801a6872f5c53f38b0ec905f</anchor>
+      <arglist>(multifit::SettingsData *prots_sd, const Strings &amp;prot_names)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Vector3Ds</type>
+      <name>get_points_close_to_molecule</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ad9a90449965866bc3f547eb9e2193399</anchor>
+      <arglist>(const atom::Hierarchy &amp;mh, const algebra::Vector3Ds points, Float max_dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_segmentation</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>aeb628c3804ee3d8aa7df59051b0ad1d2</anchor>
+      <arglist>(em::DensityMap *dmap, double apix, double density_threshold, int num_means, const std::string pdb_filename, const std::string cmm_filename, const std::string seg_filename, const std::string txt_filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>em::FittingSolutions</type>
+      <name>pca_based_rigid_fitting</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a45c8385d6183240ec7216ae97374c7a9</anchor>
+      <arglist>(core::RigidBody rb, Refiner *rb_refiner, em::DensityMap *em_map, Float threshold, FloatKey wei_key=atom::Mass::get_mass_key(), algebra::PrincipalComponentAnalysis dens_pca_input=algebra::PrincipalComponentAnalysis())</arglist>
+    </member>
+    <member kind="function">
+      <type>em::FittingSolutions</type>
+      <name>pca_based_rigid_fitting</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>afdf294ea4f4b41a0fa4da41f6c95e32c</anchor>
+      <arglist>(ParticlesTemp ps, em::DensityMap *em_map, Float threshold, FloatKey wei_key=atom::Mass::get_mass_key(), algebra::PrincipalComponentAnalysis dens_pca_input=algebra::PrincipalComponentAnalysis())</arglist>
+    </member>
+    <member kind="function">
+      <type>FittingSolutionRecords</type>
+      <name>read_fitting_solutions</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ae07f089c01764aa197297e2da4aa743a</anchor>
+      <arglist>(const char *fitting_fn)</arglist>
+    </member>
+    <member kind="function">
+      <type>IntsList</type>
+      <name>read_paths</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a6d1c73d19e87fced1f49e28866f6acf7</anchor>
+      <arglist>(const char *txt_filename, int max_paths=INT_MAX)</arglist>
+    </member>
+    <member kind="function">
+      <type>ProteomicsData *</type>
+      <name>read_proteomics_data</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ac616e7aaf0efc33662e75b3ff9c98097</anchor>
+      <arglist>(const char *proteomics_fn)</arglist>
+    </member>
+    <member kind="function">
+      <type>em::DensityMap *</type>
+      <name>remove_background</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a74da7bc0c5074fd40f6552956ea3a75a</anchor>
+      <arglist>(em::DensityMap *dmap, float threshold, float edge_threshold)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_connolly_surface</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ad3f92bb765e32aee3d6f1c0d15366d5a</anchor>
+      <arglist>(atom::Atoms atoms, TextOutput fn, float density, float probe_radius)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_fitting_solutions</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a353be2a32c95fe02505606f5fc25465f</anchor>
+      <arglist>(const char *fitting_fn, const FittingSolutionRecords &amp;fit_sols, int num_sols=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_segments_as_mrc</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>ac66c9128b0009595989bc520e3e6dcd3</anchor>
+      <arglist>(em::DensityMap *dmap, const DataPointsAssignment &amp;dpa, Float resolution, Float apix, Float threshold, const std::string &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a480006a88bd3b793459c5afaa4bee23c</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1multifit.html</anchorfile>
+      <anchor>a4e6ed029ea3a4a15f38cd998c8bacbd2</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <docanchor file="namespaceIMP_1_1multifit.html" title="multifit: command line tool">multifit_bin</docanchor>
+    <docanchor file="namespaceIMP_1_1multifit.html" title="complex_to_anchor_graph">complex_anchor_bin</docanchor>
+  </compound>
+</tagfile>

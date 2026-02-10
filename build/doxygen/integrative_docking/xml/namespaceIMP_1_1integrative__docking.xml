@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1integrative__docking" kind="namespace" language="C++">
+    <compoundname>IMP::integrative_docking</compoundname>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1integrative__docking_1a8bb2a3a731c73b938f8c23371f2ac266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::integrative_docking::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::integrative_docking::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="159" column="18" declfile="include/IMP/integrative_docking/integrative_docking_config.h" declline="159" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1integrative__docking_1a22b73541d1edc2c8dbb12c938423fb7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::integrative_docking::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::integrative_docking::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="164" column="24" bodyfile="include/IMP/integrative_docking/integrative_docking_config.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1integrative__docking_1ada4a729cce4466ae2787e46998b3e1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::integrative_docking::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::integrative_docking::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1integrative__docking_1ada4a729cce4466ae2787e46998b3e1df" kindref="member">IMP::integrative_docking::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="180" column="18" declfile="include/IMP/integrative_docking/integrative_docking_config.h" declline="180" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1integrative__docking_1a6eea424c1af7aea86af2f38b764caa1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::integrative_docking::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::integrative_docking::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1integrative__docking_1a6eea424c1af7aea86af2f38b764caa1a" kindref="member">IMP::integrative_docking::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="196" column="18" declfile="include/IMP/integrative_docking/integrative_docking_config.h" declline="196" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Pairwise docking incorporating additional data. </para>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="namespaceIMP_1_1integrative__docking_1idock_bin">
+<title>idock</title><para>Pairwise docking incorporating additional data.</para>
+<para>This is a protocol for pairwise protein docking, in which additional experimental information about the protein-protein complex is incorporated into the docking procedure to greatly improve the accuracy of predictions. This method succeeds in producing a near-native model among the top 10 models in 42–82% of cases, while state-of-the-art docking methods succeed only in 30–40% of cases, depending on the benchmark and accuracy criterion.</para>
+<para>The protocol can currently incorporate data from the following sources:<itemizedlist>
+<listitem><para>a SAXS profile (SAXS)</para>
+</listitem><listitem><para>2D class average images of the complex from negative-stain EM micrographs (EM2D)</para>
+</listitem><listitem><para>a 3D density map of the complex (EM3D)</para>
+</listitem><listitem><para>residue type content at the protein interface from NMR spectroscopy (NMR-RTC)</para>
+</listitem><listitem><para>chemical cross-linking detected by mass spectrometry (CXMS).</para>
+</listitem></itemizedlist>
+</para>
+<para>Additionally the protocol calculates SOAP score based on an atomic statistical potential.<itemizedlist>
+<listitem><para>a SOAP score (SOAP)</para>
+</listitem></itemizedlist>
+</para>
+<para>The protocol proceeds by first sampling complex models using <ulink url="http://bioinfo3d.cs.tau.ac.il/PatchDock/">PatchDock</ulink> for pairwise protein docking, followed by <ref refid="idock_progs" kindref="compound">filtering based on fit to the experimental data</ref>, clustering and composite scoring.</para>
+<para><emphasis>Examples</emphasis>:<itemizedlist>
+<listitem><para>Docking of PCSK9</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1integrative__docking_1autotoc_md0">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Dina Schneidman</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>duhovka</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/gpl.html">GPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>Schneidman-Duhovny D, Hammel M, Sali A. Macromolecular docking restrained by a small angle X-ray scattering profile. J Struct Biol. 2011 Mar;173(3):461-71.</para>
+</listitem><listitem><para>Schneidman-Duhovny et al. A method for integrative structure determination of protein-protein complexes. Bioinformatics. 2012;28(24):3282-9.</para>
+</listitem><listitem><para>Dong GQ, Fan H, Schneidman-Duhovny D, Webb B, Sali A. Optimized atomic statistical potentials: Assessment of protein interfaces and loops. Bioinformatics. 2013;29(24):3158-66 </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/integrative_docking/integrative_docking_config.h" line="152" column="13"/>
+  </compounddef>
+</doxygen>

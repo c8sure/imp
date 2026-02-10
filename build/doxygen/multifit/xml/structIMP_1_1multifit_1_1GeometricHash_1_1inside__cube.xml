@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::multifit::GeometricHash::inside_cube</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1ae6e0013bfc417213758d4a285b156a4a" prot="public" static="no" mutable="no">
+        <type>const Point &amp;</type>
+        <definition>const Point&amp; IMP::multifit::GeometricHash&lt; T, D &gt;::inside_cube::center_</definition>
+        <argsstring></argsstring>
+        <name>center_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_cube::center_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="211" column="17" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a6cc16ac04b67b9d002495c3ba3018617" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::inside_cube::radii_[D]</definition>
+        <argsstring>[D]</argsstring>
+        <name>radii_</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_cube::radii_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="212" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1afc50947970ab768f15873fc58c540b60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename X</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>IMP::multifit::GeometricHash&lt; T, D &gt;::inside_cube::inside_cube</definition>
+        <argsstring>(const Point &amp;center, const X &amp;radii)</argsstring>
+        <name>inside_cube</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_cube::inside_cube</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const X &amp;</type>
+          <declname>radii</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="198" column="5" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a3e4ded37168a6dc919b5459af5d5094a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::GeometricHash&lt; T, D &gt;::inside_cube::operator()</definition>
+        <argsstring>(const Point &amp;pt) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_cube::operator()</qualifiedname>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="203" column="10" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a321e0705f48e4289d94b26d414204df6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::multifit::GeometricHash&lt; T, D &gt;::inside_cube::radius</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>radius</name>
+        <qualifiedname>IMP::multifit::GeometricHash::inside_cube::radius</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/GeometricHash.h" line="209" column="12" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/GeometricHash.h" line="196" column="3" bodyfile="include/IMP/multifit/GeometricHash.h" bodystart="196" bodyend="213"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1ae6e0013bfc417213758d4a285b156a4a" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_cube</scope><name>center_</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1afc50947970ab768f15873fc58c540b60" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_cube</scope><name>inside_cube</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a3e4ded37168a6dc919b5459af5d5094a" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_cube</scope><name>operator()</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a6cc16ac04b67b9d002495c3ba3018617" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_cube</scope><name>radii_</name></member>
+      <member refid="structIMP_1_1multifit_1_1GeometricHash_1_1inside__cube_1a321e0705f48e4289d94b26d414204df6" prot="public" virt="non-virtual"><scope>IMP::multifit::GeometricHash::inside_cube</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

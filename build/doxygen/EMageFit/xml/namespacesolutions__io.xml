@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacesolutions__io" kind="namespace" language="Python">
+    <compoundname>solutions_io</compoundname>
+    <innerclass refid="classsolutions__io_1_1HeapRecord" prot="public">solutions_io::HeapRecord</innerclass>
+    <innerclass refid="classsolutions__io_1_1ResultsDB" prot="public">solutions_io::ResultsDB</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="solutions__io_8py_1aedde003b7fe447a55dda32a7d5a3472b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.gather_best_solution_results</definition>
+        <argsstring>(fns, fn_output, max_number=50000, raisef=0.1, orderby=&apos;em2d&apos;)</argsstring>
+        <name>gather_best_solution_results</name>
+        <qualifiedname>solutions_io.gather_best_solution_results</qualifiedname>
+        <param>
+          <type>fns</type>
+          <defname>fns</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <param>
+          <type>max_number</type>
+          <defname>max_number</defname>
+          <defval>50000</defval>
+        </param>
+        <param>
+          <type>raisef</type>
+          <defname>raisef</defname>
+          <defval>0.1</defval>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+          <defval>&apos;em2d&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Reads a set of database files and merge them into a single file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of files with databases </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The database to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of records to keep, sorted according to orderby </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raisef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio of problematic database files tolerated before raising an error. This option is to tolerate some files of the databases being broken because the cluster fails, fill the disks, etc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orderby</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Criterion used to sort the records NOTE: Makes sure to reorder all column names if necessary before merging The record for the native solution is only added once (from first file).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="62" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="62" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="solutions__io_8py_1a7c397d14c1dfbfc8bf37931e430f3993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.gather_solution_results</definition>
+        <argsstring>(fns, fn_output, raisef=0.1)</argsstring>
+        <name>gather_solution_results</name>
+        <qualifiedname>solutions_io.gather_solution_results</qualifiedname>
+        <param>
+          <type>fns</type>
+          <defname>fns</defname>
+        </param>
+        <param>
+          <type>fn_output</type>
+          <defname>fn_output</defname>
+        </param>
+        <param>
+          <type>raisef</type>
+          <defname>raisef</defname>
+          <defval>0.1</defval>
+        </param>
+        <briefdescription>
+<para>Reads a set of database files and puts them in a single file Makes sure to reorder all column names if necessary before merging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of database files </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the output database </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raisef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See help for gather_best_solution_results()</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="143" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="143" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="solutions__io_8py_1a593a5e6fe51d05c6442c21ae649e463c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.get_best_solution</definition>
+        <argsstring>(fn_database, Nth, fields=False, orderby=False, tbl=&apos;results&apos;)</argsstring>
+        <name>get_best_solution</name>
+        <qualifiedname>solutions_io.get_best_solution</qualifiedname>
+        <param>
+          <type>fn_database</type>
+          <defname>fn_database</defname>
+        </param>
+        <param>
+          <type>Nth</type>
+          <defname>Nth</defname>
+        </param>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>orderby</type>
+          <defname>orderby</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tbl</type>
+          <defname>tbl</defname>
+          <defval>&apos;results&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Recover the reference frame of the n-th best solution from a database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The index Nth stars at 0</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="195" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="195" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="solutions__io_8py_1adca285ebc5669dcc22f219e9131e5b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.get_fields_string</definition>
+        <argsstring>(fields)</argsstring>
+        <name>get_fields_string</name>
+        <qualifiedname>solutions_io.get_fields_string</qualifiedname>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+        </param>
+        <briefdescription>
+<para>Get a list of fields and return a string with them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If there are no fields, return an *, indicating SQL that all the fields are requested <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of strings </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a string</para>
+</simplesect>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="219" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="219" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="solutions__io_8py_1a61a19fcae443e7c62703cd8b36aa1862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.get_sorting_indices</definition>
+        <argsstring>(ls)</argsstring>
+        <name>get_sorting_indices</name>
+        <qualifiedname>solutions_io.get_sorting_indices</qualifiedname>
+        <param>
+          <type>ls</type>
+          <defname>ls</defname>
+        </param>
+        <briefdescription>
+<para>Return indices that sort the list ls. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="188" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="188" bodyend="190"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/solutions_io.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

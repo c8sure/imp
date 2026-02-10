@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/kinematics/include/CCDLoopClosure.h

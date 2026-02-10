@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacedomino__model" kind="namespace" language="Python">
+    <compoundname>domino_model</compoundname>
+    <innerclass refid="classdomino__model_1_1DominoModel" prot="public">domino_model::DominoModel</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="domino__model_8py_1a8aeb2b825b3240fef138045e46571dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.anchor_assembly</definition>
+        <argsstring>(components_rbs, anchored)</argsstring>
+        <name>anchor_assembly</name>
+        <qualifiedname>domino_model.anchor_assembly</qualifiedname>
+        <param>
+          <type>components_rbs</type>
+          <defname>components_rbs</defname>
+        </param>
+        <param>
+          <type>anchored</type>
+          <defname>anchored</defname>
+        </param>
+        <briefdescription>
+<para>&quot;Anchor&quot; a set of rigid bodies, by setting the position of one of them at the origin (0,0,0). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>components_rbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rigid bodies of the components </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anchored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- List of True/False values indicating if the components of the assembly are anchored. The function sets the FIRST anchored component in the (0,0,0) coordinate and moves the other components with the same translation. If all the values are False, the function does not do anything</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="1016" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="1016" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="domino__model_8py_1aec91a1933b0e58e5684cf1c74bccd1a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.get_coordinates</definition>
+        <argsstring>(rigid_bodies)</argsstring>
+        <name>get_coordinates</name>
+        <qualifiedname>domino_model.get_coordinates</qualifiedname>
+        <param>
+          <type>rigid_bodies</type>
+          <defname>rigid_bodies</defname>
+        </param>
+        <briefdescription>
+<para>Return a list of the coordinates of all the members of the rigid bodies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="1073" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="1073" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="domino__model_8py_1a402a6275799639f482c83cf57e50e092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.measure_model</definition>
+        <argsstring>(assembly, native_assembly, rbs, native_rbs)</argsstring>
+        <name>measure_model</name>
+        <qualifiedname>domino_model.measure_model</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <param>
+          <type>rbs</type>
+          <defname>rbs</defname>
+        </param>
+        <param>
+          <type>native_rbs</type>
+          <defname>native_rbs</defname>
+        </param>
+        <briefdescription>
+<para>Get the drms, cdrms and crmsd for a model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hierarchy for an assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hierarchy of the native structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rigid bodies for the components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_rbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rigid bodies for the components of the native structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cdrms, cdrms, crmsd<itemizedlist>
+<listitem><para>drms - typical drms measure</para>
+</listitem><listitem><para>cdrms - drms for the centroids of the rigid bodies of the components of the assembly</para>
+</listitem><listitem><para>crmsd - rmsd for the centroids</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="1047" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="1047" bodyend="1068"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/domino_model.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

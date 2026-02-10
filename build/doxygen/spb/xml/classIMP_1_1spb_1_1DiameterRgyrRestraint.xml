@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1DiameterRgyrRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::DiameterRgyrRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/spb/DiameterRgyrRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a2ff26fe31c4e21ab8175f30d71ab1e68" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::DiameterRgyrRestraint::diameter_</definition>
+        <argsstring></argsstring>
+        <name>diameter_</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::diameter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="27" column="9" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ac6bd49602b2ff3522764120c8173bc74" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::DiameterRgyrRestraint::kappa_</definition>
+        <argsstring></argsstring>
+        <name>kappa_</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::kappa_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="29" column="9" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a82a858cde2615621b8143edcbf3ee497" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::DiameterRgyrRestraint::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="26" column="13" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a3ac27d9628527a0e8d4110fea2dd7663" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::DiameterRgyrRestraint::rgyr_</definition>
+        <argsstring></argsstring>
+        <name>rgyr_</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::rgyr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="28" column="9" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a646441d110e08a812b41f3e06893f2ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::DiameterRgyrRestraint::DiameterRgyrRestraint</definition>
+        <argsstring>(Particles ps, Float diameter, Float rgyr, Float kappa)</argsstring>
+        <name>DiameterRgyrRestraint</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::DiameterRgyrRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>rgyr</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>kappa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ae02b15aba5c3ef29bed572c1fee100af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::DiameterRgyrRestraint::~DiameterRgyrRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~DiameterRgyrRestraint</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::~DiameterRgyrRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="38" column="231" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a8157a23eec7e212becfecf5ce9015923" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>IMP::ModelObjectsTemp IMP::spb::DiameterRgyrRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="36" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a16457d8a7705b72988d22eba412e3608" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::DiameterRgyrRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="38" column="34" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab09a6d47b6953e127afb413899254634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::DiameterRgyrRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="38" column="103" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab224c1fdd7b55e88d074056d50fd0575" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::DiameterRgyrRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::spb::DiameterRgyrRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="34" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Diameter and radius of gyration Restraint. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Restraint to fix the diameter based on radius of gyration from SAXS </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/DiameterRgyrRestraint.h" line="24" column="1" bodyfile="include/IMP/spb/DiameterRgyrRestraint.h" bodystart="24" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a2ff26fe31c4e21ab8175f30d71ab1e68" prot="private" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>diameter_</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a646441d110e08a812b41f3e06893f2ac" prot="public" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>DiameterRgyrRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a8157a23eec7e212becfecf5ce9015923" prot="public" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a16457d8a7705b72988d22eba412e3608" prot="public" virt="virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab09a6d47b6953e127afb413899254634" prot="public" virt="virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ac6bd49602b2ff3522764120c8173bc74" prot="private" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>kappa_</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a82a858cde2615621b8143edcbf3ee497" prot="private" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a3ac27d9628527a0e8d4110fea2dd7663" prot="private" virt="non-virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>rgyr_</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab224c1fdd7b55e88d074056d50fd0575" prot="public" virt="virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ae02b15aba5c3ef29bed572c1fee100af" prot="public" virt="virtual"><scope>IMP::spb::DiameterRgyrRestraint</scope><name>~DiameterRgyrRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__example_1_1TestParameters" kind="class" language="Python" prot="public">
+    <compoundname>config_example::TestParameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__example_1_1TestParameters_1a01c9ceb82fa68e850544a6df963b50f8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool config_example.TestParameters::do_test</definition>
+        <argsstring></argsstring>
+        <name>do_test</name>
+        <qualifiedname>config_example.TestParameters.do_test</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="69" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1TestParameters_1ac03476688f8f23ed48fe01fd23eb3bfe" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_example.TestParameters::test_fn_assembly</definition>
+        <argsstring></argsstring>
+        <name>test_fn_assembly</name>
+        <qualifiedname>config_example.TestParameters.test_fn_assembly</qualifiedname>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="70" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__example_1_1TestParameters_1a18737c7a987a46aa33ecc289ff223e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_example.TestParameters.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_example.TestParameters.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="68" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="68" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="66" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="66" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classconfig__example_1_1TestParameters_1a18737c7a987a46aa33ecc289ff223e55" prot="public" virt="non-virtual"><scope>config_example::TestParameters</scope><name>__init__</name></member>
+      <member refid="classconfig__example_1_1TestParameters_1a01c9ceb82fa68e850544a6df963b50f8" prot="public" virt="non-virtual"><scope>config_example::TestParameters</scope><name>do_test</name></member>
+      <member refid="classconfig__example_1_1TestParameters_1ac03476688f8f23ed48fe01fd23eb3bfe" prot="public" virt="non-virtual"><scope>config_example::TestParameters</scope><name>test_fn_assembly</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

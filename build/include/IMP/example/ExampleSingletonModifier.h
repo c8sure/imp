@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/example/include/ExampleSingletonModifier.h

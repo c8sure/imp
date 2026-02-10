@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1GridStates" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::GridStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1em2d_1_1ProjectionStates" prot="public" virt="non-virtual">IMP::em2d::ProjectionStates</derivedcompoundref>
+    <includes local="no">IMP/em2d/domino_particle_states.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1GridStates_1a892fa3f6834d2396ce15690a47f3d276" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::GridStates::number_of_states_</definition>
+        <argsstring></argsstring>
+        <name>number_of_states_</name>
+        <qualifiedname>IMP::em2d::GridStates::number_of_states_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="34" column="16" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1GridStates_1ad2b9331f837e7887a4fc5ab7ec3046bb" prot="protected" static="no" mutable="no">
+        <type>algebra::Rotation3Ds</type>
+        <definition>algebra::Rotation3Ds IMP::em2d::GridStates::orientations_</definition>
+        <argsstring></argsstring>
+        <name>orientations_</name>
+        <qualifiedname>IMP::em2d::GridStates::orientations_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="33" column="24" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1GridStates_1a5ebb1a0ac964c5d3d28b04b99ef7a9f7" prot="protected" static="no" mutable="no">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::em2d::GridStates::positions_</definition>
+        <argsstring></argsstring>
+        <name>positions_</name>
+        <qualifiedname>IMP::em2d::GridStates::positions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="32" column="22" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a27743621b5def59485508297837b719d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::GridStates::GridStates</definition>
+        <argsstring>(const algebra::Vector3Ds &amp;positions, const algebra::Rotation3Ds &amp;orientations, const String &amp;name=&quot;GridStates&quot;)</argsstring>
+        <name>GridStates</name>
+        <qualifiedname>IMP::em2d::GridStates::GridStates</qualifiedname>
+        <param>
+          <type>const algebra::Vector3Ds &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const algebra::Rotation3Ds &amp;</type>
+          <declname>orientations</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;GridStates&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of positions that the set of particles can have in the grid (points of the grid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">orientations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientations of the particles in in the grid </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Note: The number of states considered is positions * orientations, as each position can have all orientations. \ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="46" column="3" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a46f4b66ac76f3cbbff2be2abc9afd62e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::GridStates::~GridStates</definition>
+        <argsstring>()</argsstring>
+        <name>~GridStates</name>
+        <qualifiedname>IMP::em2d::GridStates::~GridStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="65" column="231" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1ab28fa2450af878a0eb92a92429b8a0b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::em2d::GridStates::get_number_of_particle_states</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::em2d::GridStates::get_number_of_particle_states</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1ProjectionStates_1a30501722d6c63ce7cab00f4927303ab3">get_number_of_particle_states</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="61" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1aeea95a65be4b71771c6417497ce4857d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Rotation3D</type>
+        <definition>algebra::Rotation3D IMP::em2d::GridStates::get_orientation</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_orientation</name>
+        <qualifiedname>IMP::em2d::GridStates::get_orientation</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the orientation corresponding to the state i. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="59" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a86ebfae6f9aab7071f43b93e2a65f4dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::em2d::GridStates::get_position</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_position</name>
+        <qualifiedname>IMP::em2d::GridStates::get_position</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the position corresponding to the state i. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="56" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a6912d9bf4b92d3e5f8143c132fc14140" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::GridStates::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::GridStates::get_type_name</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1ProjectionStates_1acc4ef25655c77bbc1354b6e0fb24bfa6">get_type_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="65" column="34" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a9fc4a0823ab128ed3af51450d12af5d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::GridStates::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::GridStates::get_version_info</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1ProjectionStates_1a5c9495dec8839069fac3d923b17ec315">get_version_info</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="65" column="103" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1GridStates_1a864d855d1817bd36468c691e07ae8096" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::em2d::GridStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const override</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::em2d::GridStates::load_particle_state</qualifiedname>
+        <reimplementedby refid="classIMP_1_1em2d_1_1ProjectionStates_1a55e24586c10ab6a793337701051adffa">load_particle_state</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_particle_states.h" line="62" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>States that a set of Particles can have according to their positions and orientations in a grid. The orientations also determine the orientation of the projections of the particles. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::GridStates</label>
+        <link refid="classIMP_1_1em2d_1_1GridStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::em2d::ProjectionStates</label>
+        <link refid="classIMP_1_1em2d_1_1ProjectionStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::GridStates</label>
+        <link refid="classIMP_1_1em2d_1_1GridStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/domino_particle_states.h" line="29" column="1" bodyfile="include/IMP/em2d/domino_particle_states.h" bodystart="29" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1ab28fa2450af878a0eb92a92429b8a0b0" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1aeea95a65be4b71771c6417497ce4857d" prot="public" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>get_orientation</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a86ebfae6f9aab7071f43b93e2a65f4dd" prot="public" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>get_position</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a6912d9bf4b92d3e5f8143c132fc14140" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a9fc4a0823ab128ed3af51450d12af5d9" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a27743621b5def59485508297837b719d" prot="public" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>GridStates</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a864d855d1817bd36468c691e07ae8096" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a892fa3f6834d2396ce15690a47f3d276" prot="protected" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>number_of_states_</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1ad2b9331f837e7887a4fc5ab7ec3046bb" prot="protected" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>orientations_</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a5ebb1a0ac964c5d3d28b04b99ef7a9f7" prot="protected" virt="non-virtual"><scope>IMP::em2d::GridStates</scope><name>positions_</name></member>
+      <member refid="classIMP_1_1em2d_1_1GridStates_1a46f4b66ac76f3cbbff2be2abc9afd62e" prot="public" virt="virtual"><scope>IMP::em2d::GridStates</scope><name>~GridStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

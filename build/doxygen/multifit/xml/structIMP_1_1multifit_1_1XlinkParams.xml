@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1multifit_1_1XlinkParams" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::multifit::XlinkParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1XlinkParams_1a8f60a32461ab85cdf667e13d8449edfe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::XlinkParams::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::multifit::XlinkParams::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="77" column="22" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1XlinkParams_1a2087b4a9df7b08537f503629332ce4cd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::XlinkParams::max_xlink_val_</definition>
+        <argsstring></argsstring>
+        <name>max_xlink_val_</name>
+        <qualifiedname>IMP::multifit::XlinkParams::max_xlink_val_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="78" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1XlinkParams_1a50a49d2de9d551d9c29b3bc375b2c70c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::XlinkParams::treat_between_residues_</definition>
+        <argsstring></argsstring>
+        <name>treat_between_residues_</name>
+        <qualifiedname>IMP::multifit::XlinkParams::treat_between_residues_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="79" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1multifit_1_1XlinkParams_1ac3b440e6009c529d4d038bfc3101945c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::XlinkParams::upper_bound_</definition>
+        <argsstring></argsstring>
+        <name>upper_bound_</name>
+        <qualifiedname>IMP::multifit::XlinkParams::upper_bound_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="77" column="9" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structIMP_1_1multifit_1_1XlinkParams_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::multifit::XlinkParams::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="82" column="16" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1XlinkParams_1a2f44923a3c9e28e7268ad298212cd49f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::XlinkParams::XlinkParams</definition>
+        <argsstring>()</argsstring>
+        <name>XlinkParams</name>
+        <qualifiedname>IMP::multifit::XlinkParams::XlinkParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="60" column="3" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1XlinkParams_1a094fe7c0d56ae41d85f760dd3a6adc54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::XlinkParams::add</definition>
+        <argsstring>(const boost::property_tree::ptree &amp;pt)</argsstring>
+        <name>add</name>
+        <qualifiedname>IMP::multifit::XlinkParams::add</qualifiedname>
+        <param>
+          <type>const boost::property_tree::ptree &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="65" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1XlinkParams_1a86de3a53ee6354000e51211fe34f6ab3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::XlinkParams::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::XlinkParams::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="72" column="8" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1multifit_1_1XlinkParams_1ac70040f07f3c17083bee763ce309d2b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::multifit::XlinkParams::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::multifit::XlinkParams::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="84" column="19" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="59" column="1" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="59" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a094fe7c0d56ae41d85f760dd3a6adc54" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>add</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a8f60a32461ab85cdf667e13d8449edfe" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>k_</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a2087b4a9df7b08537f503629332ce4cd" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>max_xlink_val_</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1ac70040f07f3c17083bee763ce309d2b3" prot="private" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>serialize</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a86de3a53ee6354000e51211fe34f6ab3" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>show</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a50a49d2de9d551d9c29b3bc375b2c70c" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>treat_between_residues_</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1ac3b440e6009c529d4d038bfc3101945c" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>upper_bound_</name></member>
+      <member refid="structIMP_1_1multifit_1_1XlinkParams_1a2f44923a3c9e28e7268ad298212cd49f" prot="public" virt="non-virtual"><scope>IMP::multifit::XlinkParams</scope><name>XlinkParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,164 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'm0'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 190.461, 49.397, 59.953, 3.25861,
+]
+k= 'm0'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm1'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, -33.483, -70.67, 259.68, 4.70602,
+]
+k= 'm1'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm2'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 62.106, -305.068, -38.49, 4.35165,
+]
+k= 'm2'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm3'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 1, 1,
+SPHERE, 103.171, -22.7622, 122.395, 4.39895,
+]
+k= 'm3'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm0'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 0, 0,
+SPHERE, 215.536, 40.731, 47.712, 3.25861,
+]
+k= 'm0'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm1'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 0, 0,
+SPHERE, -47.7275, -96.4268, 244.156, 4.70602,
+]
+k= 'm1'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm2'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 0, 0,
+SPHERE, 49.7863, -311.177, -34.139, 4.35165,
+]
+k= 'm2'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm3'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 0, 0,
+SPHERE, 129.814, -4.35875, 111.126, 4.39895,
+]
+k= 'm3'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm0'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.98, 0, 0.02,
+SPHERE, 202.851, 39.153, 58.618, 3.25861,
+]
+k= 'm0'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm1'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.98, 0, 0.02,
+SPHERE, -31.5048, -75.9985, 252.671, 4.70602,
+]
+k= 'm1'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm2'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.98, 0, 0.02,
+SPHERE, 54.3242, -305.586, -33.074, 4.35165,
+]
+k= 'm2'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'm3'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.98, 0, 0.02,
+SPHERE, 108.237, -19.7947, 123.193, 4.39895,
+]
+k= 'm3'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}

@@ -1,0 +1,48 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= '/home/catherine/imp/build/doc/examples/domino/helix_0.pdb:  geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 6.79111, -0.118997, -1.12376, 2.275,
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 9.54688, 1.89881, 0.614812, 2.275,
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 10.8228, -1.50943, 1.95592, 2.275,
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 13.0819, -1.79468, -1.16204, 2.275,
+COLOR, 0.65098, 0.807843, 0.890196,
+SPHERE, 14.7573, 1.5243, -0.284923, 2.275,
+]
+k= '/home/catherine/imp/build/doc/examples/domino/helix_0.pdb:  geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= '/home/catherine/imp/build/doc/examples/domino/helix_1.pdb:  geometry'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, -2.84846, -1.4605, 0.472459, 2.275,
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, -1.51895, 1.96525, -0.688653, 2.175,
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 2.06492, 1.64982, 0.652314, 2.275,
+COLOR, 0.121569, 0.470588, 0.705882,
+SPHERE, 2.22713, -2.05707, -0.470285, 2.275,
+]
+k= '/home/catherine/imp/build/doc/examples/domino/helix_1.pdb:  geometry'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}

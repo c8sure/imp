@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1rmf" kind="namespace" language="C++">
+    <compoundname>IMP::rmf</compoundname>
+    <innerclass refid="classIMP_1_1rmf_1_1HierarchyLoadLink" prot="public">IMP::rmf::HierarchyLoadLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1HierarchySaveLink" prot="public">IMP::rmf::HierarchySaveLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1LoadLink" prot="public">IMP::rmf::LoadLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1SaveLink" prot="public">IMP::rmf::SaveLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1SaveOptimizerState" prot="public">IMP::rmf::SaveOptimizerState</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1SimpleLoadLink" prot="public">IMP::rmf::SimpleLoadLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1SimpleSaveLink" prot="public">IMP::rmf::SimpleSaveLink</innerclass>
+    <sectiondef kind="user-defined">
+      <header>Associations</header>
+      <description><para>RMF supports tracking associations between an RMF file and native objects. In the <computeroutput>IMP</computeroutput> case these are IMP::Object and we provide some special methods to aid in this process. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ae9ce729d949656bb507f384f5220d05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RMF::NodeConstHandle</type>
+        <definition>RMF::NodeConstHandle IMP::rmf::get_node_from_association</definition>
+        <argsstring>(RMF::FileConstHandle nh, Object *oi)</argsstring>
+        <name>get_node_from_association</name>
+        <qualifiedname>IMP::rmf::get_node_from_association</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>Object *</type>
+          <declname>oi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="41" column="24" declfile="include/IMP/rmf/associations.h" declline="41" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a91e1e8ae4ea55d0e06fa26d626970d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RMF::NodeHandle</type>
+        <definition>RMF::NodeHandle IMP::rmf::get_node_from_association</definition>
+        <argsstring>(RMF::FileHandle nh, Object *oi)</argsstring>
+        <name>get_node_from_association</name>
+        <qualifiedname>IMP::rmf::get_node_from_association</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>Object *</type>
+          <declname>oi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="44" column="19" declfile="include/IMP/rmf/associations.h" declline="44" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a74acc7e3e31eab6ceaad0fe0131f0cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::rmf::get_has_associated_node</definition>
+        <argsstring>(RMF::FileConstHandle nh, Object *oi)</argsstring>
+        <name>get_has_associated_node</name>
+        <qualifiedname>IMP::rmf::get_has_associated_node</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>Object *</type>
+          <declname>oi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="46" column="8" declfile="include/IMP/rmf/associations.h" declline="46" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Hierarchy I/O</header>
+      <description><para>Hierarchy I/O writes IMP::atom::Hierarchy information along with the information contained in the following decorators<itemizedlist>
+<listitem><para>IMP::atom::Atom</para>
+</listitem><listitem><para>IMP::atom::Residue</para>
+</listitem><listitem><para>IMP::atom::Chain</para>
+</listitem><listitem><para>IMP::core::XYZR</para>
+</listitem><listitem><para>IMP::atom::Mass</para>
+</listitem><listitem><para>IMP::atom::Diffusion</para>
+</listitem><listitem><para>IMP::core::Typed</para>
+</listitem><listitem><para>IMP::display::Colored</para>
+</listitem><listitem><para>IMP::atom::Domain</para>
+</listitem><listitem><para>IMP::atom::Molecule</para>
+</listitem><listitem><para>IMP::atom::Copy</para>
+</listitem><listitem><para>IMP::atom::State</para>
+</listitem><listitem><para>IMP::atom::Representation</para>
+</listitem><listitem><para>IMP::core::RigidMember (rigid body information will be written and rigid bodies created even when the IMP::core::RigidBody is not itself written to the file)</para>
+</listitem><listitem><para>IMP::core::RigidBody</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>IMP::core::XYZ and IMP::core::RigidBody data are stored at each frame. Data for all the other decorators are assumed to be static attributes, and are stored once for the entire RMF file. There is currently no way to customize this. Complain to the IMP team if this is problematic.</para>
+</simplesect>
+<anchor id="namespaceIMP_1_1rmf_1topology_matching"/><simplesect kind="note"><para>To avoid unexpected behavior, be aware that when linking atom::Hierarchies against an RMF file, the linked hierarchies are assumed to be identical in all of their static attributes to the hierarchies in the RMF file (within RMF::REPRESENTATION nodes). In particular, these hierarchies must have the same tree topology (number of children for each node). </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1adbc5eb9278e61f0a4449eb181cbd2a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_hierarchies</definition>
+        <argsstring>(RMF::FileHandle fh, const atom::Hierarchies &amp;hs)</argsstring>
+        <name>add_hierarchies</name>
+        <qualifiedname>IMP::rmf::add_hierarchies</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/atom_io.h" line="59" column="11" declfile="include/IMP/rmf/atom_io.h" declline="59" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a9f63044bfe82f715e14e819e1ae3a2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_hierarchies</definition>
+        <argsstring>(RMF::NodeHandle fh, const atom::Hierarchies &amp;hs)</argsstring>
+        <name>add_hierarchies</name>
+        <qualifiedname>IMP::rmf::add_hierarchies</qualifiedname>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file under the specified node. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/atom_io.h" line="59" column="42" declfile="include/IMP/rmf/atom_io.h" declline="59" declcolumn="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1afb3c4144b9161813668b971b21295c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_hierarchy</definition>
+        <argsstring>(RMF::FileHandle fh, atom::Hierarchy hs)</argsstring>
+        <name>add_hierarchy</name>
+        <qualifiedname>IMP::rmf::add_hierarchy</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a single Hierarchy object to the RMF file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/atom_io.h" line="59" column="73" declfile="include/IMP/rmf/atom_io.h" declline="59" declcolumn="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a34bff2a310116bc205e199ae6442be5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::rmf::create_hierarchies</definition>
+        <argsstring>(RMF::FileConstHandle fh, Model *m)</argsstring>
+        <name>create_hierarchies</name>
+        <qualifiedname>IMP::rmf::create_hierarchies</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create Hierarchy objects from the RMF file. <simplesect kind="note"><para>This does not load a frame. Make sure you call <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP::rmf::load_frame()</ref> before using. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/atom_io.h" line="59" column="114" declfile="include/IMP/rmf/atom_io.h" declline="59" declcolumn="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a5bc1f4e588466260be12aba4bac30255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::link_hierarchies</definition>
+        <argsstring>(RMF::FileConstHandle fh, const atom::Hierarchies &amp;hs)</argsstring>
+        <name>link_hierarchies</name>
+        <qualifiedname>IMP::rmf::link_hierarchies</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const atom::Hierarchies &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link Hierarchy objects with the RMF file, possibly overwriting an existing link for loading from the file. This does not alter the object, but will affect the behavior of functions like <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">load_frame()</ref> and <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref>. See <ref refid="namespaceIMP_1_1rmf_1topology_matching" kindref="member">Linking hierarchies</ref> for more information and intricacies </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/atom_io.h" line="59" column="148" declfile="include/IMP/rmf/atom_io.h" declline="59" declcolumn="148"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Geometry I/O</header>
+      <description><para>The geometry I/O support currently handles geometry composed of<itemizedlist>
+<listitem><para>IMP::display::SegmentGeometry</para>
+</listitem><listitem><para>IMP::display::CylinderGeometry</para>
+</listitem><listitem><para>IMP::display::SphereGeometry</para>
+</listitem></itemizedlist>
+</para>
+<para>Other types can be supported when requested. Be aware, many more complex geometry types are automatically decomposed into the above types and are so, more or less, supported. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a1e82ba0d49253886a57e4a40ab94921b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_geometries</definition>
+        <argsstring>(RMF::FileHandle file, const display::GeometriesTemp &amp;r)</argsstring>
+        <name>add_geometries</name>
+        <qualifiedname>IMP::rmf::add_geometries</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const display::GeometriesTemp &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Add geometries to the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="32" column="8" declfile="include/IMP/rmf/geometry_io.h" declline="32" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a668d6ac6858b6abf9b1f559bd6dec3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_geometries</definition>
+        <argsstring>(RMF::NodeHandle parent, const display::GeometriesTemp &amp;r)</argsstring>
+        <name>add_geometries</name>
+        <qualifiedname>IMP::rmf::add_geometries</qualifiedname>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const display::GeometriesTemp &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Add geometries to a given parent node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="36" column="8" declfile="include/IMP/rmf/geometry_io.h" declline="36" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a0ac7c6f0adcb9b11b23b43c55a970998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_static_geometries</definition>
+        <argsstring>(RMF::FileHandle parent, const display::GeometriesTemp &amp;r)</argsstring>
+        <name>add_static_geometries</name>
+        <qualifiedname>IMP::rmf::add_static_geometries</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const display::GeometriesTemp &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Add geometries, assuming they do not move between frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be space saving compared to resaving the constant position each frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="42" column="8" declfile="include/IMP/rmf/geometry_io.h" declline="42" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ac527cf5f24b42ec60119b3ff253781ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_geometry</definition>
+        <argsstring>(RMF::FileHandle file, display::Geometry *r)</argsstring>
+        <name>add_geometry</name>
+        <qualifiedname>IMP::rmf::add_geometry</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>display::Geometry *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Add a single geometry to the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="46" column="8" declfile="include/IMP/rmf/geometry_io.h" declline="46" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ae6466f86dceab595e9eb6c5a522a7508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>display::Geometries</type>
+        <definition>display::Geometries IMP::rmf::create_geometries</definition>
+        <argsstring>(RMF::FileConstHandle parent)</argsstring>
+        <name>create_geometries</name>
+        <qualifiedname>IMP::rmf::create_geometries</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Create geometry objects for the geometry nodes found in the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="49" column="23" declfile="include/IMP/rmf/geometry_io.h" declline="49" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a6d17be350f7a9ee7f5ca0859ca9718e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::link_geometries</definition>
+        <argsstring>(RMF::FileConstHandle parent, const display::GeometriesTemp &amp;r)</argsstring>
+        <name>link_geometries</name>
+        <qualifiedname>IMP::rmf::link_geometries</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const display::GeometriesTemp &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Link the passed geometry objects to corresponding ones in the file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The geometries must be in the same order; we don&apos;t search around for matches. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/geometry_io.h" line="55" column="8" declfile="include/IMP/rmf/geometry_io.h" declline="55" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Particle I/O</header>
+      <description><para>Arbitrary (non IMP::atom::Hierarchy) particles can be written to the file and read back from them. All non IMP::Object attributes are supported. Note that currently particles must be added so that any particles that are stored in a given particles attributes are added to the file first.</para>
+<para>The data is stored in a category named IMP. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a3ec708eaea5f9a236c558f0759ff0e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_particles</definition>
+        <argsstring>(RMF::FileHandle fh, const ParticlesTemp &amp;hs)</argsstring>
+        <name>add_particles</name>
+        <qualifiedname>IMP::rmf::add_particles</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/particle_io.h" line="30" column="10" declfile="include/IMP/rmf/particle_io.h" declline="30" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a3d3bf9a9a6ceb4aaaae7d699f2243573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_particles</definition>
+        <argsstring>(RMF::NodeHandle fh, const ParticlesTemp &amp;hs)</argsstring>
+        <name>add_particles</name>
+        <qualifiedname>IMP::rmf::add_particles</qualifiedname>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file under the specified node. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/particle_io.h" line="30" column="39" declfile="include/IMP/rmf/particle_io.h" declline="30" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1abf6e3fa733ef668bb985ed3e52f88187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_particle</definition>
+        <argsstring>(RMF::FileHandle fh, Particle *hs)</argsstring>
+        <name>add_particle</name>
+        <qualifiedname>IMP::rmf::add_particle</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a single Particle object to the RMF file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/particle_io.h" line="30" column="68" declfile="include/IMP/rmf/particle_io.h" declline="30" declcolumn="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1af3c5165b1f2cb083d98c36bd202ef275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::rmf::create_particles</definition>
+        <argsstring>(RMF::FileConstHandle fh, Model *m)</argsstring>
+        <name>create_particles</name>
+        <qualifiedname>IMP::rmf::create_particles</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create Particle objects from the RMF file. <simplesect kind="note"><para>This does not load a frame. Make sure you call <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP::rmf::load_frame()</ref> before using. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/particle_io.h" line="30" column="105" declfile="include/IMP/rmf/particle_io.h" declline="30" declcolumn="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a5736b0372c4c5f8344d093882d883702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::link_particles</definition>
+        <argsstring>(RMF::FileConstHandle fh, const ParticlesTemp &amp;hs)</argsstring>
+        <name>link_particles</name>
+        <qualifiedname>IMP::rmf::link_particles</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link Particle objects with the RMF file, possibly overwriting an existing link for loading from the file. This does not alter the object, but will affect the behavior of functions like <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">load_frame()</ref> and <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/particle_io.h" line="30" column="137" declfile="include/IMP/rmf/particle_io.h" declline="30" declcolumn="137"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Restraint I/O</header>
+      <description><para>Restraints are written as RMF::FEATURE nodes with subnodes for the decomposed restraints (Restraint::create_current_decomposition()). The Restraints::get_last_score() value is what is saved to the file, so make sure that the restraints have been evaluated before saving a frame.</para>
+<para>Any particles returned by Restraint::get_input_particles() that are also linked in the RMF file will be included in the RMF file as inputs for the Restraint. This allows external software like e.g., Chimera to associate these restraints with a certain set of particles. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a967b0af7b1880fb5a3bddb0c777e62f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_restraints</definition>
+        <argsstring>(RMF::FileHandle fh, const Restraints &amp;hs)</argsstring>
+        <name>add_restraints</name>
+        <qualifiedname>IMP::rmf::add_restraints</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const Restraints &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="35" column="10" declfile="include/IMP/rmf/restraint_io.h" declline="35" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1aaf27d994f713670f6c74cabef6fe518b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_restraints</definition>
+        <argsstring>(RMF::NodeHandle fh, const Restraints &amp;hs)</argsstring>
+        <name>add_restraints</name>
+        <qualifiedname>IMP::rmf::add_restraints</qualifiedname>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const Restraints &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add objects to the file under the specified node. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="35" column="40" declfile="include/IMP/rmf/restraint_io.h" declline="35" declcolumn="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a2308cb4a180c1c885f7dda0c13592b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_restraint</definition>
+        <argsstring>(RMF::FileHandle fh, Restraint *hs)</argsstring>
+        <name>add_restraint</name>
+        <qualifiedname>IMP::rmf::add_restraint</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>Restraint *</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a single Restraint object to the RMF file. <simplesect kind="note"><para>This does not save a configuration; make sure you use <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> to do that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="35" column="70" declfile="include/IMP/rmf/restraint_io.h" declline="35" declcolumn="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ae393fe01981d8d3b03b431d3d4b26722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Restraints</type>
+        <definition>Restraints IMP::rmf::create_restraints</definition>
+        <argsstring>(RMF::FileConstHandle fh, Model *m)</argsstring>
+        <name>create_restraints</name>
+        <qualifiedname>IMP::rmf::create_restraints</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create Restraint objects from the RMF file. <simplesect kind="note"><para>This does not load a frame. Make sure you call <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP::rmf::load_frame()</ref> before using. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="35" column="105" declfile="include/IMP/rmf/restraint_io.h" declline="35" declcolumn="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a69153635f445884aa2650e5846a160ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::link_restraints</definition>
+        <argsstring>(RMF::FileConstHandle fh, const Restraints &amp;hs)</argsstring>
+        <name>link_restraints</name>
+        <qualifiedname>IMP::rmf::link_restraints</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const Restraints &amp;</type>
+          <declname>hs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link Restraint objects with the RMF file, possibly overwriting an existing link for loading from the file. This does not alter the object, but will affect the behavior of functions like <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">load_frame()</ref> and <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="35" column="138" declfile="include/IMP/rmf/restraint_io.h" declline="35" declcolumn="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a0f18215b4ec2d33724d0ac6aa88601d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::add_restraints_as_bonds</definition>
+        <argsstring>(RMF::FileHandle fh, const Restraints &amp;rs)</argsstring>
+        <name>add_restraints_as_bonds</name>
+        <qualifiedname>IMP::rmf::add_restraints_as_bonds</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>const Restraints &amp;</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+<para>Add a list of restraints to the file as (static) bonds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>There restraints must decompose into pairwise restraints. Their scores will not be recorded in the file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="40" column="8" declfile="include/IMP/rmf/restraint_io.h" declline="40" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a1beaf6f632cd1f9d0f623b916bbd3fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::set_maximum_number_of_terms</definition>
+        <argsstring>(RMF::FileHandle fh, unsigned int num)</argsstring>
+        <name>set_maximum_number_of_terms</name>
+        <qualifiedname>IMP::rmf::set_maximum_number_of_terms</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Limit the number of restraint terms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Certain restraints are made from a really large number of terms. Tracking and displaying all those terms can be very time consuming. If the number of terms is larger than the maximum, the terms are not displayed. By default this is 100. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/restraint_io.h" line="48" column="8" declfile="include/IMP/rmf/restraint_io.h" declline="48" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a8d48e73186b5ed363596506b44c32d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::rmf::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::rmf::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="135" column="18" declfile="include/IMP/rmf/rmf_config.h" declline="135" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1af8f1cd132718b20fd822de94ab8d0a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::rmf::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::rmf::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="140" column="24" bodyfile="include/IMP/rmf/rmf_config.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a19dca802fd497aab5f17e09852358728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::rmf::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::rmf::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1rmf_1a19dca802fd497aab5f17e09852358728" kindref="member">IMP::rmf::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="156" column="18" declfile="include/IMP/rmf/rmf_config.h" declline="156" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::rmf::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::rmf::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kindref="member">IMP::rmf::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/rmf_config.h" line="172" column="18" declfile="include/IMP/rmf/rmf_config.h" declline="172" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceIMP_1_1rmf_1a425a7dcdde083034c58a726a2b9d7350" prot="public" static="no">
+        <type>Object *</type>
+        <definition>typedef Object* IMP::rmf::AssociationType</definition>
+        <argsstring></argsstring>
+        <name>AssociationType</name>
+        <qualifiedname>IMP::rmf::AssociationType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="22" column="16" bodyfile="include/IMP/rmf/associations.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1rmf_1acb6ac1b816d176053c2a78d3154cf315" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1rmf_1_1LoadLink" kindref="compound">LoadLink</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;LoadLink&gt; &gt; IMP::rmf::LoadLinks</definition>
+        <argsstring></argsstring>
+        <name>LoadLinks</name>
+        <qualifiedname>IMP::rmf::LoadLinks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="26" column="25" bodyfile="include/IMP/rmf/links.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1rmf_1acfe2ddfcc50b422d81f21339b841cfd9" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1rmf_1_1LoadLink" kindref="compound">LoadLink</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;LoadLink&gt; &gt; IMP::rmf::LoadLinksTemp</definition>
+        <argsstring></argsstring>
+        <name>LoadLinksTemp</name>
+        <qualifiedname>IMP::rmf::LoadLinksTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1rmf_1_1LoadLink" kindref="compound">LoadLink</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="26" column="60" bodyfile="include/IMP/rmf/links.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1rmf_1aa8acef5aeb23091606a8cc774387c8f6" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1rmf_1_1SaveLink" kindref="compound">SaveLink</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;SaveLink&gt; &gt; IMP::rmf::SaveLinks</definition>
+        <argsstring></argsstring>
+        <name>SaveLinks</name>
+        <qualifiedname>IMP::rmf::SaveLinks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="24" column="25" bodyfile="include/IMP/rmf/links.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1rmf_1aa6d5a036b45fdd1082ce9ecb8eaa2afc" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1rmf_1_1SaveLink" kindref="compound">SaveLink</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;SaveLink&gt; &gt; IMP::rmf::SaveLinksTemp</definition>
+        <argsstring></argsstring>
+        <name>SaveLinksTemp</name>
+        <qualifiedname>IMP::rmf::SaveLinksTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1rmf_1_1SaveLink" kindref="compound">SaveLink</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="24" column="60" bodyfile="include/IMP/rmf/links.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1aab853cbb1b6a4cedd08e08ada95e5cee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * IMP::rmf::get_association</definition>
+        <argsstring>(RMF::NodeConstHandle nh)</argsstring>
+        <name>get_association</name>
+        <qualifiedname>IMP::rmf::get_association</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="28" column="10" bodyfile="include/IMP/rmf/associations.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::load_frame</definition>
+        <argsstring>(RMF::FileConstHandle file, RMF::FrameID frame)</argsstring>
+        <name>load_frame</name>
+        <qualifiedname>IMP::rmf::load_frame</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>RMF::FrameID</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Load the given RMF frame into the state of the linked objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The specified frame from the RMF file is loaded into the state of the IMP::Objects that were previously associated with that file.</para>
+<para>The current frame is left as the passed frame number. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/frames.h" line="24" column="8" declfile="include/IMP/rmf/frames.h" declline="24" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RMF::FrameID</type>
+        <definition>RMF::FrameID IMP::rmf::save_frame</definition>
+        <argsstring>(RMF::FileHandle file, std::string name=&quot;&quot;)</argsstring>
+        <name>save_frame</name>
+        <qualifiedname>IMP::rmf::save_frame</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Save the current state of the linked objects as a new RMF frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/frames.h" line="27" column="16" declfile="include/IMP/rmf/frames.h" declline="27" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1rmf_1a6be38fec78e589e2c5368b4c34522edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::set_association</definition>
+        <argsstring>(RMF::NodeConstHandle nh, Object *o, bool overwrite=false)</argsstring>
+        <name>set_association</name>
+        <qualifiedname>IMP::rmf::set_association</qualifiedname>
+        <param>
+          <type>RMF::NodeConstHandle</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/associations.h" line="24" column="8" declfile="include/IMP/rmf/associations.h" declline="24" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Support for the <ulink url="https://integrativemodeling.org/rmf/nightly/doc/">RMF file format</ulink> for storing hierarchical molecular data and markup. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>RMF can store hierarchical molecular data (such as atomic or coarse grained representations of proteins), along with markup, including geometry and score data.</para>
+<para><ref refid="namespaceIMP_1_1rmf" kindref="compound">IMP.rmf</ref> supports I/O of IMP::atom::Hierarchy and associated types as well as output of IMP::display::Geometry, IMP::Restraint and arbitrary IMP::Particles. For each of these there are methods like:<itemizedlist>
+<listitem><para><ref refid="namespaceIMP_1_1rmf_1adbc5eb9278e61f0a4449eb181cbd2a74" kindref="member">IMP::rmf::add_hierarchies()</ref> to add them to an RMF file (note this does not, for various reasons, write the state to frame 0)</para>
+</listitem><listitem><para><ref refid="namespaceIMP_1_1rmf_1a34bff2a310116bc205e199ae6442be5d" kindref="member">IMP::rmf::create_hierarchies()</ref> to create hierarchies from an RMF file</para>
+</listitem><listitem><para><ref refid="namespaceIMP_1_1rmf_1a5bc1f4e588466260be12aba4bac30255" kindref="member">IMP::rmf::link_hierarchies()</ref> to link existing hierarchies to corresponding ones in the RMF file</para>
+</listitem></itemizedlist>
+</para>
+<para>Once objects are linked/added/created, they are attached to the RMF file. <ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP::rmf::load_frame()</ref> can be used to change the state of the linked objects to that of an arbitrary frame and <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">IMP::rmf::save_frame()</ref> can be used to save the current state of the objects into a frame in the RMF file.</para>
+<para>See the <ulink url="https://integrativemodeling.org/rmf/nightly/doc/">RMF library</ulink> for more information.</para>
+<para>Several helper programs are also provided:</para>
+<sect1 id="namespaceIMP_1_1rmf_1rmf_display_bin">
+<title>rmf_display</title><para>Export an RMF file to a viewer. <computeroutput>rmf_display</computeroutput> outputs an arbitrary RMF file to pymol or chimera as appropriate (based on the file name of the second argument). It supports hierarchies, restraints and geometry.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1rmf_1pdb_rmf_bin">
+<title>pdb_rmf</title><para>Make an RMF file from a PDB.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1rmf_1rmf_simplify_bin">
+<title>rmf_simplify</title><para>Create a simplified representation of a PDB.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1rmf_1autotoc_md0">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Daniel Russel</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>benmwebb</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">main IMP papers list</ref>. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/rmf/associations.h" line="20" column="14"/>
+  </compounddef>
+</doxygen>

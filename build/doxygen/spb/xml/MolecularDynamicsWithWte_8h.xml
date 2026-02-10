@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="MolecularDynamicsWithWte_8h" kind="file" language="C++">
+    <compoundname>MolecularDynamicsWithWte.h</compoundname>
+    <includes local="no">IMP/Optimizer.h</includes>
+    <includes local="no">IMP/Particle.h</includes>
+    <includes local="no">boost/scoped_array.hpp</includes>
+    <includes local="yes">IMP/atom/Simulator.h</includes>
+    <includes local="yes">IMP/atom/atom_macros.h</includes>
+    <includes refid="spb__config_8h" local="no">IMP/spb/spb_config.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>MolecularDynamicsWithWte.h</label>
+        <link refid="MolecularDynamicsWithWte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/Optimizer.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/Particle.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/atom/Simulator.h</label>
+      </node>
+      <node id="6">
+        <label>IMP/atom/atom_macros.h</label>
+      </node>
+      <node id="4">
+        <label>boost/scoped_array.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte" prot="public">IMP::spb::MolecularDynamicsWithWte</innerclass>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1spb">IMP::spb</innernamespace>
+    <briefdescription>
+<para>Simple molecular dynamics optimizer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/MolecularDynamicsWithWte.h"/>
+  </compounddef>
+</doxygen>

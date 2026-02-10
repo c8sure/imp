@@ -1,0 +1,2238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>IMP::em2d::AverageDistanceLinkage</name>
+    <filename>classIMP_1_1em2d_1_1AverageDistanceLinkage.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>classIMP_1_1em2d_1_1AverageDistanceLinkage.html</anchorfile>
+      <anchor>a9e4a72284ae366295907143152ca8cb1</anchor>
+      <arglist>(unsigned int id1, unsigned int id2, const ClusterSet &amp;cluster_set, const FloatsList &amp;distances)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ChiSquaredScore</name>
+    <filename>classIMP_1_1em2d_1_1ChiSquaredScore.html</filename>
+    <base>IMP::em2d::ScoreFunction</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ClusterSet</name>
+    <filename>classIMP_1_1em2d_1_1ClusterSet.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ClusterSet</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a74b80800aee9aa8c6ed2cf4539c0bf50</anchor>
+      <arglist>(unsigned int N)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_join_clusters</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a9ec3e7d0f94307ad743ff22ade8b1412</anchor>
+      <arglist>(unsigned int cluster_id1, unsigned int cluster_id2, double distance_between_clusters)</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_cluster_elements</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a6ad7f50263955544d8c9bfcd9ccf1654</anchor>
+      <arglist>(unsigned int id) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_cluster_formed_at_step</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>abd244365805b788388e652e5244e1d0c</anchor>
+      <arglist>(unsigned int step) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_clusters_below_cutoff</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>ab1223a6b469762c865cca1b895326463</anchor>
+      <arglist>(double cutoff) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_distance_at_step</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a5542bf2d483dc51bfe649fb096a1de26</anchor>
+      <arglist>(unsigned int step) const</arglist>
+    </member>
+    <member kind="function">
+      <type>FloatsList</type>
+      <name>get_linkage_matrix</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a0d067470992cf6a02d2a7b79a5adc23e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>FloatsList</type>
+      <name>get_linkage_matrix_in_matlab_format</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>a0a0d9b57050cc2af962d7ea26850ea62</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_steps</name>
+      <anchorfile>classIMP_1_1em2d_1_1ClusterSet.html</anchorfile>
+      <anchor>aeed54358088d8c812688c7134b0b2f23</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::CollisionCrossSection</name>
+    <filename>classIMP_1_1em2d_1_1CollisionCrossSection.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CollisionCrossSection</name>
+      <anchorfile>classIMP_1_1em2d_1_1CollisionCrossSection.html</anchorfile>
+      <anchor>a391339711268e011e02b05ee00b2cce7</anchor>
+      <arglist>(unsigned int n_projections, double resolution, double pixel_size, double projection_image_size)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_ccs</name>
+      <anchorfile>classIMP_1_1em2d_1_1CollisionCrossSection.html</anchorfile>
+      <anchor>a734cf8f2b870a104e933ad70339033a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_model_particles</name>
+      <anchorfile>classIMP_1_1em2d_1_1CollisionCrossSection.html</anchorfile>
+      <anchor>a641e2398d4dbaeed9518116f42e6bcf8</anchor>
+      <arglist>(const ParticlesTemp &amp;ps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1CollisionCrossSection.html</anchorfile>
+      <anchor>a3db1c4a8c496a58b3e35fe3b6f66a770</anchor>
+      <arglist>(std::ostream &amp;out) const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>double</type>
+      <name>get_projected_area</name>
+      <anchorfile>classIMP_1_1em2d_1_1CollisionCrossSection.html</anchorfile>
+      <anchor>ae28c3cce22085bb5f5f0556564f700df</anchor>
+      <arglist>(const cv::Mat &amp;m) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::CompleteLinkage</name>
+    <filename>classIMP_1_1em2d_1_1CompleteLinkage.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>classIMP_1_1em2d_1_1CompleteLinkage.html</anchorfile>
+      <anchor>a63235ad1a6acdcb8e7c0b76e42279fd9</anchor>
+      <arglist>(unsigned int id1, unsigned int id2, const ClusterSet &amp;cluster_set, const FloatsList &amp;distances)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::DistanceFilter</name>
+    <filename>classIMP_1_1em2d_1_1DistanceFilter.html</filename>
+    <base>IMP::domino::SubsetFilter</base>
+    <member kind="function">
+      <type></type>
+      <name>DistanceFilter</name>
+      <anchorfile>classIMP_1_1em2d_1_1DistanceFilter.html</anchorfile>
+      <anchor>a0fdd72792f673c8b7d590b5abe80b3fa</anchor>
+      <arglist>(const domino::Subset &amp;subset_to_act_on, const domino::Subset &amp;subset_to_restrain, domino::ParticleStatesTable *ps_table, double max_distance)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::DistanceFilterTable</name>
+    <filename>classIMP_1_1em2d_1_1DistanceFilterTable.html</filename>
+    <base>IMP::domino::SubsetFilterTable</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::DummyRestraint</name>
+    <filename>classIMP_1_1em2d_1_1DummyRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DummyRestraint</name>
+      <anchorfile>classIMP_1_1em2d_1_1DummyRestraint.html</anchorfile>
+      <anchor>a8d10268f28c37978c4824eb8d59758bd</anchor>
+      <arglist>(IMP::Particle *p, IMP::Particle *q)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1DummyRestraint.html</anchorfile>
+      <anchor>a967a0026ca829fe924ea2c83f736054d</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::Em2DRestraint</name>
+    <filename>classIMP_1_1em2d_1_1Em2DRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Em2DRestraint</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a3c6746ba4dd8dac106309cbc4967ed03</anchor>
+      <arglist>(Model *m)</arglist>
+    </member>
+    <member kind="function">
+      <type>RegistrationResults</type>
+      <name>get_registration_results</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a23a6debb367c61b2a4c009774b390b49</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_coarse_registration_mode</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a07c9060b33bc57a81e271fa4d16b64c5</anchor>
+      <arglist>(bool opt)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_fast_mode</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a00e14497ec939f4f29b2ca0e52a613f1</anchor>
+      <arglist>(unsigned int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_images</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a9a2984c6f281fee8f5b4384980b84ddc</anchor>
+      <arglist>(const em2d::Images em_images)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_particles</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a4fff039bf0e2bf49c06583f83d254afa</anchor>
+      <arglist>(SingletonContainer *particles_container)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_variance_images</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a684fffc8d113ecb1e03cb8ff8e1c6fda</anchor>
+      <arglist>(const em2d::Images variance_images)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setup</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraint.html</anchorfile>
+      <anchor>a3351edb9bbe8eab5297df9396542effd</anchor>
+      <arglist>(ScoreFunction *score_function, const Em2DRestraintParameters &amp;params)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::Em2DRestraintParameters</name>
+    <filename>classIMP_1_1em2d_1_1Em2DRestraintParameters.html</filename>
+    <base>IMP::em2d::ProjectingParameters</base>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>n_projections</name>
+      <anchorfile>classIMP_1_1em2d_1_1Em2DRestraintParameters.html</anchorfile>
+      <anchor>aa00628e896494cb4ddaab3c4b57eb2bd</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::EM2DScore</name>
+    <filename>classIMP_1_1em2d_1_1EM2DScore.html</filename>
+    <base>IMP::em2d::ScoreFunction</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::GridStates</name>
+    <filename>classIMP_1_1em2d_1_1GridStates.html</filename>
+    <base>IMP::domino::ParticleStates</base>
+    <member kind="function">
+      <type></type>
+      <name>GridStates</name>
+      <anchorfile>classIMP_1_1em2d_1_1GridStates.html</anchorfile>
+      <anchor>a27743621b5def59485508297837b719d</anchor>
+      <arglist>(const algebra::Vector3Ds &amp;positions, const algebra::Rotation3Ds &amp;orientations, const String &amp;name=&quot;GridStates&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Rotation3D</type>
+      <name>get_orientation</name>
+      <anchorfile>classIMP_1_1em2d_1_1GridStates.html</anchorfile>
+      <anchor>aeea95a65be4b71771c6417497ce4857d</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Vector3D</type>
+      <name>get_position</name>
+      <anchorfile>classIMP_1_1em2d_1_1GridStates.html</anchorfile>
+      <anchor>a86ebfae6f9aab7071f43b93e2a65f4dd</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::HasHigherCCC</name>
+    <filename>classIMP_1_1em2d_1_1HasHigherCCC.html</filename>
+    <templarg>class T</templarg>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::HasLowerScore</name>
+    <filename>classIMP_1_1em2d_1_1HasLowerScore.html</filename>
+    <templarg>class T</templarg>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::Image</name>
+    <filename>classIMP_1_1em2d_1_1Image.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a9a8af54edd7f1f9cf1fd0595f60c59cf</anchor>
+      <arglist>(int rows, int cols)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a051c8ca01c41487d6d638a3867854283</anchor>
+      <arglist>(String filename, const ImageReaderWriter *reader)</arglist>
+    </member>
+    <member kind="function">
+      <type>cv::Mat &amp;</type>
+      <name>get_data</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>abd084925264012dd1b40c9b1f969b441</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>em::ImageHeader &amp;</type>
+      <name>get_header</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>ab24afa887f6390e86e2bd2a67508a70f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>FloatRange</type>
+      <name>get_min_and_max_values</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a9b5619d2b8c25ea4d96a4dde113ae128</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>get_name</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a5d1e75c33316fe9ca9aa941903c6da05</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>get_type_name</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a97b7e579a75617a4dff5a9700f9f8aaa</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>aebefb32ef19750059f07ccf444fb4bea</anchor>
+      <arglist>(int i, int j) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>read</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a3711206f3d3632ed50f56194528574d5</anchor>
+      <arglist>(String filename, const ImageReaderWriter *reader)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_data</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a5f9dfb860ed43f8abcb673add9c776df</anchor>
+      <arglist>(const cv::Mat &amp;mat)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_name</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a092b6429b4c3623379a62df2aa476e3a</anchor>
+      <arglist>(const String &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_size</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a8f60a2fc69d0e0ea1502ed2448b42376</anchor>
+      <arglist>(Image *img)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_size</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>ac88ea83976612b8472113ead946ab828</anchor>
+      <arglist>(int rows, int cols)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_value</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>ad61f0cdf83f92ec9684e6c56ed8d7132</anchor>
+      <arglist>(double val)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_value</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>af437339ef0e6ed9ae41518b5bd67e4fa</anchor>
+      <arglist>(int i, int j, double val)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_zeros</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>ab80318be34a1dbce26d1d9baf8dac3fb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a32b9b614e497a778f4b94cb67eb938de</anchor>
+      <arglist>(std::ostream &amp;out) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>update_header</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>ace28c70f02e3e8ed23398cce1c409d0f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a0d4c7013411e8712825ea2bf38188bc5</anchor>
+      <arglist>(const String &amp;filename, const ImageReaderWriter *writer)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cv::Mat</type>
+      <name>data_</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a574a19cd14f2a6f680dfa6e026f5b0fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>em::ImageHeader</type>
+      <name>header_</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a75d35a842c3c9fc1e3a986b4029268d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>String</type>
+      <name>name_</name>
+      <anchorfile>classIMP_1_1em2d_1_1Image.html</anchorfile>
+      <anchor>a8c235b1458af63746ebe34c61dd7a9de</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ImageReaderWriter</name>
+    <filename>classIMP_1_1em2d_1_1ImageReaderWriter.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::IntsOrder</name>
+    <filename>classIMP_1_1em2d_1_1IntsOrder.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::JPGImageReaderWriter</name>
+    <filename>classIMP_1_1em2d_1_1JPGImageReaderWriter.html</filename>
+    <base>IMP::em2d::ImageReaderWriter</base>
+    <member kind="function">
+      <type>void</type>
+      <name>read_from_ints</name>
+      <anchorfile>classIMP_1_1em2d_1_1JPGImageReaderWriter.html</anchorfile>
+      <anchor>a95f485195a522b34f9e0bc415ada673b</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_to_ints</name>
+      <anchorfile>classIMP_1_1em2d_1_1JPGImageReaderWriter.html</anchorfile>
+      <anchor>a9ed60ae84e9b0ee7719df57f9aa3c8ed</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::LessPairBySecond</name>
+    <filename>classIMP_1_1em2d_1_1LessPairBySecond.html</filename>
+    <templarg>class T</templarg>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::MasksManager</name>
+    <filename>classIMP_1_1em2d_1_1MasksManager.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>create_mask</name>
+      <anchorfile>classIMP_1_1em2d_1_1MasksManager.html</anchorfile>
+      <anchor>aac9aac043aec813a2bc0a610ed3ea145</anchor>
+      <arglist>(double mass)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create_masks</name>
+      <anchorfile>classIMP_1_1em2d_1_1MasksManager.html</anchorfile>
+      <anchor>aee7e062c082144a4ab54b902ec759316</anchor>
+      <arglist>(const ParticlesTemp &amp;ps)</arglist>
+    </member>
+    <member kind="function">
+      <type>ProjectionMaskPtr</type>
+      <name>find_mask</name>
+      <anchorfile>classIMP_1_1em2d_1_1MasksManager.html</anchorfile>
+      <anchor>ac401212559c95374dc3ec6ba6aabed8a</anchor>
+      <arglist>(double mass)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setup_kernel</name>
+      <anchorfile>classIMP_1_1em2d_1_1MasksManager.html</anchorfile>
+      <anchor>aafa581c34c186d75539b57f5fb4cc4b1</anchor>
+      <arglist>(double resolution, double pixelsize)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::MatchTemplateResult</name>
+    <filename>classIMP_1_1em2d_1_1MatchTemplateResult.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::MeanAbsoluteDifference</name>
+    <filename>classIMP_1_1em2d_1_1MeanAbsoluteDifference.html</filename>
+    <base>IMP::em2d::ScoreFunction</base>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ParticlesDummyRestraint</name>
+    <filename>classIMP_1_1em2d_1_1ParticlesDummyRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ParticlesDummyRestraint</name>
+      <anchorfile>classIMP_1_1em2d_1_1ParticlesDummyRestraint.html</anchorfile>
+      <anchor>a6282d6bb36aaeb6f2af32b5c03c49dc4</anchor>
+      <arglist>(SingletonContainer *sc)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1ParticlesDummyRestraint.html</anchorfile>
+      <anchor>ae6d3274aa410dd8395ee28ed0e1ffdb1</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::PCAFitRestraint</name>
+    <filename>classIMP_1_1em2d_1_1PCAFitRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PCAFitRestraint</name>
+      <anchorfile>classIMP_1_1em2d_1_1PCAFitRestraint.html</anchorfile>
+      <anchor>af8bb9bf5130c9094ce8e6144e76c2bce</anchor>
+      <arglist>(Particles particles, const std::vector&lt; std::string &gt; &amp;image_files, double pixel_size, double resolution=10.0, unsigned int projection_number=100, bool reuse_direction=false, unsigned int n_components=1, unsigned int micrographs_number=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_cross_correlation_coefficient</name>
+      <anchorfile>classIMP_1_1em2d_1_1PCAFitRestraint.html</anchorfile>
+      <anchor>a727ff3d356d69534d12f683b33c70f84</anchor>
+      <arglist>(unsigned int image_number) const</arglist>
+    </member>
+    <member kind="function">
+      <type>RestraintInfo *</type>
+      <name>get_dynamic_info</name>
+      <anchorfile>classIMP_1_1em2d_1_1PCAFitRestraint.html</anchorfile>
+      <anchor>a8e660b5ff565f27a207439b66d0379f4</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>RestraintInfo *</type>
+      <name>get_static_info</name>
+      <anchorfile>classIMP_1_1em2d_1_1PCAFitRestraint.html</anchorfile>
+      <anchor>a7e0fd328bf0e0de2ff5898dcb1109dc9</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Transformation3D</type>
+      <name>get_transformation</name>
+      <anchorfile>classIMP_1_1em2d_1_1PCAFitRestraint.html</anchorfile>
+      <anchor>ae7841cbc0e2746e068317b00727cc6a8</anchor>
+      <arglist>(unsigned int image_number) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::PolarResamplingParameters</name>
+    <filename>classIMP_1_1em2d_1_1PolarResamplingParameters.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PolarResamplingParameters</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a5ba428776838e983a1d3a2aeebf4fdbc</anchor>
+      <arglist>(const cv::Mat &amp;m)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PolarResamplingParameters</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a79f33971fc03f6b36ba6117f1f1edadd</anchor>
+      <arglist>(unsigned int rows, unsigned int cols)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create_maps_for_resampling</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a7a9ce4c344d847058f0f6cca45631f7b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_angle_step</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>ae6533dd8952f00efddc6cdfa988e12d5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_ending_radius</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a4f1881d371a2d2ab7efb0a41c45d028a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_angles</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a8e662577d96acbfb1c5ad189c3f78311</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_rings</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a8a802b816a9b1ef3d7b4e59788d87cb0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_radius</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a821c3c0cab402abc7675f8f73c6484d4</anchor>
+      <arglist>(unsigned int n_ring) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_radius_step</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>af04c52b065b3fc9d537ad3aa11d0bb0d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_resampling_map</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a01f1e9a844f5fe48bd5b2af34c94caa2</anchor>
+      <arglist>(cv::Mat &amp;m1) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_resampling_maps</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>ac37505bf5e3578e8bc07149d2a3ac31b</anchor>
+      <arglist>(cv::Mat &amp;m1, cv::Mat &amp;m2) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_starting_radius</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a9ac75d6c713ac741e53f5b704bfb6add</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_estimated_number_of_angles</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>aa72600f51e6966b12e72d7a511f2219b</anchor>
+      <arglist>(unsigned int aprox_value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setup</name>
+      <anchorfile>classIMP_1_1em2d_1_1PolarResamplingParameters.html</anchorfile>
+      <anchor>a4ca4fd05916b3bb1a3660ce9a87d53a0</anchor>
+      <arglist>(unsigned int rows, unsigned int cols)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectingOptions</name>
+    <filename>classIMP_1_1em2d_1_1ProjectingOptions.html</filename>
+    <base>IMP::em2d::ProjectingParameters</base>
+    <member kind="function">
+      <type></type>
+      <name>ProjectingOptions</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectingOptions.html</anchorfile>
+      <anchor>a74af981738e1f53dfba16095e61cf7bf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ProjectingOptions</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectingOptions.html</anchorfile>
+      <anchor>a4808fe04a0864ec1cba36db81edd76cb</anchor>
+      <arglist>(double ps, double res)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectingOptions.html</anchorfile>
+      <anchor>af835d9d188ebee9d11b5464f01ad7660</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectingParameters</name>
+    <filename>classIMP_1_1em2d_1_1ProjectingParameters.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ProjectingParameters</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectingParameters.html</anchorfile>
+      <anchor>a37a813346425ec8d8bf5936995670a65</anchor>
+      <arglist>(double ps, double res)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectingParameters.html</anchorfile>
+      <anchor>aa46bd884bc7c6b211e05d3ff750aea1b</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectionFinder</name>
+    <filename>classIMP_1_1em2d_1_1ProjectionFinder.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>get_coarse_registration</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>aecbc29de7d691a79a8eaaff440ad6baa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_coarse_registration_time</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a819d2867f18b5a7eeddc2b596db60478</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_complete_registration</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a6bf2e86816303b0eb4bd04d0c7cec917</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_fine_registration_time</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a6abacb04a0259c1ebd490ea8aeb15f1a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_global_score</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a03f68b5f6e6781ec5f84cde36f416947</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_preprocessing_time</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a7003ba189aafea834d816cc75584512f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>RegistrationResults</type>
+      <name>get_registration_results</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a4ff7561eca3b709ebff998191da89bc6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_fast_mode</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a177b68e1d5180244e3b8f8ada3055c7d</anchor>
+      <arglist>(unsigned int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_model_particles</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>af750554814ed2896d3c65bee308e36db</anchor>
+      <arglist>(const ParticlesTemp &amp;ps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_projections</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>ae2fd66029152065fd368461492cc6b11</anchor>
+      <arglist>(const em2d::Images &amp;projections)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_save_match_images</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a5d9fe5d8cd056e216f37f8c4dcfbe5b9</anchor>
+      <arglist>(bool x)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_subjects</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a7dd29466d12fc84818bef5ea38d9fd90</anchor>
+      <arglist>(const em2d::Images &amp;subjects)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_variance_images</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a831a5befa05d173fbfa9d667f5196874</anchor>
+      <arglist>(const em2d::Images &amp;variances)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setup</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>aff42f0cb55360eba23aca76e71cc25fd</anchor>
+      <arglist>(ScoreFunction *score_function, const Em2DRestraintParameters &amp;params)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>do_preprocess_for_fast_coarse_registration</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>abb1c43a0e5e08947d9c1dd10db5e511c</anchor>
+      <arglist>(const cv::Mat &amp;m, algebra::Vector2D &amp;center, cv::Mat &amp;POLAR_AUTOC)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>get_coarse_registrations_for_subject</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>af3e664255644a3fd5143c5b7ac8755be</anchor>
+      <arglist>(unsigned int i, RegistrationResults &amp;coarse_RRs)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>MasksManagerPtr</type>
+      <name>masks_manager_</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>a83fcc942eda44e4e08244898c6ec6d43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>em2d::Images</type>
+      <name>subjects_</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionFinder.html</anchorfile>
+      <anchor>afcfb81baf5ac05d42a5d75f203fc2cd1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectionMask</name>
+    <filename>classIMP_1_1em2d_1_1ProjectionMask.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>apply</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionMask.html</anchorfile>
+      <anchor>ae88f9e933554f0f64cf094e112b47f68</anchor>
+      <arglist>(cv::Mat &amp;m, const algebra::Vector2D &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionMask.html</anchorfile>
+      <anchor>ae4919afad95b6343f92834b60ae84503</anchor>
+      <arglist>(const em::KernelParameters &amp;kparams, double mass=1.0)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectionParameters</name>
+    <filename>classIMP_1_1em2d_1_1ProjectionParameters.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>get_parameters_optimized</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a055872fd70609a430a024f378eb7d965</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_quaternion_1</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a5c588e1df2ac76f91b45b954553f28ee</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_quaternion_2</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a95daf3ea6295b5780e6847a767c3dfe8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_quaternion_3</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>aa8446d77995821526db12953fc1b2ec9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_quaternion_4</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a0afe446f43248585e0762ca962d82277</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_translation_x</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a7f883174ecbd430a2775f5962554e36d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_translation_y</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a9f21cf74cdb2270179220e432fba10d9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_parameters_optimized</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a0bd680a99e26d3cc5ac28d84293eb57c</anchor>
+      <arglist>(bool tf) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_proper_ranges_for_keys</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>ad305f39ddfbb50a23b486a9cb32e445f</anchor>
+      <arglist>(Model *m, const algebra::Vector3D &amp;min_translation_values, const algebra::Vector3D &amp;max_translation_values)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_quaternion_1</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a8bee13168f1d02f0b031f70525585673</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_quaternion_2</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a0ec4b73a8b7ca2bc33eabf826954fde6</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_quaternion_3</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a44dfa07784474f542f02b8168f2fd4c5</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_quaternion_4</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a37cfd68f2bd7903b875ae6bbeb15f99d</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_translation_x</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>aac0ff1fc270d6a6bff2081f1a01a3ddb</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_translation_y</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>aa77861ee08d47383712e55504662869a</anchor>
+      <arglist>(double t)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>get_is_setup</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>af838db5ebb9db404be64c8e342dda934</anchor>
+      <arglist>(Model *m, ParticleIndex pi)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const FloatKeys &amp;</type>
+      <name>get_keys</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a99c6fe753573b2dce7f8e012e86fde32</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ProjectionParameters</type>
+      <name>setup_particle</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a1564012d89842dc7c01c785bbaf92b91</anchor>
+      <arglist>(IMP::ParticleAdaptor pa)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ProjectionParameters</type>
+      <name>setup_particle</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionParameters.html</anchorfile>
+      <anchor>a7608632f3765376047d0a20deb5d0fbc</anchor>
+      <arglist>(Model *m, ParticleIndex pi)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectionParametersScoreState</name>
+    <filename>classIMP_1_1em2d_1_1ProjectionParametersScoreState.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ProjectionStates</name>
+    <filename>classIMP_1_1em2d_1_1ProjectionStates.html</filename>
+    <base>IMP::em2d::GridStates</base>
+    <member kind="function">
+      <type></type>
+      <name>ProjectionStates</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionStates.html</anchorfile>
+      <anchor>ac23ddf9838569cb58cb0e9cc6ac7111a</anchor>
+      <arglist>(const algebra::Vector3Ds &amp;positions, const algebra::Rotation3Ds &amp;orientations, const Images &amp;projections, const String &amp;name=&quot;ProjectionStates&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>Image *</type>
+      <name>get_projection</name>
+      <anchorfile>classIMP_1_1em2d_1_1ProjectionStates.html</anchorfile>
+      <anchor>aef4518a3cc7195d28ab08b52c21ea595</anchor>
+      <arglist>(unsigned int i) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::RegistrationResult</name>
+    <filename>classIMP_1_1em2d_1_1RegistrationResult.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>add_in_plane_transformation</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>ae9ab15bdd1f3d4e782063f8b0d7f1923</anchor>
+      <arglist>(algebra::Transformation2D t)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_ccc</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a1d21d54109483c438685fc550b1fc6d2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>get_image_index</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a2e00c6a92bc92432138cbe11bf00ed46</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>get_name</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a1fede18916f07b5d07f2f6a99b66f032</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>get_projection_index</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a12147084567a0d83492c0b6986f8f433</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Rotation3D</type>
+      <name>get_rotation</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>ad43826f7306492f337680d7db9f7fc30</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_score</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>ae44c73948d585c49ceb6600d1847f798</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>read</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a8f751c856ebce6d1fed89b15de568e39</anchor>
+      <arglist>(const String &amp;s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>read_from_image</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>afd9d889f9b8de4e3a3d7d42fa965f41d</anchor>
+      <arglist>(const em::ImageHeader &amp;header)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_image_index</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a99ad750ea44f6e88c648ca9e8300814a</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_in_image</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a2cc70da589f31bb4490ddd8441580e7b</anchor>
+      <arglist>(em::ImageHeader &amp;header) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_random_registration</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a9d57113370cc321c738c82e5b26a8245</anchor>
+      <arglist>(unsigned int index, double maximum_shift)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_rotation</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a996ceea30768ec25b24b6c306415039e</anchor>
+      <arglist>(algebra::Rotation3D R)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_rotation</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a53b7d8e11e378c1fe1ab8e2546828641</anchor>
+      <arglist>(double phi, double theta, double psi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_shift</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a7023012e178a1116d785053bc45c9f08</anchor>
+      <arglist>(algebra::Vector2D shift)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>ab135606d700198b0283bdc1fff7d416e</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_comment_line</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a7fe2d18087dd00d37c8a4bd597d3f738</anchor>
+      <arglist>(std::ostream &amp;out=std::cout) const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>ccc_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>acfa174ef382a268cc5063159234286fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>image_index_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>aafa432a150b7a51f5e246332888bb02d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>String</type>
+      <name>name_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a461a335ea5284532d70805940a85fb5b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>phi_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a1d6a56442a3f72905faa7d6ec72f20da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>Score_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>ad618be9f6a8fd81e958b4170e0be1f8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>algebra::Vector2D</type>
+      <name>shift_</name>
+      <anchorfile>classIMP_1_1em2d_1_1RegistrationResult.html</anchorfile>
+      <anchor>a8e7ce77590f63f6b5c7008045473c4ba</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::RelativePositionMover</name>
+    <filename>classIMP_1_1em2d_1_1RelativePositionMover.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>add_internal_transformations</name>
+      <anchorfile>classIMP_1_1em2d_1_1RelativePositionMover.html</anchorfile>
+      <anchor>a2045622f5bc5c6c61b42f5f27748c4f9</anchor>
+      <arglist>(core::RigidBody d, algebra::Transformation3Ds transforms)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_random_move_probability</name>
+      <anchorfile>classIMP_1_1em2d_1_1RelativePositionMover.html</anchorfile>
+      <anchor>acb7103be36dc03a2551650aad0ce879d</anchor>
+      <arglist>(Float p)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::RigidBodiesImageFitRestraint</name>
+    <filename>classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RigidBodiesImageFitRestraint</name>
+      <anchorfile>classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint.html</anchorfile>
+      <anchor>af061f3bf53dde9fec3da4b4432220b84</anchor>
+      <arglist>(ScoreFunction *scf, const core::RigidBodies &amp;rbs, Image *img)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_number_of_masks</name>
+      <anchorfile>classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint.html</anchorfile>
+      <anchor>ac78c1c55361f2f4f698445e934f19945</anchor>
+      <arglist>(const core::RigidBody &amp;rb) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_orientations</name>
+      <anchorfile>classIMP_1_1em2d_1_1RigidBodiesImageFitRestraint.html</anchorfile>
+      <anchor>a9ecd59712114458c5d440bb7e01870f1</anchor>
+      <arglist>(const core::RigidBody &amp;rb, const algebra::Rotation3Ds &amp;rots)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::ScoreFunction</name>
+    <filename>classIMP_1_1em2d_1_1ScoreFunction.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>get_score</name>
+      <anchorfile>classIMP_1_1em2d_1_1ScoreFunction.html</anchorfile>
+      <anchor>ad147911a73dec50fd79a5f31191820fb</anchor>
+      <arglist>(Image *image, Image *projection) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::SegmentationParameters</name>
+    <filename>classIMP_1_1em2d_1_1SegmentationParameters.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::SingleLinkage</name>
+    <filename>classIMP_1_1em2d_1_1SingleLinkage.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>classIMP_1_1em2d_1_1SingleLinkage.html</anchorfile>
+      <anchor>a98000bfcb4ceceea49e32ae280988364</anchor>
+      <arglist>(unsigned int id1, unsigned int id2, const ClusterSet &amp;cluster_set, const FloatsList &amp;distances) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::SpiderImageReaderWriter</name>
+    <filename>classIMP_1_1em2d_1_1SpiderImageReaderWriter.html</filename>
+    <base>IMP::em2d::ImageReaderWriter</base>
+    <member kind="function">
+      <type></type>
+      <name>SpiderImageReaderWriter</name>
+      <anchorfile>classIMP_1_1em2d_1_1SpiderImageReaderWriter.html</anchorfile>
+      <anchor>a204c350117aab20cc185777b410e566f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SpiderImageReaderWriter</name>
+      <anchorfile>classIMP_1_1em2d_1_1SpiderImageReaderWriter.html</anchorfile>
+      <anchor>a4488a0648c4a1bee51e5b7ddef6e22da</anchor>
+      <arglist>(const String &amp;filename, bool skip_type_check, bool force_reversed, bool skip_extra_checkings)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>read_from_floats</name>
+      <anchorfile>classIMP_1_1em2d_1_1SpiderImageReaderWriter.html</anchorfile>
+      <anchor>a9c08b22839e3ad4f256541b5737b8443</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_to_floats</name>
+      <anchorfile>classIMP_1_1em2d_1_1SpiderImageReaderWriter.html</anchorfile>
+      <anchor>acdda9e14c4ebaf55bccaac401e86ae2a</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>IMP::em2d::TIFFImageReaderWriter</name>
+    <filename>classIMP_1_1em2d_1_1TIFFImageReaderWriter.html</filename>
+    <base>IMP::em2d::ImageReaderWriter</base>
+    <member kind="function">
+      <type>void</type>
+      <name>read_from_ints</name>
+      <anchorfile>classIMP_1_1em2d_1_1TIFFImageReaderWriter.html</anchorfile>
+      <anchor>a79e71352278aba3e88a035c0a1d9b378</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, cv::Mat &amp;data) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_to_ints</name>
+      <anchorfile>classIMP_1_1em2d_1_1TIFFImageReaderWriter.html</anchorfile>
+      <anchor>a5318892665b2405c50f7347d31024961</anchor>
+      <arglist>(const String &amp;filename, em::ImageHeader &amp;header, const cv::Mat &amp;data) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::em2d</name>
+    <filename>namespaceIMP_1_1em2d.html</filename>
+    <class kind="class">IMP::em2d::AverageDistanceLinkage</class>
+    <class kind="class">IMP::em2d::ChiSquaredScore</class>
+    <class kind="class">IMP::em2d::ClusterSet</class>
+    <class kind="class">IMP::em2d::CollisionCrossSection</class>
+    <class kind="class">IMP::em2d::CompleteLinkage</class>
+    <class kind="class">IMP::em2d::DistanceFilter</class>
+    <class kind="class">IMP::em2d::DistanceFilterTable</class>
+    <class kind="class">IMP::em2d::DummyRestraint</class>
+    <class kind="class">IMP::em2d::Em2DRestraint</class>
+    <class kind="class">IMP::em2d::Em2DRestraintParameters</class>
+    <class kind="class">IMP::em2d::EM2DScore</class>
+    <class kind="class">IMP::em2d::GridStates</class>
+    <class kind="class">IMP::em2d::HasHigherCCC</class>
+    <class kind="class">IMP::em2d::HasLowerScore</class>
+    <class kind="class">IMP::em2d::Image</class>
+    <class kind="class">IMP::em2d::ImageReaderWriter</class>
+    <class kind="class">IMP::em2d::IntsOrder</class>
+    <class kind="class">IMP::em2d::JPGImageReaderWriter</class>
+    <class kind="class">IMP::em2d::LessPairBySecond</class>
+    <class kind="class">IMP::em2d::MasksManager</class>
+    <class kind="class">IMP::em2d::MatchTemplateResult</class>
+    <class kind="class">IMP::em2d::MeanAbsoluteDifference</class>
+    <class kind="class">IMP::em2d::ParticlesDummyRestraint</class>
+    <class kind="class">IMP::em2d::PCAFitRestraint</class>
+    <class kind="class">IMP::em2d::PolarResamplingParameters</class>
+    <class kind="class">IMP::em2d::ProjectingOptions</class>
+    <class kind="class">IMP::em2d::ProjectingParameters</class>
+    <class kind="class">IMP::em2d::ProjectionFinder</class>
+    <class kind="class">IMP::em2d::ProjectionMask</class>
+    <class kind="class">IMP::em2d::ProjectionParameters</class>
+    <class kind="class">IMP::em2d::ProjectionParametersScoreState</class>
+    <class kind="class">IMP::em2d::ProjectionStates</class>
+    <class kind="class">IMP::em2d::RegistrationResult</class>
+    <class kind="class">IMP::em2d::RelativePositionMover</class>
+    <class kind="class">IMP::em2d::RigidBodiesImageFitRestraint</class>
+    <class kind="class">IMP::em2d::ScoreFunction</class>
+    <class kind="class">IMP::em2d::SegmentationParameters</class>
+    <class kind="class">IMP::em2d::SingleLinkage</class>
+    <class kind="class">IMP::em2d::SpiderImageReaderWriter</class>
+    <class kind="class">IMP::em2d::TIFFImageReaderWriter</class>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; AverageDistanceLinkage &gt;</type>
+      <name>AverageDistanceLinkages</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ab858924dd6f6509d20593463529f2c6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ChiSquaredScore &gt; &gt;</type>
+      <name>ChiSquaredScores</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7078fc1ae05a9cfd5bbf82f9c9a113c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ChiSquaredScore &gt; &gt;</type>
+      <name>ChiSquaredScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a8a90ef5de9d000109eab5aaf71391307</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ClusterSet &gt;</type>
+      <name>ClusterSets</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a65da9198a46818255d058c0a219ca9b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; CollisionCrossSection &gt; &gt;</type>
+      <name>CollisionCrossSections</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a235e217d855c865ea57004ae4a4705e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; CollisionCrossSection &gt; &gt;</type>
+      <name>CollisionCrossSectionsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa20d9d965b5c32c5576d689add618d27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; CompleteLinkage &gt;</type>
+      <name>CompleteLinkages</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ac14e9620669dc7cf15fa1cfc2fcfd117</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DistanceFilter &gt; &gt;</type>
+      <name>DistanceFilters</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a50115c18e2fe2eb9a685087605f7b3d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DistanceFilter &gt; &gt;</type>
+      <name>DistanceFiltersTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a9b661b1f85ed4549025a61f3b8bfd517</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DistanceFilterTable &gt; &gt;</type>
+      <name>DistanceFilterTables</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a52cee7904ff22fff761a7fa72fced1be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DistanceFilterTable &gt; &gt;</type>
+      <name>DistanceFilterTablesTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a25e0b3f75d6158051eaddff15e68bb2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; DummyRestraint &gt; &gt;</type>
+      <name>DummyRestraints</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ac9e793bcbf9d838ead1b4af0fa900178</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; DummyRestraint &gt; &gt;</type>
+      <name>DummyRestraintsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa25593b487d99573f24f063e9a5484d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; Em2DRestraintParameters &gt;</type>
+      <name>Em2DRestraintParametersList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>afab06b952b8da32673a9f380e2a262cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; Em2DRestraint &gt; &gt;</type>
+      <name>Em2DRestraints</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a37e86f2f79619c4cc2174bc3ec43e629</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; Em2DRestraint &gt; &gt;</type>
+      <name>Em2DRestraintsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a29a05949fccdbe2c6d4bc51adbf6e138</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; EM2DScore &gt; &gt;</type>
+      <name>EM2DScores</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aaa9220eaf47502e4851264c6773ae309</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; EM2DScore &gt; &gt;</type>
+      <name>EM2DScoresTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa6609e37768507b17f55e09fe4a3aeaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; GridStates &gt; &gt;</type>
+      <name>GridStatesList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a2affab9e5ee3d479d8e950d91d9345f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; GridStates &gt; &gt;</type>
+      <name>GridStatesListTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a0480007ecf26c83874b6dc0690baf51f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; Image &gt; &gt;</type>
+      <name>Images</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aea73dfb54b406007b3269745759f22f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; Image &gt; &gt;</type>
+      <name>ImagesTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad634fb223ed18b26e3ff79d5f905af0d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; MasksManager &gt;</type>
+      <name>MasksManagers</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a0de2d46a9f48a455eb9acc8065d05a5d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; MatchTemplateResult &gt;</type>
+      <name>MatchTemplateResults</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad2ce3d43f6a49e51b38b28ccc760f3ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; MeanAbsoluteDifference &gt; &gt;</type>
+      <name>MeanAbsoluteDifferences</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a125048512f4079dc24b3cfa006e7f87a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; MeanAbsoluteDifference &gt; &gt;</type>
+      <name>MeanAbsoluteDifferencesTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a4c918409efd178739eb8dc103c44639a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ParticlesDummyRestraint &gt; &gt;</type>
+      <name>ParticlesDummyRestraints</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>afb8072934acd821a9cda749cb632febf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ParticlesDummyRestraint &gt; &gt;</type>
+      <name>ParticlesDummyRestraintsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7bc3190cecb7d93bf78d5dd11740e3dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; PolarResamplingParameters &gt;</type>
+      <name>PolarResamplingParametersList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>adfb4f255db35e80fbfd270590a149eaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ProjectingOptions &gt;</type>
+      <name>ProjectingOptionsList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a5c0a4077e3940bd57fa165f7200bf1bd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ProjectingParameters &gt;</type>
+      <name>ProjectingParametersList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a6a39dafa441a65cf1a05ddeec7d81459</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ProjectionFinder &gt; &gt;</type>
+      <name>ProjectionFinders</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a57cd57c8df4dcb815b847dd8fc3bf227</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ProjectionFinder &gt; &gt;</type>
+      <name>ProjectionFindersTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ab6298dd31c40f62169029e8e832d41ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; ProjectionMask &gt;</type>
+      <name>ProjectionMasks</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a22b9557e0e727f52b045926694df71ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ProjectionStates &gt; &gt;</type>
+      <name>ProjectionStatesList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>abdb0037edd6a7f041c886abc53e8fe79</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ProjectionStates &gt; &gt;</type>
+      <name>ProjectionStatesListTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af8da494cdcc881b4696db6f34dddee06</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; RegistrationResult &gt;</type>
+      <name>RegistrationResults</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a3e4345838dd19ac6916efcfd5cfda67a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::pair&lt; algebra::Transformation2D, double &gt;</type>
+      <name>ResultAlign2D</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a4c37119ae034ad39a0c88a08541e69b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; RigidBodiesImageFitRestraint &gt; &gt;</type>
+      <name>RigidBodiesImageFitRestraints</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ae547f9d89ef6ebbf5d34c28000c44f42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; RigidBodiesImageFitRestraint &gt; &gt;</type>
+      <name>RigidBodiesImageFitRestraintsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>afae31a669590666d2e4647b8251a7ba7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::Pointer&lt; ScoreFunction &gt; &gt;</type>
+      <name>ScoreFunctions</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa6c9a8baaee6cb76331e0ead20876a51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; IMP::WeakPointer&lt; ScoreFunction &gt; &gt;</type>
+      <name>ScoreFunctionsTemp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aeae71d3c28454e19dbaaac6d520ccd19</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; SegmentationParameters &gt;</type>
+      <name>SegmentationParametersList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a15c946988d5b69a08439e5f51c7682a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>IMP::Vector&lt; SingleLinkage &gt;</type>
+      <name>SingleLinkages</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7e1dadd7f8108dd2fd48e2c51ca4fc42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::vector&lt; algebra::Transformation3Ds &gt;</type>
+      <name>Transformation3DsList</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a21f82bc3a3443cae7bedc305742bd61d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_noise</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a643bced0cc35024d64d1eddbe03e7145</anchor>
+      <arglist>(cv::Mat &amp;v, double op1, double op2, const String &amp;mode=&quot;uniform&quot;, double df=3)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_circular_mask</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a913f22c4be47b182dfa1dfb33a6479cc</anchor>
+      <arglist>(const cv::Mat &amp;mat, cv::Mat &amp;result, int radius, double value=0.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_diffusion_filter</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a35871baa292b8eba834953d29b964444</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, double beta, double pixelsize, unsigned int time_steps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_diffusion_filter</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a6fbd3f388210a4942c4ac54c95b88fd8</anchor>
+      <arglist>(Image *input, Image *filtered, double beta, double pixelsize, int time_steps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_mask</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7ea5c49d021043c2778ba7d492350939</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, const cvIntMat &amp;mask, double val)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_mean_outside_mask</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a90402327da81d37eb865301ff37fbb19</anchor>
+      <arglist>(Image *img, double radius)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_threshold</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a1bcbe7aef167fec46e11f467dac93b88</anchor>
+      <arglist>(cv::Mat &amp;m, cv::Mat &amp;result, double threshold=0.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_variance_filter</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aeaac875427115b4936fc0fa82847e7df</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;filtered, int kernelsize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>apply_variance_filter</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a258020f16ff0205998ee972aa2656499</anchor>
+      <arglist>(Image *input, Image *filtered, int kernelsize)</arglist>
+    </member>
+    <member kind="function">
+      <type>cvIntMat</type>
+      <name>create_circular_mask</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a689dc2adae481a59415efacf4248885e</anchor>
+      <arglist>(int rows, int cols, int radius)</arglist>
+    </member>
+    <member kind="function">
+      <type>Images</type>
+      <name>create_evenly_distributed_projections</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ac7fc9ca9b6ac50bc5de57a157882766f</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, unsigned int n, const ProjectingOptions &amp;options)</arglist>
+    </member>
+    <member kind="function">
+      <type>cv::Mat</type>
+      <name>crop</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>add20c139c513a8574b98613b0e066b1f</anchor>
+      <arglist>(const cv::Mat &amp;m, const IntPair &amp;center, int size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>crop</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af9e50eaa31332e8e42eb3ee0d2b8872e</anchor>
+      <arglist>(Image *img, const IntPair &amp;center, int size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_combined_fill_holes_and_threshold</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a8a8f56ed52d45a9c3ff177d250d60773</anchor>
+      <arglist>(cv::Mat &amp;m, cv::Mat &amp;result, double n_stddevs, double threshold=0.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_dilate_and_shrink_warp</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a6fbd079bf847c552512c4f5a565d7924</anchor>
+      <arglist>(cv::Mat &amp;m, const cv::Mat &amp;grayscale, cv::Mat &amp;kernel)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_extend_borders</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a2a8f8c860463a5845e9a9330fc4f4838</anchor>
+      <arglist>(cv::Mat &amp;orig, cv::Mat &amp;dst, unsigned int pix)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_fill_holes</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad9ee7a864812d20106c6c10a3db39e8f</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>ClusterSet</type>
+      <name>do_hierarchical_agglomerative_clustering</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a43f1323541959d81f9baccbf61818448</anchor>
+      <arglist>(const FloatsList &amp;distances)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>do_labeling</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7fe9e6326cab26d23e66f1c6ee0c2053</anchor>
+      <arglist>(const cvIntMat &amp;m, cvIntMat &amp;mat_to_label)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_matrix_to_image_flip</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ae6185037f9174693f64c885d39c8d19e</anchor>
+      <arglist>(cv::Mat &amp;m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_morphologic_contrast_enhancement</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa03b85b529a06d5f41855434a37620e6</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, const cv::Mat &amp;kernel, unsigned int iterations)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_morphologic_reconstruction</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a14c1f942df62991be91a3c02a81448c4</anchor>
+      <arglist>(const cv::Mat &amp;mask, cv::Mat &amp;marker, int neighbors_mode=4)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_normalize</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a006185fb87d9ea8b0cded91418a529ed</anchor>
+      <arglist>(cv::Mat &amp;m)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_normalize</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a8ca0f5601724287c85b00fb71ddecc44</anchor>
+      <arglist>(Image *im, bool force=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_place</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a555960c8d2eca9a8fcb74555539827ea</anchor>
+      <arglist>(cv::Mat &amp;mask, cv::Mat &amp;m, const algebra::Vector2D &amp;v)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_project_particles</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ab15ba9866050315bb0248dd27f0ef0bb</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, cv::Mat &amp;m2, const algebra::Rotation3D &amp;R, const algebra::Vector3D &amp;translation, const ProjectingOptions &amp;options, MasksManagerPtr masks)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Vector2Ds</type>
+      <name>do_project_vectors</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a33ff594b9223f368d44b25a7da4c349e</anchor>
+      <arglist>(const algebra::Vector3Ds &amp;ps, const algebra::Rotation3D &amp;R, const algebra::Vector3D &amp;translation)</arglist>
+    </member>
+    <member kind="function">
+      <type>algebra::Vector2Ds</type>
+      <name>do_project_vectors</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a3cc89c1d22ffa4f91512f49072542be6</anchor>
+      <arglist>(const algebra::Vector3Ds &amp;ps, const algebra::Rotation3D &amp;R, const algebra::Vector3D &amp;translation, const algebra::Vector3D &amp;center)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_remove_small_objects</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a3e269cb1521c292aa1ad0bd3494b3ca4</anchor>
+      <arglist>(cvIntMat &amp;m, double percentage, int background=0, int foreground=1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_resample_polar</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aad3c7e6514aadaa236e5e354ceff8856</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;resampled, const PolarResamplingParameters &amp;polar_params)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_resample_polar</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a1d4044443138ae1ad3c60ba33afd6e5e</anchor>
+      <arglist>(Image *im1, Image *im2, const PolarResamplingParameters &amp;polar_params)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_segmentation</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a90292cd68858d8e90c4e99c2826739bb</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, const SegmentationParameters &amp;params)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>do_subtract_images</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a5fa6302882e4cc2ddc39262f434058e6</anchor>
+      <arglist>(Image *first, Image *second, Image *result)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_autocorrelation2d</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a715222bf68d4c8f207daa87b917485d9</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;corr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_autocorrelation2d</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a185b28584381f8d779db94c0f91f9db0</anchor>
+      <arglist>(Image *im1, Image *im2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_autocorrelation2d_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ade457bcb204e0cdbc3f37c62735a95c3</anchor>
+      <arglist>(const cv::Mat &amp;M, cv::Mat &amp;corr)</arglist>
+    </member>
+    <member kind="function">
+      <type>MatchTemplateResults</type>
+      <name>get_best_template_matches</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a08c0ef4b9d87a8838e3c2ebd0cfb3b96</anchor>
+      <arglist>(const cv::Mat &amp;m, const cv::Mat &amp;templ, unsigned int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>ResultAlign2D</type>
+      <name>get_complete_alignment</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af9561a34940e234bd416361bbd60a4f3</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;m_to_align, bool apply=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>em2d::ResultAlign2D</type>
+      <name>get_complete_alignment_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ae25b0c486162ad343e3726233a5bb67b</anchor>
+      <arglist>(const cv::Mat &amp;input, const cv::Mat &amp;INPUT, const cv::Mat &amp;POLAR1, cv::Mat &amp;m_to_align, const cv::Mat &amp;POLAR2, bool apply=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>ResultAlign2D</type>
+      <name>get_complete_alignment_with_centers_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a954d8f810fcee18ed744ecfa15e88ae7</anchor>
+      <arglist>(const algebra::Vector2D &amp;center1, const algebra::Vector2D &amp;center2, const cv::Mat &amp;AUTOC_POLAR1, const cv::Mat &amp;AUTOC_POLAR2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_correlation2d</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a95559755452453024f32344cee0ec43f</anchor>
+      <arglist>(const cv::Mat &amp;A, const cv::Mat &amp;B, cv::Mat &amp;corr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_correlation2d</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a47326ad3deacabc6aa0fc68818c453ea</anchor>
+      <arglist>(Image *im1, Image *im2, Image *corr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_correlation2d_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a8c8e930b89742e1e8793afaee0c828fd</anchor>
+      <arglist>(const cv::Mat &amp;M1, const cv::Mat &amp;M2, cv::Mat &amp;corr)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_cross_correlation_coefficient</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a36ce0f68b0bb199a5c0e0e32ded802a6</anchor>
+      <arglist>(const cv::Mat &amp;m1, const cv::Mat &amp;m2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_cross_correlation_coefficient</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af22f5cc59992f1a392b914e6b57a0ecc</anchor>
+      <arglist>(Image *im1, Image *im2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_diffusion_filtering_partial_derivative</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a88b1ad65226409f6cb5dab864141651b</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;der, double dx, double dy, double ang)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_domes</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a7d998f2562e8bd4d005cb8a8b892b8cf</anchor>
+      <arglist>(cv::Mat &amp;m, cv::Mat &amp;result, double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>get_enclosing_image_size</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ae2eeaa84aab84eb5254470522964d4de</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, double pixel_size, unsigned int slack)</arglist>
+    </member>
+    <member kind="function">
+      <type>RegistrationResults</type>
+      <name>get_evenly_distributed_registration_results</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a695b83c14bfca657b7c3daff86546790</anchor>
+      <arglist>(unsigned int n_projections)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_fft_using_optimal_size</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a62859c43c4b08d07c865cde8bf10783d</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;M)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_global_score</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a44fe26f303260f075ccda58b350fe8a0</anchor>
+      <arglist>(const RegistrationResults &amp;RRs)</arglist>
+    </member>
+    <member kind="function">
+      <type>Floats</type>
+      <name>get_histogram</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a3f03d61419c7b1c2f518f32f8c0bfa9f</anchor>
+      <arglist>(const cv::Mat &amp;m, int bins)</arglist>
+    </member>
+    <member kind="function">
+      <type>Floats</type>
+      <name>get_histogram</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a4f87a85f1ee35aa0a6dc6f0c859df0b0</anchor>
+      <arglist>(Image *img, int bins)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_mean</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad970af0573f2bacda47fba538d3267b2</anchor>
+      <arglist>(const cv::Mat &amp;mat, const cvIntMat &amp;mask)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_morphologic_gradient</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>acd68116f35c5648649d8f26d68334b9e</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;result, const cv::Mat &amp;kernel)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_overlap_percentage</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af0d042657181a579a65c4bb209405a7c</anchor>
+      <arglist>(cv::Mat &amp;m1, cv::Mat &amp;m2, const IntPair &amp;center)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_projection</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a060e62f5acd6d4c6dc09f1f2c7b1528b</anchor>
+      <arglist>(em2d::Image *img, const ParticlesTemp &amp;ps, const RegistrationResult &amp;reg, const ProjectingOptions &amp;options, MasksManagerPtr masks=MasksManagerPtr(), String name=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>em2d::Images</type>
+      <name>get_projections</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a65e066ed72e099282a5714fbd2333989</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, const algebra::SphericalVector3Ds &amp;vs, int rows, int cols, const ProjectingOptions &amp;options, Strings names=Strings())</arglist>
+    </member>
+    <member kind="function">
+      <type>em2d::Images</type>
+      <name>get_projections</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aa167999977d5c4f4e0486534693a86da</anchor>
+      <arglist>(const ParticlesTemp &amp;ps, const RegistrationResults &amp;registration_values, int rows, int cols, const ProjectingOptions &amp;options, Strings names=Strings())</arglist>
+    </member>
+    <member kind="function">
+      <type>RegistrationResults</type>
+      <name>get_random_registration_results</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>afc1562d753ec9cce98213f96827df038</anchor>
+      <arglist>(unsigned int n, double maximum_shift=5.0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_rotation_error</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a57a725bb5e94995d20b75abe96d9cfbd</anchor>
+      <arglist>(const RegistrationResult &amp;rr1, const RegistrationResult &amp;rr2)</arglist>
+    </member>
+    <member kind="function">
+      <type>em2d::ResultAlign2D</type>
+      <name>get_rotational_alignment</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>acd41cbc70027d6b1e2323a0fbc8c8f6f</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;m_to_align, bool apply=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>ResultAlign2D</type>
+      <name>get_rotational_alignment_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a474214ff2650f42c9343cad13ada1455</anchor>
+      <arglist>(const cv::Mat &amp;POLAR1, const cv::Mat &amp;POLAR2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_shift_error</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad612906ea96b2c6f162c97b654309c7f</anchor>
+      <arglist>(const RegistrationResult &amp;rr1, const RegistrationResult &amp;rr2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_spectrum</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a018f7a244a4463cd0da0111aeaedf796</anchor>
+      <arglist>(const cv::Mat &amp;m, cv::Mat &amp;real, cv::Mat &amp;imag)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>get_transformed</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a0701b9da59d031b6bb82fbb493d824b1</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;transformed, const algebra::Transformation2D &amp;T)</arglist>
+    </member>
+    <member kind="function">
+      <type>ResultAlign2D</type>
+      <name>get_translational_alignment</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>acc2a6e0d87808c808547926da2570f67</anchor>
+      <arglist>(const cv::Mat &amp;input, cv::Mat &amp;m_to_align, bool apply=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>ResultAlign2D</type>
+      <name>get_translational_alignment_no_preprocessing</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a8fd176906f67285d66aebe5ce9dfd02c</anchor>
+      <arglist>(const cv::Mat &amp;M1, const cv::Mat &amp;M2)</arglist>
+    </member>
+    <member kind="function">
+      <type>Ints</type>
+      <name>get_unique_index</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad5dd142cfbb44bbea471ab17f9d8ff77</anchor>
+      <arglist>(const algebra::Rotation3D &amp;rot)</arglist>
+    </member>
+    <member kind="function">
+      <type>Images</type>
+      <name>read_images</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a9b93ce77266955bd99874dbb269fc87c</anchor>
+      <arglist>(const Strings &amp;names, const ImageReaderWriter *rw)</arglist>
+    </member>
+    <member kind="function">
+      <type>RegistrationResults</type>
+      <name>read_registration_results</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a50e128690cfb1d3ed92449a66209bfce</anchor>
+      <arglist>(const String &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>save_images</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a3c4762ec4e3272cd645d012e24b464b3</anchor>
+      <arglist>(Images images, const Strings &amp;names, const ImageReaderWriter *rw)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a4d756420dcf4bb39e60b49ecf19723f4</anchor>
+      <arglist>(const cv::Mat &amp;m, std::ostream &amp;out=std::cout)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>show</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>af5f65e8bea81bf71f7ffb2dae041e897</anchor>
+      <arglist>(const cv::Mat_&lt; T &gt; &amp;m, std::ostream &amp;out=std::cout)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_matrix</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>ad5073e1f6445687bd53f91f3bd8365f0</anchor>
+      <arglist>(cv::Mat &amp;m, std::string name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_registration_results</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>a84f20afc2fd870b6a3cda621af52d100</anchor>
+      <arglist>(String filename, const RegistrationResults &amp;results)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>write_vectors_as_pdb</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>abfff1fcbd0e36d96ec44c0e5154945aa</anchor>
+      <arglist>(const algebra::Vector2Ds vs, const String filename)</arglist>
+    </member>
+    <member kind="variable">
+      <type>const unsigned int</type>
+      <name>ALIGN2D_NO_PREPROCESSING</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aca5349ccf3fac576ea220856d97e0306</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_data_path</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aaefaeaf42c042ff104c61709833cb355</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>get_example_path</name>
+      <anchorfile>namespaceIMP_1_1em2d.html</anchorfile>
+      <anchor>aabcf212fb9c1128842db5f56ae299605</anchor>
+      <arglist>(std::string file_name)</arglist>
+    </member>
+    <docanchor file="namespaceIMP_1_1em2d.html" title="OpenCV">OpenCV</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>em2d_progs</name>
+    <title>Short Explanation of the functionality of programs in em2d</title>
+    <filename>em2d_progs.html</filename>
+    <docanchor file="em2d_progs.html" title="create_single_particle_images">create_single_particle_images_bin</docanchor>
+  </compound>
+</tagfile>

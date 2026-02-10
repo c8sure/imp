@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceem__images__conversion" kind="namespace" language="Python">
+    <compoundname>em_images_conversion</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="em__images__conversion_8py_1a76bd8be55381f46f5565dac64716519f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>list em_images_conversion::fn_images</definition>
+        <argsstring></argsstring>
+        <name>fn_images</name>
+        <qualifiedname>em_images_conversion.fn_images</qualifiedname>
+        <initializer>=  IMP.em2d.read_selection_file(fn_selection)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="21" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="em__images__conversion_8py_1a51942cf9298def3660b71cbdbf399ee7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>em_images_conversion.fn_saved</definition>
+        <argsstring></argsstring>
+        <name>fn_saved</name>
+        <qualifiedname>em_images_conversion.fn_saved</qualifiedname>
+        <initializer>=  IMP.em2d.create_filenames(3, &quot;1z5s-projection&quot;, &quot;tif&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="25" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="em__images__conversion_8py_1a89f061befe9c992f0982010dbbb862bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>em_images_conversion.fn_selection</definition>
+        <argsstring></argsstring>
+        <name>fn_selection</name>
+        <qualifiedname>em_images_conversion.fn_selection</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(&quot;all-1z5s-projections.sel&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="17" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="em__images__conversion_8py_1a3503b3203ec789a23e0173214393d9e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>em_images_conversion.images</definition>
+        <argsstring></argsstring>
+        <name>images</name>
+        <qualifiedname>em_images_conversion.images</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1a9b93ce77266955bd99874dbb269fc87c" kindref="member">IMP.em2d.read_images</ref>(fn_images, srw)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="23" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="em__images__conversion_8py_1a173b5c59f7172be829b474bab8b7e935" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>em_images_conversion.srw</definition>
+        <argsstring></argsstring>
+        <name>srw</name>
+        <qualifiedname>em_images_conversion.srw</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter" kindref="compound">IMP.em2d.SpiderImageReaderWriter</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="19" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="em__images__conversion_8py_1a16e747238a6c3f0de8670b656c00adc7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>em_images_conversion.trw</definition>
+        <argsstring></argsstring>
+        <name>trw</name>
+        <qualifiedname>em_images_conversion.trw</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter" kindref="compound">IMP.em2d.TIFFImageReaderWriter</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/em_images_conversion.py" line="20" column="1" bodyfile="examples/em2d/em_images_conversion.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/em2d/em_images_conversion.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1PythonExamplePairScore" kind="class" language="Python" prot="public">
+    <compoundname>IMP::example::PythonExamplePairScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP.PairScore</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1PythonExamplePairScore_1a57f0f80e64113251c08efc2f63aab93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.example.PythonExamplePairScore.evaluate_index</definition>
+        <argsstring>(self, m, pip, da)</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>IMP::example.PythonExamplePairScore.evaluate_index</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>pip</type>
+          <defname>pip</defname>
+        </param>
+        <param>
+          <type>da</type>
+          <defname>da</defname>
+        </param>
+        <briefdescription>
+<para>Pure Python implementation of the score. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/example/__init__.py" line="737" column="1" bodyfile="lib/IMP/example/__init__.py" bodystart="737" bodyend="754"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An example PairScore written in Python. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This should be functionally equivalent to the C++ <ref refid="classIMP_1_1example_1_1ExamplePairScore" kindref="compound">ExamplePairScore</ref>.</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/example/__init__.py" line="729" column="1" bodyfile="lib/IMP/example/__init__.py" bodystart="729" bodyend="754"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1PythonExamplePairScore_1a57f0f80e64113251c08efc2f63aab93e" prot="public" virt="non-virtual"><scope>IMP::example::PythonExamplePairScore</scope><name>evaluate_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacecsv__related" kind="namespace" language="Python">
+    <compoundname>csv_related</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="csv__related_8py_1a9efc5040b7b205f50f7aa7f5a69cab1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csv_related.read_csv</definition>
+        <argsstring>(fn, delimiter=&apos;|&apos;, comment_char=&apos;#&apos;, max_number=False)</argsstring>
+        <name>read_csv</name>
+        <qualifiedname>csv_related.read_csv</qualifiedname>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <param>
+          <type>delimiter</type>
+          <defname>delimiter</defname>
+          <defval>&apos;|&apos;</defval>
+        </param>
+        <param>
+          <type>comment_char</type>
+          <defname>comment_char</defname>
+          <defval>&apos;#&apos;</defval>
+        </param>
+        <param>
+          <type>max_number</type>
+          <defname>max_number</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Simple reader of csv files that disregards lines with comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/csv_related.py" line="14" column="1" bodyfile="lib/IMP/EMageFit/csv_related.py" bodystart="14" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="csv__related_8py_1a059bc5ea92d090e6b7681f1a12f98cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csv_related.read_csv_keyword</definition>
+        <argsstring>(fn_or_f, keyword, delimiter=&apos;|&apos;, comment_char=&apos;#&apos;)</argsstring>
+        <name>read_csv_keyword</name>
+        <qualifiedname>csv_related.read_csv_keyword</qualifiedname>
+        <param>
+          <type>fn_or_f</type>
+          <defname>fn_or_f</defname>
+        </param>
+        <param>
+          <type>keyword</type>
+          <defname>keyword</defname>
+        </param>
+        <param>
+          <type>delimiter</type>
+          <defname>delimiter</defname>
+          <defval>&apos;|&apos;</defval>
+        </param>
+        <param>
+          <type>comment_char</type>
+          <defname>comment_char</defname>
+          <defval>&apos;#&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Reader of csv files that only recovers lines starting with a keyword. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/csv_related.py" line="34" column="1" bodyfile="lib/IMP/EMageFit/csv_related.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/csv_related.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

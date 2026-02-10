@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1DistanceTerminiRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::DistanceTerminiRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Restraint</basecompoundref>
+    <includes local="no">IMP/spb/DistanceTerminiRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a871475a46da75c4e289720f02270f6cf" prot="private" static="no" mutable="no">
+        <type>IMP::Pointer&lt; IMP::Particle &gt;</type>
+        <definition>IMP::Pointer&lt;IMP::Particle&gt; IMP::spb::DistanceTerminiRestraint::cterm_</definition>
+        <argsstring></argsstring>
+        <name>cterm_</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::cterm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="22" column="16" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad712c2c71c1b992e9a1c0ea6d7207ce2" prot="private" static="no" mutable="no">
+        <type>IMP::Pointer&lt; IMP::Particle &gt;</type>
+        <definition>IMP::Pointer&lt;IMP::Particle&gt; IMP::spb::DistanceTerminiRestraint::nterm_</definition>
+        <argsstring></argsstring>
+        <name>nterm_</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::nterm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="21" column="16" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a66a599060890ece755802062d93a1b25" prot="private" static="no" mutable="no">
+        <type>IMP::Pointer&lt; IMP::Particle &gt;</type>
+        <definition>IMP::Pointer&lt;IMP::Particle&gt; IMP::spb::DistanceTerminiRestraint::reqd_dist_term_</definition>
+        <argsstring></argsstring>
+        <name>reqd_dist_term_</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::reqd_dist_term_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="24" column="16" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ac1b4e24bb049381fee1f9cc483b91f92" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::DistanceTerminiRestraint::sigma0_dist_</definition>
+        <argsstring></argsstring>
+        <name>sigma0_dist_</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::sigma0_dist_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="23" column="10" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a43c5d156666d4d3a9997ca5380322c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::DistanceTerminiRestraint::DistanceTerminiRestraint</definition>
+        <argsstring>(IMP::Particle *nterm, IMP::Particle *cterm, IMP::Particle *reqd_dist_term, double sigma0_dist)</argsstring>
+        <name>DistanceTerminiRestraint</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::DistanceTerminiRestraint</qualifiedname>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>nterm</declname>
+        </param>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>cterm</declname>
+        </param>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>reqd_dist_term</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma0_dist</declname>
+        </param>
+        <briefdescription>
+<para>Restrains the distance between the termini of a protein. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance between termini is a sampled parameter that changes from step to step. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a6ee970cbd0c81eec8b934814bb795f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::DistanceTerminiRestraint::~DistanceTerminiRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~DistanceTerminiRestraint</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::~DistanceTerminiRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="43" column="231" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ab5207e19cbbe60aed6b9b047fb312284" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::DistanceTerminiRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="42" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a851be32536b7a5b01cb6f6d682e4479d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::DistanceTerminiRestraint::get_model_termini_distance</definition>
+        <argsstring>() const</argsstring>
+        <name>get_model_termini_distance</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::get_model_termini_distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1afafaab72e9051fca99bc733f918d2602" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::DistanceTerminiRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="43" column="34" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a40c7008cf30ddfdcf034a96e754c9600" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::DistanceTerminiRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="43" column="103" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad3aa68a4b00274594adc6c634ba604be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::DistanceTerminiRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::spb::DistanceTerminiRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro declares the basic needed methods: evaluate and show </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="40" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A distance restraint between protein termini. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The distance between the termini is a sampled ISD particle. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/DistanceTerminiRestraint.h" line="20" column="1" bodyfile="include/IMP/spb/DistanceTerminiRestraint.h" bodystart="20" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a871475a46da75c4e289720f02270f6cf" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>cterm_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a43c5d156666d4d3a9997ca5380322c30" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>DistanceTerminiRestraint</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ab5207e19cbbe60aed6b9b047fb312284" prot="public" virt="virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a851be32536b7a5b01cb6f6d682e4479d" prot="public" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>get_model_termini_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1afafaab72e9051fca99bc733f918d2602" prot="public" virt="virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a40c7008cf30ddfdcf034a96e754c9600" prot="public" virt="virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad712c2c71c1b992e9a1c0ea6d7207ce2" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>nterm_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a66a599060890ece755802062d93a1b25" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>reqd_dist_term_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ac1b4e24bb049381fee1f9cc483b91f92" prot="private" virt="non-virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>sigma0_dist_</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad3aa68a4b00274594adc6c634ba604be" prot="public" virt="virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a6ee970cbd0c81eec8b934814bb795f68" prot="public" virt="virtual"><scope>IMP::spb::DistanceTerminiRestraint</scope><name>~DistanceTerminiRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

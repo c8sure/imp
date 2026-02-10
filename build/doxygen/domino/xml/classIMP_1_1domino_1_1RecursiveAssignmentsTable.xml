@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1RecursiveAssignmentsTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::RecursiveAssignmentsTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1AssignmentsTable" prot="public" virt="non-virtual">IMP::domino::AssignmentsTable</basecompoundref>
+    <includes local="no">IMP/domino/assignment_tables.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1abec9b261ba6abd7216c79b6630490321" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::RecursiveAssignmentsTable::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="68" column="16" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1116fde42bd6c5998486fdc5973ca425" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt;</type>
+        <definition>Pointer&lt;ParticleStatesTable&gt; IMP::domino::RecursiveAssignmentsTable::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="66" column="11" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1aad7d7b8a9faf5819a1367116e4e71cc5" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref></type>
+        <definition>SubsetFilterTables IMP::domino::RecursiveAssignmentsTable::sft_</definition>
+        <argsstring></argsstring>
+        <name>sft_</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::sft_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="67" column="22" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a0809f8c142a88c80dbd62f57197e795d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RecursiveAssignmentsTable::RecursiveAssignmentsTable</definition>
+        <argsstring>(ParticleStatesTable *pst, const SubsetFilterTables &amp;sft=SubsetFilterTables(), unsigned int max=std::numeric_limits&lt; unsigned int &gt;::max())</argsstring>
+        <name>RecursiveAssignmentsTable</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::RecursiveAssignmentsTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>sft</declname>
+          <defval><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref>()</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max</declname>
+          <defval>std::numeric_limits&lt; unsigned int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="71" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1afc4e684b518acecdd259d839ff164358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::RecursiveAssignmentsTable::~RecursiveAssignmentsTable</definition>
+        <argsstring>()</argsstring>
+        <name>~RecursiveAssignmentsTable</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::~RecursiveAssignmentsTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="78" column="231" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1ca17c9c1570de0704a5f77b7672def7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::RecursiveAssignmentsTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="78" column="34" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a7277eca2056cd5f4f001025b53791f8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::RecursiveAssignmentsTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="78" column="103" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a209c5eccf0cccfad3528842d734559df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::RecursiveAssignmentsTable::load_assignments</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, AssignmentContainer *ac) const override</argsstring>
+        <name>load_assignments</name>
+        <qualifiedname>IMP::domino::RecursiveAssignmentsTable::load_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentsTable_1a82165fe3c39a0a5bd1005826f5121c26">load_assignments</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="76" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The produced states are filtered using the provided <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> objects. The assignments are enumerated and filtered by recursively dividing the subset in half. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentsTable"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RecursiveAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentsTable"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RecursiveAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/assignment_tables.h" line="65" column="1" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="65" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a437a06ae6c19f35c2dfb706ad650d24f" prot="public" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>AssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1ca17c9c1570de0704a5f77b7672def7" prot="public" virt="virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a7277eca2056cd5f4f001025b53791f8f" prot="public" virt="virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a209c5eccf0cccfad3528842d734559df" prot="public" virt="virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>load_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1abec9b261ba6abd7216c79b6630490321" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>max_</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a1116fde42bd6c5998486fdc5973ca425" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a0809f8c142a88c80dbd62f57197e795d" prot="public" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>RecursiveAssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1aad7d7b8a9faf5819a1367116e4e71cc5" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>sft_</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a325612e584018e745a52a9659fcf1e66" prot="public" virt="non-virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>~AssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1afc4e684b518acecdd259d839ff164358" prot="public" virt="virtual"><scope>IMP::domino::RecursiveAssignmentsTable</scope><name>~RecursiveAssignmentsTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

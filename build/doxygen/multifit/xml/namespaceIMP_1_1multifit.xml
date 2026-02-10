@@ -1,0 +1,2382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1multifit" kind="namespace" language="C++">
+    <compoundname>IMP::multifit</compoundname>
+    <innerclass refid="classIMP_1_1multifit_1_1AlignmentParams" prot="public">IMP::multifit::AlignmentParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1AnchorsData" prot="public">IMP::multifit::AnchorsData</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1AssemblyHeader" prot="public">IMP::multifit::AssemblyHeader</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1ComplementarityParams" prot="public">IMP::multifit::ComplementarityParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ComplementarityRestraint" prot="public">IMP::multifit::ComplementarityRestraint</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ComponentHeader" prot="public">IMP::multifit::ComponentHeader</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1ConnectivityParams" prot="public">IMP::multifit::ConnectivityParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1DataPointsAssignment" prot="public">IMP::multifit::DataPointsAssignment</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1DensityDataPoints" prot="public">IMP::multifit::DensityDataPoints</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1DominoParams" prot="public">IMP::multifit::DominoParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1DummyRestraint" prot="public">IMP::multifit::DummyRestraint</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1Ensemble" prot="public">IMP::multifit::Ensemble</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1EVParams" prot="public">IMP::multifit::EVParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1FFTFitting" prot="public">IMP::multifit::FFTFitting</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1FFTFittingOutput" prot="public">IMP::multifit::FFTFittingOutput</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FiltersParams" prot="public">IMP::multifit::FiltersParams</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FittingParams" prot="public">IMP::multifit::FittingParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1FittingSolutionRecord" prot="public">IMP::multifit::FittingSolutionRecord</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1FittingStates" prot="public">IMP::multifit::FittingStates</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1FragmentsParams" prot="public">IMP::multifit::FragmentsParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1GeometricHash" prot="public">IMP::multifit::GeometricHash</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1MergeTreeBuilder" prot="public">IMP::multifit::MergeTreeBuilder</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" prot="public">IMP::multifit::ProbabilisticAnchorGraph</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ProteinRecordData" prot="public">IMP::multifit::ProteinRecordData</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" prot="public">IMP::multifit::ProteinsAnchorsSamplingSpace</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ProteomicsData" prot="public">IMP::multifit::ProteomicsData</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" prot="public">IMP::multifit::ProteomicsEMAlignmentAtomic</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1RadiusOfGyrationRestraint" prot="public">IMP::multifit::RadiusOfGyrationRestraint</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1RigidLeavesRefiner" prot="public">IMP::multifit::RigidLeavesRefiner</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1RogParams" prot="public">IMP::multifit::RogParams</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1SettingsData" prot="public">IMP::multifit::SettingsData</innerclass>
+    <innerclass refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint" prot="public">IMP::multifit::WeightedExcludedVolumeRestraint</innerclass>
+    <innerclass refid="structIMP_1_1multifit_1_1XlinkParams" prot="public">IMP::multifit::XlinkParams</innerclass>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1add__fit__rmsd">IMP::multifit::add_fit_rmsd</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1align">IMP::multifit::align</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1anchors">IMP::multifit::anchors</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1cluster">IMP::multifit::cluster</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1cluster__coarse">IMP::multifit::cluster_coarse</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1fit__fft">IMP::multifit::fit_fft</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1indexes">IMP::multifit::indexes</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1merge__tree">IMP::multifit::merge_tree</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1models">IMP::multifit::models</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1MTU">IMP::multifit::MTU</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1param">IMP::multifit::param</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1proteomics">IMP::multifit::proteomics</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1reference">IMP::multifit::reference</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1refine__fft">IMP::multifit::refine_fft</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1score">IMP::multifit::score</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1segment">IMP::multifit::segment</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit_1_1transforms">IMP::multifit::transforms</innernamespace>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a5285f017ecaf54c7034267601dd13dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::multifit::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/multifit_config.h" line="141" column="18" declfile="include/IMP/multifit/multifit_config.h" declline="141" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a366abc3ee84fd2a8a3db283ab6c15d00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::multifit::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/multifit_config.h" line="146" column="24" bodyfile="include/IMP/multifit/multifit_config.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a480006a88bd3b793459c5afaa4bee23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::multifit::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1multifit_1a480006a88bd3b793459c5afaa4bee23c" kindref="member">IMP::multifit::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/multifit_config.h" line="162" column="18" declfile="include/IMP/multifit/multifit_config.h" declline="162" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a4e6ed029ea3a4a15f38cd998c8bacbd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::multifit::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1multifit_1a4e6ed029ea3a4a15f38cd998c8bacbd2" kindref="member">IMP::multifit::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/multifit_config.h" line="178" column="18" declfile="include/IMP/multifit/multifit_config.h" declline="178" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a93702dee83b99ce6f65045c99bff5f92" prot="public" static="no">
+        <type>IMP::Vector&lt; AlignmentParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;AlignmentParams&gt; IMP::multifit::AlignmentParamsList</definition>
+        <argsstring></argsstring>
+        <name>AlignmentParamsList</name>
+        <qualifiedname>IMP::multifit::AlignmentParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of AlignmentParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="395" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a33eb25dc768e2409b9ba92138cdc6381" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;AnchorsData&gt; IMP::multifit::AnchorsDataList</definition>
+        <argsstring></argsstring>
+        <name>AnchorsDataList</name>
+        <qualifiedname>IMP::multifit::AnchorsDataList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="89" column="23" bodyfile="include/IMP/multifit/anchors_reader.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a5e9e93bd24c2a63705024c7eadd94493" prot="public" static="no">
+        <type>std::map&lt; IntPair, int &gt;</type>
+        <definition>typedef std::map&lt;IntPair, int&gt; IMP::multifit::CEdges</definition>
+        <argsstring></argsstring>
+        <name>CEdges</name>
+        <qualifiedname>IMP::multifit::CEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="24" column="18" bodyfile="include/IMP/multifit/DataPointsAssignment.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1ada2444c48b39cdee70f088b39b82ad4f" prot="public" static="no">
+        <type>IMP::Vector&lt; ComplementarityParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;ComplementarityParams&gt; IMP::multifit::ComplementarityParamsList</definition>
+        <argsstring></argsstring>
+        <name>ComplementarityParamsList</name>
+        <qualifiedname>IMP::multifit::ComplementarityParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of ComplementarityParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="332" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a1aef96d3c7da11dfbec697f469247e14" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1multifit_1_1ComponentHeader" kindref="compound">ComponentHeader</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ComponentHeader&gt; &gt; IMP::multifit::ComponentHeaders</definition>
+        <argsstring></argsstring>
+        <name>ComponentHeaders</name>
+        <qualifiedname>IMP::multifit::ComponentHeaders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="73" column="25" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a581738aa18758a7bc20b52d1495b232c" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1multifit_1_1ComponentHeader" kindref="compound">ComponentHeader</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ComponentHeader&gt; &gt; IMP::multifit::ComponentHeadersTemp</definition>
+        <argsstring></argsstring>
+        <name>ComponentHeadersTemp</name>
+        <qualifiedname>IMP::multifit::ComponentHeadersTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1multifit_1_1ComponentHeader" kindref="compound">ComponentHeader</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="73" column="67" bodyfile="include/IMP/multifit/SettingsData.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a8d335a599eaccffcd1990e6b245553ff" prot="public" static="no">
+        <type>IMP::Vector&lt; ConnectivityParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;ConnectivityParams&gt; IMP::multifit::ConnectivityParamsList</definition>
+        <argsstring></argsstring>
+        <name>ConnectivityParamsList</name>
+        <qualifiedname>IMP::multifit::ConnectivityParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of ConnectivityParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="118" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1af32a9d2e4738a7cd8d6bf19ce972e32e" prot="public" static="no">
+        <type>IMP::algebra::DenseGrid3D&lt; double &gt;</type>
+        <definition>typedef IMP::algebra::DenseGrid3D&lt;double&gt; IMP::multifit::DensGrid</definition>
+        <argsstring></argsstring>
+        <name>DensGrid</name>
+        <qualifiedname>IMP::multifit::DensGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="26" column="35" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a9fea6dd4cc1090cc1463eaa9c98e2214" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1multifit_1_1DensityDataPoints" kindref="compound">DensityDataPoints</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;DensityDataPoints&gt; &gt; IMP::multifit::DensityDataPointsList</definition>
+        <argsstring></argsstring>
+        <name>DensityDataPointsList</name>
+        <qualifiedname>IMP::multifit::DensityDataPointsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="58" column="25" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a4e9f87fa6b97abe41658032d3a8c4ebf" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1multifit_1_1DensityDataPoints" kindref="compound">DensityDataPoints</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;DensityDataPoints&gt; &gt; IMP::multifit::DensityDataPointsListTemp</definition>
+        <argsstring></argsstring>
+        <name>DensityDataPointsListTemp</name>
+        <qualifiedname>IMP::multifit::DensityDataPointsListTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1multifit_1_1DensityDataPoints" kindref="compound">DensityDataPoints</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="58" column="72" bodyfile="include/IMP/multifit/DensityDataPoints.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a1805a1a12680b4b43b9bb54ca39ab8fa" prot="public" static="no">
+        <type>IMP::Vector&lt; DominoParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;DominoParams&gt; IMP::multifit::DominoParamsList</definition>
+        <argsstring></argsstring>
+        <name>DominoParamsList</name>
+        <qualifiedname>IMP::multifit::DominoParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of DominoParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="57" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a56e542eec1755b6290b34386ff6027fa" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1multifit_1_1Ensemble" kindref="compound">Ensemble</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;Ensemble&gt; &gt; IMP::multifit::Ensembles</definition>
+        <argsstring></argsstring>
+        <name>Ensembles</name>
+        <qualifiedname>IMP::multifit::Ensembles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="49" column="25" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1aa79506d6b48c8451305991a579dd6616" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1multifit_1_1Ensemble" kindref="compound">Ensemble</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;Ensemble&gt; &gt; IMP::multifit::EnsemblesTemp</definition>
+        <argsstring></argsstring>
+        <name>EnsemblesTemp</name>
+        <qualifiedname>IMP::multifit::EnsemblesTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1multifit_1_1Ensemble" kindref="compound">Ensemble</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="49" column="60" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1aaf84c6e4694a5d0c404a098956e6c0e4" prot="public" static="no">
+        <type>IMP::Vector&lt; EVParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;EVParams&gt; IMP::multifit::EVParamsList</definition>
+        <argsstring></argsstring>
+        <name>EVParamsList</name>
+        <qualifiedname>IMP::multifit::EVParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of EVParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="228" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a287ecaae7be209cbffb03111e7a9061f" prot="public" static="no">
+        <type>IMP::Vector&lt; FiltersParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;FiltersParams&gt; IMP::multifit::FiltersParamsList</definition>
+        <argsstring></argsstring>
+        <name>FiltersParamsList</name>
+        <qualifiedname>IMP::multifit::FiltersParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of FiltersParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="258" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a556d45fa12736e5e2038b532ba55ee8f" prot="public" static="no">
+        <type>IMP::Vector&lt; FittingParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;FittingParams&gt; IMP::multifit::FittingParamsList</definition>
+        <argsstring></argsstring>
+        <name>FittingParamsList</name>
+        <qualifiedname>IMP::multifit::FittingParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of FittingParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="291" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1multifit_1_1FittingSolutionRecord" kindref="compound">FittingSolutionRecord</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;FittingSolutionRecord&gt; IMP::multifit::FittingSolutionRecords</definition>
+        <argsstring></argsstring>
+        <name>FittingSolutionRecords</name>
+        <qualifiedname>IMP::multifit::FittingSolutionRecords</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1multifit_1_1FittingSolutionRecord" kindref="compound">FittingSolutionRecord</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/FittingSolutionRecord.h" line="95" column="23" bodyfile="include/IMP/multifit/FittingSolutionRecord.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a3b68bd2e40f71a27c8bcdfa1abd0fa92" prot="public" static="no">
+        <type>IMP::Vector&lt; FragmentsParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;FragmentsParams&gt; IMP::multifit::FragmentsParamsList</definition>
+        <argsstring></argsstring>
+        <name>FragmentsParamsList</name>
+        <qualifiedname>IMP::multifit::FragmentsParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of FragmentsParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="152" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a6bb9c874d071e408b061cc86d6440441" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" kindref="compound">ProbabilisticAnchorGraph</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ProbabilisticAnchorGraph&gt; &gt; IMP::multifit::ProbabilisticAnchorGraphs</definition>
+        <argsstring></argsstring>
+        <name>ProbabilisticAnchorGraphs</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="67" column="25" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a2d9ee3034cc2b99c3cc64ceb6d25054f" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" kindref="compound">ProbabilisticAnchorGraph</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ProbabilisticAnchorGraph&gt; &gt; IMP::multifit::ProbabilisticAnchorGraphsTemp</definition>
+        <argsstring></argsstring>
+        <name>ProbabilisticAnchorGraphsTemp</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraphsTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" kindref="compound">ProbabilisticAnchorGraph</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="67" column="76" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1adf69456ca590d975b754d570908eb958" prot="public" static="no">
+        <type>IMP::Vector&lt; ProteinRecordData &gt;</type>
+        <definition>typedef IMP::Vector&lt;ProteinRecordData&gt; IMP::multifit::ProteinRecordDataList</definition>
+        <argsstring></argsstring>
+        <name>ProteinRecordDataList</name>
+        <qualifiedname>IMP::multifit::ProteinRecordDataList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of ProteinRecordData. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="78" column="23" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a7414f0cfa457f7d7d51f94aebac121d4" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;ProteinsAnchorsSamplingSpace&gt; IMP::multifit::ProteinsAnchorsSamplingSpaces</definition>
+        <argsstring></argsstring>
+        <name>ProteinsAnchorsSamplingSpaces</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="65" column="23" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1ae3a35cac442f676b76b2c329aa0cbd15" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" kindref="compound">ProteomicsEMAlignmentAtomic</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ProteomicsEMAlignmentAtomic&gt; &gt; IMP::multifit::ProteomicsEMAlignmentAtomics</definition>
+        <argsstring></argsstring>
+        <name>ProteomicsEMAlignmentAtomics</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="115" column="25" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a408344076f0482bbd3ab4a8b42ec6345" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" kindref="compound">ProteomicsEMAlignmentAtomic</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ProteomicsEMAlignmentAtomic&gt; &gt; IMP::multifit::ProteomicsEMAlignmentAtomicsTemp</definition>
+        <argsstring></argsstring>
+        <name>ProteomicsEMAlignmentAtomicsTemp</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomicsTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" kindref="compound">ProteomicsEMAlignmentAtomic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="115" column="79" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1ace98b2a0311da4ae45256b679f15765a" prot="public" static="no">
+        <type>IMP::Vector&lt; RogParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;RogParams&gt; IMP::multifit::RogParamsList</definition>
+        <argsstring></argsstring>
+        <name>RogParamsList</name>
+        <qualifiedname>IMP::multifit::RogParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of RogParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="177" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1multifit_1a236f4248804e1976652e364c86ab6320" prot="public" static="no">
+        <type>IMP::Vector&lt; XlinkParams &gt;</type>
+        <definition>typedef IMP::Vector&lt;XlinkParams&gt; IMP::multifit::XlinkParamsList</definition>
+        <argsstring></argsstring>
+        <name>XlinkParamsList</name>
+        <qualifiedname>IMP::multifit::XlinkParamsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass or store a set of XlinkParams. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/AlignmentParams.h" line="88" column="23" bodyfile="include/IMP/multifit/AlignmentParams.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a3e058408a3879546f50897a4e8f9253b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::add_surface_index</definition>
+        <argsstring>(core::Hierarchy mhd, Float apix, FloatKey shell_key=FloatKey(&quot;surf_ind&quot;), FloatKey radius_key=core::XYZR::get_radius_key(), FloatKey weight_key=atom::Mass::get_mass_key())</argsstring>
+        <name>add_surface_index</name>
+        <qualifiedname>IMP::multifit::add_surface_index</qualifiedname>
+        <param>
+          <type>core::Hierarchy</type>
+          <declname>mhd</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>apix</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>shell_key</declname>
+          <defval>FloatKey(&quot;surf_ind&quot;)</defval>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>radius_key</declname>
+          <defval>core::XYZR::get_radius_key()</defval>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>weight_key</declname>
+          <defval>atom::Mass::get_mass_key()</defval>
+        </param>
+        <briefdescription>
+<para>Add shell index to leaves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mhd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Hierarchy to modify </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">apix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resolution of the surface </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shell_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Key used to store the shell index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">radius_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Key used for particle radius </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">weight_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Key used for particle weight (e.g. mass) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>we assume that the leaves are xyz particles </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/weighted_excluded_volume.h" line="30" column="8" declfile="include/IMP/multifit/weighted_excluded_volume.h" declline="30" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a04303e2e87f1a25c6e4fdf2ca2e73453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::convert_em_to_multifit_format</definition>
+        <argsstring>(const em::FittingSolutions &amp;em_fits)</argsstring>
+        <name>convert_em_to_multifit_format</name>
+        <qualifiedname>IMP::multifit::convert_em_to_multifit_format</qualifiedname>
+        <param>
+          <type>const em::FittingSolutions &amp;</type>
+          <declname>em_fits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="38" column="5" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="38" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a9cb92499e58b7dfe7bef97caa65868da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Transformation3Ds</type>
+        <definition>algebra::Transformation3Ds IMP::multifit::convert_multifit_format_to_transformations</definition>
+        <argsstring>(const FittingSolutionRecords &amp;recs)</argsstring>
+        <name>convert_multifit_format_to_transformations</name>
+        <qualifiedname>IMP::multifit::convert_multifit_format_to_transformations</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref> &amp;</type>
+          <declname>recs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="47" column="5" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="47" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a2a2ca63805bc102fbf07209c85e2ce44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::FittingSolutions</type>
+        <definition>em::FittingSolutions IMP::multifit::convert_multifit_to_em_format</definition>
+        <argsstring>(const FittingSolutionRecords &amp;multifit_fits)</argsstring>
+        <name>convert_multifit_to_em_format</name>
+        <qualifiedname>IMP::multifit::convert_multifit_to_em_format</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref> &amp;</type>
+          <declname>multifit_fits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="39" column="24" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="39" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aa489658c81686d2102d9282c4d55273a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::convert_transformations_to_multifit_format</definition>
+        <argsstring>(const algebra::Transformation3Ds &amp;trans)</argsstring>
+        <name>convert_transformations_to_multifit_format</name>
+        <qualifiedname>IMP::multifit::convert_transformations_to_multifit_format</qualifiedname>
+        <param>
+          <type>const algebra::Transformation3Ds &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="43" column="5" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="43" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a3ae2f2b63f2b07f548e4fd095871d9b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>atom::Hierarchy</type>
+        <definition>atom::Hierarchy IMP::multifit::create_coarse_molecule_from_density</definition>
+        <argsstring>(em::DensityMap *dmap, float dens_threshold, int num_beads, Model *mdl, float bead_radius)</argsstring>
+        <name>create_coarse_molecule_from_density</name>
+        <qualifiedname>IMP::multifit::create_coarse_molecule_from_density</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dens_threshold</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_beads</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>mdl</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bead_radius</declname>
+        </param>
+        <briefdescription>
+<para>Coarsen a density map based on voxels clustering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to coarsen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dens_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use only voxels above this threshold for clustering </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_beads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of beads </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mdl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model to add the new molecule to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bead_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bead radius </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/coarse_molecule.h" line="28" column="17" declfile="include/IMP/multifit/coarse_molecule.h" declline="28" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a87f632921c6ce1bbede55924135efefb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::DensityMap *</type>
+        <definition>em::DensityMap * IMP::multifit::create_hit_map</definition>
+        <argsstring>(core::RigidBody rb, Refiner *rb_ref, const FittingSolutionRecords &amp;sols, em::DensityMap *damp)</argsstring>
+        <name>create_hit_map</name>
+        <qualifiedname>IMP::multifit::create_hit_map</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>Refiner *</type>
+          <declname>rb_ref</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref> &amp;</type>
+          <declname>sols</declname>
+        </param>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>damp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_utils.h" line="24" column="16" declfile="include/IMP/multifit/fitting_utils.h" declline="24" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a4b27a69a21d1b1ae08bec9d4eeb709a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMP::Restraint *</type>
+        <definition>IMP::Restraint * IMP::multifit::create_weighted_excluded_volume_restraint</definition>
+        <argsstring>(core::RigidBody rb1, core::RigidBody rb2, FloatKey shell_key=FloatKey(&quot;surf_ind&quot;))</argsstring>
+        <name>create_weighted_excluded_volume_restraint</name>
+        <qualifiedname>IMP::multifit::create_weighted_excluded_volume_restraint</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>rb1</declname>
+        </param>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>rb2</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>shell_key</declname>
+          <defval>FloatKey(&quot;surf_ind&quot;)</defval>
+        </param>
+        <briefdescription>
+<para>Create a weighted excluded volume restraint between two rigid bodies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rb1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rb2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shell_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the attribute that stored the particles surface level with respect to its molecule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/weighted_excluded_volume.h" line="42" column="18" declfile="include/IMP/multifit/weighted_excluded_volume.h" declline="42" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1af83b1866a4b7bb6747eea98bd9bb28e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">multifit::FittingSolutionRecords</ref></type>
+        <definition>multifit::FittingSolutionRecords IMP::multifit::fft_based_rigid_fitting</definition>
+        <argsstring>(atom::Hierarchy mol2fit, em::DensityMap *dmap, double density_threshold, double angle_sampling_interval_rad)</argsstring>
+        <name>fft_based_rigid_fitting</name>
+        <qualifiedname>IMP::multifit::fft_based_rigid_fitting</qualifiedname>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mol2fit</declname>
+        </param>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>density_threshold</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle_sampling_interval_rad</declname>
+        </param>
+        <briefdescription>
+<para>FFT fit of a molecule in the density. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mol2fit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a rigid body molecule to fit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the map to fit into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">density_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignore density below this value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angle_sampling_interval_rad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sampling interval in radians </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="189" column="34" declfile="include/IMP/multifit/fft_based_rigid_fitting.h" declline="189" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a0ba5b604076ef3a7ee623203283c3ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::get_actual_radius_of_gyration</definition>
+        <argsstring>(ParticlesTemp ps)</argsstring>
+        <name>get_actual_radius_of_gyration</name>
+        <qualifiedname>IMP::multifit::get_actual_radius_of_gyration</qualifiedname>
+        <param>
+          <type>ParticlesTemp</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="63" column="7" declfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" declline="63" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a173eff7add1e1652a69ce9c1365ddf2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntsList</type>
+        <definition>IntsList IMP::multifit::get_anchor_indices_matching_secondary_structure</definition>
+        <argsstring>(const AnchorsData &amp;ad, const atom::SecondaryStructureResidues &amp;ssrs, Float max_rmsd=0.7)</argsstring>
+        <name>get_anchor_indices_matching_secondary_structure</name>
+        <qualifiedname>IMP::multifit::get_anchor_indices_matching_secondary_structure</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref> &amp;</type>
+          <declname>ad</declname>
+        </param>
+        <param>
+          <type>const atom::SecondaryStructureResidues &amp;</type>
+          <declname>ssrs</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_rmsd</declname>
+          <defval>0.7</defval>
+        </param>
+        <briefdescription>
+<para>Get lists of anchors that match a sequence of secondary structures. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SecondaryStructureResidue particles to match </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_rmsd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SecondaryStructureResidue match must be below this value (0.816 is rmsd of known SSE to random) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_utilities.h" line="47" column="10" declfile="include/IMP/multifit/anchor_utilities.h" declline="47" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1af5cfce601c0bc38d4fd668dec337b3f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::get_anchors_for_density</definition>
+        <argsstring>(em::DensityMap *dmap, int number_of_means, float density_threshold, std::string pdb_filename, std::string cmm_filename, std::string seg_filename, std::string txt_filename)</argsstring>
+        <name>get_anchors_for_density</name>
+        <qualifiedname>IMP::multifit::get_anchors_for_density</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number_of_means</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>density_threshold</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>pdb_filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cmm_filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>seg_filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>txt_filename</declname>
+        </param>
+        <briefdescription>
+<para>Generate anchors in several formats for a given density map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_utilities.h" line="34" column="6" declfile="include/IMP/multifit/anchor_utilities.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a5bd3c99e9424628f45b3f014de2fa6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::get_approximated_radius</definition>
+        <argsstring>(int len)</argsstring>
+        <name>get_approximated_radius</name>
+        <qualifiedname>IMP::multifit::get_approximated_radius</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="65" column="7" declfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" declline="65" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1d5503ac4b79a75dea9d6c9b7819bded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::get_approximated_radius_of_gyration</definition>
+        <argsstring>(int len)</argsstring>
+        <name>get_approximated_radius_of_gyration</name>
+        <qualifiedname>IMP::multifit::get_approximated_radius_of_gyration</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/RadiusOfGyrationRestraint.h" line="61" column="7" declfile="include/IMP/multifit/RadiusOfGyrationRestraint.h" declline="61" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a72317593e3aff9f9e43e2e4f92481f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::get_close_to_point</definition>
+        <argsstring>(const FittingSolutionRecords &amp;fit_sols, atom::Hierarchy mh, IMP::Particle *ap, Float dist)</argsstring>
+        <name>get_close_to_point</name>
+        <qualifiedname>IMP::multifit::get_close_to_point</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref> &amp;</type>
+          <declname>fit_sols</declname>
+        </param>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mh</declname>
+        </param>
+        <param>
+          <type>IMP::Particle *</type>
+          <declname>ap</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+<para>prune solutions by distance to an anchor point </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fit_sols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial fitting solutions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the molecule the fitting solutions apply for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>anchor point for which the transformed mh (fit) should be close to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all fits such that the distance between ap and the fit center is smaller than dist will be included </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pruned fitting solutions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_tools.h" line="32" column="5" declfile="include/IMP/multifit/fitting_tools.h" declline="32" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aebdba0d523d4730ee0031629b70b8ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntsList</type>
+        <definition>IntsList IMP::multifit::get_connected_components</definition>
+        <argsstring>(em::DensityMap *dmap, float threshold, float edge_threshold)</argsstring>
+        <name>get_connected_components</name>
+        <qualifiedname>IMP::multifit::get_connected_components</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>edge_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Return connected components based on density values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to analyze </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider only voxels above this threshold </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">edge_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an edge is added between two neighboring voxels if their density difference is below this threshold </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of indexes for each connected component </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/density_analysis.h" line="41" column="10" declfile="include/IMP/multifit/density_analysis.h" declline="41" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1cc01cbbbb1cf9bb7f226524e0616e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref></type>
+        <definition>ProteinsAnchorsSamplingSpace IMP::multifit::get_part_of_sampling_space</definition>
+        <argsstring>(const ProteinsAnchorsSamplingSpace &amp;prots_ss, const Strings &amp;prot_names)</argsstring>
+        <name>get_part_of_sampling_space</name>
+        <qualifiedname>IMP::multifit::get_part_of_sampling_space</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &amp;</type>
+          <declname>prots_ss</declname>
+        </param>
+        <param>
+          <type>const Strings &amp;</type>
+          <declname>prot_names</declname>
+        </param>
+        <briefdescription>
+<para>Get the sampling space of few of the proteins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="84" column="30" declfile="include/IMP/multifit/protein_anchors_mapping_reader.h" declline="84" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aba7fd97a801a6872f5c53f38b0ec905f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+        <definition>multifit::SettingsData * IMP::multifit::get_partial_assembly_setting_data</definition>
+        <argsstring>(multifit::SettingsData *prots_sd, const Strings &amp;prot_names)</argsstring>
+        <name>get_partial_assembly_setting_data</name>
+        <qualifiedname>IMP::multifit::get_partial_assembly_setting_data</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+          <declname>prots_sd</declname>
+        </param>
+        <param>
+          <type>const Strings &amp;</type>
+          <declname>prot_names</declname>
+        </param>
+        <briefdescription>
+<para>Get the assembly data for a few of the proteins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="88" column="24" declfile="include/IMP/multifit/protein_anchors_mapping_reader.h" declline="88" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1e925f75a8a6d8df2fb48a5a33b248a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">ProteomicsData</ref> *</type>
+        <definition>ProteomicsData * IMP::multifit::get_partial_proteomics_data</definition>
+        <argsstring>(const ProteomicsData *pd, const Strings &amp;prot_names)</argsstring>
+        <name>get_partial_proteomics_data</name>
+        <qualifiedname>IMP::multifit::get_partial_proteomics_data</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">ProteomicsData</ref> *</type>
+          <declname>pd</declname>
+        </param>
+        <param>
+          <type>const Strings &amp;</type>
+          <declname>prot_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="256" column="16" declfile="include/IMP/multifit/proteomics_reader.h" declline="256" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ad9a90449965866bc3f547eb9e2193399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::get_points_close_to_molecule</definition>
+        <argsstring>(const atom::Hierarchy &amp;mh, const algebra::Vector3Ds points, Float max_dist)</argsstring>
+        <name>get_points_close_to_molecule</name>
+        <qualifiedname>IMP::multifit::get_points_close_to_molecule</qualifiedname>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>mh</declname>
+        </param>
+        <param>
+          <type>const algebra::Vector3Ds</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Given a molecule and a set of points, return the indexes of the points that are close to the molecule (up to max_dist) and the res </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_utils.h" line="30" column="20" declfile="include/IMP/multifit/fitting_utils.h" declline="30" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a602f75b13bf7afebbc5fbfb3ab89e1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::get_points_far_from_molecule</definition>
+        <argsstring>(const atom::Hierarchy &amp;mh, const algebra::Vector3Ds points, Float max_dist)</argsstring>
+        <name>get_points_far_from_molecule</name>
+        <qualifiedname>IMP::multifit::get_points_far_from_molecule</qualifiedname>
+        <param>
+          <type>const atom::Hierarchy &amp;</type>
+          <declname>mh</declname>
+        </param>
+        <param>
+          <type>const algebra::Vector3Ds</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_utils.h" line="34" column="20" declfile="include/IMP/multifit/fitting_utils.h" declline="34" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ab1ebb302ab2e310015f0f643bcef86f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::multifit::get_segment_maximum</definition>
+        <argsstring>(const DataPointsAssignment &amp;dpa, DensGrid *dmap, int segment_id)</argsstring>
+        <name>get_segment_maximum</name>
+        <qualifiedname>IMP::multifit::get_segment_maximum</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>DensGrid *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segment_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="110" column="19" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="110" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a6945fa68efec8cd7f189ebd51b7af727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::multifit::get_segment_maximum</definition>
+        <argsstring>(const DataPointsAssignment &amp;dpa, em::DensityMap *dmap, int segment_id)</argsstring>
+        <name>get_segment_maximum</name>
+        <qualifiedname>IMP::multifit::get_segment_maximum</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segment_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="108" column="19" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="108" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aeb628c3804ee3d8aa7df59051b0ad1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::get_segmentation</definition>
+        <argsstring>(em::DensityMap *dmap, double apix, double density_threshold, int num_means, const std::string pdb_filename, const std::string cmm_filename, const std::string seg_filename, const std::string txt_filename)</argsstring>
+        <name>get_segmentation</name>
+        <qualifiedname>IMP::multifit::get_segmentation</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>apix</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>density_threshold</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_means</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>pdb_filename</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>cmm_filename</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>seg_filename</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>txt_filename</declname>
+        </param>
+        <briefdescription>
+<para>Segment a density map using the anchor graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All voxels above the threshold are segmented into the given number of clusters, and neighboring clusters are linked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">apix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the map spacing in angstroms per pixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">density_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider only voxels over this threshold </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_means</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of segments to generate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pdb_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write cluster centers as CA atoms in PDB format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmm_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not empty, write clusters in CMM format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">seg_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not empty, write segments in MRC format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">txt_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not empty, write anchors in text format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/density_analysis.h" line="58" column="6" declfile="include/IMP/multifit/density_analysis.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ab1f9561f757fe3ee9728979ab8dd15c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::DensityMap *</type>
+        <definition>em::DensityMap * IMP::multifit::grid2map</definition>
+        <argsstring>(const DensGrid &amp;dg, float spacing)</argsstring>
+        <name>grid2map</name>
+        <qualifiedname>IMP::multifit::grid2map</qualifiedname>
+        <param>
+          <type>const DensGrid &amp;</type>
+          <declname>dg</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>spacing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DensityDataPoints.h" line="29" column="16" declfile="include/IMP/multifit/DensityDataPoints.h" declline="29" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a9d757c08cb0c3fcca8f05f4eaded4eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1Ensemble" kindref="compound">Ensemble</ref> *</type>
+        <definition>Ensemble * IMP::multifit::load_ensemble</definition>
+        <argsstring>(multifit::SettingsData *sd, Model *mdl, const ProteinsAnchorsSamplingSpace &amp;mapping_data)</argsstring>
+        <name>load_ensemble</name>
+        <qualifiedname>IMP::multifit::load_ensemble</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>Model *</type>
+          <declname>mdl</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &amp;</type>
+          <declname>mapping_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="52" column="10" declfile="include/IMP/multifit/ensemble_analysis.h" declline="52" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aedc64c26eefe139ef34e5cce89d13a51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref></type>
+        <definition>AnchorsData IMP::multifit::molecule2anchors</definition>
+        <argsstring>(atom::Hierarchy mh, int k)</argsstring>
+        <name>molecule2anchors</name>
+        <qualifiedname>IMP::multifit::molecule2anchors</qualifiedname>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mh</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_utilities.h" line="22" column="20" bodyfile="include/IMP/multifit/anchor_utilities.h" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a45c8385d6183240ec7216ae97374c7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::FittingSolutions</type>
+        <definition>em::FittingSolutions IMP::multifit::pca_based_rigid_fitting</definition>
+        <argsstring>(core::RigidBody rb, Refiner *rb_refiner, em::DensityMap *em_map, Float threshold, FloatKey wei_key=atom::Mass::get_mass_key(), algebra::PrincipalComponentAnalysis dens_pca_input=algebra::PrincipalComponentAnalysis())</argsstring>
+        <name>pca_based_rigid_fitting</name>
+        <qualifiedname>IMP::multifit::pca_based_rigid_fitting</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>Refiner *</type>
+          <declname>rb_refiner</declname>
+        </param>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>em_map</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>wei_key</declname>
+          <defval>atom::Mass::get_mass_key()</defval>
+        </param>
+        <param>
+          <type>algebra::PrincipalComponentAnalysis</type>
+          <declname>dens_pca_input</declname>
+          <defval>algebra::PrincipalComponentAnalysis()</defval>
+        </param>
+        <briefdescription>
+<para>Compute fitting scores for a given set of rigid transformations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fit a protein to its density by principal component matching <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rigid body to be fitted </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rb_refiner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rigid body refiner </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">em_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The density map to fit to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Use voxels above this threshold for PCA calculations </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wei_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight key of the particles in the rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dens_pca_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>provide precalculated em_map PCA is available </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fitting solutions </para>
+</simplesect>
+<simplesect kind="note"><para>the function assumes the density map holds its density </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/pca_based_rigid_fitting.h" line="37" column="24" declfile="include/IMP/multifit/pca_based_rigid_fitting.h" declline="37" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1afdf294ea4f4b41a0fa4da41f6c95e32c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::FittingSolutions</type>
+        <definition>em::FittingSolutions IMP::multifit::pca_based_rigid_fitting</definition>
+        <argsstring>(ParticlesTemp ps, em::DensityMap *em_map, Float threshold, FloatKey wei_key=atom::Mass::get_mass_key(), algebra::PrincipalComponentAnalysis dens_pca_input=algebra::PrincipalComponentAnalysis())</argsstring>
+        <name>pca_based_rigid_fitting</name>
+        <qualifiedname>IMP::multifit::pca_based_rigid_fitting</qualifiedname>
+        <param>
+          <type>ParticlesTemp</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>em_map</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>wei_key</declname>
+          <defval>atom::Mass::get_mass_key()</defval>
+        </param>
+        <param>
+          <type>algebra::PrincipalComponentAnalysis</type>
+          <declname>dens_pca_input</declname>
+          <defval>algebra::PrincipalComponentAnalysis()</defval>
+        </param>
+        <briefdescription>
+<para>Compute fitting scores for a given set of rigid transformations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fit a protein to its density by principal component matching <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particles to fit (treated as rigid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">em_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The density map to fit to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Use voxels above this threshold for PCA calculations </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wei_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight key of the particles in the rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dens_pca_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>precalculated em_map PCA </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fitting solutions </para>
+</simplesect>
+<simplesect kind="note"><para>the function assumes the density map holds its density </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/pca_based_rigid_fitting.h" line="54" column="24" declfile="include/IMP/multifit/pca_based_rigid_fitting.h" declline="54" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1311b5448ea5d757a085c959a77e5fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref></type>
+        <definition>AnchorsData IMP::multifit::read_anchors_data</definition>
+        <argsstring>(const char *txt_filename)</argsstring>
+        <name>read_anchors_data</name>
+        <qualifiedname>IMP::multifit::read_anchors_data</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>txt_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="91" column="15" declfile="include/IMP/multifit/anchors_reader.h" declline="91" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1acaf6184a51a758cf4f1a69f6b1bdd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; algebra::Vector3Ds, CEdges &gt;</type>
+        <definition>std::pair&lt; algebra::Vector3Ds, CEdges &gt; IMP::multifit::read_cmm</definition>
+        <argsstring>(const std::string &amp;cmm_filename)</argsstring>
+        <name>read_cmm</name>
+        <qualifiedname>IMP::multifit::read_cmm</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>cmm_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="70" column="13" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ae07f089c01764aa197297e2da4aa743a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::read_fitting_solutions</definition>
+        <argsstring>(const char *fitting_fn)</argsstring>
+        <name>read_fitting_solutions</name>
+        <qualifiedname>IMP::multifit::read_fitting_solutions</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>fitting_fn</declname>
+        </param>
+        <briefdescription>
+<para>Fitting solutions reader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="26" column="5" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="26" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a6d1c73d19e87fced1f49e28866f6acf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntsList</type>
+        <definition>IntsList IMP::multifit::read_paths</definition>
+        <argsstring>(const char *txt_filename, int max_paths=INT_MAX)</argsstring>
+        <name>read_paths</name>
+        <qualifiedname>IMP::multifit::read_paths</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>txt_filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_paths</declname>
+          <defval>INT_MAX</defval>
+        </param>
+        <briefdescription>
+<para>Read paths. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Notice that for the function to read the last line it should end with <linebreak/>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/path_reader_writer.h" line="22" column="10" declfile="include/IMP/multifit/path_reader_writer.h" declline="22" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1adbd924144aee36a0b6dd9789ca164da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref></type>
+        <definition>ProteinsAnchorsSamplingSpace IMP::multifit::read_protein_anchors_mapping</definition>
+        <argsstring>(multifit::ProteomicsData *prots, const std::string &amp;anchors_prot_map_fn, int max_paths=INT_MAX)</argsstring>
+        <name>read_protein_anchors_mapping</name>
+        <qualifiedname>IMP::multifit::read_protein_anchors_mapping</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">multifit::ProteomicsData</ref> *</type>
+          <declname>prots</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anchors_prot_map_fn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_paths</declname>
+          <defval>INT_MAX</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="68" column="30" declfile="include/IMP/multifit/protein_anchors_mapping_reader.h" declline="68" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ac616e7aaf0efc33662e75b3ff9c98097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">ProteomicsData</ref> *</type>
+        <definition>ProteomicsData * IMP::multifit::read_proteomics_data</definition>
+        <argsstring>(const char *proteomics_fn)</argsstring>
+        <name>read_proteomics_data</name>
+        <qualifiedname>IMP::multifit::read_proteomics_data</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>proteomics_fn</declname>
+        </param>
+        <briefdescription>
+<para>Proteomics reader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="253" column="18" declfile="include/IMP/multifit/proteomics_reader.h" declline="253" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a89c8364aa6b757da222745adfecd24ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">SettingsData</ref> *</type>
+        <definition>SettingsData * IMP::multifit::read_settings</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>read_settings</name>
+        <qualifiedname>IMP::multifit::read_settings</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="178" column="16" declfile="include/IMP/multifit/SettingsData.h" declline="178" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a74da7bc0c5074fd40f6552956ea3a75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>em::DensityMap *</type>
+        <definition>em::DensityMap * IMP::multifit::remove_background</definition>
+        <argsstring>(em::DensityMap *dmap, float threshold, float edge_threshold)</argsstring>
+        <name>remove_background</name>
+        <qualifiedname>IMP::multifit::remove_background</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>edge_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Returns a map containing all density without the background. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the density map to segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider only voxels above this threshold </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">edge_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>consider only voxels above this threshold </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the segmented map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/density_analysis.h" line="28" column="18" declfile="include/IMP/multifit/density_analysis.h" declline="28" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a1ab8b06464f3c9727f0a710d4f1e2f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_chimera</definition>
+        <argsstring>(const std::string &amp;chimera_filename, const DataPointsAssignment &amp;dpa)</argsstring>
+        <name>write_chimera</name>
+        <qualifiedname>IMP::multifit::write_chimera</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>chimera_filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="67" column="8" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="67" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ae4ba0e88472d3177de3ea67a7583d5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_cmm</definition>
+        <argsstring>(const std::string &amp;cmm_filename, const std::string &amp;marker_set_name, const AnchorsData &amp;dpa)</argsstring>
+        <name>write_cmm</name>
+        <qualifiedname>IMP::multifit::write_cmm</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>cmm_filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>marker_set_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="95" column="6" declfile="include/IMP/multifit/anchors_reader.h" declline="95" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ad3f92bb765e32aee3d6f1c0d15366d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_connolly_surface</definition>
+        <argsstring>(atom::Atoms atoms, TextOutput fn, float density, float probe_radius)</argsstring>
+        <name>write_connolly_surface</name>
+        <qualifiedname>IMP::multifit::write_connolly_surface</qualifiedname>
+        <param>
+          <type>atom::Atoms</type>
+          <declname>atoms</declname>
+        </param>
+        <param>
+          <type>TextOutput</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>density</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>probe_radius</declname>
+        </param>
+        <briefdescription>
+<para>Write the Connolly surface for a set of atoms to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/connolly_surface.h" line="20" column="5" declfile="include/IMP/multifit/connolly_surface.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a353be2a32c95fe02505606f5fc25465f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_fitting_solutions</definition>
+        <argsstring>(const char *fitting_fn, const FittingSolutionRecords &amp;fit_sols, int num_sols=-1)</argsstring>
+        <name>write_fitting_solutions</name>
+        <qualifiedname>IMP::multifit::write_fitting_solutions</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>fitting_fn</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref> &amp;</type>
+          <declname>fit_sols</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_sols</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Write fitting solutions to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fitting_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fitting filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fit_sols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fitting solutions to write to file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">num_sols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional, only write the first num_sols fits. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fitting_solutions_reader_writer.h" line="33" column="8" declfile="include/IMP/multifit/fitting_solutions_reader_writer.h" declline="33" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a2ded6207f6b3f25048701821adf3bea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_markers</definition>
+        <argsstring>(const algebra::PrincipalComponentAnalysisD&lt; 3 &gt; &amp;pca, std::ostream &amp;out)</argsstring>
+        <name>write_markers</name>
+        <qualifiedname>IMP::multifit::write_markers</qualifiedname>
+        <param>
+          <type>const algebra::PrincipalComponentAnalysisD&lt; 3 &gt; &amp;</type>
+          <declname>pca</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/pca_based_rigid_fitting.h" line="61" column="6" declfile="include/IMP/multifit/pca_based_rigid_fitting.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1af71d85febb3cedd2ad1c0fbcade3e4b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_paths</definition>
+        <argsstring>(const IntsList &amp;paths, const std::string &amp;txt_filename)</argsstring>
+        <name>write_paths</name>
+        <qualifiedname>IMP::multifit::write_paths</qualifiedname>
+        <param>
+          <type>const IntsList &amp;</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>txt_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/path_reader_writer.h" line="25" column="6" declfile="include/IMP/multifit/path_reader_writer.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a3f44dc59f3fb41dfdd084270d6a10a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_pdb</definition>
+        <argsstring>(const std::string &amp;pdb_filename, const DataPointsAssignment &amp;dpa)</argsstring>
+        <name>write_pdb</name>
+        <qualifiedname>IMP::multifit::write_pdb</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pdb_filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="83" column="8" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="83" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a11b1f20be441ca935aedaf5947b01cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_protein_anchors_mapping</definition>
+        <argsstring>(const std::string &amp;anchors_prot_map_fn, const ProteinsAnchorsSamplingSpace &amp;pa, const Strings &amp;prot_names)</argsstring>
+        <name>write_protein_anchors_mapping</name>
+        <qualifiedname>IMP::multifit::write_protein_anchors_mapping</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anchors_prot_map_fn</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &amp;</type>
+          <declname>pa</declname>
+        </param>
+        <param>
+          <type>const Strings &amp;</type>
+          <declname>prot_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="78" column="6" declfile="include/IMP/multifit/protein_anchors_mapping_reader.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a36fc7ae568bb5d07373bc1ad2e14328f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_protein_anchors_mapping</definition>
+        <argsstring>(const std::string &amp;anchors_prot_map_fn, const std::string &amp;anchors_fn, const std::vector&lt; std::pair&lt; String, String &gt; &gt; &amp;prot_paths)</argsstring>
+        <name>write_protein_anchors_mapping</name>
+        <qualifiedname>IMP::multifit::write_protein_anchors_mapping</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anchors_prot_map_fn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anchors_fn</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; String, String &gt; &gt; &amp;</type>
+          <declname>prot_paths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="72" column="6" declfile="include/IMP/multifit/protein_anchors_mapping_reader.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a8009ecb4c53812a36bf544ed7e9fe9a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_segment_as_mrc</definition>
+        <argsstring>(em::DensityMap *dmap, const DataPointsAssignment &amp;dpa, int segment_id, Float resolution, Float apix, const std::string &amp;filename)</argsstring>
+        <name>write_segment_as_mrc</name>
+        <qualifiedname>IMP::multifit::write_segment_as_mrc</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segment_id</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>apix</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="104" column="6" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1afa9365426346e3cbf57346e724da4691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_segment_as_pdb</definition>
+        <argsstring>(const DataPointsAssignment &amp;dpa, int segment_id, const std::string &amp;filename)</argsstring>
+        <name>write_segment_as_pdb</name>
+        <qualifiedname>IMP::multifit::write_segment_as_pdb</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segment_id</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="89" column="6" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ac66c9128b0009595989bc520e3e6dcd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_segments_as_mrc</definition>
+        <argsstring>(em::DensityMap *dmap, const DataPointsAssignment &amp;dpa, Float resolution, Float apix, Float threshold, const std::string &amp;filename)</argsstring>
+        <name>write_segments_as_mrc</name>
+        <qualifiedname>IMP::multifit::write_segments_as_mrc</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>apix</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write segments in MRC format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>segments are written as filename_0.mrc </para>
+</simplesect>
+<simplesect kind="note"><para>an additional file filename.cmd is generated for easy loading of all segments </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="98" column="6" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="98" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1a52c63362745917843277eb7ba97d76d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_segments_as_pdb</definition>
+        <argsstring>(const DataPointsAssignment &amp;dpa, const std::string &amp;filename)</argsstring>
+        <name>write_segments_as_pdb</name>
+        <qualifiedname>IMP::multifit::write_segments_as_pdb</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1DataPointsAssignment" kindref="compound">DataPointsAssignment</ref> &amp;</type>
+          <declname>dpa</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/DataPointsAssignment.h" line="86" column="6" declfile="include/IMP/multifit/DataPointsAssignment.h" declline="86" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1aa9401684ce59f4d47aaa1e519e1d574b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_settings</definition>
+        <argsstring>(const char *filename, const SettingsData *sd)</argsstring>
+        <name>write_settings</name>
+        <qualifiedname>IMP::multifit::write_settings</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">SettingsData</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/SettingsData.h" line="179" column="8" declfile="include/IMP/multifit/SettingsData.h" declline="179" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1multifit_1ae2e18c9a8f1e3e81cf1a561a93e235c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::write_txt</definition>
+        <argsstring>(const std::string &amp;txt_filename, const AnchorsData &amp;ad)</argsstring>
+        <name>write_txt</name>
+        <qualifiedname>IMP::multifit::write_txt</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>txt_filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">AnchorsData</ref> &amp;</type>
+          <declname>ad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchors_reader.h" line="93" column="6" declfile="include/IMP/multifit/anchors_reader.h" declline="93" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fitting atomic structures into a cryo-electron microscopy density map. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>MultiFit is a computational method for simultaneously fitting atomic structures of components into their assembly density map at resolutions as low as 25Å. The component positions and orientations are optimized with respect to a scoring function that includes the quality-of-fit of components in the map, the protrusion of components from the map envelope, as well as the shape complementarity between pairs of components. The scoring function is optimized by an exact inference optimizer DOMINO that efficiently finds the global minimum in a discrete sampling space.</para>
+<para>For more information please see the <ulink url="https://salilab.org/multifit/">MultiFit</ulink> website.</para>
+<para>See the IMP::cnmultifit module for a similar protocol for handling symmetric complexes.</para>
+<sect1 id="namespaceIMP_1_1multifit_1multifit_bin">
+<title>multifit: command line tool</title><para>Generally, this module is not used directly; instead, the <computeroutput>multifit</computeroutput> command line tool is used. For an example, see Modeling of 3sfd.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1multifit_1autotoc_md3">
+<title>Web server</title><para>A <ulink url="https://salilab.org/multifit/">webserver</ulink> that uses both this module and the IMP::cnmultifit module is also available.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1multifit_1complex_anchor_bin">
+<title>complex_to_anchor_graph</title><para>Build an anchor graph from a PDB file.</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1multifit_1autotoc_md4">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Keren Lasker</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>benmwebb</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/gpl.html">GPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">main IMP papers list</ref>.</para>
+</listitem><listitem><para>K. Lasker, M. Topf, A. Sali, H. J. Wolfson, <ulink url="https://www.ncbi.nlm.nih.gov/pubmed/19233204">&quot;Inferential optimization for simultaneous fitting of multiple components into a cryoEM map of their assembly&quot;, J Mol Biol 388, 2009</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/multifit/AlignmentParams.h" line="20" column="14"/>
+  </compounddef>
+</doxygen>

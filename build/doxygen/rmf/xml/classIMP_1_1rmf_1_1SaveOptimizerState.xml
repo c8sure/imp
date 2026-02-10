@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1SaveOptimizerState" kind="class" language="C++" prot="public">
+    <compoundname>IMP::rmf::SaveOptimizerState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">OptimizerState</basecompoundref>
+    <includes local="no">IMP/rmf/SaveOptimizerState.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SaveOptimizerState_1a55368625321b7f93e25f04175c4dcd1a" prot="private" static="no" mutable="no">
+        <type>RMF::FileHandle</type>
+        <definition>RMF::FileHandle IMP::rmf::SaveOptimizerState::fh_</definition>
+        <argsstring></argsstring>
+        <name>fh_</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::fh_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="27" column="19" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1SaveOptimizerState_1a5b3382077eaa3f1a3b81a7f032607b62" prot="private" static="no" mutable="no">
+        <type>WeakPointer&lt; atom::Simulator &gt;</type>
+        <definition>WeakPointer&lt;atom::Simulator&gt; IMP::rmf::SaveOptimizerState::sim_</definition>
+        <argsstring></argsstring>
+        <name>sim_</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::sim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="28" column="15" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1aba24e4f4ffe8503079a40eb80852c6da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::SaveOptimizerState::SaveOptimizerState</definition>
+        <argsstring>(Model *m, RMF::FileHandle fh)</argsstring>
+        <name>SaveOptimizerState</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::SaveOptimizerState</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1a4c94527dc70f4f76fabe330fcfba8172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::rmf::SaveOptimizerState::~SaveOptimizerState</definition>
+        <argsstring>()</argsstring>
+        <name>~SaveOptimizerState</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::~SaveOptimizerState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="56" column="231" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1ab5c4d7347aa23213a1889641865852e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::SaveOptimizerState::do_update</definition>
+        <argsstring>(unsigned int call_num) override</argsstring>
+        <name>do_update</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::do_update</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>call_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="55" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1a29063b86db60af487b8bb3bee1280922" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::rmf::SaveOptimizerState::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="56" column="34" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1aa2be9922499fe17fe1211121c3e3ad04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::rmf::SaveOptimizerState::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="56" column="103" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1aaf387b770701f90b639953345671c103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SaveOptimizerState::set_simulator</definition>
+        <argsstring>(atom::Simulator *sim)</argsstring>
+        <name>set_simulator</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::set_simulator</qualifiedname>
+        <param>
+          <type>atom::Simulator *</type>
+          <declname>sim</declname>
+        </param>
+        <briefdescription>
+<para>Use the simulator to tag frames with current time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This may change to a more general mechanism at some point in the future. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1a47bf3336f8c97c81b4a0eacd45da6b22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SaveOptimizerState::update_always</definition>
+        <argsstring>()</argsstring>
+        <name>update_always</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::update_always</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="54" column="8" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1SaveOptimizerState_1ad171be75fae16dc0c8e7d2278b4ec8fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::SaveOptimizerState::update_always</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>update_always</name>
+        <qualifiedname>IMP::rmf::SaveOptimizerState::update_always</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Write a frame with a given name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/SaveOptimizerState.h" line="52" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Periodically dump the state of all associated objects into the RMF file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is done by calling the <ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">save_frame()</ref> function. Convenience methods are provided to add hierarchies, restraints, particles, and geometries. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/SaveOptimizerState.h" line="26" column="1" bodyfile="include/IMP/rmf/SaveOptimizerState.h" bodystart="26" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1ab5c4d7347aa23213a1889641865852e3" prot="public" virt="virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>do_update</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a55368625321b7f93e25f04175c4dcd1a" prot="private" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>fh_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a29063b86db60af487b8bb3bee1280922" prot="public" virt="virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aa2be9922499fe17fe1211121c3e3ad04" prot="public" virt="virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aba24e4f4ffe8503079a40eb80852c6da" prot="public" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>SaveOptimizerState</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aaf387b770701f90b639953345671c103" prot="public" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>set_simulator</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a5b3382077eaa3f1a3b81a7f032607b62" prot="private" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>sim_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1ad171be75fae16dc0c8e7d2278b4ec8fb" prot="public" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>update_always</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a47bf3336f8c97c81b4a0eacd45da6b22" prot="public" virt="non-virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>update_always</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a4c94527dc70f4f76fabe330fcfba8172" prot="public" virt="virtual"><scope>IMP::rmf::SaveOptimizerState</scope><name>~SaveOptimizerState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

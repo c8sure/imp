@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData" kind="struct" language="C++" prot="private">
+    <compoundname>IMP::domino::RestraintCache::RestraintSetData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Value</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ade1c6dd928415e9c0534bbc9215806b5" prot="private" static="no" mutable="no">
+        <type>WeakPointer&lt; Restraint &gt;</type>
+        <definition>WeakPointer&lt;Restraint&gt; IMP::domino::RestraintCache::RestraintSetData::restraint_</definition>
+        <argsstring></argsstring>
+        <name>restraint_</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::restraint_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="291" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a1593f7b97d8c0d6268663ee67c47442b" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref></type>
+        <definition>Slice IMP::domino::RestraintCache::RestraintSetData::slice_</definition>
+        <argsstring></argsstring>
+        <name>slice_</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::slice_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="122" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a41582ca3a61dc3ca22cd132ce6b01332" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RestraintCache::RestraintSetData::RestraintSetData</definition>
+        <argsstring>(Slice i0=Slice(), WeakPointer&lt; Restraint &gt; i1=WeakPointer&lt; Restraint &gt;())</argsstring>
+        <name>RestraintSetData</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::RestraintSetData</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref></type>
+          <declname>i0</declname>
+          <defval><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref>()</defval>
+        </param>
+        <param>
+          <type>WeakPointer&lt; Restraint &gt;</type>
+          <declname>i1</declname>
+          <defval>WeakPointer&lt; Restraint &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="41" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a8498d104f51a34b1fbd4d9b7d15485b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>WeakPointer&lt; Restraint &gt; &amp;</type>
+        <definition>WeakPointer&lt; Restraint &gt; &amp; IMP::domino::RestraintCache::RestraintSetData::access_restraint</definition>
+        <argsstring>()</argsstring>
+        <name>access_restraint</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::access_restraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="435" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa97ce8df25160345303b0ee1898656a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &amp;</type>
+        <definition>Slice &amp; IMP::domino::RestraintCache::RestraintSetData::access_slice</definition>
+        <argsstring>()</argsstring>
+        <name>access_slice</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::access_slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="234" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aeb956230175a74fa61df96692047ede1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const WeakPointer&lt; Restraint &gt; &amp;</type>
+        <definition>const WeakPointer&lt; Restraint &gt; &amp; IMP::domino::RestraintCache::RestraintSetData::get_restraint</definition>
+        <argsstring>() const</argsstring>
+        <name>get_restraint</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::get_restraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="335" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ae91940ef7424e708ad8a3c4a931d2202" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &amp;</type>
+        <definition>const Slice &amp; IMP::domino::RestraintCache::RestraintSetData::get_slice</definition>
+        <argsstring>() const</argsstring>
+        <name>get_slice</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::get_slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="156" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a54c0f70effd7e528c769f5e9695bafaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::RestraintSetData::set_restraint</definition>
+        <argsstring>(const WeakPointer&lt; Restraint &gt; &amp;v)</argsstring>
+        <name>set_restraint</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::set_restraint</qualifiedname>
+        <param>
+          <type>const WeakPointer&lt; Restraint &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="387" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0cbb933946967b004ee71309df68d87b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::RestraintSetData::set_slice</definition>
+        <argsstring>(const Slice &amp;v)</argsstring>
+        <name>set_slice</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::set_slice</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Slice" kindref="compound">Slice</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="200" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa78ced009c65090d260b69ea7098bf1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::RestraintCache::RestraintSetData::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0f602c7e7a99f88138579fbaab3e6041" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::domino::RestraintCache::RestraintSetData::compare</definition>
+        <argsstring>(const RestraintSetData &amp;o) const</argsstring>
+        <name>compare</name>
+        <qualifiedname>IMP::domino::RestraintCache::RestraintSetData::compare</qualifiedname>
+        <param>
+          <type>const RestraintSetData &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_scores.h" line="48" column="494" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_scores.h" line="48" column="1" bodyfile="include/IMP/domino/subset_scores.h" bodystart="48" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a8498d104f51a34b1fbd4d9b7d15485b8" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>access_restraint</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa97ce8df25160345303b0ee1898656a6" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>access_slice</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0f602c7e7a99f88138579fbaab3e6041" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>compare</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aeb956230175a74fa61df96692047ede1" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>get_restraint</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ae91940ef7424e708ad8a3c4a931d2202" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>get_slice</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1ade1c6dd928415e9c0534bbc9215806b5" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>restraint_</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a41582ca3a61dc3ca22cd132ce6b01332" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>RestraintSetData</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a54c0f70effd7e528c769f5e9695bafaa" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>set_restraint</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a0cbb933946967b004ee71309df68d87b" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>set_slice</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1aa78ced009c65090d260b69ea7098bf1d" prot="public" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>show</name></member>
+      <member refid="structIMP_1_1domino_1_1RestraintCache_1_1RestraintSetData_1a1593f7b97d8c0d6268663ee67c47442b" prot="private" virt="non-virtual"><scope>IMP::domino::RestraintCache::RestraintSetData</scope><name>slice_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

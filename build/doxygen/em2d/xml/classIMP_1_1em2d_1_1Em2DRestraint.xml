@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1Em2DRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::Em2DRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/em2d/Em2DRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1abc6ee3cab95bd7eb591073cd2d6e169a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+        <definition>em2d::Images IMP::em2d::Em2DRestraint::em_images_</definition>
+        <argsstring></argsstring>
+        <name>em_images_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::em_images_</qualifiedname>
+        <briefdescription>
+<para>Projection Masks to fast model projection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="40" column="16" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1a08680be65110719338b90c9aba1cc91b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+        <definition>em2d::Images IMP::em2d::Em2DRestraint::em_variances_</definition>
+        <argsstring></argsstring>
+        <name>em_variances_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::em_variances_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="41" column="16" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1aba354213e1253fe922d6c30111702759" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::Em2DRestraint::fast_optimization_mode_</definition>
+        <argsstring></argsstring>
+        <name>fast_optimization_mode_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::fast_optimization_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="43" column="8" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1a42bcdd740f90e5f6923c56861a366f8c" prot="private" static="no" mutable="yes">
+        <type>Pointer&lt; <ref refid="classIMP_1_1em2d_1_1ProjectionFinder" kindref="compound">ProjectionFinder</ref> &gt;</type>
+        <definition>Pointer&lt;ProjectionFinder&gt; IMP::em2d::Em2DRestraint::finder_</definition>
+        <argsstring></argsstring>
+        <name>finder_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::finder_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="37" column="19" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1ad76db8315218022f19161d44b60a90b1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::Em2DRestraint::number_of_optimized_projections_</definition>
+        <argsstring></argsstring>
+        <name>number_of_optimized_projections_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::number_of_optimized_projections_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="42" column="16" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1ad26e8c2f7db41a491e022ee08edf3451" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::Em2DRestraint::only_coarse_registration_</definition>
+        <argsstring></argsstring>
+        <name>only_coarse_registration_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::only_coarse_registration_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="44" column="8" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1a23ae1c6dae8ed8baef816fad5281aad0" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">Em2DRestraintParameters</ref></type>
+        <definition>Em2DRestraintParameters IMP::em2d::Em2DRestraint::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="45" column="27" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1Em2DRestraint_1a5668102094d62bd36dd11d7adb4cd774" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; SingletonContainer &gt;</type>
+        <definition>Pointer&lt;SingletonContainer&gt; IMP::em2d::Em2DRestraint::particles_container_</definition>
+        <argsstring></argsstring>
+        <name>particles_container_</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::particles_container_</qualifiedname>
+        <briefdescription>
+<para>SingletonContainer to store the particles that are restrained. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="34" column="11" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a3c6746ba4dd8dac106309cbc4967ed03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::Em2DRestraint::Em2DRestraint</definition>
+        <argsstring>(Model *m)</argsstring>
+        <name>Em2DRestraint</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::Em2DRestraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates the restraint. You are not done yet by creating the restraint. After creating it, you need to call the <ref refid="classIMP_1_1em2d_1_1Em2DRestraint_1a3351edb9bbe8eab5297df9396542effd" kindref="member">setup()</ref> function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a2eab2d1594bd4c491d0adfa1a2e17630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::Em2DRestraint::~Em2DRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~Em2DRestraint</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::~Em2DRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="138" column="231" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1aac06bb9e255c02c5241ef7dc1d45a241" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::em2d::Em2DRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="137" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a23a6debb367c61b2a4c009774b390b49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member">RegistrationResults</ref></type>
+        <definition>RegistrationResults IMP::em2d::Em2DRestraint::get_registration_results</definition>
+        <argsstring>() const</argsstring>
+        <name>get_registration_results</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::get_registration_results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the registration results for each of the images after finishing the optimization. Obviously, requesting the results before optimizing is an error <simplesect kind="return"><para>A list of registration results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="131" column="23" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a2388db725d45b27480761fb85bbb6b7b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::Em2DRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="138" column="34" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1aa9e70b3f477b256d136db1de97d61801" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::Em2DRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="138" column="103" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a07c9060b33bc57a81e271fa4d16b64c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::set_coarse_registration_mode</definition>
+        <argsstring>(bool opt)</argsstring>
+        <name>set_coarse_registration_mode</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::set_coarse_registration_mode</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the value provided to this function is true, restraint operates only using a coarse registration scheme (maximizing the cross correlation coefficient). This option (which is set to false by default) can speed the evaluation of the restraint by a order of magnitude, but the values obtained are not going to be less accurate. You could want to activate it at the beginning of an optimization. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if you want to use the coarse mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="121" column="8" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a00e14497ec939f4f29b2ca0e52a613f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::set_fast_mode</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>set_fast_mode</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::set_fast_mode</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets fast mode for computing the restraint. This mode only makes sense it the set_coarse_registration_mode option is false. This option only optimizes some coarse results (those given by the argument) to get the refined value. This option is very fast compared to a full optimization, and almost always is a good idea to use it with 1-5 results. This mode is still significantly slow compared to <ref refid="classIMP_1_1em2d_1_1Em2DRestraint_1a07c9060b33bc57a81e271fa4d16b64c5" kindref="member">set_coarse_registration_mode()</ref>, but the values optimized are optimum. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of images to optimize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="109" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a9a2984c6f281fee8f5b4384980b84ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::set_images</definition>
+        <argsstring>(const em2d::Images em_images)</argsstring>
+        <name>set_images</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::set_images</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+          <declname>em_images</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the EM images to use as restraints <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>em_images</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The images </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a4fff039bf0e2bf49c06583f83d254afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::set_particles</definition>
+        <argsstring>(SingletonContainer *particles_container)</argsstring>
+        <name>set_particles</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::set_particles</qualifiedname>
+        <param>
+          <type>SingletonContainer *</type>
+          <declname>particles_container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the particles used to compute projections. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles_container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All the particles must be in the container </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a684fffc8d113ecb1e03cb8ff8e1c6fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::set_variance_images</definition>
+        <argsstring>(const em2d::Images variance_images)</argsstring>
+        <name>set_variance_images</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::set_variance_images</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1em2d_1aea73dfb54b406007b3269745759f22f3" kindref="member">em2d::Images</ref></type>
+          <declname>variance_images</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the variance images of EM images. This is useful if the image is a class average Note: Not all the scoring function use this data Sets the variance images for class averages. If class averages are used as restraints, it is possible to use the variance images to assign a standard deviation (error) for each of the pixels in a class average. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variance_images</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Not all the scoring functions use the variance images </para>
+</simplesect>
+<simplesect kind="note"><para>This function is functional as is tested, but has not been tested in a real application yet. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1a3351edb9bbe8eab5297df9396542effd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::Em2DRestraint::setup</definition>
+        <argsstring>(ScoreFunction *score_function, const Em2DRestraintParameters &amp;params)</argsstring>
+        <name>setup</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::setup</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1ScoreFunction" kindref="compound">ScoreFunction</ref> *</type>
+          <declname>score_function</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">Em2DRestraintParameters</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the restraint <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>score_function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scoring function to use to evaluate the similarity between particles and projections </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All the parameters required for the restraint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="60" column="8" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1Em2DRestraint_1aa0bd718cb78c529264cabf0f6074c5a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::em2d::Em2DRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::em2d::Em2DRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/Em2DRestraint.h" line="135" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This restraint ensures that a set of particles are similar to a set of EM images. The restraint generates projections of the model that are then compared with the EM images. The projections are generated from the radius of its particles. In the case of atoms, the radius is generated automatically. For other particles the radius has to be provided. </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/Em2DRestraint.h" line="32" column="1" bodyfile="include/IMP/em2d/Em2DRestraint.h" bodystart="32" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1aac06bb9e255c02c5241ef7dc1d45a241" prot="public" virt="virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a3c6746ba4dd8dac106309cbc4967ed03" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>Em2DRestraint</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1abc6ee3cab95bd7eb591073cd2d6e169a" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>em_images_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a08680be65110719338b90c9aba1cc91b" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>em_variances_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1aba354213e1253fe922d6c30111702759" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>fast_optimization_mode_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a42bcdd740f90e5f6923c56861a366f8c" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>finder_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a23a6debb367c61b2a4c009774b390b49" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>get_registration_results</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a2388db725d45b27480761fb85bbb6b7b" prot="public" virt="virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1aa9e70b3f477b256d136db1de97d61801" prot="public" virt="virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1ad76db8315218022f19161d44b60a90b1" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>number_of_optimized_projections_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1ad26e8c2f7db41a491e022ee08edf3451" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>only_coarse_registration_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a23ae1c6dae8ed8baef816fad5281aad0" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>params_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a5668102094d62bd36dd11d7adb4cd774" prot="private" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>particles_container_</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a07c9060b33bc57a81e271fa4d16b64c5" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>set_coarse_registration_mode</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a00e14497ec939f4f29b2ca0e52a613f1" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>set_fast_mode</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a9a2984c6f281fee8f5b4384980b84ddc" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>set_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a4fff039bf0e2bf49c06583f83d254afa" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>set_particles</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a684fffc8d113ecb1e03cb8ff8e1c6fda" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>set_variance_images</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a3351edb9bbe8eab5297df9396542effd" prot="public" virt="non-virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>setup</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1aa0bd718cb78c529264cabf0f6074c5a6" prot="public" virt="virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1Em2DRestraint_1a2eab2d1594bd4c491d0adfa1a2e17630" prot="public" virt="virtual"><scope>IMP::em2d::Em2DRestraint</scope><name>~Em2DRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

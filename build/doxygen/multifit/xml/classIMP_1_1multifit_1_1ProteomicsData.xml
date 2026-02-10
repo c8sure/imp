@@ -1,0 +1,856 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ProteomicsData" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ProteomicsData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/proteomics_reader.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a6c47f704bb058bb9c46d1324967c8c8b" prot="protected" static="no" mutable="no">
+        <type>IntPairs</type>
+        <definition>IntPairs IMP::multifit::ProteomicsData::ev_</definition>
+        <argsstring></argsstring>
+        <name>ev_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::ev_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="245" column="12" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1ae87c877a944b380b3c186289eefbb1c4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; IMP::multifit::ProteomicsData::interaction_in_filter_</definition>
+        <argsstring></argsstring>
+        <name>interaction_in_filter_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::interaction_in_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="235" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1ab5d2a3f31cf27db2bb1b317ba9ba2366" prot="protected" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::multifit::ProteomicsData::interaction_linker_len_</definition>
+        <argsstring></argsstring>
+        <name>interaction_linker_len_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::interaction_linker_len_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="236" column="10" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a60fd1d9615d55bd729e7f2232d1fe657" prot="protected" static="no" mutable="no">
+        <type>IntsList</type>
+        <definition>IntsList IMP::multifit::ProteomicsData::interactions_</definition>
+        <argsstring></argsstring>
+        <name>interactions_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::interactions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="234" column="12" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a20903c64443b1427d27cbf9ce2441b5f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::num_allowed_violated_ev_</definition>
+        <argsstring></argsstring>
+        <name>num_allowed_violated_ev_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::num_allowed_violated_ev_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="246" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1ac73c4d9b3d62bdd171cccccba3f6b753" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::num_allowed_violated_interactions_</definition>
+        <argsstring></argsstring>
+        <name>num_allowed_violated_interactions_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::num_allowed_violated_interactions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="237" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a138800425a9a8281b9b3c131b248f163" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::num_allowed_violated_xlinks_</definition>
+        <argsstring></argsstring>
+        <name>num_allowed_violated_xlinks_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::num_allowed_violated_xlinks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="243" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a8a3ece2077f297bdbd6efb2c1e723986" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; ProteinRecordData &gt;</type>
+        <definition>std::vector&lt;ProteinRecordData&gt; IMP::multifit::ProteomicsData::prot_data_</definition>
+        <argsstring></argsstring>
+        <name>prot_data_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::prot_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="232" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a6fe91bfba53aba0b0114ff9a12e1e968" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; IMP::multifit::ProteomicsData::prot_map_</definition>
+        <argsstring></argsstring>
+        <name>prot_map_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::prot_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="233" column="12" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1aaaaa360062536e3b9ca3bb2cd07641d4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; IMP::multifit::ProteomicsData::xlink_in_filter_</definition>
+        <argsstring></argsstring>
+        <name>xlink_in_filter_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::xlink_in_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="241" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1ac6d513a2ed363e3b3325b67e7b43cbb5" prot="protected" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::multifit::ProteomicsData::xlink_len_</definition>
+        <argsstring></argsstring>
+        <name>xlink_len_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::xlink_len_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="242" column="10" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsData_1a45600f9f57d9a637f7816353b419fb7a" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; IntPair, IntPair &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;IntPair, IntPair&gt; &gt; IMP::multifit::ProteomicsData::xlinks_</definition>
+        <argsstring></argsstring>
+        <name>xlinks_</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::xlinks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="240" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a3963855d9557744d88218534e6b009b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteomicsData::ProteomicsData</definition>
+        <argsstring>()</argsstring>
+        <name>ProteomicsData</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::ProteomicsData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="84" column="3" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1aa8d45eda1772c246237b1c4000ce9400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::ProteomicsData::~ProteomicsData</definition>
+        <argsstring>()</argsstring>
+        <name>~ProteomicsData</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::~ProteomicsData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="199" column="231" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a663840285df143bbe25a73abe28aa419" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::add_cross_link_interaction</definition>
+        <argsstring>(Int prot1, Int res1, Int prot2, Int res2, bool used_in_filter, Float linker_len)</argsstring>
+        <name>add_cross_link_interaction</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::add_cross_link_interaction</qualifiedname>
+        <param>
+          <type>Int</type>
+          <declname>prot1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>res1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>prot2</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>res2</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>used_in_filter</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>linker_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="115" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a0d6a98e6b336a4608a7c27545bd98aed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::add_ev_pair</definition>
+        <argsstring>(Int prot1, Int prot2)</argsstring>
+        <name>add_ev_pair</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::add_ev_pair</qualifiedname>
+        <param>
+          <type>Int</type>
+          <declname>prot1</declname>
+        </param>
+        <param>
+          <type>Int</type>
+          <declname>prot2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="122" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a50da5531364ecf0205d410ac0d4b75aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::add_interaction</definition>
+        <argsstring>(const Ints &amp;ii, bool used_for_filter, float linker_len)</argsstring>
+        <name>add_interaction</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::add_interaction</qualifiedname>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>ii</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>used_for_filter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>linker_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="110" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a5414b856576ca514581bef639cea77cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::add_protein</definition>
+        <argsstring>(const ProteinRecordData &amp;rec)</argsstring>
+        <name>add_protein</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::add_protein</qualifiedname>
+        <param>
+          <type>const ProteinRecordData &amp;</type>
+          <declname>rec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the assigned index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="97" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1ab0c990e6e1c1b47dcd7766976e4297b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::add_protein</definition>
+        <argsstring>(std::string name, int start_res, int end_res, const std::string &amp;mol_fn, const std::string &amp;surface_fn, const std::string &amp;ref_fn)</argsstring>
+        <name>add_protein</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::add_protein</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_res</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>mol_fn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>surface_fn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ref_fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the assigned index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="87" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1acea04969c4067024a532b7fadb005ee2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::find</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>find</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::find</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="106" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1acfc4b15d925b308b762f93aa38d04f23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; IntPair, IntPair &gt;</type>
+        <definition>std::pair&lt; IntPair, IntPair &gt; IMP::multifit::ProteomicsData::get_cross_link</definition>
+        <argsstring>(int xlink_ind) const</argsstring>
+        <name>get_cross_link</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_cross_link</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>xlink_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="143" column="13" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a37f42f9ffc29d43a411179fe4d797585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::ProteomicsData::get_cross_link_length</definition>
+        <argsstring>(int xlink_ind) const</argsstring>
+        <name>get_cross_link_length</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_cross_link_length</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>xlink_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="151" column="9" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a9839edde7a747fd41886dd44dba6cb91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProteomicsData::get_cross_link_part_of_filter</definition>
+        <argsstring>(int xlink_ind) const</argsstring>
+        <name>get_cross_link_part_of_filter</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_cross_link_part_of_filter</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>xlink_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="147" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a7147996b9081fbc0606c37b784f3d04f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_end_res</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_end_res</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_end_res</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="168" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1aa68876bfec22a332f3e58ab9c11a1914" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>IntPair</type>
+        <definition>IntPair IMP::multifit::ProteomicsData::get_ev_pair</definition>
+        <argsstring>(int ev_ind) const</argsstring>
+        <name>get_ev_pair</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_ev_pair</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ev_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="158" column="11" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1ae8372ba3170975b16a9070fe361e62f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::multifit::ProteomicsData::get_interaction</definition>
+        <argsstring>(int interaction_ind) const</argsstring>
+        <name>get_interaction</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_interaction</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>interaction_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="127" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1af334ce946b15c00c98d9a579e9e8890e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_interaction_linker_length</definition>
+        <argsstring>(int interaction_ind) const</argsstring>
+        <name>get_interaction_linker_length</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_interaction_linker_length</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>interaction_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="137" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="137" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a6f12fe51360c06de050fe6a6fb192f6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProteomicsData::get_interaction_part_of_filter</definition>
+        <argsstring>(int interaction_ind) const</argsstring>
+        <name>get_interaction_part_of_filter</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_interaction_part_of_filter</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>interaction_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="132" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a5d8b9ed56fb0302c5d8d0ff1ebd05e30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_num_allowed_violated_cross_links</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_allowed_violated_cross_links</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_num_allowed_violated_cross_links</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="222" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1adedf149186733c56ee26088da6e398b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_num_allowed_violated_ev</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_allowed_violated_ev</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_num_allowed_violated_ev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="228" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1afdde2b7bfa8f381637f033c997febbc9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_num_allowed_violated_interactions</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_allowed_violated_interactions</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_num_allowed_violated_interactions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="216" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1add90366c5cc4336651e9282e820d7678" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_number_of_cross_links</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_cross_links</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_number_of_cross_links</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="142" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1aa1500a64000b0fea0d6a260c9cd407e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_number_of_ev_pairs</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_ev_pairs</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_number_of_ev_pairs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="157" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1aa5a98d3218250e93f0afe38d86ec5cb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_number_of_interactions</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_interactions</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_number_of_interactions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="126" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a7897c66e4ab0492d9bc21b0219e81cc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_number_of_proteins</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_proteins</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_number_of_proteins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="125" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a012ff630abb7fe1483fcdcc555882edf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ProteinRecordData</type>
+        <definition>ProteinRecordData IMP::multifit::ProteomicsData::get_protein_data</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_protein_data</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_protein_data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="193" column="21" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="193" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a26345023847a7dd6a49c476ad5005f2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteomicsData::get_protein_filename</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_protein_filename</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_protein_filename</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="178" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a4edb51a2a4b78129c78206ed1a036e11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteomicsData::get_protein_name</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_protein_name</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_protein_name</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="163" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a1ee490cf05bc4b9e8e27f4fe47330fb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteomicsData::get_reference_filename</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_reference_filename</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_reference_filename</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="183" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a73c1748a44a19ed3064adf8efad666e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::multifit::ProteomicsData::get_start_res</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_start_res</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_start_res</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="173" column="7" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a7194e3b7aa8e62da03f75d8630aea6f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteomicsData::get_surface_filename</definition>
+        <argsstring>(int protein_ind) const</argsstring>
+        <name>get_surface_filename</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_surface_filename</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>protein_ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="188" column="15" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a1f79c1222a060146c904cbc1cf100543" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::ProteomicsData::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="199" column="34" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1afa1e74f7eca6ee59f2e7d2a345975133" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::ProteomicsData::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="199" column="103" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a351169747a2058f8f75076982fd623fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::set_num_allowed_violated_cross_links</definition>
+        <argsstring>(int n)</argsstring>
+        <name>set_num_allowed_violated_cross_links</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::set_num_allowed_violated_cross_links</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="225" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a90b8dbbd8e84b9555ffad3edf41ad67f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::set_num_allowed_violated_ev</definition>
+        <argsstring>(int n)</argsstring>
+        <name>set_num_allowed_violated_ev</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::set_num_allowed_violated_ev</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="229" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsData_1a877f2288d6c176e48d7c19ba2dfb1892" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsData::set_num_allowed_violated_interactions</definition>
+        <argsstring>(int n)</argsstring>
+        <name>set_num_allowed_violated_interactions</name>
+        <qualifiedname>IMP::multifit::ProteomicsData::set_num_allowed_violated_interactions</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_reader.h" line="219" column="8" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Storage of proteomics data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/proteomics_reader.h" line="81" column="1" bodyfile="include/IMP/multifit/proteomics_reader.h" bodystart="81" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a663840285df143bbe25a73abe28aa419" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>add_cross_link_interaction</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a0d6a98e6b336a4608a7c27545bd98aed" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>add_ev_pair</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a50da5531364ecf0205d410ac0d4b75aa" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>add_interaction</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ab0c990e6e1c1b47dcd7766976e4297b4" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>add_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a5414b856576ca514581bef639cea77cf" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>add_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6c47f704bb058bb9c46d1324967c8c8b" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>ev_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1acea04969c4067024a532b7fadb005ee2" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>find</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1acfc4b15d925b308b762f93aa38d04f23" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_cross_link</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a37f42f9ffc29d43a411179fe4d797585" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_cross_link_length</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a9839edde7a747fd41886dd44dba6cb91" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_cross_link_part_of_filter</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7147996b9081fbc0606c37b784f3d04f" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_end_res</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa68876bfec22a332f3e58ab9c11a1914" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_ev_pair</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ae8372ba3170975b16a9070fe361e62f2" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_interaction</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1af334ce946b15c00c98d9a579e9e8890e" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_interaction_linker_length</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6f12fe51360c06de050fe6a6fb192f6e" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_interaction_part_of_filter</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a5d8b9ed56fb0302c5d8d0ff1ebd05e30" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_num_allowed_violated_cross_links</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1adedf149186733c56ee26088da6e398b4" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_num_allowed_violated_ev</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1afdde2b7bfa8f381637f033c997febbc9" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_num_allowed_violated_interactions</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1add90366c5cc4336651e9282e820d7678" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_number_of_cross_links</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa1500a64000b0fea0d6a260c9cd407e7" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_number_of_ev_pairs</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa5a98d3218250e93f0afe38d86ec5cb8" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_number_of_interactions</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7897c66e4ab0492d9bc21b0219e81cc0" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_number_of_proteins</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a012ff630abb7fe1483fcdcc555882edf" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_protein_data</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a26345023847a7dd6a49c476ad5005f2c" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_protein_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a4edb51a2a4b78129c78206ed1a036e11" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_protein_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a1ee490cf05bc4b9e8e27f4fe47330fb0" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_reference_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a73c1748a44a19ed3064adf8efad666e2" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_start_res</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a7194e3b7aa8e62da03f75d8630aea6f2" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_surface_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a1f79c1222a060146c904cbc1cf100543" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1afa1e74f7eca6ee59f2e7d2a345975133" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsData</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ae87c877a944b380b3c186289eefbb1c4" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>interaction_in_filter_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ab5d2a3f31cf27db2bb1b317ba9ba2366" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>interaction_linker_len_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a60fd1d9615d55bd729e7f2232d1fe657" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>interactions_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a20903c64443b1427d27cbf9ce2441b5f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>num_allowed_violated_ev_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ac73c4d9b3d62bdd171cccccba3f6b753" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>num_allowed_violated_interactions_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a138800425a9a8281b9b3c131b248f163" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>num_allowed_violated_xlinks_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a8a3ece2077f297bdbd6efb2c1e723986" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>prot_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a6fe91bfba53aba0b0114ff9a12e1e968" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>prot_map_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a3963855d9557744d88218534e6b009b6" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>ProteomicsData</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a351169747a2058f8f75076982fd623fe" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>set_num_allowed_violated_cross_links</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a90b8dbbd8e84b9555ffad3edf41ad67f" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>set_num_allowed_violated_ev</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a877f2288d6c176e48d7c19ba2dfb1892" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>set_num_allowed_violated_interactions</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aaaaa360062536e3b9ca3bb2cd07641d4" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>xlink_in_filter_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1ac6d513a2ed363e3b3325b67e7b43cbb5" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>xlink_len_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1a45600f9f57d9a637f7816353b419fb7a" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsData</scope><name>xlinks_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsData_1aa8d45eda1772c246237b1c4000ce9400" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsData</scope><name>~ProteomicsData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="simple__links_8h" kind="file" language="C++">
+    <compoundname>simple_links.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes refid="links_8h" local="yes">links.h</includes>
+    <includes refid="associations_8h" local="yes">associations.h</includes>
+    <includes local="no">IMP/Object.h</includes>
+    <includes local="no">IMP/Pointer.h</includes>
+    <includes local="no">IMP/object_macros.h</includes>
+    <includes local="no">IMP/log_macros.h</includes>
+    <includes local="no">IMP/Model.h</includes>
+    <includes local="no">RMF/RestoreCurrentFrame.h</includes>
+    <includes local="no">RMF/SetCurrentFrame.h</includes>
+    <includes local="no">RMF/names.h</includes>
+    <includes local="no">RMF/decorators.h</includes>
+    <includedby refid="HierarchyLoadLink_8h" local="yes">HierarchyLoadLink.h</includedby>
+    <includedby refid="HierarchySaveLink_8h" local="yes">HierarchySaveLink.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>simple_links.h</label>
+        <link refid="simple__links_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IMP/Model.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/Object.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/log_macros.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/object_macros.h</label>
+      </node>
+      <node id="7">
+        <label>RMF/RestoreCurrentFrame.h</label>
+      </node>
+      <node id="8">
+        <label>RMF/SetCurrentFrame.h</label>
+      </node>
+      <node id="10">
+        <label>RMF/decorators.h</label>
+      </node>
+      <node id="9">
+        <label>RMF/names.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1rmf_1_1SimpleLoadLink" prot="public">IMP::rmf::SimpleLoadLink</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1SimpleSaveLink" prot="public">IMP::rmf::SimpleSaveLink</innerclass>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Manage links between IMP objects and RMF nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/simple_links.h"/>
+  </compounddef>
+</doxygen>

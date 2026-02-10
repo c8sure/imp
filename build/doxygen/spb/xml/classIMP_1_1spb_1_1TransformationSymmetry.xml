@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1TransformationSymmetry" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::TransformationSymmetry</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SingletonModifier</basecompoundref>
+    <includes local="no">IMP/spb/TransformationSymmetry.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TransformationSymmetry_1a95fa8b6dc7932d1e8129d6e0dbbddf15" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::TransformationSymmetry::px_</definition>
+        <argsstring></argsstring>
+        <name>px_</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::px_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="29" column="22" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TransformationSymmetry_1a2af873c180a32d72993907b3dc564d2c" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::TransformationSymmetry::py_</definition>
+        <argsstring></argsstring>
+        <name>py_</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::py_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="30" column="22" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TransformationSymmetry_1a2cfe6777ddf0efc34d65a529764d4d1d" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Particle &gt;</type>
+        <definition>IMP::PointerMember&lt;Particle&gt; IMP::spb::TransformationSymmetry::pz_</definition>
+        <argsstring></argsstring>
+        <name>pz_</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::pz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="31" column="22" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1TransformationSymmetry_1a0faade637e2e3e492d654b8b1a1a4ec9" prot="private" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::spb::TransformationSymmetry::t_</definition>
+        <argsstring></argsstring>
+        <name>t_</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::t_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="28" column="29" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1a989257340df9b52bf7eaac24b0c9fe50" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::spb::TransformationSymmetry::get_transformation</definition>
+        <argsstring>() const</argsstring>
+        <name>get_transformation</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::get_transformation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="34" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1a49ced70bd3d57d215a181624a9b5e116" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3D</type>
+        <definition>algebra::Vector3D IMP::spb::TransformationSymmetry::get_vector</definition>
+        <argsstring>(algebra::Vector3D center) const</argsstring>
+        <name>get_vector</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::get_vector</qualifiedname>
+        <param>
+          <type>algebra::Vector3D</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="33" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1abbd918cd369d5b315141934b20ac0868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::TransformationSymmetry::TransformationSymmetry</definition>
+        <argsstring>(algebra::Transformation3D t, Particle *px, Particle *py, Particle *pz)</argsstring>
+        <name>TransformationSymmetry</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::TransformationSymmetry</qualifiedname>
+        <param>
+          <type>algebra::Transformation3D</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>Particle *</type>
+          <declname>pz</declname>
+        </param>
+        <briefdescription>
+<para>Create with both reflection and translation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="38" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1ae6a597aeb70987363631b056a796ef38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::TransformationSymmetry::~TransformationSymmetry</definition>
+        <argsstring>()</argsstring>
+        <name>~TransformationSymmetry</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::~TransformationSymmetry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="50" column="231" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1ae943600ae937b0f3b30d312af33babd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::TransformationSymmetry::apply_index</definition>
+        <argsstring>(IMP::Model *m, IMP::ParticleIndex p) const override</argsstring>
+        <name>apply_index</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::apply_index</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>IMP::ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="41" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1ad43d6b8cf9e34a70256ffcb1936eab93" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::TransformationSymmetry::apply_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;o, unsigned int lower_bound, unsigned int upper_bound) const override final</argsstring>
+        <name>apply_indexes</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::apply_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="48" column="17" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1a9ab9a05cceaf83ed48ee3b9a053a9eff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::TransformationSymmetry::do_get_inputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::do_get_inputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="43" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1ac96d4863caa65fe5fc21d8d727636f09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::TransformationSymmetry::do_get_outputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_outputs</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::do_get_outputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="45" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1a0e3e4e59f85b331f9a9e84e8e3b9221e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::TransformationSymmetry::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="50" column="34" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1ace73cf7a2f119cdfe73911e25a702712" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::TransformationSymmetry::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="50" column="103" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1TransformationSymmetry_1a5c168a07fecd1d994fa3877630860750" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::TransformationSymmetry::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::TransformationSymmetry::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/TransformationSymmetry.h" line="51" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Set the coordinates of a particle to be a transformed version of a reference. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The passed particles must be Reference particles and XYZ particles and can be RigidBody particles iff the reference particle is a rigid body. <simplesect kind="see"><para>TransformationAndReflectionSymmetry </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/spb/TransformationSymmetry.h" line="27" column="1" bodyfile="include/IMP/spb/TransformationSymmetry.h" bodystart="27" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ae943600ae937b0f3b30d312af33babd6" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>apply_index</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ad43d6b8cf9e34a70256ffcb1936eab93" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>apply_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a9ab9a05cceaf83ed48ee3b9a053a9eff" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ac96d4863caa65fe5fc21d8d727636f09" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>do_get_outputs</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a989257340df9b52bf7eaac24b0c9fe50" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>get_transformation</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a0e3e4e59f85b331f9a9e84e8e3b9221e" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a49ced70bd3d57d215a181624a9b5e116" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>get_vector</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ace73cf7a2f119cdfe73911e25a702712" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a95fa8b6dc7932d1e8129d6e0dbbddf15" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>px_</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a2af873c180a32d72993907b3dc564d2c" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>py_</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a2cfe6777ddf0efc34d65a529764d4d1d" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>pz_</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a5c168a07fecd1d994fa3877630860750" prot="public" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a0faade637e2e3e492d654b8b1a1a4ec9" prot="private" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>t_</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1abbd918cd369d5b315141934b20ac0868" prot="public" virt="non-virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>TransformationSymmetry</name></member>
+      <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ae6a597aeb70987363631b056a796ef38" prot="public" virt="virtual"><scope>IMP::spb::TransformationSymmetry</scope><name>~TransformationSymmetry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

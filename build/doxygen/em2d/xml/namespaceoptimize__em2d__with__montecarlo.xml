@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceoptimize__em2d__with__montecarlo" kind="namespace" language="Python">
+    <compoundname>optimize_em2d_with_montecarlo</compoundname>
+    <innerclass refid="classoptimize__em2d__with__montecarlo_1_1WriteStatisticsOptimizerScore" prot="public">optimize_em2d_with_montecarlo::WriteStatisticsOptimizerScore</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a48ce65c84d0d8f9b0d1fbbfe7a95ff98" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.all_restraints</definition>
+        <argsstring></argsstring>
+        <name>all_restraints</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.all_restraints</qualifiedname>
+        <initializer>=  [r01, r12, r23, r30, em2d_restraints_set]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="145" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a32d0d5ef64b246bdf15536970ef5025a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float optimize_em2d_with_montecarlo.apix</definition>
+        <argsstring></argsstring>
+        <name>apix</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.apix</qualifiedname>
+        <initializer>=  1.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="113" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a9746741fbaa1e040898c3aa78222e02c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.atoms</definition>
+        <argsstring></argsstring>
+        <name>atoms</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.atoms</qualifiedname>
+        <initializer>=  IMP.core.get_leaves(c)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="53" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a089afd4c4f1e302de078e15367093fe7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.bb</qualifiedname>
+        <initializer>=  IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(-25, -40, -60),
+                               IMP.algebra.Vector3D(25, 40, 60))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="61" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1adedb15f99e027079a659fe2ff3b4d54c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.chains</definition>
+        <argsstring></argsstring>
+        <name>chains</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.chains</qualifiedname>
+        <initializer>=  IMP.atom.get_by_type(prot, IMP.atom.CHAIN_TYPE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="46" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a602b1f73608b65aa2e8e5c858f691221" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.coarse_registration_method</definition>
+        <argsstring></argsstring>
+        <name>coarse_registration_method</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.coarse_registration_method</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="124" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1adf62f5e18b518ca930043410ac7c6e41" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.container</definition>
+        <argsstring></argsstring>
+        <name>container</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.container</qualifiedname>
+        <initializer>=  IMP.container.ListSingletonContainer(m, IMP.core.get_leaves(prot))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="134" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a7729d19e85315c183e5b5e5962ac20d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.d01</definition>
+        <argsstring></argsstring>
+        <name>d01</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.d01</qualifiedname>
+        <initializer>=  IMP.algebra.get_distance(
+    native_chain_centers[0], native_chain_centers[1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="81" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1ad0662069a0697cad7c8376518ddf1f2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.d12</definition>
+        <argsstring></argsstring>
+        <name>d12</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.d12</qualifiedname>
+        <initializer>=  IMP.algebra.get_distance(
+    native_chain_centers[1], native_chain_centers[2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="86" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a0dda8b69acfd238f58ea9fb10f0a4339" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.d23</definition>
+        <argsstring></argsstring>
+        <name>d23</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.d23</qualifiedname>
+        <initializer>=  IMP.algebra.get_distance(
+    native_chain_centers[2], native_chain_centers[3])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="91" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a09edb4053074b00fab9e3b9e562bda3f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.d30</definition>
+        <argsstring></argsstring>
+        <name>d30</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.d30</qualifiedname>
+        <initializer>=  IMP.algebra.get_distance(
+    native_chain_centers[3], native_chain_centers[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="96" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a77181139285e55cda981597ca240265f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.em2d_restraint</definition>
+        <argsstring></argsstring>
+        <name>em2d_restraint</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.em2d_restraint</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1Em2DRestraint" kindref="compound">IMP.em2d.Em2DRestraint</ref>(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="112" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1aa65c9cec1c09119497efe04148f3edf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.em2d_restraints_set</definition>
+        <argsstring></argsstring>
+        <name>em2d_restraints_set</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.em2d_restraints_set</qualifiedname>
+        <initializer>=  IMP.RestraintSet(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="136" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1aca8ac2e05d323bbb39856374b8247c6b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.em_images</definition>
+        <argsstring></argsstring>
+        <name>em_images</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.em_images</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1a9b93ce77266955bd99874dbb269fc87c" kindref="member">IMP.em2d.read_images</ref>(images_to_read_names, srw)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="109" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1ae6afbe4558de417593eb49ca311ab542" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.final_transformation</definition>
+        <argsstring></argsstring>
+        <name>final_transformation</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.final_transformation</qualifiedname>
+        <initializer>=  IMP.algebra.compose(
+        transformation1, transformation2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="73" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a43c4b68512a9758cad2fbf4e3d0e8178" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.images_to_read_names</definition>
+        <argsstring></argsstring>
+        <name>images_to_read_names</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.images_to_read_names</qualifiedname>
+        <initializer>=  [IMP.get_relative_path(selection_file, x) for x in
+                        IMP.em2d.read_selection_file(selection_file)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="107" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a7094b2eab1f770082599b741682a84fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="40" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a0a366f0c0095f785fadd24e0eee29986" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.movers</definition>
+        <argsstring></argsstring>
+        <name>movers</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.movers</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="152" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a816e54191d279fd03f1e1b8d65cea862" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optimize_em2d_with_montecarlo.n_projections</definition>
+        <argsstring></argsstring>
+        <name>n_projections</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.n_projections</qualifiedname>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="119" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1aaaa43a945b981ddb0b1feab0474d845a" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.native_chain_centers</definition>
+        <argsstring></argsstring>
+        <name>native_chain_centers</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.native_chain_centers</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="50" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a87926e6b82e62683ff679ae653e30b00" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.new_centers</definition>
+        <argsstring></argsstring>
+        <name>new_centers</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.new_centers</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="178" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a0eca059566dd6599293e744820408a69" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.o_state</definition>
+        <argsstring></argsstring>
+        <name>o_state</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.o_state</qualifiedname>
+        <initializer>=  IMP.atom.WritePDBOptimizerState(chains, &quot;intermediate-step-%1%.pdb&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="158" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a17073d5f03c7d27cbae4a28985782ad8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optimize_em2d_with_montecarlo.optimization_steps</definition>
+        <argsstring></argsstring>
+        <name>optimization_steps</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.optimization_steps</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="169" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1add587f7f4537729837216a2721dc7135" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.ostate2</definition>
+        <argsstring></argsstring>
+        <name>ostate2</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.ostate2</qualifiedname>
+        <initializer>=  WriteStatisticsOptimizerScore(m, all_restraints)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="162" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a6957afcfcd6d7121f09a931a41345223" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.params</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">IMP.em2d.Em2DRestraintParameters</ref>(apix, resolution, n_projections)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="120" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1acb3bfe4252f42b4f93bfcc16174de420" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.prot</definition>
+        <argsstring></argsstring>
+        <name>prot</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.prot</qualifiedname>
+        <initializer>=  IMP.atom.read_pdb(
+    <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(&quot;1z5s.pdb&quot;), m, IMP.atom.ATOMPDBSelector())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="41" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a02ea2193c159e6b60387b5d18578717e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.r01</definition>
+        <argsstring></argsstring>
+        <name>r01</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.r01</qualifiedname>
+        <initializer>=  IMP.core.DistanceRestraint(
+    m, IMP.core.Harmonic(d01, 1), chains[0], chains[1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="83" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1aa772c9f3746970013a1de1dd8ab8f8ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.r12</definition>
+        <argsstring></argsstring>
+        <name>r12</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.r12</qualifiedname>
+        <initializer>=  IMP.core.DistanceRestraint(
+    m, IMP.core.Harmonic(d12, 1), chains[1], chains[2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="88" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a41318abaddcc5ea933fae390b4f3e9f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.r23</definition>
+        <argsstring></argsstring>
+        <name>r23</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.r23</qualifiedname>
+        <initializer>=  IMP.core.DistanceRestraint(
+    m, IMP.core.Harmonic(d23, 1), chains[2], chains[3])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="93" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a8be581ab3d5991779937fab5b0b9c637" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.r30</definition>
+        <argsstring></argsstring>
+        <name>r30</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.r30</qualifiedname>
+        <initializer>=  IMP.core.DistanceRestraint(
+    m, IMP.core.Harmonic(d30, 1), chains[3], chains[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="98" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a8dd6eddb427988f7c36cf62af35c3fff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.rbd</definition>
+        <argsstring></argsstring>
+        <name>rbd</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.rbd</qualifiedname>
+        <initializer>=  IMP.core.RigidBody.setup_particle(c, atoms)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="54" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a2a703b702d21a93ece7c2165c44dc938" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optimize_em2d_with_montecarlo.resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.resolution</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="116" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a7862c70c63e47f49265abc53d15aa8ce" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.rigid_bodies</definition>
+        <argsstring></argsstring>
+        <name>rigid_bodies</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.rigid_bodies</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="51" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1ada56a2d8f9fd19e34458aec1d5f18fc6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.rotation</qualifiedname>
+        <initializer>=  IMP.algebra.get_random_rotation_3d()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="66" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a49fd5be6cdaddb3219f35ba8f5873813" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.s</qualifiedname>
+        <initializer>=  IMP.core.MonteCarlo(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="149" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a6bfdec06ff85684ce01b279502723bc5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.save_match_images</definition>
+        <argsstring></argsstring>
+        <name>save_match_images</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.save_match_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="127" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a830aa27050b0966ba24d1a6f02430ee6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.score_function</definition>
+        <argsstring></argsstring>
+        <name>score_function</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.score_function</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1EM2DScore" kindref="compound">IMP.em2d.EM2DScore</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="129" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a672138e111172924184d6fe95b3d4321" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.selection_file</definition>
+        <argsstring></argsstring>
+        <name>selection_file</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.selection_file</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(&quot;all-1z5s-projections.sel&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="106" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1ace0f687f87b4a94ff1ac23405db8c25a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.sf</qualifiedname>
+        <initializer>=  IMP.core.RestraintsScoringFunction(all_restraints)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="146" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a514bc9a1f4820b581c2aa19715e67787" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.srw</definition>
+        <argsstring></argsstring>
+        <name>srw</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.srw</qualifiedname>
+        <initializer>=  <ref refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter" kindref="compound">IMP.em2d.SpiderImageReaderWriter</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="105" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1abdf82bfcb52e883b1d57a8241301256b" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list optimize_em2d_with_montecarlo.temperatures</definition>
+        <argsstring></argsstring>
+        <name>temperatures</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.temperatures</qualifiedname>
+        <initializer>=  [200, 100, 60, 40, 20, 5]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="166" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1a5789c3a084b32c3b5efe8aff6a272ef1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.transformation1</definition>
+        <argsstring></argsstring>
+        <name>transformation1</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.transformation1</qualifiedname>
+        <initializer>=  IMP.algebra.get_rotation_about_point(
+        rbd.get_coordinates(), rotation)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="67" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__em2d__with__montecarlo_8py_1aeb4ff45224b6536577de0386de52eb1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>optimize_em2d_with_montecarlo.transformation2</definition>
+        <argsstring></argsstring>
+        <name>transformation2</name>
+        <qualifiedname>optimize_em2d_with_montecarlo.transformation2</qualifiedname>
+        <initializer>=  IMP.algebra.Transformation3D(
+        IMP.algebra.get_random_vector_in(bb))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="70" column="1" bodyfile="examples/em2d/optimize_em2d_with_montecarlo.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/em2d/optimize_em2d_with_montecarlo.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1SameRigidBodyPairFilter" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::SameRigidBodyPairFilter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PairPredicate</basecompoundref>
+    <includes local="no">IMP/spb/SameRigidBodyPairFilter.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a47d2a16e0ad714b30ec7ed3afef27437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::SameRigidBodyPairFilter::SameRigidBodyPairFilter</definition>
+        <argsstring>()</argsstring>
+        <name>SameRigidBodyPairFilter</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::SameRigidBodyPairFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1aed8a5a1c7d979e27697b7cb3a7c52bc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::SameRigidBodyPairFilter::~SameRigidBodyPairFilter</definition>
+        <argsstring>()</argsstring>
+        <name>~SameRigidBodyPairFilter</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::~SameRigidBodyPairFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="31" column="231" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a354ce81a4d5ebbad0028660537cd7b57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::SameRigidBodyPairFilter::do_get_inputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::do_get_inputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="27" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1ae644c47f5e26ca3da2da4aded5c0cc0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::SameRigidBodyPairFilter::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="31" column="34" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a02a331dd7dfa5ee7982bf913b85e45a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IMP::spb::SameRigidBodyPairFilter::get_value</definition>
+        <argsstring>(const ParticlePair &amp;a) const</argsstring>
+        <name>get_value</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_value</qualifiedname>
+        <param>
+          <type>const ParticlePair &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="30" column="8" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a43832a9ff1220be69ec8883f70f6dd82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::spb::SameRigidBodyPairFilter::get_value</definition>
+        <argsstring>(const ParticlePairsTemp &amp;o) const</argsstring>
+        <name>get_value</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_value</qualifiedname>
+        <param>
+          <type>const ParticlePairsTemp &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="30" column="123" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1add61f73b92419512960c8d9e901c216c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int IMP::spb::SameRigidBodyPairFilter::get_value_index</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexPair &amp;p) const override</argsstring>
+        <name>get_value_index</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_value_index</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexPair &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="24" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a58970732fbd9205fa20269d5a37f0565" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::spb::SameRigidBodyPairFilter::get_value_index</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;o) const override</argsstring>
+        <name>get_value_index</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_value_index</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="30" column="290" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a06c4b88d18e97ee2df626855a3567ee4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::SameRigidBodyPairFilter::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::SameRigidBodyPairFilter::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="31" column="103" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Filter particles belonging to the same rigid body </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/SameRigidBodyPairFilter.h" line="20" column="1" bodyfile="include/IMP/spb/SameRigidBodyPairFilter.h" bodystart="20" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a354ce81a4d5ebbad0028660537cd7b57" prot="public" virt="virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1ae644c47f5e26ca3da2da4aded5c0cc0a" prot="public" virt="virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a02a331dd7dfa5ee7982bf913b85e45a5" prot="public" virt="non-virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_value</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a43832a9ff1220be69ec8883f70f6dd82" prot="public" virt="non-virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_value</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1add61f73b92419512960c8d9e901c216c" prot="public" virt="virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_value_index</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a58970732fbd9205fa20269d5a37f0565" prot="public" virt="non-virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_value_index</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a06c4b88d18e97ee2df626855a3567ee4" prot="public" virt="virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a47d2a16e0ad714b30ec7ed3afef27437" prot="public" virt="non-virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>SameRigidBodyPairFilter</name></member>
+      <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1aed8a5a1c7d979e27697b7cb3a7c52bc9" prot="public" virt="virtual"><scope>IMP::spb::SameRigidBodyPairFilter</scope><name>~SameRigidBodyPairFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

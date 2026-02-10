@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1EqualitySubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::EqualitySubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::DisjointSetsSubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a8c1d58b6f10eab91ed8ec1bddb0e26d4" prot="private" static="no">
+        <type><ref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" kindref="compound">DisjointSetsSubsetFilterTable</ref></type>
+        <definition>typedef DisjointSetsSubsetFilterTable IMP::domino::EqualitySubsetFilterTable::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="109" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a616d10168b39c8b56768e28b49365274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::EqualitySubsetFilterTable::EqualitySubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>EqualitySubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::EqualitySubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="157" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a4e777dc82d3cac03bffe26eddb42e129" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::EqualitySubsetFilterTable::EqualitySubsetFilterTable</definition>
+        <argsstring>(IMP::domino::ParticleStatesTable *pst)</argsstring>
+        <name>EqualitySubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::EqualitySubsetFilterTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP::domino::ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="125" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a49c6da597a91a480788eb2c134ec3a5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::EqualitySubsetFilterTable::~EqualitySubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~EqualitySubsetFilterTable</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::~EqualitySubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="546" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a999b8886dc88e95d7f0625866f44c086" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::EqualitySubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1add976b9af33451a1242c84f6dd1b5f5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::EqualitySubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a09a545bcc222c922153576ec688cbe3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::EqualitySubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="349" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a2e5c7c5af60dfe0fd7187b049dda8f35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::EqualitySubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::EqualitySubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="228" column="418" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Do not allow two particles to be in the same state. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>If a <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> is passed, then two particles must be in the same state if they have the same <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref>, otherwise, if a ParticlePairs is passed then pairs found in the list must have the same state index. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::EqualitySubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::EqualitySubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="228" column="2" bodyfile="include/IMP/domino/subset_filters.h" bodystart="228" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" prot="public" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>add_pair</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" prot="public" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>add_set</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" prot="protected" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" prot="protected" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a4e777dc82d3cac03bffe26eddb42e129" prot="public" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>EqualitySubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a616d10168b39c8b56768e28b49365274" prot="public" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>EqualitySubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" prot="protected" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_number_of_sets</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" prot="protected" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_set</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a999b8886dc88e95d7f0625866f44c086" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1add976b9af33451a1242c84f6dd1b5f5a" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a09a545bcc222c922153576ec688cbe3b" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a2e5c7c5af60dfe0fd7187b049dda8f35" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a8c1d58b6f10eab91ed8ec1bddb0e26d4" prot="private" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a49c6da597a91a480788eb2c134ec3a5c" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>~EqualitySubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::EqualitySubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/rotamer/examples/rotamer_pdb2.py

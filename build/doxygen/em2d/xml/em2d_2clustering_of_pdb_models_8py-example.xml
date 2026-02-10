@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="em2d_2clustering_of_pdb_models_8py-example" kind="example">
+    <compoundname>em2d/clustering_of_pdb_models.py</compoundname>
+    <briefdescription>
+<para>This example clusters pdb models of an structure, chosen from a selection file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example clusters pdb models of an structure, chosen from a selection file.It is assumed that all the pdb files belong to the same structure and that the order of the atoms in the pdb files is the same in all files.</para>
+<para>After the clustering procedure, a linkage matrix is generated. <programlisting filename="em2d/clustering_of_pdb_models.py"><codeline><highlight class="comment">##<sp/>\example<sp/>em2d/clustering_of_pdb_models.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>clusters<sp/>pdb<sp/>models<sp/>of<sp/>an<sp/>structure,<sp/>chosen<sp/>from<sp/>a</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>selection<sp/>file.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>It<sp/>is<sp/>assumed<sp/>that<sp/>all<sp/>the<sp/>pdb<sp/>files<sp/>belong<sp/>to<sp/>the<sp/>same<sp/>structure</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>and<sp/>that<sp/>the<sp/>order<sp/>of<sp/>the<sp/>atoms<sp/>in<sp/>the<sp/>pdb<sp/>files<sp/>is<sp/>the<sp/>same<sp/>in<sp/>all<sp/>files.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>After<sp/>the<sp/>clustering<sp/>procedure,<sp/>a<sp/>linkage<sp/>matrix<sp/>is<sp/>generated.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1em2d" kindref="compound">IMP.em2d</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>csv</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;clustering<sp/>of<sp/>PDB<sp/>models&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Clustering<sp/>of<sp/>pdb<sp/>models.</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/>script<sp/>clusters<sp/>pdb<sp/>models<sp/>of<sp/>an<sp/>structure,<sp/>chosen<sp/>from<sp/>a</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>selection<sp/>file.</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>-<sp/>It<sp/>is<sp/>assumed<sp/>that<sp/>all<sp/>the<sp/>pdb<sp/>files<sp/>belong<sp/>to<sp/>the<sp/>same<sp/>structure</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>and<sp/>that<sp/>the<sp/>order<sp/>of<sp/>the<sp/>atoms<sp/>in<sp/>the<sp/>pdb<sp/>files<sp/>is<sp/>the<sp/>same<sp/>in<sp/>all<sp/>files</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>-<sp/>After<sp/>the<sp/>clustering<sp/>procedure,<sp/>a<sp/>linkage<sp/>matrix<sp/>is<sp/>generated.</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>sys.platform<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;win32&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sys.stderr.write(</highlight><highlight class="stringliteral">&quot;this<sp/>example<sp/>does<sp/>not<sp/>currently<sp/>work<sp/>on<sp/>Windows\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sys.exit(0)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_columns(fn,<sp/>cols=[],<sp/>delimiter=&quot;<sp/>&quot;,<sp/>comment=&quot;#&quot;):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>ge<sp/>the<sp/>columns<sp/>of<sp/>a<sp/>file:</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cols<sp/>-<sp/>a<sp/>list<sp/>of<sp/>columns<sp/>to<sp/>extract.<sp/>E.g<sp/>[0,3,5]</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>empty,<sp/>all<sp/>the<sp/>columns<sp/>are<sp/>extracted</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lines<sp/>starting<sp/>with<sp/>the<sp/>comment<sp/>character<sp/>are<sp/>ignored<sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>columns<sp/>=<sp/>[[]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>cols]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>a<sp/>reader<sp/>for<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>reader<sp/>=<sp/>csv.reader(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>open(fn,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">),<sp/>delimiter=delimiter,<sp/>skipinitialspace=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>row<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>reader:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(row<sp/>!=<sp/>[]<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>row[0][0]<sp/>!=<sp/>comment):<sp/><sp/></highlight><highlight class="comment">#<sp/>not<sp/>empty<sp/>or<sp/>comment<sp/>row</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(cols<sp/>==<sp/>[]):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>len(row)):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>columns[i].append(row[i])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>len(cols)):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>columns[i].append(row[cols[i]])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>columns</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">argmin(sequence):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>Argmin<sp/>function:<sp/>Returns<sp/>the<sp/>pair<sp/>(min_value,min_index),</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>where<sp/>min_index<sp/>is<sp/>the<sp/>index<sp/>of<sp/>the<sp/>minimum<sp/>value</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>min_value<sp/>=<sp/>sequence[0]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>min_index<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>len(sequence)):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(sequence[i]<sp/>&lt;<sp/>min_value):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_value<sp/>=<sp/>sequence[i]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_index<sp/>=<sp/>i</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>min_value,<sp/>min_index</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">fn_selection<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;all-models-1z5s.sel&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">fn_em2d_scores<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;em2d_scores_for_clustering.data&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Load<sp/>models</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Reading<sp/>models<sp/>...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">model<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">ssel<sp/>=<sp/>IMP.atom.ATOMPDBSelector()</highlight></codeline>
+<codeline><highlight class="normal">coords<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal">fn_models<sp/>=<sp/>IMP.em2d.read_selection_file(fn_selection)</highlight></codeline>
+<codeline><highlight class="normal">n_models<sp/>=<sp/>len(fn_models)</highlight></codeline>
+<codeline><highlight class="normal">hierarchies<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>fn<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>fn_models:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fn_model<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(fn)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>IMP.atom.read_pdb(fn_model,<sp/>model,<sp/>ssel,<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hierarchies.append(h)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>xyz<sp/>=<sp/>IMP.core.XYZs(IMP.atom.get_leaves(h))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>coords.append([x.get_coordinates()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>xyz])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Computing<sp/>matrix<sp/>of<sp/>RMSD<sp/>...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rmsds<sp/>=<sp/>[[0.0<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>n_models)]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>n<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>n_models)]</highlight></codeline>
+<codeline><highlight class="normal">transformations<sp/>=<sp/>[[[]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>n_models)]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>j<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>n_models)]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>fill<sp/>rmsd<sp/>and<sp/>transformations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>n_models):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>j<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(i<sp/>+<sp/>1,<sp/>n_models):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(i<sp/>!=<sp/>j):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/>IMP.algebra.get_transformation_aligning_first_to_second(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coords[i],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coords[j])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transformations[i][j]<sp/>=<sp/>t</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transformations[j][i]<sp/>=<sp/>t.get_inverse()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>[t.get_transformed(v)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>v<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>coords[i]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rmsd<sp/>=<sp/>IMP.algebra.get_rmsd(temp,<sp/>coords[j])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rmsds[i][j]<sp/>=<sp/>rmsd</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rmsds[j][i]<sp/>=<sp/>rmsd</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>cluster</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Clustering<sp/>(Complete<sp/>linkage<sp/>method)...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">cluster_set<sp/>=<sp/>IMP.em2d.do_hierarchical_clustering_complete_linkage(rmsds)</highlight></codeline>
+<codeline><highlight class="normal">mat2<sp/>=<sp/>cluster_set.get_linkage_matrix()</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Complete<sp/>Linkage<sp/>Matrix&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>m<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>mat2:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(m)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Read<sp/>scores<sp/>from<sp/>the<sp/>scores<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">em2d_scores<sp/>=<sp/>get_columns(fn_em2d_scores,<sp/>[1])</highlight></codeline>
+<codeline><highlight class="normal">em2d_scores<sp/>=<sp/>em2d_scores[0]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>get<sp/>biggest<sp/>clusters<sp/>below<sp/>a<sp/>certain<sp/>rmsd</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rmsd_cutoff<sp/>=<sp/>1.4</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;clusters<sp/>below<sp/>cutoff&quot;</highlight><highlight class="normal">,<sp/>rmsd_cutoff,<sp/></highlight><highlight class="stringliteral">&quot;Angstroms&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">clusters<sp/>=<sp/>cluster_set.get_clusters_below_cutoff(rmsd_cutoff)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>clusters:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>elems<sp/>=<sp/>cluster_set.get_cluster_elements(c)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>scores_elements<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>cid<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>elems:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scores_elements.append(em2d_scores[cid])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Cluster&quot;</highlight><highlight class="normal">,<sp/>c,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>elems,<sp/>scores_elements,<sp/>end=</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>find<sp/>model<sp/>with<sp/>best<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>min_value,<sp/>min_index<sp/>=<sp/>argmin(scores_elements)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>min_elem_id<sp/>=<sp/>elems[min_index]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>representative<sp/>element<sp/>is<sp/>the<sp/>one<sp/>with<sp/>the<sp/>minimum<sp/>em2d<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;representative<sp/>element&quot;</highlight><highlight class="normal">,<sp/>min_elem_id,<sp/>min_value)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>elems:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pdb_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;cluster-%03d-elem-%03d.pdb&quot;</highlight><highlight class="normal"><sp/>%<sp/>(c,<sp/>i)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(i<sp/>!=<sp/>min_elem_id):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Writing<sp/>element&quot;</highlight><highlight class="normal">,<sp/>i,<sp/></highlight><highlight class="stringliteral">&quot;aligned<sp/>to<sp/>&quot;</highlight><highlight class="normal">,<sp/>min_elem_id,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pdb_name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>=<sp/>IMP.core.Transform(transformations[i][min_elem_id])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps<sp/>=<sp/>IMP.atom.get_leaves(hierarchies[i])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T.apply_index(model,<sp/>p.get_particle_index())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Writing<sp/>representative<sp/>element&quot;</highlight><highlight class="normal">,<sp/>min_elem_id,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>pdb_name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.atom.write_pdb(hierarchies[i],<sp/>pdb_name)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/em2d/clustering_of_pdb_models.py"/>
+  </compounddef>
+</doxygen>

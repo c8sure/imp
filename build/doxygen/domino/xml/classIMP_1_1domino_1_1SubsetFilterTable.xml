@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1SubsetFilterTable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::domino::SubsetFilterTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::DisjointSetsSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::ListSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::MinimumRestraintScoreSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1PairListSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::PairListSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::ProbabilisticSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::RestraintScoreSubsetFilterTable</derivedcompoundref>
+    <derivedcompoundref refid="classcustom__filter_1_1MyFilterTable" prot="public" virt="non-virtual">custom_filter.MyFilterTable</derivedcompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::SubsetFilterTable::SubsetFilterTable</definition>
+        <argsstring>(std::string name=&quot;SubsetFilterTable%1%&quot;)</argsstring>
+        <name>SubsetFilterTable</name>
+        <qualifiedname>IMP::domino::SubsetFilterTable::SubsetFilterTable</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;SubsetFilterTable%1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="80" column="3" bodyfile="include/IMP/domino/subset_filters.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::SubsetFilterTable::~SubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~SubsetFilterTable</name>
+        <qualifiedname>IMP::domino::SubsetFilterTable::~SubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="95" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::SubsetFilterTable::get_strength</definition>
+        <argsstring>(const Subset &amp;s, const Subsets &amp;prior_subsets) const =0</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::SubsetFilterTable::get_strength</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1a999b8886dc88e95d7f0625866f44c086">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1ad8e11b7bd6f1bb6c5b155a9529ef1d82">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1afaf4a9fb8664923b0eabcb3de862b630">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1afef056d22f6adf21391a906f87856c24">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a6fa55d460daba6d493df8b6aefc5b26d">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1a1ca4fb1e30e643e007f48c372816d98a">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1ad3ac8ec08c800f563ceb0552c9338e47">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1abba1df8888d2bd56e4da89bbb6d3f011">get_strength</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1a94ab65eebb88dd4d75e6d16aeff11007">get_strength</reimplementedby>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="92" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> *</type>
+        <definition>virtual SubsetFilter * IMP::domino::SubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const Subset &amp;s, const Subsets &amp;prior_subsets) const =0</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::SubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable_1add976b9af33451a1242c84f6dd1b5f5a">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable_1a85889920c87005d79278db21d4fbcafb">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable_1abc8c55522e6deb309345f4b0631cfee5">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aac3df5a9304a06e1e245bcf8b7ca041d">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ListSubsetFilterTable_1a28d884c45ae7db6ed2daa028fb3ddb42">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable_1aeec52a6555047ee1d398659e532087c9">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1PairListSubsetFilterTable_1a9b10e836020d595f3e3696308d394282">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a549261d347b1c2df7cf55533629f552e">get_subset_filter</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable_1ac5c3a1ff7b96e313cda93283e4c50602">get_subset_filter</reimplementedby>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="85" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> class which produces <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> objects upon demand. When the <ref refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" kindref="member">get_subset_filter()</ref> method is called, it is passed the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> that is to be filtered. It is also passed subsets of that <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> which have previously been filtered (and so don&apos;t need to be checked again).</para>
+<para>For example, if the passed set is {a,b,c} and the prior_subsets are {a,b} and {b,c}, then only properties than involve a and c need to be checked, as ones involve a and b and b and c have already been checked previously. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::EqualitySubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EqualitySubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::domino::EquivalenceAndExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceAndExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IMP::domino::EquivalenceSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1EquivalenceSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IMP::domino::ExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IMP::domino::ListSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ListSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IMP::domino::MinimumRestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1MinimumRestraintScoreSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>IMP::domino::PairListSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1PairListSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>IMP::domino::ProbabilisticSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>IMP::domino::RestraintScoreSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/domino/subset_filters.h" line="78" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="78" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b" prot="public" virt="pure-virtual"><scope>IMP::domino::SubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" prot="public" virt="pure-virtual"><scope>IMP::domino::SubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::SubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::SubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

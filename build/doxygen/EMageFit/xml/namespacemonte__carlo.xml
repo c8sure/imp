@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacemonte__carlo" kind="namespace" language="Python">
+    <compoundname>monte_carlo</compoundname>
+    <innerclass refid="classmonte__carlo_1_1MonteCarloRelativeMoves" prot="public">monte_carlo::MonteCarloRelativeMoves</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="monte__carlo_8py_1a037abea59f82939a3ccf214e6c7ca4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.set_random_seed</definition>
+        <argsstring>(index)</argsstring>
+        <name>set_random_seed</name>
+        <qualifiedname>monte_carlo.set_random_seed</qualifiedname>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+<para>initializing the random number generator manually is useful for the jobs in the cluster. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seed for the random number generator</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="24" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="24" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/monte_carlo.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

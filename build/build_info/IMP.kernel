@@ -1,0 +1,5 @@
+ok=True
+dependencies = 'NumPy:Boost.Random:Boost.ProgramOptions:Boost.System:Boost.FileSystem'
+unfound_dependencies = 'GPerfTools:TCMalloc_HeapProfiler:TCMalloc_HeapChecker'
+swig_includes = 'IMP_kernel.compiler_warnings.i:IMP_kernel.decorators.i:IMP_kernel.directors.i:IMP_kernel.exceptions.i:IMP_kernel.import_numpy.i:IMP_kernel.refcount.i:IMP_kernel.streams.i:IMP_kernel.streams_kernel.i:IMP_kernel.types.i:IMP/base_macros.h:IMP/bracket_macros.h:IMP/check_macros.h:IMP/comparison_macros.h:IMP/compiler_macros.h:IMP/container_macros.h:IMP/decorator_macros.h:IMP/deprecation_macros.h:IMP/doxygen_macros.h:IMP/graph_macros.h:IMP/hash_macros.h:IMP/log_macros.h:IMP/object_macros.h:IMP/pair_macros.h:IMP/quad_macros.h:IMP/raii_macros.h:IMP/ref_counted_macros.h:IMP/set_map_macros.h:IMP/showable_macros.h:IMP/singleton_macros.h:IMP/swap_macros.h:IMP/swig_macros.h:IMP/thread_macros.h:IMP/triplet_macros.h:IMP/tuple_macros.h:IMP/utility_macros.h:IMP/value_macros.h:IMP/warning_macros.h'
+swig_wrapper_includes = 'IMP/internal/swig.h:IMP/internal/swig_base.h:IMP/internal/swig_helpers.h:IMP/internal/swig_helpers_base.h'

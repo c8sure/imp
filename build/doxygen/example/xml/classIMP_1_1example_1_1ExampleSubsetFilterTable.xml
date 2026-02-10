@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/example/ExampleSubsetFilterTable.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1acdc1cf07a4ff535883bec1f08b1c8ed9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::example::ExampleSubsetFilterTable::max_diff_</definition>
+        <argsstring></argsstring>
+        <name>max_diff_</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::max_diff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="26" column="7" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a17de41fd0d37826bbc8640e8f3c847c7" prot="private" static="no" mutable="no">
+        <type>const Particles</type>
+        <definition>const Particles IMP::example::ExampleSubsetFilterTable::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="27" column="19" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a67dd0cfc4f62d75ee449c54db9ae5460" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Ints</type>
+        <definition>Ints IMP::example::ExampleSubsetFilterTable::get_indexes</definition>
+        <argsstring>(const domino::Subset &amp;s, const domino::Subsets &amp;prior_subsets) const</argsstring>
+        <name>get_indexes</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::get_indexes</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="28" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a8818c6a1dc76d2797609a09268e2d621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleSubsetFilterTable::ExampleSubsetFilterTable</definition>
+        <argsstring>(unsigned int max_diff, const ParticlesTemp &amp;pt)</argsstring>
+        <name>ExampleSubsetFilterTable</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::ExampleSubsetFilterTable</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_diff</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1aadb3bc766069259011cbeb54989a40d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleSubsetFilterTable::~ExampleSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleSubsetFilterTable</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::~ExampleSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="41" column="231" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a4ca72767530ac8b8ac22c470ddaf9003" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::example::ExampleSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a17556649b7131f2d02993193c7c726c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::example::ExampleSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>excluded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="35" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a9eda685c33a279ad03e26e6df3fc84eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="41" column="34" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a6b0cc7d3de0999d6415620e36d72ebce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="41" column="103" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Filter a set of particles based on the maximum difference in state indexes between them (a completely silly criteria). The thing to note is how the filter table determines when it should be applied and how it sets up the filters. <programlisting filename="ExampleSubsetFilterTable.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleSubsetFilterTable.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>Score<sp/>on<sp/>the<sp/>distance<sp/>between<sp/>a<sp/>pair<sp/>of<sp/>particles.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_SUBSET_FILTER_TABLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_SUBSET_FILTER_TABLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/domino/subset_filters.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/domino/domino_macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">/**<sp/>Filter<sp/>a<sp/>set<sp/>of<sp/>particles<sp/>based<sp/>on<sp/>the<sp/>maximum<sp/>difference</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>in<sp/>state<sp/>indexes<sp/>between<sp/>them<sp/>(a<sp/>completely<sp/>silly<sp/>criteria).</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>thing<sp/>to<sp/>note<sp/>is<sp/>how<sp/>the<sp/>filter<sp/>table<sp/>determines<sp/>when</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>should<sp/>be<sp/>applied<sp/>and<sp/>how<sp/>it<sp/>sets<sp/>up<sp/>the<sp/>filters.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleSubsetFilterTable.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleSubsetFilterTable.cpp</highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleSubsetFilterTable</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>domino::SubsetFilterTable<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_diff_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Particles<sp/>ps_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Ints<sp/>get_indexes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subset<sp/>&amp;s,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subsets<sp/>&amp;prior_subsets)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleSubsetFilterTable(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_diff,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticlesTemp<sp/>&amp;pt);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IMP::domino::SubsetFilter<sp/>*get_subset_filter(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::domino::Subset<sp/>&amp;s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subsets</ref><sp/>&amp;excluded)<sp/></highlight><highlight class="keyword">const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_strength(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::domino::Subset<sp/>&amp;s,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Subsets</ref><sp/>&amp;excluded)<sp/></highlight><highlight class="keyword">const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleSubsetFilterTable);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_SUBSET_FILTER_TABLE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleSubsetFilterTable.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>ExampleSubsetFilterTable.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>Score<sp/>on<sp/>the<sp/>distance<sp/>between<sp/>a<sp/>pair<sp/>of<sp/>particles.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/ExampleSubsetFilterTable.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExampleSubsetFilter<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>domino::SubsetFilter<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Ints<sp/>indices_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleSubsetFilter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ints&amp;<sp/>indices,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>domino::SubsetFilter(</highlight><highlight class="stringliteral">&quot;ExampleSubsetFilter%1%&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indices_(indices),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_(max)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>get_is_ok(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IMP::domino::Assignment&amp;<sp/>assignment)<sp/></highlight><highlight class="keyword">const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleSubsetFilter);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ExampleSubsetFilter::get_is_ok(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Assignment&amp;<sp/>a)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>indices_.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indices_[i]<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>the<sp/>non-all<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>i;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indices_[j]<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>the<sp/>non-all<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(a[indices_[i<sp/>-<sp/>1]]<sp/>-<sp/>a[indices_[i]])<sp/>&gt;<sp/>max_)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExampleSubsetFilterTable::ExampleSubsetFilterTable(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_diff,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticlesTemp&amp;<sp/>ps)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>domino::SubsetFilterTable(</highlight><highlight class="stringliteral">&quot;ExampleSubsetFilterTable%1%&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>max_diff_(max_diff),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ps_(ps.begin(),<sp/>ps.end())<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Ints<sp/>ExampleSubsetFilterTable::get_indexes(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subset&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subsets&amp;<sp/>prior_subsets)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>method<sp/>is<sp/>only<sp/>called<sp/>from<sp/>setup<sp/>code,<sp/>so<sp/>it<sp/>doesn&apos;t</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>have<sp/>to<sp/>be<sp/>too<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Ints<sp/>ret(ps_.size(),<sp/>-1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>s.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>ps_.size();<sp/>++j)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s[i]<sp/>==<sp/>ps_[j])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret[j]<sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ret.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret[i]<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ints();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>we<sp/>have<sp/>seen<sp/>them<sp/>already).</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>prior_subsets.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>prior_subsets[i].size();<sp/>++j)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>ps_.size();<sp/>++k)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prior_subsets[i][j]<sp/>==<sp/>ps_[k])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++count;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>==<sp/>ps_.size())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ints();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ExampleSubsetFilterTable::get_strength(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subset&amp;<sp/>cur_subset,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subsets&amp;<sp/>prior_subsets)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_LOG;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(get_indexes(cur_subset,<sp/>prior_subsets).size()<sp/>!=<sp/>ps_.size())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pick<sp/>some<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>.5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">domino::SubsetFilter*<sp/>ExampleSubsetFilterTable::get_subset_filter(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subset&amp;<sp/>cur_subset,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>domino::Subsets&amp;<sp/>prior_subsets)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_LOG;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Ints<sp/>its<sp/>=<sp/>get_indexes(cur_subset,<sp/>prior_subsets);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(its.size()<sp/>!=<sp/>ps_.size())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>either<sp/>the<sp/>subset<sp/>doesn&apos;t<sp/>contain<sp/>the<sp/>needed<sp/>particles<sp/>or<sp/>the<sp/>prior<sp/>does</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP_NEW(ExampleSubsetFilter,<sp/>ret,<sp/>(its,<sp/>max_diff_));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remember<sp/>to<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret.release();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::example::ExampleSubsetFilterTable</label>
+        <link refid="classIMP_1_1example_1_1ExampleSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::example::ExampleSubsetFilterTable</label>
+        <link refid="classIMP_1_1example_1_1ExampleSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/example/ExampleSubsetFilterTable.h" line="24" column="1" bodyfile="include/IMP/example/ExampleSubsetFilterTable.h" bodystart="25" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a8818c6a1dc76d2797609a09268e2d621" prot="public" virt="non-virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>ExampleSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a67dd0cfc4f62d75ee449c54db9ae5460" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>get_indexes</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a4ca72767530ac8b8ac22c470ddaf9003" prot="public" virt="virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a17556649b7131f2d02993193c7c726c5" prot="public" virt="virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a9eda685c33a279ad03e26e6df3fc84eb" prot="public" virt="virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a6b0cc7d3de0999d6415620e36d72ebce" prot="public" virt="virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1acdc1cf07a4ff535883bec1f08b1c8ed9" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>max_diff_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1a17de41fd0d37826bbc8640e8f3c847c7" prot="private" virt="non-virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleSubsetFilterTable_1aadb3bc766069259011cbeb54989a40d8" prot="public" virt="virtual"><scope>IMP::example::ExampleSubsetFilterTable</scope><name>~ExampleSubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

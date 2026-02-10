@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="em2d_2optimize_em2d_with_montecarlo_8py-example" kind="example">
+    <compoundname>em2d/optimize_em2d_with_montecarlo.py</compoundname>
+    <briefdescription>
+<para>Example of optimizing an EM2D restraint using Monte Carlo. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Example of optimizing an EM2D restraint using Monte Carlo. <programlisting filename="em2d/optimize_em2d_with_montecarlo.py"><codeline><highlight class="comment">##<sp/>\example<sp/>em2d/optimize_em2d_with_montecarlo.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Example<sp/>of<sp/>optimizing<sp/>an<sp/>EM2D<sp/>restraint<sp/>using<sp/>Monte<sp/>Carlo.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1em2d" kindref="compound">IMP.em2d</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;optimize<sp/>EM2D<sp/>with<sp/>MonteCarlo&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>An<sp/>Optimizer<sp/>score<sp/>to<sp/>get<sp/>the<sp/>values<sp/>of<sp/>the<sp/>statistics<sp/>after<sp/>a<sp/>given<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>of<sp/>evaluations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">WriteStatisticsOptimizerScore(IMP.OptimizerState):</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>m,<sp/>restraints):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().__init__(m,<sp/></highlight><highlight class="stringliteral">&quot;WriteStats&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.count<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.restraints<sp/>=<sp/>restraints</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">update(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(self.count<sp/>!=<sp/>10):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.count<sp/>+=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.count<sp/>=<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.restraints:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(r.get_name(),<sp/>r.get_last_score())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>i<sp/>in<sp/>range(0,m.get_number_of_restraints()):</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/>r=m.get_restraint(i)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/>print<sp/>&quot;restraint&quot;,r.get_name(),&quot;value&quot;,r.evaluate(False)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Get<sp/>model<sp/>from<sp/>PDB<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.TERSE)</highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">prot<sp/>=<sp/>IMP.atom.read_pdb(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;1z5s.pdb&quot;</highlight><highlight class="normal">),<sp/>m,<sp/>IMP.atom.ATOMPDBSelector())</highlight></codeline>
+<codeline><highlight class="normal">IMP.atom.add_radii(prot)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>get<sp/>the<sp/>chains</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">chains<sp/>=<sp/>IMP.atom.get_by_type(prot,<sp/>IMP.atom.CHAIN_TYPE)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;there<sp/>are&quot;</highlight><highlight class="normal">,<sp/>len(chains),<sp/></highlight><highlight class="stringliteral">&quot;chains<sp/>in<sp/>1z5s.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>set<sp/>the<sp/>chains<sp/>as<sp/>rigid<sp/>bodies</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">native_chain_centers<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal">rigid_bodies<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chains:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>atoms<sp/>=<sp/>IMP.core.get_leaves(c)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rbd<sp/>=<sp/>IMP.core.RigidBody.setup_particle(c,<sp/>atoms)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rbd.set_coordinates_are_optimized(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rigid_bodies.append(rbd)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;chain<sp/>has&quot;</highlight><highlight class="normal">,<sp/>rbd.get_number_of_members(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;atoms&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;coordinates:<sp/>&quot;</highlight><highlight class="normal">,<sp/>rbd.get_coordinates())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>native_chain_centers.append(rbd.get_coordinates())</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox3D(IMP.algebra.Vector3D(-25,<sp/>-40,<sp/>-60),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector3D(25,<sp/>40,<sp/>60))</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>rotate<sp/>and<sp/>translate<sp/>the<sp/>chains</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>rbd<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>rigid_bodies:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>rotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rotation<sp/>=<sp/>IMP.algebra.get_random_rotation_3d()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>transformation1<sp/>=<sp/>IMP.algebra.get_rotation_about_point(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rbd.get_coordinates(),<sp/>rotation)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>translation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>transformation2<sp/>=<sp/>IMP.algebra.Transformation3D(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.get_random_vector_in(bb))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Apply</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>final_transformation<sp/>=<sp/>IMP.algebra.compose(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transformation1,<sp/>transformation2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.core.transform(rbd,<sp/>final_transformation)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Writing<sp/>transformed<sp/>assembly&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">IMP.atom.write_pdb(prot,<sp/></highlight><highlight class="stringliteral">&quot;1z5s-transformed.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>set<sp/>distance<sp/>restraints<sp/>measuring<sp/>some<sp/>distances<sp/>between<sp/>rigid<sp/>bodies</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>for<sp/>the<sp/>solution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">d01<sp/>=<sp/>IMP.algebra.get_distance(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>native_chain_centers[0],<sp/>native_chain_centers[1])</highlight></codeline>
+<codeline><highlight class="normal">r01<sp/>=<sp/>IMP.core.DistanceRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.Harmonic(d01,<sp/>1),<sp/>chains[0],<sp/>chains[1])</highlight></codeline>
+<codeline><highlight class="normal">r01.set_name(</highlight><highlight class="stringliteral">&quot;distance<sp/>0-1&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">d12<sp/>=<sp/>IMP.algebra.get_distance(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>native_chain_centers[1],<sp/>native_chain_centers[2])</highlight></codeline>
+<codeline><highlight class="normal">r12<sp/>=<sp/>IMP.core.DistanceRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.Harmonic(d12,<sp/>1),<sp/>chains[1],<sp/>chains[2])</highlight></codeline>
+<codeline><highlight class="normal">r12.set_name(</highlight><highlight class="stringliteral">&quot;distance<sp/>1-2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">d23<sp/>=<sp/>IMP.algebra.get_distance(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>native_chain_centers[2],<sp/>native_chain_centers[3])</highlight></codeline>
+<codeline><highlight class="normal">r23<sp/>=<sp/>IMP.core.DistanceRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.Harmonic(d23,<sp/>1),<sp/>chains[2],<sp/>chains[3])</highlight></codeline>
+<codeline><highlight class="normal">r23.set_name(</highlight><highlight class="stringliteral">&quot;distance<sp/>2-3&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">d30<sp/>=<sp/>IMP.algebra.get_distance(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>native_chain_centers[3],<sp/>native_chain_centers[0])</highlight></codeline>
+<codeline><highlight class="normal">r30<sp/>=<sp/>IMP.core.DistanceRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.Harmonic(d30,<sp/>1),<sp/>chains[3],<sp/>chains[0])</highlight></codeline>
+<codeline><highlight class="normal">r30.set_name(</highlight><highlight class="stringliteral">&quot;distance<sp/>3-0&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Distances<sp/>in<sp/>the<sp/>solution:<sp/>d01<sp/>=&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d01,<sp/></highlight><highlight class="stringliteral">&quot;d12<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d12,<sp/></highlight><highlight class="stringliteral">&quot;d23<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d23,<sp/></highlight><highlight class="stringliteral">&quot;d30<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d30)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>set<sp/>em2D<sp/>restraint</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">srw<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter" kindref="compound">IMP.em2d.SpiderImageReaderWriter</ref>()</highlight></codeline>
+<codeline><highlight class="normal">selection_file<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;all-1z5s-projections.sel&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">images_to_read_names<sp/>=<sp/>[IMP.get_relative_path(selection_file,<sp/>x)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.em2d.read_selection_file(selection_file)]</highlight></codeline>
+<codeline><highlight class="normal">em_images<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1a9b93ce77266955bd99874dbb269fc87c" kindref="member">IMP.em2d.read_images</ref>(images_to_read_names,<sp/>srw)</highlight></codeline>
+<codeline><highlight class="normal">print(len(em_images),<sp/></highlight><highlight class="stringliteral">&quot;images<sp/>read&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1Em2DRestraint" kindref="compound">IMP.em2d.Em2DRestraint</ref>(m)</highlight></codeline>
+<codeline><highlight class="normal">apix<sp/>=<sp/>1.5<sp/><sp/></highlight><highlight class="comment">#<sp/>sampling<sp/>rate<sp/>of<sp/>the<sp/>available<sp/>EM<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>resolution<sp/>at<sp/>which<sp/>you<sp/>want<sp/>to<sp/>generate<sp/>the<sp/>projections<sp/>of<sp/>the<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>In<sp/>principle<sp/>you<sp/>want<sp/>&quot;perfect&quot;<sp/>projections,<sp/>so<sp/>use<sp/>the<sp/>highest<sp/>resolution</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">resolution<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Number<sp/>of<sp/>projections<sp/>to<sp/>use<sp/>for<sp/>the<sp/>initial<sp/>registration</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/>(coarse<sp/>registration)<sp/>to<sp/>estimate<sp/>the<sp/>registration<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">n_projections<sp/>=<sp/>20</highlight></codeline>
+<codeline><highlight class="normal">params<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1Em2DRestraintParameters" kindref="compound">IMP.em2d.Em2DRestraintParameters</ref>(apix,<sp/>resolution,<sp/>n_projections)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>method<sp/>(recommended)<sp/>uses<sp/>preprocessing<sp/>of<sp/>the<sp/>images<sp/>and<sp/>projections</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>to<sp/>speed-up<sp/>the<sp/>registration</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">params.coarse_registration_method<sp/>=<sp/>IMP.em2d.ALIGN2D_PREPROCESSING</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>use<sp/>true<sp/>if<sp/>you<sp/>want<sp/>to<sp/>save<sp/>the<sp/>projections<sp/>from<sp/>the<sp/>model<sp/>that<sp/>best</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>match<sp/>the<sp/>Em<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">params.save_match_images<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">score_function<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1EM2DScore" kindref="compound">IMP.em2d.EM2DScore</ref>()</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1Em2DRestraint" kindref="compound">IMP.em2d.Em2DRestraint</ref>(m)</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint.setup(score_function,<sp/>params)</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint.set_images(em_images)</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint.set_name(</highlight><highlight class="stringliteral">&quot;em2d<sp/>restraint&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">container<sp/>=<sp/>IMP.container.ListSingletonContainer(m,<sp/>IMP.core.get_leaves(prot))</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraint.set_particles(container)</highlight></codeline>
+<codeline><highlight class="normal">em2d_restraints_set<sp/>=<sp/>IMP.RestraintSet(m)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>next<sp/>two<sp/>lines<sp/>are<sp/>commented,<sp/>because<sp/>the<sp/>optimization<sp/>of<sp/>the<sp/>example</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>is<sp/>expensive.<sp/>To<sp/>run<sp/>the<sp/>full<sp/>example,<sp/>uncomment<sp/>them<sp/>(It<sp/>can<sp/>take<sp/>a<sp/>few</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>hours).</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>em2d_restraints_set.add_restraint(em2d_restraint)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>em2d_restraints_set.set_weight(1000)<sp/>#<sp/>weight<sp/>for<sp/>the<sp/>em2D<sp/>restraint</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>scoring<sp/>function<sp/>using<sp/>all<sp/>restraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">all_restraints<sp/>=<sp/>[r01,<sp/>r12,<sp/>r23,<sp/>r30,<sp/>em2d_restraints_set]</highlight></codeline>
+<codeline><highlight class="normal">sf<sp/>=<sp/>IMP.core.RestraintsScoringFunction(all_restraints)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>MONTECARLO<sp/>OPTIMIZATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>IMP.core.MonteCarlo(m)</highlight></codeline>
+<codeline><highlight class="normal">s.set_scoring_function(sf)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>movers<sp/>for<sp/>the<sp/>rigid<sp/>bodies</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">movers<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>rbd<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>rigid_bodies:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>movers.append(IMP.core.RigidBodyMover(m,<sp/>rbd,<sp/>5,<sp/>2))</highlight></codeline>
+<codeline><highlight class="normal">s.add_movers(movers)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;MonteCarlo<sp/>sampler<sp/>has&quot;</highlight><highlight class="normal">,<sp/>s.get_number_of_movers(),<sp/></highlight><highlight class="stringliteral">&quot;movers&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>an<sp/>optimizer<sp/>state<sp/>to<sp/>save<sp/>intermediate<sp/>configurations<sp/>of<sp/>the<sp/>hierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">o_state<sp/>=<sp/>IMP.atom.WritePDBOptimizerState(chains,<sp/></highlight><highlight class="stringliteral">&quot;intermediate-step-%1%.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">o_state.set_period(10)</highlight></codeline>
+<codeline><highlight class="normal">s.add_optimizer_state(o_state)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ostate2<sp/>=<sp/>WriteStatisticsOptimizerScore(m,<sp/>all_restraints)</highlight></codeline>
+<codeline><highlight class="normal">s.add_optimizer_state(ostate2)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Perform<sp/>optimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">temperatures<sp/>=<sp/>[200,<sp/>100,<sp/>60,<sp/>40,<sp/>20,<sp/>5]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>200<sp/>steps<sp/>recommended<sp/>for<sp/>accurate<sp/>optimization;<sp/>a<sp/>smaller<sp/>number<sp/>is<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>here<sp/>for<sp/>demonstration<sp/>purposes</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">optimization_steps<sp/>=<sp/>10</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>T<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>temperatures:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_kt(T)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.optimize(optimization_steps)</highlight></codeline>
+<codeline><highlight class="normal">IMP.atom.write_pdb(prot,<sp/></highlight><highlight class="stringliteral">&quot;solution.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Check<sp/>that<sp/>the<sp/>optimization<sp/>achieves<sp/>distances<sp/>close<sp/>to<sp/>the<sp/>solution</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;***<sp/>End<sp/>optimization<sp/>***&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">new_centers<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>rbd<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>rigid_bodies:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;chain<sp/>has&quot;</highlight><highlight class="normal">,<sp/>rbd.get_number_of_members(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;atoms&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;coordinates:<sp/>&quot;</highlight><highlight class="normal">,<sp/>rbd.get_coordinates())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>new_centers.append(rbd.get_coordinates())</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">d01<sp/>=<sp/>IMP.algebra.get_distance(new_centers[0],<sp/>new_centers[1])</highlight></codeline>
+<codeline><highlight class="normal">d12<sp/>=<sp/>IMP.algebra.get_distance(new_centers[1],<sp/>new_centers[2])</highlight></codeline>
+<codeline><highlight class="normal">d23<sp/>=<sp/>IMP.algebra.get_distance(new_centers[2],<sp/>new_centers[3])</highlight></codeline>
+<codeline><highlight class="normal">d30<sp/>=<sp/>IMP.algebra.get_distance(new_centers[3],<sp/>new_centers[0])</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Distances<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>optimization:<sp/>d01<sp/>=&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d01,<sp/></highlight><highlight class="stringliteral">&quot;d12<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d12,<sp/></highlight><highlight class="stringliteral">&quot;d23<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d23,<sp/></highlight><highlight class="stringliteral">&quot;d30<sp/>=&quot;</highlight><highlight class="normal">,<sp/>d30)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/em2d/optimize_em2d_with_montecarlo.py"/>
+  </compounddef>
+</doxygen>

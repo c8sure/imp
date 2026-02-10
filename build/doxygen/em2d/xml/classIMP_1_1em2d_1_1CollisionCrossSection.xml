@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1CollisionCrossSection" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::CollisionCrossSection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/em2d/CollisionCrossSection.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1abd04769d789f8c44160dd27703e4fa4d" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::CollisionCrossSection::average_projection_</definition>
+        <argsstring></argsstring>
+        <name>average_projection_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::average_projection_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="69" column="11" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a4a4151b170ada5b7e9e3cee49f6b31d9" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::CollisionCrossSection::collision_cross_section_</definition>
+        <argsstring></argsstring>
+        <name>collision_cross_section_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::collision_cross_section_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="71" column="10" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a7c9c6a6d0635cd16a83ccccc79a7cb55" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::CollisionCrossSection::img_size_</definition>
+        <argsstring></argsstring>
+        <name>img_size_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::img_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="66" column="16" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1af5a2c783cadb6a84fbb33481db6a3968" prot="protected" static="no" mutable="no">
+        <type>em2d::MasksManagerPtr</type>
+        <definition>em2d::MasksManagerPtr IMP::em2d::CollisionCrossSection::masks_manager_</definition>
+        <argsstring></argsstring>
+        <name>masks_manager_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::masks_manager_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="70" column="25" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a39ce2831909875e6162dffbd6bdd474b" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::CollisionCrossSection::n_projections_</definition>
+        <argsstring></argsstring>
+        <name>n_projections_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::n_projections_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="63" column="16" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1aac580d4897fb5b3bed70eec4e761ce77" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::CollisionCrossSection::particles_set_</definition>
+        <argsstring></argsstring>
+        <name>particles_set_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::particles_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="67" column="8" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a50b21a8b15560ac1f5da105741738c27" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::CollisionCrossSection::pixel_size_</definition>
+        <argsstring></argsstring>
+        <name>pixel_size_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::pixel_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="65" column="10" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1aa201094a9bc6dd21f4d2cc2b68361e80" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1em2d_1a3e4345838dd19ac6916efcfd5cfda67a" kindref="member">em2d::RegistrationResults</ref></type>
+        <definition>em2d::RegistrationResults IMP::em2d::CollisionCrossSection::regs_</definition>
+        <argsstring></argsstring>
+        <name>regs_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::regs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="68" column="29" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1CollisionCrossSection_1ad797a4be37885af0bfb71730c8d10c94" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::CollisionCrossSection::resolution_</definition>
+        <argsstring></argsstring>
+        <name>resolution_</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::resolution_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="64" column="10" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a391339711268e011e02b05ee00b2cce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::CollisionCrossSection::CollisionCrossSection</definition>
+        <argsstring>(unsigned int n_projections, double resolution, double pixel_size, double projection_image_size)</argsstring>
+        <name>CollisionCrossSection</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::CollisionCrossSection</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n_projections</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pixel_size</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>projection_image_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n_projections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of projections to use for obtaining the CCS </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;Resolution&quot; to use to generate the projections. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pixel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size in A/pix to use when generating the projections </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">projection_image_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the projections to generate; for this value you should request a size so that pixel_size * projection_image_size &gt;= Max distance between two particles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1af135f38fade26a1a94423a773763a6df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::CollisionCrossSection::~CollisionCrossSection</definition>
+        <argsstring>()</argsstring>
+        <name>~CollisionCrossSection</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::~CollisionCrossSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="54" column="231" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a734cf8f2b870a104e933ad70339033a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::CollisionCrossSection::get_ccs</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ccs</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::get_ccs</qualifiedname>
+        <briefdescription>
+<para>Returns the collision cross section. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Before using this function you need to set the particles with <ref refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a641e2398d4dbaeed9518116f42e6bcf8" kindref="member">set_model_particles()</ref> <simplesect kind="return"><para>The collision cross section </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a844cdf39fc105ed18f603ec9a1c8acdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::CollisionCrossSection::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="54" column="34" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a76c4e020f522fae45a51719605baa3ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::CollisionCrossSection::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="54" column="103" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a641e2398d4dbaeed9518116f42e6bcf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::CollisionCrossSection::set_model_particles</definition>
+        <argsstring>(const ParticlesTemp &amp;ps)</argsstring>
+        <name>set_model_particles</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::set_model_particles</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Particles used to calculate their collision cross section <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1a3db1c4a8c496a58b3e35fe3b6f66a770" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::CollisionCrossSection::show</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Shows information about the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream used to show the information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="51" column="8" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1CollisionCrossSection_1ae28c3cce22085bb5f5f0556564f700df" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::CollisionCrossSection::get_projected_area</definition>
+        <argsstring>(const cv::Mat &amp;m) const</argsstring>
+        <name>get_projected_area</name>
+        <qualifiedname>IMP::em2d::CollisionCrossSection::get_projected_area</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Gets the sum of the values in the pixels with value &gt; 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The projected area is computed for this matrix </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Values of the area </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/CollisionCrossSection.h" line="61" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Determine the collision cross section for some projections of particles. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/CollisionCrossSection.h" line="21" column="1" bodyfile="include/IMP/em2d/CollisionCrossSection.h" bodystart="21" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1abd04769d789f8c44160dd27703e4fa4d" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>average_projection_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a4a4151b170ada5b7e9e3cee49f6b31d9" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>collision_cross_section_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a391339711268e011e02b05ee00b2cce7" prot="public" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>CollisionCrossSection</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a734cf8f2b870a104e933ad70339033a1" prot="public" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>get_ccs</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1ae28c3cce22085bb5f5f0556564f700df" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>get_projected_area</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a844cdf39fc105ed18f603ec9a1c8acdb" prot="public" virt="virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a76c4e020f522fae45a51719605baa3ad" prot="public" virt="virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a7c9c6a6d0635cd16a83ccccc79a7cb55" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>img_size_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1af5a2c783cadb6a84fbb33481db6a3968" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>masks_manager_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a39ce2831909875e6162dffbd6bdd474b" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>n_projections_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1aac580d4897fb5b3bed70eec4e761ce77" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>particles_set_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a50b21a8b15560ac1f5da105741738c27" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>pixel_size_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1aa201094a9bc6dd21f4d2cc2b68361e80" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>regs_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1ad797a4be37885af0bfb71730c8d10c94" prot="protected" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>resolution_</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a641e2398d4dbaeed9518116f42e6bcf8" prot="public" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>set_model_particles</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1a3db1c4a8c496a58b3e35fe3b6f66a770" prot="public" virt="non-virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1CollisionCrossSection_1af135f38fade26a1a94423a773763a6df" prot="public" virt="virtual"><scope>IMP::em2d::CollisionCrossSection</scope><name>~CollisionCrossSection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

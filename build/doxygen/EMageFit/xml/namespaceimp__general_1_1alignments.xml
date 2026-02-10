@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceimp__general_1_1alignments" kind="namespace" language="Python">
+    <compoundname>imp_general::alignments</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="alignments_8py_1af52f8307f4a4ff5e21834244a68140ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.alignments.align_centroids_using_pca</definition>
+        <argsstring>(ref_frames, ref_frames_reference)</argsstring>
+        <name>align_centroids_using_pca</name>
+        <qualifiedname>imp_general.alignments.align_centroids_using_pca</qualifiedname>
+        <param>
+          <type>ref_frames</type>
+          <defname>ref_frames</defname>
+        </param>
+        <param>
+          <type>ref_frames_reference</type>
+          <defname>ref_frames_reference</defname>
+        </param>
+        <briefdescription>
+<para>Align the centroids of 2 sets of rigid bodies using PCA using their reference frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the best rmsd and the ref_frames to get it.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/alignments.py" line="40" column="1" bodyfile="lib/IMP/EMageFit/imp_general/alignments.py" bodystart="40" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="alignments_8py_1a3dfe488ddff8c99a3a2f52705ba19a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.alignments.get_reference_frames_aligning_rbs</definition>
+        <argsstring>(rbs, reference_rbs)</argsstring>
+        <name>get_reference_frames_aligning_rbs</name>
+        <qualifiedname>imp_general.alignments.get_reference_frames_aligning_rbs</qualifiedname>
+        <param>
+          <type>rbs</type>
+          <defname>rbs</defname>
+        </param>
+        <param>
+          <type>reference_rbs</type>
+          <defname>reference_rbs</defname>
+        </param>
+        <briefdescription>
+<para>rbs = rigid bodies </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/alignments.py" line="68" column="1" bodyfile="lib/IMP/EMageFit/imp_general/alignments.py" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="alignments_8py_1a76ffff5a5bf3e6a006ec655d727a2e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.alignments.get_reference_frames_from_chain_alignment</definition>
+        <argsstring>(reference_rbs, reference_index, rbs_to_align, index_to_align)</argsstring>
+        <name>get_reference_frames_from_chain_alignment</name>
+        <qualifiedname>imp_general.alignments.get_reference_frames_from_chain_alignment</qualifiedname>
+        <param>
+          <type>reference_rbs</type>
+          <defname>reference_rbs</defname>
+        </param>
+        <param>
+          <type>reference_index</type>
+          <defname>reference_index</defname>
+        </param>
+        <param>
+          <type>rbs_to_align</type>
+          <defname>rbs_to_align</defname>
+        </param>
+        <param>
+          <type>index_to_align</type>
+          <defname>index_to_align</defname>
+        </param>
+        <briefdescription>
+<para>Align the rigid bodies rbs_to_align to the reference frames of reference_rbs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The rb with index_to_align is aligned to the reference rb with reference_index. The function returns the reference frames to apply to the rbs_to_align.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/alignments.py" line="13" column="1" bodyfile="lib/IMP/EMageFit/imp_general/alignments.py" bodystart="13" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/imp_general/alignments.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

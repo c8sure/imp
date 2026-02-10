@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="PolarResamplingParameters_8h" kind="file" language="C++">
+    <compoundname>PolarResamplingParameters.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes refid="opencv__interface_8h" local="yes">IMP/em2d/opencv_interface.h</includes>
+    <includes local="yes">IMP/algebra/constants.h</includes>
+    <includes local="yes">IMP/exception.h</includes>
+    <includes local="yes">IMP/log.h</includes>
+    <includes local="yes">IMP/log_macros.h</includes>
+    <includes local="no">cereal/access.hpp</includes>
+    <includes local="no">IMP/constants.h</includes>
+    <includedby refid="Image_8h" local="yes">Image.h</includedby>
+    <includedby refid="ProjectionFinder_8h" local="yes">ProjectionFinder.h</includedby>
+    <includedby refid="align2D_8h" local="yes">align2D.h</includedby>
+    <includedby refid="image__processing_8h" local="yes">image_processing.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>PolarResamplingParameters.h</label>
+        <link refid="PolarResamplingParameters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/algebra/constants.h</label>
+      </node>
+      <node id="7">
+        <label>IMP/constants.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/exception.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/log.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/log_macros.h</label>
+      </node>
+      <node id="6">
+        <label>cereal/access.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1em2d_1_1PolarResamplingParameters" prot="public">IMP::em2d::PolarResamplingParameters</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>Functions related with rotations in em2d Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/PolarResamplingParameters.h"/>
+  </compounddef>
+</doxygen>

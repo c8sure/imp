@@ -1,0 +1,4 @@
+ok=True
+modules = 'domino:rmf:isd:saxs:em:atom:container:core:statistics:score_functor:gsl:display:algebra:cgal:kernel'
+dependencies = 'HDF5:Boost.Graph:RMF:FFTW3:Boost.System:python-ihm:GSL:Boost.ProgramOptions:Boost.Regex:OpenCV3:Boost.Random:Boost.FileSystem:CGAL:NumPy'
+unfound_dependencies = 'OpenCV21:OpenCV22'

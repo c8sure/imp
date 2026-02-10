@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1DominoSampler" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::DominoSampler</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1DiscreteSampler" prot="public" virt="non-virtual">IMP::domino::DiscreteSampler</basecompoundref>
+    <includes local="no">IMP/domino/DominoSampler.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Advanced</header>
+      <description><para>Default values are provided, you only need to replace these if you want to do something special. See the overview of the module for a general description. </para>
+</description>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a3fa84e77ae8b8319806e7eee75ffccbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DominoSampler::set_merge_tree</definition>
+        <argsstring>(const MergeTree &amp;mt)</argsstring>
+        <name>set_merge_tree</name>
+        <qualifiedname>IMP::domino::DominoSampler::set_merge_tree</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref> &amp;</type>
+          <declname>mt</declname>
+        </param>
+        <briefdescription>
+<para>Specify the merge tree directly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="56" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Statistics</header>
+      <description><para>If you specify the merge tree explicitly, you can query for statistics about particular nodes in the merge tree. </para>
+</description>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a63edbfbb10c14328fdea085c28069143" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DominoSampler::get_number_of_assignments_for_vertex</definition>
+        <argsstring>(unsigned int tree_vertex) const</argsstring>
+        <name>get_number_of_assignments_for_vertex</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_number_of_assignments_for_vertex</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>tree_vertex</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of states found for the merge at that vertex of the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="70" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a488b7a234ab96de88b4d65e2a809453d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::DominoSampler::get_sample_assignments_for_vertex</definition>
+        <argsstring>(unsigned int tree_vertex) const</argsstring>
+        <name>get_sample_assignments_for_vertex</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_sample_assignments_for_vertex</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>tree_vertex</declname>
+        </param>
+        <briefdescription>
+<para>Return a few subset states from that merge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="73" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Interactive mode</header>
+      <description><para>Once a merge tree is specified, one can interactively perform the sampling by requesting that domino fill in the <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> for a given node of the merge tree from the assignments for the children. This can be useful for debugging Domino as well as for providing a distributed implementation.</para>
+<para>For each method, you can pass max_states to limit how many states are generated.</para>
+<para>You might want to just use <ref refid="namespaceIMP_1_1domino_1a4570cce69f194985e23b710c3b5e18b4" kindref="member">load_leaf_assignments()</ref> and <ref refid="namespaceIMP_1_1domino_1a200c71a273844cc32fd32f6a5eafa0aa" kindref="member">load_merged_assignments()</ref> instead. </para>
+</description>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a7eded480b712ab248437df2c7b4fd445" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::DominoSampler::get_vertex_assignments</definition>
+        <argsstring>(unsigned int node_index, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</argsstring>
+        <name>get_vertex_assignments</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_vertex_assignments</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>node_index</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_states</declname>
+          <defval>std::numeric_limits&lt; int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for a leaf. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="91" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1adb962ba7080d3c004a9518c1d3c37147" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::DominoSampler::get_vertex_assignments</definition>
+        <argsstring>(unsigned int node_index, const Assignments &amp;first, const Assignments &amp;second, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</argsstring>
+        <name>get_vertex_assignments</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_vertex_assignments</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>node_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_states</declname>
+          <defval>std::numeric_limits&lt; int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for an internal node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The passed assignments, the ordering for the children is the node index for the children. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="98" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a2c329800af8d9a96dbf63a85187f376d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DominoSampler::load_vertex_assignments</definition>
+        <argsstring>(unsigned int node_index, AssignmentContainer *ac, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</argsstring>
+        <name>load_vertex_assignments</name>
+        <qualifiedname>IMP::domino::DominoSampler::load_vertex_assignments</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>node_index</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_states</declname>
+          <defval>std::numeric_limits&lt; int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for a leaf. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="105" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1aaf4a53a95fbb2b8ce4a5cba2cbdd611d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DominoSampler::load_vertex_assignments</definition>
+        <argsstring>(unsigned int node_index, AssignmentContainer *first, AssignmentContainer *second, AssignmentContainer *ac, unsigned int max_states=std::numeric_limits&lt; int &gt;::max()) const</argsstring>
+        <name>load_vertex_assignments</name>
+        <qualifiedname>IMP::domino::DominoSampler::load_vertex_assignments</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>node_index</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max_states</declname>
+          <defval>std::numeric_limits&lt; int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Fill in assignments for an internal node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The passed assignments, the ordering for the children is that of the node indexes for the children. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="112" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1a3762763c53b745c97f49e25c6b43ee3b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::domino::DominoSampler::csf_</definition>
+        <argsstring></argsstring>
+        <name>csf_</name>
+        <qualifiedname>IMP::domino::DominoSampler::csf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="37" column="8" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1af797e9fbebd3746fe40988ede0849858" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::domino::DominoSampler::has_mt_</definition>
+        <argsstring></argsstring>
+        <name>has_mt_</name>
+        <qualifiedname>IMP::domino::DominoSampler::has_mt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="36" column="8" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1ac2e81526007031dab36c2bd31b2c558d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a38647c3c174545c068db94b01a3a06c4" kindref="member">MergeTree</ref></type>
+        <definition>MergeTree IMP::domino::DominoSampler::mt_</definition>
+        <argsstring></argsstring>
+        <name>mt_</name>
+        <qualifiedname>IMP::domino::DominoSampler::mt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="35" column="13" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1a5b45b2d252a87de8c1ea236867d43e85" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a74be81f3536006c91216322e4af87a30" kindref="member">SubsetGraph</ref></type>
+        <definition>SubsetGraph IMP::domino::DominoSampler::sg_</definition>
+        <argsstring></argsstring>
+        <name>sg_</name>
+        <qualifiedname>IMP::domino::DominoSampler::sg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="34" column="15" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1ab6fe6872bd529262a9f06f60c820f99b" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> &gt;</type>
+        <definition>Pointer&lt;AssignmentsTable&gt; IMP::domino::DominoSampler::sst_</definition>
+        <argsstring></argsstring>
+        <name>sst_</name>
+        <qualifiedname>IMP::domino::DominoSampler::sst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="33" column="11" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DominoSampler_1a5bcc42cb8310f4d19a054b0a03b6f519" prot="private" static="no" mutable="yes">
+        <type>internal::InferenceStatistics</type>
+        <definition>internal::InferenceStatistics IMP::domino::DominoSampler::stats_</definition>
+        <argsstring></argsstring>
+        <name>stats_</name>
+        <qualifiedname>IMP::domino::DominoSampler::stats_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="38" column="41" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a383966690daeef40257e5f33c3a76ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DominoSampler::DominoSampler</definition>
+        <argsstring>(Model *m, ParticleStatesTable *pst, std::string name=&quot;DominoSampler %1%&quot;)</argsstring>
+        <name>DominoSampler</name>
+        <qualifiedname>IMP::domino::DominoSampler::DominoSampler</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;DominoSampler %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1aeff05638cf880db5cd89ceffd0e03286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DominoSampler::DominoSampler</definition>
+        <argsstring>(Model *m, std::string name=&quot;DominoSampler %1%&quot;)</argsstring>
+        <name>DominoSampler</name>
+        <qualifiedname>IMP::domino::DominoSampler::DominoSampler</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;DominoSampler %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a28bf7f25c11dfd6dc25ec3b2df42462c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::DominoSampler::~DominoSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~DominoSampler</name>
+        <qualifiedname>IMP::domino::DominoSampler::~DominoSampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="46" column="231" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a11b5bb3dc3f272044f1eb5678e1aa2fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::DominoSampler::do_get_sample_assignments</definition>
+        <argsstring>(const IMP::domino::Subset &amp;known) const override</argsstring>
+        <name>do_get_sample_assignments</name>
+        <qualifiedname>IMP::domino::DominoSampler::do_get_sample_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1DiscreteSampler_1a127213eff7a87b103e692c4f2d82d133">do_get_sample_assignments</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>known</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="44" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1ac9f5e5e44bfef700558b1b1a801ddeee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::DominoSampler::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="46" column="34" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a0280a26aea5ad30f6b6a283332130909" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::DominoSampler::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::DominoSampler::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="46" column="103" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DominoSampler_1a345858fb854b0a00e562a5cd84fa2375" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DominoSampler::set_use_cross_subset_filtering</definition>
+        <argsstring>(bool tf)</argsstring>
+        <name>set_use_cross_subset_filtering</name>
+        <qualifiedname>IMP::domino::DominoSampler::set_use_cross_subset_filtering</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>tf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>perform filtering between subsets based by eliminating states that cannot be realized in a subset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DominoSampler.h" line="62" column="8" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Sample best solutions using Domino. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Note that if there are many solutions, the ConfigurationSet returned by get_sample() might be huge (in terms of memory usage) and slow to generate. The <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> returned by <ref refid="classIMP_1_1domino_1_1DiscreteSampler_1a6f93b40d485b8617d38245bd6bf4ebae" kindref="member">get_sample_assignments()</ref> can be a lot smaller and faster. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::DiscreteSampler</label>
+        <link refid="classIMP_1_1domino_1_1DiscreteSampler"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::DominoSampler</label>
+        <link refid="classIMP_1_1domino_1_1DominoSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::DiscreteSampler</label>
+        <link refid="classIMP_1_1domino_1_1DiscreteSampler"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::DominoSampler</label>
+        <link refid="classIMP_1_1domino_1_1DominoSampler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/DominoSampler.h" line="32" column="1" bodyfile="include/IMP/domino/DominoSampler.h" bodystart="32" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a69a5fd252f550161d778f1a3c0654fa7" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>add_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a04d99a77362e655bcf99d4da9ebc2f7c" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>add_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1adee0538dc659ab8daf6695b87002eca1" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>clear_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a3762763c53b745c97f49e25c6b43ee3b" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>csf_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a721fbf1b3bf0780e90966a0453f547d4" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>DiscreteSampler</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a11b5bb3dc3f272044f1eb5678e1aa2fc" prot="public" virt="virtual"><scope>IMP::domino::DominoSampler</scope><name>do_get_sample_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a14c559dad946def14f1870d5abd14ed5" prot="protected" virt="virtual"><scope>IMP::domino::DominoSampler</scope><name>do_sample</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1aeff05638cf880db5cd89ceffd0e03286" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>DominoSampler</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a383966690daeef40257e5f33c3a76ada" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>DominoSampler</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a154d39cd2016935468ec93ebf616df15" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>erase_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa1d1cb77fa302aec372410283bd7fc7d" prot="protected" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_assignments_table_to_use</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0509dccb6c592b9c4f7e1cd53dbcd9e1" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_has_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa6db66d511c3b2409ca61bc39b85ec14" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_maximum_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a63edbfbb10c14328fdea085c28069143" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_number_of_assignments_for_vertex</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1acfa9aa0506e2bad96e350b30a8dbde6f" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_number_of_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1abe0c80e27d1174e2b2d8911a0b4e9b94" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_particle_states_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0fc3cb755fe0cd91520b8146e31ea1af" prot="protected" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a6f93b40d485b8617d38245bd6bf4ebae" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_sample_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a488b7a234ab96de88b4d65e2a809453d" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_sample_assignments_for_vertex</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ab078563c0d96bb299d0926cfec89c617" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a93bb393836d64c1f3bdda56e9a51b736" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af9ba5f8c591c97d25444bc8f2b290884" prot="protected" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_subset_filter_tables_to_use</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1ac9f5e5e44bfef700558b1b1a801ddeee" prot="public" virt="virtual"><scope>IMP::domino::DominoSampler</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a0280a26aea5ad30f6b6a283332130909" prot="public" virt="virtual"><scope>IMP::domino::DominoSampler</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a7eded480b712ab248437df2c7b4fd445" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_vertex_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1adb962ba7080d3c004a9518c1d3c37147" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>get_vertex_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1af797e9fbebd3746fe40988ede0849858" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>has_mt_</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a2c329800af8d9a96dbf63a85187f376d" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>load_vertex_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1aaf4a53a95fbb2b8ce4a5cba2cbdd611d" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>load_vertex_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1ac2e81526007031dab36c2bd31b2c558d" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>mt_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aea4629b51fe360838144aa20d647c9c4" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>remove_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a5f13ae32a9d25b7d5c8f3fdd4cbf8c4d" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>remove_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ad73b0cfd867f9b364fb997a618839a41" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>reserve_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aad5f8f5ee7e3e9b17f247917235ab62b" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_assignments_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a78d158c2aba7c490635e949fc234294a" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_maximum_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a3fa84e77ae8b8319806e7eee75ffccbd" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_merge_tree</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af01fe0f3283adc61bdb94b716afca5cd" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ae87fc3c189ff87dbc93ba9959da79e4f" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_particle_states_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa88d60254ee2cf156c3405437af23ee1" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a33a06eb8981e4333a409c5134376159b" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a11fc13bac2048a81f7f3cdd2fd0fa98e" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_subset_filter_tables_order</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a345858fb854b0a00e562a5cd84fa2375" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>set_use_cross_subset_filtering</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a5b45b2d252a87de8c1ea236867d43e85" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>sg_</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1ab6fe6872bd529262a9f06f60c820f99b" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>sst_</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a5bcc42cb8310f4d19a054b0a03b6f519" prot="private" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>stats_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aed5d2eda883429164d051dd4f5a25df4" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a9b816446ab5953ee7b6245493f3d7dbd" prot="public" virt="non-virtual"><scope>IMP::domino::DominoSampler</scope><name>~DiscreteSampler</name></member>
+      <member refid="classIMP_1_1domino_1_1DominoSampler_1a28bf7f25c11dfd6dc25ec3b2df42462c" prot="public" virt="virtual"><scope>IMP::domino::DominoSampler</scope><name>~DominoSampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

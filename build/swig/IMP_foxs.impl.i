@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/foxs/pyext/swig.i-in

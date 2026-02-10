@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1PythonExampleRestraint" kind="class" language="Python" prot="public">
+    <compoundname>IMP::example::PythonExampleRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP.Restraint</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1PythonExampleRestraint_1a5e6e6ed4e93a82bdeeb6bbf4c08c3438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.example.PythonExampleRestraint.do_add_score_and_derivatives</definition>
+        <argsstring>(self, sa)</argsstring>
+        <name>do_add_score_and_derivatives</name>
+        <qualifiedname>IMP::example.PythonExampleRestraint.do_add_score_and_derivatives</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sa</type>
+          <defname>sa</defname>
+        </param>
+        <briefdescription>
+<para>Pure Python implementation of the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/example/__init__.py" line="705" column="1" bodyfile="lib/IMP/example/__init__.py" bodystart="705" bodyend="724"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An example restraint written in Python. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This should be functionally equivalent to the C++ <ref refid="classIMP_1_1example_1_1ExampleRestraint" kindref="compound">ExampleRestraint</ref>.</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/example/__init__.py" line="697" column="1" bodyfile="lib/IMP/example/__init__.py" bodystart="697" bodyend="724"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1PythonExampleRestraint_1a5e6e6ed4e93a82bdeeb6bbf4c08c3438" prot="public" virt="non-virtual"><scope>IMP::example::PythonExampleRestraint</scope><name>do_add_score_and_derivatives</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1PCAFitRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::PCAFitRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Restraint</basecompoundref>
+    <includes local="no">IMP/em2d/PCAFitRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a1ceb023dfd55e24ac9b4696987b78598" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; internal::ImageTransform &gt;</type>
+        <definition>std::vector&lt;internal::ImageTransform&gt; IMP::em2d::PCAFitRestraint::best_image_transform_</definition>
+        <argsstring></argsstring>
+        <name>best_image_transform_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::best_image_transform_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="125" column="23" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a242a9826ccda104689bad9c0756d056a" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; internal::Image2D&lt;&gt; &gt;</type>
+        <definition>std::vector&lt;internal::Image2D&lt;&gt; &gt; IMP::em2d::PCAFitRestraint::best_projections_</definition>
+        <argsstring></argsstring>
+        <name>best_projections_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::best_projections_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="120" column="23" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a6d6f70ada8b873d09d5fe8426dbda319" prot="private" static="no" mutable="yes">
+        <type>IMP::algebra::Vector3Ds</type>
+        <definition>IMP::algebra::Vector3Ds IMP::em2d::PCAFitRestraint::best_projections_axis_</definition>
+        <argsstring></argsstring>
+        <name>best_projections_axis_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::best_projections_axis_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="124" column="35" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a4a7ddc0745721db96dbc25db474ea5e2" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; internal::ProjectionInfo &gt;</type>
+        <definition>std::vector&lt;internal::ProjectionInfo&gt; IMP::em2d::PCAFitRestraint::best_projections_info_</definition>
+        <argsstring></argsstring>
+        <name>best_projections_info_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::best_projections_info_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="123" column="23" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1aa8954737e71e31358adb1814fb3c79e7" prot="private" static="no" mutable="yes">
+        <type>unsigned long</type>
+        <definition>unsigned long IMP::em2d::PCAFitRestraint::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::counter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="137" column="25" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a13622be3f42a5244e4b0fe2ce8cb3be2" prot="private" static="no" mutable="no">
+        <type>Strings</type>
+        <definition>Strings IMP::em2d::PCAFitRestraint::image_files_</definition>
+        <argsstring></argsstring>
+        <name>image_files_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::image_files_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="108" column="11" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a49f50a47d8d4f6b738633bb6420a3874" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; internal::Image2D&lt;&gt; &gt;</type>
+        <definition>std::vector&lt;internal::Image2D&lt;&gt; &gt; IMP::em2d::PCAFitRestraint::images_</definition>
+        <argsstring></argsstring>
+        <name>images_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::images_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="105" column="15" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1ad7c80d2a56349f451f29b12bdbec4815" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PCAFitRestraint::micrographs_number_</definition>
+        <argsstring></argsstring>
+        <name>micrographs_number_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::micrographs_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="136" column="16" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1ad102ccf55012663c229349c1c31167ca" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PCAFitRestraint::n_components_</definition>
+        <argsstring></argsstring>
+        <name>n_components_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::n_components_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="134" column="16" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1adaf80b0b8c315ccd9cc4324a16296c01" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PCAFitRestraint::pixel_size_</definition>
+        <argsstring></argsstring>
+        <name>pixel_size_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::pixel_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="111" column="10" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a534fefee1615fcc92d2b4bfaee5162e5" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PCAFitRestraint::projection_number_</definition>
+        <argsstring></argsstring>
+        <name>projection_number_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::projection_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="117" column="16" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a779f885dd8edac46939c1c48652761ad" prot="private" static="no" mutable="no">
+        <type>internal::Projector</type>
+        <definition>internal::Projector IMP::em2d::PCAFitRestraint::projector_</definition>
+        <argsstring></argsstring>
+        <name>projector_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::projector_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="128" column="23" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a7726589a975c5cf7e5d7591676102005" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::em2d::PCAFitRestraint::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="102" column="13" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1acb82667e0b14f6d56950e7eeb42dc5dc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::PCAFitRestraint::resolution_</definition>
+        <argsstring></argsstring>
+        <name>resolution_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::resolution_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="114" column="10" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a2d16b49bfce24373cc38f451fd9d8649" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::em2d::PCAFitRestraint::reuse_direction_</definition>
+        <argsstring></argsstring>
+        <name>reuse_direction_</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::reuse_direction_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="131" column="8" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1af8bb9bf5130c9094ce8e6144e76c2bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::PCAFitRestraint::PCAFitRestraint</definition>
+        <argsstring>(Particles particles, const std::vector&lt; std::string &gt; &amp;image_files, double pixel_size, double resolution=10.0, unsigned int projection_number=100, bool reuse_direction=false, unsigned int n_components=1, unsigned int micrographs_number=0)</argsstring>
+        <name>PCAFitRestraint</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::PCAFitRestraint</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>image_files</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pixel_size</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>resolution</declname>
+          <defval>10.0</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>projection_number</declname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reuse_direction</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n_components</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>micrographs_number</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particles participating in the score, which need to have XYZ, radius and mass </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">image_files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D class average filenames in PGM text format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pixel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixel size in angstroms </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estimated resolution of the images in angstroms </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">projection_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of projections of the model to generate and fit to images. The lower the number, the faster the evaluation, but the lower the accuracy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reuse_direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Speed up evaluation by only periodically recalculating projections </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n_components</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the largest components to be considered for the EM image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">micrographs_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of micrograph particles that were used to generate the class averages (or zero, the default, if unknown) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="51" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a956ff1a513a23d51a6f8d1587619b19f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::PCAFitRestraint::~PCAFitRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~PCAFitRestraint</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::~PCAFitRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="98" column="231" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a07cec0bf8a3fd15d9b715c13850b2c31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>IMP::ModelObjectsTemp IMP::em2d::PCAFitRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="97" column="25" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a727ff3d356d69534d12f683b33c70f84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PCAFitRestraint::get_cross_correlation_coefficient</definition>
+        <argsstring>(unsigned int image_number) const</argsstring>
+        <name>get_cross_correlation_coefficient</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_cross_correlation_coefficient</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>image_number</declname>
+        </param>
+        <briefdescription>
+<para>Get cross correlation between the image and the best model projection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This CCC is that calculated from the last scoring function evaluation; calling this function before the score is calculated results in undefined behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a8e660b5ff565f27a207439b66d0379f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintInfo *</type>
+        <definition>RestraintInfo * IMP::em2d::PCAFitRestraint::get_dynamic_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_dynamic_info</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_dynamic_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Information for writing to RMF files </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="95" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a7b952f4ebcf7d113f5c07df165147b31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PCAFitRestraint::get_micrographs_number</definition>
+        <argsstring>() const</argsstring>
+        <name>get_micrographs_number</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_micrographs_number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="66" column="16" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a479e0e55129a3d2cc2bc496cad36c641" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::em2d::PCAFitRestraint::get_projection_number</definition>
+        <argsstring>() const</argsstring>
+        <name>get_projection_number</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_projection_number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="62" column="16" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a7e0fd328bf0e0de2ff5898dcb1109dc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintInfo *</type>
+        <definition>RestraintInfo * IMP::em2d::PCAFitRestraint::get_static_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_static_info</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_static_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Information for writing to RMF files </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="92" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1ae7841cbc0e2746e068317b00727cc6a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::em2d::PCAFitRestraint::get_transformation</definition>
+        <argsstring>(unsigned int image_number) const</argsstring>
+        <name>get_transformation</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_transformation</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>image_number</declname>
+        </param>
+        <briefdescription>
+<para>Get transformation that best places the model on the image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The transformation places the model such that if the image is placed on the xy plane with its lower left corner at the origin the model&apos;s projection along the z axis will coincide with the image. This transformation is that calculated from the last scoring function evaluation; calling this function before the score is calculated results in undefined behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="78" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a841e2a24ae338f747298806c080c83b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::PCAFitRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="98" column="34" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1ac89e17192b8611be035782cca5ee140a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::PCAFitRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="98" column="103" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a7bc2ee3e87c2213a42db928365aadcfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PCAFitRestraint::set_micrographs_number</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>set_micrographs_number</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::set_micrographs_number</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="68" column="8" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a72a4ac7dc5306aeaced10255fca50faf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PCAFitRestraint::set_projection_number</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>set_projection_number</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::set_projection_number</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="64" column="8" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1a3cc18dc4fabb81f940ff1f4be5fabad1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::PCAFitRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1PCAFitRestraint_1ae84332e74f2bc1c3d093e7974f1c358b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::PCAFitRestraint::write_best_projections</definition>
+        <argsstring>(std::string file_name, bool evaluate=false)</argsstring>
+        <name>write_best_projections</name>
+        <qualifiedname>IMP::em2d::PCAFitRestraint::write_best_projections</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>evaluate</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/PCAFitRestraint.h" line="89" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fast scoring of Particles against electron microscopy class averages. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The restraint fits the particles into the 2D images by alignment of principal components of each of the particles&apos; projections with principal components of the 2D class average. Therefore, the particle set should comprise all subunits that are in the image. The aligned projections are scored against 2D class averages using the cross correlation score. This is a fast alignment and score that works well for negative stain EM class averages. </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/PCAFitRestraint.h" line="31" column="1" bodyfile="include/IMP/em2d/PCAFitRestraint.h" bodystart="31" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a1ceb023dfd55e24ac9b4696987b78598" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>best_image_transform_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a242a9826ccda104689bad9c0756d056a" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>best_projections_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a6d6f70ada8b873d09d5fe8426dbda319" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>best_projections_axis_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a4a7ddc0745721db96dbc25db474ea5e2" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>best_projections_info_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1aa8954737e71e31358adb1814fb3c79e7" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>counter_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a07cec0bf8a3fd15d9b715c13850b2c31" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a727ff3d356d69534d12f683b33c70f84" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_cross_correlation_coefficient</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a8e660b5ff565f27a207439b66d0379f4" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_dynamic_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a7b952f4ebcf7d113f5c07df165147b31" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_micrographs_number</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a479e0e55129a3d2cc2bc496cad36c641" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_projection_number</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a7e0fd328bf0e0de2ff5898dcb1109dc9" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_static_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1ae7841cbc0e2746e068317b00727cc6a8" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_transformation</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a841e2a24ae338f747298806c080c83b1" prot="public" virt="virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1ac89e17192b8611be035782cca5ee140a" prot="public" virt="virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a13622be3f42a5244e4b0fe2ce8cb3be2" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>image_files_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a49f50a47d8d4f6b738633bb6420a3874" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>images_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1ad7c80d2a56349f451f29b12bdbec4815" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>micrographs_number_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1ad102ccf55012663c229349c1c31167ca" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>n_components_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1af8bb9bf5130c9094ce8e6144e76c2bce" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>PCAFitRestraint</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1adaf80b0b8c315ccd9cc4324a16296c01" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>pixel_size_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a534fefee1615fcc92d2b4bfaee5162e5" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>projection_number_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a779f885dd8edac46939c1c48652761ad" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>projector_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a7726589a975c5cf7e5d7591676102005" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1acb82667e0b14f6d56950e7eeb42dc5dc" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>resolution_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a2d16b49bfce24373cc38f451fd9d8649" prot="private" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>reuse_direction_</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a7bc2ee3e87c2213a42db928365aadcfd" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>set_micrographs_number</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a72a4ac7dc5306aeaced10255fca50faf" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>set_projection_number</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a3cc18dc4fabb81f940ff1f4be5fabad1" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1ae84332e74f2bc1c3d093e7974f1c358b" prot="public" virt="non-virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>write_best_projections</name></member>
+      <member refid="classIMP_1_1em2d_1_1PCAFitRestraint_1a956ff1a513a23d51a6f8d1587619b19f" prot="public" virt="virtual"><scope>IMP::em2d::PCAFitRestraint</scope><name>~PCAFitRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

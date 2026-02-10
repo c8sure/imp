@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="HierarchySaveLink_8h" kind="file" language="C++">
+    <compoundname>HierarchySaveLink.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes refid="simple__links_8h" local="yes">simple_links.h</includes>
+    <includes local="yes">internal/atom_links_static.h</includes>
+    <includes local="yes">internal/atom_links_rigid_bodies.h</includes>
+    <includes local="yes">internal/atom_links_xyzs.h</includes>
+    <includes local="yes">internal/atom_links_gaussians.h</includes>
+    <includes local="no">RMF/decorator/alternatives.h</includes>
+    <includes local="no">RMF/decorator/provenance.h</includes>
+    <includes local="no">IMP/object_macros.h</includes>
+    <includes local="no">IMP/utility_macros.h</includes>
+    <includes local="no">RMF/NodeHandle.h</includes>
+    <includes local="no">RMF/FileHandle.h</includes>
+    <includes local="no">IMP/atom/Hierarchy.h</includes>
+    <includes local="no">IMP/core/provenance.h</includes>
+    <includes refid="links_8h" local="no">IMP/rmf/links.h</includes>
+    <includes refid="link__macros_8h" local="no">IMP/rmf/link_macros.h</includes>
+    <includes local="no">IMP/tuple_macros.h</includes>
+    <includes local="no">RMF/decorators.h</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="atom__links_8h" local="yes">atom_links.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>HierarchySaveLink.h</label>
+        <link refid="HierarchySaveLink_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>IMP/atom/Hierarchy.h</label>
+      </node>
+      <node id="13">
+        <label>IMP/core/provenance.h</label>
+      </node>
+      <node id="8">
+        <label>IMP/object_macros.h</label>
+      </node>
+      <node id="14">
+        <label>IMP/tuple_macros.h</label>
+      </node>
+      <node id="9">
+        <label>IMP/utility_macros.h</label>
+      </node>
+      <node id="11">
+        <label>RMF/FileHandle.h</label>
+      </node>
+      <node id="10">
+        <label>RMF/NodeHandle.h</label>
+      </node>
+      <node id="6">
+        <label>RMF/decorator/alternatives.h</label>
+      </node>
+      <node id="7">
+        <label>RMF/decorator/provenance.h</label>
+      </node>
+      <node id="15">
+        <label>RMF/decorators.h</label>
+      </node>
+      <node id="16">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="5">
+        <label>internal/atom_links_gaussians.h</label>
+      </node>
+      <node id="3">
+        <label>internal/atom_links_rigid_bodies.h</label>
+      </node>
+      <node id="2">
+        <label>internal/atom_links_static.h</label>
+      </node>
+      <node id="4">
+        <label>internal/atom_links_xyzs.h</label>
+      </node>
+      <node id="17">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data" prot="private">IMP::rmf::HierarchySaveLink::Data</innerclass>
+    <innerclass refid="classIMP_1_1rmf_1_1HierarchySaveLink" prot="public">IMP::rmf::HierarchySaveLink</innerclass>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Manage saving links to an RMF file from an atom::Hierarchy. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/HierarchySaveLink.h"/>
+  </compounddef>
+</doxygen>

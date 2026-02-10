@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structIMP_1_1spb_1_1ClusterParameters" kind="struct" language="C++" prot="public">
+    <compoundname>IMP::spb::ClusterParameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1ae6c24ada4b08dfda4c1fb4ab104770d8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::ClusterParameters::biasfile</definition>
+        <argsstring></argsstring>
+        <name>biasfile</name>
+        <qualifiedname>IMP::spb::ClusterParameters::biasfile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="79" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1aaf235737104a7042e531e5dc598bbbb6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::spb::ClusterParameters::cutoff</definition>
+        <argsstring></argsstring>
+        <name>cutoff</name>
+        <qualifiedname>IMP::spb::ClusterParameters::cutoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="83" column="10" bodyfile="include/IMP/spb/spb_main.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1af80355c879ca0c2354538c74b07bb3a4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::spb::ClusterParameters::identical</definition>
+        <argsstring></argsstring>
+        <name>identical</name>
+        <qualifiedname>IMP::spb::ClusterParameters::identical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="85" column="8" bodyfile="include/IMP/spb/spb_main.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a8aadff3c1b5efb44b21582f34a5d8251" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::ClusterParameters::isdtrajfile</definition>
+        <argsstring></argsstring>
+        <name>isdtrajfile</name>
+        <qualifiedname>IMP::spb::ClusterParameters::isdtrajfile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="78" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a19a420fffea248126d3d3fc717f1c40c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::ClusterParameters::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>IMP::spb::ClusterParameters::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="81" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a3b449c251b2cac7f206c2803524cdf66" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::ClusterParameters::niter</definition>
+        <argsstring></argsstring>
+        <name>niter</name>
+        <qualifiedname>IMP::spb::ClusterParameters::niter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="82" column="7" bodyfile="include/IMP/spb/spb_main.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a1c658e9f1d05bc370b18dd4ca2dc06c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::spb::ClusterParameters::symmetry</definition>
+        <argsstring></argsstring>
+        <name>symmetry</name>
+        <qualifiedname>IMP::spb::ClusterParameters::symmetry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="86" column="8" bodyfile="include/IMP/spb/spb_main.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a18aa42114b9120f5bb633f7d3bcbba4a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::ClusterParameters::trajfile</definition>
+        <argsstring></argsstring>
+        <name>trajfile</name>
+        <qualifiedname>IMP::spb::ClusterParameters::trajfile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="77" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1ab3e592b65f73690dc1e0afcaa9a0693a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::spb::ClusterParameters::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>IMP::spb::ClusterParameters::weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="84" column="8" bodyfile="include/IMP/spb/spb_main.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structIMP_1_1spb_1_1ClusterParameters_1a7ae008c80b7280924de3d1a1c6eb1a7a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::spb::ClusterParameters::weightfile</definition>
+        <argsstring></argsstring>
+        <name>weightfile</name>
+        <qualifiedname>IMP::spb::ClusterParameters::weightfile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/spb_main.h" line="80" column="15" bodyfile="include/IMP/spb/spb_main.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/spb_main.h" line="76" column="1" bodyfile="include/IMP/spb/spb_main.h" bodystart="76" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1ae6c24ada4b08dfda4c1fb4ab104770d8" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>biasfile</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1aaf235737104a7042e531e5dc598bbbb6" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>cutoff</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1af80355c879ca0c2354538c74b07bb3a4" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>identical</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a8aadff3c1b5efb44b21582f34a5d8251" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>isdtrajfile</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a19a420fffea248126d3d3fc717f1c40c" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>label</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a3b449c251b2cac7f206c2803524cdf66" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>niter</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a1c658e9f1d05bc370b18dd4ca2dc06c1" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>symmetry</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a18aa42114b9120f5bb633f7d3bcbba4a" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>trajfile</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1ab3e592b65f73690dc1e0afcaa9a0693a" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>weight</name></member>
+      <member refid="structIMP_1_1spb_1_1ClusterParameters_1a7ae008c80b7280924de3d1a1c6eb1a7a" prot="public" virt="non-virtual"><scope>IMP::spb::ClusterParameters</scope><name>weightfile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

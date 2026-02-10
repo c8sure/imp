@@ -1,0 +1,893 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.14.0">
+  <compound kind="class">
+    <name>database::Database2</name>
+    <filename>classdatabase_1_1Database2.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>add_column</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>aa6a001c7dc3affc96501d75445136109</anchor>
+      <arglist>(self, table, column, data_type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_columns</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>aea98465b1764ff367733b2104f96369e</anchor>
+      <arglist>(self, table, names, types, check=True)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>check_if_is_connected</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a8230c7e781e2a88212e33ab1e51f913d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>close</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a8774a37878c5d01db0cc74877f23c475</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>connect</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a103d67b9465154178ca7757c5437bfbe</anchor>
+      <arglist>(self, filename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>create</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a17c823da2c69929a135bab3c3a922cea</anchor>
+      <arglist>(self, filename, overwrite=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>create_table</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>aaea851dba1c2bfe467975eaa657e5bee</anchor>
+      <arglist>(self, table_name, column_names, column_types)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>create_view</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a398eb8bd52f2f3ae94fa1f5dfe767638</anchor>
+      <arglist>(self, view_name, table_name, condition_fields, condition_values)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>drop_table</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a7067103e2feab5b71ad247f30119dd23</anchor>
+      <arglist>(self, table_name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>drop_view</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a22d93fce6f36d3b98f994790e46577bb</anchor>
+      <arglist>(self, view_name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_condition_string</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>af066724cbff90d1a2baa0803a71d875b</anchor>
+      <arglist>(self, fields, values)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_table</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>ad9dbb99672f38f1284bb40acb14810e9</anchor>
+      <arglist>(self, table_name, fields=False, orderby=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_table_column_names</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>aab56bdc976ceedb6e9557aac97ffed95</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_table_types</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a2fa40eea056016db9bc344c630e0e3ec</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>retrieve_data</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>ab2bd9ca3acab93621573876401b26e70</anchor>
+      <arglist>(self, sql_command)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>select_table</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a4837e84cf1ce1e8878ccfc6b5585c6c9</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>store_data</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a7a308d771a2b75d6401e16851daaf47c</anchor>
+      <arglist>(self, table_name, data)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>store_dataV1</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>a14a23bea65d779efd4c9ffdec73a486a</anchor>
+      <arglist>(self, table_name, data)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>update_data</name>
+      <anchorfile>classdatabase_1_1Database2.html</anchorfile>
+      <anchor>ad04f392b2827ea181fd578e4c1b58cdd</anchor>
+      <arglist>(self, table_name, updated_fields, updated_values, condition_fields, condition_values)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>buildxlinks::DockOrder</name>
+    <filename>classbuildxlinks_1_1DockOrder.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>get_docking_order</name>
+      <anchorfile>classbuildxlinks_1_1DockOrder.html</anchorfile>
+      <anchor>aa2136d213b2505b6c78d864341f7bf15</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_components_and_connections</name>
+      <anchorfile>classbuildxlinks_1_1DockOrder.html</anchorfile>
+      <anchor>adcf672c60faf02e96273f03a0db5354d</anchor>
+      <arglist>(self, subunits, edges)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_xlinks</name>
+      <anchorfile>classbuildxlinks_1_1DockOrder.html</anchorfile>
+      <anchor>acd63996e56cfd9db6b95a9ebec4d6c4d</anchor>
+      <arglist>(self, xlinks_dict)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>domino_model::DominoModel</name>
+    <filename>classdomino__model_1_1DominoModel.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>add_branch_and_bound_assignments_table</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a99d0fb690f56cd814aa29d47ab26263b</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_exclusion_filter_table</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>afe181ad01c8591a45790446928cba282</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a385659fc748a88da8a7a7bb87ec04354</anchor>
+      <arglist>(self, r, name, weight, max_score=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_restraint_score_filter_table</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>adceb3c988d4dbf5f43346e5b8485c7f5</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>align_rigid_bodies_states</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a4613dd50f65a8338fa5f9eca065ecfa1</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>create_coarse_assembly</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a35a74ca1b70a546b0999a0003f496a36</anchor>
+      <arglist>(self, n_residues)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>create_merge_tree</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a6604f6cdce2e6ebeacc060eeee3c5775</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>do_sampling</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>af631bb43cc15a73b313c22426f2f2dd1</anchor>
+      <arglist>(self, mode=&apos;assignments_heap_container&apos;, params=None)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_assignment_and_RFs</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ace5344489813ecfc6262b46691109de0</anchor>
+      <arglist>(self, assignment, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_assignment_info</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>aee5fa0ff0a63d52fa41503476715b785</anchor>
+      <arglist>(self, assignment, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_assignment_scores</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a2252f8505e93706b549ef065d3bb3af0</anchor>
+      <arglist>(self, assignment, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_assignment_text</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>afb9c6370692821fe2d6b3c5d6c8511cf</anchor>
+      <arglist>(self, assignment, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_assignments_with_heap</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a071ce9971ba9cba880e81921493c376d</anchor>
+      <arglist>(self, vertex, k=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_restraint_value_for_assignment</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a530c36780db6cf0e79506b7bd60e2942</anchor>
+      <arglist>(self, assignment, name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_restraints_for_native</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a95ded8bcea3ae7dfec3688820e1086d1</anchor>
+      <arglist>(self, restraints_names)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_restraints_names_used</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a474e8c7e78fd1827d4daceb644356ba1</anchor>
+      <arglist>(self, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_scoring_function</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a8c52d101dad140f7ec22881adcf594f4</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>load_state</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a4b3918c22728df7fc828c39f7987bba4</anchor>
+      <arglist>(self, assignment)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>read_merge_tree</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ac29641fb4679e5668a3c76c24d00c880</anchor>
+      <arglist>(self, fn)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_assembly</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a855b049202f8994a1024966f131a67ff</anchor>
+      <arglist>(self, fn_pdb, names)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_assembly_components</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a6be16562dfd6cd60f0dbe9fad0c15f55</anchor>
+      <arglist>(self, fn_pdbs, names)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_close_pairs_excluded_volume_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a116f581015909c05dbe315baebd7c456</anchor>
+      <arglist>(self, distance=10, weight=1.0, ratio=0.05, stddev=2, max_score=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_complementarity_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a3d606dd429c6ea8e6d936c7b696fc15f</anchor>
+      <arglist>(self, name1, name2, rname, max_sep_distance, max_penetration, weight, max_score=10000000000.0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_connectivity_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a1256987e4a016842b8c4897f2ab61d1b</anchor>
+      <arglist>(self, names, rname, distance=10, weight=1.0, max_score=None, n_pairs=1, stddev=2)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_em2d_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a96f5c98324f41b93d68f31dac4a9939d</anchor>
+      <arglist>(self, name, fn_images_sel, pixel_size, resolution, n_projections, weight, max_score=False, mode=&apos;fast&apos;, n_optimized=1)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_native_assembly_for_benchmark</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>adcff7a1a4f7ded9f73cf2955763c83c4</anchor>
+      <arglist>(self, params)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_not_optimized</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>af84515bfe595dceb8e4581fded8dc063</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_pair_score_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a21f90d544df053e12794d1ebbb0578cb</anchor>
+      <arglist>(self, name1, name2, restraint_name, distance=10, weight=1.0, n_pairs=1, stddev=2, max_score=None)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_rb_states</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a965914208257dbf6b89dd179315b5418</anchor>
+      <arglist>(self, rb, transformations)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_xlink_restraint</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a5ffb1a7a75607c20799e50b4469dbbb0</anchor>
+      <arglist>(self, id1, chain1, residue1, id2, chain2, residue2, distance, weight, stddev, max_score=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>setup_domino_sampler</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>af7b0bcd2d57fc85fb46337e6bfe79eb1</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_merge_tree</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a7ad2e02c8e9af81b8085411c275991aa</anchor>
+      <arglist>(self, fn)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_monte_carlo_solution</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ad2712327168dbe6f70cca1c40ec8b376</anchor>
+      <arglist>(self, fn_database)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_pdb_for_assignment</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a6779a68a9253b8449c4f6f1828792037</anchor>
+      <arglist>(self, assignment, fn_pdb)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_pdb_for_component</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a2d0f06e282a44eade21fb14763ece1c3</anchor>
+      <arglist>(self, component_index, ref, fn_pdb)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_pdb_for_configuration</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a04f2b9657fcc4563ce698df9ce4d0493</anchor>
+      <arglist>(self, n, fn_pdb)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_pdb_for_reference_frames</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>a1315437117a6806ed3b5da1caf7c79ee</anchor>
+      <arglist>(self, RFs, fn_pdb)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_pdbs_for_reference_frames</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ab14f6036e35a70ca0abf6106ab376a71</anchor>
+      <arglist>(self, RFs, fn_base)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_solutions_database</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ab57338107fb1db4fa5a4c6e3efe0268c</anchor>
+      <arglist>(self, fn_database, max_number=None)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_subset</name>
+      <anchorfile>classdomino__model_1_1DominoModel.html</anchorfile>
+      <anchor>ae22cd6538a417b40ca19233b2ee2c15f</anchor>
+      <arglist>(self, v, w)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>solutions_io::HeapRecord</name>
+    <filename>classsolutions__io_1_1HeapRecord.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>__lt__</name>
+      <anchorfile>classsolutions__io_1_1HeapRecord.html</anchorfile>
+      <anchor>a797f49b5ed4bce9bfa3f4eeed5315ae6</anchor>
+      <arglist>(self, other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>__new__</name>
+      <anchorfile>classsolutions__io_1_1HeapRecord.html</anchorfile>
+      <anchor>a80335b2612e50096416826a321005a6b</anchor>
+      <arglist>(self, x, i)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>buildxlinks::InitialDockingFromXlinks</name>
+    <filename>classbuildxlinks_1_1InitialDockingFromXlinks.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>get_residue_coordinates</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a58fc6a69ca92c09ad567305e83ba380e</anchor>
+      <arglist>(self, h, ch, res)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_residue_particle</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a64790598c0b4b41e743097c35dff0365</anchor>
+      <arglist>(self, h, ch, res)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>move_ligand</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>ac7d72d4aecf2d4c3e9473d9544bf6d2d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>move_one_xlink</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>ae46758125c11953e1f411e78fee62221</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>move_xlinks</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>aae5a41ceca6e78f5ac606f92eee0599d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_hierarchies</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a19ba1b698ece68a9f79916633f6f55ef</anchor>
+      <arglist>(self, h_receptor, h_ligand)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_pdbs</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a567a90a840f2e044bdf80822f80d5ddf</anchor>
+      <arglist>(self, fn_receptor, fn_ligand)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_rigid_bodies</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>ab16efc57ef139dcf2ddd4da2f592e383</anchor>
+      <arglist>(self, rb_receptor, rb_ligand)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_xlinks</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a36c687fac116b43917ad3ce8bb5abe56</anchor>
+      <arglist>(self, xlinks_list)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>write_ligand</name>
+      <anchorfile>classbuildxlinks_1_1InitialDockingFromXlinks.html</anchorfile>
+      <anchor>a82d546ebd3b38c8855b6e61a8b6bde33</anchor>
+      <arglist>(self, fn)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>monte_carlo::MonteCarloRelativeMoves</name>
+    <filename>classmonte__carlo_1_1MonteCarloRelativeMoves.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>run_monte_carlo</name>
+      <anchorfile>classmonte__carlo_1_1MonteCarloRelativeMoves.html</anchorfile>
+      <anchor>abb5054747b3aa5e1f0d0a1d4d2af8181</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>run_monte_carlo_with_relative_movers</name>
+      <anchorfile>classmonte__carlo_1_1MonteCarloRelativeMoves.html</anchorfile>
+      <anchor>a5ea699955fac8c5bf94b487b4ec4b9a9</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_relative_movers</name>
+      <anchorfile>classmonte__carlo_1_1MonteCarloRelativeMoves.html</anchorfile>
+      <anchor>a1486acdc42d8f350ca21612b0ab4ce75</anchor>
+      <arglist>(self, max_translation, max_rotation)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_scoring_function</name>
+      <anchorfile>classmonte__carlo_1_1MonteCarloRelativeMoves.html</anchorfile>
+      <anchor>a8853453789ff5369b9279c04cca81aac</anchor>
+      <arglist>(self, scoring_function)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>set_temperature_pattern</name>
+      <anchorfile>classmonte__carlo_1_1MonteCarloRelativeMoves.html</anchorfile>
+      <anchor>a8ad7bf0369e87c69b8fe609b8a272b57</anchor>
+      <arglist>(self, temperatures, iterations, cycles)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>imp_general::io::ReferenceFrameToText</name>
+    <filename>classimp__general_1_1io_1_1ReferenceFrameToText.html</filename>
+    <base>imp_general.io.Transformation3DToText</base>
+  </compound>
+  <compound kind="class">
+    <name>solutions_io::ResultsDB</name>
+    <filename>classsolutions__io_1_1ResultsDB.html</filename>
+    <base>database.Database2</base>
+    <member kind="function">
+      <type></type>
+      <name>add_ccc_table</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a5288e17e4382e7424f6bea279db5a02e</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_cluster_record</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a7c8d1410a81dd149fb178973f8917f65</anchor>
+      <arglist>(self, cluster_id, n_elements, representative, elements, solutions_ids)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_clusters_table</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a223665c9ef729148d3755cc4fa27e577</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_native_record</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a13cc1cee9d77600dab8000af38350061</anchor>
+      <arglist>(self, assignment, RFs, total_score, restraints_scores)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_placement_scores_table</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a97a2aa6e2636a0c5fb7f842b1f9f23a7</anchor>
+      <arglist>(self, names)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_record</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a88057beb994685ef1da39eb2f6c57296</anchor>
+      <arglist>(self, solution_id, assignment, RFs, total_score, restraints_scores, measures)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>add_results_table</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a67161f58d4618a13582a7b87bbc14bad</anchor>
+      <arglist>(self, restraints_names, add_measures=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>format_ccc_record</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a192fc2d7a3bb8af92816464ccebbca3d</anchor>
+      <arglist>(self, solution_id, ccc)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>format_placement_record</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>aeebdbcffcfd07a9a2e1792a7eeddc923</anchor>
+      <arglist>(self, solution_id, distances, angles)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_ccc</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>ad6c96de3a8560293afac83c6057d8c7e</anchor>
+      <arglist>(self, solution_id)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_individual_placement_statistics</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a9821c116ab0a4b37d7ededb879d24d50</anchor>
+      <arglist>(self, solutions_ids)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_left_join_command</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a154a73e97abcc5ea89ccabd6a58a8b73</anchor>
+      <arglist>(self, pairs_table_field, tables_names)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_native_rank</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a210a2004ac6292492cba8881056c6176</anchor>
+      <arglist>(self, orderby)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_native_solution</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a178377e3c16f42ce091be9694fa9ef29</anchor>
+      <arglist>(self, fields=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_nth_largest_cluster</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a58c42e33026a28490f8974271b8e4a0f</anchor>
+      <arglist>(self, position, table_name=&apos;clusters&apos;)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_placement_fields</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a9e9a5c22fa6094531359f7fadb8cfe26</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_placement_statistics</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a1621e8d0cfe094daa385af1c3b34f4f4</anchor>
+      <arglist>(self, solutions_ids)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_solutions</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>afa81dc11e156b4b54eb2c689785601ba</anchor>
+      <arglist>(self, fields=False, max_number=None, orderby=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_solutions_from_list</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>ae4bcc768a878b4b1f152706e6ddbeabe</anchor>
+      <arglist>(self, fields=False, solutions_ids=[])</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_solutions_results_table</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>aef6c2d528dc5af57497b6d6b96541bcb</anchor>
+      <arglist>(self, fields=False, max_number=None, orderby=False)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>store_cluster_data</name>
+      <anchorfile>classsolutions__io_1_1ResultsDB.html</anchorfile>
+      <anchor>a9e2e5e10a2123091b5710e6f62cc074e</anchor>
+      <arglist>(self)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>imp_general::io::Transformation3DToText</name>
+    <filename>classimp__general_1_1io_1_1Transformation3DToText.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>buildxlinks::Xlink</name>
+    <filename>classbuildxlinks_1_1Xlink.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>__init__</name>
+      <anchorfile>classbuildxlinks_1_1Xlink.html</anchorfile>
+      <anchor>abb3a976acac5dbd35b6daf0a1325b0d7</anchor>
+      <arglist>(self, id1, chain1, residue1, id2, chain2, residue2, distance)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_name</name>
+      <anchorfile>classbuildxlinks_1_1Xlink.html</anchorfile>
+      <anchor>ac307585a9766058b4024faa8c28939de</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>swap</name>
+      <anchorfile>classbuildxlinks_1_1Xlink.html</anchorfile>
+      <anchor>a37d5a17ea3d70a59d55c92e79f51c32a</anchor>
+      <arglist>(self)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>buildxlinks::XlinksDict</name>
+    <filename>classbuildxlinks_1_1XlinksDict.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>add</name>
+      <anchorfile>classbuildxlinks_1_1XlinksDict.html</anchorfile>
+      <anchor>a1e5e74037feda616d90b9f0bda92c674</anchor>
+      <arglist>(self, xlink)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>get_xlinks_for_pair</name>
+      <anchorfile>classbuildxlinks_1_1XlinksDict.html</anchorfile>
+      <anchor>a5bf40db9ed4ecfe50dac4baddb18fc0c</anchor>
+      <arglist>(self, pair_ids)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit</name>
+    <filename>namespaceIMP_1_1EMageFit.html</filename>
+    <namespace>IMP::EMageFit::argminmax</namespace>
+    <namespace>IMP::EMageFit::buildxlinks</namespace>
+    <namespace>IMP::EMageFit::csv_related</namespace>
+    <namespace>IMP::EMageFit::database</namespace>
+    <namespace>IMP::EMageFit::domino_model</namespace>
+    <namespace>IMP::EMageFit::imp_general</namespace>
+    <namespace>IMP::EMageFit::monte_carlo</namespace>
+    <namespace>IMP::EMageFit::restraints</namespace>
+    <namespace>IMP::EMageFit::sampling</namespace>
+    <namespace>IMP::EMageFit::solutions_io</namespace>
+    <namespace>IMP::EMageFit::utility</namespace>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::argminmax</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1argminmax.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::buildxlinks</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1buildxlinks.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::csv_related</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1csv__related.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::database</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1database.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::domino_model</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1domino__model.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general.html</filename>
+    <namespace>IMP::EMageFit::imp_general::alignments</namespace>
+    <namespace>IMP::EMageFit::imp_general::comparisons</namespace>
+    <namespace>IMP::EMageFit::imp_general::io</namespace>
+    <namespace>IMP::EMageFit::imp_general::movement</namespace>
+    <namespace>IMP::EMageFit::imp_general::representation</namespace>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general::alignments</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general_1_1alignments.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general::comparisons</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general_1_1comparisons.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general::io</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general_1_1io.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general::movement</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general_1_1movement.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::imp_general::representation</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1imp__general_1_1representation.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::monte_carlo</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1monte__carlo.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::restraints</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1restraints.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::sampling</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1sampling.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::solutions_io</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1solutions__io.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>IMP::EMageFit::utility</name>
+    <filename>namespaceIMP_1_1EMageFit_1_1utility.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>emagefit_protocol</name>
+    <title>EMageFit protocol</title>
+    <filename>emagefit_protocol.html</filename>
+    <docanchor file="emagefit_protocol.html" title="Input data">input</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Producing models">models</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Pairwise dockings">docking</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Obtain models with Simulated annealing Monte Carlo optimization">montecarlo</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Gather the results of all Monte Carlo optimizations">gather</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Combine the models from Monte Carlo with DOMINO">domino</docanchor>
+    <docanchor file="emagefit_protocol.html" title="Visualizing the models and understanding the information in the database of solutions">db</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>emagefit_scripts</name>
+    <title>EMageFit scripts and tools</title>
+    <filename>emagefit_scripts.html</filename>
+    <docanchor file="emagefit_scripts.html" title="Command line tools">tools</docanchor>
+    <docanchor file="emagefit_scripts.html" title="emagefit: Run all steps of modeling">emagefit_bin</docanchor>
+    <docanchor file="emagefit_scripts.html" title="emagefit_dock: Docking using the HEXDOCK program">emagefit_dock_bin</docanchor>
+    <docanchor file="emagefit_scripts.html" title="emagefit_cluster: Performs clustering of the solutions stored in a database file.">emagefit_cluster_bin</docanchor>
+    <docanchor file="emagefit_scripts.html" title="emagefit_score: Scores a model using EM images.">emagefit_score_bin</docanchor>
+    <docanchor file="emagefit_scripts.html" title="convert_spider_to_jpg: Image conversion utility for EMageFit.">convert_spider_to_jpg_bin</docanchor>
+    <docanchor file="emagefit_scripts.html" title="IMP.em2d Python package utilities">em2d_pkg</docanchor>
+    <docanchor file="emagefit_scripts.html" title="IMP.em2d.imp_general Python package utilities">em2d_gen_pkg</docanchor>
+  </compound>
+</tagfile>

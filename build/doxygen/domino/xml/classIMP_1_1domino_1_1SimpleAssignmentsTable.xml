@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1SimpleAssignmentsTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::SimpleAssignmentsTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1AssignmentsTable" prot="public" virt="non-virtual">IMP::domino::AssignmentsTable</basecompoundref>
+    <includes local="no">IMP/domino/assignment_tables.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a9e95f0553ba9bc4c40bd5ca2d73bcca6" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::SimpleAssignmentsTable::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="49" column="16" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a8e765f2bd41e95ff108113c13a904b8b" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt;</type>
+        <definition>Pointer&lt;ParticleStatesTable&gt; IMP::domino::SimpleAssignmentsTable::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="47" column="11" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a94debf6305ed95342bfc0898d8612921" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref></type>
+        <definition>SubsetFilterTables IMP::domino::SimpleAssignmentsTable::sft_</definition>
+        <argsstring></argsstring>
+        <name>sft_</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::sft_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="48" column="22" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a327026ad51858f3eb8800617576fea85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::SimpleAssignmentsTable::SimpleAssignmentsTable</definition>
+        <argsstring>(ParticleStatesTable *pst, const SubsetFilterTables &amp;sft=SubsetFilterTables(), unsigned int max=std::numeric_limits&lt; unsigned int &gt;::max())</argsstring>
+        <name>SimpleAssignmentsTable</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::SimpleAssignmentsTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>sft</declname>
+          <defval><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref>()</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max</declname>
+          <defval>std::numeric_limits&lt; unsigned int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a99e032bfb26528e39e3a0bdac24d3979" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::SimpleAssignmentsTable::~SimpleAssignmentsTable</definition>
+        <argsstring>()</argsstring>
+        <name>~SimpleAssignmentsTable</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::~SimpleAssignmentsTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="58" column="231" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a599db439eb0d3389af7e93035b92ea76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::SimpleAssignmentsTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="58" column="34" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a98c54efb667b399ab14be8d685689e5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::SimpleAssignmentsTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="58" column="103" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SimpleAssignmentsTable_1ae99efe9637e6c99af3c438f778461cc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::SimpleAssignmentsTable::load_assignments</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, AssignmentContainer *ac) const override</argsstring>
+        <name>load_assignments</name>
+        <qualifiedname>IMP::domino::SimpleAssignmentsTable::load_assignments</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1AssignmentsTable_1a82165fe3c39a0a5bd1005826f5121c26">load_assignments</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="56" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The produced states are filtered using the provided <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> objects. The assignments are enumerated and filtered in a straight forward manner. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentsTable"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::SimpleAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1SimpleAssignmentsTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::AssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentsTable"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::SimpleAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1SimpleAssignmentsTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/assignment_tables.h" line="46" column="1" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="46" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a437a06ae6c19f35c2dfb706ad650d24f" prot="public" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>AssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a599db439eb0d3389af7e93035b92ea76" prot="public" virt="virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a98c54efb667b399ab14be8d685689e5e" prot="public" virt="virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1ae99efe9637e6c99af3c438f778461cc9" prot="public" virt="virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>load_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a9e95f0553ba9bc4c40bd5ca2d73bcca6" prot="private" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>max_</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a8e765f2bd41e95ff108113c13a904b8b" prot="private" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a94debf6305ed95342bfc0898d8612921" prot="private" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>sft_</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a327026ad51858f3eb8800617576fea85" prot="public" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>SimpleAssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a325612e584018e745a52a9659fcf1e66" prot="public" virt="non-virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>~AssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1a99e032bfb26528e39e3a0bdac24d3979" prot="public" virt="virtual"><scope>IMP::domino::SimpleAssignmentsTable</scope><name>~SimpleAssignmentsTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

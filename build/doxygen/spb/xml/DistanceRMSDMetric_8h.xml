@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="DistanceRMSDMetric_8h" kind="file" language="C++">
+    <compoundname>DistanceRMSDMetric.h</compoundname>
+    <includes local="no">IMP/algebra/Transformation3D.h</includes>
+    <includes local="no">IMP/algebra/Vector3D.h</includes>
+    <includes local="no">IMP/statistics/Metric.h</includes>
+    <includes local="no">IMP/statistics/PartitionalClustering.h</includes>
+    <includes refid="spb__config_8h" local="no">IMP/spb/spb_config.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>DistanceRMSDMetric.h</label>
+        <link refid="DistanceRMSDMetric_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/algebra/Transformation3D.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/algebra/Vector3D.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/statistics/Metric.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/statistics/PartitionalClustering.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1spb_1_1DistanceRMSDMetric" prot="public">IMP::spb::DistanceRMSDMetric</innerclass>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1spb">IMP::spb</innernamespace>
+    <briefdescription>
+<para>Distance RMSD Metric. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/DistanceRMSDMetric.h"/>
+  </compounddef>
+</doxygen>

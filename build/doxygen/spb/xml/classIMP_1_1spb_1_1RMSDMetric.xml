@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1RMSDMetric" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::RMSDMetric</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">statistics::Metric</basecompoundref>
+    <includes local="no">IMP/spb/RMSDMetric.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RMSDMetric_1a0d3e24c1d646bd9d4f8ce94575125b5b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; algebra::Vector3Ds &gt;</type>
+        <definition>std::vector&lt;algebra::Vector3Ds&gt; IMP::spb::RMSDMetric::coords_</definition>
+        <argsstring></argsstring>
+        <name>coords_</name>
+        <qualifiedname>IMP::spb::RMSDMetric::coords_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="21" column="15" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RMSDMetric_1aa6baf2c46193f2b1002b1acf81f656c0" prot="private" static="no" mutable="no">
+        <type>Particles</type>
+        <definition>Particles IMP::spb::RMSDMetric::ps_</definition>
+        <argsstring></argsstring>
+        <name>ps_</name>
+        <qualifiedname>IMP::spb::RMSDMetric::ps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="19" column="13" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RMSDMetric_1a6dbde68093cf2ddd2e5a72a48783cb48" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::RMSDMetric::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <qualifiedname>IMP::spb::RMSDMetric::weight_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="20" column="10" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a6c70520bbd0e36bbbb00696cf93b03d7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RMSDMetric::get_rmsd</definition>
+        <argsstring>(algebra::Vector3Ds v0, algebra::Vector3Ds v1) const</argsstring>
+        <name>get_rmsd</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_rmsd</qualifiedname>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>v1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="23" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1ad192b68d21a97f9ec2d54a001141c167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::RMSDMetric::RMSDMetric</definition>
+        <argsstring>(Particles ps)</argsstring>
+        <name>RMSDMetric</name>
+        <qualifiedname>IMP::spb::RMSDMetric::RMSDMetric</qualifiedname>
+        <param>
+          <type>Particles</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="26" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1aa2cfc1034147909d104f048e15b29450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::RMSDMetric::~RMSDMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~RMSDMetric</name>
+        <qualifiedname>IMP::spb::RMSDMetric::~RMSDMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="33" column="231" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a8bbe50841e8da56d30f3bcd9241706e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::RMSDMetric::add_configuration</definition>
+        <argsstring>(double weight=1.0)</argsstring>
+        <name>add_configuration</name>
+        <qualifiedname>IMP::spb::RMSDMetric::add_configuration</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a8936d8189cae99cb03dffd7257a79d96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::RMSDMetric::get_distance</definition>
+        <argsstring>(unsigned int i, unsigned int j) const override</argsstring>
+        <name>get_distance</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_distance</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a1df92b65b2afea260a432096a16b1bc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::spb::RMSDMetric::get_number_of_items</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_items</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_number_of_items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="32" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a6b88eab19fc77f0cbe7740ce0c77c1c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::RMSDMetric::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="33" column="34" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a69236b51b869fb6652b4268c7f8c215a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::RMSDMetric::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="33" column="103" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RMSDMetric_1a409abd017dc7550b075673901c0a907b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::RMSDMetric::get_weight</definition>
+        <argsstring>(unsigned i)</argsstring>
+        <name>get_weight</name>
+        <qualifiedname>IMP::spb::RMSDMetric::get_weight</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RMSDMetric.h" line="28" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Compute the RMSD between two sets of particles in two configurations. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/RMSDMetric.h" line="18" column="1" bodyfile="include/IMP/spb/RMSDMetric.h" bodystart="18" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a8bbe50841e8da56d30f3bcd9241706e9" prot="public" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>add_configuration</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a0d3e24c1d646bd9d4f8ce94575125b5b" prot="private" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>coords_</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a8936d8189cae99cb03dffd7257a79d96" prot="public" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a1df92b65b2afea260a432096a16b1bc4" prot="public" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_number_of_items</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6c70520bbd0e36bbbb00696cf93b03d7" prot="private" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_rmsd</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6b88eab19fc77f0cbe7740ce0c77c1c7" prot="public" virt="virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a69236b51b869fb6652b4268c7f8c215a" prot="public" virt="virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a409abd017dc7550b075673901c0a907b" prot="public" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>get_weight</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1aa6baf2c46193f2b1002b1acf81f656c0" prot="private" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>ps_</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1ad192b68d21a97f9ec2d54a001141c167" prot="public" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>RMSDMetric</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6dbde68093cf2ddd2e5a72a48783cb48" prot="private" virt="non-virtual"><scope>IMP::spb::RMSDMetric</scope><name>weight_</name></member>
+      <member refid="classIMP_1_1spb_1_1RMSDMetric_1aa2cfc1034147909d104f048e15b29450" prot="public" virt="virtual"><scope>IMP::spb::RMSDMetric</scope><name>~RMSDMetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

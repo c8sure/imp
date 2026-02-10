@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ProteomicsEMAlignmentAtomic</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/proteomics_em_alignment_atomic.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a16a7307ac5596f86925d4e2c6099cc0e" prot="protected" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::RestraintScoreSubsetFilterTable</ref> &gt;</type>
+        <definition>PointerMember&lt;domino::RestraintScoreSubsetFilterTable&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::all_rs_filt_</definition>
+        <argsstring></argsstring>
+        <name>all_rs_filt_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::all_rs_filt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="105" column="17" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afb76a0a66788cfbb7fd59e34953234b1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+        <definition>multifit::SettingsData* IMP::multifit::ProteomicsEMAlignmentAtomic::asmb_data_</definition>
+        <argsstring></argsstring>
+        <name>asmb_data_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::asmb_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="111" column="26" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ad520b8e1d7b326c2b5dd6143970b50b7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, float &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, float&gt; &gt; IMP::multifit::ProteomicsEMAlignmentAtomic::cg_sorted_</definition>
+        <argsstring></argsstring>
+        <name>cg_sorted_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::cg_sorted_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="92" column="15" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acd4d2ae137e9febd31c43ab24130fff0" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::conn_rs_</definition>
+        <argsstring></argsstring>
+        <name>conn_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::conn_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="93" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a485dbdae1af665827c978aa85ab1e836" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::conn_rs_with_filter_</definition>
+        <argsstring></argsstring>
+        <name>conn_rs_with_filter_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::conn_rs_with_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="94" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aeb8fdf75435b57c2aa2e09b9f3e4ee30" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; em::DensityMap &gt;</type>
+        <definition>Pointer&lt;em::DensityMap&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::dmap_</definition>
+        <argsstring></argsstring>
+        <name>dmap_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::dmap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="83" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aa171fa5ecf3e48c7aa10557070316152" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::dummy_rs_</definition>
+        <argsstring></argsstring>
+        <name>dummy_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::dummy_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="97" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4dc396dcc0bf3e9aa20600b8f0d02802" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::em_rs_</definition>
+        <argsstring></argsstring>
+        <name>em_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::em_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="98" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5aaf39ff161c73ab7762eb06e05ad3ef" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::ev_rs_</definition>
+        <argsstring></argsstring>
+        <name>ev_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::ev_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="99" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1accba0493a1cb9930ca98db7592846602" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float IMP::multifit::ProteomicsEMAlignmentAtomic::ev_thr_</definition>
+        <argsstring></argsstring>
+        <name>ev_thr_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::ev_thr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="113" column="9" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae723ef400571c634ae54889633ead0c3" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProteomicsEMAlignmentAtomic::fast_scoring_</definition>
+        <argsstring></argsstring>
+        <name>fast_scoring_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::fast_scoring_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="76" column="8" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae9b721f12392f407c7ebee921dc9cd01" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">domino::SubsetFilterTables</ref></type>
+        <definition>domino::SubsetFilterTables IMP::multifit::ProteomicsEMAlignmentAtomic::filters_</definition>
+        <argsstring></argsstring>
+        <name>filters_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::filters_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="110" column="30" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a72119345d1c4dd22c074314e6a7792ca" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProteomicsEMAlignmentAtomic::filters_set_</definition>
+        <argsstring></argsstring>
+        <name>filters_set_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::filters_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="107" column="20" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a69dc79a5f8e34e7a7742758d37b6f31d" prot="protected" static="no" mutable="no">
+        <type>IntKey</type>
+        <definition>IntKey IMP::multifit::ProteomicsEMAlignmentAtomic::fit_state_key_</definition>
+        <argsstring></argsstring>
+        <name>fit_state_key_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::fit_state_key_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="106" column="10" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a732da6b6d4f8d6ae45599cf4155b0f6f" prot="protected" static="no" mutable="no">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::multifit::ProteomicsEMAlignmentAtomic::jt_rs_</definition>
+        <argsstring></argsstring>
+        <name>jt_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::jt_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="100" column="18" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a44fbe31347d478aaf647aef184ae71c9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref></type>
+        <definition>ProteinsAnchorsSamplingSpace IMP::multifit::ProteomicsEMAlignmentAtomic::mapping_data_</definition>
+        <argsstring></argsstring>
+        <name>mapping_data_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::mapping_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="81" column="32" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a30b7d69ccd980a64c3c17973e6f30e2f" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; Model &gt;</type>
+        <definition>Pointer&lt;Model&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::mdl_</definition>
+        <argsstring></argsstring>
+        <name>mdl_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::mdl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="87" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acc65c9bff560edd2e87631f07d6890b1" prot="protected" static="no" mutable="no">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::multifit::ProteomicsEMAlignmentAtomic::mhs_</definition>
+        <argsstring></argsstring>
+        <name>mhs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::mhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="85" column="21" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a61a12a948cbbc7bf693abdd4137f2f14" prot="protected" static="no" mutable="no">
+        <type>IntKey</type>
+        <definition>IntKey IMP::multifit::ProteomicsEMAlignmentAtomic::order_key_</definition>
+        <argsstring></argsstring>
+        <name>order_key_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::order_key_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="106" column="25" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a01c13a09c4b95d6314fff9071393b22f" prot="protected" static="no" mutable="no">
+        <type>AlignmentParams</type>
+        <definition>AlignmentParams IMP::multifit::ProteomicsEMAlignmentAtomic::params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="88" column="19" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6ac13be325bd378b35a8ef070f869d66" prot="protected" static="no" mutable="no">
+        <type>IntPairs</type>
+        <definition>IntPairs IMP::multifit::ProteomicsEMAlignmentAtomic::post_sampling_ev_pairs_</definition>
+        <argsstring></argsstring>
+        <name>post_sampling_ev_pairs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::post_sampling_ev_pairs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="112" column="12" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acbdb89d545a58709f99fe6d45d7a4cce" prot="protected" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">multifit::ProteomicsData</ref> &gt;</type>
+        <definition>PointerMember&lt;multifit::ProteomicsData&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::prot_data_</definition>
+        <argsstring></argsstring>
+        <name>prot_data_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::prot_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="82" column="17" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afc607ba70de11c663872d124dbb58b96" prot="protected" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::ParticleStatesTable</ref> &gt;</type>
+        <definition>PointerMember&lt;domino::ParticleStatesTable&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="109" column="17" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3be724722de8d0a07f33c9aefd5cda83" prot="protected" static="no" mutable="no">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::multifit::ProteomicsEMAlignmentAtomic::rbs_</definition>
+        <argsstring></argsstring>
+        <name>rbs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::rbs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="86" column="21" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5715e4532774638d836544c6c157b454" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::RestraintCache</ref> &gt;</type>
+        <definition>Pointer&lt;domino::RestraintCache&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::rc_</definition>
+        <argsstring></argsstring>
+        <name>rc_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::rc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="75" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b290d5b6741ead49d735114b73de4b0" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::restraint_set_</definition>
+        <argsstring></argsstring>
+        <name>restraint_set_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::restraint_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="108" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aaa6906f50f48353fc38e284ac0df306e" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Assignments</ref></type>
+        <definition>domino::Assignments IMP::multifit::ProteomicsEMAlignmentAtomic::sampled_assignments_</definition>
+        <argsstring></argsstring>
+        <name>sampled_assignments_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::sampled_assignments_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="90" column="23" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4af1ad2c850f3ee63d064b8e23d28f99" prot="protected" static="no" mutable="no">
+        <type>IntsLists</type>
+        <definition>IntsLists IMP::multifit::ProteomicsEMAlignmentAtomic::sampled_solutions_</definition>
+        <argsstring></argsstring>
+        <name>sampled_solutions_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::sampled_solutions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="89" column="13" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6db97c71ab7392ae4b52c136fe983d29" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProteomicsEMAlignmentAtomic::states_set_</definition>
+        <argsstring></argsstring>
+        <name>states_set_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::states_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="107" column="8" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a7bd95464723cf6ce1f1235d7d7aacc20" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::multifit::ProteomicsEMAlignmentAtomic::threshold_</definition>
+        <argsstring></argsstring>
+        <name>threshold_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::threshold_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="84" column="10" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aac11b1e43340fe37d1914c185a09d51d" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::xlink_rs_</definition>
+        <argsstring></argsstring>
+        <name>xlink_rs_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::xlink_rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="95" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b64c03ab91f9d32ebb9c5e5c02a07d2" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; RestraintSet &gt;</type>
+        <definition>Pointer&lt;RestraintSet&gt; IMP::multifit::ProteomicsEMAlignmentAtomic::xlink_rs_with_filter_</definition>
+        <argsstring></argsstring>
+        <name>xlink_rs_with_filter_</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::xlink_rs_with_filter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="96" column="11" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5951962f4133ac2a456960ced4511253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteomicsEMAlignmentAtomic::ProteomicsEMAlignmentAtomic</definition>
+        <argsstring>(const ProteinsAnchorsSamplingSpace &amp;mapping_data, multifit::SettingsData *asmb_data, const AlignmentParams &amp;align_param)</argsstring>
+        <name>ProteomicsEMAlignmentAtomic</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::ProteomicsEMAlignmentAtomic</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &amp;</type>
+          <declname>mapping_data</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+          <declname>asmb_data</declname>
+        </param>
+        <param>
+          <type>const AlignmentParams &amp;</type>
+          <declname>align_param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3fd6b63839923c827e8e545a2aacea22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::ProteomicsEMAlignmentAtomic::~ProteomicsEMAlignmentAtomic</definition>
+        <argsstring>()</argsstring>
+        <name>~ProteomicsEMAlignmentAtomic</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::~ProteomicsEMAlignmentAtomic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="71" column="231" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6f54cacaabe39632cf282d202d1327a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::add_all_restraints</definition>
+        <argsstring>()</argsstring>
+        <name>add_all_restraints</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::add_all_restraints</qualifiedname>
+        <briefdescription>
+<para>Set up the restraints that will be used in the alignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These restraints are stored internally in a RestraintSet, which can be obtained by calling <ref refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a277ca787728e3ffa00977e12e4f79c4e" kindref="member">get_restraint_set()</ref>. For example, this allows adding extra restraints to the set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a402d4ed4897f546017b433afae5f4cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::add_states_and_filters</definition>
+        <argsstring>()</argsstring>
+        <name>add_states_and_filters</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::add_states_and_filters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a545e0c57c4339e33e70cd5ce7c291617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::align</definition>
+        <argsstring>()</argsstring>
+        <name>align</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::align</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a961069a86a3c5e2e99158a1f587a13e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Assignments</ref></type>
+        <definition>domino::Assignments IMP::multifit::ProteomicsEMAlignmentAtomic::get_combinations</definition>
+        <argsstring>(bool uniques=false) const</argsstring>
+        <name>get_combinations</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_combinations</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>uniques</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="48" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af055112ec18e4cef70c1ffaf3d0068f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Model *</type>
+        <definition>Model * IMP::multifit::ProteomicsEMAlignmentAtomic::get_model</definition>
+        <argsstring>()</argsstring>
+        <name>get_model</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="66" column="9" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac7e7fcbc5f6efec9633725bd8f61f593" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::multifit::ProteomicsEMAlignmentAtomic::get_molecules</definition>
+        <argsstring>() const</argsstring>
+        <name>get_molecules</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_molecules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="53" column="21" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a277ca787728e3ffa00977e12e4f79c4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RestraintSet *</type>
+        <definition>RestraintSet * IMP::multifit::ProteomicsEMAlignmentAtomic::get_restraint_set</definition>
+        <argsstring>()</argsstring>
+        <name>get_restraint_set</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_restraint_set</qualifiedname>
+        <briefdescription>
+<para>Get the restraints set up by <ref refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6f54cacaabe39632cf282d202d1327a7" kindref="member">add_all_restraints()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="44" column="16" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aca82d5eb12a417ab0fca4c3240116d02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::multifit::ProteomicsEMAlignmentAtomic::get_rigid_bodies</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rigid_bodies</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_rigid_bodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="54" column="21" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac2b7bc6d6be89f9d3892b16a18fa57b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::ProteomicsEMAlignmentAtomic::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="71" column="34" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a35f786bf818d87dea5605de4889ab8e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::ProteomicsEMAlignmentAtomic::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="71" column="103" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac82cf2f7f641892f456c67da2ae3568b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::load_combination_of_states</definition>
+        <argsstring>(const Ints &amp;state4particles)</argsstring>
+        <name>load_combination_of_states</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::load_combination_of_states</qualifiedname>
+        <param>
+          <type>const Ints &amp;</type>
+          <declname>state4particles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>load combination of states The order of the states should be the order </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88d1ed53c74d930ee8bd5d6d07a95112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::set_density_map</definition>
+        <argsstring>(em::DensityMap *dmap, float threshold)</argsstring>
+        <name>set_density_map</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::set_density_map</qualifiedname>
+        <param>
+          <type>em::DensityMap *</type>
+          <declname>dmap</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="49" column="8" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a568c21102d08963792bae063a1820f45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::set_fast_scoring</definition>
+        <argsstring>(bool state)</argsstring>
+        <name>set_fast_scoring</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::set_fast_scoring</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to fast EV is calculated as penetration score and Fit restraint is decomposed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="69" column="8" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac5089f6031e36c98cb91e5befeae0a76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::show_domino_merge_tree</definition>
+        <argsstring>() const</argsstring>
+        <name>show_domino_merge_tree</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::show_domino_merge_tree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3b18c7b66b198cdfdf8a9fdee56da5fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::show_scores_header</definition>
+        <argsstring>(std::ostream &amp;ous=std::cout) const</argsstring>
+        <name>show_scores_header</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::show_scores_header</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>ous</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="62" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88ed595348792789d7d9904bd48e4c64" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::multifit::ProteomicsEMAlignmentAtomic::get_alignment_restraints</definition>
+        <argsstring>() const</argsstring>
+        <name>get_alignment_restraints</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::get_alignment_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5abdddf1b7bb906f168a9bc04d829e68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteomicsEMAlignmentAtomic::load_atomic_molecules</definition>
+        <argsstring>()</argsstring>
+        <name>load_atomic_molecules</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::load_atomic_molecules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af3c22028fa5de638f72e8f15ed585f5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::ParticleStatesTable</ref> *</type>
+        <definition>domino::ParticleStatesTable * IMP::multifit::ProteomicsEMAlignmentAtomic::set_particle_states_table</definition>
+        <argsstring>(domino::SubsetFilterTables &amp;filters)</argsstring>
+        <name>set_particle_states_table</name>
+        <qualifiedname>IMP::multifit::ProteomicsEMAlignmentAtomic::set_particle_states_table</qualifiedname>
+        <param>
+          <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">domino::SubsetFilterTables</ref> &amp;</type>
+          <declname>filters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="77" column="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Align proteomics graph to EM density map. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The alignment is from the em anchors to the proteomics graph </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>IMP::multifit::AnchorsData</label>
+        <link refid="classIMP_1_1multifit_1_1AnchorsData"/>
+      </node>
+      <node id="2">
+        <label>IMP::multifit::ProteinsAnchorsSamplingSpace</label>
+        <link refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>anchors_data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::multifit::ProteomicsEMAlignmentAtomic</label>
+        <link refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mapping_data_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>asmb_data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::multifit::SettingsData</label>
+        <link refid="classIMP_1_1multifit_1_1SettingsData"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/multifit/proteomics_em_alignment_atomic.h" line="30" column="1" bodyfile="include/IMP/multifit/proteomics_em_alignment_atomic.h" bodystart="30" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6f54cacaabe39632cf282d202d1327a7" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>add_all_restraints</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a402d4ed4897f546017b433afae5f4cad" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>add_states_and_filters</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a545e0c57c4339e33e70cd5ce7c291617" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>align</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a16a7307ac5596f86925d4e2c6099cc0e" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>all_rs_filt_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afb76a0a66788cfbb7fd59e34953234b1" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>asmb_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ad520b8e1d7b326c2b5dd6143970b50b7" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>cg_sorted_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acd4d2ae137e9febd31c43ab24130fff0" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>conn_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a485dbdae1af665827c978aa85ab1e836" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>conn_rs_with_filter_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aeb8fdf75435b57c2aa2e09b9f3e4ee30" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>dmap_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aa171fa5ecf3e48c7aa10557070316152" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>dummy_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4dc396dcc0bf3e9aa20600b8f0d02802" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>em_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5aaf39ff161c73ab7762eb06e05ad3ef" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>ev_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1accba0493a1cb9930ca98db7592846602" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>ev_thr_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae723ef400571c634ae54889633ead0c3" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>fast_scoring_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ae9b721f12392f407c7ebee921dc9cd01" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>filters_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a72119345d1c4dd22c074314e6a7792ca" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>filters_set_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a69dc79a5f8e34e7a7742758d37b6f31d" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>fit_state_key_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88ed595348792789d7d9904bd48e4c64" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_alignment_restraints</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a961069a86a3c5e2e99158a1f587a13e2" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_combinations</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af055112ec18e4cef70c1ffaf3d0068f0" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_model</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac7e7fcbc5f6efec9633725bd8f61f593" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_molecules</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a277ca787728e3ffa00977e12e4f79c4e" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_restraint_set</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aca82d5eb12a417ab0fca4c3240116d02" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_rigid_bodies</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac2b7bc6d6be89f9d3892b16a18fa57b6" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a35f786bf818d87dea5605de4889ab8e8" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a732da6b6d4f8d6ae45599cf4155b0f6f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>jt_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5abdddf1b7bb906f168a9bc04d829e68" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>load_atomic_molecules</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac82cf2f7f641892f456c67da2ae3568b" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>load_combination_of_states</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a44fbe31347d478aaf647aef184ae71c9" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>mapping_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a30b7d69ccd980a64c3c17973e6f30e2f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>mdl_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acc65c9bff560edd2e87631f07d6890b1" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>mhs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a61a12a948cbbc7bf693abdd4137f2f14" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>order_key_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a01c13a09c4b95d6314fff9071393b22f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>params_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6ac13be325bd378b35a8ef070f869d66" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>post_sampling_ev_pairs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1acbdb89d545a58709f99fe6d45d7a4cce" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>prot_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5951962f4133ac2a456960ced4511253" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>ProteomicsEMAlignmentAtomic</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1afc607ba70de11c663872d124dbb58b96" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3be724722de8d0a07f33c9aefd5cda83" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>rbs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a5715e4532774638d836544c6c157b454" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>rc_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b290d5b6741ead49d735114b73de4b0" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>restraint_set_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aaa6906f50f48353fc38e284ac0df306e" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>sampled_assignments_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a4af1ad2c850f3ee63d064b8e23d28f99" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>sampled_solutions_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a88d1ed53c74d930ee8bd5d6d07a95112" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>set_density_map</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a568c21102d08963792bae063a1820f45" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>set_fast_scoring</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1af3c22028fa5de638f72e8f15ed585f5f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>set_particle_states_table</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1ac5089f6031e36c98cb91e5befeae0a76" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>show_domino_merge_tree</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3b18c7b66b198cdfdf8a9fdee56da5fd" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>show_scores_header</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a6db97c71ab7392ae4b52c136fe983d29" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>states_set_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a7bd95464723cf6ce1f1235d7d7aacc20" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>threshold_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1aac11b1e43340fe37d1914c185a09d51d" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>xlink_rs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a2b64c03ab91f9d32ebb9c5e5c02a07d2" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>xlink_rs_with_filter_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteomicsEMAlignmentAtomic_1a3fd6b63839923c827e8e545a2aacea22" prot="public" virt="virtual"><scope>IMP::multifit::ProteomicsEMAlignmentAtomic</scope><name>~ProteomicsEMAlignmentAtomic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

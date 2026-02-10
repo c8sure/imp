@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1LoadLink" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::rmf::LoadLink</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1rmf_1_1SimpleLoadLink" prot="public" virt="non-virtual">IMP::rmf::SimpleLoadLink&lt; Particle &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1rmf_1_1SimpleLoadLink" prot="public" virt="non-virtual">IMP::rmf::SimpleLoadLink&lt; O &gt;</derivedcompoundref>
+    <includes local="no">IMP/rmf/links.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1LoadLink_1afd534bd02c606495c6270f7910b869e2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::rmf::LoadLink::frame_loaded_</definition>
+        <argsstring></argsstring>
+        <name>frame_loaded_</name>
+        <qualifiedname>IMP::rmf::LoadLink::frame_loaded_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="37" column="8" bodyfile="include/IMP/rmf/links.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1LoadLink_1a6396a96afbc73eb79623843c93ef625b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::LoadLink::LoadLink</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>LoadLink</name>
+        <qualifiedname>IMP::rmf::LoadLink::LoadLink</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1LoadLink_1a5449011cd422f5813017372626ae90f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::LoadLink::do_load</definition>
+        <argsstring>(RMF::FileConstHandle fh)=0</argsstring>
+        <name>do_load</name>
+        <qualifiedname>IMP::rmf::LoadLink::do_load</qualifiedname>
+        <reimplementedby refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf">do_load</reimplementedby>
+        <reimplementedby refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf">do_load</reimplementedby>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="40" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1LoadLink_1a25147ebd8f5982ba6c44b3d9a20f0a0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::LoadLink::load</definition>
+        <argsstring>(RMF::FileConstHandle fh)</argsstring>
+        <name>load</name>
+        <qualifiedname>IMP::rmf::LoadLink::load</qualifiedname>
+        <param>
+          <type>RMF::FileConstHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/links.h" line="44" column="8" bodyfile="include/IMP/rmf/links.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manage a link between an <computeroutput>IMP</computeroutput> object and a part of the RMF file. This allows conformations to be loaded flexibly.</para>
+<para><ref refid="namespaceIMP_1_1rmf_1acb6ac1b816d176053c2a78d3154cf315" kindref="member">LoadLinks</ref> must not save any handles to RMF objects.</para>
+<para><simplesect kind="par"><title>Warning: LoadLink has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IMP::rmf::HierarchyLoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1HierarchyLoadLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::rmf::LoadLink</label>
+        <link refid="classIMP_1_1rmf_1_1LoadLink"/>
+      </node>
+      <node id="4">
+        <label>IMP::rmf::SimpleLoadLink&lt; O &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::rmf::SimpleLoadLink&lt; Particle &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleLoadLink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/rmf/links.h" line="36" column="1" bodyfile="include/IMP/rmf/links.h" bodystart="36" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a5449011cd422f5813017372626ae90f4" prot="protected" virt="pure-virtual"><scope>IMP::rmf::LoadLink</scope><name>do_load</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1afd534bd02c606495c6270f7910b869e2" prot="private" virt="non-virtual"><scope>IMP::rmf::LoadLink</scope><name>frame_loaded_</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a25147ebd8f5982ba6c44b3d9a20f0a0a" prot="public" virt="non-virtual"><scope>IMP::rmf::LoadLink</scope><name>load</name></member>
+      <member refid="classIMP_1_1rmf_1_1LoadLink_1a6396a96afbc73eb79623843c93ef625b" prot="protected" virt="non-virtual"><scope>IMP::rmf::LoadLink</scope><name>LoadLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

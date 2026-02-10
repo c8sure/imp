@@ -1,0 +1,14 @@
+# CMake generated Testfile for 
+# Source directory: /home/catherine/imp/modules/algebra/benchmark
+# Build directory: /home/catherine/imp/build/modules/algebra/benchmark
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(IMP.algebra-benchmark_grid_traversal.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/algebra/benchmark/algebra/benchmark_grid_traversal" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.algebra-benchmark_grid_traversal.cpp PROPERTIES  COST "3" LABELS "IMP.algebra-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;35;imp_add_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;0;")
+add_test(IMP.algebra-benchmark_knn.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/algebra/benchmark/algebra/benchmark_knn" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.algebra-benchmark_knn.cpp PROPERTIES  COST "3" LABELS "IMP.algebra-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;35;imp_add_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;0;")
+add_test(IMP.algebra-benchmark_rotate.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/algebra/benchmark/algebra/benchmark_rotate" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.algebra-benchmark_rotate.cpp PROPERTIES  COST "3" LABELS "IMP.algebra-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;35;imp_add_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;0;")
+add_test(IMP.algebra-benchmark_surface.cpp "/home/catherine/imp/build/setup_environment.sh" "/home/catherine/imp/build/modules/algebra/benchmark/algebra/benchmark_surface" "--run_quick_test" "--deprecation_exceptions")
+set_tests_properties(IMP.algebra-benchmark_surface.cpp PROPERTIES  COST "3" LABELS "IMP.algebra-benchmark-cpp-EXPENSIVE" TIMEOUT "120" _BACKTRACE_TRIPLES "/home/catherine/imp/cmake_modules/IMPAddTests.cmake;61;add_test;/home/catherine/imp/cmake_modules/IMPAddTests.cmake;106;imp_add_cpp_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;35;imp_add_tests;/home/catherine/imp/modules/algebra/benchmark/CMakeLists.txt;0;")

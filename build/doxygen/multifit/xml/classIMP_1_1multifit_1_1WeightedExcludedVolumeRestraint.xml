@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::WeightedExcludedVolumeRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/multifit/WeightedExcludedVolumeRestraint.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a65c3b72ae2fb2d369601c839c32b9fdb" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list IMP::multifit::WeightedExcludedVolumeRestraint::particles</definition>
+        <argsstring></argsstring>
+        <name>particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::particles</qualifiedname>
+        <briefdescription>
+<para>A Python list of Particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This class member is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="23" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5c548736eb00e8758be63c78fd75f219" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;float&gt; &gt; IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dx_</definition>
+        <argsstring></argsstring>
+        <name>rb_refined_dx_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="66" column="15" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ac4813058edf9a245f39c022367aa2d46" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;float&gt; &gt; IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dy_</definition>
+        <argsstring></argsstring>
+        <name>rb_refined_dy_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="66" column="30" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8a3870bfb0b5b4c3569fa2bcf2984058" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;float&gt; &gt; IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dz_</definition>
+        <argsstring></argsstring>
+        <name>rb_refined_dz_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rb_refined_dz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="67" column="7" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a998d32419e3b8888885ba8dfbe0e7a0f" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; Refiner &gt;</type>
+        <definition>IMP::PointerMember&lt;Refiner&gt; IMP::multifit::WeightedExcludedVolumeRestraint::rb_refiner_</definition>
+        <argsstring></argsstring>
+        <name>rb_refiner_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rb_refiner_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="71" column="22" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a697d3171503b25b1068d91d2439e1eb6" prot="private" static="no" mutable="no">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::multifit::WeightedExcludedVolumeRestraint::rbs_</definition>
+        <argsstring></argsstring>
+        <name>rbs_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rbs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="61" column="21" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5843cd77197f86a9bf8ff2120965080e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; IMP::algebra::Transformation3D &gt;</type>
+        <definition>std::vector&lt;IMP::algebra::Transformation3D&gt; IMP::multifit::WeightedExcludedVolumeRestraint::rbs_orig_trans_</definition>
+        <argsstring></argsstring>
+        <name>rbs_orig_trans_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rbs_orig_trans_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="70" column="15" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4d24b525ad16618fb02eafd6d1c023ae" prot="private" static="no" mutable="yes">
+        <type>em::SurfaceShellDensityMaps</type>
+        <definition>em::SurfaceShellDensityMaps IMP::multifit::WeightedExcludedVolumeRestraint::rbs_surface_maps_</definition>
+        <argsstring></argsstring>
+        <name>rbs_surface_maps_</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::rbs_surface_maps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="63" column="39" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a1b6c81a897d408afc71a09df136738c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::WeightedExcludedVolumeRestraint::WeightedExcludedVolumeRestraint</definition>
+        <argsstring>(core::RigidBodies rbs, Refiner *refiner, FloatKey weight_key=IMP::atom::Mass::get_mass_key())</argsstring>
+        <name>WeightedExcludedVolumeRestraint</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::WeightedExcludedVolumeRestraint</qualifiedname>
+        <param>
+          <type>core::RigidBodies</type>
+          <declname>rbs</declname>
+        </param>
+        <param>
+          <type>Refiner *</type>
+          <declname>refiner</declname>
+        </param>
+        <param>
+          <type>FloatKey</type>
+          <declname>weight_key</declname>
+          <defval>IMP::atom::Mass::get_mass_key()</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Excluded volume will be calculated between these Rigid bodies </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">refiner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rigid body refiner </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">weight_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the weight attribute of the particles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Particles that are rigid-bodies are interpolated and not resampled. This significantly reduces the running time but is less accurate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4b3048ee222265eaed7a4edee3ee7469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::WeightedExcludedVolumeRestraint::~WeightedExcludedVolumeRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~WeightedExcludedVolumeRestraint</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::~WeightedExcludedVolumeRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="48" column="231" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8b224b6c3383ab126405607461d31952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::WeightedExcludedVolumeRestraint::add_particle</definition>
+        <argsstring>(Particle *obj)</argsstring>
+        <name>add_particle</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::add_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aea7c29c9499cdc650f46a3ea79823cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::add_particles</definition>
+        <argsstring>(const Particles &amp;objs)</argsstring>
+        <name>add_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::add_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3f6519c55b712437e0d256345c1f3762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::clear_particles</definition>
+        <argsstring>()</argsstring>
+        <name>clear_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::clear_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab126d0e712711e6f1e8de098855ca669" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::multifit::WeightedExcludedVolumeRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="47" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af2bb28744a729e9f3051ea8dd5d25013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::erase_particle</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>erase_particle</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::erase_particle</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3bc3f5586a87bf358b5a7e5effe3a3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::WeightedExcludedVolumeRestraint::get_has_particles</definition>
+        <argsstring>()</argsstring>
+        <name>get_has_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_has_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aeae5c03ecaa487ff9d9d12bc08120a84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::WeightedExcludedVolumeRestraint::get_number_of_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_number_of_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1add359e9550c0adb0802588c2d20b6bd2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Particle *</type>
+        <definition>Particle * IMP::multifit::WeightedExcludedVolumeRestraint::get_particle</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_particle</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_particle</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a54b8145c610a21bcda3596ecb5b2332f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Particles</type>
+        <definition>Particles IMP::multifit::WeightedExcludedVolumeRestraint::get_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab07d5212fb8f26794effe725c31f2c7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::WeightedExcludedVolumeRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="48" column="34" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1adeb5c5034841fd693ddc848a32919763" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::WeightedExcludedVolumeRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="48" column="103" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7171fe3b218ad0ea70dc07f8cce3f397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::remove_particle</definition>
+        <argsstring>(Particle *d)</argsstring>
+        <name>remove_particle</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::remove_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af8f96ae6bb6be6b87368a6d198927f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::remove_particles</definition>
+        <argsstring>(const Particles &amp;d)</argsstring>
+        <name>remove_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::remove_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1afc32b0b883fc7ed868bfc1d26d83c523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::reserve_particles</definition>
+        <argsstring>(unsigned int sz)</argsstring>
+        <name>reserve_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::reserve_particles</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aaa8baa476a0301bc8222fafd82f4c8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::set_particles</definition>
+        <argsstring>(const Particles &amp;ps)</argsstring>
+        <name>set_particles</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::set_particles</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ae4ccdb99f1c68c82480d0111d086a876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::set_particles_order</definition>
+        <argsstring>(const Particles &amp;objs)</argsstring>
+        <name>set_particles_order</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::set_particles_order</qualifiedname>
+        <param>
+          <type>const Particles &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="51" column="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7c7ca51814d10be0e9ad264a6c5ce045" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::multifit::WeightedExcludedVolumeRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="45" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a194294484da2efb24967fb55f8095552" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::WeightedExcludedVolumeRestraint::initialize_model_density_map</definition>
+        <argsstring>(FloatKey weight_key)</argsstring>
+        <name>initialize_model_density_map</name>
+        <qualifiedname>IMP::multifit::WeightedExcludedVolumeRestraint::initialize_model_density_map</qualifiedname>
+        <param>
+          <type>FloatKey</type>
+          <declname>weight_key</declname>
+        </param>
+        <briefdescription>
+<para>Create density maps: one for each rigid body. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="60" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Calculate score based on fit to EM map. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" line="29" column="1" bodyfile="include/IMP/multifit/WeightedExcludedVolumeRestraint.h" bodystart="30" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8b224b6c3383ab126405607461d31952" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>add_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aea7c29c9499cdc650f46a3ea79823cc8" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>add_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3f6519c55b712437e0d256345c1f3762" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>clear_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab126d0e712711e6f1e8de098855ca669" prot="public" virt="virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af2bb28744a729e9f3051ea8dd5d25013" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>erase_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a3bc3f5586a87bf358b5a7e5effe3a3dc" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_has_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aeae5c03ecaa487ff9d9d12bc08120a84" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_number_of_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1add359e9550c0adb0802588c2d20b6bd2" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a54b8145c610a21bcda3596ecb5b2332f" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ab07d5212fb8f26794effe725c31f2c7f" prot="public" virt="virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1adeb5c5034841fd693ddc848a32919763" prot="public" virt="virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a194294484da2efb24967fb55f8095552" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>initialize_model_density_map</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a65c3b72ae2fb2d369601c839c32b9fdb" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5c548736eb00e8758be63c78fd75f219" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rb_refined_dx_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ac4813058edf9a245f39c022367aa2d46" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rb_refined_dy_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a8a3870bfb0b5b4c3569fa2bcf2984058" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rb_refined_dz_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a998d32419e3b8888885ba8dfbe0e7a0f" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rb_refiner_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a697d3171503b25b1068d91d2439e1eb6" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rbs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a5843cd77197f86a9bf8ff2120965080e" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rbs_orig_trans_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4d24b525ad16618fb02eafd6d1c023ae" prot="private" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>rbs_surface_maps_</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7171fe3b218ad0ea70dc07f8cce3f397" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>remove_particle</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1af8f96ae6bb6be6b87368a6d198927f65" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>remove_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1afc32b0b883fc7ed868bfc1d26d83c523" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>reserve_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1aaa8baa476a0301bc8222fafd82f4c8fd" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>set_particles</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1ae4ccdb99f1c68c82480d0111d086a876" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>set_particles_order</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a7c7ca51814d10be0e9ad264a6c5ce045" prot="public" virt="virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a1b6c81a897d408afc71a09df136738c3" prot="public" virt="non-virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>WeightedExcludedVolumeRestraint</name></member>
+      <member refid="classIMP_1_1multifit_1_1WeightedExcludedVolumeRestraint_1a4b3048ee222265eaed7a4edee3ee7469" prot="public" virt="virtual"><scope>IMP::multifit::WeightedExcludedVolumeRestraint</scope><name>~WeightedExcludedVolumeRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="project_8h" kind="file" language="C++">
+    <compoundname>project.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes refid="opencv__interface_8h" local="yes">IMP/em2d/opencv_interface.h</includes>
+    <includes refid="ProjectionMask_8h" local="yes">IMP/em2d/ProjectionMask.h</includes>
+    <includes refid="Image_8h" local="yes">IMP/em2d/Image.h</includes>
+    <includes refid="RegistrationResult_8h" local="yes">IMP/em2d/RegistrationResult.h</includes>
+    <includes refid="FFToperations_8h" local="yes">IMP/em2d/FFToperations.h</includes>
+    <includes refid="ImageReaderWriter_8h" local="yes">IMP/em2d/ImageReaderWriter.h</includes>
+    <includes local="yes">IMP/algebra/Vector3D.h</includes>
+    <includes local="yes">IMP/algebra/Rotation3D.h</includes>
+    <includes local="yes">IMP/algebra/SphericalVector3D.h</includes>
+    <includes local="yes">IMP/core/XYZR.h</includes>
+    <includes local="yes">IMP/Pointer.h</includes>
+    <includes local="yes">IMP.h</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">cereal/access.hpp</includes>
+    <includedby refid="CollisionCrossSection_8h" local="yes">CollisionCrossSection.h</includedby>
+    <includedby refid="Em2DRestraint_8h" local="yes">Em2DRestraint.h</includedby>
+    <includedby refid="ProjectionFinder_8h" local="yes">ProjectionFinder.h</includedby>
+    <includedby refid="RigidBodiesImageFitRestraint_8h" local="yes">RigidBodiesImageFitRestraint.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>project.h</label>
+        <link refid="project_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IMP.h</label>
+      </node>
+      <node id="6">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/algebra/Rotation3D.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/algebra/SphericalVector3D.h</label>
+      </node>
+      <node id="2">
+        <label>IMP/algebra/Vector3D.h</label>
+      </node>
+      <node id="5">
+        <label>IMP/core/XYZR.h</label>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>cereal/access.hpp</label>
+      </node>
+      <node id="8">
+        <label>complex</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1em2d_1_1ProjectingOptions" prot="public">IMP::em2d::ProjectingOptions</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1ProjectingParameters" prot="public">IMP::em2d::ProjectingParameters</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>Generation of projections from models or density maps Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/project.h"/>
+  </compounddef>
+</doxygen>

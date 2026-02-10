@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="scores2D_8h" kind="file" language="C++">
+    <compoundname>scores2D.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes refid="Image_8h" local="yes">IMP/em2d/Image.h</includes>
+    <includes refid="opencv__interface_8h" local="yes">IMP/em2d/opencv_interface.h</includes>
+    <includes refid="RegistrationResult_8h" local="yes">IMP/em2d/RegistrationResult.h</includes>
+    <includes local="yes">IMP/Object.h</includes>
+    <includes local="no">IMP/warning_macros.h</includes>
+    <includes local="no">functional</includes>
+    <includedby refid="Em2DRestraint_8h" local="yes">Em2DRestraint.h</includedby>
+    <includedby refid="ProjectionFinder_8h" local="yes">ProjectionFinder.h</includedby>
+    <includedby refid="RigidBodiesImageFitRestraint_8h" local="yes">RigidBodiesImageFitRestraint.h</includedby>
+    <includedby refid="hierarchical__clustering_8h" local="yes">hierarchical_clustering.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>scores2D.h</label>
+        <link refid="scores2D_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/Object.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/warning_macros.h</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1em2d_1_1ChiSquaredScore" prot="public">IMP::em2d::ChiSquaredScore</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1EM2DScore" prot="public">IMP::em2d::EM2DScore</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1HasHigherCCC" prot="public">IMP::em2d::HasHigherCCC</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1HasLowerScore" prot="public">IMP::em2d::HasLowerScore</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1LessPairBySecond" prot="public">IMP::em2d::LessPairBySecond</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference" prot="public">IMP::em2d::MeanAbsoluteDifference</innerclass>
+    <innerclass refid="classIMP_1_1em2d_1_1ScoreFunction" prot="public">IMP::em2d::ScoreFunction</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>Scoring functions for 2D Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/scores2D.h"/>
+  </compounddef>
+</doxygen>

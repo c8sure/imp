@@ -82,5 +82,24 @@ class Tests(IMP.test.TestCase):
         prs = IMP.container.PairsRestraint(sps, bpc, "membrane mbm restraint")
         self.assertAlmostEqual(prs.unprotected_evaluate(None), 288.0, delta=1e-4)
 
+    def test_spherical_indent_surface_location_restraint(self):
+        """Test SphericalIndentMembraneSurfaceLocationRestraint"""
+        m = IMP.Model()
+        # Same geometry as setup_system_indent: radius=100, depth=50
+        radius, depth, length, sigma = 100.0, 50.0, 200.0, 2.0
+        r = IMP.npc.SphericalIndentMembraneSurfaceLocationRestraint(
+            m, radius, depth, length, sigma)
+        # One particle at origin: inside indent footprint, 50 units below
+        # sphere center (center_z=50), dist=50, diff=50-100=-50, v=2500, return 2500/sigma=1250
+        p = IMP.Particle(m)
+        IMP.core.XYZ.setup_particle(p, IMP.algebra.Vector3D(0.0, 0.0, 0.0))
+        r.set_particles([p])
+        self.assertAlmostEqual(r.unprotected_evaluate(None), 1250.0, delta=1e-4)
+        # Particle on flat part at z=0: no penalty
+        p2 = IMP.Particle(m)
+        IMP.core.XYZ.setup_particle(p2, IMP.algebra.Vector3D(100.0, 100.0, 0.0))
+        r.set_particles([p, p2])
+        self.assertAlmostEqual(r.unprotected_evaluate(None), 1250.0, delta=1e-4)
+
 if __name__ == '__main__':
     IMP.test.main()

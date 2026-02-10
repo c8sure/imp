@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1ParticleStates" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::domino::ParticleStates</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1CompoundStates" prot="public" virt="non-virtual">IMP::domino::CompoundStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1IndexStates" prot="public" virt="non-virtual">IMP::domino::IndexStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1NestedRigidBodyStates" prot="public" virt="non-virtual">IMP::domino::NestedRigidBodyStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1PermutationStates" prot="public" virt="non-virtual">IMP::domino::PermutationStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1RecursiveStates" prot="public" virt="non-virtual">IMP::domino::RecursiveStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1RigidBodyStates" prot="public" virt="non-virtual">IMP::domino::RigidBodyStates</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1XYZStates" prot="public" virt="non-virtual">IMP::domino::XYZStates</derivedcompoundref>
+    <derivedcompoundref refid="classmarina__party_1_1PriceStates" prot="public" virt="non-virtual">marina_party.PriceStates</derivedcompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ParticleStates::ParticleStates</definition>
+        <argsstring>(std::string name=&quot;ParticleStates %1%&quot;)</argsstring>
+        <name>ParticleStates</name>
+        <qualifiedname>IMP::domino::ParticleStates::ParticleStates</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;ParticleStates %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="39" column="3" bodyfile="include/IMP/domino/particle_states.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::ParticleStates::~ParticleStates</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleStates</name>
+        <qualifiedname>IMP::domino::ParticleStates::~ParticleStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="61" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>algebra::VectorKD</type>
+        <definition>virtual algebra::VectorKD IMP::domino::ParticleStates::get_embedding</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_embedding</name>
+        <qualifiedname>IMP::domino::ParticleStates::get_embedding</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1aed92f776156830ada8948042b91ee639">get_embedding</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RigidBodyStates_1a01a06e715ffb49eb26d7bdd7da9352d8">get_embedding</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1XYZStates_1acf31006ae1ecc70594721c64fa496dc6">get_embedding</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Return an embedding of the state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default this just returns a 1D vector containing the index. The vector needs to have the same dimension for each value of i. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="47" column="29" bodyfile="include/IMP/domino/particle_states.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::ParticleStates::get_nearest_state</definition>
+        <argsstring>(const algebra::VectorKD &amp;v) const</argsstring>
+        <name>get_nearest_state</name>
+        <qualifiedname>IMP::domino::ParticleStates::get_nearest_state</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a5adb7aa357986502e98ad9936bba0efd">get_nearest_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RigidBodyStates_1a40232b067f9af7b17c5375edd42fbdbf">get_nearest_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1XYZStates_1a11862e085003f210367923516af8f474">get_nearest_state</reimplementedby>
+        <param>
+          <type>const algebra::VectorKD &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Return the state closest to a given embedding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="52" column="24" bodyfile="include/IMP/domino/particle_states.h" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::ParticleStates::get_number_of_particle_states</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::domino::ParticleStates::get_number_of_particle_states</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1CompoundStates_1a631d58ba1db6806a9d0deeff8dc6461f">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1IndexStates_1a523d4146f648e765c6c369b3a03d6722">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a51fd0f1a68fbd478e845837d14c0c4dc">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1PermutationStates_1ab1c205ed52a1a6700ec314f28784b4f3">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RecursiveStates_1a0b98f7cd3de72626929f457528de2f7e">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RigidBodyStates_1a7d863ef0664185cd85e7380bdf72d3f4">get_number_of_particle_states</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1XYZStates_1acb9b52b4b2ec152be1eb8769cd5dc821">get_number_of_particle_states</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="40" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::ParticleStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const =0</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::domino::ParticleStates::load_particle_state</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1CompoundStates_1a9ea5304ccd6c3e6098dd41bfd6207ee4">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1IndexStates_1a5c150d4ce46d029e94e21240fb2eabc1">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1NestedRigidBodyStates_1a94eeddf6266a93b978677cbfcdee5d2c">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1PermutationStates_1ab8e0ac868eb15d0c59eb2514e3699c06">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RecursiveStates_1a16118537f48fd7c53bcabc1c56a4ff30">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RigidBodyStates_1adab6e6e5a32a99e43fb29d1a27778b7a">load_particle_state</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1XYZStates_1afc87ab307074a98b6d1c495d0466d903">load_particle_state</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="41" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Handle the states for a particular particle (or &quot;class&quot; of particles. For example a state enumerator class could take a bounding box and a number,n, and generate n points in the bounding box. Then the get_number function would return n and update_to_state would modify the particle to have the coordinates for state i. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::CompoundStates</label>
+        <link refid="classIMP_1_1domino_1_1CompoundStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::IndexStates</label>
+        <link refid="classIMP_1_1domino_1_1IndexStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::domino::NestedRigidBodyStates</label>
+        <link refid="classIMP_1_1domino_1_1NestedRigidBodyStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="5">
+        <label>IMP::domino::PermutationStates</label>
+        <link refid="classIMP_1_1domino_1_1PermutationStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IMP::domino::RecursiveStates</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IMP::domino::RigidBodyStates</label>
+        <link refid="classIMP_1_1domino_1_1RigidBodyStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IMP::domino::XYZStates</label>
+        <link refid="classIMP_1_1domino_1_1XYZStates"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/domino/particle_states.h" line="37" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="37" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>IMP::domino::ParticleStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>IMP::domino::ParticleStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196" prot="public" virt="pure-virtual"><scope>IMP::domino::ParticleStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53" prot="public" virt="pure-virtual"><scope>IMP::domino::ParticleStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStates</scope><name>ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>IMP::domino::ParticleStates</scope><name>~ParticleStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

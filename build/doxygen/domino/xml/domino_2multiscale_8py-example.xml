@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2multiscale_8py-example" kind="example">
+    <compoundname>domino/multiscale.py</compoundname>
+    <briefdescription>
+<para>We are interested in applying domino to problems systematically in a multiscale manner. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>We are interested in applying domino to problems systematically in a multiscale manner. This script experiments with those approaches. <programlisting filename="domino/multiscale.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/multiscale.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>We<sp/>are<sp/>interested<sp/>in<sp/>applying<sp/>domino<sp/>to<sp/>problems<sp/>systematically<sp/>in<sp/>a</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>multiscale<sp/>manner.<sp/>This<sp/>script<sp/>experiments<sp/>with<sp/>those<sp/>approaches.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.core</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;multiscale&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal">ds<sp/>=<sp/>[IMP.core.XYZR.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>3)]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>d<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(ds):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>d.set_radius(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.display.Colored.setup_particle(d,<sp/>IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">k<sp/>=<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">h<sp/>=<sp/>IMP.core.Harmonic(0,<sp/>k)</highlight></codeline>
+<codeline><highlight class="normal">r0<sp/>=<sp/>IMP.core.SingletonRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.DistanceToSingletonScore(h,<sp/>IMP.algebra.Vector3D(0,<sp/>0,<sp/>0)),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ds[0].get_particle_index(),<sp/></highlight><highlight class="stringliteral">&quot;0<sp/>at<sp/>origin&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">r1<sp/>=<sp/>IMP.core.SingletonRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.AttributeSingletonScore(h,<sp/>IMP.core.XYZ.get_xyz_keys()[0]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ds[1].get_particle_index(),<sp/></highlight><highlight class="stringliteral">&quot;1<sp/>on<sp/>axis&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rs<sp/>=<sp/>[r0,<sp/>r1]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>pr<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[(0,<sp/>1),<sp/>(1,<sp/>2),<sp/>(0,<sp/>2)]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>r<sp/>=<sp/>IMP.core.PairRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m,<sp/>IMP.core.HarmonicSphereDistancePairScore(0,<sp/>k),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ds[pr[0]].get_particle_index(),<sp/>ds[pr[1]].get_particle_index()),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;R<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(pr))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rs.append(r)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">bb<sp/>=<sp/>IMP.algebra.BoundingBox2D(IMP.algebra.Vector2D(0,<sp/>0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.algebra.Vector2D(4,<sp/>4))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">covers<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>6):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cur<sp/>=<sp/>IMP.algebra.get_grid_interior_cover_by_spacing(bb,<sp/>4.0<sp/>/<sp/>2<sp/>**<sp/>i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(cur)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>covers.append([IMP.algebra.Vector3D(x[0],<sp/>x[1],<sp/>0)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>cur])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">setup(cover,<sp/>scale):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>st<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(cover)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ds:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pst.set_particle_states(p,<sp/>st)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>rs:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.set_maximum_score(.5<sp/>*<sp/>scale<sp/>**<sp/>2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lf<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ListSubsetFilterTable" kindref="compound">IMP.domino.ListSubsetFilterTable</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc.add_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fs<sp/>=<sp/>[<ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lf]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler.set_restraints(rs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler.set_subset_filter_tables(fs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sampler.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(sampler,<sp/>lf,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">(sampler,<sp/>lf,<sp/>pst)<sp/>=<sp/>setup(covers[0],<sp/>4.0)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">subset<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>(ds)</highlight></codeline>
+<codeline><highlight class="normal">ac<sp/>=<sp/>sampler.get_sample_assignments(subset)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(ac)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_mapping(cover0,<sp/>cover1):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>nn<sp/>=<sp/>IMP.algebra.NearestNeighbor3D(cover0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>[[]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>cover0]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(cover1):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nns<sp/>=<sp/>nn.get_nearest_neighbor(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret[nns].append(i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mw<sp/>=<sp/>IMP.display.PymolWriter(</highlight><highlight class="stringliteral">&quot;mapping.pym&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">display_mapping(index,<sp/>cover0,<sp/>cover1,<sp/>mapping):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mw.set_frame(index)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(mapping):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>c:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.display.PointGeometry(cover1[p])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_color(IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_name(</highlight><highlight class="stringliteral">&quot;fine&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mw.add_geometry(g)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(cover0):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.display.PointGeometry(c)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_color(IMP.display.get_display_color(i))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_name(</highlight><highlight class="stringliteral">&quot;coarse&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mw.add_geometry(g)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>curi<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(1,<sp/>len(covers)):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>4.0<sp/>/<sp/>2<sp/>**<sp/>curi</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(scale)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mapping<sp/>=<sp/>get_mapping(covers[curi<sp/>-<sp/>1],<sp/>covers[curi])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(mapping)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>display_mapping(curi<sp/>-<sp/>1,<sp/>covers[curi<sp/>-<sp/>1],<sp/>covers[curi],<sp/>mapping)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(sampler,<sp/>lf,<sp/>pst)<sp/>=<sp/>setup(covers[curi],<sp/>scale)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lac<sp/>=<sp/>ac</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cac<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>a<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lac:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(subset):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s<sp/>=<sp/>a[i]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allowed<sp/>=<sp/>mapping[s]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lf.set_allowed_states(p,<sp/>allowed)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccac<sp/>=<sp/>sampler.get_sample_assignments(subset)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(a,<sp/>ccac)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cac<sp/>=<sp/>cac<sp/>+<sp/>ccac</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ac<sp/>=<sp/>list(set(cac))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;for<sp/>scale&quot;</highlight><highlight class="normal">,<sp/>scale,<sp/></highlight><highlight class="stringliteral">&quot;got&quot;</highlight><highlight class="normal">,<sp/>ac)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sw<sp/>=<sp/>IMP.display.PymolWriter(</highlight><highlight class="stringliteral">&quot;solutions.&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(curi)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.pym&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>a<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(ac):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1domino_1a0c08cfa3955a23464c5f59c15f95a4ae" kindref="member">IMP.domino.load_particle_states</ref>(subset,<sp/>a,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sw.set_frame(i)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ds:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.core.XYZRGeometry(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sw.add_geometry(g)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>covers[curi]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.display.PointGeometry(c)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_color(IMP.display.Color(1,<sp/>1,<sp/>1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g.set_name(</highlight><highlight class="stringliteral">&quot;grid&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sw.add_geometry(g)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/multiscale.py"/>
+  </compounddef>
+</doxygen>

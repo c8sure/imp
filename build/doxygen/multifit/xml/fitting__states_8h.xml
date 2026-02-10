@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="fitting__states_8h" kind="file" language="C++">
+    <compoundname>fitting_states.h</compoundname>
+    <includes refid="multifit__config_8h" local="no">IMP/multifit/multifit_config.h</includes>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fitting_states.h</label>
+        <link refid="fitting__states_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/domino/particle_states.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1multifit_1_1FittingStates" prot="public">IMP::multifit::FittingStates</innerclass>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1multifit">IMP::multifit</innernamespace>
+    <briefdescription>
+<para>Fitting states. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/multifit/fitting_states.h"/>
+  </compounddef>
+</doxygen>

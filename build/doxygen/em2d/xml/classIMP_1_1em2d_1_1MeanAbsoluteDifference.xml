@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1MeanAbsoluteDifference" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::MeanAbsoluteDifference</compoundname>
+    <basecompoundref refid="classIMP_1_1em2d_1_1ScoreFunction" prot="public" virt="non-virtual">IMP::em2d::ScoreFunction</basecompoundref>
+    <includes local="no">IMP/em2d/scores2D.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1MeanAbsoluteDifference_1af7160b05d0f8480e0c1fe0dd240fafe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::MeanAbsoluteDifference::MeanAbsoluteDifference</definition>
+        <argsstring>()</argsstring>
+        <name>MeanAbsoluteDifference</name>
+        <qualifiedname>IMP::em2d::MeanAbsoluteDifference::MeanAbsoluteDifference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="110" column="3" bodyfile="include/IMP/em2d/scores2D.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1MeanAbsoluteDifference_1ad0eb8d7f3bfca9981ace76494d2c087b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::MeanAbsoluteDifference::get_private_score</definition>
+        <argsstring>(Image *image, Image *projection) const override</argsstring>
+        <name>get_private_score</name>
+        <qualifiedname>IMP::em2d::MeanAbsoluteDifference::get_private_score</qualifiedname>
+        <reimplements refid="classIMP_1_1em2d_1_1ScoreFunction_1a936827b9594e03838640cf7f0fc04155">get_private_score</reimplements>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1em2d_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="113" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Score based on the mean of the absolute difference. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::em2d::MeanAbsoluteDifference</label>
+        <link refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ScoreFunction</label>
+        <link refid="classIMP_1_1em2d_1_1ScoreFunction"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::em2d::MeanAbsoluteDifference</label>
+        <link refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::em2d::ScoreFunction</label>
+        <link refid="classIMP_1_1em2d_1_1ScoreFunction"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/scores2D.h" line="108" column="1" bodyfile="include/IMP/em2d/scores2D.h" bodystart="108" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference_1ad0eb8d7f3bfca9981ace76494d2c087b" prot="private" virt="virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>get_private_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ad147911a73dec50fd79a5f31191820fb" prot="public" virt="non-virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>get_score</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a7181fa238aec5756809e92ced93e5264" prot="public" virt="virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1aed5d5636adbe8597873ed8e782c5941d" prot="public" virt="virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1MeanAbsoluteDifference_1af7160b05d0f8480e0c1fe0dd240fafe7" prot="public" virt="non-virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>MeanAbsoluteDifference</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1a39a24a1c413c4e1d3b071d1baa553505" prot="protected" virt="non-virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>n_members_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1acc5f9b38b14cbfcc0929fa72d4bf05e1" prot="public" virt="non-virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>ScoreFunction</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1afb6049939c1645c590a5b4e0911578ac" prot="public" virt="non-virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>set_variance_image</name></member>
+      <member refid="classIMP_1_1em2d_1_1ScoreFunction_1ab7dfd6b37668cc737cbe12e2d101065f" prot="public" virt="virtual"><scope>IMP::em2d::MeanAbsoluteDifference</scope><name>~ScoreFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

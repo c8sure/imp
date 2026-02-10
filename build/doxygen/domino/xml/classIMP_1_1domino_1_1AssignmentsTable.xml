@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1AssignmentsTable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::domino::AssignmentsTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" prot="public" virt="non-virtual">IMP::domino::BranchAndBoundAssignmentsTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1ListAssignmentsTable" prot="public" virt="non-virtual">IMP::domino::ListAssignmentsTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable" prot="public" virt="non-virtual">IMP::domino::RecursiveAssignmentsTable</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1SimpleAssignmentsTable" prot="public" virt="non-virtual">IMP::domino::SimpleAssignmentsTable</derivedcompoundref>
+    <includes local="no">IMP/domino/assignment_tables.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1AssignmentsTable_1a437a06ae6c19f35c2dfb706ad650d24f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::AssignmentsTable::AssignmentsTable</definition>
+        <argsstring>(std::string name=&quot;AssignmentsTable %1%&quot;)</argsstring>
+        <name>AssignmentsTable</name>
+        <qualifiedname>IMP::domino::AssignmentsTable::AssignmentsTable</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;AssignmentsTable %1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="34" column="3" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1AssignmentsTable_1a325612e584018e745a52a9659fcf1e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::AssignmentsTable::~AssignmentsTable</definition>
+        <argsstring>()</argsstring>
+        <name>~AssignmentsTable</name>
+        <qualifiedname>IMP::domino::AssignmentsTable::~AssignmentsTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1AssignmentsTable_1a82165fe3c39a0a5bd1005826f5121c26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::AssignmentsTable::load_assignments</definition>
+        <argsstring>(const Subset &amp;s, AssignmentContainer *ac) const =0</argsstring>
+        <name>load_assignments</name>
+        <qualifiedname>IMP::domino::AssignmentsTable::load_assignments</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable_1a009975ad8c84fe2df97f49bbe03629ec">load_assignments</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1ListAssignmentsTable_1a3bd8084d67c8802f30680d2b4d7cd0ac">load_assignments</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable_1a209c5eccf0cccfad3528842d734559df">load_assignments</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1SimpleAssignmentsTable_1ae99efe9637e6c99af3c438f778461cc9">load_assignments</reimplementedby>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref> *</type>
+          <declname>ac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/assignment_tables.h" line="35" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The base class for classes that create <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref>, one per subset. The main method of interest is load_assignments() which enumerates the assignments and loads them into an <ref refid="classIMP_1_1domino_1_1AssignmentContainer" kindref="compound">AssignmentContainer</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::AssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1AssignmentsTable"/>
+      </node>
+      <node id="2">
+        <label>IMP::domino::BranchAndBoundAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::ListAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1ListAssignmentsTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMP::domino::RecursiveAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveAssignmentsTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IMP::domino::SimpleAssignmentsTable</label>
+        <link refid="classIMP_1_1domino_1_1SimpleAssignmentsTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/domino/assignment_tables.h" line="32" column="1" bodyfile="include/IMP/domino/assignment_tables.h" bodystart="32" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a437a06ae6c19f35c2dfb706ad650d24f" prot="public" virt="non-virtual"><scope>IMP::domino::AssignmentsTable</scope><name>AssignmentsTable</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a82165fe3c39a0a5bd1005826f5121c26" prot="public" virt="pure-virtual"><scope>IMP::domino::AssignmentsTable</scope><name>load_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1AssignmentsTable_1a325612e584018e745a52a9659fcf1e66" prot="public" virt="non-virtual"><scope>IMP::domino::AssignmentsTable</scope><name>~AssignmentsTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

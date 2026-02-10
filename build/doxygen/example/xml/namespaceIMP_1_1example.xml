@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1example" kind="namespace" language="C++">
+    <compoundname>IMP::example</compoundname>
+    <innerclass refid="classIMP_1_1example_1_1ExampleComplexRestraint" prot="public">IMP::example::ExampleComplexRestraint</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleConstraint" prot="public">IMP::example::ExampleConstraint</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleDecorator" prot="public">IMP::example::ExampleDecorator</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleObject" prot="public">IMP::example::ExampleObject</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExamplePairScore" prot="public">IMP::example::ExamplePairScore</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleRestraint" prot="public">IMP::example::ExampleRestraint</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleSingletonModifier" prot="public">IMP::example::ExampleSingletonModifier</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleSubsetFilterTable" prot="public">IMP::example::ExampleSubsetFilterTable</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleTemplateClassD" prot="public">IMP::example::ExampleTemplateClassD</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1ExampleUnaryFunction" prot="public">IMP::example::ExampleUnaryFunction</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1PythonExampleConstraint" prot="public">IMP::example::PythonExampleConstraint</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1PythonExamplePairScore" prot="public">IMP::example::PythonExamplePairScore</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1PythonExampleRestraint" prot="public">IMP::example::PythonExampleRestraint</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1PythonExampleSingletonModifier" prot="public">IMP::example::PythonExampleSingletonModifier</innerclass>
+    <innerclass refid="classIMP_1_1example_1_1PythonExampleUnaryFunction" prot="public">IMP::example::PythonExampleUnaryFunction</innerclass>
+    <innernamespace refid="namespaceIMP_1_1example_1_1randomize">IMP::example::randomize</innernamespace>
+    <sectiondef kind="user-defined">
+      <header>Standard module functions</header>
+      <description><para>All <computeroutput>IMP</computeroutput> modules have a set of standard functions to help get information about the module and about files associated with the module. </para>
+</description>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a1c6750d8defe4e52e71994ca66155027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::example::get_module_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_version</name>
+        <qualifiedname>IMP::example::get_module_version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="151" column="18" declfile="include/IMP/example/example_config.h" declline="151" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a1074c4b4edd8de00c9470e092f37d24e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::example::get_module_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_module_name</name>
+        <qualifiedname>IMP::example::get_module_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="156" column="24" bodyfile="include/IMP/example/example_config.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1add1c14e5ed75529f9d1823e34a763392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::example::get_data_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_data_path</name>
+        <qualifiedname>IMP::example::get_data_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s data files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the data file &quot;data_library&quot; that was placed in the <computeroutput>data</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1example_1add1c14e5ed75529f9d1823e34a763392" kindref="member">IMP::example::get_data_path</ref>(</highlight><highlight class="stringliteral">&quot;data_library&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own data directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="172" column="18" declfile="include/IMP/example/example_config.h" declline="172" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a4d0115df05cd0f34ef4b8db91e8d4284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::example::get_example_path</definition>
+        <argsstring>(std::string file_name)</argsstring>
+        <name>get_example_path</name>
+        <qualifiedname>IMP::example::get_example_path</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Return the full path to one of this module&apos;s example files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the example file &quot;example_protein.pdb&quot; that was placed in the <computeroutput>examples</computeroutput> directory of this module, do something like <programlisting><codeline><highlight class="normal">std::ifstream<sp/>in(<ref refid="namespaceIMP_1_1example_1a4d0115df05cd0f34ef4b8db91e8d4284" kindref="member">IMP::example::get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;example_protein.pdb&quot;</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting> This will ensure that the code works both when IMP is installed or if used via the <computeroutput>setup_environment.sh</computeroutput> script.</para>
+<para><simplesect kind="note"><para>Each module has its own example directory, so be sure to use this function from the correct module. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/example_config.h" line="188" column="18" declfile="include/IMP/example/example_config.h" declline="188" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1a5dbda2525dff0398f933d49ff259a694" prot="public" static="no">
+        <type>IMP::Vector&lt; <ref refid="classIMP_1_1example_1_1ExampleDecorator" kindref="compound">ExampleDecorator</ref> &gt;</type>
+        <definition>typedef IMP::Vector&lt;ExampleDecorator&gt; IMP::example::ExampleDecorators</definition>
+        <argsstring></argsstring>
+        <name>ExampleDecorators</name>
+        <qualifiedname>IMP::example::ExampleDecorators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleDecorator.h" line="75" column="31" bodyfile="include/IMP/example/ExampleDecorator.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1aa26a98a67831dcc145c157dc5b1b3cbc" prot="public" static="no">
+        <type>Vector&lt; Pointer&lt; <ref refid="classIMP_1_1example_1_1ExampleObject" kindref="compound">ExampleObject</ref> &gt; &gt;</type>
+        <definition>typedef Vector&lt;Pointer&lt;ExampleObject&gt; &gt; IMP::example::ExampleObjects</definition>
+        <argsstring></argsstring>
+        <name>ExampleObjects</name>
+        <qualifiedname>IMP::example::ExampleObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="62" column="16" bodyfile="include/IMP/example/ExampleObject.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1a1ddd1620a7768d6b686f701c4e488754" prot="public" static="no">
+        <type>Vector&lt; WeakPointer&lt; <ref refid="classIMP_1_1example_1_1ExampleObject" kindref="compound">ExampleObject</ref> &gt; &gt;</type>
+        <definition>typedef Vector&lt;WeakPointer&lt;ExampleObject&gt; &gt; IMP::example::ExampleObjectsTemp</definition>
+        <argsstring></argsstring>
+        <name>ExampleObjectsTemp</name>
+        <qualifiedname>IMP::example::ExampleObjectsTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleObject.h" line="63" column="16" bodyfile="include/IMP/example/ExampleObject.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1a2de43119a613d3ed80784fb77d344cdd" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::Pointer&lt; <ref refid="classIMP_1_1example_1_1ExamplePairScore" kindref="compound">ExamplePairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::Pointer&lt;ExamplePairScore&gt; &gt; IMP::example::ExamplePairScores</definition>
+        <argsstring></argsstring>
+        <name>ExamplePairScores</name>
+        <qualifiedname>IMP::example::ExamplePairScores</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of reference-counting object pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="54" column="25" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1af731fa53a4a72f92f241d18f7a6f5885" prot="public" static="no">
+        <type>IMP::Vector&lt; IMP::WeakPointer&lt; <ref refid="classIMP_1_1example_1_1ExamplePairScore" kindref="compound">ExamplePairScore</ref> &gt; &gt;</type>
+        <definition>typedef IMP::Vector&lt;IMP::WeakPointer&lt;ExamplePairScore&gt; &gt; IMP::example::ExamplePairScoresTemp</definition>
+        <argsstring></argsstring>
+        <name>ExamplePairScoresTemp</name>
+        <qualifiedname>IMP::example::ExamplePairScoresTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A vector of weak (non reference-counting) pointers to specified objects. <simplesect kind="see"><para><ref refid="classIMP_1_1example_1_1ExamplePairScore" kindref="compound">ExamplePairScore</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="54" column="68" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1ad9e17c8ca0772ad0cd6c2bf0dd75a2ef" prot="public" static="no">
+        <type><ref refid="classIMP_1_1example_1_1ExampleTemplateClassD" kindref="compound">ExampleTemplateClassD</ref>&lt; 3 &gt;</type>
+        <definition>typedef ExampleTemplateClassD&lt;3&gt; IMP::example::ExampleTemplateClass3D</definition>
+        <argsstring></argsstring>
+        <name>ExampleTemplateClass3D</name>
+        <qualifiedname>IMP::example::ExampleTemplateClass3D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="54" column="31" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceIMP_1_1example_1ac91f2ae8b7e0274c6c08d4748a20f8af" prot="public" static="no">
+        <type>Vector&lt; <ref refid="classIMP_1_1example_1_1ExampleTemplateClassD" kindref="compound">ExampleTemplateClassD</ref>&lt; 3 &gt; &gt;</type>
+        <definition>typedef Vector&lt;ExampleTemplateClassD&lt;3&gt; &gt; IMP::example::ExampleTemplateClass3Ds</definition>
+        <argsstring></argsstring>
+        <name>ExampleTemplateClass3Ds</name>
+        <qualifiedname>IMP::example::ExampleTemplateClass3Ds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleTemplateClass.h" line="55" column="16" bodyfile="include/IMP/example/ExampleTemplateClass.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceIMP_1_1example_1aaf164c2d184d4d1d53ca84cc3221b552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Restraint *</type>
+        <definition>Restraint * IMP::example::create_chain_restraint</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;ps, double length_factor, double k, std::string name)</argsstring>
+        <name>create_chain_restraint</name>
+        <qualifiedname>IMP::example::create_chain_restraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>length_factor</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restrain the passed particles to be connected in a chain. The distance between consecutive particles is length_factor*the sum of the radii.</para>
+<para>Note, this assumes that all such chains will be disjoint and so you can use the container::ExclusiveConsecutivePairFilter if you want to filter out all pairs of particles connected by such chain restraints.</para>
+<para>The restraint is not added to the model. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/creating_restraints.h" line="31" column="18" bodyfile="include/IMP/example/creating_restraints.h" bodystart="31" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a085f6d75d557252bcfe3d8a336be90d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Restraint *</type>
+        <definition>Restraint * IMP::example::create_excluded_volume</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;ps, double k, std::string name)</argsstring>
+        <name>create_excluded_volume</name>
+        <qualifiedname>IMP::example::create_excluded_volume</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an excluded-volume style ClosePairContainer based score. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/creating_restraints.h" line="50" column="18" bodyfile="include/IMP/example/creating_restraints.h" bodystart="50" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1af8c9f5150402309a3284c9fb93e55efa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::example::get_number_of_incidences</definition>
+        <argsstring>(const ParticlesTemp &amp;psa, const ParticlesTemp &amp;psb, double point_distance)</argsstring>
+        <name>get_number_of_incidences</name>
+        <qualifiedname>IMP::example::get_number_of_incidences</qualifiedname>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>psa</declname>
+        </param>
+        <param>
+          <type>const ParticlesTemp &amp;</type>
+          <declname>psb</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>point_distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of times particles from one set are close to those from another set. <simplesect kind="note"><para>This method uses the distance between the centers of the particles and does not use their radii. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/counting.h" line="23" column="21" bodyfile="include/IMP/example/counting.h" bodystart="23" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a9565cd11fa56ad6312caef58c5510a30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ParticlesList</type>
+          </param>
+          <param>
+            <type>class BoundingVolume</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::randomize_particles</definition>
+        <argsstring>(const ParticlesList &amp;ps, const BoundingVolume &amp;bv)</argsstring>
+        <name>randomize_particles</name>
+        <qualifiedname>IMP::example::randomize_particles</qualifiedname>
+        <param>
+          <type>const ParticlesList &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const BoundingVolume &amp;</type>
+          <declname>bv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Randomize the positions of a set of particles within a bounding volume. Rigid bodies have their orientation randomized too. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/randomizing.h" line="32" column="6" bodyfile="include/IMP/example/randomizing.h" bodystart="32" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceIMP_1_1example_1a7a9fe98e1365704b51de891fb62b227e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class RigidBody</type>
+          </param>
+          <param>
+            <type>class BoundingVolume</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::randomize_rigid_body</definition>
+        <argsstring>(RigidBody rbi, const BoundingVolume &amp;bv)</argsstring>
+        <name>randomize_rigid_body</name>
+        <qualifiedname>IMP::example::randomize_rigid_body</qualifiedname>
+        <param>
+          <type>RigidBody</type>
+          <declname>rbi</declname>
+        </param>
+        <param>
+          <type>const BoundingVolume &amp;</type>
+          <declname>bv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/randomizing.h" line="19" column="6" bodyfile="include/IMP/example/randomizing.h" bodystart="19" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Example module. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This module contains simple classes that span many parts of <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> functionality, so it can be used to see how to write a new class, export it to Python, document it, and provide tests and examples.</para>
+<para>The overview section of the module page can contain any <ulink url="http://www.doxygen.nl/manual/markdown.html">MarkDown</ulink> or <ulink url="http://www.doxygen.nl/manual/docblocks.html">doxygen</ulink> markup as well as references to <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> classes such as IMP::Model.</para>
+<sect1 id="namespaceIMP_1_1example_1imp_example_app_bin">
+<title>imp_example_app</title><para>This is an example application (command line tool).</para>
+</sect1>
+<sect1 id="namespaceIMP_1_1example_1autotoc_md0">
+<title>Info</title><para><emphasis>Author(s)</emphasis>: Daniel Russel</para>
+<para><emphasis>Maintainer</emphasis>: <computeroutput>benmwebb</computeroutput></para>
+<para><emphasis>License</emphasis>: <ulink url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPL</ulink> This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+<para><emphasis>Publications</emphasis>:<itemizedlist>
+<listitem><para>See <ref refid="dummy" kindref="compound" external="/home/catherine/imp/doc/doxygen/dummy_module_tags.xml">main IMP papers list</ref>. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="include/IMP/example/counting.h" line="16" column="14"/>
+  </compounddef>
+</doxygen>

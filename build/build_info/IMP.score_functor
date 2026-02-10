@@ -1,0 +1,4 @@
+ok=True
+modules = 'algebra:cgal:kernel'
+dependencies = 'Boost.FileSystem:Boost.Random:HDF5:Boost.System:Boost.ProgramOptions:NumPy:CGAL'
+swig_includes = 'IMP/score_functor/distance_pair_score_macros.h:IMP/score_functor/surface_distance_pair_score_macros.h'

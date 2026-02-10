@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/example/ExampleRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleRestraint_1a8c66680fa844359e4bd6f8a053b07d2d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::example::ExampleRestraint::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::example::ExampleRestraint::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="28" column="10" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleRestraint_1ab6ed620784ff02f4c22027cc5cbbbfb1" prot="private" static="no" mutable="no">
+        <type>ParticleIndex</type>
+        <definition>ParticleIndex IMP::example::ExampleRestraint::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::example::ExampleRestraint::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="27" column="17" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExampleRestraint_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExampleRestraint::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="50" column="16" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleRestraint_1a164ab481cd84da5c09e8bf1d13bcc18a" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::example::ExampleRestraint::dummy_serialize_init_</definition>
+        <argsstring></argsstring>
+        <name>dummy_serialize_init_</name>
+        <qualifiedname>IMP::example::ExampleRestraint::dummy_serialize_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="59" column="27" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a252257d7e15eea271976fc6667b8e8f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleRestraint::ExampleRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleRestraint</name>
+        <qualifiedname>IMP::example::ExampleRestraint::ExampleRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="38" column="3" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a63477f355b12a71baeac254e88b2face" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleRestraint::ExampleRestraint</definition>
+        <argsstring>(Model *m, ParticleIndex p, double k)</argsstring>
+        <name>ExampleRestraint</name>
+        <qualifiedname>IMP::example::ExampleRestraint::ExampleRestraint</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Create the restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Restraints should store the particles they are to act on, preferably in a Singleton or PairContainer as appropriate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a41fde319f84ba340089b25cff15a165a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleRestraint::~ExampleRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleRestraint</name>
+        <qualifiedname>IMP::example::ExampleRestraint::~ExampleRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="46" column="231" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a7805ebe2f08e2613f8c78e94ec7ca837" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::example::ExampleRestraint::do_add_score_and_derivatives</definition>
+        <argsstring>(ScoreAccumulator sa) const override</argsstring>
+        <name>do_add_score_and_derivatives</name>
+        <qualifiedname>IMP::example::ExampleRestraint::do_add_score_and_derivatives</qualifiedname>
+        <param>
+          <type>ScoreAccumulator</type>
+          <declname>sa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1aab4f84092a4d7b52bbc1e9b4d5278c7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>ModelObjectsTemp IMP::example::ExampleRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::example::ExampleRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="45" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a010a053921fe4d5552749a58cd663754" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExampleRestraint::get_force_constant</definition>
+        <argsstring>() const</argsstring>
+        <name>get_force_constant</name>
+        <qualifiedname>IMP::example::ExampleRestraint::get_force_constant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="40" column="10" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a8f6c488f440ba1a67da9b8c8e036931f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticleIndex</type>
+        <definition>ParticleIndex IMP::example::ExampleRestraint::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <qualifiedname>IMP::example::ExampleRestraint::get_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="41" column="17" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a1749a35942051842698e1203b9f04c66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="46" column="34" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1ad508f33af7229ef56a8936fdeec97760" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="46" column="103" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a719286f3a247fddd63fa76c0ef580858" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExampleRestraint::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExampleRestraint::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="51" column="19" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1a26920e07928e3d742adcda0cea4b26fc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object *</type>
+        <definition>static Object * IMP::example::ExampleRestraint::load_cereal</definition>
+        <argsstring>(cereal::BinaryInputArchive &amp;ar)</argsstring>
+        <name>load_cereal</name>
+        <qualifiedname>IMP::example::ExampleRestraint::load_cereal</qualifiedname>
+        <param>
+          <type>cereal::BinaryInputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="59" column="211" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleRestraint_1ab32bc200345788bc0a4dbe45e86d1d0d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExampleRestraint::save_cereal</definition>
+        <argsstring>(Object *o, cereal::BinaryOutputArchive &amp;ar)</argsstring>
+        <name>save_cereal</name>
+        <qualifiedname>IMP::example::ExampleRestraint::save_cereal</qualifiedname>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>cereal::BinaryOutputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleRestraint.h" line="59" column="63" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Restrain a particle to be in the x,y plane. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Be sure to check out the swig wrapper file and how it wraps this class.</para>
+</simplesect>
+The source code is as follows: <programlisting filename="ExampleRestraint.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleRestraint.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>restraint<sp/>on<sp/>a<sp/>list<sp/>of<sp/>particle<sp/>pairs.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2026<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_RESTRAINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_RESTRAINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Restraint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/access.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>Restrain<sp/>a<sp/>particle<sp/>to<sp/>be<sp/>in<sp/>the<sp/>x,y<sp/>plane</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>\note<sp/>Be<sp/>sure<sp/>to<sp/>check<sp/>out<sp/>the<sp/>swig<sp/>wrapper<sp/>file<sp/>and<sp/>how<sp/>it</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>wraps<sp/>this<sp/>class.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleRestraint.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleRestraint.cpp</highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleRestraint<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Restraint<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ParticleIndex<sp/>p_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Create<sp/>the<sp/>restraint.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/**<sp/>Restraints<sp/>should<sp/>store<sp/>the<sp/>particles<sp/>they<sp/>are<sp/>to<sp/>act<sp/>on,</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>preferably<sp/>in<sp/>a<sp/>Singleton<sp/>or<sp/>PairContainer<sp/>as<sp/>appropriate.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleRestraint(Model<sp/>*m,<sp/>ParticleIndex<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>constructor,<sp/>needed<sp/>for<sp/>serialization<sp/>or<sp/>Python<sp/>pickle<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleRestraint()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_force_constant()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>k_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ParticleIndex<sp/><ref refid="namespaceIMP_1_1domino_1ab5fc791399c0d6c76e1bea5d4b3da6ca" kindref="member" external="/home/catherine/imp/build/doxygen/domino/tags">get_index</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>do_add_score_and_derivatives(ScoreAccumulator<sp/>sa)<sp/></highlight><highlight class="keyword">const</highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ModelObjectsTemp<sp/>do_get_inputs()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleRestraint);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>must<sp/>save/load<sp/>everything<sp/>in<sp/>the<sp/>Restraint<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(e.g.<sp/>restraint<sp/>name,<sp/>Model<sp/>pointer)<sp/>plus<sp/>our<sp/>own<sp/>variables<sp/>p_<sp/>and<sp/>k_</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar(cereal::base_class&lt;Restraint&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>p_,<sp/>k_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>ExampleRestraint<sp/>is<sp/>polymorphic<sp/>(e.g.<sp/>it<sp/>is<sp/>stored<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>IMP.core.RestraintsScoringFunction<sp/>as<sp/>a<sp/>Restraint,<sp/>not<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>ExampleRestraint)<sp/>so<sp/>tell<sp/>the<sp/>serialization<sp/>subsystem<sp/>how<sp/>to<sp/>handle<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_SERIALIZE_DECL(ExampleRestraint);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_RESTRAINT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleRestraint.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>example/ExampleRestraint.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>Restrain<sp/>a<sp/>list<sp/>of<sp/>particle<sp/>pairs.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/ExampleRestraint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/XYZ.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExampleRestraint::ExampleRestraint(Model<sp/>*m,<sp/>ParticleIndex<sp/>p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Restraint(m,<sp/></highlight><highlight class="stringliteral">&quot;ExampleRestraint%1%&quot;</highlight><highlight class="normal">),<sp/>p_(p),<sp/>k_(k)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Apply<sp/>the<sp/>pair<sp/>score<sp/>to<sp/>each<sp/>particle<sp/>pair<sp/>listed<sp/>in<sp/>the<sp/>container.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ExampleRestraint::do_add_score_and_derivatives(ScoreAccumulator<sp/>sa)</highlight><highlight class="keyword"></highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_LOG;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZ<sp/>d(get_model(),<sp/>p_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_LOG_VERBOSE(</highlight><highlight class="stringliteral">&quot;The<sp/>z<sp/>coordinate<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>d-&gt;get_name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>d.get_z()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>score<sp/>=<sp/>.5<sp/>*<sp/>k_<sp/>*<sp/>square(d.get_z());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sa.get_derivative_accumulator())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deriv<sp/>=<sp/>k_<sp/>*<sp/>d.get_z();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>d.add_to_derivative(2,<sp/>deriv,<sp/>*sa.get_derivative_accumulator());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sa.add_score(score);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Return<sp/>all<sp/>particles<sp/>whose<sp/>attributes<sp/>are<sp/>read<sp/>by<sp/>the<sp/>restraints.<sp/>To</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>do<sp/>this,<sp/>ask<sp/>the<sp/>pair<sp/>score<sp/>what<sp/>particles<sp/>it<sp/>uses.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ModelObjectsTemp<sp/>ExampleRestraint::do_get_inputs()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ModelObjectsTemp(1,<sp/>get_model()-&gt;get_particle(p_));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Complete<sp/>the<sp/>serialization<sp/>support<sp/>(see<sp/>IMP_OBJECT_SERIALIZE_DECL<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>header<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_OBJECT_SERIALIZE_IMPL(<ref refid="classIMP_1_1example_1_1ExampleRestraint" kindref="compound">IMP::example::ExampleRestraint</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleRestraint.h" line="26" column="1" bodyfile="include/IMP/example/ExampleRestraint.h" bodystart="26" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a7805ebe2f08e2613f8c78e94ec7ca837" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>do_add_score_and_derivatives</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1aab4f84092a4d7b52bbc1e9b4d5278c7b" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a164ab481cd84da5c09e8bf1d13bcc18a" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>dummy_serialize_init_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a63477f355b12a71baeac254e88b2face" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>ExampleRestraint</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a252257d7e15eea271976fc6667b8e8f3" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>ExampleRestraint</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a010a053921fe4d5552749a58cd663754" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>get_force_constant</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a8f6c488f440ba1a67da9b8c8e036931f" prot="public" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>get_index</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a1749a35942051842698e1203b9f04c66" prot="public" virt="virtual"><scope>IMP::example::ExampleRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1ad508f33af7229ef56a8936fdeec97760" prot="public" virt="virtual"><scope>IMP::example::ExampleRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a8c66680fa844359e4bd6f8a053b07d2d" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>k_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a26920e07928e3d742adcda0cea4b26fc" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>load_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1ab6ed620784ff02f4c22027cc5cbbbfb1" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>p_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1ab32bc200345788bc0a4dbe45e86d1d0d" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>save_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a719286f3a247fddd63fa76c0ef580858" prot="private" virt="non-virtual"><scope>IMP::example::ExampleRestraint</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleRestraint_1a41fde319f84ba340089b25cff15a165a" prot="public" virt="virtual"><scope>IMP::example::ExampleRestraint</scope><name>~ExampleRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

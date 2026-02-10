@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classcustom__filter_1_1MyFilterTable_1_1MyFilter" kind="class" language="Python" prot="public">
+    <compoundname>custom_filter::MyFilterTable::MyFilter</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilter" prot="public" virt="non-virtual">IMP::domino::SubsetFilter</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a2272c767201362fb30cc648cd90c851b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.MyFilter::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <qualifiedname>custom_filter.MyFilterTable.MyFilter.pos</qualifiedname>
+        <initializer>=  pos</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="68" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a945478718922781dc9b8018dbb79c30e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.MyFilter::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>custom_filter.MyFilterTable.MyFilter.value</qualifiedname>
+        <initializer>=  value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="69" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a0a5a4bad339f612e0bfad78a0a1cdc2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.MyFilter.__init__</definition>
+        <argsstring>(self, pos, value)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>custom_filter.MyFilterTable.MyFilter.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="64" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adbb0cf2782638bbaedddcd1f23016272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.MyFilter.get_is_ok</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>get_is_ok</name>
+        <qualifiedname>custom_filter.MyFilterTable.MyFilter.get_is_ok</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="81" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adc38569efcd158de6252460f86d8a560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.MyFilterTable.MyFilter.get_next_state</definition>
+        <argsstring>(self, pos, s)</argsstring>
+        <name>get_next_state</name>
+        <qualifiedname>custom_filter.MyFilterTable.MyFilter.get_next_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="71" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="71" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilter</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilter"/>
+      </node>
+      <node id="1">
+        <label>custom_filter.MyFilterTable.MyFilter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilter</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilter"/>
+      </node>
+      <node id="1">
+        <label>custom_filter.MyFilterTable.MyFilter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="examples/domino/custom_filter.py" line="62" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="62" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a0a5a4bad339f612e0bfad78a0a1cdc2f" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>__init__</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adbb0cf2782638bbaedddcd1f23016272" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>get_is_ok</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1adc38569efcd158de6252460f86d8a560" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>get_next_state</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a2272c767201362fb30cc648cd90c851b" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>pos</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a3e9fb62bfb3ea92b633874a993644d9f" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>SubsetFilter</name></member>
+      <member refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter_1a945478718922781dc9b8018dbb79c30e" prot="public" virt="non-virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>value</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a27a6ae1f850f637cf6b3d502ddbd631e" prot="public" virt="virtual"><scope>custom_filter::MyFilterTable::MyFilter</scope><name>~SubsetFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1ChiSquareMetric" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::ChiSquareMetric</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">statistics::Metric</basecompoundref>
+    <includes local="no">IMP/spb/ChiSquareMetric.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1a201a2ee640ed7e7fc921b1e115b1c994" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::spb::ChiSquareMetric::constr_type_</definition>
+        <argsstring></argsstring>
+        <name>constr_type_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::constr_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="22" column="7" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1aa722a0eb232dfa9cf5a54f27e5650f4c" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ChiSquareMetric::norm_</definition>
+        <argsstring></argsstring>
+        <name>norm_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::norm_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="21" column="10" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1a0c9b3e680ec16e87632d74ecb31b5d3e" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ChiSquareMetric::nu_exp_</definition>
+        <argsstring></argsstring>
+        <name>nu_exp_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::nu_exp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="20" column="10" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1a1a3b1fcf10fe6359bae6f18b600628dd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Floats &gt;</type>
+        <definition>std::vector&lt;Floats&gt; IMP::spb::ChiSquareMetric::nus_</definition>
+        <argsstring></argsstring>
+        <name>nus_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::nus_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="24" column="15" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1a43e66b984ed9c270ab3cb1d2afa4db49" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Floats &gt;</type>
+        <definition>std::vector&lt;Floats&gt; IMP::spb::ChiSquareMetric::stddev_</definition>
+        <argsstring></argsstring>
+        <name>stddev_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::stddev_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="25" column="15" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1ChiSquareMetric_1ae1f34f49f82751a4c59538ac2e1104f9" prot="private" static="no" mutable="no">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ChiSquareMetric::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::weight_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="19" column="10" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a8bfbc4359a174269a6a9aaed4c103c0a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ChiSquareMetric::get_chisquare</definition>
+        <argsstring>(unsigned i, unsigned j) const</argsstring>
+        <name>get_chisquare</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_chisquare</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="27" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a8f59cf3c0bacd79f7b840b6565068161" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ChiSquareMetric::get_scalarchisquare</definition>
+        <argsstring>(unsigned i, unsigned j) const</argsstring>
+        <name>get_scalarchisquare</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_scalarchisquare</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="29" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a2d02a3e31b915a5be91cd8bdb9d1bdc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::ChiSquareMetric::ChiSquareMetric</definition>
+        <argsstring>(Floats nu_exp, int constr_type=0)</argsstring>
+        <name>ChiSquareMetric</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::ChiSquareMetric</qualifiedname>
+        <param>
+          <type>Floats</type>
+          <declname>nu_exp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>constr_type</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1ab7395b50b6a8ff874be8b468868398f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::ChiSquareMetric::~ChiSquareMetric</definition>
+        <argsstring>()</argsstring>
+        <name>~ChiSquareMetric</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::~ChiSquareMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="45" column="231" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a3e57b3c9121ccee87ea663e71d0d1f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::ChiSquareMetric::add_configuration</definition>
+        <argsstring>(Floats nu, Floats stddev, double weight=1.0)</argsstring>
+        <name>add_configuration</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::add_configuration</qualifiedname>
+        <param>
+          <type>Floats</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>Floats</type>
+          <declname>stddev</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1adc5cc7306005fbf95130769f6f0bef64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ChiSquareMetric::get_chisquare_exp</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_chisquare_exp</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_chisquare_exp</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a5411715f2584f4b0ee4258d01272e24d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::ChiSquareMetric::get_distance</definition>
+        <argsstring>(unsigned int i, unsigned int j) const override</argsstring>
+        <name>get_distance</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_distance</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a4fda81c920e81dfafdabef6655011645" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ChiSquareMetric::get_nu</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_nu</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_nu</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1ae62c5c06281d5145b70603912ffe408f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::spb::ChiSquareMetric::get_number_of_items</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_items</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_number_of_items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="44" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a538a17aac46f5e7f8745ddca61f3f345" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::spb::ChiSquareMetric::get_stddev</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_stddev</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_stddev</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1aa2e6dfa3b6ff4846e05100f12e8590fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::ChiSquareMetric::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="45" column="34" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a1c72aae2c5e5a4fbbf7d152554fd776d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::ChiSquareMetric::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="45" column="103" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1ChiSquareMetric_1a70a234d74f3e4c42fdeb078e45b8e5d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Float</type>
+        <definition>Float IMP::spb::ChiSquareMetric::get_weight</definition>
+        <argsstring>(unsigned i) const</argsstring>
+        <name>get_weight</name>
+        <qualifiedname>IMP::spb::ChiSquareMetric::get_weight</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/ChiSquareMetric.h" line="39" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Compute the RMSD between two sets of particles in two configurations. </para>
+    </detaileddescription>
+    <location file="include/IMP/spb/ChiSquareMetric.h" line="18" column="1" bodyfile="include/IMP/spb/ChiSquareMetric.h" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a3e57b3c9121ccee87ea663e71d0d1f69" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>add_configuration</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a2d02a3e31b915a5be91cd8bdb9d1bdc4" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>ChiSquareMetric</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a201a2ee640ed7e7fc921b1e115b1c994" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>constr_type_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a8bfbc4359a174269a6a9aaed4c103c0a" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_chisquare</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1adc5cc7306005fbf95130769f6f0bef64" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_chisquare_exp</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a5411715f2584f4b0ee4258d01272e24d" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_distance</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a4fda81c920e81dfafdabef6655011645" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_nu</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ae62c5c06281d5145b70603912ffe408f" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_number_of_items</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a8f59cf3c0bacd79f7b840b6565068161" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_scalarchisquare</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a538a17aac46f5e7f8745ddca61f3f345" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_stddev</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1aa2e6dfa3b6ff4846e05100f12e8590fa" prot="public" virt="virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a1c72aae2c5e5a4fbbf7d152554fd776d" prot="public" virt="virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a70a234d74f3e4c42fdeb078e45b8e5d8" prot="public" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>get_weight</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1aa722a0eb232dfa9cf5a54f27e5650f4c" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>norm_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a0c9b3e680ec16e87632d74ecb31b5d3e" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>nu_exp_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a1a3b1fcf10fe6359bae6f18b600628dd" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>nus_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a43e66b984ed9c270ab3cb1d2afa4db49" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>stddev_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ae1f34f49f82751a4c59538ac2e1104f9" prot="private" virt="non-virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>weight_</name></member>
+      <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ab7395b50b6a8ff874be8b468868398f8" prot="public" virt="virtual"><scope>IMP::spb::ChiSquareMetric</scope><name>~ChiSquareMetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

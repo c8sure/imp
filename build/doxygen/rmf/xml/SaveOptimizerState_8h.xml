@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="SaveOptimizerState_8h" kind="file" language="C++">
+    <compoundname>SaveOptimizerState.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes refid="atom__io_8h" local="yes">atom_io.h</includes>
+    <includes refid="restraint__io_8h" local="yes">restraint_io.h</includes>
+    <includes refid="particle__io_8h" local="yes">particle_io.h</includes>
+    <includes refid="geometry__io_8h" local="yes">geometry_io.h</includes>
+    <includes local="no">IMP/OptimizerState.h</includes>
+    <includes local="no">IMP/atom/Simulator.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>SaveOptimizerState.h</label>
+        <link refid="SaveOptimizerState_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/OptimizerState.h</label>
+      </node>
+      <node id="3">
+        <label>IMP/atom/Simulator.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classIMP_1_1rmf_1_1SaveOptimizerState" prot="public">IMP::rmf::SaveOptimizerState</innerclass>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Dump the state of all associated objects into the RMF file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/SaveOptimizerState.h"/>
+  </compounddef>
+</doxygen>

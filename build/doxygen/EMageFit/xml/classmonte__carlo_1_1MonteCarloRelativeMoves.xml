@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classmonte__carlo_1_1MonteCarloRelativeMoves" kind="class" language="Python" prot="public">
+    <compoundname>monte_carlo::MonteCarloRelativeMoves</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmonte__carlo_1_1MonteCarloRelativeMoves_1abb5054747b3aa5e1f0d0a1d4d2af8181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.MonteCarloRelativeMoves.run_monte_carlo</definition>
+        <argsstring>(self)</argsstring>
+        <name>run_monte_carlo</name>
+        <qualifiedname>monte_carlo.MonteCarloRelativeMoves.run_monte_carlo</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Run MonteCarlo sampling to generate possible states for DOMINO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="146" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="146" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmonte__carlo_1_1MonteCarloRelativeMoves_1a5ea699955fac8c5bf94b487b4ec4b9a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.MonteCarloRelativeMoves.run_monte_carlo_with_relative_movers</definition>
+        <argsstring>(self)</argsstring>
+        <name>run_monte_carlo_with_relative_movers</name>
+        <qualifiedname>monte_carlo.MonteCarloRelativeMoves.run_monte_carlo_with_relative_movers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Run MonteCarlo sampling to generate possible states for DOMINO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="172" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmonte__carlo_1_1MonteCarloRelativeMoves_1a1486acdc42d8f350ca21612b0ab4ce75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.MonteCarloRelativeMoves.set_relative_movers</definition>
+        <argsstring>(self, max_translation, max_rotation)</argsstring>
+        <name>set_relative_movers</name>
+        <qualifiedname>monte_carlo.MonteCarloRelativeMoves.set_relative_movers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>max_translation</type>
+          <defname>max_translation</defname>
+        </param>
+        <param>
+          <type>max_rotation</type>
+          <defname>max_rotation</defname>
+        </param>
+        <briefdescription>
+<para>Generate the relative models form the transforms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The transforms is a list with triplets [id1, id2, transform_file] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum translation distance allowed for the moves </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum rotation angle allowed for the moves </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="89" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="89" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classmonte__carlo_1_1MonteCarloRelativeMoves_1a8853453789ff5369b9279c04cca81aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.MonteCarloRelativeMoves.set_scoring_function</definition>
+        <argsstring>(self, scoring_function)</argsstring>
+        <name>set_scoring_function</name>
+        <qualifiedname>monte_carlo.MonteCarloRelativeMoves.set_scoring_function</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>scoring_function</type>
+          <defname>scoring_function</defname>
+        </param>
+        <briefdescription>
+<para>Set the scoring function to be used by MonteCarlo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="142" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmonte__carlo_1_1MonteCarloRelativeMoves_1a8ad7bf0369e87c69b8fe609b8a272b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>monte_carlo.MonteCarloRelativeMoves.set_temperature_pattern</definition>
+        <argsstring>(self, temperatures, iterations, cycles)</argsstring>
+        <name>set_temperature_pattern</name>
+        <qualifiedname>monte_carlo.MonteCarloRelativeMoves.set_temperature_pattern</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>temperatures</type>
+          <defname>temperatures</defname>
+        </param>
+        <param>
+          <type>iterations</type>
+          <defname>iterations</defname>
+        </param>
+        <param>
+          <type>cycles</type>
+          <defname>cycles</defname>
+        </param>
+        <briefdescription>
+<para>Set the temperature pattern to use during the Monte Carlo optimizations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temperatures</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of temperature values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List with the iterations to do for each of the temperatures. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of repetitions of the pattern of temperatures and iterations </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/monte_carlo.py" line="64" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="64" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class to do Monte Carlo sampling by using as the set of movements relative positions between rigid bodies. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/monte_carlo.py" line="37" column="1" bodyfile="lib/IMP/EMageFit/monte_carlo.py" bodystart="37" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classmonte__carlo_1_1MonteCarloRelativeMoves_1abb5054747b3aa5e1f0d0a1d4d2af8181" prot="public" virt="non-virtual"><scope>monte_carlo::MonteCarloRelativeMoves</scope><name>run_monte_carlo</name></member>
+      <member refid="classmonte__carlo_1_1MonteCarloRelativeMoves_1a5ea699955fac8c5bf94b487b4ec4b9a9" prot="public" virt="non-virtual"><scope>monte_carlo::MonteCarloRelativeMoves</scope><name>run_monte_carlo_with_relative_movers</name></member>
+      <member refid="classmonte__carlo_1_1MonteCarloRelativeMoves_1a1486acdc42d8f350ca21612b0ab4ce75" prot="public" virt="non-virtual"><scope>monte_carlo::MonteCarloRelativeMoves</scope><name>set_relative_movers</name></member>
+      <member refid="classmonte__carlo_1_1MonteCarloRelativeMoves_1a8853453789ff5369b9279c04cca81aac" prot="public" virt="non-virtual"><scope>monte_carlo::MonteCarloRelativeMoves</scope><name>set_scoring_function</name></member>
+      <member refid="classmonte__carlo_1_1MonteCarloRelativeMoves_1a8ad7bf0369e87c69b8fe609b8a272b57" prot="public" virt="non-virtual"><scope>monte_carlo::MonteCarloRelativeMoves</scope><name>set_temperature_pattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

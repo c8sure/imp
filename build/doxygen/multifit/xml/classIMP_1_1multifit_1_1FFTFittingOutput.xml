@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1FFTFittingOutput" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::FFTFittingOutput</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/fft_based_rigid_fitting.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFittingOutput_1ae81664b2371f03961210eedbe72fbb2c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::FFTFittingOutput::best_fits_</definition>
+        <argsstring></argsstring>
+        <name>best_fits_</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::best_fits_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="38" column="26" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1FFTFittingOutput_1aab91a4255439b2b699ff0b91bb35e85f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">FittingSolutionRecords</ref></type>
+        <definition>FittingSolutionRecords IMP::multifit::FFTFittingOutput::best_trans_per_rot_</definition>
+        <argsstring></argsstring>
+        <name>best_trans_per_rot_</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::best_trans_per_rot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="39" column="26" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFittingOutput_1a3132be6c58872bb5920e5700b72ad651" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::FFTFittingOutput::FFTFittingOutput</definition>
+        <argsstring>()</argsstring>
+        <name>FFTFittingOutput</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::FFTFittingOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="30" column="3" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFittingOutput_1a01b23900bd28dc9a7bde7504ba22f0f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::FFTFittingOutput::~FFTFittingOutput</definition>
+        <argsstring>()</argsstring>
+        <name>~FFTFittingOutput</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::~FFTFittingOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="32" column="231" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFittingOutput_1a5de54b83475362aa746b302fbfbdcd66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::FFTFittingOutput::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="32" column="34" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1FFTFittingOutput_1a3daf74185ac58f0ca7affcb67073cbd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::FFTFittingOutput::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::FFTFittingOutput::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="32" column="103" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Storage of the results from an FFT fit. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/fft_based_rigid_fitting.h" line="28" column="1" bodyfile="include/IMP/multifit/fft_based_rigid_fitting.h" bodystart="28" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1ae81664b2371f03961210eedbe72fbb2c" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>best_fits_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1aab91a4255439b2b699ff0b91bb35e85f" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>best_trans_per_rot_</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a3132be6c58872bb5920e5700b72ad651" prot="public" virt="non-virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>FFTFittingOutput</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a5de54b83475362aa746b302fbfbdcd66" prot="public" virt="virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a3daf74185ac58f0ca7affcb67073cbd7" prot="public" virt="virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1FFTFittingOutput_1a01b23900bd28dc9a7bde7504ba22f0f3" prot="public" virt="virtual"><scope>IMP::multifit::FFTFittingOutput</scope><name>~FFTFittingOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

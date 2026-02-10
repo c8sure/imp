@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="RMFWriter_8h" kind="file" language="C++">
+    <compoundname>RMFWriter.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes local="no">RMF/FileHandle.h</includes>
+    <includes local="no">IMP/display/Writer.h</includes>
+    <includes local="no">IMP/display/display_macros.h</includes>
+    <includes local="no">boost/unordered_set.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>RMFWriter.h</label>
+        <link refid="RMFWriter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/display/Writer.h</label>
+      </node>
+      <node id="4">
+        <label>IMP/display/display_macros.h</label>
+      </node>
+      <node id="2">
+        <label>RMF/FileHandle.h</label>
+      </node>
+      <node id="5">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Write geometry to an RMF file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/RMFWriter.h"/>
+  </compounddef>
+</doxygen>

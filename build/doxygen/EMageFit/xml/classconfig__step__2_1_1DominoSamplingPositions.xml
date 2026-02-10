@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__step__2_1_1DominoSamplingPositions" kind="class" language="Python" prot="public">
+    <compoundname>config_step_2::DominoSamplingPositions</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__step__2_1_1DominoSamplingPositions_1a674a664e033dec3ae887089def968742" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_step_2.DominoSamplingPositions::max_number</definition>
+        <argsstring></argsstring>
+        <name>max_number</name>
+        <qualifiedname>config_step_2.DominoSamplingPositions.max_number</qualifiedname>
+        <initializer>=  50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="21" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1DominoSamplingPositions_1aef8af104d024435ecb048eb3eef6cd7e" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_step_2.DominoSamplingPositions::orderby</definition>
+        <argsstring></argsstring>
+        <name>orderby</name>
+        <qualifiedname>config_step_2.DominoSamplingPositions.orderby</qualifiedname>
+        <initializer>=  &quot;em2d&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="22" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__step__2_1_1DominoSamplingPositions_1afd90adeb89fdea5dff97083fa862ac41" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_step_2.DominoSamplingPositions::read</definition>
+        <argsstring></argsstring>
+        <name>read</name>
+        <qualifiedname>config_step_2.DominoSamplingPositions.read</qualifiedname>
+        <initializer>=  &quot;monte_carlo_solutions.db&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="20" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__step__2_1_1DominoSamplingPositions_1ad654b546851e5bdfc99ebf0870a586db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_step_2.DominoSamplingPositions.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_step_2.DominoSamplingPositions.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="19" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" line="17" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_step_2.py" bodystart="17" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classconfig__step__2_1_1DominoSamplingPositions_1ad654b546851e5bdfc99ebf0870a586db" prot="public" virt="non-virtual"><scope>config_step_2::DominoSamplingPositions</scope><name>__init__</name></member>
+      <member refid="classconfig__step__2_1_1DominoSamplingPositions_1a674a664e033dec3ae887089def968742" prot="public" virt="non-virtual"><scope>config_step_2::DominoSamplingPositions</scope><name>max_number</name></member>
+      <member refid="classconfig__step__2_1_1DominoSamplingPositions_1aef8af104d024435ecb048eb3eef6cd7e" prot="public" virt="non-virtual"><scope>config_step_2::DominoSamplingPositions</scope><name>orderby</name></member>
+      <member refid="classconfig__step__2_1_1DominoSamplingPositions_1afd90adeb89fdea5dff97083fa862ac41" prot="public" virt="non-virtual"><scope>config_step_2::DominoSamplingPositions</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1RecursiveStates" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::RecursiveStates</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1ParticleStates" prot="public" virt="non-virtual">IMP::domino::ParticleStates</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveStates_1ac41a96ecbb3dd82646ccc9ca2fcf474f" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;ParticleStatesTable&gt; IMP::domino::RecursiveStates::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::domino::RecursiveStates::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="239" column="22" bodyfile="include/IMP/domino/particle_states.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveStates_1a6746a4c2c3faa103e9e7fe33fccdbca1" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::RecursiveStates::s_</definition>
+        <argsstring></argsstring>
+        <name>s_</name>
+        <qualifiedname>IMP::domino::RecursiveStates::s_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="237" column="10" bodyfile="include/IMP/domino/particle_states.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveStates_1ab36d0cbe3d0c5758b9ca8abd04910ffd" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::RecursiveStates::ss_</definition>
+        <argsstring></argsstring>
+        <name>ss_</name>
+        <qualifiedname>IMP::domino::RecursiveStates::ss_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="238" column="15" bodyfile="include/IMP/domino/particle_states.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1RecursiveStates_1a688c6b2e541da26d7dba98dac1ec64ee" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; ScoreState &gt;</type>
+        <definition>IMP::PointerMember&lt;ScoreState&gt; IMP::domino::RecursiveStates::sss_</definition>
+        <argsstring></argsstring>
+        <name>sss_</name>
+        <qualifiedname>IMP::domino::RecursiveStates::sss_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="240" column="22" bodyfile="include/IMP/domino/particle_states.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1a64d119281ac852e97227186e68b69c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::RecursiveStates::RecursiveStates</definition>
+        <argsstring>(Particle *p, Subset s, const Assignments &amp;ss, ParticleStatesTable *pst)</argsstring>
+        <name>RecursiveStates</name>
+        <qualifiedname>IMP::domino::RecursiveStates::RecursiveStates</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> &amp;</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="243" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1a6cc4417831cdae1a67222de1a65bb942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::RecursiveStates::~RecursiveStates</definition>
+        <argsstring>()</argsstring>
+        <name>~RecursiveStates</name>
+        <qualifiedname>IMP::domino::RecursiveStates::~RecursiveStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="248" column="231" bodyfile="include/IMP/domino/particle_states.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1a0b98f7cd3de72626929f457528de2f7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int IMP::domino::RecursiveStates::get_number_of_particle_states</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_number_of_particle_states</name>
+        <qualifiedname>IMP::domino::RecursiveStates::get_number_of_particle_states</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1a447c22efa093d3d7b809af983ddbc196">get_number_of_particle_states</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="245" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1ac79ae3df8dd8ba55cd73447aa76e8a7d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::RecursiveStates::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::RecursiveStates::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="248" column="34" bodyfile="include/IMP/domino/particle_states.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1ac29a3bf098dc7244bddd3bb19e6f998f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::RecursiveStates::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::RecursiveStates::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="248" column="103" bodyfile="include/IMP/domino/particle_states.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1RecursiveStates_1a16118537f48fd7c53bcabc1c56a4ff30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::domino::RecursiveStates::load_particle_state</definition>
+        <argsstring>(unsigned int, Particle *) const override</argsstring>
+        <name>load_particle_state</name>
+        <qualifiedname>IMP::domino::RecursiveStates::load_particle_state</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1ParticleStates_1ac11a066be2c5812768068f4126e94f53">load_particle_state</reimplements>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="246" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Load particle states for a set of particles based on the state index of a single particle, This can be used to implement compound objects (like rigid bodies), where state i of the particle being sampled causes a set of representation balls to be moved to certain locations. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RecursiveStates</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::ParticleStates</label>
+        <link refid="classIMP_1_1domino_1_1ParticleStates"/>
+      </node>
+      <node id="1">
+        <label>IMP::domino::RecursiveStates</label>
+        <link refid="classIMP_1_1domino_1_1RecursiveStates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/particle_states.h" line="236" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="236" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a3c7f6971ca424358b8ed996388b74f37" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>get_embedding</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1afe0f4df28c4d0749254f39bcd1c3a82e" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>get_nearest_state</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a0b98f7cd3de72626929f457528de2f7e" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>get_number_of_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac79ae3df8dd8ba55cd73447aa76e8a7d" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac29a3bf098dc7244bddd3bb19e6f998f" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a16118537f48fd7c53bcabc1c56a4ff30" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>load_particle_state</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a6396c150c0c94b04e797272a1da0d52e" prot="public" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1ac41a96ecbb3dd82646ccc9ca2fcf474f" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a64d119281ac852e97227186e68b69c0c" prot="public" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>RecursiveStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a6746a4c2c3faa103e9e7fe33fccdbca1" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>s_</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1ab36d0cbe3d0c5758b9ca8abd04910ffd" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>ss_</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a688c6b2e541da26d7dba98dac1ec64ee" prot="private" virt="non-virtual"><scope>IMP::domino::RecursiveStates</scope><name>sss_</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStates_1a7fc0d74bca312177f677c42804596518" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>~ParticleStates</name></member>
+      <member refid="classIMP_1_1domino_1_1RecursiveStates_1a6cc4417831cdae1a67222de1a65bb942" prot="public" virt="virtual"><scope>IMP::domino::RecursiveStates</scope><name>~RecursiveStates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

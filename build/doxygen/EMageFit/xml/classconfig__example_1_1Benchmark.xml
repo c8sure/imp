@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classconfig__example_1_1Benchmark" kind="class" language="Python" prot="public">
+    <compoundname>config_example::Benchmark</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1a02517bf3e5a73c44495ee19910453713" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_example.Benchmark::fn_pdb_native</definition>
+        <argsstring></argsstring>
+        <name>fn_pdb_native</name>
+        <qualifiedname>config_example.Benchmark.fn_pdb_native</qualifiedname>
+        <initializer>=  &quot;3sfd.pdb&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="78" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1a6103038e3a70773cb0b9a027bd55cb97" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_example.Benchmark::model_component</definition>
+        <argsstring></argsstring>
+        <name>model_component</name>
+        <qualifiedname>config_example.Benchmark.model_component</qualifiedname>
+        <initializer>=  &quot;3sfdB&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="86" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1afbe615636f1b3f12158dd1ab4a3a79af" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str config_example.Benchmark::native_component</definition>
+        <argsstring></argsstring>
+        <name>native_component</name>
+        <qualifiedname>config_example.Benchmark.native_component</qualifiedname>
+        <initializer>=  &quot;3sfdB&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="85" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1a0dd4851a040fb09389971414256bb05d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float config_example.Benchmark::native_map_threshold</definition>
+        <argsstring></argsstring>
+        <name>native_map_threshold</name>
+        <qualifiedname>config_example.Benchmark.native_map_threshold</qualifiedname>
+        <initializer>=  0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="82" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1afbb7d2ab8993a6314f9be1106dec9fd8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int config_example.Benchmark::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>config_example.Benchmark.resolution</qualifiedname>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="80" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classconfig__example_1_1Benchmark_1a74861f014a77bc6fe44357e1b85384d1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float config_example.Benchmark::voxel_size</definition>
+        <argsstring></argsstring>
+        <name>voxel_size</name>
+        <qualifiedname>config_example.Benchmark.voxel_size</qualifiedname>
+        <initializer>=  1.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="81" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classconfig__example_1_1Benchmark_1ae10df8ea572e6396268c7a1d73f58995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>config_example.Benchmark.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>config_example.Benchmark.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="77" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="77" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" line="75" column="1" bodyfile="/home/catherine/imp/modules/EMageFit/examples/3sfd/config_example.py" bodystart="75" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classconfig__example_1_1Benchmark_1ae10df8ea572e6396268c7a1d73f58995" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>__init__</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1a02517bf3e5a73c44495ee19910453713" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>fn_pdb_native</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1a6103038e3a70773cb0b9a027bd55cb97" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>model_component</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1afbe615636f1b3f12158dd1ab4a3a79af" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>native_component</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1a0dd4851a040fb09389971414256bb05d" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>native_map_threshold</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1afbb7d2ab8993a6314f9be1106dec9fd8" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>resolution</name></member>
+      <member refid="classconfig__example_1_1Benchmark_1a74861f014a77bc6fe44357e1b85384d1" prot="public" virt="non-virtual"><scope>config_example::Benchmark</scope><name>voxel_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

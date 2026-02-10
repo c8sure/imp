@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacebuildxlinks" kind="namespace" language="Python">
+    <compoundname>buildxlinks</compoundname>
+    <innerclass refid="classbuildxlinks_1_1DockOrder" prot="public">buildxlinks::DockOrder</innerclass>
+    <innerclass refid="classbuildxlinks_1_1InitialDockingFromXlinks" prot="public">buildxlinks::InitialDockingFromXlinks</innerclass>
+    <innerclass refid="classbuildxlinks_1_1Xlink" prot="public">buildxlinks::Xlink</innerclass>
+    <innerclass refid="classbuildxlinks_1_1XlinksDict" prot="public">buildxlinks::XlinksDict</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="buildxlinks_8py_1acfcd91091ef02fbea1167b8df1df1c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.build_xlinks_graph</definition>
+        <argsstring>(xlinks_dict)</argsstring>
+        <name>build_xlinks_graph</name>
+        <qualifiedname>buildxlinks.build_xlinks_graph</qualifiedname>
+        <param>
+          <type>xlinks_dict</type>
+          <defname>xlinks_dict</defname>
+        </param>
+        <briefdescription>
+<para>Build a set of nodes and edges from the set of crosslinking restraints. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xlinks_dict</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="classbuildxlinks_1_1XlinksDict" kindref="compound">XlinksDict</ref> class</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="88" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="88" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/buildxlinks.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

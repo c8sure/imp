@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="em2d_2collision_cross_section_8py-example" kind="example">
+    <compoundname>em2d/collision_cross_section.py</compoundname>
+    <briefdescription>
+<para>Example of how to compute the collision cross section of a molecule. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Example of how to compute the collision cross section of a molecule. <programlisting filename="em2d/collision_cross_section.py"><codeline><highlight class="comment">##<sp/>\example<sp/>em2d/collision_cross_section.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Example<sp/>of<sp/>how<sp/>to<sp/>compute<sp/>the<sp/>collision<sp/>cross<sp/>section<sp/>of<sp/>a<sp/>molecule.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1em2d" kindref="compound">IMP.em2d</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;collision<sp/>cross<sp/>section&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral">Example<sp/>of<sp/>how<sp/>to<sp/>compute<sp/>the<sp/>collision<sp/>cross<sp/>section<sp/>of<sp/>a<sp/>molecule</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.set_log_level(IMP.TERSE)</highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">fn<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;1z5s.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">prot<sp/>=<sp/>IMP.atom.read_pdb(fn,<sp/>m,<sp/>IMP.atom.ATOMPDBSelector())</highlight></codeline>
+<codeline><highlight class="normal">IMP.atom.add_radii(prot)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">projections<sp/>=<sp/>20</highlight></codeline>
+<codeline><highlight class="normal">resolution<sp/>=<sp/>1.0</highlight></codeline>
+<codeline><highlight class="normal">pixel_size<sp/>=<sp/>1.5</highlight></codeline>
+<codeline><highlight class="normal">img_size<sp/>=<sp/>80</highlight></codeline>
+<codeline><highlight class="normal">ccs<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1CollisionCrossSection" kindref="compound">IMP.em2d.CollisionCrossSection</ref>(projections,<sp/>resolution,<sp/>pixel_size,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>img_size)</highlight></codeline>
+<codeline><highlight class="normal">ccs.set_model_particles(IMP.atom.get_leaves(prot))</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;CCS&quot;</highlight><highlight class="normal">,<sp/>ccs.get_ccs(),<sp/></highlight><highlight class="stringliteral">&quot;A**2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/em2d/collision_cross_section.py"/>
+  </compounddef>
+</doxygen>

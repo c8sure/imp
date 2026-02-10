@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExamplePairScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExamplePairScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PairScore</basecompoundref>
+    <includes local="no">IMP/example/ExamplePairScore.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExamplePairScore_1acc36b72b0ebd379efea4fc13f5c16d2e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::example::ExamplePairScore::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="27" column="14" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExamplePairScore_1a4e021b91dfdcc5ec363893b6b37ffa39" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::x0_</definition>
+        <argsstring></argsstring>
+        <name>x0_</name>
+        <qualifiedname>IMP::example::ExamplePairScore::x0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="27" column="10" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExamplePairScore_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExamplePairScore::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="46" column="16" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExamplePairScore_1a762b6969d9450412a5a2e30bfbda56c6" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::example::ExamplePairScore::dummy_serialize_init_</definition>
+        <argsstring></argsstring>
+        <name>dummy_serialize_init_</name>
+        <qualifiedname>IMP::example::ExamplePairScore::dummy_serialize_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="50" column="27" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1adbeb109a93e64aa1c833be39ce21c043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExamplePairScore::ExamplePairScore</definition>
+        <argsstring>()</argsstring>
+        <name>ExamplePairScore</name>
+        <qualifiedname>IMP::example::ExamplePairScore::ExamplePairScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="31" column="3" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a19bf580f0b49f1690f70f6665b31d920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExamplePairScore::ExamplePairScore</definition>
+        <argsstring>(double x0, double k)</argsstring>
+        <name>ExamplePairScore</name>
+        <qualifiedname>IMP::example::ExamplePairScore::ExamplePairScore</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1ae57b34b8d6de1fa846c071273494b2da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExamplePairScore::~ExamplePairScore</definition>
+        <argsstring>()</argsstring>
+        <name>~ExamplePairScore</name>
+        <qualifiedname>IMP::example::ExamplePairScore::~ExamplePairScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="42" column="231" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a5a1b0950337730470b6036c06b5f9387" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::example::ExamplePairScore::do_get_inputs</definition>
+        <argsstring>(Model *m, const ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::example::ExamplePairScore::do_get_inputs</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="39" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a2f35a0ba7a3aa8ede996ad19a90bf445" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::evaluate_if_good_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, double max, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override</argsstring>
+        <name>evaluate_if_good_indexes</name>
+        <qualifiedname>IMP::example::ExamplePairScore::evaluate_if_good_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="41" column="905" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a985e814d79329d20af4b3581d6d36d18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::example::ExamplePairScore::evaluate_index</definition>
+        <argsstring>(Model *m, const ParticleIndexPair &amp;p, DerivativeAccumulator *da) const override</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>IMP::example::ExamplePairScore::evaluate_index</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPair &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a8fedcc8478756cb95537138cd71ac698" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::evaluate_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes</name>
+        <qualifiedname>IMP::example::ExamplePairScore::evaluate_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="41" column="11" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1abb3b864a53f43d01a344ca45ab4d13a1" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::evaluate_indexes_delta</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, const std::vector&lt; unsigned &gt; &amp;indexes, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_delta</name>
+        <qualifiedname>IMP::example::ExamplePairScore::evaluate_indexes_delta</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned &gt; &amp;</type>
+          <declname>indexes</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="41" column="555" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a0a16d8a887d8c3a484f28b52c66cad20" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::evaluate_indexes_scores</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_scores</name>
+        <qualifiedname>IMP::example::ExamplePairScore::evaluate_indexes_scores</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="41" column="260" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a725e994ca715d6546968c52c3b2b1df2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::get_force_constant</definition>
+        <argsstring>() const</argsstring>
+        <name>get_force_constant</name>
+        <qualifiedname>IMP::example::ExamplePairScore::get_force_constant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="34" column="10" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1abfab10120f045de54a8dd13df62bc2a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::example::ExamplePairScore::get_mean</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mean</name>
+        <qualifiedname>IMP::example::ExamplePairScore::get_mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="33" column="10" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a5ff844faaf81bcf4f5519338cd9fa2a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExamplePairScore::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExamplePairScore::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="42" column="34" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a1aefcfbd8d12577e6986dcd40c09f8f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExamplePairScore::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExamplePairScore::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="42" column="103" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a4c3693f26886e7f1630a58b98c7d0eee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExamplePairScore::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExamplePairScore::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="47" column="19" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1af07f69409c73f4032eb25765976f502c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object *</type>
+        <definition>static Object * IMP::example::ExamplePairScore::load_cereal</definition>
+        <argsstring>(cereal::BinaryInputArchive &amp;ar)</argsstring>
+        <name>load_cereal</name>
+        <qualifiedname>IMP::example::ExamplePairScore::load_cereal</qualifiedname>
+        <param>
+          <type>cereal::BinaryInputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="50" column="213" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExamplePairScore_1a0fbbede29872aa6bbdb6f1383ee0d235" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExamplePairScore::save_cereal</definition>
+        <argsstring>(Object *o, cereal::BinaryOutputArchive &amp;ar)</argsstring>
+        <name>save_cereal</name>
+        <qualifiedname>IMP::example::ExamplePairScore::save_cereal</qualifiedname>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>cereal::BinaryOutputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExamplePairScore.h" line="50" column="63" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Apply a harmonic to the distance between two particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The source code is as follows: <programlisting filename="ExamplePairScore.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExamplePairScore.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>Score<sp/>on<sp/>the<sp/>distance<sp/>between<sp/>a<sp/>pair<sp/>of<sp/>particles.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2026<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_PAIR_SCORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_PAIR_SCORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/XYZ.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/PairScore.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/pair_macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/UnaryFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Pointer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cereal/access.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>Apply<sp/>a<sp/>harmonic<sp/>to<sp/>the<sp/>distance<sp/>between<sp/>two<sp/>particles.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExamplePairScore.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExamplePairScore.cpp</highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExamplePairScore<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>PairScore<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0_,<sp/>k_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExamplePairScore(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExamplePairScore()<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_mean()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x0_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_force_constant()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>k_;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>evaluate_index(Model<sp/>*m,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexPair<sp/>&amp;p,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DerivativeAccumulator<sp/>*da)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ModelObjectsTemp<sp/>do_get_inputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_PAIR_SCORE_METHODS(ExamplePairScore);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExamplePairScore);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cereal::access;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ar(cereal::base_class&lt;PairScore&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">),<sp/>x0_,<sp/>k_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_SERIALIZE_DECL(ExamplePairScore);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_OBJECTS(ExamplePairScore,<sp/>ExamplePairScores);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_PAIR_SCORE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExamplePairScore.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>ExamplePairScore.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>Score<sp/>on<sp/>the<sp/>distance<sp/>between<sp/>a<sp/>pair<sp/>of<sp/>particles.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/ExamplePairScore.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/XYZ.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/UnaryFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lambda/lambda.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExamplePairScore::ExamplePairScore(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k)<sp/>:<sp/>x0_(x0),<sp/>k_(k)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Float<sp/>ExamplePairScore::evaluate_index(Model<sp/>*m,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexPair<sp/>&amp;pip,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DerivativeAccumulator<sp/>*da)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>turn<sp/>on<sp/>logging<sp/>for<sp/>this<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_LOG;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>assume<sp/>they<sp/>have<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZ<sp/>d0(m,<sp/>pip[0]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZ<sp/>d1(m,<sp/>pip[1]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>log<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diff<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(d0.get_coordinates()<sp/>-<sp/>d1.get_coordinates()).get_magnitude()<sp/>-<sp/>x0_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_LOG_VERBOSE(</highlight><highlight class="stringliteral">&quot;The<sp/>distance<sp/>off<sp/>from<sp/>x0<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>diff<sp/>&lt;&lt;<sp/>std::endl);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>score<sp/>=<sp/>.5<sp/>*<sp/>k_<sp/>*<sp/>square(diff);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(da)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>derivatives<sp/>are<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>algebra::Vector3D<sp/>delta<sp/>=<sp/>d0.get_coordinates()<sp/>-<sp/>d1.get_coordinates();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>algebra::Vector3D<sp/>udelta<sp/>=<sp/>delta.get_unit_vector();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dv<sp/>=<sp/>k_<sp/>*<sp/>diff;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>to<sp/>the<sp/>particle<sp/>derivatives</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>d0.add_to_derivatives(udelta<sp/>*<sp/>dv,<sp/>*da);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>d1.add_to_derivatives(-udelta<sp/>*<sp/>dv,<sp/>*da);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>score;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ModelObjectsTemp<sp/>ExamplePairScore::do_get_inputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Model<sp/>*m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ParticleIndexes<sp/>&amp;pis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>IMP::get_particles(m,<sp/>pis);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP_OBJECT_SERIALIZE_IMPL(<ref refid="classIMP_1_1example_1_1ExamplePairScore" kindref="compound">IMP::example::ExamplePairScore</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExamplePairScore.h" line="26" column="1" bodyfile="include/IMP/example/ExamplePairScore.h" bodystart="26" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a5a1b0950337730470b6036c06b5f9387" prot="public" virt="virtual"><scope>IMP::example::ExamplePairScore</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a762b6969d9450412a5a2e30bfbda56c6" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>dummy_serialize_init_</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a2f35a0ba7a3aa8ede996ad19a90bf445" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>evaluate_if_good_indexes</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a985e814d79329d20af4b3581d6d36d18" prot="public" virt="virtual"><scope>IMP::example::ExamplePairScore</scope><name>evaluate_index</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a8fedcc8478756cb95537138cd71ac698" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>evaluate_indexes</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1abb3b864a53f43d01a344ca45ab4d13a1" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>evaluate_indexes_delta</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a0a16d8a887d8c3a484f28b52c66cad20" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>evaluate_indexes_scores</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a19bf580f0b49f1690f70f6665b31d920" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>ExamplePairScore</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1adbeb109a93e64aa1c833be39ce21c043" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>ExamplePairScore</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a725e994ca715d6546968c52c3b2b1df2" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>get_force_constant</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1abfab10120f045de54a8dd13df62bc2a8" prot="public" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>get_mean</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a5ff844faaf81bcf4f5519338cd9fa2a0" prot="public" virt="virtual"><scope>IMP::example::ExamplePairScore</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a1aefcfbd8d12577e6986dcd40c09f8f3" prot="public" virt="virtual"><scope>IMP::example::ExamplePairScore</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1acc36b72b0ebd379efea4fc13f5c16d2e" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>k_</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1af07f69409c73f4032eb25765976f502c" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>load_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a0fbbede29872aa6bbdb6f1383ee0d235" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>save_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a4c3693f26886e7f1630a58b98c7d0eee" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1a4e021b91dfdcc5ec363893b6b37ffa39" prot="private" virt="non-virtual"><scope>IMP::example::ExamplePairScore</scope><name>x0_</name></member>
+      <member refid="classIMP_1_1example_1_1ExamplePairScore_1ae57b34b8d6de1fa846c071273494b2da" prot="public" virt="virtual"><scope>IMP::example::ExamplePairScore</scope><name>~ExamplePairScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

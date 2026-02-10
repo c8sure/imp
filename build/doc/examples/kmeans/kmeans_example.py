@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/kmeans/examples/kmeans_example.py

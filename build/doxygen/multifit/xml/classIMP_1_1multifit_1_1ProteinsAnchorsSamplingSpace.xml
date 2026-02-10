@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ProteinsAnchorsSamplingSpace</compoundname>
+    <includes local="no">IMP/multifit/protein_anchors_mapping_reader.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ae9cf573467a36791711cedf62369eb2b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">multifit::AnchorsData</ref></type>
+        <definition>multifit::AnchorsData IMP::multifit::ProteinsAnchorsSamplingSpace::anchors_data_</definition>
+        <argsstring></argsstring>
+        <name>anchors_data_</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::anchors_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="61" column="25" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1acd845324d2c9960d2ec968e6b5ba6bdf" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinsAnchorsSamplingSpace::anchors_fn_</definition>
+        <argsstring></argsstring>
+        <name>anchors_fn_</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::anchors_fn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="63" column="15" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1af736501f027ca6922ca18eb967331e5a" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; IMP::multifit::ProteinsAnchorsSamplingSpace::paths_filename_</definition>
+        <argsstring></argsstring>
+        <name>paths_filename_</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::paths_filename_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="60" column="12" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a84f28e9ff0dde94b5bbaf9ef1c32351f" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::string, IntsList &gt;</type>
+        <definition>std::map&lt;std::string, IntsList&gt; IMP::multifit::ProteinsAnchorsSamplingSpace::paths_map_</definition>
+        <argsstring></argsstring>
+        <name>paths_map_</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::paths_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="59" column="12" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a39d21f652c171547c188b3a49625ccf8" prot="protected" static="no" mutable="no">
+        <type>PointerMember&lt; <ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">multifit::ProteomicsData</ref> &gt;</type>
+        <definition>PointerMember&lt;multifit::ProteomicsData&gt; IMP::multifit::ProteinsAnchorsSamplingSpace::prots_</definition>
+        <argsstring></argsstring>
+        <name>prots_</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::prots_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="62" column="17" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a5611298f4d66c2966344bb6f37783df5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProteinsAnchorsSamplingSpace::ProteinsAnchorsSamplingSpace</definition>
+        <argsstring>(multifit::ProteomicsData *prots=0)</argsstring>
+        <name>ProteinsAnchorsSamplingSpace</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::ProteinsAnchorsSamplingSpace</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">multifit::ProteomicsData</ref> *</type>
+          <declname>prots</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="23" column="3" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="23" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a2adc909ac97063c90a2abd5d65421132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::add_protein</definition>
+        <argsstring>(const multifit::ProteinRecordData &amp;rec)</argsstring>
+        <name>add_protein</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::add_protein</qualifiedname>
+        <param>
+          <type>const multifit::ProteinRecordData &amp;</type>
+          <declname>rec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="30" column="8" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a3048214c1c0110dc6050f42fc918d489" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">multifit::AnchorsData</ref></type>
+        <definition>multifit::AnchorsData IMP::multifit::ProteinsAnchorsSamplingSpace::get_anchors</definition>
+        <argsstring>() const</argsstring>
+        <name>get_anchors</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::get_anchors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="26" column="25" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a0dada9a30967c22705113c904c871633" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinsAnchorsSamplingSpace::get_anchors_filename</definition>
+        <argsstring>() const</argsstring>
+        <name>get_anchors_filename</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::get_anchors_filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="27" column="22" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a7430ac6694bb6cd87911d265d4d8d265" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IMP::multifit::ProteinsAnchorsSamplingSpace::get_paths_filename_for_protein</definition>
+        <argsstring>(const std::string &amp;prot_name) const</argsstring>
+        <name>get_paths_filename_for_protein</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::get_paths_filename_for_protein</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prot_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="44" column="15" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ac3aa61d58bccf439385a60cd60eb03ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>IntsList</type>
+        <definition>IntsList IMP::multifit::ProteinsAnchorsSamplingSpace::get_paths_for_protein</definition>
+        <argsstring>(const std::string &amp;prot_name) const</argsstring>
+        <name>get_paths_for_protein</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::get_paths_for_protein</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prot_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="33" column="12" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1abf7b80722b5350b57ef2eb593826829d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteomicsData" kindref="compound">multifit::ProteomicsData</ref> *</type>
+        <definition>multifit::ProteomicsData * IMP::multifit::ProteinsAnchorsSamplingSpace::get_proteomics_data</definition>
+        <argsstring>() const</argsstring>
+        <name>get_proteomics_data</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::get_proteomics_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="29" column="28" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a897a2e3f157111ff53f6b1f94687c217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::set_anchors</definition>
+        <argsstring>(const multifit::AnchorsData &amp;data)</argsstring>
+        <name>set_anchors</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::set_anchors</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1AnchorsData" kindref="compound">multifit::AnchorsData</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="25" column="8" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a09789e0e14348d1860e8bdc6644ad645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::set_anchors_filename</definition>
+        <argsstring>(const std::string &amp;fn)</argsstring>
+        <name>set_anchors_filename</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::set_anchors_filename</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="28" column="8" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a62510633960ba1f30358d89d2f855594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::set_paths_filename_for_protein</definition>
+        <argsstring>(const std::string &amp;prot_name, const std::string &amp;paths_filename)</argsstring>
+        <name>set_paths_filename_for_protein</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::set_paths_filename_for_protein</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prot_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>paths_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="38" column="8" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1aad80860098e9e52065ed90ccb90f8151" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::set_paths_for_protein</definition>
+        <argsstring>(const std::string &amp;prot_name, IntsList paths)</argsstring>
+        <name>set_paths_for_protein</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::set_paths_for_protein</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prot_name</declname>
+        </param>
+        <param>
+          <type>IntsList</type>
+          <declname>paths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="50" column="8" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1adaffaadcf2ee58ee7105375bf0532850" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProteinsAnchorsSamplingSpace::show</definition>
+        <argsstring>(std::ostream &amp;s=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::ProteinsAnchorsSamplingSpace::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>s</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="56" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>stores the anchors sampling space for each protein </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::multifit::AnchorsData</label>
+        <link refid="classIMP_1_1multifit_1_1AnchorsData"/>
+      </node>
+      <node id="1">
+        <label>IMP::multifit::ProteinsAnchorsSamplingSpace</label>
+        <link refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>anchors_data_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/multifit/protein_anchors_mapping_reader.h" line="21" column="1" bodyfile="include/IMP/multifit/protein_anchors_mapping_reader.h" bodystart="21" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a2adc909ac97063c90a2abd5d65421132" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>add_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ae9cf573467a36791711cedf62369eb2b" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>anchors_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1acd845324d2c9960d2ec968e6b5ba6bdf" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>anchors_fn_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a3048214c1c0110dc6050f42fc918d489" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>get_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a0dada9a30967c22705113c904c871633" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>get_anchors_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a7430ac6694bb6cd87911d265d4d8d265" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>get_paths_filename_for_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1ac3aa61d58bccf439385a60cd60eb03ae" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>get_paths_for_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1abf7b80722b5350b57ef2eb593826829d" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>get_proteomics_data</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1af736501f027ca6922ca18eb967331e5a" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>paths_filename_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a84f28e9ff0dde94b5bbaf9ef1c32351f" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>paths_map_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a5611298f4d66c2966344bb6f37783df5" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>ProteinsAnchorsSamplingSpace</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a39d21f652c171547c188b3a49625ccf8" prot="protected" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>prots_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a897a2e3f157111ff53f6b1f94687c217" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>set_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a09789e0e14348d1860e8bdc6644ad645" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>set_anchors_filename</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1a62510633960ba1f30358d89d2f855594" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>set_paths_filename_for_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1aad80860098e9e52065ed90ccb90f8151" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>set_paths_for_protein</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace_1adaffaadcf2ee58ee7105375bf0532850" prot="public" virt="non-virtual"><scope>IMP::multifit::ProteinsAnchorsSamplingSpace</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

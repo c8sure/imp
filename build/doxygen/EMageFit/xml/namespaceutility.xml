@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceutility" kind="namespace" language="Python">
+    <compoundname>utility</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="utility_8py_1aa57e35b3307284e48ea6e2d43ebee8ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utility.get_experiment_params</definition>
+        <argsstring>(fn_params)</argsstring>
+        <name>get_experiment_params</name>
+        <qualifiedname>utility.get_experiment_params</qualifiedname>
+        <param>
+          <type>fn_params</type>
+          <defname>fn_params</defname>
+        </param>
+        <briefdescription>
+<para>Imports the configuration file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>configuration file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Experiment Class with all the information from the config file</para>
+</simplesect>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/utility.py" line="43" column="1" bodyfile="lib/IMP/EMageFit/utility.py" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8py_1a29fa8892a7af743c65f114f2716d01e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utility.vararg_callback</definition>
+        <argsstring>(option, opt_str, value, parser)</argsstring>
+        <name>vararg_callback</name>
+        <qualifiedname>utility.vararg_callback</qualifiedname>
+        <param>
+          <type>option</type>
+          <defname>option</defname>
+        </param>
+        <param>
+          <type>opt_str</type>
+          <defname>opt_str</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>parser</type>
+          <defname>parser</defname>
+        </param>
+        <briefdescription>
+<para>Snippet from Python website to process multiple values for an option with OptionParser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/utility.py" line="12" column="1" bodyfile="lib/IMP/EMageFit/utility.py" bodystart="12" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/utility.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

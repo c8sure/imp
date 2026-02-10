@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classbuildxlinks_1_1XlinksDict" kind="class" language="Python" prot="public">
+    <compoundname>buildxlinks::XlinksDict</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">dict</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbuildxlinks_1_1XlinksDict_1a1e5e74037feda616d90b9f0bda92c674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.XlinksDict.add</definition>
+        <argsstring>(self, xlink)</argsstring>
+        <name>add</name>
+        <qualifiedname>buildxlinks.XlinksDict.add</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xlink</type>
+          <defname>xlink</defname>
+        </param>
+        <briefdescription>
+<para>Add a xlink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is ensured that the id of the first element is is lower that the second </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="117" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="117" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classbuildxlinks_1_1XlinksDict_1a5bf40db9ed4ecfe50dac4baddb18fc0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>buildxlinks.XlinksDict.get_xlinks_for_pair</definition>
+        <argsstring>(self, pair_ids)</argsstring>
+        <name>get_xlinks_for_pair</name>
+        <qualifiedname>buildxlinks.XlinksDict.get_xlinks_for_pair</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pair_ids</type>
+          <defname>pair_ids</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pair_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ids for the subunits that are cross-linked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/buildxlinks.py" line="129" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="129" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Description of crosslinking restraints as a python dictionary. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The keys are a pair with the ids of the cross-linked subunits. Note: The pairs are considered in alphabetic order</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/buildxlinks.py" line="108" column="1" bodyfile="lib/IMP/EMageFit/buildxlinks.py" bodystart="108" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classbuildxlinks_1_1XlinksDict_1a1e5e74037feda616d90b9f0bda92c674" prot="public" virt="non-virtual"><scope>buildxlinks::XlinksDict</scope><name>add</name></member>
+      <member refid="classbuildxlinks_1_1XlinksDict_1a5bf40db9ed4ecfe50dac4baddb18fc0c" prot="public" virt="non-virtual"><scope>buildxlinks::XlinksDict</scope><name>get_xlinks_for_pair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

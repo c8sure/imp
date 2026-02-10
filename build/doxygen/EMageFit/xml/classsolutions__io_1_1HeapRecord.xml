@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classsolutions__io_1_1HeapRecord" kind="class" language="Python" prot="public">
+    <compoundname>solutions_io::HeapRecord</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">tuple</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsolutions__io_1_1HeapRecord_1a797f49b5ed4bce9bfa3f4eeed5315ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.HeapRecord.__lt__</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>__lt__</name>
+        <qualifiedname>solutions_io.HeapRecord.__lt__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+<para>Compare. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To convert the min-heap into a max-heap, the lower than comparison is transformed into a greater-than </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="44" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsolutions__io_1_1HeapRecord_1a80335b2612e50096416826a321005a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>solutions_io.HeapRecord.__new__</definition>
+        <argsstring>(self, x, i)</argsstring>
+        <name>__new__</name>
+        <qualifiedname>solutions_io.HeapRecord.__new__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Build from a tuple and the index used to compare. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/solutions_io.py" line="37" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="37" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The heapq algorithm is a min-heap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>I want a max-heap, that pops the larger values out of the heap. For that I have to modify the comparison function and also set the index that is used for the comparison. The index corresponds to the restraint that we desired to order by</para>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/solutions_io.py" line="27" column="1" bodyfile="lib/IMP/EMageFit/solutions_io.py" bodystart="27" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classsolutions__io_1_1HeapRecord_1a797f49b5ed4bce9bfa3f4eeed5315ae6" prot="public" virt="non-virtual"><scope>solutions_io::HeapRecord</scope><name>__lt__</name></member>
+      <member refid="classsolutions__io_1_1HeapRecord_1a80335b2612e50096416826a321005a6b" prot="public" virt="non-virtual"><scope>solutions_io::HeapRecord</scope><name>__new__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

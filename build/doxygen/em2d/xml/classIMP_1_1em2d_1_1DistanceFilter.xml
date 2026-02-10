@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1DistanceFilter" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::DistanceFilter</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilter" prot="public" virt="non-virtual">IMP::domino::SubsetFilter</basecompoundref>
+    <includes local="no">IMP/em2d/domino_filters.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DistanceFilter_1ad3c73cd6096178a865a595b8cb6bbbc4" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::DistanceFilter::max_distance_</definition>
+        <argsstring></argsstring>
+        <name>max_distance_</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::max_distance_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="31" column="10" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DistanceFilter_1a97822ab0a04c3d8a981f505e13229361" prot="protected" static="no" mutable="no">
+        <type>Pointer&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::ParticleStatesTable</ref> &gt;</type>
+        <definition>Pointer&lt;domino::ParticleStatesTable&gt; IMP::em2d::DistanceFilter::ps_table_</definition>
+        <argsstring></argsstring>
+        <name>ps_table_</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::ps_table_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="30" column="11" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DistanceFilter_1aa4f5b852eb8cbe423e3729260066e018" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subset</ref></type>
+        <definition>domino::Subset IMP::em2d::DistanceFilter::subset_acting_on_</definition>
+        <argsstring></argsstring>
+        <name>subset_acting_on_</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::subset_acting_on_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="28" column="18" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1DistanceFilter_1afc5e02f1aef1b113bc6fd6697adc21fd" prot="protected" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subset</ref></type>
+        <definition>domino::Subset IMP::em2d::DistanceFilter::subset_restrained_</definition>
+        <argsstring></argsstring>
+        <name>subset_restrained_</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::subset_restrained_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="29" column="18" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1a0fdd72792f673c8b7d590b5abe80b3fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::DistanceFilter::DistanceFilter</definition>
+        <argsstring>(const domino::Subset &amp;subset_to_act_on, const domino::Subset &amp;subset_to_restrain, domino::ParticleStatesTable *ps_table, double max_distance)</argsstring>
+        <name>DistanceFilter</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::DistanceFilter</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subset</ref> &amp;</type>
+          <declname>subset_to_act_on</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::Subset</ref> &amp;</type>
+          <declname>subset_to_restrain</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">domino::ParticleStatesTable</ref> *</type>
+          <declname>ps_table</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filter action on the distance between two particles. To be used with DOMINO <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">subset_to_act_on</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A subset that is going to be filtered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">subset_to_restrain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A subset of 2 particles that need to be within a given distance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ps_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table containing the states for subset_to_act_on and subset_to_restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum distance between the particles in subset_to_restrain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="44" column="3" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1acb6dfa4ac10b9a56d1b476b6a0ddc66c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::em2d::DistanceFilter::~DistanceFilter</definition>
+        <argsstring>()</argsstring>
+        <name>~DistanceFilter</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::~DistanceFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="60" column="231" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1ae4a67373ecf04427965ec131ccd6c52d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IMP::em2d::DistanceFilter::get_is_ok</definition>
+        <argsstring>(const IMP::domino::Assignment &amp;assignment) const override</argsstring>
+        <name>get_is_ok</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::get_is_ok</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d">get_is_ok</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP::domino::Assignment</ref> &amp;</type>
+          <declname>assignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="57" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1a693f2e5c0504b96d425f77b0e2b26fbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::em2d::DistanceFilter::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="60" column="34" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1a3da423b3b7e3cc865fc838aa435e570d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::em2d::DistanceFilter::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="60" column="103" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1DistanceFilter_1acee90b72eed9c2db2be5b1d1fc4f13c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::DistanceFilter::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::DistanceFilter::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/domino_filters.h" line="53" column="8" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>SubsetFilter for checking overlap between projections and images. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::SubsetFilter</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilter" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::DistanceFilter</label>
+        <link refid="classIMP_1_1em2d_1_1DistanceFilter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IMP::domino::Subset</label>
+        <link refid="classIMP_1_1domino_1_1Subset" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilter</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilter" external="/home/catherine/imp/build/doxygen/domino/tags"/>
+      </node>
+      <node id="1">
+        <label>IMP::em2d::DistanceFilter</label>
+        <link refid="classIMP_1_1em2d_1_1DistanceFilter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>subset_acting_on_</edgelabel>
+          <edgelabel>subset_restrained_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/em2d/domino_filters.h" line="25" column="1" bodyfile="include/IMP/em2d/domino_filters.h" bodystart="25" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1a0fdd72792f673c8b7d590b5abe80b3fa" prot="public" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>DistanceFilter</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1ae4a67373ecf04427965ec131ccd6c52d" prot="public" virt="virtual"><scope>IMP::em2d::DistanceFilter</scope><name>get_is_ok</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a4e4324bb2545f10986cd6e147a2bddf6" prot="public" virt="virtual"><scope>IMP::em2d::DistanceFilter</scope><name>get_next_state</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1a693f2e5c0504b96d425f77b0e2b26fbf" prot="public" virt="virtual"><scope>IMP::em2d::DistanceFilter</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1a3da423b3b7e3cc865fc838aa435e570d" prot="public" virt="virtual"><scope>IMP::em2d::DistanceFilter</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1ad3c73cd6096178a865a595b8cb6bbbc4" prot="protected" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>max_distance_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1a97822ab0a04c3d8a981f505e13229361" prot="protected" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>ps_table_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1acee90b72eed9c2db2be5b1d1fc4f13c7" prot="public" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1aa4f5b852eb8cbe423e3729260066e018" prot="protected" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>subset_acting_on_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1afc5e02f1aef1b113bc6fd6697adc21fd" prot="protected" virt="non-virtual"><scope>IMP::em2d::DistanceFilter</scope><name>subset_restrained_</name></member>
+      <member refid="classIMP_1_1em2d_1_1DistanceFilter_1acb6dfa4ac10b9a56d1b476b6a0ddc66c" prot="public" virt="virtual"><scope>IMP::em2d::DistanceFilter</scope><name>~DistanceFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

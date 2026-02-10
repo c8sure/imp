@@ -1,0 +1,1 @@
+/home/catherine/imp/modules/atom/examples/structure_from_sequence.py

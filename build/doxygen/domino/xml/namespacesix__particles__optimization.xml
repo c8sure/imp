@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacesix__particles__optimization" kind="namespace" language="Python">
+    <compoundname>six_particles_optimization</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="six__particles__optimization_8py_1a49575ad6136af281c7ae0aff371edfb5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.cs</definition>
+        <argsstring></argsstring>
+        <name>cs</name>
+        <qualifiedname>six_particles_optimization.cs</qualifiedname>
+        <initializer>=  s.create_sample()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="110" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1a9e13b6d6d27cbfc799e5f6aba9b737a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>six_particles_optimization.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="92" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1a8b7b3b63396c815031b82983841f2ea3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>six_particles_optimization.ps</qualifiedname>
+        <initializer>=  create_representation(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="97" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1a14a28acbb493c3e289c0f7bbda43adf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>six_particles_optimization.pst</qualifiedname>
+        <initializer>=  create_discrete_states(m, ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="99" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1acb8639c69b303dc8f08ab6fec8b1d9a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>six_particles_optimization.rs</qualifiedname>
+        <initializer>=  create_scoring(m, ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="101" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1abfafd7b985df3cb5fce3cfb6906ac288" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>six_particles_optimization.s</qualifiedname>
+        <initializer>=  create_sampler(m, rs, pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="103" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="six__particles__optimization_8py_1a1d331ec455dec6653feca9daac02804b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>six_particles_optimization.sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <qualifiedname>six_particles_optimization.sf</qualifiedname>
+        <initializer>=  IMP.core.RestraintsScoringFunction(rs)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="113" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="six__particles__optimization_8py_1a4c75207215c0b9ab22a7c28d30f13d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>six_particles_optimization.create_discrete_states</definition>
+        <argsstring>(m, ps)</argsstring>
+        <name>create_discrete_states</name>
+        <qualifiedname>six_particles_optimization.create_discrete_states</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="49" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="49" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="six__particles__optimization_8py_1a41194d20dcf22a87b503d79379672c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>six_particles_optimization.create_representation</definition>
+        <argsstring>(m)</argsstring>
+        <name>create_representation</name>
+        <qualifiedname>six_particles_optimization.create_representation</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="39" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="six__particles__optimization_8py_1a66837f7d1e91f8a1b73d2ccde1998950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>six_particles_optimization.create_sampler</definition>
+        <argsstring>(m, r, pst)</argsstring>
+        <name>create_sampler</name>
+        <qualifiedname>six_particles_optimization.create_sampler</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>pst</type>
+          <defname>pst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="66" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="66" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="six__particles__optimization_8py_1a31e4faf5be5e128d51f79b028c337d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>six_particles_optimization.create_scoring</definition>
+        <argsstring>(m, ps)</argsstring>
+        <name>create_scoring</name>
+        <qualifiedname>six_particles_optimization.create_scoring</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/six_particles_optimization.py" line="18" column="1" bodyfile="examples/domino/six_particles_optimization.py" bodystart="18" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/six_particles_optimization.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

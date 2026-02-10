@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="FFToperations_8h" kind="file" language="C++">
+    <compoundname>FFToperations.h</compoundname>
+    <includes refid="em2d__config_8h" local="no">IMP/em2d/em2d_config.h</includes>
+    <includes refid="opencv__interface_8h" local="yes">IMP/em2d/opencv_interface.h</includes>
+    <includes local="no">IMP/log_macros.h</includes>
+    <includedby refid="Image_8h" local="yes">Image.h</includedby>
+    <includedby refid="project_8h" local="yes">project.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>FFToperations.h</label>
+        <link refid="FFToperations_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/log_macros.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP_1_1domino">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1em2d">IMP::em2d</innernamespace>
+    <briefdescription>
+<para>Operations involving FFT Copyright 2007-2022 <ref refid="namespaceIMP_1_1domino" kindref="compound" external="/home/catherine/imp/build/doxygen/domino/tags">IMP</ref> Inventors. All rights reserved. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/FFToperations.h"/>
+  </compounddef>
+</doxygen>

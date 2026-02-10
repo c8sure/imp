@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacecustom__filter" kind="namespace" language="Python">
+    <compoundname>custom_filter</compoundname>
+    <innerclass refid="classcustom__filter_1_1MyFilterTable" prot="public">custom_filter::MyFilterTable</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="custom__filter_8py_1a7fdf9ed34126c0b786cb8c4101545d57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.cs</definition>
+        <argsstring></argsstring>
+        <name>cs</name>
+        <qualifiedname>custom_filter.cs</qualifiedname>
+        <initializer>=  s.create_sample()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="147" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1a7583709291ca7688617c0d1a672c7fdb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>custom_filter.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="132" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1ab6c64df246efbb863cb66edec1f2b5db" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>custom_filter.ps</qualifiedname>
+        <initializer>=  create_representation(m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="136" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1a54c34e09f05c91c83d7da02490c9e808" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.pst</definition>
+        <argsstring></argsstring>
+        <name>pst</name>
+        <qualifiedname>custom_filter.pst</qualifiedname>
+        <initializer>=  create_discrete_states(m, ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="138" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1a8fa66989c80e97023a0b4ac22b55944a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.rs</definition>
+        <argsstring></argsstring>
+        <name>rs</name>
+        <qualifiedname>custom_filter.rs</qualifiedname>
+        <initializer>=  create_scoring(m, ps)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="140" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1af7c1715a3b817c7da743101901b5d972" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>custom_filter.s</qualifiedname>
+        <initializer>=  create_sampler(m, ps, rs, pst)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="143" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="custom__filter_8py_1a001b58dd8a7b358c67654363fa107bf4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>custom_filter.sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <qualifiedname>custom_filter.sf</qualifiedname>
+        <initializer>=  IMP.core.RestraintsScoringFunction(rs)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="150" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="custom__filter_8py_1aeebe311902711c12179ab3349e17f9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.create_discrete_states</definition>
+        <argsstring>(m, ps)</argsstring>
+        <name>create_discrete_states</name>
+        <qualifiedname>custom_filter.create_discrete_states</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="41" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="41" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="custom__filter_8py_1a9696bc001b7d6f57b356b33b7f8bce0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.create_representation</definition>
+        <argsstring>(m)</argsstring>
+        <name>create_representation</name>
+        <qualifiedname>custom_filter.create_representation</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="32" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="custom__filter_8py_1a48db523e332fdafe515b50dfbe4073ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.create_sampler</definition>
+        <argsstring>(m, ps, rs, pst)</argsstring>
+        <name>create_sampler</name>
+        <qualifiedname>custom_filter.create_sampler</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <param>
+          <type>rs</type>
+          <defname>rs</defname>
+        </param>
+        <param>
+          <type>pst</type>
+          <defname>pst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="107" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="107" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="custom__filter_8py_1ab70712b40faae7815942c71572ca4169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>custom_filter.create_scoring</definition>
+        <argsstring>(m, ps)</argsstring>
+        <name>create_scoring</name>
+        <qualifiedname>custom_filter.create_scoring</qualifiedname>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>ps</type>
+          <defname>ps</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/custom_filter.py" line="18" column="1" bodyfile="examples/domino/custom_filter.py" bodystart="18" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/custom_filter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

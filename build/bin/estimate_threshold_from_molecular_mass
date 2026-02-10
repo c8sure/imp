@@ -1,0 +1,4 @@
+#!/home/catherine/miniforge3/envs/imp/bin/python3.10
+fname = '/home/catherine/imp/modules/em/bin/estimate_threshold_from_molecular_mass'
+with open(fname) as fh:
+    exec(compile(fh.read(), fname, 'exec'))

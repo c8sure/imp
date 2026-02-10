@@ -1,0 +1,6 @@
+ok=True
+modules = 'cgal:kernel'
+dependencies = 'Boost.Random:Boost.ProgramOptions:Boost.System:CGAL:NumPy:Boost.FileSystem'
+unfound_dependencies = 'ANN'
+swig_includes = 'IMP_algebra.types.i:IMP/algebra/algebra_macros.h:IMP/algebra/geometric_primitive_macros.h'
+swig_wrapper_includes = 'IMP/algebra/internal/swig.h'

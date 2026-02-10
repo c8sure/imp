@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::ProbabilisticSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1SubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::SubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a65462678fb5be523906282a0c15fd812" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::domino::ProbabilisticSubsetFilterTable::leaves_only_</definition>
+        <argsstring></argsstring>
+        <name>leaves_only_</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::leaves_only_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="324" column="8" bodyfile="include/IMP/domino/subset_filters.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1aed9a2c78b8829fd921708d6b416ac1a6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::domino::ProbabilisticSubsetFilterTable::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="323" column="10" bodyfile="include/IMP/domino/subset_filters.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ab6cbafd1e3e6c10598aaa9ee4d82b14d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ProbabilisticSubsetFilterTable::ProbabilisticSubsetFilterTable</definition>
+        <argsstring>(double p, bool leaves_only=false)</argsstring>
+        <name>ProbabilisticSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::ProbabilisticSubsetFilterTable</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>leaves_only</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allow states to pass with probability p </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">leaves_only</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, only filter the leaves of the merge tree. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="331" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a33c583edb7e9c709059e204869ab33dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::ProbabilisticSubsetFilterTable::~ProbabilisticSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ProbabilisticSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::~ProbabilisticSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="338" column="231" bodyfile="include/IMP/domino/subset_filters.h" bodystart="338" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1abba1df8888d2bd56e4da89bbb6d3f011" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::ProbabilisticSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="335" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a549261d347b1c2df7cf55533629f552e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::ProbabilisticSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="332" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ae596c2c59ee26c41f8e8eade57f9592c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::ProbabilisticSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="338" column="34" bodyfile="include/IMP/domino/subset_filters.h" bodystart="338" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a8088455aa8776c75ec4d8e608171e294" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::ProbabilisticSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::ProbabilisticSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="338" column="103" bodyfile="include/IMP/domino/subset_filters.h" bodystart="338" bodyend="338"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Randomly reject some of the states. The purpose of this is to try to generate a sampling of the total states when there are a very large number of acceptable states. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::domino::ProbabilisticSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::domino::ProbabilisticSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="321" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="322" bodyend="339"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1abba1df8888d2bd56e4da89bbb6d3f011" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a549261d347b1c2df7cf55533629f552e" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ae596c2c59ee26c41f8e8eade57f9592c" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a8088455aa8776c75ec4d8e608171e294" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a65462678fb5be523906282a0c15fd812" prot="private" virt="non-virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>leaves_only_</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1aed9a2c78b8829fd921708d6b416ac1a6" prot="private" virt="non-virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>p_</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1ab6cbafd1e3e6c10598aaa9ee4d82b14d" prot="public" virt="non-virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>ProbabilisticSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1ProbabilisticSubsetFilterTable_1a33c583edb7e9c709059e204869ab33dc" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>~ProbabilisticSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::ProbabilisticSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

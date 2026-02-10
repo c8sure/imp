@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="geometry__io_8h" kind="file" language="C++">
+    <compoundname>geometry_io.h</compoundname>
+    <includes refid="rmf__config_8h" local="no">IMP/rmf/rmf_config.h</includes>
+    <includes local="no">IMP/display/declare_Geometry.h</includes>
+    <includes local="no">RMF/NodeHandle.h</includes>
+    <includes local="no">RMF/FileHandle.h</includes>
+    <includedby refid="SaveOptimizerState_8h" local="yes">SaveOptimizerState.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>geometry_io.h</label>
+        <link refid="geometry__io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMP/display/declare_Geometry.h</label>
+      </node>
+      <node id="4">
+        <label>RMF/FileHandle.h</label>
+      </node>
+      <node id="3">
+        <label>RMF/NodeHandle.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceIMP">IMP</innernamespace>
+    <innernamespace refid="namespaceIMP_1_1rmf">IMP::rmf</innernamespace>
+    <briefdescription>
+<para>Handle read/write of geometry data from/to files. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/geometry_io.h"/>
+  </compounddef>
+</doxygen>

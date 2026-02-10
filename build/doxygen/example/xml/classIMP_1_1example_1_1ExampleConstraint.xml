@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleConstraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleConstraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Constraint</basecompoundref>
+    <includes local="no">IMP/example/ExampleConstraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleConstraint_1a71b1680373b5ba30c07a1349d56e096b" prot="private" static="no" mutable="no">
+        <type>IntKey</type>
+        <definition>IntKey IMP::example::ExampleConstraint::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>IMP::example::ExampleConstraint::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="26" column="10" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleConstraint_1ad23d42896d6174c87d778d9699f2f168" prot="private" static="no" mutable="no">
+        <type>ParticleIndex</type>
+        <definition>ParticleIndex IMP::example::ExampleConstraint::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::example::ExampleConstraint::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="25" column="17" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1example_1_1ExampleConstraint_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::example::ExampleConstraint::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="44" column="16" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleConstraint_1a73cbc06bf0ddfd7f45795d9fc61e11a0" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::example::ExampleConstraint::dummy_serialize_init_</definition>
+        <argsstring></argsstring>
+        <name>dummy_serialize_init_</name>
+        <qualifiedname>IMP::example::ExampleConstraint::dummy_serialize_init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="52" column="27" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a80fba1ecd2e47aa66b84dafd276e4da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleConstraint::ExampleConstraint</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleConstraint</name>
+        <qualifiedname>IMP::example::ExampleConstraint::ExampleConstraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="30" column="3" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1aef8dea195e96915512b43ff0575e92a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleConstraint::ExampleConstraint</definition>
+        <argsstring>(Particle *p)</argsstring>
+        <name>ExampleConstraint</name>
+        <qualifiedname>IMP::example::ExampleConstraint::ExampleConstraint</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1af34a0f899516d1a35b8cca5bc92f48c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleConstraint::~ExampleConstraint</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleConstraint</name>
+        <qualifiedname>IMP::example::ExampleConstraint::~ExampleConstraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="40" column="231" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a304c0a6f2d144bf55a928d60cf30ce31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::example::ExampleConstraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::example::ExampleConstraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="36" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1ad05636249789f86111cc62c31ea3aeae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ModelObjectsTemp</type>
+        <definition>virtual ModelObjectsTemp IMP::example::ExampleConstraint::do_get_outputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_outputs</name>
+        <qualifiedname>IMP::example::ExampleConstraint::do_get_outputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="37" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1ab3c9ba68e56d1e48ab982429e4d97a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::example::ExampleConstraint::do_update_attributes</definition>
+        <argsstring>() override</argsstring>
+        <name>do_update_attributes</name>
+        <qualifiedname>IMP::example::ExampleConstraint::do_update_attributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="34" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a5f05f079e7daae7e068340e7c611b6e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::example::ExampleConstraint::do_update_derivatives</definition>
+        <argsstring>(DerivativeAccumulator *da) override</argsstring>
+        <name>do_update_derivatives</name>
+        <qualifiedname>IMP::example::ExampleConstraint::do_update_derivatives</qualifiedname>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="35" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1ac4e8cd34fd76fbbad1745e63a93a7407" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticleIndex</type>
+        <definition>ParticleIndex IMP::example::ExampleConstraint::get_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_index</name>
+        <qualifiedname>IMP::example::ExampleConstraint::get_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="32" column="17" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1af53b1f6061c3de226ef70991afb40455" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleConstraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleConstraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="40" column="34" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1afe3e37c55728ac56c66808d93a2b5f16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleConstraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleConstraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="40" column="103" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a8f65f5c44a03bee1b85aeb80a8fbb411" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntKey</type>
+        <definition>static IntKey IMP::example::ExampleConstraint::get_key</definition>
+        <argsstring>()</argsstring>
+        <name>get_key</name>
+        <qualifiedname>IMP::example::ExampleConstraint::get_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="39" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a820ee52078559e234bdff2f00dd5d343" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::example::ExampleConstraint::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::example::ExampleConstraint::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="45" column="19" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="45" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a73f8e135050f395fe91093dab14aae2e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object *</type>
+        <definition>static Object * IMP::example::ExampleConstraint::load_cereal</definition>
+        <argsstring>(cereal::BinaryInputArchive &amp;ar)</argsstring>
+        <name>load_cereal</name>
+        <qualifiedname>IMP::example::ExampleConstraint::load_cereal</qualifiedname>
+        <param>
+          <type>cereal::BinaryInputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="52" column="215" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleConstraint_1a09ea761ca9b6942b334896c98ee08b5a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IMP::example::ExampleConstraint::save_cereal</definition>
+        <argsstring>(Object *o, cereal::BinaryOutputArchive &amp;ar)</argsstring>
+        <name>save_cereal</name>
+        <qualifiedname>IMP::example::ExampleConstraint::save_cereal</qualifiedname>
+        <param>
+          <type>Object *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>cereal::BinaryOutputArchive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleConstraint.h" line="52" column="63" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A trivial constraint that just increments a counter. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleConstraint.h" line="24" column="1" bodyfile="include/IMP/example/ExampleConstraint.h" bodystart="24" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a304c0a6f2d144bf55a928d60cf30ce31" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1ad05636249789f86111cc62c31ea3aeae" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>do_get_outputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1ab3c9ba68e56d1e48ab982429e4d97a01" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>do_update_attributes</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a5f05f079e7daae7e068340e7c611b6e1" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>do_update_derivatives</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a73cbc06bf0ddfd7f45795d9fc61e11a0" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>dummy_serialize_init_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1aef8dea195e96915512b43ff0575e92a6" prot="public" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>ExampleConstraint</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a80fba1ecd2e47aa66b84dafd276e4da2" prot="public" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>ExampleConstraint</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1ac4e8cd34fd76fbbad1745e63a93a7407" prot="public" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>get_index</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a8f65f5c44a03bee1b85aeb80a8fbb411" prot="public" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>get_key</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1af53b1f6061c3de226ef70991afb40455" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1afe3e37c55728ac56c66808d93a2b5f16" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a71b1680373b5ba30c07a1349d56e096b" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>k_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a73f8e135050f395fe91093dab14aae2e" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>load_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1ad23d42896d6174c87d778d9699f2f168" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>p_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a09ea761ca9b6942b334896c98ee08b5a" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>save_cereal</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1a820ee52078559e234bdff2f00dd5d343" prot="private" virt="non-virtual"><scope>IMP::example::ExampleConstraint</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleConstraint_1af34a0f899516d1a35b8cca5bc92f48c5" prot="public" virt="virtual"><scope>IMP::example::ExampleConstraint</scope><name>~ExampleConstraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

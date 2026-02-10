@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="link__macros_8h" kind="file" language="C++">
+    <compoundname>link_macros.h</compoundname>
+    <includes refid="links_8h" local="yes">links.h</includes>
+    <includes refid="associations_8h" local="yes">associations.h</includes>
+    <includes local="yes">internal/link_helpers.h</includes>
+    <includes local="no">IMP/Pointer.h</includes>
+    <includes local="no">RMF/FileHandle.h</includes>
+    <includedby refid="HierarchyLoadLink_8h" local="no">HierarchyLoadLink.h</includedby>
+    <includedby refid="HierarchySaveLink_8h" local="no">HierarchySaveLink.h</includedby>
+    <includedby refid="atom__io_8h" local="yes">atom_io.h</includedby>
+    <includedby refid="particle__io_8h" local="yes">particle_io.h</includedby>
+    <includedby refid="restraint__io_8h" local="yes">restraint_io.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>link_macros.h</label>
+        <link refid="link__macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP/Pointer.h</label>
+      </node>
+      <node id="4">
+        <label>RMF/FileHandle.h</label>
+      </node>
+      <node id="2">
+        <label>internal/link_helpers.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="link__macros_8h_1a6aa8259e1765eca3a110a4c6fb926510" prot="public" static="no">
+        <name>IMP_DECLARE_LINKERS</name>
+        <param><defname>Name</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>names</defname></param>
+        <param><defname>Type</defname></param>
+        <param><defname>Types</defname></param>
+        <param><defname>cargs</defname></param>
+        <param><defname>link_custom_documentation</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>declares functions for adding, creating and linking RMF file objects with base classes of type InType </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/link_macros.h" line="40" column="9" bodyfile="include/IMP/rmf/link_macros.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="link__macros_8h_1a5a12404594ab737ce803e6f3ac5309d0" prot="public" static="no">
+        <name>IMP_DEFINE_LINKERS</name>
+        <param><defname>Name</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>names</defname></param>
+        <param><defname>Type</defname></param>
+        <param><defname>Types</defname></param>
+        <param><defname>create_args</defname></param>
+        <param><defname>create_args_pass</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define functions for adding, creating and linking RMF file objects with base classes of type InType</para>
+<para><simplesect kind="see"><para>IMP_DECLARE_LINKERS() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/link_macros.h" line="61" column="9" bodyfile="include/IMP/rmf/link_macros.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>macros for display classes </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright 2007-2022 IMP Inventors. All rights reserved. </para>
+    </detaileddescription>
+    <location file="include/IMP/rmf/link_macros.h"/>
+  </compounddef>
+</doxygen>

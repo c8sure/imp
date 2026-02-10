@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1KinkPairScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::KinkPairScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PairScore</basecompoundref>
+    <includes local="no">IMP/spb/KinkPairScore.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1KinkPairScore_1a0489a33c913002d8127fc5269e379405" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; UnaryFunction &gt;</type>
+        <definition>IMP::PointerMember&lt;UnaryFunction&gt; IMP::spb::KinkPairScore::f_</definition>
+        <argsstring></argsstring>
+        <name>f_</name>
+        <qualifiedname>IMP::spb::KinkPairScore::f_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="22" column="22" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a429783aa9cdf3119f1d8b66d85289c43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::KinkPairScore::KinkPairScore</definition>
+        <argsstring>(UnaryFunction *f)</argsstring>
+        <name>KinkPairScore</name>
+        <qualifiedname>IMP::spb::KinkPairScore::KinkPairScore</qualifiedname>
+        <param>
+          <type>UnaryFunction *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="25" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a6a6f5ac3a65d2c873c0e7bbb947f6b2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::KinkPairScore::~KinkPairScore</definition>
+        <argsstring>()</argsstring>
+        <name>~KinkPairScore</name>
+        <qualifiedname>IMP::spb::KinkPairScore::~KinkPairScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="36" column="231" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a258175a6ea5dded6c847e1a77139bd1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::KinkPairScore::do_get_inputs</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexes &amp;pis) const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::KinkPairScore::do_get_inputs</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexes &amp;</type>
+          <declname>pis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="30" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a48c8b812053ac23ae6a9009bf84bb439" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::KinkPairScore::evaluate_if_good_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, double max, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override</argsstring>
+        <name>evaluate_if_good_indexes</name>
+        <qualifiedname>IMP::spb::KinkPairScore::evaluate_if_good_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="35" column="905" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1adf2a2ed42daf23b463d076d4a4f99fa4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::spb::KinkPairScore::evaluate_index</definition>
+        <argsstring>(IMP::Model *m, const IMP::ParticleIndexPair &amp;p, DerivativeAccumulator *da) const override</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>IMP::spb::KinkPairScore::evaluate_index</qualifiedname>
+        <param>
+          <type>IMP::Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const IMP::ParticleIndexPair &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="27" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a379d6884a9c7d0f73176d4c36a4b6be3" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::KinkPairScore::evaluate_indexes</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes</name>
+        <qualifiedname>IMP::spb::KinkPairScore::evaluate_indexes</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="35" column="11" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a3ea27ee2e7e52bf3f4a632ff2d6d29b9" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::KinkPairScore::evaluate_indexes_delta</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, const std::vector&lt; unsigned &gt; &amp;indexes, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_delta</name>
+        <qualifiedname>IMP::spb::KinkPairScore::evaluate_indexes_delta</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; unsigned &gt; &amp;</type>
+          <declname>indexes</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="35" column="555" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1af4dadbf0c060b144b024dea95a705c87" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::spb::KinkPairScore::evaluate_indexes_scores</definition>
+        <argsstring>(Model *m, const ParticleIndexPairs &amp;p, DerivativeAccumulator *da, unsigned int lower_bound, unsigned int upper_bound, std::vector&lt; double &gt; &amp;score, bool all_indexes_checked=false) const override final</argsstring>
+        <name>evaluate_indexes_scores</name>
+        <qualifiedname>IMP::spb::KinkPairScore::evaluate_indexes_scores</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const ParticleIndexPairs &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DerivativeAccumulator *</type>
+          <declname>da</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lower_bound</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>upper_bound</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all_indexes_checked</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="35" column="260" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a03537dae174e0b2122443faaf55ae0c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::KinkPairScore::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::KinkPairScore::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="36" column="34" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a5eafd8aeab32a4fcc68a0fdd242d2157" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::KinkPairScore::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::KinkPairScore::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="36" column="103" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1KinkPairScore_1a6b44f2382883221a3ba38d1778e65b06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::KinkPairScore::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::KinkPairScore::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/KinkPairScore.h" line="37" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Score on the crossing angles between two helices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/spb/KinkPairScore.h" line="21" column="1" bodyfile="include/IMP/spb/KinkPairScore.h" bodystart="21" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a258175a6ea5dded6c847e1a77139bd1b" prot="public" virt="virtual"><scope>IMP::spb::KinkPairScore</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a48c8b812053ac23ae6a9009bf84bb439" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>evaluate_if_good_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1adf2a2ed42daf23b463d076d4a4f99fa4" prot="public" virt="virtual"><scope>IMP::spb::KinkPairScore</scope><name>evaluate_index</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a379d6884a9c7d0f73176d4c36a4b6be3" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>evaluate_indexes</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a3ea27ee2e7e52bf3f4a632ff2d6d29b9" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>evaluate_indexes_delta</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1af4dadbf0c060b144b024dea95a705c87" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>evaluate_indexes_scores</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a0489a33c913002d8127fc5269e379405" prot="private" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>f_</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a03537dae174e0b2122443faaf55ae0c3" prot="public" virt="virtual"><scope>IMP::spb::KinkPairScore</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a5eafd8aeab32a4fcc68a0fdd242d2157" prot="public" virt="virtual"><scope>IMP::spb::KinkPairScore</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a429783aa9cdf3119f1d8b66d85289c43" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>KinkPairScore</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a6b44f2382883221a3ba38d1778e65b06" prot="public" virt="non-virtual"><scope>IMP::spb::KinkPairScore</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1KinkPairScore_1a6a6f5ac3a65d2c873c0e7bbb947f6b2c" prot="public" virt="virtual"><scope>IMP::spb::KinkPairScore</scope><name>~KinkPairScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1ParticleStatesTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::ParticleStatesTable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/domino/particle_states.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1ParticleStatesTable_1aabb5ebd3409dcaf56d0cdc07ed640a5d" prot="private" static="no">
+        <type>boost::unordered_map&lt; Particle *, IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> &gt; &gt;</type>
+        <definition>typedef boost::unordered_map&lt;Particle *, IMP::PointerMember&lt;ParticleStates&gt; &gt; IMP::domino::ParticleStatesTable::Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="75" column="2" bodyfile="include/IMP/domino/particle_states.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1ParticleStatesTable_1a3691d94fc63a93dccff633bc4f8af543" prot="private" static="no" mutable="no">
+        <type>Map</type>
+        <definition>Map IMP::domino::ParticleStatesTable::enumerators_</definition>
+        <argsstring></argsstring>
+        <name>enumerators_</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::enumerators_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="76" column="7" bodyfile="include/IMP/domino/particle_states.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1domino_1_1ParticleStatesTable_1a46cba82e39bec352ac29dbb74bc6b885" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DominoSampler</definition>
+        <argsstring></argsstring>
+        <name>DominoSampler</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::DominoSampler</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">DominoSampler</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="77" column="16" bodyfile="include/IMP/domino/particle_states.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a1acef27ef906852b1ef5782df4b3473e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ParticleStatesTable::ParticleStatesTable</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleStatesTable</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::ParticleStatesTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="80" column="3" bodyfile="include/IMP/domino/particle_states.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1ac8884587abfeca1f9109da53521154ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::ParticleStatesTable::~ParticleStatesTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleStatesTable</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::~ParticleStatesTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="111" column="231" bodyfile="include/IMP/domino/particle_states.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a61d70b97cb459ddacdb8b2bcd87c9e90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::domino::ParticleStatesTable::get_has_particle</definition>
+        <argsstring>(Particle *p) const</argsstring>
+        <name>get_has_particle</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_has_particle</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="87" column="8" bodyfile="include/IMP/domino/particle_states.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a61b22552dce86ceba492fc1da5955160" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+        <definition>ParticleStates * IMP::domino::ParticleStatesTable::get_particle_states</definition>
+        <argsstring>(Particle *p) const</argsstring>
+        <name>get_particle_states</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_particle_states</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="82" column="18" bodyfile="include/IMP/domino/particle_states.h" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a4eb53117201faae7c73572b38f4f2b54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticlesTemp</type>
+        <definition>ParticlesTemp IMP::domino::ParticleStatesTable::get_particles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_particles</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_particles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="90" column="17" bodyfile="include/IMP/domino/particle_states.h" bodystart="90" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1acbdfa0698fe458d5d5cb24860ee47651" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref></type>
+        <definition>Subset IMP::domino::ParticleStatesTable::get_subset</definition>
+        <argsstring>() const</argsstring>
+        <name>get_subset</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_subset</qualifiedname>
+        <briefdescription>
+<para>Return the subset corresponding to all the particles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="101" column="10" bodyfile="include/IMP/domino/particle_states.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a8ee0a5389c5e7da34a32550e09f0d97b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::ParticleStatesTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="111" column="34" bodyfile="include/IMP/domino/particle_states.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1af8734dfdc6574db7edd6e23b3e4d9210" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::ParticleStatesTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="111" column="103" bodyfile="include/IMP/domino/particle_states.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ParticleStatesTable_1a9ad869bd5d88c52e03c4395d8ab36e9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::ParticleStatesTable::set_particle_states</definition>
+        <argsstring>(Particle *p, ParticleStates *e)</argsstring>
+        <name>set_particle_states</name>
+        <qualifiedname>IMP::domino::ParticleStatesTable::set_particle_states</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One can set the states more than once. If you do that, be careful. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/particle_states.h" line="105" column="8" bodyfile="include/IMP/domino/particle_states.h" bodystart="105" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Store the association between particles and the classes which manage their states. I&apos;m not a huge fan of having this class, but I haven&apos;t thought of a better way to store the information that is easily exposed to Python and gets to all the right places. It is initialized internally in the <ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">DominoSampler</ref>. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/particle_states.h" line="73" column="1" bodyfile="include/IMP/domino/particle_states.h" bodystart="73" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a3691d94fc63a93dccff633bc4f8af543" prot="private" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>enumerators_</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a61d70b97cb459ddacdb8b2bcd87c9e90" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_has_particle</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a61b22552dce86ceba492fc1da5955160" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a4eb53117201faae7c73572b38f4f2b54" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_particles</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1acbdfa0698fe458d5d5cb24860ee47651" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_subset</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a8ee0a5389c5e7da34a32550e09f0d97b" prot="public" virt="virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1af8734dfdc6574db7edd6e23b3e4d9210" prot="public" virt="virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1aabb5ebd3409dcaf56d0cdc07ed640a5d" prot="private" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>Map</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a1acef27ef906852b1ef5782df4b3473e" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>ParticleStatesTable</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1a9ad869bd5d88c52e03c4395d8ab36e9e" prot="public" virt="non-virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>set_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1ParticleStatesTable_1ac8884587abfeca1f9109da53521154ab" prot="public" virt="virtual"><scope>IMP::domino::ParticleStatesTable</scope><name>~ParticleStatesTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

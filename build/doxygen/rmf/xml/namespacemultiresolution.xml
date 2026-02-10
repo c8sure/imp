@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacemultiresolution" kind="namespace" language="Python">
+    <compoundname>multiresolution</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="multiresolution_8py_1accc65d83eb9b044a182a0be20ed5e963" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>list multiresolution::chains</definition>
+        <argsstring></argsstring>
+        <name>chains</name>
+        <qualifiedname>multiresolution.chains</qualifiedname>
+        <initializer>=  IMP.atom.get_by_type(h, IMP.atom.CHAIN_TYPE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="18" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1a9b46d71f174dfffddff93313b03aaf80" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str multiresolution.fn</definition>
+        <argsstring></argsstring>
+        <name>fn</name>
+        <qualifiedname>multiresolution.fn</qualifiedname>
+        <initializer>=  &quot;multires.rmf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="62" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1aff64c26f97c8dea7650dc689e09c7263" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>multiresolution.h</qualifiedname>
+        <initializer>=  IMP.atom.read_pdb(pdbname, m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="15" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1a91449d2c67fc6ff65718fd0291768e3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.lr</definition>
+        <argsstring></argsstring>
+        <name>lr</name>
+        <qualifiedname>multiresolution.lr</qualifiedname>
+        <initializer>=  len(res)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="53" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1a9273335deb8924e53d1c7379f7ce50ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.lvs</definition>
+        <argsstring></argsstring>
+        <name>lvs</name>
+        <qualifiedname>multiresolution.lvs</qualifiedname>
+        <initializer>=  IMP.atom.get_leaves(r)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="51" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1ad1467480fe8c03fcee6f641b3734447a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>multiresolution.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="14" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1accfe0acaa104e9ba1f81f9b30fe83878" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.me</definition>
+        <argsstring></argsstring>
+        <name>me</name>
+        <qualifiedname>multiresolution.me</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="54" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1aa2a9be54023a030e481ceb72665791ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.pdbname</definition>
+        <argsstring></argsstring>
+        <name>pdbname</name>
+        <qualifiedname>multiresolution.pdbname</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kindref="member">IMP.rmf.get_example_path</ref>(&quot;big.pdb&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="12" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1ab9f992575ec44e9ef70203e8e652b740" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <qualifiedname>multiresolution.res</qualifiedname>
+        <initializer>=  IMP.atom.get_by_type(h, IMP.atom.RESIDUE_TYPE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="48" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="multiresolution_8py_1ac1fa9589634cb703a8e14cf07e9af71a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>multiresolution.rmf</definition>
+        <argsstring></argsstring>
+        <name>rmf</name>
+        <qualifiedname>multiresolution.rmf</qualifiedname>
+        <initializer>=  RMF.create_rmf_file(fn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="63" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="multiresolution_8py_1ad2721f315c84e676ecda76d082b7f4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>multiresolution.recursive_approximation</definition>
+        <argsstring>(res)</argsstring>
+        <name>recursive_approximation</name>
+        <qualifiedname>multiresolution.recursive_approximation</qualifiedname>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/multiresolution.py" line="24" column="1" bodyfile="examples/rmf/multiresolution.py" bodystart="24" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/rmf/multiresolution.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

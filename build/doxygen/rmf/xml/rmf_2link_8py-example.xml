@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="rmf_2link_8py-example" kind="example">
+    <compoundname>rmf/link.py</compoundname>
+    <briefdescription>
+<para>This example is like module/rmf/pdb.py except that instead of creating a new hierarchy from the rmf file, it simply links the existing hierarchy to the file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This example is like module/rmf/pdb.py except that instead of creating a new hierarchy from the rmf file, it simply links the existing hierarchy to the file. This mechanism can be used for loading multiple conformations for scoring or other analysis without having to set up restraints and things each time. <programlisting filename="rmf/link.py"><codeline><highlight class="comment">##<sp/>\example<sp/>rmf/link.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>This<sp/>example<sp/>is<sp/>like<sp/>module/rmf/pdb.py<sp/>except<sp/>that<sp/>instead<sp/>of<sp/>creating<sp/>a</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>new<sp/>hierarchy<sp/>from<sp/>the<sp/>rmf<sp/>file,<sp/>it<sp/>simply<sp/>links<sp/>the<sp/>existing<sp/>hierarchy</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>to<sp/>the<sp/>file.<sp/>This<sp/>mechanism<sp/>can<sp/>be<sp/>used<sp/>for<sp/>loading<sp/>multiple</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>conformations<sp/>for<sp/>scoring<sp/>or<sp/>other<sp/>analysis<sp/>without<sp/>having<sp/>to<sp/>set<sp/>up</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>restraints<sp/>and<sp/>things<sp/>each<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1rmf" kindref="compound">IMP.rmf</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;link&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>new<sp/>IMP.atom.Hierarchy<sp/>from<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>pdb<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">h<sp/>=<sp/>IMP.atom.read_pdb(<ref refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kindref="member">IMP.rmf.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;simple.pdb&quot;</highlight><highlight class="normal">),<sp/>m)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">tfn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;link.rmf&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;File<sp/>name<sp/>is&quot;</highlight><highlight class="normal">,<sp/>tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>open<sp/>the<sp/>file,<sp/>clearing<sp/>any<sp/>existing<sp/>contents</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rh<sp/>=<sp/>RMF.create_rmf_file(tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>add<sp/>the<sp/>hierarchy<sp/>to<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1adbc5eb9278e61f0a4449eb181cbd2a74" kindref="member">IMP.rmf.add_hierarchies</ref>(rh,<sp/>[h])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>add<sp/>the<sp/>current<sp/>configuration<sp/>to<sp/>the<sp/>file<sp/>as<sp/>frame<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member">IMP.rmf.save_frame</ref>(rh)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>close<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">del<sp/>rh</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>reopen<sp/>it,<sp/>don&apos;t<sp/>clear<sp/>the<sp/>file<sp/>when<sp/>opening<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rh<sp/>=<sp/>RMF.open_rmf_file_read_only(tfn)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>link<sp/>to<sp/>the<sp/>existing<sp/>pdb<sp/>hierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1a5bc1f4e588466260be12aba4bac30255" kindref="member">IMP.rmf.link_hierarchies</ref>(rh,<sp/>[h])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>load<sp/>the<sp/>same<sp/>coordinates<sp/>in,<sp/>ok,<sp/>that<sp/>is<sp/>not<sp/>very<sp/>exciting</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kindref="member">IMP.rmf.load_frame</ref>(rh,<sp/>RMF.FrameID(0))</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;Try<sp/>running<sp/>rmf_display<sp/>or<sp/>rmf_show<sp/>on&quot;</highlight><highlight class="normal">,<sp/>tfn)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/rmf/link.py"/>
+  </compounddef>
+</doxygen>

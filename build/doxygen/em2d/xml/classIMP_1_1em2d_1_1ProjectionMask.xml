@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1ProjectionMask" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::ProjectionMask</compoundname>
+    <includes local="no">IMP/em2d/ProjectionMask.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionMask_1a2f217974635077637bb07b5269fd4f58" prot="protected" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat IMP::em2d::ProjectionMask::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="66" column="11" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionMask_1aac2fc5a424fbc28494c829ea274a526e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IMP::em2d::ProjectionMask::dim_</definition>
+        <argsstring></argsstring>
+        <name>dim_</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::dim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="64" column="7" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1em2d_1_1ProjectionMask_1acd350849bf5eab37c1f43c8634ea6ca0" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IMP::em2d::ProjectionMask::sq_pixelsize_</definition>
+        <argsstring></argsstring>
+        <name>sq_pixelsize_</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::sq_pixelsize_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="65" column="10" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1em2d_1_1ProjectionMask_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="68" column="16" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1a417454a73291dbf979883aadafcecf57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectionMask::ProjectionMask</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectionMask</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::ProjectionMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="38" column="3" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1aaabd9546d6461c424ed619a26f08b2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectionMask::ProjectionMask</definition>
+        <argsstring>(const em::KernelParameters &amp;kparams, double voxelsize, double mass=1.0)</argsstring>
+        <name>ProjectionMask</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::ProjectionMask</qualifiedname>
+        <param>
+          <type>const em::KernelParameters &amp;</type>
+          <declname>kparams</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>voxelsize</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1ad95d49bd9ac00e13d681fcbbeb330baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::ProjectionMask::~ProjectionMask</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectionMask</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::~ProjectionMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="61" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1ae88f9e933554f0f64cf094e112b47f68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionMask::apply</definition>
+        <argsstring>(cv::Mat &amp;m, const algebra::Vector2D &amp;v)</argsstring>
+        <name>apply</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::apply</qualifiedname>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const algebra::Vector2D &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Adds the values of the mask to a matrix at the given pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>matrix where the values of the mask are added. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pixel where to apply the values. Currently used as integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1ae4919afad95b6343f92834b60ae84503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionMask::create</definition>
+        <argsstring>(const em::KernelParameters &amp;kparams, double mass=1.0)</argsstring>
+        <name>create</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::create</qualifiedname>
+        <param>
+          <type>const em::KernelParameters &amp;</type>
+          <declname>kparams</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Generates the mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">kparams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kernel parameters to employ. See the EM module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass to give to the mask </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1a475d9bdea61c57e37d1b9251e5806a1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionMask::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="59" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1ProjectionMask_1aa0d28886c304a88004f7f84801590807" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::em2d::ProjectionMask::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::em2d::ProjectionMask::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/ProjectionMask.h" line="70" column="19" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mask that contains the projection of a given particles. This matrices speed up projecting because the only have to be computed once for a model </para>
+    </detaileddescription>
+    <location file="include/IMP/em2d/ProjectionMask.h" line="36" column="1" bodyfile="include/IMP/em2d/ProjectionMask.h" bodystart="36" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1ae88f9e933554f0f64cf094e112b47f68" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>apply</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1ae4919afad95b6343f92834b60ae84503" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>create</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1a2f217974635077637bb07b5269fd4f58" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>data_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1aac2fc5a424fbc28494c829ea274a526e" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>dim_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1a417454a73291dbf979883aadafcecf57" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>ProjectionMask</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1aaabd9546d6461c424ed619a26f08b2be" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>ProjectionMask</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1aa0d28886c304a88004f7f84801590807" prot="private" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1a475d9bdea61c57e37d1b9251e5806a1a" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1acd350849bf5eab37c1f43c8634ea6ca0" prot="protected" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>sq_pixelsize_</name></member>
+      <member refid="classIMP_1_1em2d_1_1ProjectionMask_1ad95d49bd9ac00e13d681fcbbeb330baa" prot="public" virt="non-virtual"><scope>IMP::em2d::ProjectionMask</scope><name>~ProjectionMask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

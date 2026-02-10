@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1SubsetFilter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::domino::SubsetFilter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <derivedcompoundref refid="classcustom__filter_1_1MyFilterTable_1_1MyFilter" prot="public" virt="non-virtual">custom_filter.MyFilterTable.MyFilter</derivedcompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilter_1a3e9fb62bfb3ea92b633874a993644d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::SubsetFilter::SubsetFilter</definition>
+        <argsstring>(std::string name=&quot;SubsetFilter%1%&quot;)</argsstring>
+        <name>SubsetFilter</name>
+        <qualifiedname>IMP::domino::SubsetFilter::SubsetFilter</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;SubsetFilter%1%&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="46" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilter_1a27a6ae1f850f637cf6b3d502ddbd631e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::SubsetFilter::~SubsetFilter</definition>
+        <argsstring>()</argsstring>
+        <name>~SubsetFilter</name>
+        <qualifiedname>IMP::domino::SubsetFilter::~SubsetFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="62" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IMP::domino::SubsetFilter::get_is_ok</definition>
+        <argsstring>(const Assignment &amp;state) const =0</argsstring>
+        <name>get_is_ok</name>
+        <qualifiedname>IMP::domino::SubsetFilter::get_is_ok</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if the given state passes this filter for the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> it was created with </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="49" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1SubsetFilter_1a4e4324bb2545f10986cd6e147a2bddf6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int IMP::domino::SubsetFilter::get_next_state</definition>
+        <argsstring>(int pos, const Assignment &amp;state) const</argsstring>
+        <name>get_next_state</name>
+        <qualifiedname>IMP::domino::SubsetFilter::get_next_state</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Return a next possible acceptable state for the particle in pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation returns the current value +1. This method needs to make sure it does not skip any valid states.</para>
+<para>The method can assume <computeroutput>!get_is_ok</computeroutput>(state) and that the state minus pos is ok. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="58" column="15" bodyfile="include/IMP/domino/subset_filters.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An instance of this type is created by the <ref refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1" kindref="member">SubsetFilterTable::get_subset_filter</ref> method(). It&apos;s job is to reject some of the <ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref> corresponding to the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> it was created with. It has one method of interest, <ref refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" kindref="member">get_is_ok()</ref> which true if the state passes the filter.</para>
+<para>The passed <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> has the particles ordered in the same order as they were in the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> that was passed to the table in order to create the filter. </para>
+    </detaileddescription>
+    <location file="include/IMP/domino/subset_filters.h" line="44" column="1" bodyfile="include/IMP/domino/subset_filters.h" bodystart="44" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1ae6ac39cf0c88e5f67f47ab75a255252d" prot="public" virt="pure-virtual"><scope>IMP::domino::SubsetFilter</scope><name>get_is_ok</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a4e4324bb2545f10986cd6e147a2bddf6" prot="public" virt="virtual"><scope>IMP::domino::SubsetFilter</scope><name>get_next_state</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a3e9fb62bfb3ea92b633874a993644d9f" prot="public" virt="non-virtual"><scope>IMP::domino::SubsetFilter</scope><name>SubsetFilter</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilter_1a27a6ae1f850f637cf6b3d502ddbd631e" prot="public" virt="virtual"><scope>IMP::domino::SubsetFilter</scope><name>~SubsetFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

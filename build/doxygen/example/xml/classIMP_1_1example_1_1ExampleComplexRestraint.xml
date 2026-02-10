@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1example_1_1ExampleComplexRestraint" kind="class" language="C++" prot="public">
+    <compoundname>IMP::example::ExampleComplexRestraint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Restraint</basecompoundref>
+    <includes local="no">IMP/example/ExampleComplexRestraint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a13d5b66b72f2c50a19f1b05779f207f0" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::example::ExampleComplexRestraint::diameter_</definition>
+        <argsstring></argsstring>
+        <name>diameter_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::diameter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="36" column="9" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a32112afe1677fb832c3cfb88c797d1fa" prot="private" static="no" mutable="no">
+        <type>FloatKey</type>
+        <definition>FloatKey IMP::example::ExampleComplexRestraint::dr_</definition>
+        <argsstring></argsstring>
+        <name>dr_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::dr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="39" column="12" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a5538ccddc93e56cb582a6a8ffaa6ef06" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; UnaryFunction &gt;</type>
+        <definition>Pointer&lt;UnaryFunction&gt; IMP::example::ExampleComplexRestraint::f_</definition>
+        <argsstring></argsstring>
+        <name>f_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::f_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="38" column="11" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1ab17bfcf6d5a1fb087e26633b816a28b3" prot="private" static="no" mutable="no">
+        <type>ParticleIndex</type>
+        <definition>ParticleIndex IMP::example::ExampleComplexRestraint::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="35" column="17" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a16a00677c54bcfdc573c6995dd2227f0" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; SingletonContainer &gt;</type>
+        <definition>Pointer&lt;SingletonContainer&gt; IMP::example::ExampleComplexRestraint::sc_</definition>
+        <argsstring></argsstring>
+        <name>sc_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::sc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="37" column="11" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a01d1e4a7ed9c027d299da1dfca9bcad9" prot="private" static="no" mutable="no">
+        <type>Pointer&lt; ScoreState &gt;</type>
+        <definition>Pointer&lt;ScoreState&gt; IMP::example::ExampleComplexRestraint::ss_</definition>
+        <argsstring></argsstring>
+        <name>ss_</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::ss_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="34" column="11" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a2fdc2b737dd01072a9d87e90e3dee5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::example::ExampleComplexRestraint::ExampleComplexRestraint</definition>
+        <argsstring>(UnaryFunction *f, SingletonContainer *sc, Float diameter, std::string name=&quot;ExampleComplexRestraint%1%&quot;)</argsstring>
+        <name>ExampleComplexRestraint</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::ExampleComplexRestraint</qualifiedname>
+        <param>
+          <type>UnaryFunction *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>SingletonContainer *</type>
+          <declname>sc</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;ExampleComplexRestraint%1%&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Use f to restrain particles in sc to be within diameter of one another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>f should have a minimum at 0 and be an upper bound-style function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="45" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a12181894a197eed4d85cc34b6597e25b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::example::ExampleComplexRestraint::~ExampleComplexRestraint</definition>
+        <argsstring>()</argsstring>
+        <name>~ExampleComplexRestraint</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::~ExampleComplexRestraint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="52" column="231" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1aab7acda0aff47884061167e76df6ac8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::example::ExampleComplexRestraint::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="51" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a9a77d97d3610c498876a1862c6619452" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::example::ExampleComplexRestraint::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="52" column="34" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1af24dc82830b36e39a6d385f1f87010f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::example::ExampleComplexRestraint::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="52" column="103" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1example_1_1ExampleComplexRestraint_1a9ab2354a722ef2c5a55d7a2a44a04db8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::example::ExampleComplexRestraint::unprotected_evaluate</definition>
+        <argsstring>(IMP::DerivativeAccumulator *accum) const override</argsstring>
+        <name>unprotected_evaluate</name>
+        <qualifiedname>IMP::example::ExampleComplexRestraint::unprotected_evaluate</qualifiedname>
+        <param>
+          <type>IMP::DerivativeAccumulator *</type>
+          <declname>accum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/example/ExampleComplexRestraint.h" line="49" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Restrain the diameter of a set of points. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This restraint shows how to write a restraint that includes a ScoreState which is needed to compute some invariant.</para>
+<para><simplesect kind="note"><para>Be sure to check out the swig wrapper file and how it wraps this class.</para>
+</simplesect>
+The source code is as follows: <programlisting filename="ExampleComplexRestraint.h"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>IMP/example/ExampleComplexRestraint.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>A<sp/>restraint<sp/>to<sp/>maintain<sp/>the<sp/>diameter<sp/>of<sp/>a<sp/>set<sp/>of<sp/>points</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMPEXAMPLE_EXAMPLE_COMPLEX_RESTRAINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMPEXAMPLE_EXAMPLE_COMPLEX_RESTRAINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/example/example_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/PairContainer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/SingletonContainer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/Restraint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/ScoreState.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/UnaryFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">//!<sp/>Restrain<sp/>the<sp/>diameter<sp/>of<sp/>a<sp/>set<sp/>of<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/**<sp/>This<sp/>restraint<sp/>shows<sp/>how<sp/>to<sp/>write<sp/>a<sp/>restraint<sp/>that<sp/>includes</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>a<sp/>ScoreState<sp/>which<sp/>is<sp/>needed<sp/>to<sp/>compute<sp/>some<sp/>invariant.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\note<sp/>Be<sp/>sure<sp/>to<sp/>check<sp/>out<sp/>the<sp/>swig<sp/>wrapper<sp/>file<sp/>and<sp/>how<sp/>it</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>wraps<sp/>this<sp/>class.</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>The<sp/>source<sp/>code<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleComplexRestraint.h</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/>\include<sp/>ExampleComplexRestraint.cpp</highlight></codeline>
+<codeline><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMPEXAMPLEEXPORT<sp/>ExampleComplexRestraint<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Restraint<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;ScoreState&gt;<sp/>ss_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ParticleIndex<sp/>p_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Float<sp/>diameter_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;SingletonContainer&gt;<sp/>sc_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;UnaryFunction&gt;<sp/>f_;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>FloatKey<sp/>dr_;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/>//!<sp/>Use<sp/>f<sp/>to<sp/>restrain<sp/>particles<sp/>in<sp/>sc<sp/>to<sp/>be<sp/>within<sp/>diameter<sp/>of<sp/>one<sp/>another</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/**<sp/>f<sp/>should<sp/>have<sp/>a<sp/>minimum<sp/>at<sp/>0<sp/>and<sp/>be<sp/>an<sp/>upper<sp/>bound-style<sp/>function.</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ExampleComplexRestraint(UnaryFunction<sp/>*f,<sp/>SingletonContainer<sp/>*sc,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Float<sp/>diameter,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ExampleComplexRestraint%1%&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>unprotected_evaluate(IMP::DerivativeAccumulator<sp/>*accum)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IMP::ModelObjectsTemp<sp/>do_get_inputs()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_OBJECT_METHODS(ExampleComplexRestraint);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMPEXAMPLE_EXAMPLE_COMPLEX_RESTRAINT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+</programlisting> <programlisting filename="ExampleComplexRestraint.cpp"><codeline><highlight class="comment">/**</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\file<sp/>example/ExampleComplexRestraint.cpp</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>\brief<sp/>Restrain<sp/>the<sp/>diameter<sp/>of<sp/>a<sp/>set<sp/>of<sp/>points.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2007-2022<sp/>IMP<sp/>Inventors.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IMP/example/ExampleComplexRestraint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/PairContainer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/particle_index.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/XYZR.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/FixedRefiner.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/CoverRefined.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/SingletonConstraint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/DistancePairScore.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IMP/core/internal/evaluate_distance_pair_score.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lambda/lambda.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_BEGIN_NAMESPACE</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ExampleComplexRestraint::ExampleComplexRestraint(UnaryFunction<sp/>*f,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SingletonContainer<sp/>*sc,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Float<sp/>diameter,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Restraint(sc-&gt;get_model(),<sp/>name),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>diameter_(diameter),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sc_(sc),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>f_(f)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_USAGE_CHECK(sc-&gt;get_indexes().size()<sp/>&gt;<sp/>2,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Need<sp/>at<sp/>least<sp/>two<sp/>particles<sp/>to<sp/>restrain<sp/>diameter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_USAGE_CHECK(diameter<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>diameter<sp/>must<sp/>be<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>f_-&gt;set_was_used(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sc_-&gt;set_was_used(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>p_<sp/>=<sp/>get_model()-&gt;add_particle(get_name()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>particle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZR<sp/>d<sp/>=<sp/>core::XYZR::setup_particle(get_model(),<sp/>p_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>d.set_coordinates_are_optimized(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Pointer&lt;core::CoverRefined&gt;<sp/>cr<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>core::CoverRefined(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>core::FixedRefiner(IMP::get_particles(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_model(),<sp/>sc_-&gt;get_indexes())),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ss_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>core::SingletonConstraint(cr,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>get_model(),<sp/>p_);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ExampleComplexRestraint::unprotected_evaluate(DerivativeAccumulator<sp/>*da)</highlight><highlight class="keyword"></highlight></codeline>
+<codeline><highlight class="keyword"><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_CHECK_OBJECT(sc_.get());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>core::XYZ<sp/>dp(get_model(),<sp/>p_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>radius<sp/>=<sp/>diameter_<sp/>/<sp/>2.0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>IMP_CONTAINER_FOREACH(SingletonContainer,<sp/>sc_,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>+=<sp/>core::internal::evaluate_distance_pair_score(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dp,<sp/>core::XYZ(get_model(),<sp/>_1),<sp/>da,<sp/>f_.get(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::lambda::_1<sp/>-<sp/>radius););</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ModelObjectsTemp<sp/>ExampleComplexRestraint::do_get_inputs()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ModelObjectsTemp<sp/>ret(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>IMP::get_particles(get_model(),<sp/>sc_-&gt;get_all_possible_indexes()));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ret.push_back(get_model()-&gt;get_particle(p_));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ret.push_back(sc_);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMPEXAMPLE_END_NAMESPACE</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="include/IMP/example/ExampleComplexRestraint.h" line="33" column="1" bodyfile="include/IMP/example/ExampleComplexRestraint.h" bodystart="33" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a13d5b66b72f2c50a19f1b05779f207f0" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>diameter_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1aab7acda0aff47884061167e76df6ac8c" prot="public" virt="virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a32112afe1677fb832c3cfb88c797d1fa" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>dr_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a2fdc2b737dd01072a9d87e90e3dee5b3" prot="public" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>ExampleComplexRestraint</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a5538ccddc93e56cb582a6a8ffaa6ef06" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>f_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a9a77d97d3610c498876a1862c6619452" prot="public" virt="virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1af24dc82830b36e39a6d385f1f87010f8" prot="public" virt="virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1ab17bfcf6d5a1fb087e26633b816a28b3" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>p_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a16a00677c54bcfdc573c6995dd2227f0" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>sc_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a01d1e4a7ed9c027d299da1dfca9bcad9" prot="private" virt="non-virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>ss_</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a9ab2354a722ef2c5a55d7a2a44a04db8" prot="public" virt="virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>unprotected_evaluate</name></member>
+      <member refid="classIMP_1_1example_1_1ExampleComplexRestraint_1a12181894a197eed4d85cc34b6597e25b" prot="public" virt="virtual"><scope>IMP::example::ExampleComplexRestraint</scope><name>~ExampleComplexRestraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

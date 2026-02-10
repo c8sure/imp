@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kind="class" language="C++" prot="public">
+    <compoundname>IMP::domino::ExclusionSubsetFilterTable</compoundname>
+    <basecompoundref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" prot="public" virt="non-virtual">IMP::domino::DisjointSetsSubsetFilterTable</basecompoundref>
+    <includes local="no">IMP/domino/subset_filters.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4811c2b1d4f16018fd144ffd7cdfba50" prot="private" static="no">
+        <type><ref refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable" kindref="compound">DisjointSetsSubsetFilterTable</ref></type>
+        <definition>typedef DisjointSetsSubsetFilterTable IMP::domino::ExclusionSubsetFilterTable::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="110" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a49d3c61276b14cae0df505259479b65d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ExclusionSubsetFilterTable::ExclusionSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>ExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::ExclusionSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="159" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a7a840667473246f7a134eba28011636e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::ExclusionSubsetFilterTable::ExclusionSubsetFilterTable</definition>
+        <argsstring>(IMP::domino::ParticleStatesTable *pst)</argsstring>
+        <name>ExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::ExclusionSubsetFilterTable</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP::domino::ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="126" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aa1600843a591a565f46e670077aaa0d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::domino::ExclusionSubsetFilterTable::~ExclusionSubsetFilterTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ExclusionSubsetFilterTable</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::~ExclusionSubsetFilterTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="549" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1afef056d22f6adf21391a906f87856c24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double IMP::domino::ExclusionSubsetFilterTable::get_strength</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::get_strength</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1abaa42cb0bed9f3c8fcfa4c3ac3e0162b">get_strength</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+<para>The strength is a rough metric of how this filter restricts the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is still kind of nebulous, but as a rough guide, it should be the fraction of the states that are eliminated by the filter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aac3df5a9304a06e1e245bcf8b7ca041d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">IMP::domino::SubsetFilter</ref> *</type>
+        <definition>virtual IMP::domino::SubsetFilter * IMP::domino::ExclusionSubsetFilterTable::get_subset_filter</definition>
+        <argsstring>(const IMP::domino::Subset &amp;s, const IMP::domino::Subsets &amp;excluded) const override</argsstring>
+        <name>get_subset_filter</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::get_subset_filter</qualifiedname>
+        <reimplements refid="classIMP_1_1domino_1_1SubsetFilterTable_1a5a8cfb68fc09ce5e77527c3cfa7973a1">get_subset_filter</reimplements>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP::domino::Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1ae43f00a9e5543c2d3d3458e0cd77e963" kindref="member">IMP::domino::Subsets</ref> &amp;</type>
+          <declname>prior_subsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a <ref refid="classIMP_1_1domino_1_1SubsetFilter" kindref="compound">SubsetFilter</ref> which acts on the <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> s, given that all the prior_subsets have already been filtered. This should return nullptr if there is no filtering to be done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a44e6b18d6e6dd9227b5bf69ee57e82dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::domino::ExclusionSubsetFilterTable::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="352" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4677d4ed2c1517e1a95d342606854042" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::domino::ExclusionSubsetFilterTable::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::domino::ExclusionSubsetFilterTable::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/subset_filters.h" line="219" column="421" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Do not allow two particles to be in the same state. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>If a <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> is passed, then two particles cannot be in the same state if they have the same <ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref>, otherwise, if a ParticlePairs is passed then pairs found in the list are not allowed to have the same state index. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::ExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMP::domino::DisjointSetsSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::ExclusionSubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::domino::SubsetFilterTable</label>
+        <link refid="classIMP_1_1domino_1_1SubsetFilterTable"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/domino/subset_filters.h" line="219" column="2" bodyfile="include/IMP/domino/subset_filters.h" bodystart="219" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1afb66dec753cf248d8c491f19cf8c9ab5" prot="public" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>add_pair</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a3d67311e41d5922da1740bc35e5ab432" prot="public" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>add_set</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a6d219703856338684fecf5d96cdd599c" prot="protected" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1a2b16e59c1d2d94ede15b21482ae451cd" prot="protected" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>DisjointSetsSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a7a840667473246f7a134eba28011636e" prot="public" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>ExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a49d3c61276b14cae0df505259479b65d" prot="public" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>ExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1ac0694e131f001cba4aa8d1cd6f6970f0" prot="protected" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_number_of_sets</name></member>
+      <member refid="classIMP_1_1domino_1_1DisjointSetsSubsetFilterTable_1acbbd82abe7e4a993eaaed399e7ba134c" prot="protected" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_set</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1afef056d22f6adf21391a906f87856c24" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_strength</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aac3df5a9304a06e1e245bcf8b7ca041d" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_subset_filter</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a44e6b18d6e6dd9227b5bf69ee57e82dc" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4677d4ed2c1517e1a95d342606854042" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1a4811c2b1d4f16018fd144ffd7cdfba50" prot="private" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>P</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1ac6b0d3f8f445a6ad0e6a9b9b2285b091" prot="public" virt="non-virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>SubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable_1aa1600843a591a565f46e670077aaa0d3" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>~ExclusionSubsetFilterTable</name></member>
+      <member refid="classIMP_1_1domino_1_1SubsetFilterTable_1af9d7679939c1f3fd60f641de4fef7db8" prot="public" virt="virtual"><scope>IMP::domino::ExclusionSubsetFilterTable</scope><name>~SubsetFilterTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

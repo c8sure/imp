@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1SingleLinkage" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::SingleLinkage</compoundname>
+    <includes local="no">IMP/em2d/hierarchical_clustering.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classIMP_1_1em2d_1_1SingleLinkage_1ab2f44cbb59a08132f4c843e5225bba0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class cereal::access</definition>
+        <argsstring></argsstring>
+        <name>cereal::access</name>
+        <qualifiedname>IMP::em2d::SingleLinkage::access</qualifiedname>
+        <param>
+          <type>cereal::access</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/hierarchical_clustering.h" line="144" column="16" bodyfile="include/IMP/em2d/hierarchical_clustering.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SingleLinkage_1ab92832aa81567944d0ded148155c779e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMP::em2d::SingleLinkage::SingleLinkage</definition>
+        <argsstring>()</argsstring>
+        <name>SingleLinkage</name>
+        <qualifiedname>IMP::em2d::SingleLinkage::SingleLinkage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/hierarchical_clustering.h" line="124" column="3" bodyfile="include/IMP/em2d/hierarchical_clustering.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SingleLinkage_1a98000bfcb4ceceea49e32ae280988364" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IMP::em2d::SingleLinkage::operator()</definition>
+        <argsstring>(unsigned int id1, unsigned int id2, const ClusterSet &amp;cluster_set, const FloatsList &amp;distances) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::em2d::SingleLinkage::operator()</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>id1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1em2d_1_1ClusterSet" kindref="compound">ClusterSet</ref> &amp;</type>
+          <declname>cluster_set</declname>
+        </param>
+        <param>
+          <type>const FloatsList &amp;</type>
+          <declname>distances</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">id1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identity of cluster 1 to merge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identity of cluster 2 to merge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cluster_set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linkage matrix describing the contents of clusters so far. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">distances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A NxN matrix of distances(i,j) between the individual members to cluster </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Minimal distance between members of the clusters </para>
+</simplesect>
+<simplesect kind="note"><para>the id of an isolated member n&lt;N is n. The id of the cluster formed at step i is i+N. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/hierarchical_clustering.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SingleLinkage_1aeacbeb2b8c902557700af54ef1b54834" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::SingleLinkage::show</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::SingleLinkage::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/hierarchical_clustering.h" line="140" column="8" bodyfile="include/IMP/em2d/hierarchical_clustering.h" bodystart="140" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1SingleLinkage_1a73cef0423852c1316a393a0ae1981827" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void IMP::em2d::SingleLinkage::serialize</definition>
+        <argsstring>(Archive &amp;)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>IMP::em2d::SingleLinkage::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/hierarchical_clustering.h" line="146" column="19" bodyfile="include/IMP/em2d/hierarchical_clustering.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functor for hierarchical clustering based on single linkage. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/hierarchical_clustering.h" line="122" column="1" bodyfile="include/IMP/em2d/hierarchical_clustering.h" bodystart="122" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1SingleLinkage_1a98000bfcb4ceceea49e32ae280988364" prot="public" virt="non-virtual"><scope>IMP::em2d::SingleLinkage</scope><name>operator()</name></member>
+      <member refid="classIMP_1_1em2d_1_1SingleLinkage_1a73cef0423852c1316a393a0ae1981827" prot="private" virt="non-virtual"><scope>IMP::em2d::SingleLinkage</scope><name>serialize</name></member>
+      <member refid="classIMP_1_1em2d_1_1SingleLinkage_1aeacbeb2b8c902557700af54ef1b54834" prot="public" virt="non-virtual"><scope>IMP::em2d::SingleLinkage</scope><name>show</name></member>
+      <member refid="classIMP_1_1em2d_1_1SingleLinkage_1ab92832aa81567944d0ded148155c779e" prot="public" virt="non-virtual"><scope>IMP::em2d::SingleLinkage</scope><name>SingleLinkage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

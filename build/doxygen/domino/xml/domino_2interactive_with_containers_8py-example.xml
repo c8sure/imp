@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2interactive_with_containers_8py-example" kind="example">
+    <compoundname>domino/interactive_with_containers.py</compoundname>
+    <briefdescription>
+<para>Run domino storing the intermediate and final results in an HDF5 database. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Run domino storing the intermediate and final results in an HDF5 database. This has the advantage that if you interrupt the run at any point, you have a list of everything computed so far and so can get a better idea of what is going on. <programlisting filename="domino/interactive_with_containers.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/interactive_with_containers.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Run<sp/>domino<sp/>storing<sp/>the<sp/>intermediate<sp/>and<sp/>final<sp/>results<sp/>in<sp/>an<sp/>HDF5</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>database.<sp/>This<sp/>has<sp/>the<sp/>advantage<sp/>that<sp/>if<sp/>you<sp/>interrupt<sp/>the<sp/>run<sp/>at<sp/>any</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>point,<sp/>you<sp/>have<sp/>a<sp/>list<sp/>of<sp/>everything<sp/>computed<sp/>so<sp/>far<sp/>and<sp/>so<sp/>can<sp/>get<sp/>a</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>better<sp/>idea<sp/>of<sp/>what<sp/>is<sp/>going<sp/>on.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;interactive<sp/>with<sp/>containers&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>some<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">ps<sp/>=<sp/>IMP.get_indexes([IMP.core.XYZ.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>3)])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">s<sp/>=<sp/>IMP.core.HarmonicDistancePairScore(1,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal">lpc<sp/>=<sp/>IMP.container.ListPairContainer(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m,<sp/>[(ps[i[0]],<sp/>ps[i[1]])<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[(0,<sp/>1),<sp/>(1,<sp/>2)]])</highlight></codeline>
+<codeline><highlight class="normal">print([(m.get_particle_name(p[0]),<sp/>m.get_particle_name(p[1]))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lpc.get_contents()])</highlight></codeline>
+<codeline><highlight class="normal">r<sp/>=<sp/>IMP.container.PairsRestraint(s,<sp/>lpc)</highlight></codeline>
+<codeline><highlight class="normal">r.set_maximum_score(.1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">space<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>[IMP.algebra.Vector3D(i,<sp/>0,<sp/>0)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>6)])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst.set_particle_states(m.get_particle(p),<sp/>space)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>make<sp/>sure<sp/>to<sp/>break<sp/>up<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">mt<sp/>=<sp/><ref refid="namespaceIMP_1_1domino_1a52b8de54766ce0eeaece21adff2c9bd1" kindref="member">IMP.domino.get_merge_tree</ref>([r],<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.show_graphviz(mt)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>display<sp/>graph<sp/>using<sp/>&apos;dot&apos;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">rc<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal">rc.add_restraints([r])</highlight></codeline>
+<codeline><highlight class="normal">filters<sp/>=<sp/>[<ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst)]</highlight></codeline>
+<codeline><highlight class="normal">leaf_table<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1BranchAndBoundAssignmentsTable" kindref="compound">IMP.domino.BranchAndBoundAssignmentsTable</ref>(pst,<sp/>filters)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>database<sp/>to<sp/>store<sp/>the<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">name<sp/>=<sp/>IMP.create_temporary_file_name(</highlight><highlight class="stringliteral">&quot;assignments&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;.hdf5&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">root<sp/>=<sp/>RMF.HDF5.create_file(name)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>recurse<sp/>down<sp/>the<sp/>tree<sp/>getting<sp/>the<sp/>assignments<sp/>and<sp/>printing<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_assignments(vertex):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>on<sp/>=<sp/>mt.get_out_neighbors(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>=<sp/>mt.get_vertex_name(vertex)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;computing<sp/>assignments<sp/>for&quot;</highlight><highlight class="normal">,<sp/>ss)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ssn<sp/>=<sp/>str(ss)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dataset<sp/>=<sp/>root.add_child_index_data_set_2d(ssn)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dataset.set_size([0,<sp/>len(ss)])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mine<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1WriteHDF5AssignmentContainer" kindref="compound">IMP.domino.WriteHDF5AssignmentContainer</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataset,<sp/>ss,<sp/>pst.get_particles(),<sp/>ssn)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(on)<sp/>==<sp/>0:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>we<sp/>have<sp/>a<sp/>leaf</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1domino_1a4570cce69f194985e23b710c3b5e18b4" kindref="member">IMP.domino.load_leaf_assignments</ref>(ss,<sp/>leaf_table,<sp/>mine)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>recurse<sp/>on<sp/>the<sp/>two<sp/>children</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ss0,<sp/>a0)<sp/>=<sp/>get_assignments(on[0])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ss1,<sp/>a1)<sp/>=<sp/>get_assignments(on[1])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1domino_1a200c71a273844cc32fd32f6a5eafa0aa" kindref="member">IMP.domino.load_merged_assignments</ref>(ss0,<sp/>a0,<sp/>ss1,<sp/>a1,<sp/>filters,<sp/>mine)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(ss,<sp/>mine.get_number_of_assignments())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>make<sp/>sure<sp/>that<sp/>the<sp/>cache<sp/>is<sp/>flushed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>mine</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ss,<sp/><ref refid="classIMP_1_1domino_1_1ReadHDF5AssignmentContainer" kindref="compound">IMP.domino.ReadHDF5AssignmentContainer</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataset,<sp/>ss,<sp/>pst.get_particles(),<sp/>ssn))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>the<sp/>root<sp/>is<sp/>the<sp/>last<sp/>vertex</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">all<sp/>=<sp/>get_assignments(mt.get_vertices()[-1])</highlight></codeline>
+<codeline><highlight class="normal">all[1].set_was_used(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&apos;try:<sp/>h5dump&apos;</highlight><highlight class="normal">,<sp/>name)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/interactive_with_containers.py"/>
+  </compounddef>
+</doxygen>

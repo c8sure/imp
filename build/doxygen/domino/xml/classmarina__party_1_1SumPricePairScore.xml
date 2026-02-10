@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classmarina__party_1_1SumPricePairScore" kind="class" language="Python" prot="public">
+    <compoundname>marina_party::SumPricePairScore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP.PairScore</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmarina__party_1_1SumPricePairScore_1ab9d07027bf57633b047a3550dc0830f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.SumPricePairScore.do_get_inputs</definition>
+        <argsstring>(self, m, pis)</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>marina_party.SumPricePairScore.do_get_inputs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>pis</type>
+          <defname>pis</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="35" column="1" bodyfile="examples/domino/marina_party.py" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmarina__party_1_1SumPricePairScore_1a3cd456990ecc778f79a6e0d2f31cecc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>marina_party.SumPricePairScore.evaluate_index</definition>
+        <argsstring>(self, m, pair, accum)</argsstring>
+        <name>evaluate_index</name>
+        <qualifiedname>marina_party.SumPricePairScore.evaluate_index</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <param>
+          <type>pair</type>
+          <defname>pair</defname>
+        </param>
+        <param>
+          <type>accum</type>
+          <defname>accum</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/domino/marina_party.py" line="30" column="1" bodyfile="examples/domino/marina_party.py" bodystart="30" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/domino/marina_party.py" line="28" column="1" bodyfile="examples/domino/marina_party.py" bodystart="28" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classmarina__party_1_1SumPricePairScore_1ab9d07027bf57633b047a3550dc0830f8" prot="public" virt="non-virtual"><scope>marina_party::SumPricePairScore</scope><name>do_get_inputs</name></member>
+      <member refid="classmarina__party_1_1SumPricePairScore_1a3cd456990ecc778f79a6e0d2f31cecc3" prot="public" virt="non-virtual"><scope>marina_party::SumPricePairScore</scope><name>evaluate_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

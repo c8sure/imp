@@ -1,0 +1,4 @@
+#!/home/catherine/miniforge3/envs/imp/bin/python3.10
+fname = '/home/catherine/imp/modules/em/bin/simulate_density_from_pdb'
+with open(fname) as fh:
+    exec(compile(fh.read(), fname, 'exec'))

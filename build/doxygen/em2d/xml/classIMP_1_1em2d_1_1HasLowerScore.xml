@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1em2d_1_1HasLowerScore" kind="class" language="C++" prot="public">
+    <compoundname>IMP::em2d::HasLowerScore</compoundname>
+    <includes local="no">IMP/em2d/scores2D.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1HasLowerScore_1a970e2317d4cb04d1e1ee821d9f5f7cb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::em2d::HasLowerScore&lt; T &gt;::operator()</definition>
+        <argsstring>(const T &amp;a, const T &amp;b) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>IMP::em2d::HasLowerScore::operator()</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="139" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1em2d_1_1HasLowerScore_1abfed4b94a99495d395b726152887ae8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::em2d::HasLowerScore&lt; T &gt;::show</definition>
+        <argsstring>(std::ostream &amp;) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::em2d::HasLowerScore::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/em2d/scores2D.h" line="142" column="8" bodyfile="include/IMP/em2d/scores2D.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Compare two classes that return a score. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/em2d/scores2D.h" line="137" column="1" bodyfile="include/IMP/em2d/scores2D.h" bodystart="137" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1em2d_1_1HasLowerScore_1a970e2317d4cb04d1e1ee821d9f5f7cb7" prot="public" virt="non-virtual"><scope>IMP::em2d::HasLowerScore</scope><name>operator()</name></member>
+      <member refid="classIMP_1_1em2d_1_1HasLowerScore_1abfed4b94a99495d395b726152887ae8e" prot="public" virt="non-virtual"><scope>IMP::em2d::HasLowerScore</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

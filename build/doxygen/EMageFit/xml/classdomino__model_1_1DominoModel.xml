@@ -1,0 +1,2045 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classdomino__model_1_1DominoModel" kind="class" language="Python" prot="public">
+    <compoundname>domino_model::DominoModel</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a99d0fb690f56cd814aa29d47ab26263b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.add_branch_and_bound_assignments_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>add_branch_and_bound_assignments_table</name>
+        <qualifiedname>domino_model.DominoModel.add_branch_and_bound_assignments_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>BranchAndBoundAssignmentsTable enumerate states based on provided filtered using the provided the subset filter tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="501" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="501" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1afe181ad01c8591a45790446928cba282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.add_exclusion_filter_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>add_exclusion_filter_table</name>
+        <qualifiedname>domino_model.DominoModel.add_exclusion_filter_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>ExclusionSubsetFilterTable ensures that two particles are not given the same state at the same time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="515" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="515" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a385659fc748a88da8a7a7bb87ec04354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.add_restraint</definition>
+        <argsstring>(self, r, name, weight, max_score=False)</argsstring>
+        <name>add_restraint</name>
+        <qualifiedname>domino_model.DominoModel.add_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Adds a restraint to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IMP.Restraint object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum score allowed for the restraint. If max_score is False, there is no limit for the value of the restraint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="58" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="58" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1adceb3c988d4dbf5f43346e5b8485c7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.add_restraint_score_filter_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>add_restraint_score_filter_table</name>
+        <qualifiedname>domino_model.DominoModel.add_restraint_score_filter_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Add a RestraintScoreSubsetFilterTable to DOMINO that allows to reject assignments that have score worse than the thresholds for the restraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="457" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="457" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a4613dd50f65a8338fa5f9eca065ecfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.align_rigid_bodies_states</definition>
+        <argsstring>(self)</argsstring>
+        <name>align_rigid_bodies_states</name>
+        <qualifiedname>domino_model.DominoModel.align_rigid_bodies_states</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Aligns the set of structures considered for DOMINO sampling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function: 1) reads the possible reference frames that the rb_states_table stores for each rigid body. This table must be filled before using this function. Usually it is filled with the results from a previous Monte Carlo sampling. If the solutions from Monte Carlo seem to have the same structure but they are not aligned to each other, this function can help setting better starting positions to use with DOMINO. 2) Gets the first state for each of the rigid bodies and sets a reference structure using such states. 3) Aligns all the rest of the structures respect to the reference 4) Replaces the values of the reference frames stored in the rb_states_table with the new values obtained from the alignments. It does it for all states of a rigid body. <simplesect kind="note"><para>: If this function is applied, the parameters &quot;anchor&quot; and &quot;fixed&quot; are ignored, as they are superseded by the use of the alignments calculated here. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="80" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="80" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a35a74ca1b70a546b0999a0003f496a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.create_coarse_assembly</definition>
+        <argsstring>(self, n_residues)</argsstring>
+        <name>create_coarse_assembly</name>
+        <qualifiedname>domino_model.DominoModel.create_coarse_assembly</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>n_residues</type>
+          <defname>n_residues</defname>
+        </param>
+        <briefdescription>
+<para>Simplify the assembly with a coarse representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_residues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of residues used for a coarse particle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="220" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="220" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a6604f6cdce2e6ebeacc060eeee3c5775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.create_merge_tree</definition>
+        <argsstring>(self)</argsstring>
+        <name>create_merge_tree</name>
+        <qualifiedname>domino_model.DominoModel.create_merge_tree</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Creates a merge tree from the restraints that are set already. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="598" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="598" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1af631bb43cc15a73b313c22426f2f2dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.do_sampling</definition>
+        <argsstring>(self, mode=&apos;assignments_heap_container&apos;, params=None)</argsstring>
+        <name>do_sampling</name>
+        <qualifiedname>domino_model.DominoModel.do_sampling</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+          <defval>&apos;assignments_heap_container&apos;</defval>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Do Domino sampling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode used to recover solutions from domino. It can have the value &quot;configuration&quot;, &quot;assignments&quot;, or &quot;assignments_heap_container&quot;. The mode &quot;configuration&quot; recovers all possible configurations (takes a while to generate them). The mode &quot;assignments&quot; only provides the assignments (state numbers) of the solutions. It is faster but requires generating the solutions afterwards The mode &quot;assignments_heap_container&quot; selects the best solutions after each merging in DOMINO, discarding the rest. In practice I used the mode &quot;assignments_heap_container&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="236" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="236" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ace5344489813ecfc6262b46691109de0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_assignment_and_RFs</definition>
+        <argsstring>(self, assignment, subset)</argsstring>
+        <name>get_assignment_and_RFs</name>
+        <qualifiedname>domino_model.DominoModel.get_assignment_and_RFs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <briefdescription>
+<para>Return a line with texts for an assignment and the the reference frames of the RigidBodies in the subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subset of components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class with the states for the subset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: see the get_assignment_assignment_text() note. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="300" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="300" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1aee5fa0ff0a63d52fa41503476715b785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_assignment_info</definition>
+        <argsstring>(self, assignment, subset)</argsstring>
+        <name>get_assignment_info</name>
+        <qualifiedname>domino_model.DominoModel.get_assignment_info</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <briefdescription>
+<para>Info related to an assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list with text for the assignment and all the scores for the restraints <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subset of components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class with the states for the subset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="323" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="323" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a2252f8505e93706b549ef065d3bb3af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_assignment_scores</definition>
+        <argsstring>(self, assignment, subset)</argsstring>
+        <name>get_assignment_scores</name>
+        <qualifiedname>domino_model.DominoModel.get_assignment_scores</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <briefdescription>
+<para>Returns a list with the values for the restraints on a subset of the components of the assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subset of components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class with the states for the subset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="335" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="335" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1afb9c6370692821fe2d6b3c5d6c8511cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_assignment_text</definition>
+        <argsstring>(self, assignment, subset)</argsstring>
+        <name>get_assignment_text</name>
+        <qualifiedname>domino_model.DominoModel.get_assignment_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <briefdescription>
+<para>Get the formatted text for an assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subset of components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class with the states for the subset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>: The order in assignment and subset is not always the order of the rigid bodies in self.components_rbs. The function reorders the terms in the assignment so there is correspondence. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="283" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="283" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a071ce9971ba9cba880e81921493c376d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_assignments_with_heap</definition>
+        <argsstring>(self, vertex, k=0)</argsstring>
+        <name>get_assignments_with_heap</name>
+        <qualifiedname>domino_model.DominoModel.get_assignments_with_heap</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>vertex</type>
+          <defname>vertex</defname>
+        </param>
+        <param>
+          <type>k</type>
+          <defname>k</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Domino sampling that recovers the assignments for the root of the merge tree, but conserving only the best k scores for each vertex of the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertex with the root of the current merge tree. This function is recursive. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="357" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="357" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a530c36780db6cf0e79506b7bd60e2942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_restraint_value_for_assignment</definition>
+        <argsstring>(self, assignment, name)</argsstring>
+        <name>get_restraint_value_for_assignment</name>
+        <qualifiedname>domino_model.DominoModel.get_restraint_value_for_assignment</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Recover the value of a restraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class containing the assignment for the solution desired </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="398" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="398" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a95ded8bcea3ae7dfec3688820e1086d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_restraints_for_native</definition>
+        <argsstring>(self, restraints_names)</argsstring>
+        <name>get_restraints_for_native</name>
+        <qualifiedname>domino_model.DominoModel.get_restraints_for_native</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>restraints_names</type>
+          <defname>restraints_names</defname>
+        </param>
+        <briefdescription>
+<para>Get values of the restraints for the native structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restraints_names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Names of the restraints requested </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a list with the values of all scores, and the total score </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="879" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="879" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a474e8c7e78fd1827d4daceb644356ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_restraints_names_used</definition>
+        <argsstring>(self, subset)</argsstring>
+        <name>get_restraints_names_used</name>
+        <qualifiedname>domino_model.DominoModel.get_restraints_names_used</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>subset</type>
+          <defname>subset</defname>
+        </param>
+        <briefdescription>
+<para>Get the names of the restraints used for a subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subset of components of the assembly </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="872" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="872" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a8c52d101dad140f7ec22881adcf594f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.get_scoring_function</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_scoring_function</name>
+        <qualifiedname>domino_model.DominoModel.get_scoring_function</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Get a ScoringFunction that includes all restraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="971" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="971" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a4b3918c22728df7fc828c39f7987bba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.load_state</definition>
+        <argsstring>(self, assignment)</argsstring>
+        <name>load_state</name>
+        <qualifiedname>domino_model.DominoModel.load_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <briefdescription>
+<para>Load the positions of the components given by the assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="349" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="349" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ac29641fb4679e5668a3c76c24d00c880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.read_merge_tree</definition>
+        <argsstring>(self, fn)</argsstring>
+        <name>read_merge_tree</name>
+        <qualifiedname>domino_model.DominoModel.read_merge_tree</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <briefdescription>
+<para>Read and create a merge tree from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The format of the file is the format written by write merge_tree() It does not matter the order of the indices in the file, as they are sorted by this function. The only condition is that the index for the vertex that is the root of the tree MUST be the largest. This is guaranteed when creating a merge tree with <ref refid="classdomino__model_1_1DominoModel_1a6604f6cdce2e6ebeacc060eeee3c5775" kindref="member">create_merge_tree()</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File containing the merge tree </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="540" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="540" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a855b049202f8994a1024966f131a67ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_assembly</definition>
+        <argsstring>(self, fn_pdb, names)</argsstring>
+        <name>set_assembly</name>
+        <qualifiedname>domino_model.DominoModel.set_assembly</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <briefdescription>
+<para>Sets an assembly from a single PDB file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function assumes that the components of the assembly are the chains of the PDB file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_pdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PDB with the file for the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Names for each of the components (chains) of the assembly </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="487" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="487" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a6be16562dfd6cd60f0dbe9fad0c15f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_assembly_components</definition>
+        <argsstring>(self, fn_pdbs, names)</argsstring>
+        <name>set_assembly_components</name>
+        <qualifiedname>domino_model.DominoModel.set_assembly_components</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn_pdbs</type>
+          <defname>fn_pdbs</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <briefdescription>
+<para>Sets the components of an assembly, each one given as a separate PDB file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_pdbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List with the names of the pdb files </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List with the names of the components of the assembly. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="472" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="472" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a116f581015909c05dbe315baebd7c456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_close_pairs_excluded_volume_restraint</definition>
+        <argsstring>(self, distance=10, weight=1.0, ratio=0.05, stddev=2, max_score=False)</argsstring>
+        <name>set_close_pairs_excluded_volume_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_close_pairs_excluded_volume_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>ratio</type>
+          <defname>ratio</defname>
+          <defval>0.05</defval>
+        </param>
+        <param>
+          <type>stddev</type>
+          <defname>stddev</defname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Creates an excluded volume restraint between all the components of the coarse assembly.See help for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance tolerated between particles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value for the restraint. If the parameter is None, an automatic value is computed (using the ratio). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fraction of the number of possible pairs of particles that are tolerated to overlap. The maximum score is modified according to this ratio. I have found that ratios of 0.05-0.1 work well allowing for some interpenetration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard deviation used to approximate the HarmonicUpperBound function to a Gaussian </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="733" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="733" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a3d606dd429c6ea8e6d936c7b696fc15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_complementarity_restraint</definition>
+        <argsstring>(self, name1, name2, rname, max_sep_distance, max_penetration, weight, max_score=10000000000.0)</argsstring>
+        <name>set_complementarity_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_complementarity_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name1</type>
+          <defname>name1</defname>
+        </param>
+        <param>
+          <type>name2</type>
+          <defname>name2</defname>
+        </param>
+        <param>
+          <type>rname</type>
+          <defname>rname</defname>
+        </param>
+        <param>
+          <type>max_sep_distance</type>
+          <defname>max_sep_distance</defname>
+        </param>
+        <param>
+          <type>max_penetration</type>
+          <defname>max_penetration</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>10000000000.0</defval>
+        </param>
+        <briefdescription>
+<para>Set a restraint for geometric complementarity between 2 components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The restraint is applied to this components </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The name given to the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_sep_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- maximum distance between molecules tolerated by the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_penetration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Maximum penetration allowed (angstrom) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="194" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="194" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a1256987e4a016842b8c4897f2ab61d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_connectivity_restraint</definition>
+        <argsstring>(self, names, rname, distance=10, weight=1.0, max_score=None, n_pairs=1, stddev=2)</argsstring>
+        <name>set_connectivity_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_connectivity_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <param>
+          <type>rname</type>
+          <defname>rname</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>n_pairs</type>
+          <defname>n_pairs</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>stddev</type>
+          <defname>stddev</defname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+<para>Set a connectivity restraint between the elements of the assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List with all the elements to be connected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance tolerated by the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum score for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_pairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pairs of particles used in the KClosePairScore of the connectivity restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard deviation used to approximate the HarmonicUpperBound function to a Gaussian </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="658" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="658" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a96f5c98324f41b93d68f31dac4a9939d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_em2d_restraint</definition>
+        <argsstring>(self, name, fn_images_sel, pixel_size, resolution, n_projections, weight, max_score=False, mode=&apos;fast&apos;, n_optimized=1)</argsstring>
+        <name>set_em2d_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_em2d_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>fn_images_sel</type>
+          <defname>fn_images_sel</defname>
+        </param>
+        <param>
+          <type>pixel_size</type>
+          <defname>pixel_size</defname>
+        </param>
+        <param>
+          <type>resolution</type>
+          <defname>resolution</defname>
+        </param>
+        <param>
+          <type>n_projections</type>
+          <defname>n_projections</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+          <defval>&apos;fast&apos;</defval>
+        </param>
+        <param>
+          <type>n_optimized</type>
+          <defname>n_optimized</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Set a Restraint computing the em2d score. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_images_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selection file with the names of the images used for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pixel size in the images </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- resolution used to downsample the projections of the model when projecting </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight of the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Maximum value tolerated for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_projections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Number of projections to generate when projecting the model to do the coarse alignments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Mode used for computing the restraints. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_optimized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- number of results from the coarse alignment that are refined with the Simplex algorithm to get a more accurate value for the restraint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="687" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="687" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1adcff7a1a4f7ded9f73cf2955763c83c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_native_assembly_for_benchmark</definition>
+        <argsstring>(self, params)</argsstring>
+        <name>set_native_assembly_for_benchmark</name>
+        <qualifiedname>domino_model.DominoModel.set_native_assembly_for_benchmark</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+<para>Sets the native model for benchmark, by reading the native structure and set the rigid bodies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="416" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="416" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1af84515bfe595dceb8e4581fded8dc063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_not_optimized</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>set_not_optimized</name>
+        <qualifiedname>domino_model.DominoModel.set_not_optimized</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Set a part of the model as not optimized (it does not move during the model optimization) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the component to optimized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="717" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="717" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a21f90d544df053e12794d1ebbb0578cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_pair_score_restraint</definition>
+        <argsstring>(self, name1, name2, restraint_name, distance=10, weight=1.0, n_pairs=1, stddev=2, max_score=None)</argsstring>
+        <name>set_pair_score_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_pair_score_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name1</type>
+          <defname>name1</defname>
+        </param>
+        <param>
+          <type>name2</type>
+          <defname>name2</defname>
+        </param>
+        <param>
+          <type>restraint_name</type>
+          <defname>restraint_name</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>n_pairs</type>
+          <defname>n_pairs</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>stddev</type>
+          <defname>stddev</defname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Set a pair_score restraint between the coarse representation of two components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the first component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the second component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>restraint_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance tolerated between particles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight of the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_pairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value tolerated for the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard deviation used to approximate the HarmonicUpperBound function to a Gaussian </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="783" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="783" bodyend="828"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a965914208257dbf6b89dd179315b5418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_rb_states</definition>
+        <argsstring>(self, rb, transformations)</argsstring>
+        <name>set_rb_states</name>
+        <qualifiedname>domino_model.DominoModel.set_rb_states</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rb</type>
+          <defname>rb</defname>
+        </param>
+        <param>
+          <type>transformations</type>
+          <defname>transformations</defname>
+        </param>
+        <briefdescription>
+<para>Add a set of reference frames as possible states for a rigid body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rigid body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transformations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformations are used to build the reference frames for the rigid body. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="440" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="440" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a5ffb1a7a75607c20799e50b4469dbbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.set_xlink_restraint</definition>
+        <argsstring>(self, id1, chain1, residue1, id2, chain2, residue2, distance, weight, stddev, max_score=False)</argsstring>
+        <name>set_xlink_restraint</name>
+        <qualifiedname>domino_model.DominoModel.set_xlink_restraint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id1</type>
+          <defname>id1</defname>
+        </param>
+        <param>
+          <type>chain1</type>
+          <defname>chain1</defname>
+        </param>
+        <param>
+          <type>residue1</type>
+          <defname>residue1</defname>
+        </param>
+        <param>
+          <type>id2</type>
+          <defname>id2</defname>
+        </param>
+        <param>
+          <type>chain2</type>
+          <defname>chain2</defname>
+        </param>
+        <param>
+          <type>residue2</type>
+          <defname>residue2</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+        </param>
+        <param>
+          <type>stddev</type>
+          <defname>stddev</defname>
+        </param>
+        <param>
+          <type>max_score</type>
+          <defname>max_score</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Set a restraint on the maximum distance between 2 residues. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the first component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue number for the aminoacid in the first component.The number is the number in the PDB file, not the number relative to the beginning of the chain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the second component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chain2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>residue2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Residue number for the aminoacid in the second component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum distance tolerated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight of the restraint </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard deviation used to approximate the HarmonicUpperBound function to a Gaussian </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See help for <ref refid="classdomino__model_1_1DominoModel_1a385659fc748a88da8a7a7bb87ec04354" kindref="member">add_restraint()</ref>. If none is given, the maximum score is set to allow a maximum distance of 10 Angstrom greater than the parameter &quot;distance&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="142" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="142" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1af7b0bcd2d57fc85fb46337e6bfe79eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.setup_domino_sampler</definition>
+        <argsstring>(self)</argsstring>
+        <name>setup_domino_sampler</name>
+        <qualifiedname>domino_model.DominoModel.setup_domino_sampler</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Creates a DOMINO sampler and adds the required filter tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="524" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="524" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a7ad2e02c8e9af81b8085411c275991aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_merge_tree</definition>
+        <argsstring>(self, fn)</argsstring>
+        <name>write_merge_tree</name>
+        <qualifiedname>domino_model.DominoModel.write_merge_tree</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <briefdescription>
+<para>Writes the current merge tree to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The format is: parent | child_left | child_right | labels <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File for storing the merge tree </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="614" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="614" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ad2712327168dbe6f70cca1c40ec8b376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_monte_carlo_solution</definition>
+        <argsstring>(self, fn_database)</argsstring>
+        <name>write_monte_carlo_solution</name>
+        <qualifiedname>domino_model.DominoModel.write_monte_carlo_solution</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn_database</type>
+          <defname>fn_database</defname>
+        </param>
+        <briefdescription>
+<para>Write the solution of a MonteCarlo run. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Database file with the solution. The database will contain only one record </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="976" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="976" bodyend="1005"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a6779a68a9253b8449c4f6f1828792037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_pdb_for_assignment</definition>
+        <argsstring>(self, assignment, fn_pdb)</argsstring>
+        <name>write_pdb_for_assignment</name>
+        <qualifiedname>domino_model.DominoModel.write_pdb_for_assignment</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assignment</type>
+          <defname>assignment</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <briefdescription>
+<para>Write the solution in the assignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Assignment class with the states for the subset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_pdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to write the model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="913" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="913" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a2d0f06e282a44eade21fb14763ece1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_pdb_for_component</definition>
+        <argsstring>(self, component_index, ref, fn_pdb)</argsstring>
+        <name>write_pdb_for_component</name>
+        <qualifiedname>domino_model.DominoModel.write_pdb_for_component</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>component_index</type>
+          <defname>component_index</defname>
+        </param>
+        <param>
+          <type>ref</type>
+          <defname>ref</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <briefdescription>
+<para>Write one component of the assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>component_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the component in the assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference frame of the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_pdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output PDB </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="959" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="959" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a04f2b9657fcc4563ce698df9ce4d0493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_pdb_for_configuration</definition>
+        <argsstring>(self, n, fn_pdb)</argsstring>
+        <name>write_pdb_for_configuration</name>
+        <qualifiedname>domino_model.DominoModel.write_pdb_for_configuration</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <briefdescription>
+<para>Write a file with a configuration for the model (configuration here means a configuration in DOMINO) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the configuration desired. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_pdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="925" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="925" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1a1315437117a6806ed3b5da1caf7c79ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_pdb_for_reference_frames</definition>
+        <argsstring>(self, RFs, fn_pdb)</argsstring>
+        <name>write_pdb_for_reference_frames</name>
+        <qualifiedname>domino_model.DominoModel.write_pdb_for_reference_frames</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>RFs</type>
+          <defname>RFs</defname>
+        </param>
+        <param>
+          <type>fn_pdb</type>
+          <defname>fn_pdb</defname>
+        </param>
+        <briefdescription>
+<para>Write a PDB file with a solution given by a set of reference frames. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RFs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference frames for the elements of the complex </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_pdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to write the solution </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="938" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="938" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ab14f6036e35a70ca0abf6106ab376a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_pdbs_for_reference_frames</definition>
+        <argsstring>(self, RFs, fn_base)</argsstring>
+        <name>write_pdbs_for_reference_frames</name>
+        <qualifiedname>domino_model.DominoModel.write_pdbs_for_reference_frames</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>RFs</type>
+          <defname>RFs</defname>
+        </param>
+        <param>
+          <type>fn_base</type>
+          <defname>fn_base</defname>
+        </param>
+        <briefdescription>
+<para>Write a separate PDB for each of the elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RFs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference frames for the elements of the complex </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base string to build the names of the PDBs files </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="948" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="948" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ab57338107fb1db4fa5a4c6e3efe0268c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_solutions_database</definition>
+        <argsstring>(self, fn_database, max_number=None)</argsstring>
+        <name>write_solutions_database</name>
+        <qualifiedname>domino_model.DominoModel.write_solutions_database</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn_database</type>
+          <defname>fn_database</defname>
+        </param>
+        <param>
+          <type>max_number</type>
+          <defname>max_number</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Write the results of the DOMINO sampling to a SQLite database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn_database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of results to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="832" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="832" bodyend="869"/>
+      </memberdef>
+      <memberdef kind="function" id="classdomino__model_1_1DominoModel_1ae22cd6538a417b40ca19233b2ee2c15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>domino_model.DominoModel.write_subset</definition>
+        <argsstring>(self, v, w)</argsstring>
+        <name>write_subset</name>
+        <qualifiedname>domino_model.DominoModel.write_subset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>w</type>
+          <defname>w</defname>
+        </param>
+        <briefdescription>
+<para>Writes lines describing a subset (vertex of a merge tree) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A csv.writer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertex index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/domino_model.py" line="632" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="632" bodyend="647"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Management of a model using DOMINO. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This class is only available in Python. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/domino_model.py" line="37" column="1" bodyfile="lib/IMP/EMageFit/domino_model.py" bodystart="37" bodyend="1005"/>
+    <listofallmembers>
+      <member refid="classdomino__model_1_1DominoModel_1a99d0fb690f56cd814aa29d47ab26263b" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>add_branch_and_bound_assignments_table</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1afe181ad01c8591a45790446928cba282" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>add_exclusion_filter_table</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a385659fc748a88da8a7a7bb87ec04354" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>add_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1adceb3c988d4dbf5f43346e5b8485c7f5" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>add_restraint_score_filter_table</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a4613dd50f65a8338fa5f9eca065ecfa1" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>align_rigid_bodies_states</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a35a74ca1b70a546b0999a0003f496a36" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>create_coarse_assembly</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a6604f6cdce2e6ebeacc060eeee3c5775" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>create_merge_tree</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1af631bb43cc15a73b313c22426f2f2dd1" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>do_sampling</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ace5344489813ecfc6262b46691109de0" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_assignment_and_RFs</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1aee5fa0ff0a63d52fa41503476715b785" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_assignment_info</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a2252f8505e93706b549ef065d3bb3af0" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_assignment_scores</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1afb9c6370692821fe2d6b3c5d6c8511cf" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_assignment_text</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a071ce9971ba9cba880e81921493c376d" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_assignments_with_heap</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a530c36780db6cf0e79506b7bd60e2942" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_restraint_value_for_assignment</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a95ded8bcea3ae7dfec3688820e1086d1" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_restraints_for_native</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a474e8c7e78fd1827d4daceb644356ba1" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_restraints_names_used</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a8c52d101dad140f7ec22881adcf594f4" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>get_scoring_function</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a4b3918c22728df7fc828c39f7987bba4" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>load_state</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ac29641fb4679e5668a3c76c24d00c880" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>read_merge_tree</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a855b049202f8994a1024966f131a67ff" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_assembly</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a6be16562dfd6cd60f0dbe9fad0c15f55" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_assembly_components</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a116f581015909c05dbe315baebd7c456" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_close_pairs_excluded_volume_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a3d606dd429c6ea8e6d936c7b696fc15f" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_complementarity_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a1256987e4a016842b8c4897f2ab61d1b" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_connectivity_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a96f5c98324f41b93d68f31dac4a9939d" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_em2d_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1adcff7a1a4f7ded9f73cf2955763c83c4" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_native_assembly_for_benchmark</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1af84515bfe595dceb8e4581fded8dc063" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_not_optimized</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a21f90d544df053e12794d1ebbb0578cb" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_pair_score_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a965914208257dbf6b89dd179315b5418" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_rb_states</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a5ffb1a7a75607c20799e50b4469dbbb0" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>set_xlink_restraint</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1af7b0bcd2d57fc85fb46337e6bfe79eb1" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>setup_domino_sampler</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a7ad2e02c8e9af81b8085411c275991aa" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_merge_tree</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ad2712327168dbe6f70cca1c40ec8b376" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_monte_carlo_solution</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a6779a68a9253b8449c4f6f1828792037" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_pdb_for_assignment</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a2d0f06e282a44eade21fb14763ece1c3" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_pdb_for_component</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a04f2b9657fcc4563ce698df9ce4d0493" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_pdb_for_configuration</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1a1315437117a6806ed3b5da1caf7c79ee" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_pdb_for_reference_frames</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ab14f6036e35a70ca0abf6106ab376a71" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_pdbs_for_reference_frames</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ab57338107fb1db4fa5a4c6e3efe0268c" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_solutions_database</name></member>
+      <member refid="classdomino__model_1_1DominoModel_1ae22cd6538a417b40ca19233b2ee2c15f" prot="public" virt="non-virtual"><scope>domino_model::DominoModel</scope><name>write_subset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

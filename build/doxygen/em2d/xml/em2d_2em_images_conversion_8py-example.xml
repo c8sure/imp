@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="em2d_2em_images_conversion_8py-example" kind="example">
+    <compoundname>em2d/em_images_conversion.py</compoundname>
+    <briefdescription>
+<para>Conversion of Electron Microscopy Images. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Conversion of Electron Microscopy Images. <programlisting filename="em2d/em_images_conversion.py"><codeline><highlight class="comment">##<sp/>\example<sp/>em2d/em_images_conversion.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Conversion<sp/>of<sp/>Electron<sp/>Microscopy<sp/>Images.</highlight></codeline>
+<codeline><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1em2d" kindref="compound">IMP.em2d</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;EM<sp/>images<sp/>conversion&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Conversion<sp/>of<sp/>Electron<sp/>Microscopy<sp/>Images.</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Read<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">fn_selection<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;all-1z5s-projections.sel&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">srw<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1SpiderImageReaderWriter" kindref="compound">IMP.em2d.SpiderImageReaderWriter</ref>()</highlight></codeline>
+<codeline><highlight class="normal">trw<sp/>=<sp/><ref refid="classIMP_1_1em2d_1_1TIFFImageReaderWriter" kindref="compound">IMP.em2d.TIFFImageReaderWriter</ref>()</highlight></codeline>
+<codeline><highlight class="normal">fn_images<sp/>=<sp/>IMP.em2d.read_selection_file(fn_selection)</highlight></codeline>
+<codeline><highlight class="normal">fn_images<sp/>=<sp/>[<ref refid="namespaceIMP_1_1em2d_1aabcf212fb9c1128842db5f56ae299605" kindref="member">IMP.em2d.get_example_path</ref>(x)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>fn_images]</highlight></codeline>
+<codeline><highlight class="normal">images<sp/>=<sp/><ref refid="namespaceIMP_1_1em2d_1a9b93ce77266955bd99874dbb269fc87c" kindref="member">IMP.em2d.read_images</ref>(fn_images,<sp/>srw)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>write</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">fn_saved<sp/>=<sp/>IMP.em2d.create_filenames(3,<sp/></highlight><highlight class="stringliteral">&quot;1z5s-projection&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;tif&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1em2d_1a3c4762ec4e3272cd645d012e24b464b3" kindref="member">IMP.em2d.save_images</ref>(images,<sp/>fn_saved,<sp/>trw)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/em2d/em_images_conversion.py"/>
+  </compounddef>
+</doxygen>

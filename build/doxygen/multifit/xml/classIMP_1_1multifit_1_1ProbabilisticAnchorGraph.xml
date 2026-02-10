@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::ProbabilisticAnchorGraph</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/anchor_graph.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a27fa74b081a284ab2f74ec1fa6e70d87" prot="private" static="no">
+        <type>boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::undirectedS, VertexIndexProperty, EdgeWeightProperty &gt;</type>
+        <definition>typedef boost::adjacency_list&lt;boost::vecS, boost::vecS, boost::undirectedS, VertexIndexProperty, EdgeWeightProperty&gt; IMP::multifit::ProbabilisticAnchorGraph::AnchorGraph</definition>
+        <argsstring></argsstring>
+        <name>AnchorGraph</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::AnchorGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="29" column="2" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a78bc19a4bb47e8339a0f1def0b317dde" prot="private" static="no">
+        <type>boost::graph_traits&lt; AnchorGraph const  &gt;</type>
+        <definition>typedef boost::graph_traits&lt;AnchorGraph const&gt; IMP::multifit::ProbabilisticAnchorGraph::Const_GTraits</definition>
+        <argsstring></argsstring>
+        <name>Const_GTraits</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::Const_GTraits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="31" column="31" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ac42de342f2933900b1a32ec7b9cc4a60" prot="private" static="no">
+        <type>boost::property&lt; boost::edge_weight_t, float &gt;</type>
+        <definition>typedef boost::property&lt;boost::edge_weight_t, float&gt; IMP::multifit::ProbabilisticAnchorGraph::EdgeWeightProperty</definition>
+        <argsstring></argsstring>
+        <name>EdgeWeightProperty</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::EdgeWeightProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="24" column="27" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab3924358de0d94bd3f158d831a25deff" prot="private" static="no">
+        <type>GTraits::edge_descriptor</type>
+        <definition>typedef GTraits::edge_descriptor IMP::multifit::ProbabilisticAnchorGraph::GEdge</definition>
+        <argsstring></argsstring>
+        <name>GEdge</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::GEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="33" column="36" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a09b685d0ed967e349d55cbadfd3fd712" prot="private" static="no">
+        <type>boost::graph_traits&lt; AnchorGraph &gt;</type>
+        <definition>typedef boost::graph_traits&lt;AnchorGraph&gt; IMP::multifit::ProbabilisticAnchorGraph::GTraits</definition>
+        <argsstring></argsstring>
+        <name>GTraits</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::GTraits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="30" column="31" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1adae477aa11401579f2fab336af84acc2" prot="private" static="no">
+        <type>GTraits::vertex_descriptor</type>
+        <definition>typedef GTraits::vertex_descriptor IMP::multifit::ProbabilisticAnchorGraph::GVertex</definition>
+        <argsstring></argsstring>
+        <name>GVertex</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::GVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="32" column="38" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab0a21db449162da84a5b2fa97a2fa394" prot="private" static="no">
+        <type>boost::property&lt; boost::vertex_index_t, int &gt;</type>
+        <definition>typedef boost::property&lt;boost::vertex_index_t, int&gt; IMP::multifit::ProbabilisticAnchorGraph::VertexIndexProperty</definition>
+        <argsstring></argsstring>
+        <name>VertexIndexProperty</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::VertexIndexProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="25" column="27" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a4e24dcea16986afaa39170a569280652" prot="private" static="no" mutable="no">
+        <type>AnchorGraph</type>
+        <definition>AnchorGraph IMP::multifit::ProbabilisticAnchorGraph::g_</definition>
+        <argsstring></argsstring>
+        <name>g_</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::g_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="61" column="15" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7a4666afc6b956eb52b5cf994cc7c495" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; GVertex &gt;</type>
+        <definition>std::vector&lt;GVertex&gt; IMP::multifit::ProbabilisticAnchorGraph::id2node_</definition>
+        <argsstring></argsstring>
+        <name>id2node_</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::id2node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="64" column="15" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aff5eabaebf0818e9f3b6ce1386a81a3b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; Particle *, Floats &gt;</type>
+        <definition>std::map&lt;Particle *, Floats&gt; IMP::multifit::ProbabilisticAnchorGraph::particle_to_anchor_probabilities_</definition>
+        <argsstring></argsstring>
+        <name>particle_to_anchor_probabilities_</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::particle_to_anchor_probabilities_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="62" column="12" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6b6fc14de205e3f6590cfffa0dbaa467" prot="private" static="no" mutable="no">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::ProbabilisticAnchorGraph::positions_</definition>
+        <argsstring></argsstring>
+        <name>positions_</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::positions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="63" column="22" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abfe16f182ca11750346b34dd55e0c8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::ProbabilisticAnchorGraph::ProbabilisticAnchorGraph</definition>
+        <argsstring>(algebra::Vector3Ds anchor_positions)</argsstring>
+        <name>ProbabilisticAnchorGraph</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::ProbabilisticAnchorGraph</qualifiedname>
+        <param>
+          <type>algebra::Vector3Ds</type>
+          <declname>anchor_positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6ada36d30eee14e113ebb4ac5b2d294e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::ProbabilisticAnchorGraph::~ProbabilisticAnchorGraph</definition>
+        <argsstring>()</argsstring>
+        <name>~ProbabilisticAnchorGraph</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::~ProbabilisticAnchorGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="58" column="231" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9907bbba7378306f54613ebceeafdd18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProbabilisticAnchorGraph::add_edge</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>add_edge</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::add_edge</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="38" column="8" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9eac35549f083d5d60c2f9fbbd9b0566" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::ProbabilisticAnchorGraph::get_anchors</definition>
+        <argsstring>() const</argsstring>
+        <name>get_anchors</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_anchors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="50" column="22" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9cd1241a4018bf4d052e428a8b28fdd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::multifit::ProbabilisticAnchorGraph::get_are_probabilities_for_particle_set</definition>
+        <argsstring>(Particle *p) const</argsstring>
+        <name>get_are_probabilities_for_particle_set</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_are_probabilities_for_particle_set</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="53" column="8" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7777585517e48794da31ba351b615ef0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntRanges</type>
+        <definition>IntRanges IMP::multifit::ProbabilisticAnchorGraph::get_edge_list</definition>
+        <argsstring>() const</argsstring>
+        <name>get_edge_list</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_edge_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="49" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a0fae35aa7f0d882f7cf7ff97412795b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::ProbabilisticAnchorGraph::get_number_of_anchors</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_anchors</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_number_of_anchors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="47" column="16" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a594ae6fdcd13a45dd1fb44cdf7d19b4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::multifit::ProbabilisticAnchorGraph::get_number_of_edges</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_edges</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_number_of_edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="48" column="16" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a572ce951699d3bd966723e338e8735ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>algebra::Vector3Ds</type>
+        <definition>algebra::Vector3Ds IMP::multifit::ProbabilisticAnchorGraph::get_particle_anchors</definition>
+        <argsstring>(Particle *p, float min_prob=0) const</argsstring>
+        <name>get_particle_anchors</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_particle_anchors</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min_prob</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a8c34f994978cae431376fdf1835e1365" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Floats</type>
+        <definition>Floats IMP::multifit::ProbabilisticAnchorGraph::get_particle_probabilities</definition>
+        <argsstring>(Particle *p) const</argsstring>
+        <name>get_particle_probabilities</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_particle_probabilities</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abc62ec98ee6327466296d5e2a106294e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::ProbabilisticAnchorGraph::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="58" column="34" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a1f40bf6af06636a9d3a05ad2d5c13803" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::ProbabilisticAnchorGraph::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="58" column="103" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab94a576dc10c30919f4d7ee8087883ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProbabilisticAnchorGraph::set_particle_probabilities_on_anchors</definition>
+        <argsstring>(Particle *p, multifit::FittingSolutionRecords sols)</argsstring>
+        <name>set_particle_probabilities_on_anchors</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::set_particle_probabilities_on_anchors</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">multifit::FittingSolutionRecords</ref></type>
+          <declname>sols</declname>
+        </param>
+        <briefdescription>
+<para>Set the probability of a component to be located at each anchor position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fitting solutions of the component </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aa2a1d46319061640c62baf0681b5bfd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::ProbabilisticAnchorGraph::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::multifit::ProbabilisticAnchorGraph::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/anchor_graph.h" line="46" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Probabilistic anchor graph. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/anchor_graph.h" line="22" column="1" bodyfile="include/IMP/multifit/anchor_graph.h" bodystart="22" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9907bbba7378306f54613ebceeafdd18" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>add_edge</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a27fa74b081a284ab2f74ec1fa6e70d87" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>AnchorGraph</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a78bc19a4bb47e8339a0f1def0b317dde" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>Const_GTraits</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ac42de342f2933900b1a32ec7b9cc4a60" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>EdgeWeightProperty</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a4e24dcea16986afaa39170a569280652" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>g_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab3924358de0d94bd3f158d831a25deff" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>GEdge</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9eac35549f083d5d60c2f9fbbd9b0566" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a9cd1241a4018bf4d052e428a8b28fdd0" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_are_probabilities_for_particle_set</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7777585517e48794da31ba351b615ef0" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_edge_list</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a0fae35aa7f0d882f7cf7ff97412795b8" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_number_of_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a594ae6fdcd13a45dd1fb44cdf7d19b4f" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_number_of_edges</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a572ce951699d3bd966723e338e8735ef" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_particle_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a8c34f994978cae431376fdf1835e1365" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_particle_probabilities</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abc62ec98ee6327466296d5e2a106294e" prot="public" virt="virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a1f40bf6af06636a9d3a05ad2d5c13803" prot="public" virt="virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a09b685d0ed967e349d55cbadfd3fd712" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>GTraits</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1adae477aa11401579f2fab336af84acc2" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>GVertex</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a7a4666afc6b956eb52b5cf994cc7c495" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>id2node_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aff5eabaebf0818e9f3b6ce1386a81a3b" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>particle_to_anchor_probabilities_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6b6fc14de205e3f6590cfffa0dbaa467" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>positions_</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1abfe16f182ca11750346b34dd55e0c8af" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>ProbabilisticAnchorGraph</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab94a576dc10c30919f4d7ee8087883ec" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>set_particle_probabilities_on_anchors</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1aa2a1d46319061640c62baf0681b5bfd5" prot="public" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>show</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1ab0a21db449162da84a5b2fa97a2fa394" prot="private" virt="non-virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>VertexIndexProperty</name></member>
+      <member refid="classIMP_1_1multifit_1_1ProbabilisticAnchorGraph_1a6ada36d30eee14e113ebb4ac5b2d294e" prot="public" virt="virtual"><scope>IMP::multifit::ProbabilisticAnchorGraph</scope><name>~ProbabilisticAnchorGraph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

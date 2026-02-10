@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1multifit_1_1Ensemble" kind="class" language="C++" prot="public">
+    <compoundname>IMP::multifit::Ensemble</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IMP::Object</basecompoundref>
+    <includes local="no">IMP/multifit/ensemble_analysis.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1a42a01db32defa7263b21ef80a8b73d5e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">multifit::FittingSolutionRecords</ref> &gt;</type>
+        <definition>std::vector&lt;multifit::FittingSolutionRecords&gt; IMP::multifit::Ensemble::fits_</definition>
+        <argsstring></argsstring>
+        <name>fits_</name>
+        <qualifiedname>IMP::multifit::Ensemble::fits_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="44" column="15" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1a0d17a1222d257620e1156009ff34ae2d" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref></type>
+        <definition>ProteinsAnchorsSamplingSpace IMP::multifit::Ensemble::mapping_data_</definition>
+        <argsstring></argsstring>
+        <name>mapping_data_</name>
+        <qualifiedname>IMP::multifit::Ensemble::mapping_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="46" column="32" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1abcd5cd61f5fd237dbe26276bd0405796" prot="private" static="no" mutable="no">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::multifit::Ensemble::mhs_</definition>
+        <argsstring></argsstring>
+        <name>mhs_</name>
+        <qualifiedname>IMP::multifit::Ensemble::mhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="41" column="21" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1acdccd91ffb1cd470abecc5eb7a02f88e" prot="private" static="no" mutable="no">
+        <type>algebra::ReferenceFrame3Ds</type>
+        <definition>algebra::ReferenceFrame3Ds IMP::multifit::Ensemble::orig_rf_</definition>
+        <argsstring></argsstring>
+        <name>orig_rf_</name>
+        <qualifiedname>IMP::multifit::Ensemble::orig_rf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="45" column="30" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1a8e46850ff0e42ad5dca8cb2427ae2e3f" prot="private" static="no" mutable="no">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::multifit::Ensemble::rbs_</definition>
+        <argsstring></argsstring>
+        <name>rbs_</name>
+        <qualifiedname>IMP::multifit::Ensemble::rbs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="42" column="21" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1a875ab6195f01f1a7608a000aa89df336" prot="private" static="no" mutable="no">
+        <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+        <definition>multifit::SettingsData* IMP::multifit::Ensemble::sd_</definition>
+        <argsstring></argsstring>
+        <name>sd_</name>
+        <qualifiedname>IMP::multifit::Ensemble::sd_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="47" column="26" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1multifit_1_1Ensemble_1a244baa352fc017439fc5d86ddc96ee2d" prot="private" static="no" mutable="no">
+        <type>core::XYZs</type>
+        <definition>core::XYZs IMP::multifit::Ensemble::xyz_</definition>
+        <argsstring></argsstring>
+        <name>xyz_</name>
+        <qualifiedname>IMP::multifit::Ensemble::xyz_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="43" column="14" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1ac3c46ee809eda56b27ed47c510d6b70b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::multifit::Ensemble::Ensemble</definition>
+        <argsstring>(multifit::SettingsData *sd, const ProteinsAnchorsSamplingSpace &amp;mapping_data)</argsstring>
+        <name>Ensemble</name>
+        <qualifiedname>IMP::multifit::Ensemble::Ensemble</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1multifit_1_1SettingsData" kindref="compound">multifit::SettingsData</ref> *</type>
+          <declname>sd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classIMP_1_1multifit_1_1ProteinsAnchorsSamplingSpace" kindref="compound">ProteinsAnchorsSamplingSpace</ref> &amp;</type>
+          <declname>mapping_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a3f19c9ad72ae71ea0210bb22154c1eb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::multifit::Ensemble::~Ensemble</definition>
+        <argsstring>()</argsstring>
+        <name>~Ensemble</name>
+        <qualifiedname>IMP::multifit::Ensemble::~Ensemble</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="38" column="231" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1aaccff3f8521198b49310efcaf86f5ea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::Ensemble::add_component_and_fits</definition>
+        <argsstring>(atom::Hierarchy mh, const multifit::FittingSolutionRecords &amp;fits)</argsstring>
+        <name>add_component_and_fits</name>
+        <qualifiedname>IMP::multifit::Ensemble::add_component_and_fits</qualifiedname>
+        <param>
+          <type>atom::Hierarchy</type>
+          <declname>mh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1multifit_1a591b6b30571ca327ba202d496913e83e" kindref="member">multifit::FittingSolutionRecords</ref> &amp;</type>
+          <declname>fits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="26" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a79b54491052f8514a4782eab5c9592d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>atom::Hierarchies</type>
+        <definition>atom::Hierarchies IMP::multifit::Ensemble::get_molecules</definition>
+        <argsstring>() const</argsstring>
+        <name>get_molecules</name>
+        <qualifiedname>IMP::multifit::Ensemble::get_molecules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="28" column="21" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1aa827725129407831e916b4cefdcfb7d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>core::RigidBodies</type>
+        <definition>core::RigidBodies IMP::multifit::Ensemble::get_rigid_bodies</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rigid_bodies</name>
+        <qualifiedname>IMP::multifit::Ensemble::get_rigid_bodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="29" column="21" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a800b1ebb84ae8bc91f1aaa76bb197978" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float IMP::multifit::Ensemble::get_rmsd</definition>
+        <argsstring>(const core::XYZs &amp;second_xyz) const</argsstring>
+        <name>get_rmsd</name>
+        <qualifiedname>IMP::multifit::Ensemble::get_rmsd</qualifiedname>
+        <param>
+          <type>const core::XYZs &amp;</type>
+          <declname>second_xyz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="30" column="9" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a8050bc468340392b27ca0a34ca6c7d9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::multifit::Ensemble::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::multifit::Ensemble::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="38" column="34" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a5a02b2e14f7be4f3b790040d17db2477" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::multifit::Ensemble::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::multifit::Ensemble::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="38" column="103" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1a63d760baee6c3c703f9ee51a9cab91b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::Ensemble::load_combination</definition>
+        <argsstring>(Ints fit_comb)</argsstring>
+        <name>load_combination</name>
+        <qualifiedname>IMP::multifit::Ensemble::load_combination</qualifiedname>
+        <param>
+          <type>Ints</type>
+          <declname>fit_comb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1ab548ecd7cbd42c2edc976c73f8b0d778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; Floats &gt;</type>
+        <definition>std::vector&lt; Floats &gt; IMP::multifit::Ensemble::score_by_restraints</definition>
+        <argsstring>(Restraints rs, const IntsList &amp;combinations)</argsstring>
+        <name>score_by_restraints</name>
+        <qualifiedname>IMP::multifit::Ensemble::score_by_restraints</qualifiedname>
+        <param>
+          <type>Restraints</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>const IntsList &amp;</type>
+          <declname>combinations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="35" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1multifit_1_1Ensemble_1ac3113a6291dd0edae1612d3f781606c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::multifit::Ensemble::unload_combination</definition>
+        <argsstring>(Ints fit_comb)</argsstring>
+        <name>unload_combination</name>
+        <qualifiedname>IMP::multifit::Ensemble::unload_combination</qualifiedname>
+        <param>
+          <type>Ints</type>
+          <declname>fit_comb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/multifit/ensemble_analysis.h" line="25" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An ensemble of fitting solutions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/IMP/multifit/ensemble_analysis.h" line="22" column="1" bodyfile="include/IMP/multifit/ensemble_analysis.h" bodystart="22" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1aaccff3f8521198b49310efcaf86f5ea9" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>add_component_and_fits</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1ac3c46ee809eda56b27ed47c510d6b70b" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>Ensemble</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a42a01db32defa7263b21ef80a8b73d5e" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>fits_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a79b54491052f8514a4782eab5c9592d0" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>get_molecules</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1aa827725129407831e916b4cefdcfb7d2" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>get_rigid_bodies</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a800b1ebb84ae8bc91f1aaa76bb197978" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>get_rmsd</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a8050bc468340392b27ca0a34ca6c7d9d" prot="public" virt="virtual"><scope>IMP::multifit::Ensemble</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a5a02b2e14f7be4f3b790040d17db2477" prot="public" virt="virtual"><scope>IMP::multifit::Ensemble</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a63d760baee6c3c703f9ee51a9cab91b5" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>load_combination</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a0d17a1222d257620e1156009ff34ae2d" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>mapping_data_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1abcd5cd61f5fd237dbe26276bd0405796" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>mhs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1acdccd91ffb1cd470abecc5eb7a02f88e" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>orig_rf_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a8e46850ff0e42ad5dca8cb2427ae2e3f" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>rbs_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1ab548ecd7cbd42c2edc976c73f8b0d778" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>score_by_restraints</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a875ab6195f01f1a7608a000aa89df336" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>sd_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1ac3113a6291dd0edae1612d3f781606c0" prot="public" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>unload_combination</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a244baa352fc017439fc5d86ddc96ee2d" prot="private" virt="non-virtual"><scope>IMP::multifit::Ensemble</scope><name>xyz_</name></member>
+      <member refid="classIMP_1_1multifit_1_1Ensemble_1a3f19c9ad72ae71ea0210bb22154c1eb0" prot="public" virt="virtual"><scope>IMP::multifit::Ensemble</scope><name>~Ensemble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

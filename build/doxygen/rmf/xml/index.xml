@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data" kind="struct"><name>IMP::rmf::HierarchyLoadLink::Data</name>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a917ac74b62f007a237ea22f93a1e02e8" kind="variable"><name>load_bonds</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a56c048d01b0d83cf9c8453943c1bc6b7" kind="variable"><name>load_gaussians</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c63eec7089a378c109649a02e6ed821" kind="variable"><name>load_rigid_bodies</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1afaa63ced50723e7a40e4951e84a154e6" kind="variable"><name>load_static</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a58f26cd5cd286dbeac20fcb5f1a194e5" kind="variable"><name>load_xyzs</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchyLoadLink_1_1Data_1a6c26a823ad51375aa1405f44ecf79ded" kind="function"><name>Data</name></member>
+  </compound>
+  <compound refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data" kind="struct"><name>IMP::rmf::HierarchySaveLink::Data</name>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1abf2da484f1cab925a866fe8060c694a6" kind="variable"><name>save_bonds</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a29e9d6ef7a2a353a043349357bf52c11" kind="variable"><name>save_gaussians</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a6bcf177ba16edf6d7572d32fa090ffed" kind="variable"><name>save_rigid_bodies</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1acf96c99ca45f94bdaf70d8516b3d1d23" kind="variable"><name>save_static</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a816e0a31770d69789df633cf83a28ea6" kind="variable"><name>save_xyzs</name></member>
+    <member refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data_1a014f2f69706ea90b4a541ba7c10975f5" kind="function"><name>Data</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1HierarchyLoadLink" kind="class"><name>IMP::rmf::HierarchyLoadLink</name>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab713ba2273fe7306c88238633e615c2a" kind="typedef"><name>DM</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a83adb94b2ca5254cc23d405b8f26af16" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7100201e0c97adc0afb53aa11295746" kind="variable"><name>af_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1acb3087e104a1fdba7030fa2e6108a1cf" kind="variable"><name>clustpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a42c269201247e152517a607c8a17a404" kind="variable"><name>combpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9c9aebeaf65c4ea91dc786faa644f128" kind="variable"><name>data_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a757c5dc729791f273b361a3109100ee6" kind="variable"><name>explicit_resolution_factory_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a22f5acfa09a961104afe405f41679b97" kind="variable"><name>external_rigid_body_key_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ae598706d6e25d03106c28fef350ef135" kind="variable"><name>filtpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aeb21380e025e619aa4423c80f90cb93a" kind="variable"><name>intermediate_particle_factory_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a3f3a3e9382088de083351926dd8ef9b6" kind="variable"><name>reference_frame_factory_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a801567845915542fda6a5f618d490e91" kind="variable"><name>samppf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1affab7e8199deafe5215cc37b15b3ff54" kind="variable"><name>scriptpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a972d7cd732df81035fd085a65eb7b804" kind="variable"><name>softpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a97c89a5c3b64babffa29122c3bfa47bc" kind="variable"><name>strucpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a457f6759860d684136f977bda083e6c6" kind="function"><name>add_link_recursive</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1adb414343f11c2bf660fc4c2eb15cc85c" kind="function"><name>create_one_provenance</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ab195af37f3bbfc88e27e79d51827046f" kind="function"><name>create_provenance</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a059eeaba16e24a7e3e1a6eb319ad8347" kind="function"><name>create_recursive</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1af7353515816d2e316316e472fb6b32dd" kind="function"><name>do_add_link</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a282f6e653575008239e149dbbdef1a2b" kind="function"><name>do_create</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1acd3b1ad9deee46dfa04acd28c4657419" kind="function"><name>do_create</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a633bea4602d23122e98db9350cfbbd22" kind="function"><name>do_load_one</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a658afa8a6822b452fa63b543cd267b73" kind="function"><name>get_is</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a9ad11ee81d4673d7716254bd0c00bd61" kind="function"><name>do_link_particle</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aecf46029c51bfaf16f02092f617f6f37" kind="function"><name>do_load_hierarchy</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa017db1cdf052be7f5a8e9e0351c2be1" kind="function"><name>do_setup_particle</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a976388854b4d0acf4500e8a2996566a8" kind="function"><name>HierarchyLoadLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a698cb3a465f06b8aa515010998ef2ed6" kind="function"><name>~HierarchyLoadLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1aa24f9efc9fca101636744769c3f479b7" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1a51cd666b48b447c287b1f1e64f220a3d" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchyLoadLink_1ad0b1516c140b565b9b8f8bb536b06087" kind="function"><name>get_name</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1HierarchySaveLink" kind="class"><name>IMP::rmf::HierarchySaveLink</name>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2cf1a70d9f0277ba81c7fa7710942434" kind="typedef"><name>DM</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bcb360aa107592a280ea84c1b7cae24" kind="typedef"><name>P</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a5c276d76ff1bbf1a0a4b2879cc599139" kind="variable"><name>af_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a52350182f56f3336b419d7c9b693201f" kind="variable"><name>clustpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a0bd947bcb38879530bd9198e2671880e" kind="variable"><name>combpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a312878d7e7c70ccc0f050e27035a7c4b" kind="variable"><name>data_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1ad582dd24d563a5427e0dc6c450233e30" kind="variable"><name>explicit_resolution_factory_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1af86e5237df50e807923e0611573a7d06" kind="variable"><name>external_rigid_body_key_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a76b57540c4e148b6c38bb8e163e4fe76" kind="variable"><name>filtpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a51b414e0048dba78383b237546d869de" kind="variable"><name>samppf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bdb6eb29aec6c7068ebf69c36703318" kind="variable"><name>scriptpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1aaef0ec8c1d59d623cec75411cffedbfd" kind="variable"><name>softpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1ab0d060e2b3bc2604d528601d3a431673" kind="variable"><name>strucpf_</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1aa516fb8b3a76457c092faef7707799fb" kind="function"><name>add_provenance</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a9a269c9979c9d3e889d093e286aaf46d" kind="function"><name>add_recursive</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a295fed0a81adfcbd20a96374b80f47ff" kind="function"><name>do_add</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a0890e87956705c4393176ce8d35d935f" kind="function"><name>do_save_one</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a30621a05d33b4d829fe85db12555348e" kind="function"><name>get_type</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1acad2966f5813309997bdb1b89a4106f4" kind="function"><name>do_save_hierarchy</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1acb5c102fbadac34930f053c2ed03bd42" kind="function"><name>do_setup_node</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a99db1e62eec4cd432b13fb9fa9f43985" kind="function"><name>HierarchySaveLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a46036547f78ae4c5cf8b8106c46b3df0" kind="function"><name>~HierarchySaveLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a93173f1790a2e57f5fbdb4493bed2479" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a570a24f2be728bd61e279e913ae50992" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a9686c8da0bc4953d6474401d8c868681" kind="function"><name>get_name</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1LoadLink" kind="class"><name>IMP::rmf::LoadLink</name>
+    <member refid="classIMP_1_1rmf_1_1LoadLink_1afd534bd02c606495c6270f7910b869e2" kind="variable"><name>frame_loaded_</name></member>
+    <member refid="classIMP_1_1rmf_1_1LoadLink_1a6396a96afbc73eb79623843c93ef625b" kind="function"><name>LoadLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1LoadLink_1a5449011cd422f5813017372626ae90f4" kind="function"><name>do_load</name></member>
+    <member refid="classIMP_1_1rmf_1_1LoadLink_1a25147ebd8f5982ba6c44b3d9a20f0a0a" kind="function"><name>load</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1SaveLink" kind="class"><name>IMP::rmf::SaveLink</name>
+    <member refid="classIMP_1_1rmf_1_1SaveLink_1a0dedd02f2ac0de5b7166b8c4908919af" kind="variable"><name>frame_saved_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveLink_1a0e23e6b3dfcf3e8915afa7251863be6d" kind="function"><name>SaveLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveLink_1a4fa356140cc45ad5abd65e22d9e01b05" kind="function"><name>do_save</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveLink_1aa06d8e546e7b9181db48bf984f40666f" kind="function"><name>save</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1SaveOptimizerState" kind="class"><name>IMP::rmf::SaveOptimizerState</name>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a55368625321b7f93e25f04175c4dcd1a" kind="variable"><name>fh_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a5b3382077eaa3f1a3b81a7f032607b62" kind="variable"><name>sim_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aba24e4f4ffe8503079a40eb80852c6da" kind="function"><name>SaveOptimizerState</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a4c94527dc70f4f76fabe330fcfba8172" kind="function"><name>~SaveOptimizerState</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1ab5c4d7347aa23213a1889641865852e3" kind="function"><name>do_update</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a29063b86db60af487b8bb3bee1280922" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aa2be9922499fe17fe1211121c3e3ad04" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1aaf387b770701f90b639953345671c103" kind="function"><name>set_simulator</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1a47bf3336f8c97c81b4a0eacd45da6b22" kind="function"><name>update_always</name></member>
+    <member refid="classIMP_1_1rmf_1_1SaveOptimizerState_1ad171be75fae16dc0c8e7d2278b4ec8fb" kind="function"><name>update_always</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1SimpleLoadLink" kind="class"><name>IMP::rmf::SimpleLoadLink</name>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1af06d7148b5ffa48aea3200bf4cad3ef7" kind="variable"><name>nhs_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1abd284b875a17cea5b9e74a66dba9c468" kind="variable"><name>os_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a46b6c6dafc78962a5ef2499ce8769ccf" kind="function"><name>SimpleLoadLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a0d56c63582a4e8fa51a24955069fa9a3" kind="function"><name>add_link</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1aa151862b38aae3628b37400bd11286c2" kind="function"><name>do_add_link</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a5e9217c073c3ff2bf177410c93622568" kind="function"><name>do_create</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ad40232b276159ffff9fa6a34ee105034" kind="function"><name>do_create</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1ab6b853964960aae30f22690991fe2daf" kind="function"><name>do_load</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a7668ecfcaf2cca8f20a64084ba2a5251" kind="function"><name>do_load_one</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a697b6c69d8217dee28221eb8c54ae42a" kind="function"><name>get_is</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1afb8ae08602bdec544d7874cc589fd8de" kind="function"><name>create</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a8c2fc3ae53ebbbbe1245bd9f0573a13b" kind="function"><name>create</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleLoadLink_1a1abc7e5b88ed526783b7163b54bcd2fb" kind="function"><name>link</name></member>
+  </compound>
+  <compound refid="classIMP_1_1rmf_1_1SimpleSaveLink" kind="class"><name>IMP::rmf::SimpleSaveLink</name>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a0f09d8d27f2802b398f95d5f875a229e" kind="variable"><name>nhs_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a66ffaf6c1898862460bfb140fa731a82" kind="variable"><name>os_</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7c23dbc3ecfb1fa49e34004e256d7d2e" kind="function"><name>SimpleSaveLink</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1af0c72c2c33df002684ed8f62f9377ddf" kind="function"><name>add_link</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a3df72fafd16364521124ab382fa75083" kind="function"><name>do_add</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a028d2237ae569a4c5b0fd288a930f354" kind="function"><name>do_save</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a62608136b0a77a1551a11e26bc30c279" kind="function"><name>do_save_one</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1adf8cff94e1aa553eeddb48f737b46745" kind="function"><name>get_type</name></member>
+    <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7791c6cc493f92174507c003a068136b" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="namespacegeometry" kind="namespace"><name>geometry</name>
+    <member refid="geometry_8py_1a1bdadaedf224e538fbde98574111de35" kind="variable"><name>bb</name></member>
+    <member refid="geometry_8py_1a56969014a82e60143eefa395c83cb2d6" kind="variable"><name>f</name></member>
+    <member refid="geometry_8py_1a627c42b9885cf663774c87d9747fb550" kind="variable"><name>g</name></member>
+    <member refid="geometry_8py_1a7b31516f28aee594f02753a24a048b67" kind="variable"><name>gs</name></member>
+    <member refid="geometry_8py_1a9be803c7162bb9f2032d8ea4ef21703b" kind="variable"><name>tfn</name></member>
+  </compound>
+  <compound refid="namespaceIMP" kind="namespace"><name>IMP</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1rmf" kind="namespace"><name>IMP::rmf</name>
+    <member refid="namespaceIMP_1_1rmf_1ae9ce729d949656bb507f384f5220d05a" kind="function"><name>get_node_from_association</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a91e1e8ae4ea55d0e06fa26d626970d92" kind="function"><name>get_node_from_association</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a74acc7e3e31eab6ceaad0fe0131f0cfe" kind="function"><name>get_has_associated_node</name></member>
+    <member refid="namespaceIMP_1_1rmf_1adbc5eb9278e61f0a4449eb181cbd2a74" kind="function"><name>add_hierarchies</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a9f63044bfe82f715e14e819e1ae3a2f4" kind="function"><name>add_hierarchies</name></member>
+    <member refid="namespaceIMP_1_1rmf_1afb3c4144b9161813668b971b21295c8e" kind="function"><name>add_hierarchy</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a34bff2a310116bc205e199ae6442be5d" kind="function"><name>create_hierarchies</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a5bc1f4e588466260be12aba4bac30255" kind="function"><name>link_hierarchies</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a1e82ba0d49253886a57e4a40ab94921b" kind="function"><name>add_geometries</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a668d6ac6858b6abf9b1f559bd6dec3a9" kind="function"><name>add_geometries</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a0ac7c6f0adcb9b11b23b43c55a970998" kind="function"><name>add_static_geometries</name></member>
+    <member refid="namespaceIMP_1_1rmf_1ac527cf5f24b42ec60119b3ff253781ba" kind="function"><name>add_geometry</name></member>
+    <member refid="namespaceIMP_1_1rmf_1ae6466f86dceab595e9eb6c5a522a7508" kind="function"><name>create_geometries</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a6d17be350f7a9ee7f5ca0859ca9718e5" kind="function"><name>link_geometries</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a3ec708eaea5f9a236c558f0759ff0e3e" kind="function"><name>add_particles</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a3d3bf9a9a6ceb4aaaae7d699f2243573" kind="function"><name>add_particles</name></member>
+    <member refid="namespaceIMP_1_1rmf_1abf6e3fa733ef668bb985ed3e52f88187" kind="function"><name>add_particle</name></member>
+    <member refid="namespaceIMP_1_1rmf_1af3c5165b1f2cb083d98c36bd202ef275" kind="function"><name>create_particles</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a5736b0372c4c5f8344d093882d883702" kind="function"><name>link_particles</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a967b0af7b1880fb5a3bddb0c777e62f7" kind="function"><name>add_restraints</name></member>
+    <member refid="namespaceIMP_1_1rmf_1aaf27d994f713670f6c74cabef6fe518b" kind="function"><name>add_restraints</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a2308cb4a180c1c885f7dda0c13592b8f" kind="function"><name>add_restraint</name></member>
+    <member refid="namespaceIMP_1_1rmf_1ae393fe01981d8d3b03b431d3d4b26722" kind="function"><name>create_restraints</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a69153635f445884aa2650e5846a160ae" kind="function"><name>link_restraints</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a0f18215b4ec2d33724d0ac6aa88601d6" kind="function"><name>add_restraints_as_bonds</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a1beaf6f632cd1f9d0f623b916bbd3fa3" kind="function"><name>set_maximum_number_of_terms</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a8d48e73186b5ed363596506b44c32d6c" kind="function"><name>get_module_version</name></member>
+    <member refid="namespaceIMP_1_1rmf_1af8f1cd132718b20fd822de94ab8d0a76" kind="function"><name>get_module_name</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a19dca802fd497aab5f17e09852358728" kind="function"><name>get_data_path</name></member>
+    <member refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kind="function"><name>get_example_path</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a425a7dcdde083034c58a726a2b9d7350" kind="typedef"><name>AssociationType</name></member>
+    <member refid="namespaceIMP_1_1rmf_1acb6ac1b816d176053c2a78d3154cf315" kind="typedef"><name>LoadLinks</name></member>
+    <member refid="namespaceIMP_1_1rmf_1acfe2ddfcc50b422d81f21339b841cfd9" kind="typedef"><name>LoadLinksTemp</name></member>
+    <member refid="namespaceIMP_1_1rmf_1aa8acef5aeb23091606a8cc774387c8f6" kind="typedef"><name>SaveLinks</name></member>
+    <member refid="namespaceIMP_1_1rmf_1aa6d5a036b45fdd1082ce9ecb8eaa2afc" kind="typedef"><name>SaveLinksTemp</name></member>
+    <member refid="namespaceIMP_1_1rmf_1aab853cbb1b6a4cedd08e08ada95e5cee" kind="function"><name>get_association</name></member>
+    <member refid="namespaceIMP_1_1rmf_1abc15209a0aef0e859c99ce00659ebdfb" kind="function"><name>load_frame</name></member>
+    <member refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kind="function"><name>save_frame</name></member>
+    <member refid="namespaceIMP_1_1rmf_1a6be38fec78e589e2c5368b4c34522edd" kind="function"><name>set_association</name></member>
+  </compound>
+  <compound refid="namespacelink" kind="namespace"><name>link</name>
+    <member refid="link_8py_1a1ce2f8bcb35986bc3b782dce13e0a8ad" kind="variable"><name>h</name></member>
+    <member refid="link_8py_1a61e58e98cd9d16e56f9d5077c358e472" kind="variable"><name>m</name></member>
+    <member refid="link_8py_1acb5502de60fcd50a14dda5d27967c64a" kind="variable"><name>rh</name></member>
+    <member refid="link_8py_1aa45d6a1210d348a017adfd0c8f5ce659" kind="variable"><name>tfn</name></member>
+  </compound>
+  <compound refid="namespacemultiresolution" kind="namespace"><name>multiresolution</name>
+    <member refid="multiresolution_8py_1accc65d83eb9b044a182a0be20ed5e963" kind="variable"><name>chains</name></member>
+    <member refid="multiresolution_8py_1a9b46d71f174dfffddff93313b03aaf80" kind="variable"><name>fn</name></member>
+    <member refid="multiresolution_8py_1aff64c26f97c8dea7650dc689e09c7263" kind="variable"><name>h</name></member>
+    <member refid="multiresolution_8py_1a91449d2c67fc6ff65718fd0291768e3d" kind="variable"><name>lr</name></member>
+    <member refid="multiresolution_8py_1a9273335deb8924e53d1c7379f7ce50ae" kind="variable"><name>lvs</name></member>
+    <member refid="multiresolution_8py_1ad1467480fe8c03fcee6f641b3734447a" kind="variable"><name>m</name></member>
+    <member refid="multiresolution_8py_1accfe0acaa104e9ba1f81f9b30fe83878" kind="variable"><name>me</name></member>
+    <member refid="multiresolution_8py_1aa2a9be54023a030e481ceb72665791ce" kind="variable"><name>pdbname</name></member>
+    <member refid="multiresolution_8py_1ab9f992575ec44e9ef70203e8e652b740" kind="variable"><name>res</name></member>
+    <member refid="multiresolution_8py_1ac1fa9589634cb703a8e14cf07e9af71a" kind="variable"><name>rmf</name></member>
+    <member refid="multiresolution_8py_1ad2721f315c84e676ecda76d082b7f4e1" kind="function"><name>recursive_approximation</name></member>
+  </compound>
+  <compound refid="namespacepdb" kind="namespace"><name>pdb</name>
+    <member refid="pdb_8py_1a0c708817035ce954157c8abff4a2a47e" kind="variable"><name>h</name></member>
+    <member refid="pdb_8py_1a1bc7bb4c6f93bed851a3186e71e00637" kind="variable"><name>hps</name></member>
+    <member refid="pdb_8py_1abc3cd150682e30e40f3adfb2f1e3c910" kind="variable"><name>m</name></member>
+    <member refid="pdb_8py_1a0601ee40d643c782aba93ae0a508d96d" kind="variable"><name>rh</name></member>
+    <member refid="pdb_8py_1a96f58b1c86a36c87cb24443f3725c918" kind="variable"><name>tfn</name></member>
+  </compound>
+  <compound refid="namespacesimulation" kind="namespace"><name>simulation</name>
+    <member refid="simulation_8py_1a230e0f73aa58602e577406185ad68b7c" kind="variable"><name>bb</name></member>
+    <member refid="simulation_8py_1a9938899a53155f9fabc24c11adc10e7a" kind="variable"><name>bbr</name></member>
+    <member refid="simulation_8py_1af1f602abdeee260d4877ee13f7336edf" kind="variable"><name>bbss</name></member>
+    <member refid="simulation_8py_1a83db5bf41a3f9f9c3068fc9133c750b8" kind="variable"><name>bd</name></member>
+    <member refid="simulation_8py_1a39d802bc0dfab65fa300994396d2d22b" kind="variable"><name>ev</name></member>
+    <member refid="simulation_8py_1ac9c0e1ff392481f1e99da382dbdce2c2" kind="variable"><name>frames</name></member>
+    <member refid="simulation_8py_1afa93b8f41dfc6fca9e3becebe2707a6b" kind="variable"><name>h</name></member>
+    <member refid="simulation_8py_1a3c920e590d8aace51e47d872465d110c" kind="variable"><name>hr</name></member>
+    <member refid="simulation_8py_1aab0096894d992f4651c63a3d10b29355" kind="variable"><name>k</name></member>
+    <member refid="simulation_8py_1a5d37200dfe576ad4f08643751f3c7e25" kind="variable"><name>link</name></member>
+    <member refid="simulation_8py_1abbfc13431b7a58ed6af162fe7865663e" kind="variable"><name>m</name></member>
+    <member refid="simulation_8py_1ad0d7cdb06283bfb7bd88add626ac01d2" kind="variable"><name>np</name></member>
+    <member refid="simulation_8py_1a41eaa145dace1a706dde1bf063385560" kind="variable"><name>os</name></member>
+    <member refid="simulation_8py_1ab36f3ef08d83880b292354778ca64d66" kind="variable"><name>pl</name></member>
+    <member refid="simulation_8py_1aa37087d4f0f8ba8ef52df15c2037c148" kind="variable"><name>pp</name></member>
+    <member refid="simulation_8py_1a0e5cd196f5be4b12b932aa12ef22ce0b" kind="variable"><name>ps</name></member>
+    <member refid="simulation_8py_1ab9d28c23e0720db122fd451da0dff7be" kind="variable"><name>r</name></member>
+    <member refid="simulation_8py_1a91786b63665e909311c16d3777c8f33c" kind="variable"><name>rmf</name></member>
+    <member refid="simulation_8py_1a1e418f48966108d73f12536d2c5b1b29" kind="variable"><name>rs</name></member>
+    <member refid="simulation_8py_1aa5c7d0e51f5fb7d0b85ab590373a3641" kind="variable"><name>sf</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="IMP__rmf_8dox" kind="file"><name>IMP_rmf.dox</name>
+  </compound>
+  <compound refid="geometry_8py" kind="file"><name>geometry.py</name>
+  </compound>
+  <compound refid="link_8py" kind="file"><name>link.py</name>
+  </compound>
+  <compound refid="multiresolution_8py" kind="file"><name>multiresolution.py</name>
+  </compound>
+  <compound refid="pdb_8py" kind="file"><name>pdb.py</name>
+  </compound>
+  <compound refid="simulation_8py" kind="file"><name>simulation.py</name>
+  </compound>
+  <compound refid="associations_8h" kind="file"><name>associations.h</name>
+  </compound>
+  <compound refid="atom__io_8h" kind="file"><name>atom_io.h</name>
+  </compound>
+  <compound refid="atom__links_8h" kind="file"><name>atom_links.h</name>
+  </compound>
+  <compound refid="frames_8h" kind="file"><name>frames.h</name>
+  </compound>
+  <compound refid="geometry__io_8h" kind="file"><name>geometry_io.h</name>
+  </compound>
+  <compound refid="HierarchyLoadLink_8h" kind="file"><name>HierarchyLoadLink.h</name>
+  </compound>
+  <compound refid="HierarchySaveLink_8h" kind="file"><name>HierarchySaveLink.h</name>
+  </compound>
+  <compound refid="link__macros_8h" kind="file"><name>link_macros.h</name>
+    <member refid="link__macros_8h_1a6aa8259e1765eca3a110a4c6fb926510" kind="define"><name>IMP_DECLARE_LINKERS</name></member>
+    <member refid="link__macros_8h_1a5a12404594ab737ce803e6f3ac5309d0" kind="define"><name>IMP_DEFINE_LINKERS</name></member>
+  </compound>
+  <compound refid="links_8h" kind="file"><name>links.h</name>
+  </compound>
+  <compound refid="particle__io_8h" kind="file"><name>particle_io.h</name>
+  </compound>
+  <compound refid="restraint__io_8h" kind="file"><name>restraint_io.h</name>
+  </compound>
+  <compound refid="rmf__config_8h" kind="file"><name>rmf_config.h</name>
+    <member refid="rmf__config_8h_1ae1d34b65903ae0354fe5885d94d2e44e" kind="define"><name>IMP_RMF_HAS_BOOST_FILESYSTEM</name></member>
+    <member refid="rmf__config_8h_1a3c4082f06359c80b8d06d747b5badb30" kind="define"><name>IMP_RMF_HAS_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="rmf__config_8h_1a24de81204211238643787506658ba1e8" kind="define"><name>IMP_RMF_HAS_BOOST_RANDOM</name></member>
+    <member refid="rmf__config_8h_1ae0a0cc19972ebb10059edf83836b3d0c" kind="define"><name>IMP_RMF_HAS_BOOST_REGEX</name></member>
+    <member refid="rmf__config_8h_1aade899ddc9e9d06ed6f4986756ad88ef" kind="define"><name>IMP_RMF_HAS_BOOST_SYSTEM</name></member>
+    <member refid="rmf__config_8h_1a2aa23b95e34ce1e776f3005f9c8b1094" kind="define"><name>IMP_RMF_HAS_CGAL</name></member>
+    <member refid="rmf__config_8h_1ad52cdadd9e0b8b9a7fc9c8453fc850e1" kind="define"><name>IMP_RMF_HAS_HDF5</name></member>
+    <member refid="rmf__config_8h_1a6ec4cc008d3112981bbd1bad457a0dfc" kind="define"><name>IMP_RMF_HAS_IMP_CGAL</name></member>
+    <member refid="rmf__config_8h_1ae2bbb582d8ae3bf0056e2bd33c80bc1b" kind="define"><name>IMP_RMF_HAS_IMP_EM</name></member>
+    <member refid="rmf__config_8h_1a6356b20545f2f0cce53023f96551acb9" kind="define"><name>IMP_RMF_HAS_IMP_SAXS</name></member>
+    <member refid="rmf__config_8h_1a03b1a4c135b36723fa426d242d4e3d72" kind="define"><name>IMP_RMF_HAS_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="rmf__config_8h_1a68723621962cdb5d3ec4230c9fed6cb3" kind="define"><name>IMP_RMF_HAS_IMP_STATISTICS</name></member>
+    <member refid="rmf__config_8h_1aeddac8eb9cadb5f36fb6458cfc4d83ed" kind="define"><name>IMP_RMF_HAS_NUMPY</name></member>
+    <member refid="rmf__config_8h_1a7244e131744eac2cf998fce25efbc7e4" kind="define"><name>IMP_RMF_HAS_PYTHON_IHM</name></member>
+    <member refid="rmf__config_8h_1a6a8e4ce395430935117bab86b2a6dbf4" kind="define"><name>IMP_RMF_USE_BOOST_FILESYSTEM</name></member>
+    <member refid="rmf__config_8h_1a883d1cc491f4c75afdfecf8357bffd85" kind="define"><name>IMP_RMF_USE_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="rmf__config_8h_1a9af7e89defdd37c662ff2c2809c92cd4" kind="define"><name>IMP_RMF_USE_BOOST_RANDOM</name></member>
+    <member refid="rmf__config_8h_1a57e40e42e35cb8c1a745d5555eaf4ef2" kind="define"><name>IMP_RMF_USE_BOOST_REGEX</name></member>
+    <member refid="rmf__config_8h_1a1f9609bcc46dd7b57f498b615e6d55d4" kind="define"><name>IMP_RMF_USE_BOOST_SYSTEM</name></member>
+    <member refid="rmf__config_8h_1a2563be88a2bbf0000bcb473a566396a4" kind="define"><name>IMP_RMF_USE_CGAL</name></member>
+    <member refid="rmf__config_8h_1a6421bb027efcd73bb606898355cbf162" kind="define"><name>IMP_RMF_USE_HDF5</name></member>
+    <member refid="rmf__config_8h_1a2e623f87d94f13b8b60fdeb7261051cc" kind="define"><name>IMP_RMF_USE_IMP_CGAL</name></member>
+    <member refid="rmf__config_8h_1a3c9e0501cbb40a70b192810d3f3b6b76" kind="define"><name>IMP_RMF_USE_IMP_EM</name></member>
+    <member refid="rmf__config_8h_1a504c3d07f02751c9398c7d4fc6124691" kind="define"><name>IMP_RMF_USE_IMP_SAXS</name></member>
+    <member refid="rmf__config_8h_1ad28249da3a57468e1d3feb605adc56bd" kind="define"><name>IMP_RMF_USE_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="rmf__config_8h_1a609cae7a5366706e742151aee1703093" kind="define"><name>IMP_RMF_USE_IMP_STATISTICS</name></member>
+    <member refid="rmf__config_8h_1a7a59d4e72d5ec911a92689ac479f29b5" kind="define"><name>IMP_RMF_USE_NUMPY</name></member>
+    <member refid="rmf__config_8h_1aaff9f1ca4d71a93e0629899226fb794c" kind="define"><name>IMP_RMF_USE_PYTHON_IHM</name></member>
+    <member refid="rmf__config_8h_1ada3ed1e0f02f111878a2d81c7d768a1e" kind="define"><name>IMPRMF_BEGIN_INTERNAL_NAMESPACE</name></member>
+    <member refid="rmf__config_8h_1ab7fe388ecee16944b657b278dc16fcf4" kind="define"><name>IMPRMF_BEGIN_NAMESPACE</name></member>
+    <member refid="rmf__config_8h_1a57c0bb2084c555bca89926f34964d3db" kind="define"><name>IMPRMF_DEPRECATED_FUNCTION_DECL</name></member>
+    <member refid="rmf__config_8h_1a2d7751361fee2fa32f87a4f4ab96e464" kind="define"><name>IMPRMF_DEPRECATED_FUNCTION_DEF</name></member>
+    <member refid="rmf__config_8h_1a3f0e64c768a14ac529577dab31244d8f" kind="define"><name>IMPRMF_DEPRECATED_HEADER</name></member>
+    <member refid="rmf__config_8h_1a5817ab4a5766cc588219e494d6e9a428" kind="define"><name>IMPRMF_DEPRECATED_MACRO</name></member>
+    <member refid="rmf__config_8h_1a4af1379e4cb5b41eec53fc92ea0388f9" kind="define"><name>IMPRMF_DEPRECATED_METHOD_DECL</name></member>
+    <member refid="rmf__config_8h_1a38d49048c9f5279a3811ba744fd42354" kind="define"><name>IMPRMF_DEPRECATED_METHOD_DEF</name></member>
+    <member refid="rmf__config_8h_1af18a4a1822f371ed2b395851dee808da" kind="define"><name>IMPRMF_DEPRECATED_OBJECT_DECL</name></member>
+    <member refid="rmf__config_8h_1a8c935effe8b7c908d8703fdfb90bb495" kind="define"><name>IMPRMF_DEPRECATED_OBJECT_DEF</name></member>
+    <member refid="rmf__config_8h_1ab7a7024b33cfc22923020c24ed358c0f" kind="define"><name>IMPRMF_DEPRECATED_VALUE_DECL</name></member>
+    <member refid="rmf__config_8h_1ae6c1c45c49a09fb65b93320d253e414e" kind="define"><name>IMPRMF_DEPRECATED_VALUE_DEF</name></member>
+    <member refid="rmf__config_8h_1a427854e21d2448990b4077b4de07aa2d" kind="define"><name>IMPRMF_END_INTERNAL_NAMESPACE</name></member>
+    <member refid="rmf__config_8h_1a52f5779cada73305e3efb47520fef692" kind="define"><name>IMPRMF_END_NAMESPACE</name></member>
+    <member refid="rmf__config_8h_1a04ead459fda656026926976e278c2c89" kind="define"><name>IMPRMF_EXPORT_TEMPLATE</name></member>
+    <member refid="rmf__config_8h_1aabfda00e1a040af16ac17f57908c8a2e" kind="define"><name>IMPRMF_SHOW_WARNINGS</name></member>
+    <member refid="rmf__config_8h_1a966a6824efefec20425b3279ce6ec66e" kind="define"><name>IMPRMFEXPORT</name></member>
+  </compound>
+  <compound refid="RMFWriter_8h" kind="file"><name>RMFWriter.h</name>
+  </compound>
+  <compound refid="SaveOptimizerState_8h" kind="file"><name>SaveOptimizerState.h</name>
+  </compound>
+  <compound refid="simple__links_8h" kind="file"><name>simple_links.h</name>
+  </compound>
+  <compound refid="dir_6a21471d4ae01c437a54209738eb1add" kind="dir"><name>examples</name>
+  </compound>
+  <compound refid="dir_84fc5dba3506812825191c0c043e3c97" kind="dir"><name>generated</name>
+  </compound>
+  <compound refid="dir_a167aae40c677c3890ffc0c70f7bf0b2" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_b0e5a4ae46284fb52ad591e0b1b5b841" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_731ef3eebc543af2ad72766638b673ca" kind="dir"><name>rmf</name>
+  </compound>
+  <compound refid="dir_2ae64e47441209b9a894ac607ecbe1ad" kind="dir"><name>rmf</name>
+  </compound>
+  <compound refid="rmf_2geometry_8py-example" kind="example"><name>rmf/geometry.py</name>
+  </compound>
+  <compound refid="rmf_2link_8py-example" kind="example"><name>rmf/link.py</name>
+  </compound>
+  <compound refid="rmf_2multiresolution_8py-example" kind="example"><name>rmf/multiresolution.py</name>
+  </compound>
+  <compound refid="rmf_2pdb_8py-example" kind="example"><name>rmf/pdb.py</name>
+  </compound>
+  <compound refid="rmf_2simulation_8py-example" kind="example"><name>rmf/simulation.py</name>
+  </compound>
+</doxygenindex>

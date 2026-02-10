@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceimp__general_1_1comparisons" kind="namespace" language="Python">
+    <compoundname>imp_general::comparisons</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="comparisons_8py_1a1e6adb9dd25de9780d6bd9b67fda3715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_assembly_placement_score</definition>
+        <argsstring>(assembly, native_assembly, align=False)</argsstring>
+        <name>get_assembly_placement_score</name>
+        <qualifiedname>imp_general.comparisons.get_assembly_placement_score</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <param>
+          <type>align</type>
+          <defname>align</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Computes the placement score of an assembly respect to the native_assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IMP.atom.Molecule object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IMP.atom.Molecule object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If True, assembly is aligned to native_assembly before calculating the placement score</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="24" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="comparisons_8py_1a6ff59f3433979dc5317e210d997b933e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_ccc</definition>
+        <argsstring>(native_assembly, assembly, resolution, voxel_size, threshold, write_maps=False)</argsstring>
+        <name>get_ccc</name>
+        <qualifiedname>imp_general.comparisons.get_ccc</qualifiedname>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>resolution</type>
+          <defname>resolution</defname>
+        </param>
+        <param>
+          <type>voxel_size</type>
+          <defname>voxel_size</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+        </param>
+        <param>
+          <type>write_maps</type>
+          <defname>write_maps</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Threshold - threshold used for the map of the native assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pixels with values above this threshold in the native map are used for the calculation of the cross_correlation_coefficient</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="129" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="129" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="comparisons_8py_1a1e83fcfdb4a0d7e53f9dd0fbae1b3951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_components_placement_scores</definition>
+        <argsstring>(assembly, native_assembly, align=False)</argsstring>
+        <name>get_components_placement_scores</name>
+        <qualifiedname>imp_general.comparisons.get_components_placement_scores</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <param>
+          <type>align</type>
+          <defname>align</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Compute the placement score of each of the children of an assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function does not do any time of alignment of the coordinates <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IMP.atom.Molecule object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An IMP.atom.Molecule object with the native conformation. Obviously the atoms in assembly and native assembly must be the same </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If True, assembly is aligned to native_assembly before calculating the placement score </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns 2 lists. The first list contains the placement distances of the children. The second list contains the placement angles</para>
+</simplesect>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="40" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="40" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="comparisons_8py_1af2db6c63486c2b9676b3bb9c3af488e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_drms_for_backbone</definition>
+        <argsstring>(assembly, native_assembly)</argsstring>
+        <name>get_drms_for_backbone</name>
+        <qualifiedname>imp_general.comparisons.get_drms_for_backbone</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <briefdescription>
+<para>Measure the DRMS ob the backbone between two assemblies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DRMS is computed for this assembly </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The assembly that acts as a reference</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Notes: 1) The components of the assembly can be proteins or nucleic acids 2) If a protein, the c-alphas are used for calculating the drms 3) If a nucleic acid, the backbone of C4&apos; atoms is used 4) The chains are treated as rigid bodies to speed the calculation.</para>
+<para>WARNING: if the function fails with a segmentation fault, one of the possible problems is that <ref refid="namespaceIMP_1_1em2d" kindref="compound" external="/home/catherine/imp/build/doxygen/em2d/tags">IMP</ref> reads some HETATM as calphas. Check that the chain does not have heteroatoms.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="179" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="comparisons_8py_1a0f6276f6c16660bd96400faf10ffd11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_placement_score_from_coordinates</definition>
+        <argsstring>(model_coords, native_coords)</argsstring>
+        <name>get_placement_score_from_coordinates</name>
+        <qualifiedname>imp_general.comparisons.get_placement_score_from_coordinates</qualifiedname>
+        <param>
+          <type>model_coords</type>
+          <defname>model_coords</defname>
+        </param>
+        <param>
+          <type>native_coords</type>
+          <defname>native_coords</defname>
+        </param>
+        <briefdescription>
+<para>Computes the position error (placement distance) and the orientation error (placement angle) of the coordinates in model_coords respect to the coordinates in native_coords. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>placement distance - translation between the centroids of the coordinates placement angle - Angle in the axis-angle formulation of the rotation aligning the two rigid bodies.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="98" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="98" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="comparisons_8py_1a5d89cce3c0eafc800b20b2936fea46ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imp_general.comparisons.get_placement_scores_from_coordinates</definition>
+        <argsstring>(model_components_coords, native_components_coords)</argsstring>
+        <name>get_placement_scores_from_coordinates</name>
+        <qualifiedname>imp_general.comparisons.get_placement_scores_from_coordinates</qualifiedname>
+        <param>
+          <type>model_components_coords</type>
+          <defname>model_components_coords</defname>
+        </param>
+        <param>
+          <type>native_components_coords</type>
+          <defname>native_components_coords</defname>
+        </param>
+        <briefdescription>
+<para>Computes the placement score for each of the components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_components_coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the coordinates for each component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_components_coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the coordinates for each component in the native assembly</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="78" column="1" bodyfile="lib/IMP/EMageFit/imp_general/comparisons.py" bodystart="78" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/EMageFit/imp_general/comparisons.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

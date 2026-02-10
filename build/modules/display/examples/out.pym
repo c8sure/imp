@@ -1,0 +1,70 @@
+from pymol.cgo import *
+from pymol import cmd
+from pymol.vfont import plain
+data= {}
+curdata= []
+k= 'my particles'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 1, 0, 0,
+SPHERE, 6.95691, 4.25125, 9.67988, 1,
+COLOR, 1, 0, 0,
+SPHERE, 6.89855, 5.02719, -5.10512, 1,
+COLOR, 1, 0, 0,
+SPHERE, -2.31294, -9.01674, 0.306064, 1,
+COLOR, 1, 0, 0,
+SPHERE, 0.418937, -3.51645, 9.43521, 1,
+COLOR, 1, 0, 0,
+SPHERE, 8.40652, 8.31954, -4.61094, 1,
+COLOR, 1, 0, 0,
+SPHERE, 9.4617, -8.5222, 0.421021, 1,
+COLOR, 1, 0, 0,
+SPHERE, -0.62735, -3.84575, -1.80676, 1,
+COLOR, 1, 0, 0,
+SPHERE, 0.681281, -2.92227, -7.97528, 1,
+COLOR, 1, 0, 0,
+SPHERE, 4.82533, 5.27776, 3.80065, 1,
+COLOR, 1, 0, 0,
+SPHERE, 8.36012, -9.66961, 6.15861, 1,
+]
+k= 'my particles'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+k= 'my other particles'
+if not k in data.keys():
+   data[k]=[]
+curdata=[
+COLOR, 0, 1, 0,
+SPHERE, 6.3586, 1.67793, 7.52873, 1,
+COLOR, 0, 1, 0,
+SPHERE, -8.09334, 0.950385, -5.5715, 1,
+COLOR, 0, 1, 0,
+SPHERE, 3.73556, -5.13642, -4.00064, 1,
+COLOR, 0, 1, 0,
+SPHERE, 3.79785, -1.03234, 6.69015, 1,
+COLOR, 0, 1, 0,
+SPHERE, -0.173583, -5.48366, 3.89112, 1,
+COLOR, 0, 1, 0,
+SPHERE, 2.37491, -2.1828, -9.31828, 1,
+COLOR, 0, 1, 0,
+SPHERE, 8.61683, 2.48894, 1.42786, 1,
+COLOR, 0, 1, 0,
+SPHERE, 0.494179, 3.45777, -8.94517, 1,
+COLOR, 0, 1, 0,
+SPHERE, 0.297886, -1.88005, -6.3142, 1,
+COLOR, 0, 1, 0,
+SPHERE, 0.208009, -9.20747, -8.72291, 1,
+]
+k= 'my other particles'
+if k in data.keys():
+  data[k]= data[k]+curdata
+else:
+  data[k]= curdata
+
+for k in data.keys():
+  cmd.load_cgo(data[k], k, 1)
+data= {}

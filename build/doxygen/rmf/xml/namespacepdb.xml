@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespacepdb" kind="namespace" language="Python">
+    <compoundname>pdb</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="pdb_8py_1a0c708817035ce954157c8abff4a2a47e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pdb.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>pdb.h</qualifiedname>
+        <initializer>=  IMP.atom.read_pdb(<ref refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kindref="member">IMP.rmf.get_example_path</ref>(&quot;simple.pdb&quot;), m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/pdb.py" line="15" column="1" bodyfile="examples/rmf/pdb.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="pdb_8py_1a1bc7bb4c6f93bed851a3186e71e00637" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pdb.hps</definition>
+        <argsstring></argsstring>
+        <name>hps</name>
+        <qualifiedname>pdb.hps</qualifiedname>
+        <initializer>=  <ref refid="namespaceIMP_1_1rmf_1a34bff2a310116bc205e199ae6442be5d" kindref="member">IMP.rmf.create_hierarchies</ref>(rh, m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/pdb.py" line="43" column="1" bodyfile="examples/rmf/pdb.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="pdb_8py_1abc3cd150682e30e40f3adfb2f1e3c910" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pdb.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>pdb.m</qualifiedname>
+        <initializer>=  IMP.Model()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/pdb.py" line="12" column="1" bodyfile="examples/rmf/pdb.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="pdb_8py_1a0601ee40d643c782aba93ae0a508d96d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pdb.rh</definition>
+        <argsstring></argsstring>
+        <name>rh</name>
+        <qualifiedname>pdb.rh</qualifiedname>
+        <initializer>=  RMF.create_rmf_file(tfn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/pdb.py" line="22" column="1" bodyfile="examples/rmf/pdb.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="pdb_8py_1a96f58b1c86a36c87cb24443f3725c918" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str pdb.tfn</definition>
+        <argsstring></argsstring>
+        <name>tfn</name>
+        <qualifiedname>pdb.tfn</qualifiedname>
+        <initializer>=  &quot;pdb.rmf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/rmf/pdb.py" line="17" column="1" bodyfile="examples/rmf/pdb.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="examples/rmf/pdb.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="rmf_2multiresolution_8py-example" kind="example">
+    <compoundname>rmf/multiresolution.py</compoundname>
+    <briefdescription>
+<para>In this example a pdb is converted into a multiresolution model, somewhat painfully. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In this example a pdb is converted into a multiresolution model, somewhat painfully. <programlisting filename="rmf/multiresolution.py"><codeline><highlight class="comment">##<sp/>\example<sp/>rmf/multiresolution.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>In<sp/>this<sp/>example<sp/>a<sp/>pdb<sp/>is<sp/>converted<sp/>into<sp/>a<sp/>multiresolution<sp/>model,</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>somewhat<sp/>painfully.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1rmf" kindref="compound">IMP.rmf</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;Create<sp/>a<sp/>multiresolution<sp/>rmf<sp/>file&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pdbname<sp/>=<sp/><ref refid="namespaceIMP_1_1rmf_1ab7e7eabb8372041e0738c3e88b5ccbd1" kindref="member">IMP.rmf.get_example_path</ref>(</highlight><highlight class="stringliteral">&quot;big.pdb&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal">h<sp/>=<sp/>IMP.atom.read_pdb(pdbname,<sp/>m)</highlight></codeline>
+<codeline><highlight class="normal">IMP.atom.add_bonds(h)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">chains<sp/>=<sp/>IMP.atom.get_by_type(h,<sp/>IMP.atom.CHAIN_TYPE)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>IMP.get_bool_flag(</highlight><highlight class="stringliteral">&quot;run_quick_test&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>chains<sp/>=<sp/>[chains[0]]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">recursive_approximation(res):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;approximating&quot;</highlight><highlight class="normal">,<sp/>res)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lr<sp/>=<sp/>len(res)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>lr<sp/>&lt;=<sp/>1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>lr<sp/>&gt;<sp/>4:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>me<sp/>=<sp/>recursive_approximation(res[0:lr<sp/>//<sp/>4])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[lr<sp/>//<sp/>4:<sp/>lr<sp/>//<sp/>2])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[lr<sp/>//<sp/>2:<sp/>3<sp/>*<sp/>lr<sp/>//<sp/>4])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[3<sp/>*<sp/>lr<sp/>//<sp/>4:<sp/>lr])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>me<sp/>=<sp/>res</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>IMP.Particle(m)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hc<sp/>=<sp/>IMP.atom.Hierarchy.setup_particle(p)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMP.atom.setup_as_approximation(p,<sp/>res)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>nm<sp/>=<sp/>str(IMP.atom.Residue(res[0]).get_index())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>str(IMP.atom.Residue(res[-1]).get_index())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p.set_name(nm)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>mm<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>me:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hc.add_child(mm)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[hc]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chains:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/>IMP.atom.get_by_type(h,<sp/>IMP.atom.RESIDUE_TYPE)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>res:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.remove_child(r)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lvs<sp/>=<sp/>IMP.atom.get_leaves(r)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.atom.setup_as_approximation(r,<sp/>lvs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>lr<sp/>=<sp/>len(res)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>me<sp/>=<sp/>recursive_approximation(res[0:lr<sp/>//<sp/>4])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[lr<sp/>//<sp/>4:<sp/>lr<sp/>//<sp/>2])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[lr<sp/>//<sp/>2:<sp/>3<sp/>*<sp/>lr<sp/>//<sp/>4])\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>recursive_approximation(res[3<sp/>*<sp/>lr<sp/>//<sp/>4:<sp/>lr])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>mm<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>me:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.add_child(mm)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;writing&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">fn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;multires.rmf&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">rmf<sp/>=<sp/>RMF.create_rmf_file(fn)</highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;adding&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceIMP_1_1rmf_1adbc5eb9278e61f0a4449eb181cbd2a74" kindref="member">IMP.rmf.add_hierarchies</ref>(rmf,<sp/>chains)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">print(</highlight><highlight class="stringliteral">&quot;see<sp/>file&quot;</highlight><highlight class="normal">,<sp/>fn)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/rmf/multiresolution.py"/>
+  </compounddef>
+</doxygen>

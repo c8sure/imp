@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1rmf_1_1HierarchySaveLink" kind="class" language="C++" prot="public">
+    <compoundname>IMP::rmf::HierarchySaveLink</compoundname>
+    <basecompoundref refid="classIMP_1_1rmf_1_1SimpleSaveLink" prot="public" virt="non-virtual">IMP::rmf::SimpleSaveLink&lt; Particle &gt;</basecompoundref>
+    <includes local="no">IMP/rmf/HierarchySaveLink.h</includes>
+    <innerclass refid="structIMP_1_1rmf_1_1HierarchySaveLink_1_1Data" prot="private">IMP::rmf::HierarchySaveLink::Data</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a2cf1a70d9f0277ba81c7fa7710942434" prot="private" static="no">
+        <type>boost::unordered_map&lt; ParticleIndex, std::shared_ptr&lt; Data &gt; &gt;</type>
+        <definition>typedef boost::unordered_map&lt;ParticleIndex, std::shared_ptr&lt;Data&gt; &gt; IMP::rmf::HierarchySaveLink::DM</definition>
+        <argsstring></argsstring>
+        <name>DM</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::DM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="55" column="7" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bcb360aa107592a280ea84c1b7cae24" prot="private" static="no">
+        <type><ref refid="classIMP_1_1rmf_1_1SimpleSaveLink" kindref="compound">SimpleSaveLink</ref>&lt; Particle &gt;</type>
+        <definition>typedef SimpleSaveLink&lt;Particle&gt; IMP::rmf::HierarchySaveLink::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="40" column="26" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a5c276d76ff1bbf1a0a4b2879cc599139" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::AlternativesFactory</type>
+        <definition>RMF::decorator::AlternativesFactory IMP::rmf::HierarchySaveLink::af_</definition>
+        <argsstring></argsstring>
+        <name>af_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::af_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="57" column="39" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a52350182f56f3336b419d7c9b693201f" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ClusterProvenanceFactory</type>
+        <definition>RMF::decorator::ClusterProvenanceFactory IMP::rmf::HierarchySaveLink::clustpf_</definition>
+        <argsstring></argsstring>
+        <name>clustpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::clustpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="62" column="44" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a0bd947bcb38879530bd9198e2671880e" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::CombineProvenanceFactory</type>
+        <definition>RMF::decorator::CombineProvenanceFactory IMP::rmf::HierarchySaveLink::combpf_</definition>
+        <argsstring></argsstring>
+        <name>combpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::combpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="60" column="44" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a312878d7e7c70ccc0f050e27035a7c4b" prot="private" static="no" mutable="no">
+        <type>DM</type>
+        <definition>DM IMP::rmf::HierarchySaveLink::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="56" column="6" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1ad582dd24d563a5427e0dc6c450233e30" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ExplicitResolutionFactory</type>
+        <definition>RMF::decorator::ExplicitResolutionFactory IMP::rmf::HierarchySaveLink::explicit_resolution_factory_</definition>
+        <argsstring></argsstring>
+        <name>explicit_resolution_factory_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::explicit_resolution_factory_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="65" column="45" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1af86e5237df50e807923e0611573a7d06" prot="private" static="no" mutable="no">
+        <type>RMF::IntKey</type>
+        <definition>RMF::IntKey IMP::rmf::HierarchySaveLink::external_rigid_body_key_</definition>
+        <argsstring></argsstring>
+        <name>external_rigid_body_key_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::external_rigid_body_key_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="66" column="15" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a76b57540c4e148b6c38bb8e163e4fe76" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::FilterProvenanceFactory</type>
+        <definition>RMF::decorator::FilterProvenanceFactory IMP::rmf::HierarchySaveLink::filtpf_</definition>
+        <argsstring></argsstring>
+        <name>filtpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::filtpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="61" column="43" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a51b414e0048dba78383b237546d869de" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::SampleProvenanceFactory</type>
+        <definition>RMF::decorator::SampleProvenanceFactory IMP::rmf::HierarchySaveLink::samppf_</definition>
+        <argsstring></argsstring>
+        <name>samppf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::samppf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="59" column="43" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bdb6eb29aec6c7068ebf69c36703318" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::ScriptProvenanceFactory</type>
+        <definition>RMF::decorator::ScriptProvenanceFactory IMP::rmf::HierarchySaveLink::scriptpf_</definition>
+        <argsstring></argsstring>
+        <name>scriptpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::scriptpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="63" column="43" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1aaef0ec8c1d59d623cec75411cffedbfd" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::SoftwareProvenanceFactory</type>
+        <definition>RMF::decorator::SoftwareProvenanceFactory IMP::rmf::HierarchySaveLink::softpf_</definition>
+        <argsstring></argsstring>
+        <name>softpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::softpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="64" column="45" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1rmf_1_1HierarchySaveLink_1ab0d060e2b3bc2604d528601d3a431673" prot="private" static="no" mutable="no">
+        <type>RMF::decorator::StructureProvenanceFactory</type>
+        <definition>RMF::decorator::StructureProvenanceFactory IMP::rmf::HierarchySaveLink::strucpf_</definition>
+        <argsstring></argsstring>
+        <name>strucpf_</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::strucpf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="58" column="46" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1aa516fb8b3a76457c092faef7707799fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::HierarchySaveLink::add_provenance</definition>
+        <argsstring>(Model *m, ParticleIndex p, RMF::NodeHandle cur)</argsstring>
+        <name>add_provenance</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::add_provenance</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a9a269c9979c9d3e889d093e286aaf46d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::rmf::HierarchySaveLink::add_recursive</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex p, ParticleIndexes rigid_bodies, RMF::NodeHandle cur, Data &amp;data)</argsstring>
+        <name>add_recursive</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::add_recursive</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>ParticleIndexes</type>
+          <declname>rigid_bodies</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>cur</declname>
+        </param>
+        <param>
+          <type>Data &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a295fed0a81adfcbd20a96374b80f47ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchySaveLink::do_add</definition>
+        <argsstring>(Particle *p, RMF::NodeHandle cur) override</argsstring>
+        <name>do_add</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::do_add</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a3df72fafd16364521124ab382fa75083">do_add</reimplements>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>cur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="76" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a0890e87956705c4393176ce8d35d935f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchySaveLink::do_save_one</definition>
+        <argsstring>(Particle *o, RMF::NodeHandle nh) override</argsstring>
+        <name>do_save_one</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::do_save_one</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a62608136b0a77a1551a11e26bc30c279">do_save_one</reimplements>
+        <param>
+          <type>Particle *</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="77" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a30621a05d33b4d829fe85db12555348e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>RMF::NodeType</type>
+        <definition>RMF::NodeType IMP::rmf::HierarchySaveLink::get_type</definition>
+        <argsstring>(Particle *) const override</argsstring>
+        <name>get_type</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::get_type</qualifiedname>
+        <reimplements refid="classIMP_1_1rmf_1_1SimpleSaveLink_1adf8cff94e1aa553eeddb48f737b46745">get_type</reimplements>
+        <param>
+          <type>Particle *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="79" column="17" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1acad2966f5813309997bdb1b89a4106f4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchySaveLink::do_save_hierarchy</definition>
+        <argsstring>(Model *m, ParticleIndex root, RMF::NodeHandle root_node)</argsstring>
+        <name>do_save_hierarchy</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::do_save_hierarchy</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>root_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Override to add extra data for nodes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="93" column="16" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1acb5c102fbadac34930f053c2ed03bd42" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::rmf::HierarchySaveLink::do_setup_node</definition>
+        <argsstring>(Model *m, ParticleIndex root, ParticleIndex p, RMF::NodeHandle n)</argsstring>
+        <name>do_setup_node</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::do_setup_node</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>ParticleIndex</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>RMF::NodeHandle</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Override to add extra data for nodes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="85" column="16" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="85" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a99db1e62eec4cd432b13fb9fa9f43985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::rmf::HierarchySaveLink::HierarchySaveLink</definition>
+        <argsstring>(RMF::FileHandle fh)</argsstring>
+        <name>HierarchySaveLink</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::HierarchySaveLink</qualifiedname>
+        <param>
+          <type>RMF::FileHandle</type>
+          <declname>fh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="101" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a46036547f78ae4c5cf8b8106c46b3df0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::rmf::HierarchySaveLink::~HierarchySaveLink</definition>
+        <argsstring>()</argsstring>
+        <name>~HierarchySaveLink</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::~HierarchySaveLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="103" column="231" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a93173f1790a2e57f5fbdb4493bed2479" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::rmf::HierarchySaveLink::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="103" column="34" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a570a24f2be728bd61e279e913ae50992" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::rmf::HierarchySaveLink::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="103" column="103" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classIMP_1_1rmf_1_1HierarchySaveLink_1a9686c8da0bc4953d6474401d8c868681" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char * IMP::rmf::HierarchySaveLink::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <qualifiedname>IMP::rmf::HierarchySaveLink::get_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/rmf/HierarchySaveLink.h" line="102" column="21" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manage the save link between an RMF file and an atom::Hierarchy.</para>
+<para><simplesect kind="par"><title>Warning: HierarchySaveLink has not been stabilized and is likely to change without notice.</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IMP::rmf::HierarchySaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1HierarchySaveLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::rmf::SaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1SaveLink"/>
+      </node>
+      <node id="2">
+        <label>IMP::rmf::SimpleSaveLink&lt; Particle &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleSaveLink"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IMP::rmf::HierarchySaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1HierarchySaveLink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMP::rmf::SaveLink</label>
+        <link refid="classIMP_1_1rmf_1_1SaveLink"/>
+      </node>
+      <node id="2">
+        <label>IMP::rmf::SimpleSaveLink&lt; Particle &gt;</label>
+        <link refid="classIMP_1_1rmf_1_1SimpleSaveLink"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/IMP/rmf/HierarchySaveLink.h" line="39" column="1" bodyfile="include/IMP/rmf/HierarchySaveLink.h" bodystart="39" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7791c6cc493f92174507c003a068136b" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>add</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1af0c72c2c33df002684ed8f62f9377ddf" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>add_link</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1aa516fb8b3a76457c092faef7707799fb" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>add_provenance</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a9a269c9979c9d3e889d093e286aaf46d" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>add_recursive</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a5c276d76ff1bbf1a0a4b2879cc599139" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>af_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a52350182f56f3336b419d7c9b693201f" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>clustpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a0bd947bcb38879530bd9198e2671880e" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>combpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a312878d7e7c70ccc0f050e27035a7c4b" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>data_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2cf1a70d9f0277ba81c7fa7710942434" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>DM</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a295fed0a81adfcbd20a96374b80f47ff" prot="private" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>do_add</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a028d2237ae569a4c5b0fd288a930f354" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>do_save</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1acad2966f5813309997bdb1b89a4106f4" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>do_save_hierarchy</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a0890e87956705c4393176ce8d35d935f" prot="private" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>do_save_one</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1acb5c102fbadac34930f053c2ed03bd42" prot="protected" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>do_setup_node</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1ad582dd24d563a5427e0dc6c450233e30" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>explicit_resolution_factory_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1af86e5237df50e807923e0611573a7d06" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>external_rigid_body_key_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a76b57540c4e148b6c38bb8e163e4fe76" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>filtpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a9686c8da0bc4953d6474401d8c868681" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>get_name</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a30621a05d33b4d829fe85db12555348e" prot="private" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>get_type</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a93173f1790a2e57f5fbdb4493bed2479" prot="public" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a570a24f2be728bd61e279e913ae50992" prot="public" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a99db1e62eec4cd432b13fb9fa9f43985" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>HierarchySaveLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bcb360aa107592a280ea84c1b7cae24" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>P</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a51b414e0048dba78383b237546d869de" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>samppf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveLink_1aa06d8e546e7b9181db48bf984f40666f" prot="public" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>save</name></member>
+      <member refid="classIMP_1_1rmf_1_1SaveLink_1a0e23e6b3dfcf3e8915afa7251863be6d" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>SaveLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a2bdb6eb29aec6c7068ebf69c36703318" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>scriptpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1SimpleSaveLink_1a7c23dbc3ecfb1fa49e34004e256d7d2e" prot="protected" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>SimpleSaveLink</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1aaef0ec8c1d59d623cec75411cffedbfd" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>softpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1ab0d060e2b3bc2604d528601d3a431673" prot="private" virt="non-virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>strucpf_</name></member>
+      <member refid="classIMP_1_1rmf_1_1HierarchySaveLink_1a46036547f78ae4c5cf8b8106c46b3df0" prot="public" virt="virtual"><scope>IMP::rmf::HierarchySaveLink</scope><name>~HierarchySaveLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

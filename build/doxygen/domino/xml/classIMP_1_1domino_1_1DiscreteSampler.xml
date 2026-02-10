@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1domino_1_1DiscreteSampler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IMP::domino::DiscreteSampler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sampler</basecompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1BranchAndBoundSampler" prot="public" virt="non-virtual">IMP::domino::BranchAndBoundSampler</derivedcompoundref>
+    <derivedcompoundref refid="classIMP_1_1domino_1_1DominoSampler" prot="public" virt="non-virtual">IMP::domino::DominoSampler</derivedcompoundref>
+    <includes local="no">IMP/domino/DiscreteSampler.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Advanced</header>
+      <description><para>Default values are provided, you only need to replace these if you want to do something special. See the overview of the module for a general description. </para>
+</description>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1aed5d2eda883429164d051dd4f5a25df4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list IMP::domino::DiscreteSampler::subset_filter_tables</definition>
+        <argsstring></argsstring>
+        <name>subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::subset_filter_tables</qualifiedname>
+        <briefdescription>
+<para>A Python list of <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This class member is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="19" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1ae87fc3c189ff87dbc93ba9959da79e4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_particle_states_table</definition>
+        <argsstring>(ParticleStatesTable *cse)</argsstring>
+        <name>set_particle_states_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_particle_states_table</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>cse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="112" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1aad5f8f5ee7e3e9b17f247917235ab62b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_assignments_table</definition>
+        <argsstring>(AssignmentsTable *sst)</argsstring>
+        <name>set_assignments_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_assignments_table</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> *</type>
+          <declname>sst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="113" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1abe0c80e27d1174e2b2d8911a0b4e9b94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+        <definition>ParticleStatesTable * IMP::domino::DiscreteSampler::get_particle_states_table</definition>
+        <argsstring>() const</argsstring>
+        <name>get_particle_states_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_particle_states_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="114" column="23" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1aea4629b51fe360838144aa20d647c9c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::remove_subset_filter_table</definition>
+        <argsstring>(SubsetFilterTable *d)</argsstring>
+        <name>remove_subset_filter_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::remove_subset_filter_table</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a5f13ae32a9d25b7d5c8f3fdd4cbf8c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::remove_subset_filter_tables</definition>
+        <argsstring>(const SubsetFilterTables &amp;d)</argsstring>
+        <name>remove_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::remove_subset_filter_tables</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a33a06eb8981e4333a409c5134376159b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_subset_filter_tables</definition>
+        <argsstring>(const SubsetFilterTables &amp;ps)</argsstring>
+        <name>set_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_subset_filter_tables</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a11fc13bac2048a81f7f3cdd2fd0fa98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_subset_filter_tables_order</definition>
+        <argsstring>(const SubsetFilterTables &amp;objs)</argsstring>
+        <name>set_subset_filter_tables_order</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_subset_filter_tables_order</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a69a5fd252f550161d778f1a3c0654fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DiscreteSampler::add_subset_filter_table</definition>
+        <argsstring>(SubsetFilterTable *obj)</argsstring>
+        <name>add_subset_filter_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::add_subset_filter_table</qualifiedname>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a04d99a77362e655bcf99d4da9ebc2f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::add_subset_filter_tables</definition>
+        <argsstring>(const SubsetFilterTables &amp;objs)</argsstring>
+        <name>add_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::add_subset_filter_tables</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1adee0538dc659ab8daf6695b87002eca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::clear_subset_filter_tables</definition>
+        <argsstring>()</argsstring>
+        <name>clear_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::clear_subset_filter_tables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1acfa9aa0506e2bad96e350b30a8dbde6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DiscreteSampler::get_number_of_subset_filter_tables</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number_of_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_number_of_subset_filter_tables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a0509dccb6c592b9c4f7e1cd53dbcd9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IMP::domino::DiscreteSampler::get_has_subset_filter_tables</definition>
+        <argsstring>()</argsstring>
+        <name>get_has_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_has_subset_filter_tables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1ab078563c0d96bb299d0926cfec89c617" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> *</type>
+        <definition>SubsetFilterTable * IMP::domino::DiscreteSampler::get_subset_filter_table</definition>
+        <argsstring>(unsigned int i) const</argsstring>
+        <name>get_subset_filter_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_subset_filter_table</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a93bb393836d64c1f3bdda56e9a51b736" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref></type>
+        <definition>SubsetFilterTables IMP::domino::DiscreteSampler::get_subset_filter_tables</definition>
+        <argsstring>() const</argsstring>
+        <name>get_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_subset_filter_tables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a154d39cd2016935468ec93ebf616df15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::erase_subset_filter_table</definition>
+        <argsstring>(unsigned int i)</argsstring>
+        <name>erase_subset_filter_table</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::erase_subset_filter_table</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1ad73b0cfd867f9b364fb997a618839a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::reserve_subset_filter_tables</definition>
+        <argsstring>(unsigned int sz)</argsstring>
+        <name>reserve_subset_filter_tables</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::reserve_subset_filter_tables</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="118" column="602"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1a839c189f7a034a3da4fe1eb0363cc116" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DiscreteSampler::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="55" column="16" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1a8c6aaad8e78764eac379ba6e4c40b16e" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;ParticleStatesTable&gt; IMP::domino::DiscreteSampler::pst_</definition>
+        <argsstring></argsstring>
+        <name>pst_</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::pst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="51" column="22" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1a0131fbf2486ac79dabf734eecc13f081" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IMP::domino::DiscreteSampler::restraints_set_</definition>
+        <argsstring></argsstring>
+        <name>restraints_set_</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::restraints_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="53" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1a8014980c7b2c4cbc8fba8764970f6bc5" prot="private" static="no" mutable="no">
+        <type>Restraints</type>
+        <definition>Restraints IMP::domino::DiscreteSampler::rs_</definition>
+        <argsstring></argsstring>
+        <name>rs_</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::rs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="54" column="14" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1domino_1_1DiscreteSampler_1a33f9398f31c32b3f02616a542205e539" prot="private" static="no" mutable="no">
+        <type>IMP::PointerMember&lt; <ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> &gt;</type>
+        <definition>IMP::PointerMember&lt;AssignmentsTable&gt; IMP::domino::DiscreteSampler::sst_</definition>
+        <argsstring></argsstring>
+        <name>sst_</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::sst_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="52" column="22" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a127213eff7a87b103e692c4f2d82d133" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>virtual Assignments IMP::domino::DiscreteSampler::do_get_sample_assignments</definition>
+        <argsstring>(const Subset &amp;all) const =0</argsstring>
+        <name>do_get_sample_assignments</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::do_get_sample_assignments</qualifiedname>
+        <reimplementedby refid="classIMP_1_1domino_1_1BranchAndBoundSampler_1a5cea53f64ca7069761bd84c447ccbf2e">do_get_sample_assignments</reimplementedby>
+        <reimplementedby refid="classIMP_1_1domino_1_1DominoSampler_1a11b5bb3dc3f272044f1eb5678e1aa2fc">do_get_sample_assignments</reimplementedby>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>all</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="64" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a14c559dad946def14f1870d5abd14ed5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ConfigurationSet *</type>
+        <definition>virtual ConfigurationSet * IMP::domino::DiscreteSampler::do_sample</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_sample</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::do_sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="63" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1aa1d1cb77fa302aec372410283bd7fc7d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIMP_1_1domino_1_1AssignmentsTable" kindref="compound">AssignmentsTable</ref> *</type>
+        <definition>AssignmentsTable * IMP::domino::DiscreteSampler::get_assignments_table_to_use</definition>
+        <argsstring>(const SubsetFilterTables &amp;sfts, unsigned int max=std::numeric_limits&lt; int &gt;::max()) const</argsstring>
+        <name>get_assignments_table_to_use</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_assignments_table_to_use</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> &amp;</type>
+          <declname>sfts</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>max</declname>
+          <defval>std::numeric_limits&lt; int &gt;::max()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="60" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a0fc3cb755fe0cd91520b8146e31ea1af" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>RestraintsTemp</type>
+        <definition>RestraintsTemp IMP::domino::DiscreteSampler::get_restraints</definition>
+        <argsstring>() const</argsstring>
+        <name>get_restraints</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_restraints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="66" column="18" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1af9ba5f8c591c97d25444bc8f2b290884" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref></type>
+        <definition>SubsetFilterTables IMP::domino::DiscreteSampler::get_subset_filter_tables_to_use</definition>
+        <argsstring>(const RestraintsTemp &amp;rs, ParticleStatesTable *pst) const</argsstring>
+        <name>get_subset_filter_tables_to_use</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_subset_filter_tables_to_use</qualifiedname>
+        <param>
+          <type>const RestraintsTemp &amp;</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="58" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a721fbf1b3bf0780e90966a0453f547d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DiscreteSampler::DiscreteSampler</definition>
+        <argsstring>(Model *m, ParticleStatesTable *pst, std::string name)</argsstring>
+        <name>DiscreteSampler</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::DiscreteSampler</qualifiedname>
+        <param>
+          <type>Model *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref> *</type>
+          <declname>pst</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="76" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a9b816446ab5953ee7b6245493f3d7dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::domino::DiscreteSampler::~DiscreteSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~DiscreteSampler</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::~DiscreteSampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="78" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1aa6db66d511c3b2409ca61bc39b85ec14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IMP::domino::DiscreteSampler::get_maximum_number_of_assignments</definition>
+        <argsstring>() const</argsstring>
+        <name>get_maximum_number_of_assignments</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_maximum_number_of_assignments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="129" column="16" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a6f93b40d485b8617d38245bd6bf4ebae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceIMP_1_1domino_1a3419fc2c9def4e8cfe47550df045e24c" kindref="member">Assignments</ref></type>
+        <definition>Assignments IMP::domino::DiscreteSampler::get_sample_assignments</definition>
+        <argsstring>(const Subset &amp;s) const</argsstring>
+        <name>get_sample_assignments</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::get_sample_assignments</qualifiedname>
+        <param>
+          <type>const <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the <ref refid="classIMP_1_1domino_1_1Assignment" kindref="compound">Assignment</ref> objects describing the subsets fitting the description.</para>
+<para><simplesect kind="note"><para>At the moment, <ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">Subset</ref> must be equal to Subset(ParticleStatesTable::get_particles()). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="104" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1a78d158c2aba7c490635e949fc234294a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_maximum_number_of_assignments</definition>
+        <argsstring>(unsigned int mx)</argsstring>
+        <name>set_maximum_number_of_assignments</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_maximum_number_of_assignments</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>mx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Limit the number of states that is ever produced for any set of particles.</para>
+<para>Doing this can be useful to get some feedback when too many states would otherwise be produced. A warning will be emitted whenever the limit eliminates states. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="128" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1af01fe0f3283adc61bdb94b716afca5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_particle_states</definition>
+        <argsstring>(Particle *p, ParticleStates *se)</argsstring>
+        <name>set_particle_states</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_particle_states</qualifiedname>
+        <param>
+          <type>Particle *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classIMP_1_1domino_1_1ParticleStates" kindref="compound">ParticleStates</ref> *</type>
+          <declname>se</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Particle states can be set either using this method, or equivalently, by accessing the table itself using get_particle_states_table(). This method is provided for users who want to use the default values and want a simple interface. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="94" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1domino_1_1DiscreteSampler_1aa88d60254ee2cf156c3405437af23ee1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::domino::DiscreteSampler::set_restraints</definition>
+        <argsstring>(RestraintsAdaptor rs)</argsstring>
+        <name>set_restraints</name>
+        <qualifiedname>IMP::domino::DiscreteSampler::set_restraints</qualifiedname>
+        <param>
+          <type>RestraintsAdaptor</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+<para>Set the Restraints to use in the <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref> filters based on a set of Restraints, which can be set here. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/domino/DiscreteSampler.h" line="84" column="8" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A base class for discrete samplers in Domino2. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All the samplers derived from it share some common properties:<itemizedlist>
+<listitem><para>each particle is allowed to have one of a discrete set of conformations, as stored in a <ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">ParticleStatesTable</ref></para>
+</listitem><listitem><para>there is, optionally, one scoring function, accessed through the SubsetEvaluatorTable</para>
+</listitem><listitem><para>there can be many <ref refid="classIMP_1_1domino_1_1SubsetFilterTable" kindref="compound">SubsetFilterTable</ref> objects which are used to prune the discrete space.</para>
+</listitem></itemizedlist>
+</para>
+<para>Defaults are provided for all the parameters:<itemizedlist>
+<listitem><para>if no <ref refid="namespaceIMP_1_1domino_1a8ca84679f63e2bf7bfd8da482de896bf" kindref="member">SubsetFilterTables</ref> are provided, then the <ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">ExclusionSubsetFilterTable</ref> and the <ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">RestraintScoreSubsetFilterTable</ref> are used.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>the restraint scores must be non-negative in general. If you are using restraints which can produce negative values, we can provide a restraint which wraps another and makes it non-negative. Ping us.</para>
+</simplesect>
+<simplesect kind="note"><para>The discrete samplers enumerate all acceptable conformations. As a result, users should take care to remove uninteresting degrees of freedom (for example, remove rigid transformations of a complex). Techniques to do this can involve pinning one or more particles (by locking them to a single conformation or to a few degrees of freedom). </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMP::domino::BranchAndBoundSampler</label>
+        <link refid="classIMP_1_1domino_1_1BranchAndBoundSampler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMP::domino::DiscreteSampler</label>
+        <link refid="classIMP_1_1domino_1_1DiscreteSampler"/>
+      </node>
+      <node id="3">
+        <label>IMP::domino::DominoSampler</label>
+        <link refid="classIMP_1_1domino_1_1DominoSampler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/IMP/domino/DiscreteSampler.h" line="50" column="1" bodyfile="include/IMP/domino/DiscreteSampler.h" bodystart="50" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a69a5fd252f550161d778f1a3c0654fa7" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>add_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a04d99a77362e655bcf99d4da9ebc2f7c" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>add_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1adee0538dc659ab8daf6695b87002eca1" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>clear_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a721fbf1b3bf0780e90966a0453f547d4" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>DiscreteSampler</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a127213eff7a87b103e692c4f2d82d133" prot="protected" virt="pure-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>do_get_sample_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a14c559dad946def14f1870d5abd14ed5" prot="protected" virt="virtual"><scope>IMP::domino::DiscreteSampler</scope><name>do_sample</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a154d39cd2016935468ec93ebf616df15" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>erase_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa1d1cb77fa302aec372410283bd7fc7d" prot="protected" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_assignments_table_to_use</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0509dccb6c592b9c4f7e1cd53dbcd9e1" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_has_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa6db66d511c3b2409ca61bc39b85ec14" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_maximum_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1acfa9aa0506e2bad96e350b30a8dbde6f" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_number_of_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1abe0c80e27d1174e2b2d8911a0b4e9b94" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_particle_states_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0fc3cb755fe0cd91520b8146e31ea1af" prot="protected" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a6f93b40d485b8617d38245bd6bf4ebae" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_sample_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ab078563c0d96bb299d0926cfec89c617" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a93bb393836d64c1f3bdda56e9a51b736" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af9ba5f8c591c97d25444bc8f2b290884" prot="protected" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>get_subset_filter_tables_to_use</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a839c189f7a034a3da4fe1eb0363cc116" prot="private" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>max_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a8c6aaad8e78764eac379ba6e4c40b16e" prot="private" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>pst_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aea4629b51fe360838144aa20d647c9c4" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>remove_subset_filter_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a5f13ae32a9d25b7d5c8f3fdd4cbf8c4d" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>remove_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ad73b0cfd867f9b364fb997a618839a41" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>reserve_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a0131fbf2486ac79dabf734eecc13f081" prot="private" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>restraints_set_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a8014980c7b2c4cbc8fba8764970f6bc5" prot="private" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>rs_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aad5f8f5ee7e3e9b17f247917235ab62b" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_assignments_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a78d158c2aba7c490635e949fc234294a" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_maximum_number_of_assignments</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1af01fe0f3283adc61bdb94b716afca5cd" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_particle_states</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1ae87fc3c189ff87dbc93ba9959da79e4f" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_particle_states_table</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aa88d60254ee2cf156c3405437af23ee1" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_restraints</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a33a06eb8981e4333a409c5134376159b" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a11fc13bac2048a81f7f3cdd2fd0fa98e" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>set_subset_filter_tables_order</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a33f9398f31c32b3f02616a542205e539" prot="private" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>sst_</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1aed5d2eda883429164d051dd4f5a25df4" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>subset_filter_tables</name></member>
+      <member refid="classIMP_1_1domino_1_1DiscreteSampler_1a9b816446ab5953ee7b6245493f3d7dbd" prot="public" virt="non-virtual"><scope>IMP::domino::DiscreteSampler</scope><name>~DiscreteSampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

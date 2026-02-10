@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="domino_2restraint_cache_8py-example" kind="example">
+    <compoundname>domino/restraint_cache.py</compoundname>
+    <briefdescription>
+<para>Caching restraint scores so that restraints are not evaluated repeatedly for the same configuration is an important part of domino. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Caching restraint scores so that restraints are not evaluated repeatedly for the same configuration is an important part of domino. Without caching, sub assignments that are shared between subsets will be rescored. The <ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref> provides a centralized place for this. To use it, one creates one and then adds the restraints you want to use for filtering and scoring to it. You can then pass the cache to the IMP::domino::RestraintScoreFilterTable and it will filter based on those restraints. You can also extract scores from the table directly, using it to manage the loading of particle states. <programlisting filename="domino/restraint_cache.py"><codeline><highlight class="comment">##<sp/>\example<sp/>domino/restraint_cache.py</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>Caching<sp/>restraint<sp/>scores<sp/>so<sp/>that<sp/>restraints<sp/>are<sp/>not<sp/>evaluated</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>repeatedly<sp/>for<sp/>the<sp/>same<sp/>configuration<sp/>is<sp/>an<sp/>important<sp/>part<sp/>of</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>domino.<sp/>Without<sp/>caching,<sp/>sub<sp/>assignments<sp/>that<sp/>are<sp/>shared<sp/>between</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>subsets<sp/>will<sp/>be<sp/>rescored.<sp/>The<sp/>IMP::domino::RestraintCache<sp/>provides</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>a<sp/>centralized<sp/>place<sp/>for<sp/>this.<sp/>To<sp/>use<sp/>it,<sp/>one<sp/>creates<sp/>one<sp/>and<sp/>then</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>adds<sp/>the<sp/>restraints<sp/>you<sp/>want<sp/>to<sp/>use<sp/>for<sp/>filtering<sp/>and<sp/>scoring<sp/>to</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>it.<sp/>You<sp/>can<sp/>then<sp/>pass<sp/>the<sp/>cache<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>IMP::domino::RestraintScoreFilterTable<sp/>and<sp/>it<sp/>will<sp/>filter<sp/>based<sp/>on</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>those<sp/>restraints.<sp/>You<sp/>can<sp/>also<sp/>extract<sp/>scores<sp/>from<sp/>the<sp/>table</highlight></codeline>
+<codeline><highlight class="comment">#<sp/>directly,<sp/>using<sp/>it<sp/>to<sp/>manage<sp/>the<sp/>loading<sp/>of<sp/>particle<sp/>states.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1domino" kindref="compound">IMP.domino</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.algebra</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.container</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IMP.atom</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceIMP_1_1rmf" kindref="compound" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP.rmf</ref></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RMF</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">IMP.setup_from_argv(sys.argv,<sp/></highlight><highlight class="stringliteral">&quot;restraint<sp/>cache&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">resolution<sp/>=<sp/>.5</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>IMP.SetLogState(IMP.SILENT):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>IMP.Model()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>some<sp/>particles<sp/>and<sp/>a<sp/>restraint<sp/>that<sp/>scores<sp/>based<sp/>on<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>length<sp/>of<sp/>the<sp/>chain</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>=<sp/>[IMP.core.XYZR.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>int(2.0<sp/>/<sp/>resolution))]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>eps<sp/>=<sp/>[IMP.core.XYZR.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(0,<sp/>2)]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>eps[0].set_coordinates(IMP.algebra.Vector3D(-1,<sp/>0,<sp/>0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>eps[1].set_coordinates(IMP.algebra.Vector3D(1,<sp/>0,<sp/>0))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.set_radius(resolution<sp/>/<sp/>2.0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>eps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.set_radius(.4<sp/>*<sp/>resolution)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>order<sp/>=<sp/>[eps[0]]<sp/>+<sp/>ps<sp/>+<sp/>[eps[1]]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>hierarchy<sp/>with<sp/>the<sp/>particles<sp/>to<sp/>aid<sp/>writing<sp/>them<sp/>to<sp/>RMF</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>IMP.atom.Hierarchy.setup_particle(IMP.Particle(m))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(order):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.atom.Mass.setup_particle(p,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h.add_child(IMP.atom.Hierarchy.setup_particle(p))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/>IMP.display.get_jet_color(float(i)<sp/>/<sp/>(len(order)<sp/>-<sp/>1))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.display.Colored.setup_particle(p,<sp/>color)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>r<sp/>=<sp/>IMP.container.PairsRestraint(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.core.HarmonicUpperBoundSphereDistancePairScore(0,<sp/>1),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.container.ConsecutivePairContainer(m,<sp/>order))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>allow<sp/>a<sp/>maximum<sp/>distance<sp/>of<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>r.set_maximum_score(0.01)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>dumb<sp/>way<sp/>to<sp/>generate<sp/>points<sp/>on<sp/>a<sp/>gride</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g<sp/>=<sp/>IMP.algebra.DenseFloatGrid3D(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resolution,<sp/>IMP.algebra.get_unit_bounding_box_3d())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>some<sp/>random<sp/>sites</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vs<sp/>=<sp/>[g.get_center(i)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>g.get_all_indexes()]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;States<sp/>are&quot;</highlight><highlight class="normal">,<sp/>vs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pst<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ParticleStatesTable" kindref="compound">IMP.domino.ParticleStatesTable</ref>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1XYZStates" kindref="compound">IMP.domino.XYZStates</ref>(vs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ps:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pst.set_particle_states(p,<sp/>states)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>now<sp/>create<sp/>a<sp/>restraint<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>cache<sp/>the<sp/>most<sp/>recently<sp/>used<sp/>one<sp/>million<sp/>scores</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintCache" kindref="compound">IMP.domino.RestraintCache</ref>(pst,<sp/>1000000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>r.set_log_level(IMP.SILENT)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rc.add_restraints([r])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1DominoSampler" kindref="compound">IMP.domino.DominoSampler</ref>(m,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_restraints([r])</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_check_level(IMP.NONE)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ef<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1ExclusionSubsetFilterTable" kindref="compound">IMP.domino.ExclusionSubsetFilterTable</ref>(pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>pass<sp/>the<sp/>cache<sp/>to<sp/>the<sp/>restraint<sp/>score<sp/>based<sp/>filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>it<sp/>will<sp/>use<sp/>all<sp/>the<sp/>restraints<sp/>in<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rssft<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1RestraintScoreSubsetFilterTable" kindref="compound">IMP.domino.RestraintScoreSubsetFilterTable</ref>(rc)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>s.set_subset_filter_tables([ef,<sp/>rssft])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>subset<sp/>with<sp/>all<sp/>the<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Subsets<sp/>keep<sp/>the<sp/>particles<sp/>in<sp/>sorted<sp/>order<sp/>and<sp/>so<sp/>are<sp/>different<sp/>than</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>a<sp/>simple<sp/>list<sp/>of<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>alls<sp/>=<sp/><ref refid="classIMP_1_1domino_1_1Subset" kindref="compound">IMP.domino.Subset</ref>(ps)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>all<sp/>the<sp/>assignments<sp/>that<sp/>fit</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sts<sp/>=<sp/>s.get_sample_assignments(alls)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>create<sp/>a<sp/>temporary<sp/>file<sp/>to<sp/>write<sp/>things<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>rmf<sp/>=<sp/>RMF.create_rmf_file(IMP.create_temporary_file_name(</highlight><highlight class="stringliteral">&quot;cache&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;.rmf&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;saving<sp/>configurations<sp/>to&quot;</highlight><highlight class="normal">,<sp/>rmf.get_name())</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1rmf_1afb3c4144b9161813668b971b21295c8e" kindref="member" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP.rmf.add_hierarchy</ref>(rmf,<sp/>h)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>restraint<sp/>cache<sp/>processes<sp/>the<sp/>restraints<sp/>to<sp/>make<sp/>them<sp/>more<sp/>efficient</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>use<sp/>with<sp/>domino.<sp/>So<sp/>we<sp/>want<sp/>to<sp/>get<sp/>back<sp/>the<sp/>processed<sp/>restraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>before<sp/>looking<sp/>at<sp/>them<sp/>further</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>domino_restraints<sp/>=<sp/>rc.get_restraints()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>domino_restraints:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP.show_restraint_hierarchy(r)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1rmf_1a967b0af7b1880fb5a3bddb0c777e62f7" kindref="member" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP.rmf.add_restraints</ref>(rmf,<sp/>domino_restraints)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>each<sp/>assignment<sp/>load<sp/>it,<sp/>and<sp/>add<sp/>the<sp/>configuration<sp/>to<sp/>an<sp/>rmf<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;found<sp/>assignments&quot;</highlight><highlight class="normal">,<sp/>sts)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>we<sp/>don&apos;t<sp/>care<sp/>about<sp/>messages<sp/>during<sp/>saving</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>s<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(sts):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1domino_1a0c08cfa3955a23464c5f59c15f95a4ae" kindref="member">IMP.domino.load_particle_states</ref>(alls,<sp/>s,<sp/>pst)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>go<sp/>through<sp/>the<sp/>restraints<sp/>and<sp/>get<sp/>the<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>here,<sp/>we<sp/>only<sp/>care<sp/>about<sp/>its<sp/>side<sp/>effect<sp/>of<sp/>setting<sp/>the<sp/>last<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>r<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>domino_restraints:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rc.load_last_score(r,<sp/>alls,<sp/>s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>save<sp/>the<sp/>configuration<sp/>and<sp/>scores<sp/>to<sp/>the<sp/>rmf</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceIMP_1_1rmf_1ad6d2441fb928c5ed04c1231864cae1c8" kindref="member" external="/home/catherine/imp/build/doxygen/rmf/tags">IMP.rmf.save_frame</ref>(rmf)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;done&quot;</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="examples/domino/restraint_cache.py"/>
+  </compounddef>
+</doxygen>

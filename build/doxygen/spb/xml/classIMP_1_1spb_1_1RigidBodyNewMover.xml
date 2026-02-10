@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classIMP_1_1spb_1_1RigidBodyNewMover" kind="class" language="C++" prot="public">
+    <compoundname>IMP::spb::RigidBodyNewMover</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">core::MonteCarloMover</basecompoundref>
+    <includes local="no">IMP/spb/RigidBodyNewMover.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a935c0f0c511bb9f7f108f0f9e39933a8" prot="private" static="no" mutable="no">
+        <type>core::RigidBody</type>
+        <definition>core::RigidBody IMP::spb::RigidBodyNewMover::d_</definition>
+        <argsstring></argsstring>
+        <name>d_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::d_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="53" column="19" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a37333e1b0497dfc76aa91b2a8edeb5fd" prot="private" static="no" mutable="no">
+        <type>algebra::Transformation3D</type>
+        <definition>algebra::Transformation3D IMP::spb::RigidBodyNewMover::last_transformation_</definition>
+        <argsstring></argsstring>
+        <name>last_transformation_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::last_transformation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="48" column="29" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a50b840aacc41e0fdaf9af95658fb04f9" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::RigidBodyNewMover::max_angle_</definition>
+        <argsstring></argsstring>
+        <name>max_angle_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::max_angle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="52" column="9" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a584118e0c193d56a546894665e0b838c" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::RigidBodyNewMover::max_x_translation_</definition>
+        <argsstring></argsstring>
+        <name>max_x_translation_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::max_x_translation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="49" column="9" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a35c908c7a89ec4ece6886efe2ebf65d6" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::RigidBodyNewMover::max_y_translation_</definition>
+        <argsstring></argsstring>
+        <name>max_y_translation_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::max_y_translation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="50" column="9" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a3635b612f48c2e7e693c87c89c6a07eb" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float IMP::spb::RigidBodyNewMover::max_z_translation_</definition>
+        <argsstring></argsstring>
+        <name>max_z_translation_</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::max_z_translation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="51" column="9" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1af43951b1f208f16ca904dd5bb845f30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP::spb::RigidBodyNewMover::RigidBodyNewMover</definition>
+        <argsstring>(core::RigidBody d, Float max_x_translation, Float max_y_translation, Float max_z_translation, Float max_rot)</argsstring>
+        <name>RigidBodyNewMover</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::RigidBodyNewMover</qualifiedname>
+        <param>
+          <type>core::RigidBody</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_x_translation</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_y_translation</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_z_translation</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>max_rot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The rigid body is rotated and translated to move <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rigid body decorator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum translation during a step </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum rotation angle in radians </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1afc6552dc84d4cef20f847e38a1caf393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual IMP::spb::RigidBodyNewMover::~RigidBodyNewMover</definition>
+        <argsstring>()</argsstring>
+        <name>~RigidBodyNewMover</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::~RigidBodyNewMover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="44" column="231" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a408fd517bb236edb0c2ba314db0cf3ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string IMP::spb::RigidBodyNewMover::get_type_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="44" column="34" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a2b9f66d24c831710eaa31dc4e585edf7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>::IMP::VersionInfo</type>
+        <definition>virtual ::IMP::VersionInfo IMP::spb::RigidBodyNewMover::get_version_info</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_version_info</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::get_version_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="44" column="103" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1aff5b507cc2b7940ce58f22e85e8e6661" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMP::spb::RigidBodyNewMover::show</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>show</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::show</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="45" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a5e079dfd12ef07f77dadae35f9f256f8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IMP::ModelObjectsTemp</type>
+        <definition>virtual IMP::ModelObjectsTemp IMP::spb::RigidBodyNewMover::do_get_inputs</definition>
+        <argsstring>() const override</argsstring>
+        <name>do_get_inputs</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::do_get_inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="42" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a847648eaf1edbf4f2817567e9ee4b66e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>core::MonteCarloMoverResult</type>
+        <definition>virtual core::MonteCarloMoverResult IMP::spb::RigidBodyNewMover::do_propose</definition>
+        <argsstring>() override</argsstring>
+        <name>do_propose</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::do_propose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="40" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMP_1_1spb_1_1RigidBodyNewMover_1a4767ba2d36c25707263a0c0f2c9d92bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IMP::spb::RigidBodyNewMover::do_reject</definition>
+        <argsstring>() override</argsstring>
+        <name>do_reject</name>
+        <qualifiedname>IMP::spb::RigidBodyNewMover::do_reject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/IMP/spb/RigidBodyNewMover.h" line="41" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Modify the transformation of a rigid body. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The transformation of a rigid body is moved in a ball of given size. The probability distribution is uniform over the ball. <simplesect kind="see"><para>MonteCarlo </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/IMP/spb/RigidBodyNewMover.h" line="27" column="1" bodyfile="include/IMP/spb/RigidBodyNewMover.h" bodystart="27" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a935c0f0c511bb9f7f108f0f9e39933a8" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>d_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a5e079dfd12ef07f77dadae35f9f256f8" prot="protected" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>do_get_inputs</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a847648eaf1edbf4f2817567e9ee4b66e" prot="protected" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>do_propose</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a4767ba2d36c25707263a0c0f2c9d92bf" prot="protected" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>do_reject</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a408fd517bb236edb0c2ba314db0cf3ba" prot="public" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>get_type_name</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a2b9f66d24c831710eaa31dc4e585edf7" prot="public" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>get_version_info</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a37333e1b0497dfc76aa91b2a8edeb5fd" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>last_transformation_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a50b840aacc41e0fdaf9af95658fb04f9" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>max_angle_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a584118e0c193d56a546894665e0b838c" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>max_x_translation_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a35c908c7a89ec4ece6886efe2ebf65d6" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>max_y_translation_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a3635b612f48c2e7e693c87c89c6a07eb" prot="private" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>max_z_translation_</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1af43951b1f208f16ca904dd5bb845f30f" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>RigidBodyNewMover</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1aff5b507cc2b7940ce58f22e85e8e6661" prot="public" virt="non-virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>show</name></member>
+      <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1afc6552dc84d4cef20f847e38a1caf393" prot="public" virt="virtual"><scope>IMP::spb::RigidBodyNewMover</scope><name>~RigidBodyNewMover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

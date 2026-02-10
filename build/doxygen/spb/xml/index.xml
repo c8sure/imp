@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="classIMP_1_1spb_1_1AttributeDistancePairScore" kind="class"><name>IMP::spb::AttributeDistancePairScore</name>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1aceb6986ec7846612991cbf07488a5f1d" kind="variable"><name>f_</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1ae3499a0e0be4d594d2ce7e9dde778848" kind="variable"><name>k_</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1abd9f3f36a0742a1dbf85cb6021e905da" kind="function"><name>AttributeDistancePairScore</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1abba8a9d48c3f070c4c0c12c02ffac53a" kind="function"><name>~AttributeDistancePairScore</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a2c26ca11c74783316831843183a39bd9" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a22cc9cbad5cf24633425d2b016501064" kind="function"><name>evaluate_if_good_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1ae034eb7a7d2e7cc7cf3d8973cb622855" kind="function"><name>evaluate_index</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1af72261af56f36833d448772fce9b05cc" kind="function"><name>evaluate_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1add9182bf8cf421ed36db86e03d80cf2b" kind="function"><name>evaluate_indexes_delta</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a5340aa2b656335d6a49aceef12389a40" kind="function"><name>evaluate_indexes_scores</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a0dda5c27aac2e4f9da670028bb99a0cd" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a712d8203b0cc4fd24ae1a1ad11c6d309" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1AttributeDistancePairScore_1a8c368d10dd25d2084aa4bde441b60ce8" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1BoxedMover" kind="class"><name>IMP::spb::BoxedMover</name>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a3a39eceb78ee8d2fd33be04fa3c045c2" kind="variable"><name>centers_</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1aea538a251b8e5a1d5a4fe29dce4bf1d2" kind="variable"><name>max_tr_</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a63d63f5dfec93cd91c7449040a8431a0" kind="variable"><name>oldcoord_</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1ad311f5a9d7c0b7fbe5f486f22db51383" kind="variable"><name>p_</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a42b03b596dab01a65b08165d60d1f588" kind="function"><name>BoxedMover</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a7ffe7a097b587c6eb8334e5c3908b682" kind="function"><name>~BoxedMover</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a36793438576745218908e7db283634ff" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a13858fcd3581bc3d222839f5845db11b" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a3a152fa8f959617a951de1a7838fe12a" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a47133cee3edf105526159f48a6932f7f" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1ad70033560950a5f8d77d44454217c09e" kind="function"><name>do_propose</name></member>
+    <member refid="classIMP_1_1spb_1_1BoxedMover_1a465004dd593ddb87632406a31b7df2eb" kind="function"><name>do_reject</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1CellMover" kind="class"><name>IMP::spb::CellMover</name>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a04dd8285fdfb4bbf77688dddcafba117" kind="variable"><name>max_translation_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a2cf72e307b90e63dc6dd992475402c61" kind="variable"><name>old_scale_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a8d6acc02299b2191e13e6f34d45cc18e" kind="variable"><name>oldcoords_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a20293562a69b06bb602c0df74ca4519a" kind="variable"><name>oldtrs_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1aa14d5e59b565dda4d3a9275c8e5c7d11" kind="variable"><name>p_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a03d885cea802743a0a5ae72981c95387" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1af3dc83ec7f9de11885fe8470f12f1bd6" kind="variable"><name>ps_norb_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1af1abf91307968543dc29224248f1b5f0" kind="variable"><name>rbs_</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a7e5c753f4b31ab8721a007b181600648" kind="function"><name>CellMover</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a7206829770775e9055cd1b812a28c0ee" kind="function"><name>~CellMover</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1ab300e75c5cb79b372673f169df9dd94e" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a96366c6aaba9d5fae391cd927995e502" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a809f0e77dfb983c8f45d1f772ef9190e" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1ab6aa71806ac4a4ce35e5ecdae7cda635" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a3fd38af233c4193e9a04a4b5a4e41976" kind="function"><name>do_propose</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a5d80d062df1d9be097b59e88357b99e5" kind="function"><name>do_reject</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1a705875dfcd4c101bc54274bcaa94a8c8" kind="function"><name>get_particles</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1aea424d12587b43adb43dcce919364f88" kind="function"><name>get_rigid_bodies</name></member>
+    <member refid="classIMP_1_1spb_1_1CellMover_1ad7b9e45e506ee6c32cb9f8f9e49d1746" kind="function"><name>get_transformed</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1ChiSquareMetric" kind="class"><name>IMP::spb::ChiSquareMetric</name>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a201a2ee640ed7e7fc921b1e115b1c994" kind="variable"><name>constr_type_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1aa722a0eb232dfa9cf5a54f27e5650f4c" kind="variable"><name>norm_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a0c9b3e680ec16e87632d74ecb31b5d3e" kind="variable"><name>nu_exp_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a1a3b1fcf10fe6359bae6f18b600628dd" kind="variable"><name>nus_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a43e66b984ed9c270ab3cb1d2afa4db49" kind="variable"><name>stddev_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ae1f34f49f82751a4c59538ac2e1104f9" kind="variable"><name>weight_</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a8bfbc4359a174269a6a9aaed4c103c0a" kind="function"><name>get_chisquare</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a8f59cf3c0bacd79f7b840b6565068161" kind="function"><name>get_scalarchisquare</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a2d02a3e31b915a5be91cd8bdb9d1bdc4" kind="function"><name>ChiSquareMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ab7395b50b6a8ff874be8b468868398f8" kind="function"><name>~ChiSquareMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a3e57b3c9121ccee87ea663e71d0d1f69" kind="function"><name>add_configuration</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1adc5cc7306005fbf95130769f6f0bef64" kind="function"><name>get_chisquare_exp</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a5411715f2584f4b0ee4258d01272e24d" kind="function"><name>get_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a4fda81c920e81dfafdabef6655011645" kind="function"><name>get_nu</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1ae62c5c06281d5145b70603912ffe408f" kind="function"><name>get_number_of_items</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a538a17aac46f5e7f8745ddca61f3f345" kind="function"><name>get_stddev</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1aa2e6dfa3b6ff4846e05100f12e8590fa" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a1c72aae2c5e5a4fbbf7d152554fd776d" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1ChiSquareMetric_1a70a234d74f3e4c42fdeb078e45b8e5d8" kind="function"><name>get_weight</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1ClusterParameters" kind="struct"><name>IMP::spb::ClusterParameters</name>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1ae6c24ada4b08dfda4c1fb4ab104770d8" kind="variable"><name>biasfile</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1aaf235737104a7042e531e5dc598bbbb6" kind="variable"><name>cutoff</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1af80355c879ca0c2354538c74b07bb3a4" kind="variable"><name>identical</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a8aadff3c1b5efb44b21582f34a5d8251" kind="variable"><name>isdtrajfile</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a19a420fffea248126d3d3fc717f1c40c" kind="variable"><name>label</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a3b449c251b2cac7f206c2803524cdf66" kind="variable"><name>niter</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a1c658e9f1d05bc370b18dd4ca2dc06c1" kind="variable"><name>symmetry</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a18aa42114b9120f5bb633f7d3bcbba4a" kind="variable"><name>trajfile</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1ab3e592b65f73690dc1e0afcaa9a0693a" kind="variable"><name>weight</name></member>
+    <member refid="structIMP_1_1spb_1_1ClusterParameters_1a7ae008c80b7280924de3d1a1c6eb1a7a" kind="variable"><name>weightfile</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1ContactMapMetric" kind="class"><name>IMP::spb::ContactMapMetric</name>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ae4edcba2199c1943d33769fe66f01d50" kind="variable"><name>matrices_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ac3e2772a1fec4e2be25b13ec3f92d853" kind="variable"><name>mm_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a0df7a1a8641baca27fa1e467e972c43a" kind="variable"><name>nn_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aba5f1792b645a1ea1f974ec1eaf9cebe" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ab50c712899cca1da2903101c0dc24ddb" kind="variable"><name>r0_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aef44faa64db4c8a825380b786c0287e6" kind="variable"><name>weight_</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a57dbc961c058049f122a6863aba253dd" kind="function"><name>get_contact_map</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a7ee392aee6596c49577d0356fc375f6d" kind="function"><name>get_rmsd</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a8015c7ecf2602d122821322c3ef68c2b" kind="function"><name>ContactMapMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a8dd8f3cd34eccdf89a96ba1a7d36ae1f" kind="function"><name>~ContactMapMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a5edf4cc3a35d0140a1f01fbb3c4e8adc" kind="function"><name>add_configuration</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a2744c5577035f8afeeff19ec48330a9d" kind="function"><name>add_map</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ad70a3ce8478b65f246139595af48282f" kind="function"><name>get_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ad57d626b4b6db024fc49bf92c9f64b58" kind="function"><name>get_item</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a9564124d6d0a624a8c9c7e4de62a5986" kind="function"><name>get_number_of_items</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1aefccb08fd5c81e551bab3a9cfc35ab5a" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1ab14e00eeed77d0ff2dfc4ca892b34eb3" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1ContactMapMetric_1a830ecca07ab0a0cf625fc4466cf291bc" kind="function"><name>get_weight</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1DiameterRgyrRestraint" kind="class"><name>IMP::spb::DiameterRgyrRestraint</name>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a2ff26fe31c4e21ab8175f30d71ab1e68" kind="variable"><name>diameter_</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ac6bd49602b2ff3522764120c8173bc74" kind="variable"><name>kappa_</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a82a858cde2615621b8143edcbf3ee497" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a3ac27d9628527a0e8d4110fea2dd7663" kind="variable"><name>rgyr_</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a646441d110e08a812b41f3e06893f2ac" kind="function"><name>DiameterRgyrRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ae02b15aba5c3ef29bed572c1fee100af" kind="function"><name>~DiameterRgyrRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a8157a23eec7e212becfecf5ce9015923" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1a16457d8a7705b72988d22eba412e3608" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab09a6d47b6953e127afb413899254634" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1DiameterRgyrRestraint_1ab224c1fdd7b55e88d074056d50fd0575" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1DistanceRMSDMetric" kind="class"><name>IMP::spb::DistanceRMSDMetric</name>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a859a1628bfdc7b4c699762b660898352" kind="variable"><name>matrices_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a96dadfd34a636950571d932d0bb760be" kind="variable"><name>matrixmap_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a45c8e68fb5daf1f4887af85f96366161" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a601f534657494ed0204aa57c3b35fcde" kind="variable"><name>px_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ae57ba6af4266d665a7365e5a91c8c70a" kind="variable"><name>py_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1aac640c4a0f1bc396e5e5c45bbc59f458" kind="variable"><name>pz_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a3e61983729e0822db8e949a39f9fd84e" kind="variable"><name>tr_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a956764b928f2bc55091a71cecbd31766" kind="variable"><name>weight_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab8990e4dbf8581a44425c8e7f9882aa9" kind="function"><name>get_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a2e64a8a97d28e874faee02fade41a489" kind="function"><name>get_distance_matrix</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1af43a93475b61102e8561781b89b7a469" kind="function"><name>get_drmsd</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a381525e1391b3e59f868e37007fbb541" kind="function"><name>get_transformation</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1ab2970c964f8f51f309588a32d373df70" kind="function"><name>get_vector</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a81193d86d549c04ec1eb1a6c73406b97" kind="function"><name>initialize</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1acec32b3f8c372e2eea6771f88cfeeb00" kind="function"><name>DistanceRMSDMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1afc039a8720b83742318912ddf730a757" kind="function"><name>~DistanceRMSDMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1afa103ba34f268060000f291562c3a308" kind="function"><name>add_configuration</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a70951cf2f420961f254408dcb61696c8" kind="function"><name>get_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a56dea66dbd16b2374ed0bed04cc87bfc" kind="function"><name>get_number_of_items</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1aee7e1a77980aa974d4fcaf560ee0b3ea" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1adf1b20f4840efa19033c88c7cb8ad8a5" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceRMSDMetric_1a06486aee416db2f27e007cdb06bd01ad" kind="function"><name>get_weight</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1DistanceTerminiRestraint" kind="class"><name>IMP::spb::DistanceTerminiRestraint</name>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a871475a46da75c4e289720f02270f6cf" kind="variable"><name>cterm_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad712c2c71c1b992e9a1c0ea6d7207ce2" kind="variable"><name>nterm_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a66a599060890ece755802062d93a1b25" kind="variable"><name>reqd_dist_term_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ac1b4e24bb049381fee1f9cc483b91f92" kind="variable"><name>sigma0_dist_</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a43c5d156666d4d3a9997ca5380322c30" kind="function"><name>DistanceTerminiRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a6ee970cbd0c81eec8b934814bb795f68" kind="function"><name>~DistanceTerminiRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ab5207e19cbbe60aed6b9b047fb312284" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a851be32536b7a5b01cb6f6d682e4479d" kind="function"><name>get_model_termini_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1afafaab72e9051fca99bc733f918d2602" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1a40c7008cf30ddfdcf034a96e754c9600" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1DistanceTerminiRestraint_1ad3aa68a4b00274594adc6c634ba604be" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1EM2DParameters" kind="struct"><name>IMP::spb::EM2DParameters</name>
+    <member refid="structIMP_1_1spb_1_1EM2DParameters_1a680d9c7b781be7e06b7d55b72d011312" kind="variable"><name>filename</name></member>
+    <member refid="structIMP_1_1spb_1_1EM2DParameters_1af49bf0f50113c2dedd6a6b57c36b8fbb" kind="variable"><name>pixel_size</name></member>
+    <member refid="structIMP_1_1spb_1_1EM2DParameters_1ad6a6b429779995bf043fa7ced25cb0dd" kind="variable"><name>resolution</name></member>
+    <member refid="structIMP_1_1spb_1_1EM2DParameters_1a0e0697534ad55ac9626a3d243e42739f" kind="variable"><name>SigmaMax</name></member>
+    <member refid="structIMP_1_1spb_1_1EM2DParameters_1abe9dbdf415ac6cfc1cbeb86ee0efae7c" kind="variable"><name>SigmaMin</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1EM2DRestraint" kind="class"><name>IMP::spb::EM2DRestraint</name>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a2e5ca856b086afe3ca5fcb77fbf8638e" kind="variable"><name>cols_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad9304d5e20652a59f7fe99384fcc53d5" kind="variable"><name>constr_type_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad554fcb86db3c63ffc9c5a121680322c" kind="variable"><name>fmod_grid_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ac3c3aae613b5bf660139fa71f84f39b9" kind="variable"><name>grid_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad291acc9bf5e07f65176aafbaa94bfa9" kind="variable"><name>image_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1acee79a7fbdfa537efaed397d0ec53c1f" kind="variable"><name>options_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a03c8d9f44a26f607880e87a6a141b110" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae450c42e41021e297ff9996ce359e572" kind="variable"><name>reg_res_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a4b032773989ee8e89a2c252699cca406" kind="variable"><name>rows_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae901d7450cd6cfc4b3ad491e786cc67b" kind="variable"><name>sigma_</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a4cb308a850058c0b6c246b5bb61df2c6" kind="function"><name>get_closest</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad7f0f62b404a593bf0aae11aa7db857b" kind="function"><name>get_normal_pdf</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a5863cbd8999c75e51916f2ca15711974" kind="function"><name>get_truncated_normalization</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ab28b0d0e0d4c1e79a96caab37ad10e45" kind="function"><name>init_grid</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a5d84cbaf7d0e7c740e48690aea6de343" kind="function"><name>read_image</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ae3ba5996fdc708d55178bc327e31c8c7" kind="function"><name>EM2DRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1af1c4225392bb43cb37bd9014cb24eb2e" kind="function"><name>EM2DRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ab55601bdd2f993ae1f2455353ac6a4e5" kind="function"><name>~EM2DRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1abb0d425afdb7c85dd41583026618dba8" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a80df0685721f898193436a9d0343f13a" kind="function"><name>get_cross_correlation</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1abdddb50e689292f2e289967dc8c60596" kind="function"><name>get_element</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a0a7f03453b7654756e33d568300331c7" kind="function"><name>get_marginal_element</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a35b35a46b5451585e089c7f6486ec10b" kind="function"><name>get_probability</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a059ce641ce5ef4794c83e02a910d60be" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a618cbcc25da2a0cc0664487224d4ea25" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1ad2b04b3e1e8311556cdf37bdeee2330d" kind="function"><name>set_particles</name></member>
+    <member refid="classIMP_1_1spb_1_1EM2DRestraint_1a8d6b189e88acca5fc8b4f9b6e76e6570" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1FretParameters" kind="struct"><name>IMP::spb::FretParameters</name>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1ae30eb697d0a9850bfdf49b9206168748" kind="variable"><name>filename</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1ab711084cfa54346703a5bb0ab08f8eaf" kind="variable"><name>filename_new</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a01abd6c753464ce406fe68491d532b47" kind="variable"><name>Ida</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a093c78ffae2426b735acfb79f2f3c84b" kind="variable"><name>Ida_new</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a8956d5e69f45087cfd15aabcdc70da0c" kind="variable"><name>IdaErr</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a24bd41d5cffdf318368f298085976343" kind="variable"><name>IdaErr_new</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a72bb83723657f2ba968b99d1e41685f5" kind="variable"><name>KdaMax</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a4786f4b265cd8fbe0e794279df94f10f" kind="variable"><name>KdaMax_new</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a237176eea41639bcb7a568b773c11cc7" kind="variable"><name>KdaMin</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a192efec246a5839d3f36b7e85cf042c1" kind="variable"><name>KdaMin_new</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a5a4886e3429ce3396f1165271095f719" kind="variable"><name>pBlMax</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1aae99a2c2e4c02673b9fb15acc1dbb7f7" kind="variable"><name>pBlMin</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a49e2ca52066056088b9bbd4397f854cd" kind="variable"><name>R0Max</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a34f82331ee4ff8cae6b2ba93c89f6237" kind="variable"><name>R0Min</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a6cb480569a9971c5add4cdb74ca86c90" kind="variable"><name>Sigma0Max</name></member>
+    <member refid="structIMP_1_1spb_1_1FretParameters_1a0ddd52d1af9606fb7a790fc7793025a1" kind="variable"><name>Sigma0Min</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1Gaussian" kind="class"><name>IMP::spb::Gaussian</name>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1af719b69e0a52e4e6164667836728f6dc" kind="variable"><name>Emin_</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1a1efb696fb9fad2adb4d1ffbac6077790" kind="variable"><name>sigma_</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1a62a6bd7b6891292348fa516a8651bad9" kind="variable"><name>Zmin_</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1ae2252aa908524d4ab6d81a96df1ea810" kind="function"><name>Gaussian</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1a9d7e8e783f651b4c2eb3fb5cbe2f43ae" kind="function"><name>~Gaussian</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1ab13a0ea743949b51cc7d3f419ca33fa9" kind="function"><name>evaluate</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1a33a4e1b273b006a49b02f6d0a0192c55" kind="function"><name>evaluate_with_derivative</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1a4f15fc055de0bb31085f0eddded9d217" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1Gaussian_1aafd1d2d706f6136bcb13f184fe03cd04" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1HelixDecorator" kind="class"><name>IMP::spb::HelixDecorator</name>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a1f54656e563eeb59e05c0a49d95dac9e" kind="function"><name>get_helix_key</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a5d97df7f4eb45404b50bfb18429b10ea" kind="function"><name>HelixDecorator</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a9e760c0fda858c33f445031ebb0ed763" kind="function"><name>HelixDecorator</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a2a2866201561eb03be940d7dd558786e" kind="function"><name>HelixDecorator</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a36e0736b4d124306b22b6cec7788eda7" kind="function"><name>get_begin</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1aa0866c25382813651cd299826d5c5677" kind="function"><name>get_end</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1af71ac58d6940ae687acac7bb6d85b97d" kind="function"><name>set_begin</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a944390e70f53fa38f6351dbdf7fb6840" kind="function"><name>set_end</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a367e5344f2c7ed77423ff04df46d1b8d" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1ade35a69f558117d6ddc786e28f9330c4" kind="function"><name>get_is_setup</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1ac789cc92aa47df9fe2e8e365e20fab3d" kind="function"><name>get_is_setup</name></member>
+    <member refid="classIMP_1_1spb_1_1HelixDecorator_1a3bdcdea309db55d9a67bc6d2ed12a5ea" kind="function"><name>setup_particle</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1ISDRestraint" kind="class"><name>IMP::spb::ISDRestraint</name>
+    <member refid="classIMP_1_1spb_1_1ISDRestraint_1ae876b1fe13a179659800c38a9521e45c" kind="function"><name>ISDRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1ISDRestraint_1a633dbe887307b93953c10b590232a751" kind="function"><name>get_probability</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1KinkPairScore" kind="class"><name>IMP::spb::KinkPairScore</name>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a0489a33c913002d8127fc5269e379405" kind="variable"><name>f_</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a429783aa9cdf3119f1d8b66d85289c43" kind="function"><name>KinkPairScore</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a6a6f5ac3a65d2c873c0e7bbb947f6b2c" kind="function"><name>~KinkPairScore</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a258175a6ea5dded6c847e1a77139bd1b" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a48c8b812053ac23ae6a9009bf84bb439" kind="function"><name>evaluate_if_good_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1adf2a2ed42daf23b463d076d4a4f99fa4" kind="function"><name>evaluate_index</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a379d6884a9c7d0f73176d4c36a4b6be3" kind="function"><name>evaluate_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a3ea27ee2e7e52bf3f4a632ff2d6d29b9" kind="function"><name>evaluate_indexes_delta</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1af4dadbf0c060b144b024dea95a705c87" kind="function"><name>evaluate_indexes_scores</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a03537dae174e0b2122443faaf55ae0c3" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a5eafd8aeab32a4fcc68a0fdd242d2157" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1KinkPairScore_1a6b44f2382883221a3ba38d1778e65b06" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1MapParameters" kind="struct"><name>IMP::spb::MapParameters</name>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a1b536d35efd0c3b7cfcb2a948e39ce2f" kind="variable"><name>frames_list</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1ac1faa6dac6d0f2777fb833805f07d34f" kind="variable"><name>label</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a3741f4974ca14807be6ee75794c4ab8b" kind="variable"><name>nbinx</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a24b03dbb0d409ce2da575927135dba04" kind="variable"><name>nbiny</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1ace26d65c94f678f1af7d8f0ff26e3ffe" kind="variable"><name>nbinz</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a5dcb0a805a6e76d6e06baedf614fb855" kind="variable"><name>ref_file</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a36409cb9b265927922cbbfc9a29bd844" kind="variable"><name>ref_isdfile</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a95b6dbba0a79d9a86ee65292304933d9" kind="variable"><name>resolution</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a6b6baebb8ce29d15b54c5d5c36b5b2ca" kind="variable"><name>xmax</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1aa05060d96d108289fb00838402a557ea" kind="variable"><name>xmin</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a657a23eed29bd5b0e5f22fcb6e736866" kind="variable"><name>ymax</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1a2590a2999e15811f7f74dc78eb25befb" kind="variable"><name>ymin</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1ad657847204d35e5d13db7c85a1e0e6b4" kind="variable"><name>zmax</name></member>
+    <member refid="structIMP_1_1spb_1_1MapParameters_1aeb582c1a4bf4d068d9058ce05cd8883b" kind="variable"><name>zmin</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1MCParameters" kind="struct"><name>IMP::spb::MCParameters</name>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a5d2f6f4c4785410d15cb1e6c477c3c69" kind="variable"><name>dA</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a603c11d98021fe79135065ef28ba6f9f" kind="variable"><name>dang</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1adc82c36e744dc9bfe2c14b858624ff9e" kind="variable"><name>dIda</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a3ef21adcec3f42d546583ca18449f0a2" kind="variable"><name>dKda</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a53f5850234aea160251168a507daaca7" kind="variable"><name>do_wte</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1ac49f6f39ae2d479ba82837935594044e" kind="variable"><name>dpBl</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a303cdec7bd0badf3ca43dca31dbb5cd5" kind="variable"><name>dR0</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a37cb0329842100dad401761098b8467c" kind="variable"><name>dSide</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1ad886c04a1d75faed0332d8ca07591cbc" kind="variable"><name>dSigma0</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1ac0ee687aa6db146cd45924f8d66aeabd" kind="variable"><name>dx</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1aa04489094770cffa17e59e2b498f18f8" kind="variable"><name>nexc</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1aa1150b54efb3bf3b066f8dd50daa1d55" kind="variable"><name>nhot</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1ab9fbd08f19148fbd353bb98f41c63576" kind="variable"><name>nsteps</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a02d52f19de74db2b485e11c3f7e023ec" kind="variable"><name>nwrite</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1adb8c95bd98f424ef6a9a903354256647" kind="variable"><name>tmax</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a0858f19ce47fa76194d4b34924301181" kind="variable"><name>tmin</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1af0e41dcf70e65fb6e40af4d39158067a" kind="variable"><name>wte_emax</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1af041f40cacadcf4522467e1ede6de256" kind="variable"><name>wte_emin</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1afcbfde37471abe0df737df9f239c30a2" kind="variable"><name>wte_gamma</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a34e567d20c6cb74706a3f5faf0247447" kind="variable"><name>wte_restart</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1aecf3e2858188855f24955ea373ac3b1e" kind="variable"><name>wte_sigma</name></member>
+    <member refid="structIMP_1_1spb_1_1MCParameters_1a4b6d4931e5d4b557b2e4755be19522c9" kind="variable"><name>wte_w0</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte" kind="class"><name>IMP::spb::MolecularDynamicsWithWte</name>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1ab190b7346a2cd2f8a9a899f8be5858d2" kind="variable"><name>bias_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2b9941d88ffda441051e59a12f44a4d8" kind="variable"><name>currentscore_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a0f46917ca75b3391df419f998d33fd25" kind="variable"><name>deriv_to_acceleration_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1aa0f938d8e8692ac78f47d4347b554c7e" kind="variable"><name>dx_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a6ced5e183654e7d9118ca1ef392eb1f2" kind="variable"><name>gamma_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a4ddb0b9c7377a5575468cdabdca96f65" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1abc19ad04d38b9e713e5391089df01cc3" kind="variable"><name>min_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a9aa235164ce7acf03884e908b8379a85" kind="variable"><name>nbin_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a11c156e88a6f39cd3901cb5d18006c6a" kind="variable"><name>sigma_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1ac624850d074dfba7f9c13509bf36303d" kind="variable"><name>w0_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1ad4c3aada1b651f808d33e45ac142ec89" kind="variable"><name>degrees_of_freedom_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a85abb384e2bda9e6b8fcb176b7dc123f" kind="variable"><name>velocity_cap_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a01404fe1683a97d9bc5603103efd0a03" kind="variable"><name>vs_</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2c78235ef8491e9588d598afcc8887d8" kind="function"><name>get_derivative</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a26b1a67c2aea8f929fe3044a55fe0e66" kind="function"><name>update_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2666b8ac4baae12e5ebbf94bc125c3cc" kind="function"><name>MolecularDynamicsWithWte</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a0a5cb1e977b6c3800b2dfae41a8c04a6" kind="function"><name>assign_velocities</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1aa3e974603ad69de7378b140de8dc71e9" kind="function"><name>do_step</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2f926b48a4203a1a144722049d6f75a3" kind="function"><name>get_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1aac0872a176a9adc1b317f570d82e9086" kind="function"><name>get_bias_buffer</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a68a05f36118444c0e0afb1c2ce98b7b2" kind="function"><name>get_is_simulation_particle</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a5da7a96cb9e1d6a7d755219366c9b897" kind="function"><name>get_kinetic_energy</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a11a715826a1f7cfb3d235f44719201b2" kind="function"><name>get_kinetic_temperature</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1ad1087dfb0171c73ada8c043d218d287c" kind="function"><name>get_nbin</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a3519d92cba5ffac12ee5846a1b3d61c4" kind="function"><name>rescale_velocities</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a9d3e414433d0004d9693b91f514f7682" kind="function"><name>set_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a4af44ce176e7b374f5113ce43b345646" kind="function"><name>set_velocity_cap</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2439ba19ca30bd18cd8dbf967a46397c" kind="function"><name>set_w0</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1ac1eaac2752f5f4e042320500bc9fcbbc" kind="function"><name>setup</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a839fb25aefb7d685bf2a8c777c048a99" kind="function"><name>cap_velocity_component</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a58497d679787f4dde0ea0b2a8a501b89" kind="function"><name>initialize</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1af060e5e297ad3e6b35de01133dab2c0a" kind="function"><name>propagate_coordinates</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1aebf18749657dcaad6ad378f51b2a7b43" kind="function"><name>propagate_velocities</name></member>
+    <member refid="classIMP_1_1spb_1_1MolecularDynamicsWithWte_1a2981a0c097c8512dccf27e160b996ea6" kind="function"><name>setup_degrees_of_freedom</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1MonteCarloWithWte" kind="class"><name>IMP::spb::MonteCarloWithWte</name>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a4166b65818b2c1082e09aeccd83e9b2d" kind="variable"><name>bias_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1af40b74c1fb2373d88b4354894c83897c" kind="variable"><name>dx_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ad083d2048470a0775e9d6b1176fcc85f" kind="variable"><name>full_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a22b9a56535ddc8ffec53f2b2d29119af" kind="variable"><name>gamma_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a6ac26cd5acf17d7e184dcd58a82c6ba8" kind="variable"><name>max_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ac6f6a9ddff7b492918fb9aaae387f762" kind="variable"><name>min_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a95d19ddc84f7fdccb15da4b28c7fc258" kind="variable"><name>nbin_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a0e1e1e1b506469b43c2d7b7796a20fc7" kind="variable"><name>rset_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a1edfd06fc6a727cd3f8492c229ab00af" kind="variable"><name>sigma_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a4bc14838f48f87aca637231d3a0a4371" kind="variable"><name>w0_</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aa89b945158ff45bc86a7249f8a7afac0" kind="function"><name>do_evaluate</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a72f72d3c47ad107ef9eb58fb8c2fde43" kind="function"><name>do_initialize</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ab94c5135f791c563045208b405c70969" kind="function"><name>get_spline</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a92ee046b7766c8e77a5f7f19e35a2e2d" kind="function"><name>update_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a5fd6e93ad44c53fa425a8b4b61003a6d" kind="function"><name>MonteCarloWithWte</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1afac90eb879ea01493498a4a753bee8aa" kind="function"><name>MonteCarloWithWte</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1af96ce2bf632ee266f1629c7f6b9c3db0" kind="function"><name>~MonteCarloWithWte</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aead2597b0b13c868364090f83980e69c" kind="function"><name>do_step</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1ab84651d2ea9d90ddd4aec520e304bee0" kind="function"><name>get_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1adb5a6b63a11e7c79ab552d6ec1c60b87" kind="function"><name>get_bias_asfloats</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a75d3321c68459d04d8a086a95b889c05" kind="function"><name>get_bias_buffer</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a7a81a24c7f5b000365f133ed3f102134" kind="function"><name>get_nbin</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aaedc60c5ae309fe0e8bef94f784f1d4d" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a63fbbe0782870f2ba04e99abf0992046" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1aeae7296a49f31fd30e9aec2d686b1e6a" kind="function"><name>set_bias</name></member>
+    <member refid="classIMP_1_1spb_1_1MonteCarloWithWte_1a9fcaa174ca8758f3d252e9ad2c5fbe73" kind="function"><name>set_w0</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1NuisanceRangeModifier" kind="class"><name>IMP::spb::NuisanceRangeModifier</name>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1acc938e13644f4d49a3aa35ffdb4783f0" kind="function"><name>NuisanceRangeModifier</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1ab7e9aa418b1d7607b992d2703c98db95" kind="function"><name>~NuisanceRangeModifier</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a97af4894cc160c28f899b74c2e89d3fe" kind="function"><name>apply_index</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a0e314d93300fd8475c8c7f3cf403715e" kind="function"><name>apply_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a8f220ce0066ea2b0bfbecf9ec8b19d93" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a908a926e51c1d4d31519118433683e5b" kind="function"><name>do_get_outputs</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a4dbaaae5c1c258a42cce4807e65c799c" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a9ef012045a0073af25842a532a33d8c3" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1NuisanceRangeModifier_1a4b028899e5f93769068c2a53bcd66eb9" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1PbcBoxedMover" kind="class"><name>IMP::spb::PbcBoxedMover</name>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a30d11eff6781bf369bd3e38f5ce88b32" kind="variable"><name>centers_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a87fb689fc74e1ab93ff7c3aa9b8cd193" kind="variable"><name>max_tr_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a4077d99f1e725ab6ea74748cf21d37ba" kind="variable"><name>oldcoords_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a6456598c4452e89a61c4479f1b3abcd9" kind="variable"><name>p_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a96fde4679fedc78fd8915d4cea157d97" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1abbde60bf54b8a764b5bb48244eb353f4" kind="variable"><name>px_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a1ce56ddca4f3df8b5e46f2cc854c6f07" kind="variable"><name>py_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a7be09b04611dc00fb01f4e2237877075" kind="variable"><name>pz_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a64bc2d78a570d0ac5f744aea15e94da4" kind="variable"><name>transformations_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a131c4510cd00aaa4229c157b4bfd601d" kind="function"><name>PbcBoxedMover</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a1e7af30737dfe6cc74aa936486a73006" kind="function"><name>~PbcBoxedMover</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1ad3fdeff99aa836142692d1a102763898" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a9e70e4714329a55e800ca95258bc8f14" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a662f1f00a10d1dec0653c0c458319efc" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1acc63a31c24c853b99bc0c6d1529a2415" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a17af145045d3e272125806b0efcc7ed5" kind="function"><name>do_propose</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1ad47b63f89f8012b3ffd95211f8bc26b9" kind="function"><name>do_reject</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1a809ab75d13edfc108f6b6beb6db3be37" kind="function"><name>get_transformation</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedMover_1ab27d4355c519a56f84d0dd4757e050f6" kind="function"><name>get_vector</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover" kind="class"><name>IMP::spb::PbcBoxedRigidBodyMover</name>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a3a266edd31a7fd010ca6e736495c85c2" kind="variable"><name>centers_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1ab54942dc0929e384d78193b1e0201cb4" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a86ec9793d409c52bfa7979885e79b901" kind="variable"><name>last_transformation_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1ad63a0909b0b93e53381787d78fcc3b92" kind="variable"><name>max_angle_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a5ded552a3aefda7342ae0fe212f5aede" kind="variable"><name>max_translation_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1afef007458ff3abf80717123f1b703cd3" kind="variable"><name>oldcoords_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a390c6ce8d6a623fe8e31cb8bc01618ba" kind="variable"><name>oldtrs_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a2a209c2262e1b5efbce0ae8eea248edc" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a840d831ddbde60193993e351125d9d79" kind="variable"><name>ps_norb_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a0a6ce5f9fde356e1461113ca2510085e" kind="variable"><name>px_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1ade3cd62407e2215a7489a3d9ec3723bb" kind="variable"><name>py_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1ae5a156a9646d3f55b2ff3b93b1cb19e3" kind="variable"><name>pz_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1abe04f6e10d94ca38730e72e668dafb4e" kind="variable"><name>rbs_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a4f2feef4c65cc30f148e3694460d17b4" kind="variable"><name>transformations_</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a71a75e5182b952b8fb0b4a4e5ca49eeb" kind="function"><name>PbcBoxedRigidBodyMover</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a534ec9cf8c7eb2dde16ca527452a0347" kind="function"><name>~PbcBoxedRigidBodyMover</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a3cc6b4dca2e776138bd5b3523812d7c7" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a4b98f808ee6f4f48d8228513f10cabb9" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a88f87bdca4ed2d845a67b55b719515a8" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a900b146ae495ae7757da722b1a477107" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1ad9d016ff8f2fae64204338adc2513410" kind="function"><name>do_propose</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a73db58690aa69a2491ec420f345ea7b6" kind="function"><name>do_reject</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a9f71be4c0d64eef754e6ba2bf2c0b478" kind="function"><name>get_particles</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a193e7da847a4651eb580ac200ee25d9b" kind="function"><name>get_rigid_bodies</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1a0fdb29cf211306df2a0812f2141cc091" kind="function"><name>get_transformation</name></member>
+    <member refid="classIMP_1_1spb_1_1PbcBoxedRigidBodyMover_1acf16246221657dd295d814e14543281e" kind="function"><name>get_vector</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1RigidBodyNewMover" kind="class"><name>IMP::spb::RigidBodyNewMover</name>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a935c0f0c511bb9f7f108f0f9e39933a8" kind="variable"><name>d_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a37333e1b0497dfc76aa91b2a8edeb5fd" kind="variable"><name>last_transformation_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a50b840aacc41e0fdaf9af95658fb04f9" kind="variable"><name>max_angle_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a584118e0c193d56a546894665e0b838c" kind="variable"><name>max_x_translation_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a35c908c7a89ec4ece6886efe2ebf65d6" kind="variable"><name>max_y_translation_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a3635b612f48c2e7e693c87c89c6a07eb" kind="variable"><name>max_z_translation_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1af43951b1f208f16ca904dd5bb845f30f" kind="function"><name>RigidBodyNewMover</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1afc6552dc84d4cef20f847e38a1caf393" kind="function"><name>~RigidBodyNewMover</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a408fd517bb236edb0c2ba314db0cf3ba" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a2b9f66d24c831710eaa31dc4e585edf7" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1aff5b507cc2b7940ce58f22e85e8e6661" kind="function"><name>show</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a5e079dfd12ef07f77dadae35f9f256f8" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a847648eaf1edbf4f2817567e9ee4b66e" kind="function"><name>do_propose</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyNewMover_1a4767ba2d36c25707263a0c0f2c9d92bf" kind="function"><name>do_reject</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1RigidBodyPackingScore" kind="class"><name>IMP::spb::RigidBodyPackingScore</name>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aebd607e90ddc13ac9415be80530d8bbf" kind="variable"><name>ddb_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a668529d40b444cd67b3760dbfae85e03" kind="variable"><name>dde_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa8f09cf00d60ed37c75a1acdbe76ef34" kind="variable"><name>kappa_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aa18fd87376752b90de81cbb633d9bf63" kind="variable"><name>omb_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a6fe59d08856fd9c0e3eeeb81498ab287" kind="variable"><name>ome_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a47ed6f1d4df5e9fa06a364d65c7f4faf" kind="variable"><name>tbr_</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1af9450aec17ade4688cbcfcf7981772af" kind="function"><name>RigidBodyPackingScore</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a1a5190b3fd84786ff14566b87f71aa8f" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1ae9ab1a52fc21bb5c07a15bb85a67bfca" kind="function"><name>evaluate_if_good_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a15cccb6e5f73f6f7005995f7462a0577" kind="function"><name>evaluate_index</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a43e479690c4a8c11a9bbbf52fa291cc8" kind="function"><name>evaluate_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a804a92ab3bb427b5a5882ca7b6797ccf" kind="function"><name>evaluate_indexes_delta</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1a327d21d959edaa4376aa983bcd3f4b88" kind="function"><name>evaluate_indexes_scores</name></member>
+    <member refid="classIMP_1_1spb_1_1RigidBodyPackingScore_1aed2268e4601ddcafc03d4eabadfe89ea" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1RMSDMetric" kind="class"><name>IMP::spb::RMSDMetric</name>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a0d3e24c1d646bd9d4f8ce94575125b5b" kind="variable"><name>coords_</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1aa6baf2c46193f2b1002b1acf81f656c0" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6dbde68093cf2ddd2e5a72a48783cb48" kind="variable"><name>weight_</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6c70520bbd0e36bbbb00696cf93b03d7" kind="function"><name>get_rmsd</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1ad192b68d21a97f9ec2d54a001141c167" kind="function"><name>RMSDMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1aa2cfc1034147909d104f048e15b29450" kind="function"><name>~RMSDMetric</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a8bbe50841e8da56d30f3bcd9241706e9" kind="function"><name>add_configuration</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a8936d8189cae99cb03dffd7257a79d96" kind="function"><name>get_distance</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a1df92b65b2afea260a432096a16b1bc4" kind="function"><name>get_number_of_items</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a6b88eab19fc77f0cbe7740ce0c77c1c7" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a69236b51b869fb6652b4268c7f8c215a" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1RMSDMetric_1a409abd017dc7550b075673901c0a907b" kind="function"><name>get_weight</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1SameParticlePairFilter" kind="class"><name>IMP::spb::SameParticlePairFilter</name>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a5ae22b18f1fbc6c6670c35c122bd3825" kind="function"><name>SameParticlePairFilter</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1aef59e812e5dfb48b39b0208a4dfd7e1e" kind="function"><name>~SameParticlePairFilter</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a7f4062dc2880a74bff524c3f6dfbb0bf" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1af21a2419be1aac90fc5d0301556c4c1b" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a7b2a259eeaf34d9c73393b6962be1510" kind="function"><name>get_value</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a6c81043587f5a026b6176a2340b8603c" kind="function"><name>get_value</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a93f06f1a2d8e80791321fa096a08ecac" kind="function"><name>get_value_index</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a287ab1bef2690711fc8a489b5882575b" kind="function"><name>get_value_index</name></member>
+    <member refid="classIMP_1_1spb_1_1SameParticlePairFilter_1a4ef95ddfb6b4d4b27c74d86498c81e01" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter" kind="class"><name>IMP::spb::SameRigidBodyPairFilter</name>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a47d2a16e0ad714b30ec7ed3afef27437" kind="function"><name>SameRigidBodyPairFilter</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1aed8a5a1c7d979e27697b7cb3a7c52bc9" kind="function"><name>~SameRigidBodyPairFilter</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a354ce81a4d5ebbad0028660537cd7b57" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1ae644c47f5e26ca3da2da4aded5c0cc0a" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a02a331dd7dfa5ee7982bf913b85e45a5" kind="function"><name>get_value</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a43832a9ff1220be69ec8883f70f6dd82" kind="function"><name>get_value</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1add61f73b92419512960c8d9e901c216c" kind="function"><name>get_value_index</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a58970732fbd9205fa20269d5a37f0565" kind="function"><name>get_value_index</name></member>
+    <member refid="classIMP_1_1spb_1_1SameRigidBodyPairFilter_1a06c4b88d18e97ee2df626855a3567ee4" kind="function"><name>get_version_info</name></member>
+  </compound>
+  <compound refid="structIMP_1_1spb_1_1SPBParameters" kind="struct"><name>IMP::spb::SPBParameters</name>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a70f4999c6d7a39d45c314b6b235fea84" kind="variable"><name>add_fret</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ae1752ccecb310b21c867f7eb6fb113dc" kind="variable"><name>add_GFP</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a98f1083d3bcb5db503c65ee5ba6072ad" kind="variable"><name>add_IL2_layer</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1af3998ee25a72a857770a7902c93c0d59" kind="variable"><name>add_new_fret</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a9f477af7500be1fc4691b9c984b423c6" kind="variable"><name>add_tilt</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ae3446ae522ebe8d344307bf375b2ba90" kind="variable"><name>add_y2h</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a8994ad9206a5e5fbc456f0c9276ba958" kind="variable"><name>cell_type</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a6ba2b6af4476284fa400354e40419c09" kind="variable"><name>Cluster</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a85228db6716987d0a68e62e78783ac72" kind="variable"><name>CP_centers</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aec3c457126b8c8bc0fe033b830c80257" kind="variable"><name>CP_IL2_gapMax</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ab09882a2be16d883c208e29f26cf2e4e" kind="variable"><name>CP_IL2_gapMin</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a5892a44e1f178a4811e6b578f6c96449" kind="variable"><name>CP_thicknessMax</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a4b26693297c491258b1d813efa79d79c" kind="variable"><name>CP_thicknessMin</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aba568039cd1554ea70ae1ffb5d3993f7" kind="variable"><name>dist_Spc29_termMax</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aad0b796b925628ac2c2e9cc6a02030af" kind="variable"><name>dist_Spc29_termMin</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a8e4a563ea75f1e4ced6803e33f68d6b5" kind="variable"><name>dist_Spc42C_max</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aff82fc0cc3e65229f77b2dd34caa3d5f" kind="variable"><name>dist_Spc42C_min</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a8a5bc88605b63fd32bd796be21241cc8" kind="variable"><name>EM2D</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aeca85ab8587a9b665534dc1812f00412" kind="variable"><name>file_list</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aae4873da00b17134076014cfd5fb2613" kind="variable"><name>fix_GFP</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a548f35b8cf20fe079262dfc30fd88c0f" kind="variable"><name>Fret</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a0a1ba9a30f967cd8448f9d241f5e7419" kind="variable"><name>GFP_exc_volume</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a8ecaabe21ccd00ca7242b8b4928ea158" kind="variable"><name>IL2_centers</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a33af755282eefd1e2db76fafdc3c835d" kind="variable"><name>IL2_thickness</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aabfe23b17e8d8a15974ae6e08d23b6d8" kind="variable"><name>isd_restart</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a1094a035d8bc1a8594d7c66380d78bff" kind="variable"><name>isd_restart_file</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ab8659acbc541967056f97e9b3e4062f2" kind="variable"><name>kappa</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aafd31d89c33ff8b0996ea9b7650f2355" kind="variable"><name>kappa_vol</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1aab974c8887155b99b6d9e9d553adb970" kind="variable"><name>keep_GFP_layer</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ab0954fadddd996cd0a0b00e910779786" kind="variable"><name>Map</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1af961d2c3b697472ffee581e07698b74d" kind="variable"><name>MC</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a853374d76abd117d62591e9c1c85dc6f" kind="variable"><name>num_cells</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a4a1da8f2830676bf62cee116aed277fb" kind="variable"><name>num_copies</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a8d3f7957d1ea1ed034488700308b2cf7" kind="variable"><name>protein_list</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a73727af23441bfcb836a13fb21865a76" kind="variable"><name>resolution</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a04ca0141b78092825c3c6d4294ecc3c7" kind="variable"><name>restrain_distance_Spc29_termini</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a463c9ab9606f120a75b737e02b1facf2" kind="variable"><name>restrain_distance_Spc42_Cterm</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1ac43a82f5822ddb040f0d8f95b954afcd" kind="variable"><name>restraint_GFP</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a6a6ef2bd2691dd65c278edd138f0ecc5" kind="variable"><name>sideMax</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a887e0f21836db37e9a93ed2c5b50b798" kind="variable"><name>sideMin</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a321f1604fa63524093bba0b4029232ef" kind="variable"><name>sigma0_dist</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1acb0f6d3db70c9264dacfc194ef30c563" kind="variable"><name>sigma0_dist_spc42c</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a79553c12f2564c929d1b4026ec004d6a" kind="variable"><name>Spc29_diameter</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a7952dca440596c5b7773b4cd121cab46" kind="variable"><name>Spc29_rgyr</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a3e0c58f1e6df239f14d1f58a052e2a38" kind="variable"><name>tilt</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a1d67836e0b87ee9b3b1403660d3d535f" kind="variable"><name>tilt_Spc42</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a5a3ec5d784766276401769865c694d39" kind="variable"><name>trs</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a657facc6fb7f460546b6606ed26e15c8" kind="variable"><name>use_connectivity</name></member>
+    <member refid="structIMP_1_1spb_1_1SPBParameters_1a855b1af0eefb30bb9990f9b9bf287d0b" kind="variable"><name>use_GFP_structure</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1TiltSingletonScore" kind="class"><name>IMP::spb::TiltSingletonScore</name>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1addbe1d1e7019ce9606774085d1d48f47" kind="variable"><name>f_</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ae9f4cf615167ccb1dc32fd581fe8b319" kind="variable"><name>global_</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1abd2e5669f7edeb1f49dd2e3da973ae9e" kind="variable"><name>local_</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a342433901f7f30ddc1d221ea9a2ea5c7" kind="function"><name>TiltSingletonScore</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ab8fd03075aae562eeef25e76915808cd" kind="function"><name>~TiltSingletonScore</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a3a80bfed17479205093bdb892c7af638" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a4742c27bd2bbc8d21413e8e9a520c6cc" kind="function"><name>evaluate_if_good_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a67fde55f6a70f6c0c444dfe9ea8a17b7" kind="function"><name>evaluate_index</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a405b170d08c98b54c85472e64ed9e30b" kind="function"><name>evaluate_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a61a8eb79c8063b655f5c10b11167d2d4" kind="function"><name>evaluate_indexes_delta</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ab31bc26c6eb0a97b3dfd3e231464806f" kind="function"><name>evaluate_indexes_scores</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1ad11ee3d24bd286bdf60036634e335710" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1a29d625ac5350e407a0f75baeb94ff7dd" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1TiltSingletonScore_1aa1491006c6b2fd518e03457e4f00e11f" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1TransformationSymmetry" kind="class"><name>IMP::spb::TransformationSymmetry</name>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a95fa8b6dc7932d1e8129d6e0dbbddf15" kind="variable"><name>px_</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a2af873c180a32d72993907b3dc564d2c" kind="variable"><name>py_</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a2cfe6777ddf0efc34d65a529764d4d1d" kind="variable"><name>pz_</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a0faade637e2e3e492d654b8b1a1a4ec9" kind="variable"><name>t_</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a989257340df9b52bf7eaac24b0c9fe50" kind="function"><name>get_transformation</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a49ced70bd3d57d215a181624a9b5e116" kind="function"><name>get_vector</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1abbd918cd369d5b315141934b20ac0868" kind="function"><name>TransformationSymmetry</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ae6a597aeb70987363631b056a796ef38" kind="function"><name>~TransformationSymmetry</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ae943600ae937b0f3b30d312af33babd6" kind="function"><name>apply_index</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ad43d6b8cf9e34a70256ffcb1936eab93" kind="function"><name>apply_indexes</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a9ab9a05cceaf83ed48ee3b9a053a9eff" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ac96d4863caa65fe5fc21d8d727636f09" kind="function"><name>do_get_outputs</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a0e3e4e59f85b331f9a9e84e8e3b9221e" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1ace73cf7a2f119cdfe73911e25a702712" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1TransformationSymmetry_1a5c168a07fecd1d994fa3877630860750" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint" kind="class"><name>IMP::spb::TwoStateGoModelRestraint</name>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aed6d782f18b6faf3556380ecbec53e08" kind="variable"><name>Beta_</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ac1eaeee3de43fd926aaa0a44fbaf3c9b" kind="variable"><name>DeltaV_</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3aea0e29974266798ef362cdccedf0f8" kind="variable"><name>native_attrA_</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a245f2db1e412c68cc5b9f288a9ce453a" kind="variable"><name>native_attrB_</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a3d5c8b5bb4bdd6e5a6101acf61602f02" kind="variable"><name>ps_</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a928b36d702bc4b2981ee7741e2ee8f33" kind="function"><name>get_contribution</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a652669233eaa79ce8de83f4b78cc997e" kind="function"><name>get_native_potential</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a777d991ba45adb75ca10e02de5000f6a" kind="function"><name>set_parameters</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a86411f5aaf5aabbd595385cc1cc079f0" kind="function"><name>TwoStateGoModelRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a5cb3482738d4c21392afb5c6e4df7237" kind="function"><name>~TwoStateGoModelRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ad7ec415885c8ac3ca98aadeca26a73a4" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1aa49defd2033fdc973612bfebc2a62eb9" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1ae85a46b2c7144b0103effac2d53f7662" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1TwoStateGoModelRestraint_1a7ae206ec555800493787a24ba0c8fdce" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="classIMP_1_1spb_1_1UniformBoundedRestraint" kind="class"><name>IMP::spb::UniformBoundedRestraint</name>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a527f6275dc57e94218012958d149c52b" kind="variable"><name>a_</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a65f76b4ff2dbc315ed6b344e244a7012" kind="variable"><name>b_</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1adbd6a3930eb317b7442032d710484770" kind="variable"><name>fk_</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aba063ebf757697e4bb923d4c50db33b0" kind="variable"><name>p_</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1ad778f9dd80c267b5860c40d80a7d6da9" kind="function"><name>UniformBoundedRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a8592faae6adea26a120a410164b8aef3" kind="function"><name>~UniformBoundedRestraint</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1ab729c18b1a70b66bc0841a9a5b1d4452" kind="function"><name>do_get_inputs</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aea291a16e6ec8fe13d3a22529ddbd4d6" kind="function"><name>get_probability</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a33c9075547d95d511cba248744722d15" kind="function"><name>get_type_name</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1a87b071effd27529147cbac5de93691ce" kind="function"><name>get_version_info</name></member>
+    <member refid="classIMP_1_1spb_1_1UniformBoundedRestraint_1aaf72b7cc4c37b6242af4c42d903e0328" kind="function"><name>unprotected_evaluate</name></member>
+  </compound>
+  <compound refid="namespaceatom" kind="namespace"><name>atom</name>
+  </compound>
+  <compound refid="namespacecore" kind="namespace"><name>core</name>
+  </compound>
+  <compound refid="namespaceIMP_1_1spb" kind="namespace"><name>IMP::spb</name>
+    <member refid="namespaceIMP_1_1spb_1a267bfe077fd4c62eaf5a2c560879971e" kind="function"><name>get_module_version</name></member>
+    <member refid="namespaceIMP_1_1spb_1a4e58657ff071e099e38abc014311daac" kind="function"><name>get_module_name</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac4d6b102ab93bb1da1d22860c1536d2b" kind="function"><name>get_data_path</name></member>
+    <member refid="namespaceIMP_1_1spb_1a1a7c475c82ab592f468be0340cf39c71" kind="function"><name>get_example_path</name></member>
+    <member refid="namespaceIMP_1_1spb_1a12e9981a67e009aafc50f06c4eb11508" kind="typedef"><name>AttributeDistancePairScores</name></member>
+    <member refid="namespaceIMP_1_1spb_1aeac4ab83dad6b61d9baa6dc981fe7692" kind="typedef"><name>AttributeDistancePairScoresTemp</name></member>
+    <member refid="namespaceIMP_1_1spb_1a281476d628dd9e78caa81bce755eba00" kind="typedef"><name>HelixDecorators</name></member>
+    <member refid="namespaceIMP_1_1spb_1afee07212a942f47d3cd6643ad9130304" kind="typedef"><name>KinkPairScores</name></member>
+    <member refid="namespaceIMP_1_1spb_1aa5a72f14d064bbe546708eb8d315f30a" kind="typedef"><name>KinkPairScoresTemp</name></member>
+    <member refid="namespaceIMP_1_1spb_1a930907282957d364a7b9592c119df5f0" kind="typedef"><name>RigidBodyPackingScores</name></member>
+    <member refid="namespaceIMP_1_1spb_1a1f655e3ed84aef5664486d8351e57d58" kind="typedef"><name>RigidBodyPackingScoresTemp</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac2f1c4f7d0477ff1f40bdd383b9dc914" kind="function"><name>add_BallMover</name></member>
+    <member refid="namespaceIMP_1_1spb_1a4f4e29033718c00197737912b750ef5b" kind="function"><name>add_bayesian_layer_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a5cf4889f38b10df0422f43533e1efa71" kind="function"><name>add_diameter_rgyr_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a6a49d172ebb893d6a3b0de6234cb318e" kind="function"><name>add_GFP_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a23e14d249f701c421fd66833c044539a" kind="function"><name>add_internal_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1af0dea7316b888d0d73dee803e66e8d54" kind="function"><name>add_ISD_particles</name></member>
+    <member refid="namespaceIMP_1_1spb_1a89c91f69eb459a1a6ef9a2da1c9d885a" kind="function"><name>add_layer_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac82266395d7d5fcf26defd3c2f2f9f06" kind="function"><name>add_link</name></member>
+    <member refid="namespaceIMP_1_1spb_1a2e319d74f871dffac11765e34a748794" kind="function"><name>add_link</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac5d9e593d188cd0afbeb276881d82996" kind="function"><name>add_my_connectivity</name></member>
+    <member refid="namespaceIMP_1_1spb_1a647eefa83fcb00316337141fc940792b" kind="function"><name>add_NuisanceMover</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac8ec6f7f84c9684326f06ce1e0f9e74e" kind="function"><name>add_PbcBoxedMover</name></member>
+    <member refid="namespaceIMP_1_1spb_1aec465b74f8f98da4682c157f396f8a7f" kind="function"><name>add_PbcBoxedRigidBodyMover</name></member>
+    <member refid="namespaceIMP_1_1spb_1a1d50546bf0502a542c492062c8f0f42b" kind="function"><name>add_restrain_coiledcoil_to_cterm</name></member>
+    <member refid="namespaceIMP_1_1spb_1ada54561155757e22856d4066515ecca0" kind="function"><name>add_restrain_protein_length</name></member>
+    <member refid="namespaceIMP_1_1spb_1a238100618f48d22ed7acd619702caea9" kind="function"><name>add_SPBexcluded_volume</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac09f34c6ac78e8632549a693c32154e7" kind="function"><name>add_stay_close_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a575f993823c11b8c6d9b11c1fcd089f0" kind="function"><name>add_stay_close_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1aaf1e29ff21dfe105c06b225967d4849e" kind="function"><name>add_stay_on_plane_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a06b534d7a1f9697f71f4a75366ba0a93" kind="function"><name>add_symmetry_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a69efcfb24ba7b76acf747b54f9c8ce75" kind="function"><name>add_tilt</name></member>
+    <member refid="namespaceIMP_1_1spb_1acf08490a12bf75b525b03a2b88f55ada" kind="function"><name>add_tilt_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1af9854762e7ddee17e6b588f2a8502c20" kind="function"><name>create_coiled_coil</name></member>
+    <member refid="namespaceIMP_1_1spb_1ae8957e05a946a61598e363e00de9763c" kind="function"><name>create_GFP</name></member>
+    <member refid="namespaceIMP_1_1spb_1a6c573f1af4a6acef53105cd2b5a89dba" kind="function"><name>create_gromos_clustering</name></member>
+    <member refid="namespaceIMP_1_1spb_1a3e962cefa954af2af9faf2922c7cb656" kind="function"><name>create_indexes</name></member>
+    <member refid="namespaceIMP_1_1spb_1abeff346a43c51e4d81a56567357880a1" kind="function"><name>create_merged_protein</name></member>
+    <member refid="namespaceIMP_1_1spb_1a78b1fb512e1db9c6362bb36df94293be" kind="function"><name>create_protein</name></member>
+    <member refid="namespaceIMP_1_1spb_1a994bd0fe39346bf4f08cbc6693a230f3" kind="function"><name>create_protein</name></member>
+    <member refid="namespaceIMP_1_1spb_1ae9d935784a933409cd306c7c046cfff6" kind="function"><name>create_representation</name></member>
+    <member refid="namespaceIMP_1_1spb_1a3507c2c0b90c3857c8b20ad6ed4c2436" kind="function"><name>create_temperatures</name></member>
+    <member refid="namespaceIMP_1_1spb_1af1567f1edb38909704aef9bf78f4d206" kind="function"><name>do_bipartite_mindist</name></member>
+    <member refid="namespaceIMP_1_1spb_1ada4e704add4083fbe486ca0847ea5e51" kind="function"><name>do_bipartite_mindist</name></member>
+    <member refid="namespaceIMP_1_1spb_1a041db50dc3843c8d79203e0b32abc025" kind="function"><name>em2d_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a0bea85caf13973079e597fbd22a6faaa" kind="function"><name>em2d_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a8f8f5a2c38fcb4058800e16901009fcd" kind="function"><name>fret_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a99e5eaecb6f84927e01a845887c92049" kind="function"><name>fret_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1aa40bd3cf6d2fe0fdffd9821965580965" kind="function"><name>fret_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1aa0266705d186273b495afe66e6cee4ba" kind="function"><name>get_acceptance</name></member>
+    <member refid="namespaceIMP_1_1spb_1aecabdb4e7356a9158c2bc1dad02b9026" kind="function"><name>get_friend</name></member>
+    <member refid="namespaceIMP_1_1spb_1ad4e10f451b36d8b629a12dd633718a08" kind="function"><name>get_pair_score</name></member>
+    <member refid="namespaceIMP_1_1spb_1a7987de4c2636867e18e70e325cf0c89c" kind="function"><name>get_rigid_bodies</name></member>
+    <member refid="namespaceIMP_1_1spb_1a74a565a80cd426faecd53074703dfcf2" kind="function"><name>get_SPBParameters</name></member>
+    <member refid="namespaceIMP_1_1spb_1aa3f80f1f50048d7d7c392d9ad128d144" kind="function"><name>get_sphere_pair_score</name></member>
+    <member refid="namespaceIMP_1_1spb_1a9745363649ecfebf6062da5120e9e393" kind="function"><name>get_sphere_pair_score</name></member>
+    <member refid="namespaceIMP_1_1spb_1a58a94cfc6958d85d112e235f74068ac1" kind="function"><name>load_restart</name></member>
+    <member refid="namespaceIMP_1_1spb_1ac8a844e54abb00f619e6b71704acf0b8" kind="function"><name>radians</name></member>
+    <member refid="namespaceIMP_1_1spb_1a2271ff41d487482a3029eb6e6ccd06cb" kind="function"><name>recenter_rb</name></member>
+    <member refid="namespaceIMP_1_1spb_1a2da88f5c1c47aa1813b7319e0adf0204" kind="function"><name>setup_SPBMonteCarlo</name></member>
+    <member refid="namespaceIMP_1_1spb_1a593b6099d43825461dd8f56df9ae11c8" kind="function"><name>spb_assemble_restraints</name></member>
+    <member refid="namespaceIMP_1_1spb_1a723dc9441d99bc32b505b1297dbc9d50" kind="function"><name>y2h_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a5b221c3d36f014665e4e683f386d60c2" kind="function"><name>y2h_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1a54d0fc740422b10af6f5e580d8c8cf1a" kind="function"><name>y2h_restraint</name></member>
+    <member refid="namespaceIMP_1_1spb_1aaa482337c92405e97517e612b3cbebd6" kind="function"><name>y2h_restraint</name></member>
+  </compound>
+  <compound refid="namespacestatistics" kind="namespace"><name>statistics</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="IMP__spb_8dox" kind="file"><name>IMP_spb.dox</name>
+  </compound>
+  <compound refid="AttributeDistancePairScore_8h" kind="file"><name>AttributeDistancePairScore.h</name>
+  </compound>
+  <compound refid="BoxedMover_8h" kind="file"><name>BoxedMover.h</name>
+  </compound>
+  <compound refid="CellMover_8h" kind="file"><name>CellMover.h</name>
+  </compound>
+  <compound refid="ChiSquareMetric_8h" kind="file"><name>ChiSquareMetric.h</name>
+  </compound>
+  <compound refid="ContactMapMetric_8h" kind="file"><name>ContactMapMetric.h</name>
+  </compound>
+  <compound refid="DiameterRgyrRestraint_8h" kind="file"><name>DiameterRgyrRestraint.h</name>
+  </compound>
+  <compound refid="DistanceRMSDMetric_8h" kind="file"><name>DistanceRMSDMetric.h</name>
+  </compound>
+  <compound refid="DistanceTerminiRestraint_8h" kind="file"><name>DistanceTerminiRestraint.h</name>
+  </compound>
+  <compound refid="EM2DRestraint_8h" kind="file"><name>EM2DRestraint.h</name>
+  </compound>
+  <compound refid="Gaussian_8h" kind="file"><name>Gaussian.h</name>
+  </compound>
+  <compound refid="HelixDecorator_8h" kind="file"><name>HelixDecorator.h</name>
+  </compound>
+  <compound refid="ISDRestraint_8h" kind="file"><name>ISDRestraint.h</name>
+  </compound>
+  <compound refid="KinkPairScore_8h" kind="file"><name>KinkPairScore.h</name>
+  </compound>
+  <compound refid="MolecularDynamicsWithWte_8h" kind="file"><name>MolecularDynamicsWithWte.h</name>
+  </compound>
+  <compound refid="MonteCarloWithWte_8h" kind="file"><name>MonteCarloWithWte.h</name>
+  </compound>
+  <compound refid="NuisanceRangeModifier_8h" kind="file"><name>NuisanceRangeModifier.h</name>
+  </compound>
+  <compound refid="PbcBoxedMover_8h" kind="file"><name>PbcBoxedMover.h</name>
+  </compound>
+  <compound refid="PbcBoxedRigidBodyMover_8h" kind="file"><name>PbcBoxedRigidBodyMover.h</name>
+  </compound>
+  <compound refid="pt__stuff_8h" kind="file"><name>pt_stuff.h</name>
+  </compound>
+  <compound refid="RigidBodyNewMover_8h" kind="file"><name>RigidBodyNewMover.h</name>
+  </compound>
+  <compound refid="RigidBodyPackingScore_8h" kind="file"><name>RigidBodyPackingScore.h</name>
+  </compound>
+  <compound refid="RMSDMetric_8h" kind="file"><name>RMSDMetric.h</name>
+  </compound>
+  <compound refid="SameParticlePairFilter_8h" kind="file"><name>SameParticlePairFilter.h</name>
+  </compound>
+  <compound refid="SameRigidBodyPairFilter_8h" kind="file"><name>SameRigidBodyPairFilter.h</name>
+  </compound>
+  <compound refid="spb__assemble__restraints_8h" kind="file"><name>spb_assemble_restraints.h</name>
+  </compound>
+  <compound refid="spb__config_8h" kind="file"><name>spb_config.h</name>
+    <member refid="spb__config_8h_1a65f2e0b4cf17de4f5e980485d0a5245f" kind="define"><name>IMP_SPB_HAS_BOOST_FILESYSTEM</name></member>
+    <member refid="spb__config_8h_1a28a2e23892924d8925d0cb069f3f190e" kind="define"><name>IMP_SPB_HAS_BOOST_GRAPH</name></member>
+    <member refid="spb__config_8h_1aa1b2145c455e8688ab9fb45f3a20eb2d" kind="define"><name>IMP_SPB_HAS_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="spb__config_8h_1a5216847853e0b5e95c55bc143732aabe" kind="define"><name>IMP_SPB_HAS_BOOST_RANDOM</name></member>
+    <member refid="spb__config_8h_1a8ac39336db8131d6b9c219706ff1755c" kind="define"><name>IMP_SPB_HAS_BOOST_REGEX</name></member>
+    <member refid="spb__config_8h_1a4d9339e36c99540c7d02cafbba3efb11" kind="define"><name>IMP_SPB_HAS_BOOST_SYSTEM</name></member>
+    <member refid="spb__config_8h_1a92ed4ccdf88b339904e74bc6c9c56102" kind="define"><name>IMP_SPB_HAS_CGAL</name></member>
+    <member refid="spb__config_8h_1a62a13211b598012a06c7ac6f1a1cf9b8" kind="define"><name>IMP_SPB_HAS_FFTW3</name></member>
+    <member refid="spb__config_8h_1a0112e7ee97bce423cde2b571c9363c1f" kind="define"><name>IMP_SPB_HAS_GSL</name></member>
+    <member refid="spb__config_8h_1aa5d40257e56009374717e57275cf1dd3" kind="define"><name>IMP_SPB_HAS_HDF5</name></member>
+    <member refid="spb__config_8h_1a8bb5e3a96981c9b6856d952945d39531" kind="define"><name>IMP_SPB_HAS_IMP_ALGEBRA</name></member>
+    <member refid="spb__config_8h_1a4b782d9ec2e89cba1593d528c19079db" kind="define"><name>IMP_SPB_HAS_IMP_CGAL</name></member>
+    <member refid="spb__config_8h_1aa65965e5e61402a521c25b2f1b19b636" kind="define"><name>IMP_SPB_HAS_IMP_DISPLAY</name></member>
+    <member refid="spb__config_8h_1a855739081c6d6ee834701bb699ceca3c" kind="define"><name>IMP_SPB_HAS_IMP_DOMINO</name></member>
+    <member refid="spb__config_8h_1a4eee9ada3fe8b09124605f1199778e80" kind="define"><name>IMP_SPB_HAS_IMP_EM</name></member>
+    <member refid="spb__config_8h_1ac5dce51aa74914501ac618bb2d9be10f" kind="define"><name>IMP_SPB_HAS_IMP_GSL</name></member>
+    <member refid="spb__config_8h_1aa2a465746731062cda6c712de743d378" kind="define"><name>IMP_SPB_HAS_IMP_KERNEL</name></member>
+    <member refid="spb__config_8h_1a88484c794d6b80c6cdde0f7e3989d7a4" kind="define"><name>IMP_SPB_HAS_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="spb__config_8h_1a8f9643cce3c331650f2682fff8dcdd5d" kind="define"><name>IMP_SPB_HAS_MPI</name></member>
+    <member refid="spb__config_8h_1a04c1c3f01cd3e005a831a665373bc543" kind="define"><name>IMP_SPB_HAS_NUMPY</name></member>
+    <member refid="spb__config_8h_1a15e14f198c4404c5183a84d1a0cad465" kind="define"><name>IMP_SPB_HAS_OPENCV3</name></member>
+    <member refid="spb__config_8h_1a27965af99dceb1b2a438161ba7401eeb" kind="define"><name>IMP_SPB_HAS_PYTHON_IHM</name></member>
+    <member refid="spb__config_8h_1a245fac6ae343a4889e00c4913645d636" kind="define"><name>IMP_SPB_HAS_RMF</name></member>
+    <member refid="spb__config_8h_1ac8511e58e05ad7f31fafbb934e3584b7" kind="define"><name>IMP_SPB_USE_BOOST_FILESYSTEM</name></member>
+    <member refid="spb__config_8h_1af5fee2bb61294071f4bbdb7b0a1f85f8" kind="define"><name>IMP_SPB_USE_BOOST_GRAPH</name></member>
+    <member refid="spb__config_8h_1a2c89979414b48f167221b3a9f1fbf001" kind="define"><name>IMP_SPB_USE_BOOST_PROGRAMOPTIONS</name></member>
+    <member refid="spb__config_8h_1a0e5daf87744e2dda09bf4d7399848a12" kind="define"><name>IMP_SPB_USE_BOOST_RANDOM</name></member>
+    <member refid="spb__config_8h_1a7f3462bb05a94a8e1948c95dbc516bc1" kind="define"><name>IMP_SPB_USE_BOOST_REGEX</name></member>
+    <member refid="spb__config_8h_1a11e2f0d6cf3432f6490504853dbfb772" kind="define"><name>IMP_SPB_USE_BOOST_SYSTEM</name></member>
+    <member refid="spb__config_8h_1a0ea8020b6e7a969e9e65ced515811b43" kind="define"><name>IMP_SPB_USE_CGAL</name></member>
+    <member refid="spb__config_8h_1acd08c3476ef91793565d2d11a23e2716" kind="define"><name>IMP_SPB_USE_FFTW3</name></member>
+    <member refid="spb__config_8h_1ac2168116e225420a43129c70436c561c" kind="define"><name>IMP_SPB_USE_GSL</name></member>
+    <member refid="spb__config_8h_1a3431b65345eee406e8ff6ffffd8f8d42" kind="define"><name>IMP_SPB_USE_HDF5</name></member>
+    <member refid="spb__config_8h_1a7699fbb6be323e5cabdd9406925abe5c" kind="define"><name>IMP_SPB_USE_IMP_ALGEBRA</name></member>
+    <member refid="spb__config_8h_1aebbb4aca6fec9ee48ec6ac33a2459f0c" kind="define"><name>IMP_SPB_USE_IMP_CGAL</name></member>
+    <member refid="spb__config_8h_1a2395dcb16c8d7c39d73fdd56b91cbb57" kind="define"><name>IMP_SPB_USE_IMP_DISPLAY</name></member>
+    <member refid="spb__config_8h_1a3cf0bf2a557a1ffab79ec713463377ed" kind="define"><name>IMP_SPB_USE_IMP_DOMINO</name></member>
+    <member refid="spb__config_8h_1af8fa2948de384daa83f87aa54f5f7a50" kind="define"><name>IMP_SPB_USE_IMP_EM</name></member>
+    <member refid="spb__config_8h_1a974c31949786333c1e72afa520b45066" kind="define"><name>IMP_SPB_USE_IMP_GSL</name></member>
+    <member refid="spb__config_8h_1a0bf365830416280d54348407f00e1c23" kind="define"><name>IMP_SPB_USE_IMP_KERNEL</name></member>
+    <member refid="spb__config_8h_1a73288f3e97060c21dd6b14467ecbdbe4" kind="define"><name>IMP_SPB_USE_IMP_SCORE_FUNCTOR</name></member>
+    <member refid="spb__config_8h_1aefc1ae449171fa5b805bf294c40c51d8" kind="define"><name>IMP_SPB_USE_MPI</name></member>
+    <member refid="spb__config_8h_1a947d2ea6c6ee49b612f4cf6e3c37eb3d" kind="define"><name>IMP_SPB_USE_NUMPY</name></member>
+    <member refid="spb__config_8h_1a21475d84be65495f1f81631c9cc9c1e1" kind="define"><name>IMP_SPB_USE_OPENCV3</name></member>
+    <member refid="spb__config_8h_1a5e4b9627feb109a16863ac3bb91bc402" kind="define"><name>IMP_SPB_USE_PYTHON_IHM</name></member>
+    <member refid="spb__config_8h_1a2440aabcbb0936d227ff277744b20d9d" kind="define"><name>IMP_SPB_USE_RMF</name></member>
+    <member refid="spb__config_8h_1a82fb1f78b6ef653b66249700762c0f21" kind="define"><name>IMPSPB_BEGIN_INTERNAL_NAMESPACE</name></member>
+    <member refid="spb__config_8h_1a1f2b9c0320d72da3bbe63e9eb1bf3b8f" kind="define"><name>IMPSPB_BEGIN_NAMESPACE</name></member>
+    <member refid="spb__config_8h_1a79abf4a0e8c4249c7d82521dd5107788" kind="define"><name>IMPSPB_DEPRECATED_FUNCTION_DECL</name></member>
+    <member refid="spb__config_8h_1a436da2c69583ae0777faf066875890a2" kind="define"><name>IMPSPB_DEPRECATED_FUNCTION_DEF</name></member>
+    <member refid="spb__config_8h_1ae35fa38a1c121f624464d327c256f25b" kind="define"><name>IMPSPB_DEPRECATED_HEADER</name></member>
+    <member refid="spb__config_8h_1a57d8557a058442dc8a60f8c03aa49fc8" kind="define"><name>IMPSPB_DEPRECATED_MACRO</name></member>
+    <member refid="spb__config_8h_1a443669114352af6b425a593e9dd56355" kind="define"><name>IMPSPB_DEPRECATED_METHOD_DECL</name></member>
+    <member refid="spb__config_8h_1a931c5d2ba03a0182ec4c9f24cc448a30" kind="define"><name>IMPSPB_DEPRECATED_METHOD_DEF</name></member>
+    <member refid="spb__config_8h_1a82318e6575cecfb7da18188d3cca3c7a" kind="define"><name>IMPSPB_DEPRECATED_OBJECT_DECL</name></member>
+    <member refid="spb__config_8h_1acfc7be75139ac2235d51a57bc16a6be2" kind="define"><name>IMPSPB_DEPRECATED_OBJECT_DEF</name></member>
+    <member refid="spb__config_8h_1a124339fad2d408e9f020a98d3203dd2a" kind="define"><name>IMPSPB_DEPRECATED_VALUE_DECL</name></member>
+    <member refid="spb__config_8h_1a693315e4d1e4df7f409abb079ec41857" kind="define"><name>IMPSPB_DEPRECATED_VALUE_DEF</name></member>
+    <member refid="spb__config_8h_1a480bf1ef92f219c7cefd4e6d3b012e09" kind="define"><name>IMPSPB_END_INTERNAL_NAMESPACE</name></member>
+    <member refid="spb__config_8h_1af609da86d160a4d5a9224409c17ffc43" kind="define"><name>IMPSPB_END_NAMESPACE</name></member>
+    <member refid="spb__config_8h_1a0499ce3d983c95f0d0acd72e3c0fbb93" kind="define"><name>IMPSPB_EXPORT_TEMPLATE</name></member>
+    <member refid="spb__config_8h_1af61d032405eb3be82dc5f84fdef8250e" kind="define"><name>IMPSPB_SHOW_WARNINGS</name></member>
+    <member refid="spb__config_8h_1ae677ad6cbfaa69409a6fb43fcfa3231a" kind="define"><name>IMPSPBEXPORT</name></member>
+  </compound>
+  <compound refid="spb__ISD__particles_8h" kind="file"><name>spb_ISD_particles.h</name>
+  </compound>
+  <compound refid="spb__main_8h" kind="file"><name>spb_main.h</name>
+  </compound>
+  <compound refid="spb__parser_8h" kind="file"><name>spb_parser.h</name>
+  </compound>
+  <compound refid="spb__representation_8h" kind="file"><name>spb_representation.h</name>
+  </compound>
+  <compound refid="spb__restraint_8h" kind="file"><name>spb_restraint.h</name>
+  </compound>
+  <compound refid="spb__sampler_8h" kind="file"><name>spb_sampler.h</name>
+  </compound>
+  <compound refid="TiltSingletonScore_8h" kind="file"><name>TiltSingletonScore.h</name>
+  </compound>
+  <compound refid="TransformationSymmetry_8h" kind="file"><name>TransformationSymmetry.h</name>
+  </compound>
+  <compound refid="TwoStateGoModelRestraint_8h" kind="file"><name>TwoStateGoModelRestraint.h</name>
+  </compound>
+  <compound refid="UniformBoundedRestraint_8h" kind="file"><name>UniformBoundedRestraint.h</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="dir_84fc5dba3506812825191c0c043e3c97" kind="dir"><name>generated</name>
+  </compound>
+  <compound refid="dir_695bc84a346049b2378ac2dd2382ad30" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_26bce81b7d71942c7aad562be54a3a10" kind="dir"><name>IMP</name>
+  </compound>
+  <compound refid="dir_9b0bdfdca07fb8392123a8673efe24de" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_e251e660e18dbe320cebbc73b88bc4b5" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_b47eb56d9234dab6727a77fc8801db52" kind="dir"><name>spb</name>
+  </compound>
+  <compound refid="dir_830c52d16d233bfd4dbbb59c1a0ed5bb" kind="dir"><name>spb</name>
+  </compound>
+</doxygenindex>

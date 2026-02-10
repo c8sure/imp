@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceIMP_1_1multifit_1_1reference" kind="namespace" language="Python">
+    <compoundname>IMP::multifit::reference</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="reference_8py_1a80830f95317cce0b67638ff7bb711d7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.reference.get_components_placement_scores</definition>
+        <argsstring>(assembly, native_assembly, align=False)</argsstring>
+        <name>get_components_placement_scores</name>
+        <qualifiedname>IMP::multifit.reference.get_components_placement_scores</qualifiedname>
+        <param>
+          <type>assembly</type>
+          <defname>assembly</defname>
+        </param>
+        <param>
+          <type>native_assembly</type>
+          <defname>native_assembly</defname>
+        </param>
+        <param>
+          <type>align</type>
+          <defname>align</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Compute the placement score of each of the children of an assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An atom.Molecule object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_assembly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An atom.Molecule object with the native conformation. Obviously the atoms in assembly and native_assembly must be the same. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if True, the coordinates are aligned before the score is calculated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function returns 2 lists. The first list contains the placement distances of the children. The second list contains the placement angles</para>
+</simplesect>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/reference.py" line="63" column="1" bodyfile="lib/IMP/multifit/reference.py" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="reference_8py_1a465cea3db93891588661adcfd81a09e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.reference.get_placement_score_from_coordinates</definition>
+        <argsstring>(model_coords, native_coords)</argsstring>
+        <name>get_placement_score_from_coordinates</name>
+        <qualifiedname>IMP::multifit.reference.get_placement_score_from_coordinates</qualifiedname>
+        <param>
+          <type>model_coords</type>
+          <defname>model_coords</defname>
+        </param>
+        <param>
+          <type>native_coords</type>
+          <defname>native_coords</defname>
+        </param>
+        <briefdescription>
+<para>Computes the position error (placement distance) and the orientation error (placement angle) of the coordinates in model_coords respect to the coordinates in native_coords. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>placement distance - translation between the centroids of the coordinates placement angle - Angle in the axis-angle formulation of the rotation aligning the two rigid bodies.</para>
+<para><simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/reference.py" line="31" column="1" bodyfile="lib/IMP/multifit/reference.py" bodystart="31" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="reference_8py_1a53d5a5f7ab642a5a28a8771ce915a4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMP.multifit.reference.get_placement_scores_from_coordinates</definition>
+        <argsstring>(model_components_coords, native_components_coords)</argsstring>
+        <name>get_placement_scores_from_coordinates</name>
+        <qualifiedname>IMP::multifit.reference.get_placement_scores_from_coordinates</qualifiedname>
+        <param>
+          <type>model_components_coords</type>
+          <defname>model_components_coords</defname>
+        </param>
+        <param>
+          <type>native_components_coords</type>
+          <defname>native_components_coords</defname>
+        </param>
+        <briefdescription>
+<para>Computes the placement score for each of the components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_components_coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the coordinates for each component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>native_components_coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list with the coordinates for each component in the native assembly</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is only available in Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/IMP/multifit/reference.py" line="11" column="1" bodyfile="lib/IMP/multifit/reference.py" bodystart="11" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/IMP/multifit/reference.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
