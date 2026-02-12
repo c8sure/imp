@@ -1,5 +1,6 @@
 import jax
 import jax.numpy as jnp
+import functools
 import IMP.atom
 import jax.tree_util
 from dataclasses import dataclass
@@ -159,3 +160,152 @@ def _md_optimize(md, max_steps):
         dxyz[:] = jm["xyz'"]
     score, md_state.jm = score_func(md_state.jm)
     return score
+
+
+@jax.tree_util.register_dataclass
+@dataclass
+class _Bonds:
+    """All information about chemical bonds"""
+
+    # Ideal length of each bond
+    length: jax.Array
+
+    # Force constant per bond
+    stiffness: jax.Array
+
+    # Nx2 array of bonded particle indexes
+    bonded_indexes: jax.Array
+
+
+def _get_bonds(m, bond_indexes):
+    """Given a list of particle indexes that are IMP.atom.Bond particles,
+       return all data packed in a JAX _Bonds object"""
+    bonded = []
+    valid_indexes = []
+    stiffness = []
+    # todo: add utility functions to get these keys
+    bond_length = m.get_numpy(IMP.FloatKey("bond length"))
+    bond_stiffness = m.get_numpy(IMP.FloatKey("bond stiffness"))
+    for b in bond_indexes:
+        b = IMP.ParticleIndex(b)
+        if not IMP.atom.Bond.get_is_setup(m, b):
+            raise TypeError("%s is not a bond" % b)
+        # Exclude bonds with negative length
+        if bond_length[b] >= 0.0:
+            valid_indexes.append(int(b))
+            # Bonds with no or negative stiffness get default (1)
+            if b >= len(bond_stiffness) or bond_stiffness[b] < 0:
+                stiffness.append(1.0)
+            else:
+                stiffness.append(bond_stiffness[b])
+            b = IMP.atom.Bond(m, b)
+            bonded.append([b.get_bonded(i).get_particle_index()
+                           for i in range(2)])
+    return _Bonds(length=bond_length[valid_indexes],
+                  stiffness=jnp.asarray(stiffness),
+                  bonded_indexes=jnp.asarray(bonded))
+
+
+@jax.tree_util.register_dataclass
+@dataclass
+class _Angles:
+    """All information about chemical bond angles"""
+
+    # Ideal value of each bond angle
+    ideal: jax.Array
+
+    # Force constant per angle
+    stiffness: jax.Array
+
+    # Nx3 array of bonded particle indexes
+    bonded_indexes: jax.Array
+
+
+def _get_angles(m, angle_indexes):
+    """Given a list of particle indexes that are IMP.atom.Angle particles,
+       return all data packed in a JAX _Angles object"""
+    bonded = []
+    valid_indexes = []
+    ideal = m.get_numpy(IMP.atom.Angle.get_ideal_key())
+    stiffness = m.get_numpy(IMP.atom.Angle.get_stiffness_key())
+    for a in angle_indexes:
+        a = IMP.ParticleIndex(a)
+        if not IMP.atom.Angle.get_is_setup(m, a):
+            raise TypeError("%s is not an angle" % a)
+        # Exclude angles with negative stiffness
+        if stiffness[a] > 0.0:
+            valid_indexes.append(a)
+            a = IMP.atom.Angle(m, a)
+            bonded.append([a.get_particle(i).get_index() for i in range(3)])
+    return _Angles(ideal=ideal[valid_indexes],
+                   stiffness=stiffness[valid_indexes],
+                   bonded_indexes=jnp.asarray(bonded))
+
+
+@jax.tree_util.register_dataclass
+@dataclass
+class _Dihedrals:
+    """All information about chemical bond dihedral angles"""
+
+    # Ideal value of each dihedral
+    ideal: jax.Array
+
+    # Integer multiplicity per dihedral
+    multiplicity: jax.Array
+
+    # Force constant per dihedral
+    stiffness: jax.Array
+
+    # Nx4 array of bonded particle indexes
+    bonded_indexes: jax.Array
+
+
+def _get_dihedrals(m, angle_indexes):
+    """Given a list of particle indexes that are IMP.atom.Dihedral particles,
+       return all data packed in a JAX _Dihedrals object"""
+    bonded = []
+    valid_indexes = []
+    ideal = m.get_numpy(IMP.atom.Dihedral.get_ideal_key())
+    multiplicity = m.get_numpy(IMP.atom.Dihedral.get_multiplicity_key())
+    stiffness = m.get_numpy(IMP.atom.Dihedral.get_stiffness_key())
+    for a in angle_indexes:
+        a = IMP.ParticleIndex(a)
+        if not IMP.atom.Dihedral.get_is_setup(m, a):
+            raise TypeError("%s is not a dihedral" % a)
+        # Exclude angles with very small stiffness
+        if abs(stiffness[a]) > 1e-6:
+            valid_indexes.append(a)
+            a = IMP.atom.Dihedral(m, a)
+            bonded.append([a.get_particle(i).get_index() for i in range(4)])
+    return _Dihedrals(ideal=ideal[valid_indexes],
+                      multiplicity=multiplicity[valid_indexes],
+                      stiffness=stiffness[valid_indexes],
+                      bonded_indexes=jnp.asarray(bonded))
+
+
+def _get_lennard_jones_score(lj, indexes):
+    """Get a suitable JAX scoring function for the given LennardJones score"""
+    def score(jm, aij, bij, repulsive_weight, attractive_weight,
+              smoothing_function):
+        xyzs = jm['xyz'][indexes]
+        lj_types = jm['lennard_jones_type'][indexes]
+        # Get index into aij/bij tables
+        maxij = jnp.max(lj_types, axis=1)
+        minij = jnp.min(lj_types, axis=1)
+        lj_type_pair = (maxij+1)*maxij // 2 + minij
+        dists = jnp.linalg.norm(xyzs[:, 0] - xyzs[:, 1], axis=1)
+        A = aij[lj_type_pair] * repulsive_weight
+        B = bij[lj_type_pair] * attractive_weight
+        scores = A / dists**12 - B / dists**6
+        return smoothing_function(scores, dists)
+
+    sf = lj.get_smoothing_function().get_derived_object()
+    # Function operates on a single distance + score; make it work on
+    # an array instead using jax.vmap
+    smoothing_function = jax.vmap(sf._get_jax())
+    return functools.partial(
+        score, aij=jnp.asarray(lj.get_repulsive_type_factors()),
+        bij=jnp.asarray(lj.get_attractive_type_factors()),
+        repulsive_weight=lj.get_repulsive_weight(),
+        attractive_weight=lj.get_attractive_weight(),
+        smoothing_function=smoothing_function)

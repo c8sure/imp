@@ -1,5 +1,5 @@
 // Add JAX implementations to each of our example classes.
-// [JAX](https://docs.jax.dev/) ia high performance Python library
+// [JAX](https://docs.jax.dev/) is a high performance Python library
 // which has NumPy-like syntax but compiles to fast code that will
 // run on both CPUs and GPUs.
 
@@ -71,7 +71,7 @@
         import jax.numpy as jnp
         def apply_func(jm, indexes, box):
             jm['xyz'] = jm['xyz'].at[index].set(
-                jnp.mod(jm['xyz'][index], box[1] - box[0]) + box[0])
+                jnp.mod(jm['xyz'][index] - box[0], box[1] - box[0]) + box[0])
             return jm
         box = jnp.array([self.get_bounding_box().get_corner(x)
                          for x in range(2)])
@@ -82,22 +82,22 @@
 
 %extend IMP::example::ExamplePairScore {
   %pythoncode %{
-    def _get_jax(self):
+    def _get_jax(self, m, indexes):
         """Implementation of the score using JAX.
-           A PairScore takes as input the JAX Model and the particle pair
-           indexes to act on, and returns the score. Unlike an IMP C++
+           A PairScore takes as input the JAX Model, and returns the score
+           for a given set of particle pair indexes. Unlike an IMP C++
            PairScore (which takes a single pair of indexes), the JAX score
            takes multiple indexes, as an Nx2 array, and should return an
            N-element array of scores."""
         import jax.numpy as jnp
         import functools
-        def pair_score(jm, indexes, x0, k):
+        def pair_score(jm, x0, k):
             xyzs = jm['xyz'][indexes]
             diff = jnp.linalg.norm(xyzs[:,0] - xyzs[:,1], axis=1) - x0
             return 0.5 * k * diff * diff
         f = functools.partial(pair_score, x0=self.get_mean(),
                               k=self.get_force_constant())
-        return self._wrap_jax(f)
+        return self._wrap_jax(m, f)
   %}
 }
 

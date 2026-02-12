@@ -40,7 +40,7 @@
 
 %extend IMP::atom::CoulombPairScore {
   %pythoncode %{
-    def _get_jax(self):
+    def _get_jax(self, m, indexes):
         import math
         import jax
         import jax.numpy as jnp
@@ -57,20 +57,38 @@
         # Function operates on a single distance + score; make it work on
         # an array instead using jax.vmap
         smoothing_function = jax.vmap(sf._get_jax())
-        def jax_pair_score(jm, indexes):
+        def score(jm):
             xyzs = jm['xyz'][indexes]
             qs = jm['charge'][indexes]
             diff = xyzs[:,0] - xyzs[:,1]
             drs = jnp.linalg.norm(diff, axis=1)
             scores = factor * jnp.prod(qs, axis=1) / drs
             return smoothing_function(scores, drs)
-        return self._wrap_jax(jax_pair_score, keys=[Charged.get_charge_key()])
+        return self._wrap_jax(m, score, keys=[Charged.get_charge_key()])
+  %}
+}
+
+%extend IMP::atom::LennardJonesTypedPairScore<IMP::atom::ForceSwitch> {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import IMP.atom._jax_util
+        score = IMP.atom._jax_util._get_lennard_jones_score(self, indexes)
+        return self._wrap_jax(m, score, keys=[LennardJonesTyped.get_type_key()])
+  %}
+}
+
+%extend IMP::atom::LennardJonesTypedPairScore<IMP::atom::SmoothingFunction> {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import IMP.atom._jax_util
+        score = IMP.atom._jax_util._get_lennard_jones_score(self, indexes)
+        return self._wrap_jax(m, score, keys=[LennardJonesTyped.get_type_key()])
   %}
 }
 
 %extend IMP::atom::DopePairScore {
   %pythoncode %{
-    def _get_jax(self):
+    def _get_jax(self, m, indexes):
         import numpy as np
         import jax.lax
         import jax.numpy as jnp
@@ -116,7 +134,8 @@
             spacing=sf.get_spacing(), values=jnp.asarray(values),
             second_derivs=jnp.asarray(second_derivs))
         # Vectorize to take multiple indexes (second argument)
-        return self._wrap_jax(jax.vmap(f, in_axes=(None, 0)),
+        vf = jax.vmap(f, in_axes=(None, 0))
+        return self._wrap_jax(m, lambda jm: vf(jm, indexes),
                               keys=(sf.get_dope_type_key(),))
   %}
 }
@@ -140,5 +159,85 @@
             return jax.lax.cond(tkinetic > 1e-8, scale_velocities,
                                 lambda md, tk: md, md, tkinetic)
         return self._wrap_jax(lambda x: x, apply_func)
+  %}
+}
+
+%extend IMP::atom::BondSingletonScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        from IMP.atom._jax_util import _get_bonds
+        def score(jm, bonds, uf):
+            xyzs = jm['xyz'][bonds.bonded_indexes]
+            diff = xyzs[:,0] - xyzs[:,1]
+            drs = jnp.linalg.norm(diff, axis=1)
+            return uf(bonds.stiffness * (drs - bonds.length))
+        uf = self.get_unary_function().get_derived_object()
+        f = functools.partial(score, bonds=_get_bonds(m, indexes),
+                              uf=uf._get_jax())
+        return self._wrap_jax(m, f)
+  %}
+}
+
+%extend IMP::atom::AngleSingletonScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import IMP.core._jax_util
+        from IMP.atom._jax_util import _get_angles
+        def score(jm, angles, uf):
+            xyzs = jm['xyz'][angles.bonded_indexes]
+            rij = xyzs[:,0] - xyzs[:,1]
+            rkj = xyzs[:,2] - xyzs[:,1]
+            angle = IMP.core._jax_util._angle(rij, rkj)
+            angle_diff = IMP.core._jax_util._get_angle_difference(
+                angle, angles.ideal)
+            return uf(angles.stiffness * angle_diff)
+        uf = self.get_unary_function().get_derived_object()
+        f = functools.partial(score, angles=_get_angles(m, indexes),
+                              uf=uf._get_jax())
+        return self._wrap_jax(m, f)
+  %}
+}
+
+%extend IMP::atom::DihedralSingletonScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import IMP.core._jax_util
+        from IMP.atom._jax_util import _get_dihedrals
+        def score(jm, dihedrals):
+            xyzs = jm['xyz'][dihedrals.bonded_indexes]
+            rij = xyzs[:,0] - xyzs[:,1]
+            rkj = xyzs[:,2] - xyzs[:,1]
+            rkl = xyzs[:,2] - xyzs[:,3]
+            dihedral = IMP.core._jax_util._dihedral(rij, rkj, rkl)
+            b = 0.5 * dihedrals.stiffness * jnp.abs(dihedrals.stiffness)
+            return jnp.abs(b) + b * jnp.cos(dihedral * dihedrals.multiplicity
+                                            + dihedrals.ideal)
+        f = functools.partial(score, dihedrals=_get_dihedrals(m, indexes))
+        return self._wrap_jax(m, f)
+  %}
+}
+
+%extend IMP::atom::ImproperSingletonScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import IMP.core._jax_util
+        from IMP.atom._jax_util import _get_dihedrals
+        def score(jm, dihedrals, uf):
+            xyzs = jm['xyz'][dihedrals.bonded_indexes]
+            rij = xyzs[:,0] - xyzs[:,1]
+            rkj = xyzs[:,2] - xyzs[:,1]
+            rkl = xyzs[:,2] - xyzs[:,3]
+            dihedral = IMP.core._jax_util._dihedral(rij, rkj, rkl)
+            angle_diff = IMP.core._jax_util._get_angle_difference(
+                dihedral, dihedrals.ideal)
+            return uf(dihedrals.stiffness * angle_diff)
+        uf = self.get_unary_function().get_derived_object()
+        f = functools.partial(score, dihedrals=_get_dihedrals(m, indexes),
+                              uf=uf._get_jax())
+        return self._wrap_jax(m, f)
   %}
 }

@@ -31,38 +31,18 @@ def make_dihedrals():
 
 class Tests(IMP.test.TestCase):
 
-    def test_pickle(self):
-        """Test (un-)pickle of DihedralSingletonScore"""
+    def test_score(self):
+        """Test score of ImproperSingletonScore"""
         m, dih = make_dihedrals()
-        ss = IMP.atom.DihedralSingletonScore()
-        ss.set_name('foo')
-        self.assertAlmostEqual(ss.evaluate_index(m, dih[0], None), 19.717,
+        ss = IMP.atom.ImproperSingletonScore(IMP.core.Linear(0, 1))
+        self.assertAlmostEqual(ss.evaluate_index(m, dih[0], None), -4.77658,
                                delta=0.01)
-
-        dump = pickle.dumps(ss)
-        newss = pickle.loads(dump)
-        self.assertEqual(newss.get_name(), 'foo')
-        self.assertAlmostEqual(newss.evaluate_index(m, dih[0], None), 19.717,
-                               delta=0.01)
-
-    def test_pickle_polymorphic(self):
-        """Test (un-)pickle of DihedralSingletonScore via polymorphic pointer"""
-        m, dih = make_dihedrals()
-        ss = IMP.atom.DihedralSingletonScore()
-        ss.set_name('foo')
-        lsc = IMP.container.ListSingletonContainer(m, dih)
-        r = IMP.container.SingletonsRestraint(ss, lsc)
-        self.assertAlmostEqual(r.evaluate(False), 21.619, delta=0.01)
-
-        dump = pickle.dumps(r)
-        newr = pickle.loads(dump)
-        self.assertAlmostEqual(r.evaluate(False), 21.619, delta=0.01)
 
     @IMP.test.skipIf(jax is None, "No JAX support")
     def test_jax(self):
-        """Test JAX implementation of DihedralSingletonScore"""
+        """Test JAX implementation of ImproperSingletonScore"""
         m, dih = make_dihedrals()
-        ss = IMP.atom.DihedralSingletonScore()
+        ss = IMP.atom.ImproperSingletonScore(IMP.core.Linear(0, 1))
         lsc = IMP.container.ListSingletonContainer(m, dih)
         r = IMP.container.SingletonsRestraint(ss, lsc)
         imp_score = r.evaluate(False)
@@ -70,7 +50,7 @@ class Tests(IMP.test.TestCase):
         jm = ji.get_jax_model()
         j = jax.jit(ji.score_func)
         jax_score = j(jm)
-        self.assertAlmostEqual(imp_score, 21.619, delta=0.01)
+        self.assertAlmostEqual(imp_score, -1.9106, delta=0.01)
         self.assertAlmostEqual(imp_score, jax_score, delta=0.01)
 
 
