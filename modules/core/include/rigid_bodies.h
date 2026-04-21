@@ -2,7 +2,7 @@
  *  \file IMP/core/rigid_bodies.h
  *  \brief functionality for defining rigid bodies
  *
- *  Copyright 2007-2022 IMP Inventors. All rights reserved.
+ *  Copyright 2007-2026 IMP Inventors. All rights reserved.
  */
 
 #ifndef IMPCORE_RIGID_BODIES_H
@@ -13,8 +13,6 @@
 
 #include "XYZ.h"
 #include "XYZR.h"
-#include <IMP/SingletonContainer.h>
-#include <IMP/SingletonModifier.h>
 #include <IMP/Refiner.h>
 #include <IMP/algebra/Vector3D.h>
 #include <IMP/algebra/Rotation3D.h>

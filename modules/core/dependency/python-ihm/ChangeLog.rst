@@ -1,3 +1,34 @@
+2.10 - 2026-04-10
+=================
+  - The new classes :class:`ihm.reference.InsertionSeqDif`
+    and :class:`ihm.reference.DeletionSeqDif` allow for
+    annotating insertions or deletions in the entity sequence
+    relative to the reference database. Files are now checked
+    on output that the entity and reference sequences match
+    with this insertion/deletion information included (#181).
+  - :class:`ihm.LPeptideAlphabet` now maps the one-letter code 'O'
+    to pyrrolysine.
+  - ``make_mmcif`` has a new ``--fix_struct_ref`` command line flag which
+    if specified will fill in any missing reference database information
+    such as the sequence (in the ``struct_ref`` table), by querying
+    UniProt (#182).
+  - Bugfix: allow the starting model dataset to be empty (#180).
+
+2.9 - 2026-01-22
+================
+  - If given a file containing non-polymers but missing the
+    ``pdbx_entity_nonpoly`` table, ``make_mmcif`` will now reconstruct that
+    table using information from the ``atom_site`` table (#177).
+  - If given a file containing an empty assembly (containing zero asyms),
+    ``make_mmcif`` will now replace it with an auto-generated assembly
+    containing all of the system's asyms (#178).
+  - ``make_mmcif`` has a new ``--fix_chem_comp`` command line flag which
+    if specified will fill in any missing chemical component information
+    (in the ``chem_comp`` table) such as type, name, or chemical formula
+    by querying CCD (#179).
+  - Bugfix: backslash characters in text fields (such as in SMILES strings)
+    no longer erroneously cause a dictionary validation error (#176).
+
 2.8 - 2025-12-12
 ================
   - The new :meth:`ihm.System.get_representative_model` method returns a single

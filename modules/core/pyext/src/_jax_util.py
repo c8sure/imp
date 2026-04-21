@@ -23,9 +23,11 @@ def _get_jax_restraint(r):
 
 class JAXMoverInfo:
     """Information about a JAX implementation of a MonteCarloMover."""
-    def __init__(self, init_func, propose_func):
+    def __init__(self, init_func, propose_func, accept_func, sync_func):
         self.init_func = init_func
         self.propose_func = propose_func
+        self.accept_func = accept_func
+        self.sync_func = sync_func
 
 
 @jax.tree_util.register_dataclass
@@ -49,6 +51,8 @@ class _MonteCarlo:
     upward_steps_taken: int
     # Number of rejected steps
     rejected_steps: int
+    # Temperature for acceptance criterion
+    temperature: float
     # JAX random number key
     rkey: jax.Array
     # Any persistent state used by Movers
@@ -63,7 +67,7 @@ class _MCJAXInfo(IMP._jax_util.JAXOptimizerInfo):
         super().__init__(mc)
         score_func = self.score_func
         movers = [mover.get_derived_object()._get_jax() for mover in mc.movers]
-        temperature = mc.get_kt()
+        _temperature = mc.get_kt()
         return_best = mc.get_return_best()
         jax_optstates = self._setup_jax_optimizer_states()
 
@@ -78,7 +82,8 @@ class _MCJAXInfo(IMP._jax_util.JAXOptimizerInfo):
                 accepted_steps=0, downward_steps_taken=0,
                 upward_steps_taken=0, rejected_steps=0,
                 optimizer_states=[None] * len(jax_optstates),
-                rkey=key, mover_state=mover_state)
+                rkey=key, mover_state=mover_state,
+                temperature=_temperature)
             for js in jax_optstates:
                 ms = js.init_func(ms)
             return ms
@@ -97,6 +102,10 @@ class _MCJAXInfo(IMP._jax_util.JAXOptimizerInfo):
                 for js in jax_optstates:
                     ms = jax.lax.cond(steps % js.period == 0, js.apply_func,
                                       lambda x: x, ms)
+                for i in range(len(movers)):
+                    if movers[i].accept_func is not None:
+                        ms.mover_state[i] = movers[i].accept_func(
+                            ms.mover_state[i])
                 return ms
 
             def downward_step(ms):
@@ -134,7 +143,7 @@ class _MCJAXInfo(IMP._jax_util.JAXOptimizerInfo):
 
             def metrop_step(ms):
                 diff = new_score - ms.score
-                e = jnp.exp(-diff / temperature)
+                e = jnp.exp(-diff / ms.temperature)
                 ms.rkey, subkey = jax.random.split(ms.rkey)
                 prob = jax.random.uniform(subkey, minval=0.0, maxval=1.0)
                 return jax.lax.cond(e * proposal_ratio > prob,
@@ -147,19 +156,26 @@ class _MCJAXInfo(IMP._jax_util.JAXOptimizerInfo):
         self.apply_func = apply_func
 
 
-def _sync_stats(imp_mc, jax_mc):
-    """Update IMP MonteCarlo object with stats from JAX run"""
+def _sync_stats(imp_mc, jax_mc, movers, mover_sync_funcs):
+    """Update IMP MonteCarlo and Mover objects with stats from JAX run"""
     imp_mc.set_number_of_downward_steps(jax_mc.downward_steps_taken)
     imp_mc.set_number_of_upward_steps(jax_mc.upward_steps_taken)
     imp_mc.set_number_of_rejected_steps(jax_mc.rejected_steps)
     imp_mc.set_best_accepted_energy(jax_mc.best_score)
     imp_mc.set_last_accepted_energy(jax_mc.score)
+    for mover, mover_state, sync_func in zip(movers, jax_mc.mover_state,
+                                             mover_sync_funcs):
+        mover.add_to_statistics(jax_mc.accepted_steps + jax_mc.rejected_steps,
+                                jax_mc.rejected_steps)
+        if sync_func is not None:
+            sync_func(mover, mover_state)
 
 
 class _JAXOptimizer:
-    """Helper class to run an IMP Optimizer using JAX."""
+    """Helper base class to run an IMP Optimizer using JAX."""
     def __init__(self, opt, max_steps):
         self.opt = opt
+        self._jax_info = opt._get_jax()
 
         # Get all OptimizerStates that have no explicit JAX implementation
         self._imp_opt_states = [s for s in opt.optimizer_states
@@ -173,7 +189,12 @@ class _JAXOptimizer:
             max_steps)
         self.n_loops = max_steps // self.inner_steps
 
-    def loop(self):
+    def get_initial_state(self):
+        """Get the JAX optimizer object for the current IMP Model"""
+        jm = self._jax_info.get_jax_model()
+        return self.init_func(jm, key=IMP._jax_util.get_random_key())
+
+    def _loop(self):
         """Run the outer loop (in Python) of the Optimizer. On each yield,
            inner_steps of JAX optimization should be run."""
         n_step = 0
@@ -186,35 +207,40 @@ class _JAXOptimizer:
                     s.update_always()
 
 
-def _mc_optimize(mc, max_steps):
-    jopt = _JAXOptimizer(mc, max_steps)
-    inner_steps = jopt.inner_steps
-    ji = mc._get_jax()
-    init_func = jax.jit(ji.init_func)
-    apply_func = jax.jit(
-        lambda jm: jax.lax.fori_loop(0, inner_steps,
-                                     lambda i, jm: ji.apply_func(jm), jm))
+class _MCJAXOptimizer(_JAXOptimizer):
+    """Do MC sampling with JAX, and update the IMP Model with the result"""
+    def __init__(self, mc, max_steps):
+        super().__init__(mc, max_steps)
+        ji = self._jax_info
+        self.init_func = jax.jit(ji.init_func)
+        self.apply_func = jax.jit(
+            lambda jm: jax.lax.fori_loop(0, self.inner_steps,
+                                         lambda i, jm: ji.apply_func(jm), jm))
+        self._movers = [mover.get_derived_object() for mover in mc.movers]
+        self._mover_sync_funcs = [mover._get_jax().sync_func
+                                  for mover in self._movers]
 
-    mc_state = init_func(ji.get_jax_model(),
-                         key=IMP._jax_util.get_random_key())
+    def optimize(self, mc_state):
+        """Run max_steps of sampling with JAX and update the IMP Model with
+           the result. Return the final score and the new JAX optimizer
+           object."""
+        m = self.opt.get_model()
+        xyz = m.get_spheres_numpy()[0]
 
-    m = mc.get_model()
-    xyz = m.get_spheres_numpy()[0]
+        for _ in self._loop():
+            mc_state = self.apply_func(mc_state)
+            # Resync IMP Model arrays with JAX
+            xyz[:] = mc_state.jm['xyz']
 
-    for _ in jopt.loop():
-        mc_state = apply_func(mc_state)
-        # Resync IMP Model arrays with JAX
-        xyz[:] = mc_state.jm['xyz']
+        # Update IMP MonteCarlo object with stats from JAX run
+        _sync_stats(self.opt, mc_state, self._movers, self._mover_sync_funcs)
 
-    # Update IMP MonteCarlo object with stats from JAX run
-    _sync_stats(mc, mc_state)
-
-    if mc.get_return_best():
-        # Resync IMP Model arrays with best JAX Model
-        xyz[:] = mc_state.best_jm['xyz']
-        return mc.get_best_accepted_energy()
-    else:
-        return mc.get_last_accepted_energy()
+        if self.opt.get_return_best():
+            # Resync IMP Model arrays with best JAX Model
+            xyz[:] = mc_state.best_jm['xyz']
+            return self.opt.get_best_accepted_energy(), mc_state
+        else:
+            return self.opt.get_last_accepted_energy(), mc_state
 
 
 @jax.tree_util.register_dataclass
@@ -226,6 +252,10 @@ class _SerialMover:
     imov: int
     # Any state used by Movers
     mover_state: list
+    # Number of proposed steps for each Mover
+    proposed_mover_steps: jax.Array
+    # Number of accepted steps for each Mover
+    accepted_mover_steps: jax.Array
 
 
 def _spline(feature, minrange, lowbin, highbin, spacing, values,
@@ -242,9 +272,7 @@ def _spline(feature, minrange, lowbin, highbin, spacing, values,
 
 def _angle(rij, rkj):
     """Return the N angles (in radians) between Nx3 vectors rij and rkj."""
-    # einsum here calculates the row-wise dot product. We could also
-    # use vecdot but that likely requires numpy 2.
-    scalar_product = jnp.einsum("ij,ij->i", rij, rkj)
+    scalar_product = jnp.vecdot(rij, rkj)
     # Avoid division by zero if colinear
     mag_product = jnp.clip(jnp.linalg.norm(rij, axis=1)
                            * jnp.linalg.norm(rkj, axis=1), 1e-6)
@@ -261,7 +289,7 @@ def _dihedral(rij, rkj, rkl):
     angle = _angle(v1, v2)
     # Get sign
     v0 = jnp.cross(v1, v2)
-    sign = jnp.einsum("ij,ij->i", rkj, v0)
+    sign = jnp.vecdot(rkj, v0)
     return jnp.copysign(angle, sign)
 
 

@@ -8,9 +8,14 @@
         from IMP.atom._jax_util import _MDJAXInfo
         return _MDJAXInfo(self)
 
-    def _optimize_jax(self, max_steps):
+    def _get_jax_optimizer(self, max_steps):
         import IMP.atom._jax_util
-        return IMP.atom._jax_util._md_optimize(self, max_steps)
+        return IMP.atom._jax_util._MDJAXOptimizer(self, max_steps)
+
+    def _optimize_jax(self, max_steps):
+        opt = self._get_jax_optimizer(max_steps)
+        score, md_state = opt.optimize(opt.get_initial_state())
+        return score
   %}
 }
 
@@ -146,10 +151,11 @@
         import jax.lax
         import jax.numpy as jnp
         temperature = self.get_temperature()
+        indexes = jnp.asarray(IMP.get_indexes(self.get_particles()))
 
         def scale_velocities(md, tkinetic):
             scale = jnp.sqrt(temperature / tkinetic)
-            linvel = md.jm['linvel'].at[md.simulation_indexes]
+            linvel = md.jm['linvel'].at[indexes]
             md.jm['linvel'] = linvel.multiply(scale)
             return md
 
@@ -159,6 +165,65 @@
             return jax.lax.cond(tkinetic > 1e-8, scale_velocities,
                                 lambda md, tk: md, md, tkinetic)
         return self._wrap_jax(lambda x: x, apply_func)
+  %}
+}
+
+%extend IMP::atom::BerendsenThermostatOptimizerState {
+  %pythoncode %{
+    def _get_jax(self, state_index):
+        import jax.lax
+        import jax.numpy as jnp
+
+        def apply_func(md, temperature, tau, indexes):
+            ekinetic = md.get_kinetic_energy()
+            tkinetic = md.get_kinetic_temperature(ekinetic)
+            scale = jnp.sqrt(1.0 + (md.time_step / tau)
+                             * (temperature / tkinetic - 1.0))
+            linvel = md.jm['linvel'].at[indexes]
+            md.jm['linvel'] = linvel.multiply(scale)
+            return md
+
+        f = functools.partial(
+            apply_func, temperature=self.get_temperature(),
+            tau=self.get_tau(),
+            indexes=jnp.asarray(IMP.get_indexes(self.get_particles())))
+        return self._wrap_jax(lambda x: x, f)
+  %}
+}
+
+%extend IMP::atom::LangevinThermostatOptimizerState {
+  %pythoncode %{
+    def _get_jax(self, state_index):
+        import jax.lax
+        import jax.numpy as jnp
+        import jax.random
+        gas_constant = 8.31441e-7
+
+        def init_func(md):
+            # Make our own random key split off from MD's key
+            md.rkey, subkey = jax.random.split(md.rkey)
+            md.optimizer_states[state_index] = subkey
+            return md
+
+        def apply_func(md, temperature, gamma, indexes):
+            c1 = jnp.exp(-gamma * md.time_step)
+            c2 = jnp.sqrt((1.0 - c1) * gas_constant * temperature)
+            md.optimizer_states[state_index], subkey = jax.random.split(
+                md.optimizer_states[state_index])
+            sample = jax.random.normal(subkey, shape=(len(indexes), 3))
+            mass = md.jm['mass'][indexes]
+            linvel = md.jm['linvel'].at[indexes]
+            md.jm['linvel'] = linvel.set(
+                c1 * linvel.get()
+                 + c2 * jnp.sqrt((c1 + 1.0) / mass).reshape(len(indexes), 1)
+                      * sample)
+            return md
+
+        f = functools.partial(
+            apply_func, temperature=self.get_temperature(),
+            gamma=self.get_gamma(),
+            indexes=jnp.asarray(IMP.get_indexes(self.get_particles())))
+        return self._wrap_jax(init_func, f)
   %}
 }
 

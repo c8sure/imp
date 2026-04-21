@@ -176,6 +176,74 @@
   %}
 }
 
+%extend IMP::core::GenericBoundingSphere3DSingletonScore<UnaryFunction> {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import jax.lax
+        def score_with_radius(jm, inds, center, radius):
+            xyzs = jm['xyz'][inds]
+            radii = jm['r'][inds]
+            drs = jnp.linalg.norm(xyzs - center) + radii - radius
+            return jax.lax.select(drs < 0.000001, jnp.zeros_like(drs), uf(drs))
+        def score_without_radius(jm, inds, center, radius):
+            xyzs = jm['xyz'][inds]
+            drs = jnp.linalg.norm(xyzs - center) - radius
+            return jax.lax.select(drs < 0.000001, jnp.zeros_like(drs), uf(drs))
+        without_radii_inds = []
+        with_radii_inds = []
+        for ind in indexes:
+            if XYZR.get_is_setup(m, ind):
+                with_radii_inds.append(ind)
+            else:
+                without_radii_inds.append(ind)
+        without_radii_inds = jnp.asarray(without_radii_inds)
+        with_radii_inds = jnp.asarray(with_radii_inds)
+        uf = self.get_unary_function().get_derived_object()._get_jax()
+        sphere = self.get_sphere()
+        radius = sphere.get_radius()
+        center = jnp.asarray(sphere.get_center())
+        def score(jm):
+            s = 0.
+            if without_radii_inds.size > 0:
+                s += score_without_radius(jm, without_radii_inds,
+                                          center, radius)
+            if with_radii_inds.size > 0:
+                s += score_with_radius(jm, with_radii_inds, center, radius)
+            return s
+        return self._wrap_jax(m, score)
+  %}
+}
+
+%extend IMP::core::GenericAttributeSingletonScore<UnaryFunction> {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        def score_float_key(jm, key, uf):
+            return uf(jm[key][indexes])
+
+        def score_xyz_key(jm, xyz_index, uf):
+            return uf(jm['xyz'][indexes, xyz_index])
+
+        uf = self.get_unary_function().get_derived_object()._get_jax()
+        key = self.get_key()
+        # First 7 FloatKeys are reserved in IMP and have to be handled
+        # specially
+        if key.get_index() >= 7:
+            need_keys = [key]
+            f = functools.partial(score_float_key, key=key.get_string(), uf=uf)
+        elif key == XYZR.get_radius_key():
+            need_keys = []  # We already have the radius in the JAX model
+            f = functools.partial(score_float_key, key='r', uf=uf)
+        elif key in XYZ.get_xyz_keys():
+            need_keys = []  # We already have coordinates in the JAX model
+            xyz_index = XYZ.get_xyz_keys().index(key)
+            f = functools.partial(score_xyz_key, xyz_index=xyz_index, uf=uf)
+        else:
+            raise NotImplementedError("No support for key %s" % key)
+        return self._wrap_jax(m, f, keys=need_keys)
+  %}
+}
+
 %extend IMP::core::HarmonicDistancePairScore {
   %pythoncode %{
     def _get_jax(self, m, indexes):
@@ -206,6 +274,55 @@
   %}
 }
 
+%extend IMP::core::HarmonicUpperBoundSphereDistancePairScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import jax.lax
+        def jax_score(jm, d, k):
+            xyzs = jm['xyz'][indexes]
+            rs = jm['r'][indexes]
+            diff = xyzs[:,0] - xyzs[:,1]
+            drs = jnp.linalg.norm(diff, axis=1) - rs.sum(axis=1)
+            return 0.5 * k * jax.lax.min(d - drs, 0.0) ** 2
+        f = functools.partial(jax_score, d=self.get_x0(), k=self.get_k())
+        return self._wrap_jax(m, f)
+  %}
+}
+
+%extend IMP::core::SoftSpherePairScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        import jax.lax
+        def jax_score(jm, k):
+            xyzs = jm['xyz'][indexes]
+            rs = jm['r'][indexes]
+            diff = xyzs[:,0] - xyzs[:,1]
+            drs = jnp.linalg.norm(diff, axis=1) - rs.sum(axis=1)
+            return 0.5 * k * jax.lax.min(drs, 0.0) ** 2
+        f = functools.partial(jax_score, k=self.get_k())
+        return self._wrap_jax(m, f)
+  %}
+}
+
+%extend IMP::core::SphereDistancePairScore {
+  %pythoncode %{
+    def _get_jax(self, m, indexes):
+        import jax.numpy as jnp
+        def jax_score(jm, uf):
+            xyzs = jm['xyz'][indexes]
+            rs = jm['r'][indexes]
+            diff = xyzs[:,0] - xyzs[:,1]
+            drs = jnp.linalg.norm(diff, axis=1) - rs.sum(axis=1)
+            return uf(drs)
+        sfnc = self.get_score_functor()
+        uf = sfnc.get_unary_function().get_derived_object()
+        f = functools.partial(jax_score, uf=uf._get_jax())
+        return self._wrap_jax(m, f)
+  %}
+}
+
 %extend IMP::core::DistancePairScore {
   %pythoncode %{
     def _get_jax(self, m, indexes):
@@ -229,7 +346,9 @@
         ps = self.get_score_object()
         indexes = jnp.array([self.get_index()])
         ji = ps._get_jax(self.get_model(), indexes)
-        return self._wrap_jax(ji.score_func)
+        def score(jm):
+            return jnp.sum(ji.score_func(jm))
+        return self._wrap_jax(score)
   %}
 }
 
@@ -266,33 +385,34 @@
 %extend IMP::core::SingletonConstraint {
   %pythoncode %{
     def _get_jax(self):
-        index = self.get_index()
+        import jax.numpy as jnp
+        indexes = jnp.array([self.get_index()])
         mod = self.get_before_modifier().get_derived_object()
-        ji = mod._get_jax(self.get_model(), index)
-        return self._wrap_jax(
-            functools.partial(ji.apply_func, indexes=index),
-            keys=ji._keys)
+        ji = mod._get_jax(self.get_model(), indexes)
+        return self._wrap_jax(ji.apply_func, keys=ji._keys)
   %}
 }
 
 %extend IMP::core::CentroidOfRefined {
   %pythoncode %{
-    def _get_jax(self, m, index=None):
+    def _get_jax(self, m, indexes):
         import jax.numpy as jnp
-        if index is None:
-            raise NotImplementedError("Only implemented for single particle")
-        refined = self.get_refiner().get_refined_indexes(m, index)
+        refined = [
+            self.get_refiner().get_refined_indexes(m, IMP.ParticleIndex(index))
+            for index in indexes]
 
-        def apply_func_unweighted(jm, indexes):
-            xyz = jm['xyz']
-            jm['xyz'] = xyz.at[indexes].set(jnp.average(xyz[refined], axis=0))
+        def apply_func_unweighted(jm):
+            for ind, ref in zip(indexes, refined):
+                xyz = jm['xyz']
+                jm['xyz'] = xyz.at[ind].set(jnp.average(xyz[ref], axis=0))
             return jm
 
-        def apply_func_weighted(jm, indexes, weight_key):
-            xyz = jm['xyz']
-            weights = jm[weight_key][refined]
-            jm['xyz'] = xyz.at[indexes].set(jnp.average(xyz[refined], axis=0,
-                                                        weights=weights))
+        def apply_func_weighted(jm, weight_key):
+            for ind, ref in zip(indexes, refined):
+                xyz = jm['xyz']
+                weights = jm[weight_key][ref]
+                jm['xyz'] = xyz.at[ind].set(
+                    jnp.average(xyz[ref], axis=0, weights=weights))
             return jm
 
         keys = frozenset(self.get_keys())
@@ -320,7 +440,8 @@
         """
         raise NotImplementedError(f"No JAX implementation for {self}")
 
-    def _wrap_jax(self, init_func, propose_func):
+    def _wrap_jax(self, init_func, propose_func, accept_func=None,
+                  sync_func=None):
         """Create the return value for _get_jax.
            Use this method in _get_jax() to wrap the JAX functions
            with other mover-specific information.
@@ -337,9 +458,16 @@
                   is rejected then the new JAX Model will be discarded.
                   However, the mover's persistent state is updated for both
                   accepted and rejected moves.
+           @param accept_func if provided, a JAX function which is called
+                  after each accepted Monte Carlo move, with the persistent
+                  state object. It should return a new persistent state.
+           @param sync_func If provided, a Python function which is called
+                  at the end of a Monte Carlo sampling run to sync mover
+                  data back to IMP. It is called with the persistent state
+                  and the IMP Mover object.
         """
         from IMP.core._jax_util import JAXMoverInfo
-        return JAXMoverInfo(init_func, propose_func)
+        return JAXMoverInfo(init_func, propose_func, accept_func, sync_func)
   %}
 }
 
@@ -371,6 +499,7 @@
     def _get_jax(self):
         import jax.random
         import jax.lax
+        import jax.numpy as jnp
         from IMP.core._jax_util import _SerialMover
         movers = [m.get_derived_object()._get_jax()
                   for m in self.get_movers()]
@@ -379,6 +508,7 @@
             """Call the propose_func of the ith mover"""
             jm, sms.mover_state[i], ratio = movers[i].propose_func(
                 jm, sms.mover_state[i])
+            sms.proposed_mover_steps = sms.proposed_mover_steps.at[i].add(1)
             return jm, sms, ratio
 
         sub_propose_funcs = [functools.partial(sub_propose_func, i=i)
@@ -390,12 +520,29 @@
             for m in movers:
                 key, subkey = jax.random.split(key)
                 mover_state.append(m.init_func(subkey))
-            return _SerialMover(imov=-1, mover_state=mover_state)
+            return _SerialMover(
+                imov=-1, mover_state=mover_state,
+                proposed_mover_steps=jnp.zeros(len(movers), dtype=int),
+                accepted_mover_steps=jnp.zeros(len(movers), dtype=int))
 
         def propose_func(jm, sms):
-            sms.imov = jax.lax.min(sms.imov + 1, len(movers) - 1)
+            sms.imov = jnp.mod(sms.imov + 1, len(movers))
             return jax.lax.switch(sms.imov, sub_propose_funcs, jm, sms)
-        return self._wrap_jax(init_func, propose_func)
+
+        def accept_func(sms):
+            # Update statistics for the chosen mover
+            sms.accepted_mover_steps = \
+                sms.accepted_mover_steps.at[sms.imov].add(1)
+            return sms
+
+        def sync_func(imp_mover, sms):
+            # Copy submover statistics back to IMP Movers
+            for i, mover in enumerate(imp_mover.get_movers()):
+                mover.add_to_statistics(
+                    sms.proposed_mover_steps[i],
+                    sms.proposed_mover_steps[i] - sms.accepted_mover_steps[i])
+
+        return self._wrap_jax(init_func, propose_func, accept_func, sync_func)
   %}
 }
 
@@ -405,8 +552,13 @@
         from IMP.core._jax_util import _MCJAXInfo
         return _MCJAXInfo(self)
 
-    def _optimize_jax(self, max_steps):
+    def _get_jax_optimizer(self, max_steps):
         import IMP.core._jax_util
-        return IMP.core._jax_util._mc_optimize(self, max_steps)
+        return IMP.core._jax_util._MCJAXOptimizer(self, max_steps)
+
+    def _optimize_jax(self, max_steps):
+        opt = self._get_jax_optimizer(max_steps)
+        score, mc_state = opt.optimize(opt.get_initial_state())
+        return score
   %}
 }

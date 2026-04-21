@@ -1,48 +1,11 @@
 import jax.random
-import jax.numpy as jnp
 import jax.tree_util
-from dataclasses import dataclass
 import IMP
 
 
 def get_random_key():
     """Get a new JAX random key seeded from IMP's RNG"""
     return jax.random.key(IMP.random_number_generator())
-
-
-@jax.tree_util.register_dataclass
-@dataclass
-class _RigidBodies:
-    """Information on all rigid bodies in the Model"""
-
-    # Internal coordinates indexed by particle index
-    intcoord: jax.Array
-    # Reference frame rotation quaternion indexed by rigid body index
-    quaternion: jax.Array
-    # Mapping from particle index to rigid body index
-    rb_index_from_particle: dict
-    # Mapping from rigid body index to particle index
-    particle_from_rb_index: list
-
-
-_RB_LIST_KEY = IMP.ModelKey("rigid body list")
-_RB_QUAT_KEYS = [IMP.FloatKey("rigid_body_quaternion_%d" % i)
-                 for i in range(4)]
-
-
-def _get_rigid_bodies(m):
-    assert m.get_has_data(_RB_LIST_KEY)
-    rbl = m.get_data(_RB_LIST_KEY)
-    rbl = IMP.SingletonContainer.get_from(rbl)
-    particle_from_rb_index = rbl.get_contents()
-    intcoord = m.get_internal_coordinates_numpy()
-    quaternion = jnp.stack([m.get_numpy(rk)[particle_from_rb_index]
-                            for rk in _RB_QUAT_KEYS], axis=1)
-    return _RigidBodies(
-        intcoord=intcoord, particle_from_rb_index=particle_from_rb_index,
-        rb_index_from_particle={int(pi): rbi for (rbi, pi) in
-                                enumerate(particle_from_rb_index)},
-        quaternion=quaternion)
 
 
 def _get_jax_model(m, keys):
@@ -61,6 +24,7 @@ def _get_jax_model(m, keys):
     jm = {"xyz": xyz, "r": r}
     for k in keys:
         if k == 'rigid_bodies':
+            from IMP.core._jax_rigid import _get_rigid_bodies
             jm['rigid_bodies'] = _get_rigid_bodies(m)
         else:
             jm[k.get_string()] = m.get_numpy(k)
@@ -166,6 +130,18 @@ class JAXModifierInfo:
         self._keys = frozenset(keys or ())
 
 
+class _NullScoringFunction:
+    """Helper class for an optimizer that has had .set_scoring_function([])
+       called on it"""
+    def __init__(self, m):
+        self.m = m
+
+    def _get_jax(self):
+        # Always return a score of zero, and reference the optimizer's model
+        return JAXRestraintInfo(m=self.m, score_func=lambda jm: 0.0,
+                                weight=1.0)
+
+
 class JAXOptimizerInfo:
     """Information about a JAX implementation of an Optimizer.
 
@@ -188,11 +164,23 @@ class JAXOptimizerInfo:
 
     def __init__(self, optimizer):
         self._opt = optimizer
-        self._sf = optimizer.get_scoring_function().get_derived_object()
+        self._sf = self._get_scoring_function(optimizer)
         ji = self._sf._get_jax()
         self.score_func = _get_score_constrained(
             optimizer.get_model(), ji.score_func)
         # Subclasses will fill in init_func and apply_func
+
+    def _get_scoring_function(self, optimizer):
+        sf = optimizer.get_scoring_function()
+        # NullScoringFunction has no Python implementation (and even if it
+        # did, it has no valid Model pointer) so use our own helper class
+        # instead
+        if (sf._get_director_object() is None
+                and sf.get_type_name() == 'NullScoringFunction'
+                and sf.get_version_info().get_module() == 'IMP'):
+            return _NullScoringFunction(optimizer.get_model())
+        else:
+            return sf.get_derived_object()
 
     def _setup_jax_optimizer_states(self):
         """Setup and return a list of the OptimizerStates that have

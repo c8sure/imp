@@ -30,6 +30,17 @@ class JAXWarning(UserWarning):
            that scores the current JAX Model. See also _wrap_jax.
         """
         raise NotImplementedError(f"No JAX implementation for {self}")
+
+    def _evaluate_jax(self):
+        """Similar to evaluate(False), but using JAX.
+           This is intended to be useful for testing purposes. It will likely
+           not be particularly fast as it will copy the IMP Model and
+           jax.jit-compile the scoring function each time."""
+        import jax
+        ji = self._get_jax()
+        jm = ji.get_jax_model()
+        j = jax.jit(ji.score_func)
+        return j(jm)
   %}
 }
 
@@ -228,10 +239,42 @@ class JAXWarning(UserWarning):
 %extend IMP::SingletonModifier {
   %pythoncode %{
     def _wrap_jax(self, apply_func, keys=None):
+        """Create the return value for _get_jax.
+           Use this method in _get_jax() to wrap the JAX function
+           with other modifier-specific information.
+
+           @param apply_func A function implemented using JAX that takes
+                  one argument (the current JAX Model) and returns a new
+                  modified JAX Model.
+           @param keys Model attributes used by the SingletonModifier.
+                  See IMP::Restraint::_wrap_jax.
+        """
         from IMP._jax_util import JAXModifierInfo
         return JAXModifierInfo(apply_func=apply_func, keys=keys)
 
-    def _get_jax(self, m, index=None):
+    def _get_jax(self, m, indexes):
+        """Return a JAX implementation of this SingletonModifier.
+           Implement this method in a SingletonModifier subclass to provide
+           an equivalent function using [JAX](https://docs.jax.dev/)
+           that modifies the current JAX Model. See also _wrap_jax.
+
+           @param m The IMP.Model that the modifier will act on.
+           @param indexes The ParticleIndexes that the modifier will act on.
+        """
         raise NotImplementedError(f"No JAX implementation for {self}")
+  %}
+}
+
+%extend IMP::internal::GenericRestraintsScoringFunction<::IMP::Restraints> {
+  %pythoncode %{
+    def _get_jax(self):
+        import IMP._jax_util
+        jis = [r.get_derived_object()._get_jax() for r in self.restraints]
+        funcs = [j.score_func for j in jis]
+        keys = frozenset(x for j in jis for x in j._keys)
+        def jax_sf(jm):
+            return sum(f(jm) for f in funcs)
+        return IMP._jax_util.JAXRestraintInfo(
+            m=self.get_model(), score_func=jax_sf, weight=1.0, keys=keys)
   %}
 }
